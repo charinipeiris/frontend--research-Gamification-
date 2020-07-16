@@ -1,0 +1,42 @@
+<!-- <ul>
+ 
+    <li><a href="app.component.html">Home</a></li>
+    <li><a routerLink='grade1'>Grade 1</a></li>
+    <li><a routerLink='grade2'>Grade 2</a></li>
+    <li style="margin-inline-start:989px;"><a routerLink='login'>Login</a></li>
+    <li><a routerLink='signin'>Sign in</a></li>
+   
+    
+
+</ul> -->
+
+
+<!doctype html>
+<html lang=''>
+<head>
+   <meta charset='utf-8'>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!-- <link rel="stylesheet" href="styles.css"> -->
+   <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+
+   <!-- <script src="script.js"></script> -->
+</head>
+<body>
+
+<div id='cssmenu'>
+<ul>
+   
+  <li><a href="home" style ="color:dodgerblue"[routerLink]="['/home']">Home</a></li>
+  <!-- <li><a routerLink='grade1' style ="color:rgb(128, 37, 139)">1 ශ්‍රේණිය</a></li>
+  <li><a routerLink='grade2' style ="color:rgb(240, 157, 2)">2 ශ්‍රේණිය</a></li> -->
+  <li style="margin-inline-start:650px"><a style="color:green" type="submit" [routerLink]="['/']">Login</a></li>
+  <li style="margin-inline-start:50px"><a routerLink='signin' style="color:tomato" type="submit" [routerLink]="['/register']">Sign in</a></li> 
+  <li style="margin-inline-start:50px"><a  href="#" role="button" style ="color:dodgerblue" (click)="logout()">Logout</a></li>
+  
+ 
+</ul>
+</div>
+
+</body>
+<html>

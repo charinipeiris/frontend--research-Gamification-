@@ -1,0 +1,5 @@
+<div class="camera-snapshot" (click)="getCameraImage()" style="position: relative;">
+    
+    <canvas [hidden]="!imageUrl" #canvas width="640" height="480"></canvas>
+    <video [hidden]="imageUrl" width="100%" autoplay #video></video>
+</div>
