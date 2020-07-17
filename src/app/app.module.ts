@@ -22,12 +22,23 @@ import { CameraSnapshotComponent } from './camera-snapshot/camera-snapshot.compo
 import { NavbarComponent } from './navbar/navbar.component';
 import { Routes,RouterModule} from '@angular/router';
 import { HomeComponent } from './home/home.component';
+import { MathsComponent } from './grade1/maths/maths.component';
+import { Level1Component } from './grade1/Maths/level1/level1.component';
+import { Level2Component } from './grade1/Maths/level2/level2.component';
+import { Level3Component } from './grade1/Maths/level3/level3.component';
 
 const appRoutes:Routes = [
   {path:'login',component:LoginComponent},
   {path:'grade1',component:Grade1Component},
   {path:'grade2',component:Grade2Component},
   {path:'home',component:HomeComponent},
+  {path:'grade1/maths',component:MathsComponent},
+  {path:'grade1/maths/level1',component:Level1Component},
+  {path:'grade1/maths/level2',component:Level2Component},
+  {path:'grade1/maths/level3',component:Level3Component},
+  {path:'grade2/maths/level1',component:Level1Component},
+  {path:'grade2/maths/level2',component:Level2Component},
+  {path:'grade3/maths/level3',component:Level3Component},
  
 ]
 @NgModule({
@@ -42,6 +53,10 @@ const appRoutes:Routes = [
     CameraSnapshotComponent,
     NavbarComponent,
     HomeComponent,
+    MathsComponent,
+    Level1Component,
+    Level2Component,
+    Level3Component,
  
   ],
   imports: [
