@@ -1,16 +1,3 @@
-<!-- <ul>
- 
-    <li><a href="app.component.html">Home</a></li>
-    <li><a routerLink='grade1'>Grade 1</a></li>
-    <li><a routerLink='grade2'>Grade 2</a></li>
-    <li style="margin-inline-start:989px;"><a routerLink='login'>Login</a></li>
-    <li><a routerLink='signin'>Sign in</a></li>
-   
-    
-
-</ul> -->
-
-
 <!doctype html>
 <html lang=''>
 <head>
@@ -28,13 +15,11 @@
 <ul>
    
   <li><a href="home" style ="color:dodgerblue"[routerLink]="['/home']">Home</a></li>
-
-  <!-- <li><a routerLink='grade1' style ="color:rgb(128, 37, 139)">1 ශ්‍රේණිය</a></li>
-  <li><a routerLink='grade2' style ="color:rgb(240, 157, 2)">2 ශ්‍රේණිය</a></li> -->
+  <li style="margin-inline-start:50px;margin-top:17px;">{{username}} {{studentname}}</li> 
   <li style="margin-inline-start:600px"><a style="color:green" type="submit" [routerLink]="['/']">Login</a></li>
   <li style="margin-inline-start:50px"><a routerLink='signin' style="color:tomato" type="submit" [routerLink]="['/register']">Sign in</a></li> 
-  <li style="margin-inline-start:50px"><a  href="#" role="button" style ="color:dodgerblue" (click)="logout()">Logout</a></li>
-  <li style="margin-inline-start:50px;margin-top:17px;">{{username}} {{studentname}}</li>
+  <li style="margin-inline-start:50px"><a  href="#" role="button" style ="color:dodgerblue" (click)="logout()">Logout</a></li> 
+ 
  
 </ul>
 </div>
