@@ -1,13 +1,13 @@
-<!doctype html>
+<!-- <!doctype html>
 <html lang=''>
 <head>
    <meta charset='utf-8'>
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1">
-   <!-- <link rel="stylesheet" href="styles.css"> -->
+   <link rel="stylesheet" href="styles.css"> 
    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
 
-   <!-- <script src="script.js"></script> -->
+    <script src="script.js"></script> 
 </head>
 <body>
 
@@ -25,4 +25,30 @@
 </div>
 
 </body>
-<html>
+<html> -->
+
+  <!doctype html>
+  <html lang=''>
+  <head>
+     <meta charset='utf-8'>
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+     <script src="../../assets/js/nav.js"></script>
+  </head>
+  <body>
+  
+  <div id='cssmenu'>
+  <ul> 
+     <li><a [routerLink]="['/home']"><span>Home</span></a></li>
+     <!-- <li><a [routerLink]="['/']"><span>{{username}} {{studentname}}</span></a></li> -->
+     <li style="margin-left:56em"><a [routerLink]="['/register']"><span>Sign up</span></a></li>
+     <li><a [routerLink]="['/']"><span>Login</span></a></li>
+     <li class='last'><a (click)="logout()"><span>Log out</span></a></li>
+  </ul>
+  </div>
+  
+  </body>
+    
+  <html>
+  

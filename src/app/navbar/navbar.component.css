@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Capriola);
 @import url(http://fonts.googleapis.com/css?family=Raleway);
 @import url('https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap');
 
@@ -5,96 +6,107 @@
 #cssmenu ul,
 #cssmenu ul li,
 #cssmenu ul li a {
-  margin: 0;
+  margin : 0;
   padding: 0;
   border: 0;
   list-style: none;
   line-height: 1;
   display: block;
   position: relative;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-#cssmenu:after,
-#cssmenu > ul:after {
-  content: ".";
-  display: block;
-  clear: both;
-  visibility: hidden;
-  line-height: 0;
-  height: 0;
+  font-family: Holtwood One SC, serif;
 }
 #cssmenu {
   width: auto;
-  border-bottom: 3px solid #47c9af;
-  font-family: Raleway, sans-serif;
-  line-height: 1;
+  height: 55px;
+  padding-bottom: 4px;
+  overflow: hidden;
+  background-color: rgb(60, 58, 97);  
+
 }
-#cssmenu ul {
-  background: #ffffff;
-}
-#cssmenu > ul > li {
-  float: left;
-}
-#cssmenu.align-center > ul {
-  font-size: 0;
-  text-align: center;
-}
-#cssmenu.align-center > ul > li {
-  display: inline-block;
-  float: none;
-}
-#cssmenu.align-right > ul > li {
+#cssmenu.align-right {
   float: right;
 }
-#cssmenu.align-right > ul > li > a {
+#cssmenu.align-right ul li {
+  float: right;
   margin-right: 0;
-  margin-left: -4px;
+  margin-left: 4px;
 }
-#cssmenu > ul > li > a {
-  z-index: 2;
-  padding: 18px 25px 12px 25px;
-  font-size: 20px;
-  font-weight: 400;
-  text-decoration: none;
-  color: #444444;
-  -webkit-transition: all .2s ease;
-  -moz-transition: all .2s ease;
-  -ms-transition: all .2s ease;
-  -o-transition: all .2s ease;
-  transition: all .2s ease;
-  margin-right: -4px;
-  font-family: Holtwood One SC, serif;
+#cssmenu.align-right ul li:first-child,
+#cssmenu.align-right ul li:first-child > a {
+  border-bottom-right-radius: 3px;
 }
-#cssmenu > ul > li.active > a,
-#cssmenu > ul > li:hover > a,
-#cssmenu > ul > li > a:hover {
-  color: #ffffff;
-}
-#cssmenu > ul > li > a:after {
+#cssmenu #bg-one,
+#cssmenu #bg-two,
+#cssmenu #bg-three,
+#cssmenu #bg-four {
   position: absolute;
-  left: 0;
   bottom: 0;
-  right: 0;
-  z-index: -1;
-  width: 140%;
-  height: 120%;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  content: "";
-  -webkit-transition: all .2s ease;
-  -o-transition: all .2s ease;
-  transition: all .2s ease;
-  -webkit-transform: perspective(5px) rotateX(2deg);
-  -webkit-transform-origin: bottom;
-  -moz-transform: perspective(5px) rotateX(2deg);
-  -moz-transform-origin: bottom;
-  transform: perspective(5px) rotateX(2deg);
-  transform-origin: bottom;
+  width: 100%;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
 }
-#cssmenu > ul > li.active > a:after,
-#cssmenu > ul > li:hover > a:after,
-#cssmenu > ul > li > a:hover:after {
-  background: #47c9af;
+#cssmenu #bg-one {
+  height: 10px;
+  background: #0f71ba;
+}
+#cssmenu #bg-two {
+  height: 59px;
+  z-index: 2;
+  /* background: url('images/bg.png'); */
+}
+#cssmenu #bg-three {
+  bottom: 4px;
+  height: 55px;
+  z-index: 3;
+  background: #222222;
+  background: -moz-linear-gradient(top, #555555 0%, #222222 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #555555), color-stop(100%, #222222));
+  background: -webkit-linear-gradient(top, #555555 0%, #222222 100%);
+  background: -o-linear-gradient(top, #555555 0%, #222222 100%);
+  background: -ms-linear-gradient(top, #555555 0%, #222222 100%);
+  background: linear-gradient(to bottom, #555555 0%, #222222 100%);
+}
+#cssmenu #bg-four {
+  bottom: 4px;
+  height: 55px;
+  z-index: 4;
+  /* background: url('images/bg.png'); */
+}
+#cssmenu ul {
+  height: 59px;
+}
+#cssmenu ul li {
+  float: left;
+  margin-right: 4px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  z-index: 5;
+}
+#cssmenu ul li a {
+  padding: 24px 30px 20px 30px;
+  margin-bottom: 4px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  color: #eeeeee;
+  font-size: 15px;
+  text-decoration: none;
+}
+#cssmenu ul li:first-child,
+#cssmenu ul li:first-child > a {
+  border-bottom-left-radius: 3px;
+}
+#cssmenu ul li:hover,
+#cssmenu ul li.active {
+  background: #0f71ba;
+  background: -moz-linear-gradient(top, #3fa4f0 0%, #0f71ba 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #3fa4f0), color-stop(100%, #0f71ba));
+  background: -webkit-linear-gradient(top, #3fa4f0 0%, #0f71ba 100%);
+  background: -o-linear-gradient(top, #3fa4f0 0%, #0f71ba 100%);
+  background: -ms-linear-gradient(top, #3fa4f0 0%, #0f71ba 100%);
+  background: linear-gradient(to bottom, #3fa4f0 0%, #0f71ba 100%);
+}
+#cssmenu ul li a:hover,
+#cssmenu ul li.active > a {
+  /* background: url('images/bg.png'); */
+  color: #ffffff;
 }
