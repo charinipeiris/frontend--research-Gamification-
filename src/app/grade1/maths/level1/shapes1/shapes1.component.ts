@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import * as w2ui from 'w2ui';
 declare function play_intro(): any;
 
 @Component({
