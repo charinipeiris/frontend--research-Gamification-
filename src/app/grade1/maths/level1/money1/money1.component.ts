@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-declare function play_coin(): any;
 
 @Component({
   selector: 'app-money1',

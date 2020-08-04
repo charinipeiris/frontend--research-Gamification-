@@ -4,19 +4,22 @@ function show(shown, hidden) {
     return false;
 }
 
-function play_coin(){ 
-    var pic = "assets/images/5.png"
-    document.getElementById('coin').src = pic.replace('90x90', '225x225');
-    document.getElementById('coin').style.display='block';
+function showImage(){
+      document.getElementById('loadingImage').style.visibility="visible";
+      //coin disappears after 4 seconds. Remove if you dont need
+      setTimeout (function() {
+        $( "#loadingImage" ).hide();
+                  }, 4000);
+    
+  }
 
-    }
+ function showImage2(){
+        document.getElementById('loadingImage2').style.display='block';
+         //coin disappears after 4 seconds. Remove if you dont need
+        setTimeout (function() {
+            $( "#loadingImage2" ).hide();
+                      }, 4000);
+        
+      }
+ 
 
-
-//     $(document).ready(function(){
-//         $(document).on('click',"#img2",function () {
-//         $( "#popUp" ).show(); 
-//                setTimeout(function() {
-//                $( "#popUp" ).hide();
-//                       }, 2000);
-//  });
-//  });
