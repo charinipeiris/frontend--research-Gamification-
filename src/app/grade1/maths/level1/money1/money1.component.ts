@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+declare function play_coin(): any;
 
 @Component({
   selector: 'app-money1',
@@ -9,7 +10,8 @@ export class Money1Component implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit(): void {   
+    
   }
 
 }
