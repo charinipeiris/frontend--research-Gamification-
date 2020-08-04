@@ -33,6 +33,7 @@
               "node_modules/popper.js/dist/umd/popper.min.js",
               "src/assets/js/shapes.js",
               "src/assets/js/counting1.js",
+              "src/assets/js/counting_game.js",
               "src/assets/js/money.js"
               
 
