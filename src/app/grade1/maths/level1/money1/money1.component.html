@@ -1,1 +1,60 @@
-<p>money1 works!</p>
+<html ng-app="myApp">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Register</title>
+        <meta name="description" content="Login - Register Template">
+        <meta name="author" content="Lorenzo Angelino aka MrLolok">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Barrio" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap" rel="stylesheet">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+        <!-- <script type='text/javascript'>
+            function ShowHideController($scope) {
+                $scope.showImage = function(){
+                    $scope.images = ['assets/images/5.png'];
+                }
+            }
+        </script> -->
+
+    </head>
+
+    <body class = "image">
+        
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+    <h2 style ="text-align: center;"><b>පියවර 1 - ගණිතය (1 ශ්‍රේණිය) - මුදල්</b></h2>
+  
+        <div style="width: 100%;" ng-controller="myCtrl">
+            <div style="float:left; width: 50%; margin-inline-start:50px;">  
+                <img src="assets/images/cupcake-50.png">
+                <img src="assets/images/toffee-5.png">
+                <br>
+                <img src="assets/images/ice-cream-20.PNG">
+                <img src="assets/images/lollipop-10.png">
+                <br>
+                <audio controls autoplay hidden>
+                    <source src="assets/audio/coins-game.mp3" type="audio/mp3" style="position: relative;" >
+                </audio>
+
+            </div>
+
+            <div style="float:right; margin-inline-end:106px;" ng-app ng:controller="ShowHideController">
+                <img src=" assets/images/girl-skipping.gif"> 
+                <br>
+                <button onClick="play_coin()">Click to view coin</button>
+               
+            
+            </div>
+
+        </div>
+
+    </body>
+</html>
