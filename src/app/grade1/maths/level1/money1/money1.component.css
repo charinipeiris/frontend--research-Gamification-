@@ -1,9 +1,10 @@
 @import "~bootstrap/dist/css/bootstrap.css";
  .image{
-    height:40em; 
+    height:45em; 
     background-size:cover; 
     width:100%;
     /* background-image:url(/assets/images/sweet-shop.png); */
+    background-color: azure;
     background-position:50% 50%;
     margin-top:-50px;
    
@@ -52,5 +53,20 @@
       display: flex;
       justify-content: center;
       align-items: center;
+    }
+
+    .canvas {
+      /* line-height: 300px; */
+      background-color: #FFFFFF;
+      height: 550px;
+      width: 72em;
+      border: 3px solid rgb(73, 75, 187);
+      margin: auto;
+    }
+
+    .sweet-image{
+      height: 220px;
+      width: auto;
+      margin: 15px;
     }
   

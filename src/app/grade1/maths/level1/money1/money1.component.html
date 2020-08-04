@@ -9,16 +9,7 @@
         <link href="https://fonts.googleapis.com/css?family=Barrio" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap" rel="stylesheet">
-        
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-
-        <!-- <script type='text/javascript'>
-            function ShowHideController($scope) {
-                $scope.showImage = function(){
-                    $scope.images = ['assets/images/5.png'];
-                }
-            }
-        </script> -->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script> 
 
     </head>
 
@@ -28,32 +19,61 @@
         <br>
         <br>
         <br>
-        <br>
-
-    <h2 style ="text-align: center;"><b>පියවර 1 - ගණිතය (1 ශ්‍රේණිය) - මුදල්</b></h2>
   
-        <div style="width: 100%;" ng-controller="myCtrl">
-            <div style="float:left; width: 50%; margin-inline-start:50px;">  
-                <img src="assets/images/cupcake-50.png">
-                <img src="assets/images/toffee-5.png">
+
+    <h2 style ="text-align: center; margin-top: -15px;"><b>පියවර 1 - ගණිතය (1 ශ්‍රේණිය) - මුදල්</b></h2>
+
+<!-- first page-->
+        <div class="canvas"  id="Page1" ng-controller="myCtrl">
+            <div style="float:left;">  
+                <img class="sweet-image" src="assets/images/cupcake-50.png">
+                <img class="sweet-image" src="assets/images/toffee-5.png">
                 <br>
-                <img src="assets/images/ice-cream-20.PNG">
-                <img src="assets/images/lollipop-10.png">
+                <img class="sweet-image" src="assets/images/ice-cream-20.PNG">
+                <img class="sweet-image" src="assets/images/lollipop-10.png">
                 <br>
                 <audio controls autoplay hidden>
                     <source src="assets/audio/coins-game.mp3" type="audio/mp3" style="position: relative;" >
                 </audio>
-
             </div>
 
-            <div style="float:right; margin-inline-end:106px;" ng-app ng:controller="ShowHideController">
-                <img src=" assets/images/girl-skipping.gif"> 
+            <!-- <div style="float:right;" ng-app ng:controller="ShowHideController"> -->
+                <img src=" assets/images/girl-skipping.gif" style="height: 380px; width:auto;"> 
                 <br>
-                <img id="coin" src="assets/images/ball.png" />
-                <button onclick="play_coin()">Click to view coin</button>
-               
-            
+                <img id="loadingImage" src="assets/images/5.png" style="visibility:hidden; height: 100px; width: auto; margin-bottom: 10px;"/>
+                <br>
+                <a class="btn btn-success" style="color:rgb(255, 255, 255);" onClick="showImage()">Click to view coin</a>
+
+                <a href="#" style="margin-left:400px;" class="btn btn-info" onclick="return show('Page2','Page1');">Next</a>
+            <!-- </div> -->
+        </div>
+
+
+<!-- second page-->
+        <div class="canvas"  id="Page2" style="display:none"  ng-controller="myCtrl">
+            <p>second page</p>
+            <div style="float:left;">  
+                <img class="sweet-image" src="assets/images/cupcake-50.png">
+                <img class="sweet-image" src="assets/images/toffee-5.png">
+                <br>
+                <img class="sweet-image" src="assets/images/ice-cream-20.PNG">
+                <img class="sweet-image" src="assets/images/lollipop-10.png">
+                <br>
+                <audio controls autoplay hidden>
+                    <source src="assets/audio/coins-game.mp3" type="audio/mp3" style="position: relative;" >
+                </audio>
             </div>
+
+            <!-- <div style="float:right;" ng-app ng:controller="ShowHideController"> -->
+                <img src=" assets/images/girl-skipping.gif" style="height: 380px; width:auto;"> 
+                <br>
+                
+                <img id="loadingImage2" src="assets/images/10.png" style="display:none; height: 90px; width: auto; "/>
+                <br>
+                <a class="btn btn-success" style="color:rgb(255, 255, 255);" onClick="showImage2()">Click to view coin</a>
+
+                <a href="#"  class="btn btn-info" onclick="return show('Page1','Page2');">Back</a>
+            <!-- </div> -->
 
         </div>
 
