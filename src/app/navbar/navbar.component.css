@@ -2,6 +2,18 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway);
 @import url('https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap');
 
+.logo{
+  height:45px; 
+  width:auto; 
+  margin-top: -18px; 
+}
+
+.user-icon{
+  height: 45px; 
+  width: auto; 
+  margin-top: -18px;
+}
+
 #cssmenu,
 #cssmenu ul,
 #cssmenu ul li,
