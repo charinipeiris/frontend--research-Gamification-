@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 
-
 @Component({
   selector: 'app-money1',
   templateUrl: './money1.component.html',
@@ -11,10 +10,7 @@ export class Money1Component implements OnInit {
   constructor() { }
 
   ngOnInit(): void {   
-
+    
   }
-
-
-
 
 }
