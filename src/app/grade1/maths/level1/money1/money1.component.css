@@ -55,11 +55,11 @@
       align-items: center;
     }
 
-    .canvas {
-      /* line-height: 300px; */
+  .canvas {
+      line-height: 300px;
       background-color: #FFFFFF;
-      height: 550px;
-      width: 72em;
+      height: 620px;
+      width: 75em;
       border: 3px solid rgb(73, 75, 187);
       margin: auto;
     }
@@ -70,3 +70,6 @@
       margin: 15px;
     }
   
+  #box{
+    height: 10px;
+  }

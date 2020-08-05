@@ -1,7 +1,7 @@
 <html ng-app="myApp">
 
     <head>
-        <meta charset="UTF-8">
+        <!-- <meta charset="UTF-8">
         <title>Register</title>
         <meta name="description" content="Login - Register Template">
         <meta name="author" content="Lorenzo Angelino aka MrLolok">
@@ -9,7 +9,7 @@
         <link href="https://fonts.googleapis.com/css?family=Barrio" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap" rel="stylesheet">
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script> 
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>  -->
 
     </head>
 
@@ -24,29 +24,52 @@
     <h2 style ="text-align: center; margin-top: -15px;"><b>පියවර 1 - ගණිතය (1 ශ්‍රේණිය) - මුදල්</b></h2>
 
 <!-- first page-->
-        <div class="canvas"  id="Page1" ng-controller="myCtrl">
-            <div style="float:left;">  
-                <img class="sweet-image" src="assets/images/cupcake-50.png">
-                <img class="sweet-image" src="assets/images/toffee-5.png">
+        <div class="canvas" id="Page1" ng-controller="myCtrl">
+            <form name="f1" style="width: 50%;">
+                <div id="box" style="float:left; width:50%;" ng-controller="myCtrl">
+                    <img id="button" name="cupcake" src="assets/images/cupcake-50.png" onclick="testWrong();" hspace="10">
+                    <img id="button" name="toffee" src="assets/images/toffee-5.png" onclick="testRight();" hspace="10">  
+                </div>
+
+                <div id="box2" style="position:absolute; top:215; left:20; width:400; height:80">
+                    <br>
+                    <img name="clip1" src="assets/images/line.gif" style="width: 20em;">
+                    <img name="clip2" src="assets/images/blank.png" hspace="100"> 
+                </div>
+            </form>
+
+            <form name="f2" style="width: 50%;">
+                <div id="box" style="float:left; width:50%;" ng-controller="myCtrl">
+                    <img id="button" name="toffee" src="assets/images/ice-cream-20.PNG" onclick="testWrong();" hspace="10">  
+                    <img id="button" name="toffee" src="assets/images/lollipop-10.png" onclick="testWrong();" hspace="42">            
+                </div> 
+
+                <div id="box2" style="position:absolute; top:215; left:20; width:400; height:80">
+                    <br>
+                    <img name="clip1" src="assets/images/line.gif" style="width: 20em;">
+                    <img name="clip2" src="assets/images/blank.png" hspace="100"> 
+                </div>
+            </form>
+                <div id="box" style="float:left; width:50%;" ng-controller="myCtrl">
+                    <audio controls autoplay hidden>
+                        <source src="assets/audio/coins-game.mp3" type="audio/mp3" style="position: relative;" >
+                    </audio>
+                </div>
+        
+
+            <div style="float:right; width:50%;" ng-app ng:controller="ShowHideController">
+                <div id="box" style="float:left;" ng-controller="myCtrl">
+                    <img src=" assets/images/girl-skipping.gif" style="height: 380px; width:auto;" hspace="5"> 
+                </div>
                 <br>
-                <img class="sweet-image" src="assets/images/ice-cream-20.PNG">
-                <img class="sweet-image" src="assets/images/lollipop-10.png">
-                <br>
-                <audio controls autoplay hidden>
-                    <source src="assets/audio/coins-game.mp3" type="audio/mp3" style="position: relative;" >
-                </audio>
+                <div id="box" style="float:right;" ng-controller="myCtrl">
+                    <img id="loadingImage" src="assets/images/5.png" style="visibility:hidden; height: 100px; width: auto; margin-bottom: 10px;"/>
+                    <a class="btn btn-success" style="color:rgb(255, 255, 255);" onClick="showImage()">කාසිය බලන්න ක්ලික් කරන්න</a>
+                    <a href="#" style="margin-left:400px;" class="btn btn-info" onclick="return show('Page2','Page1');">ඊලඟ</a>
+                </div>
             </div>
-
-            <!-- <div style="float:right;" ng-app ng:controller="ShowHideController"> -->
-                <img src=" assets/images/girl-skipping.gif" style="height: 380px; width:auto;"> 
-                <br>
-                <img id="loadingImage" src="assets/images/5.png" style="visibility:hidden; height: 100px; width: auto; margin-bottom: 10px;"/>
-                <br>
-                <a class="btn btn-success" style="color:rgb(255, 255, 255);" onClick="showImage()">Click to view coin</a>
-
-                <a href="#" style="margin-left:400px;" class="btn btn-info" onclick="return show('Page2','Page1');">Next</a>
-            <!-- </div> -->
         </div>
+        
 
 
 <!-- second page-->
