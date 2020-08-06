@@ -4,14 +4,14 @@ function show(shown, hidden) {
     return false;
 }
 
-function showImage(){
-      document.getElementById('loadingImage').style.visibility="visible";
-      //coin disappears after 4 seconds. Remove if you dont need
-      setTimeout (function() {
-        $( "#loadingImage" ).hide();
-                  }, 4000);
+// function showImage(){
+//       document.getElementById('loadingImage').style.visibility="visible";
+//       //coin disappears after 4 seconds. Remove if you dont need
+//       setTimeout (function() {
+//         $( "#loadingImage" ).hide();
+//                   }, 4000);
     
-  }
+//   }
 
  function showImage2(){
         document.getElementById('loadingImage2').style.display='block';

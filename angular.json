@@ -34,7 +34,8 @@
               "src/assets/js/shapes.js",
               "src/assets/js/counting1.js",
               "src/assets/js/counting_game.js",
-              "src/assets/js/money.js"
+              "src/assets/js/money.js",
+              "src/assets/js/length1.js"
               
 
             ]
