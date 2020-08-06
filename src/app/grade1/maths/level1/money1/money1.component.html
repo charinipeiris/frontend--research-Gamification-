@@ -59,20 +59,13 @@
 
             <div style="float:right; width:50%;" ng-app ng:controller="ShowHideController">
                 <div id="box" style="float:left;" ng-controller="myCtrl">
-                    <!-- <img src=" assets/images/girl-skipping.gif" style="height: 380px; width:auto;" hspace="5">  -->
+                    <img src=" assets/images/girl-skipping.gif" style="height: 380px; width:auto;" hspace="5"> 
                 </div>
                 <br>
                 <div id="box" style="float:right;" ng-controller="myCtrl">
-                    <!-- <img id="loadingImage" src="assets/images/5.png" style="visibility:hidden; height: 100px; width: auto; margin-bottom: 10px;"/>
+                    <img id="loadingImage" src="assets/images/5.png" style="visibility:hidden; height: 100px; width: auto; margin-bottom: 10px;"/>
                     <a class="btn btn-success" style="color:rgb(255, 255, 255);" onClick="showImage()">කාසිය බලන්න ක්ලික් කරන්න</a>
-                    <a class="btn btn-success" style="color:rgb(255, 255, 255);" onClick="showImage2()">Click to view coin</a>
-                    <a href="#" style="margin-left:400px;margin-top:10px;" class="btn btn-info" onclick="return show('Page2','Page1');">ඊලඟ</a> -->
-                    <img src=" assets/images/girl-skipping.gif" style="height: 380px; width:auto;"> 
-                    <br>
-                    
-                    <img id="loadingImage2" src="assets/images/5.png" style="display:none; height: 90px; width: auto; "/>
-                    <a class="btn btn-success" style="color:rgb(255, 255, 255);" onClick="showImage3()">Click to view coin</a>
-                    <a href="#"  class="btn btn-info" onclick="return show('Page1','Page2');">Back</a>
+                    <a href="#" style="margin-left:400px;" class="btn btn-info" onclick="return show('Page2','Page1');">ඊලඟ</a>
                 </div>
             </div>
         </div>
@@ -81,7 +74,7 @@
 
 <!-- second page-->
         <div class="canvas"  id="Page2" style="display:none"  ng-controller="myCtrl">
-
+            <p>second page</p>
             <div style="float:left;">  
                 <img class="sweet-image" src="assets/images/cupcake-50.png">
                 <img class="sweet-image" src="assets/images/toffee-5.png">
@@ -99,9 +92,10 @@
                 <br>
                 
                 <img id="loadingImage2" src="assets/images/10.png" style="display:none; height: 90px; width: auto; "/>
+                <br>
                 <a class="btn btn-success" style="color:rgb(255, 255, 255);" onClick="showImage2()">Click to view coin</a>
+
                 <a href="#"  class="btn btn-info" onclick="return show('Page1','Page2');">Back</a>
-             
             <!-- </div> -->
 
         </div>

@@ -21,14 +21,7 @@ function showImage(){
                       }, 4000);
         
       }
-      function showImage3(){
-        document.getElementById('loadingImage2').style.display='block';
-         //coin disappears after 4 seconds. Remove if you dont need
-        setTimeout (function() {
-            $( "#loadingImage3" ).hide();
-                      }, 4000);
-        
-      }
+ 
 
       function testWrong(){
         document.f1.txt1.value="නැවතත්";
