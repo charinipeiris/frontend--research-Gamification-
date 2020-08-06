@@ -35,9 +35,56 @@ function play_c(){
 //            }
 $(document).ready(function(){
        $(document).on('click',"#img2",function () {
-       $( "#popUp" ).show(); 
+       var audio = document.getElementById("kids_say_yay");
+       if (audio.paused) audio.play();
+       else audio.pause();
+       $( "#popUp_wrong" ).show(); 
               setTimeout(function() {
-              $( "#popUp" ).hide();
+              $( "#popUp_wrong" ).hide();
                      }, 2000);
 });
+});
+
+$(document).ready(function(){
+       $(document).on('click',"#img3",function () {
+       var audio = document.getElementById("kids_say_yay");
+       if (audio.paused) audio.play();
+       else audio.pause();
+       $( "#popUp_right" ).show(); 
+              setTimeout(function() {
+              $( "#popUp_right" ).hide();
+                     }, 2000);
+});
+});
+
+$(document).ready(function(){
+       $(document).on('click',"#img4",function () {
+       $( "#popUp_right" ).show(); 
+       var audio = document.getElementById("kids_say_yay");
+       if (audio.paused) audio.play();
+       else audio.pause();
+              setTimeout(function() {
+              $( "#popUp_right" ).hide();
+                     }, 2000);
+});
+});
+
+$(document).ready(function(){
+       $(document).on('click',"#img5",function () {
+       $( "#popUp_right" ).show(); 
+       var audio = document.getElementById("kids_say_yay");
+       if (audio.paused) audio.play();
+       else audio.pause();
+              setTimeout(function() {
+              $( "#popUp_right" ).hide();
+                     }, 2000);
+});
+});
+
+$(document).ready(function(){
+       $(document).on('click',"#question",function () {
+       var audio = document.getElementById("quest_audio");
+       if (audio.paused) audio.play();
+       else audio.pause();
+   });
 });

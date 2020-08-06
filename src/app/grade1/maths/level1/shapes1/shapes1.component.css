@@ -1,8 +1,8 @@
 .back-image{
-    height:43em; 
+    height:47em; 
     background-size:cover; 
     width:100%;
-	background-image:url(/assets/images/shape_back.jpg);
+	  background-image:url(/assets/images/shape_back.jpg);
     background-position:50% 50%;
     margin-top:-60px;
     padding: 30px;
@@ -20,8 +20,8 @@
     /* line-height: 300px; */
     /* background-image: url(/assets/images/shape_game.jpg); */
     background-color: #FFFFFF;
-    height: 500px;
-    width: 60em;
+    height: 560px;
+    width: 76em;
     border: 3px solid rgb(73, 75, 187);
     margin: auto;
   }
@@ -82,7 +82,7 @@
     100% { transform: translate(1px, -2px) rotate(-1deg); }
   }
 
-  .button {
+  .button1 {
     border-radius: 12px;
     background-color:#3f9454;
     border: none;
@@ -90,10 +90,30 @@
     text-align: center;
     font-size: 20px;
     padding: 20px;
-    width: 450px;
+    width: 80px;
     transition: all 0.5s;
     cursor: pointer;
-    margin: 5px;
-    position: relative
- 
+    position: relative; 
+  }
+
+  .button2 {
+    border-radius: 12px;
+    background-color:#3f9454;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+    width: 80px;
+    transition: all 0.5s;
+    cursor: pointer;
+    position: absolute; 
+    z-index:2;
+    margin-top: 23em; 
+    margin-left:790px
+  }
+
+  .shape-image:hover{
+    animation: shake 0.8s;
+    animation-iteration-count: infinite;
   }
