@@ -1,6 +1,6 @@
 var a =0;
 var m1 = 1000;
-var m2 = 1000;but2
+var m2 = 1000;
 var m3 = 1000;
 var m4 = 1000;
 var m5 = 1000;

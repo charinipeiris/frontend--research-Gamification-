@@ -1,25 +1,41 @@
  <html>
-    <head>
-
-    </head>
+    <head></head>
     <body class="back-image">
         <h1 style =  "margin-left:14em; margin-top: 50px"><b>හැඩතල ඉගෙනගනිමු</b></h1>
+<!-- page 01 -->
         <div class = "center" id="Page1">           
                 <img src="/assets/images/triangle.png" class = "img1" onClick="play_tri()">
                 <img src="/assets/images/square.png" class = "img2" onClick="play_sq()"> 
                 <img src="/assets/images/rect.png" class = "img3" onClick="play_rec()"> 
                 <img src="/assets/images/circle.png" class = "img4" onClick="play_c()"> 
                 <br>
-                <a href="#" style="margin-left:400px;" class="button" onclick="return show('Page2','Page1');">Play Game</a>
+                <a href="#" style="margin-left:400px;" class="button1" onclick="return show('Page2','Page1');">සෙල්ලම් කරන්න</a>
         </div>
 
 
-
+<!-- page 02 -->
         <div class= "center1" style="display:none" id="Page2">
-            <img src = "/assets/images/shape_game.jpg" style="position:relative; height: 490px; width: auto; margin-right:300px; z-index:1;">
-            <img src = "/assets/images/shape_sun.png" id="img2"style="position: relative; z-index: 2;margin-top: -56em;height:80px; margin-left:54px">
-            <img src = "/assets/images/yay_bunny.gif" id="popUp" style="display: none;position: relative; z-index:2;margin-top: -15em;height:150px; margin-left:700px">
-            <a href="#"  class="button" onclick="return show('Page1','Page2');">Back</a>
+            <!--game background image-->
+            <img src = "/assets/images/shape_game.jpg" style="position:relative; height: 554px; width: auto; margin-right:300px; z-index:1;">
+
+            <!-- game objects -circle -->
+            <img src = "/assets/images/shape_sun.png" class="shape-image" id="img2" style="position: relative; z-index: 2;margin-top: -26.5em;height:88px; margin-left:-61em">
+            <img src = "/assets/images/shape_tree.png" class="shape-image" id="img3" style="position: relative; z-index: 2;margin-top: 6em;height:68px; margin-left:440px">
+            <img src = "/assets/images/shape_tire.png" class="shape-image" id="img4" style="position: relative; z-index: 2;margin-top: 10em;height:73px; margin-left:-582px">
+            <img src = "/assets/images/shape_tire.png" class="shape-image" id="img5" style="position: relative; z-index: 2;margin-top: 11.6em;height:50px; margin-left:57px">
+        
+            <!--  if answer correct -->
+            <img src = "/assets/images/yay_bunny.gif" id="popUp_right" style="display: none;position: fixed; z-index:2;height:180px; margin-top: 10.6em; margin-left:600px">
+            <audio id="kids_say_yay" src="assets/audio/kids_yay.mp3" type="audio/mp3" control>Your browser does not support the audio element. </audio>
+
+            <!--  if answer wrong -->
+            <img src = "/assets/images/w.gif" id="popUp_wrong" style="display: none;position: fixed; z-index:2;height:180px; margin-top: 10.6em; margin-left:600px">
+
+            <!-- question audio -->
+            <img src = "/assets/images/shape_sound2.gif" id="question" style="position: absolute; z-index:2;height:100px; margin-top: 1em; margin-left:800px">
+            <audio id="quest_audio" src="assets/audio/shapes_audio_circle.m4a" type="audio/m4a" control>Your browser does not support the audio element. </audio>
+
+            <a href="#"  class="button2" onclick="return show('Page1','Page2');">ආපසු</a>
         </div>
 
         
