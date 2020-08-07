@@ -12,8 +12,8 @@ export class Length1Component implements OnInit {
 
   ngOnInit(): void {
 
-    testlength1();
-    testlength2();
+    // testlength1();
+    // testlength2();
   }
 
 }
