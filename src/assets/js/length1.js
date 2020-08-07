@@ -35,8 +35,8 @@
         document.f1.txt2.value="";
         document.f1.txt5.value="";
         document.f1.txt6.value="";
-        // var myAudio = new Audio('/assets/audio/short.mp3');
-        // myAudio.play();
+        var myAudio = new Audio('/assets/audio/long.mp3');
+        myAudio.play();
         //document.f1.clip.src="/assets/images/blank.png"; 
         //document.f1.clip3. src="/assets/images/0.gif";
         }
@@ -49,8 +49,8 @@
         document.f1.txt1.value="";
         document.f1.txt5.value="";
         document.f1.txt6.value="";
-        // var myAudio = new Audio('/assets/audio/short.mp3');
-        // myAudio.play();
+        var myAudio = new Audio('/assets/audio/not_long.mp3');
+        myAudio.play();
         //document.f1.clip.src="/assets/images/blank.png"; 
         //document.f1.clip3. src="/assets/images/0.gif";
         }
@@ -63,8 +63,8 @@
         document.f1.txt1.value="";
         document.f1.txt6.value="";
         document.f1.txt4.value="";
-        // var myAudio = new Audio('/assets/audio/short.mp3');
-        // myAudio.play();
+        var myAudio = new Audio('/assets/audio/big.mp3');
+        myAudio.play();
         //document.f1.clip.src="/assets/images/blank.png"; 
         //document.f1.clip3. src="/assets/images/0.gif";
         }
@@ -76,8 +76,8 @@
         document.f1.txt1.value="";
         document.f1.txt5.value="";
         document.f1.txt4.value="";
-        // var myAudio = new Audio('/assets/audio/short.mp3');
-        // myAudio.play();
+        var myAudio = new Audio('/assets/audio/small.mp3');
+        myAudio.play();
         //document.f1.clip.src="/assets/images/blank.png"; 
         //document.f1.clip3. src="/assets/images/0.gif";
         }

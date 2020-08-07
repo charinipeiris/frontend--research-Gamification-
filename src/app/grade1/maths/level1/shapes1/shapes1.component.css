@@ -110,7 +110,23 @@
     position: absolute; 
     z-index:2;
     margin-top: 23em; 
-    margin-left:790px
+    margin-left:650px;
+  }
+  .button3 {
+    border-radius: 12px;
+    background-color:#3f9454;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+    width: 80px;
+    transition: all 0.5s;
+    cursor: pointer;
+    position: absolute; 
+    z-index:2;
+    margin-top: 20em; 
+    margin-left:650px
   }
 
   .shape-image:hover{
