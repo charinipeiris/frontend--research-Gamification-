@@ -12,9 +12,9 @@ export class Money1Component implements OnInit {
   constructor() { }
 
   ngOnInit(): void {   
-    showImage();
-    showImage2();
-    showImage3();
+    // showImage();
+    // showImage2();
+    // showImage3();
   }
 
 }
