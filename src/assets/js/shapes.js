@@ -258,8 +258,16 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-       $(document).on('click',"#question",function () {
-       var audio = document.getElementById("quest_audio");
+       $(document).on('click',"#question-circle",function () {
+       var audio = document.getElementById("quest_audio1");
+       if (audio.paused) audio.play();
+       else audio.pause();
+   });
+});
+
+$(document).ready(function(){
+       $(document).on('click',"#question-triangle",function () {
+       var audio = document.getElementById("quest_audio2");
        if (audio.paused) audio.play();
        else audio.pause();
    });
