@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-declare function play_intro(): any;
 
 @Component({
   selector: 'app-shapes1',
@@ -10,7 +9,7 @@ export class Shapes1Component implements OnInit {
   constructor() { }
 
   ngOnInit(){   
-    play_intro();
+
   }
   }
  
