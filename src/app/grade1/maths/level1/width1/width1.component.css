@@ -3,7 +3,7 @@
     height:40em; 
     background-size:cover; 
     width:100%;
-    background-image:url(/assets/images/sweetarea.jpg);
+    /* background-image:url(/assets/images/lengtback.jpg); */
     background-position:50% 50%;
     margin-top:-50px;
   }
@@ -19,3 +19,4 @@
     margin: 4px 2px;
     cursor: pointer;
   }
+  
