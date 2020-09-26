@@ -5,3 +5,21 @@ footer {
     color:white;
     height:200px;
   }
+
+  .split {
+    width: 50%;
+    position: fixed;
+    padding-top: 20px;
+  }
+  
+  .left {
+    left: 0;
+    background-color: #111;
+  }
+  
+  .right {
+    right: 0;
+    background-color: red;
+  }
+
+  
