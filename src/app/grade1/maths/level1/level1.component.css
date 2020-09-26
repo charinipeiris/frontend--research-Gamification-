@@ -10,12 +10,12 @@
   }
   .button {
     border-radius: 12px;
-    background-color:#fcfcfc;
+    background-color:#4CAF50;
     border: none;
-    color:black;
+    color:white;
     text-align: center;
     font-size: 25px;
-    padding: 60px;
+    padding: 40px;
     width: 450px;
     transition: all 0.5s;
     cursor: pointer;
@@ -54,7 +54,7 @@
       align-items: center;
     }
     a:link, a:visited {
-      color:black;
+      color:white;
       text-align: center;
       text-decoration: none;
       display: inline-block;
