@@ -16,7 +16,7 @@ document.f2.clip3.style.left=1000;
 document.f2.clip4.style.left=1000;
 document.f2.clip5.style.left=1000;
 document.f2.clip6.style.left=1000;
-document.f1.txt3.value=" "; document.f3.clip1.src="/assets/images/b.jpg"; }
+document.f1.txt3.value=" "; document.f3.clip1.src="/assets/images/b.png"; }
 
     if(document.f1.txt1.value<=5 && document.f1.txt1.value>0){
         document.f.but1.disabled="disabled";

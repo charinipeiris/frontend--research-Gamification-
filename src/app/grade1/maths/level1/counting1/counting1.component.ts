@@ -11,8 +11,7 @@ export class Counting1Component implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    test();
-    start();
+   
     
   
    
