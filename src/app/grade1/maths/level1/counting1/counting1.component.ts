@@ -12,6 +12,7 @@ export class Counting1Component implements OnInit {
 
   ngOnInit(): void {
     test();
+    start();
     
   
    

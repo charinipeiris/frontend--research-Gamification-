@@ -27,7 +27,6 @@ document.f1.txt3.value=" "; document.f3.clip1.src="/assets/images/b.jpg"; }
         
 }
 
-
 function start(){
     if(document.f1.txt1.value==1){ 
 document.f1.txt3.value='එක ';
