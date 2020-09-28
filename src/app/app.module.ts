@@ -13,6 +13,7 @@ import { Grade2Component } from './grade2/grade2.component';
 import { LoginService } from './services/login.service';
 import { RegisterService } from './services/register.service';
 import { from } from 'rxjs';
+
 import { CompareValidatorDirective } from './shared/compare-validator.directive';
 import {BlockUiService} from './services/block-ui.service';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
@@ -58,7 +59,7 @@ import { Width3Component } from './grade1/maths/level3/width3/width3.component';
 import { Time3Component } from './grade1/maths/level3/time3/time3.component';
 import { Volume3Component } from './grade1/maths/level3/volume3/volume3.component';
 import { Shapes3Component } from './grade1/maths/level3/shapes3/shapes3.component';
-import { AnimalsComponent } from './grade1/sinhala/animals/animals.component';
+import { Sinhalalevel3Component } from './grade1/sinhala/level3/sinhalalevel3/sinhalalevel3.component';
 
 
 
@@ -67,13 +68,26 @@ const appRoutes:Routes = [
   {path:'grade1',component:Grade1Component},
   {path:'home',component:HomeComponent},
   {path:'grade1/maths',component:MathsComponent},
+  {path:'grade1/sinhala',component:SinhalaComponent},
+  {path:'grade1/environment',component:EnvironmentComponent},
   {path:'grade2/maths',component:MathsComponent},
+
   {path:'grade1/maths/level1',component:Level1Component},
   {path:'grade1/maths/level2',component:Level2Component},
   {path:'grade1/maths/level3',component:Level3Component},
+
+  {path:'grade1/sinhala/level1',component:Level1Component},
+  {path:'grade1/sinhala/level2',component:Level2Component},
+  {path:'grade1/sinhala/level3',component:Level3Component},
+  
+  {path:'grade1/environment/level1',component:Level1Component},
+  {path:'grade1/environment/level2',component:Level2Component},
+  {path:'grade1/environment/level3',component:Level3Component},
+  
   {path:'grade2/maths/level1',component:Level1Component},
   {path:'grade2/maths/level2',component:Level2Component},
-  {path:'grade3/maths/level3',component:Level3Component},
+  {path:'grade2/maths/level3',component:Level3Component},
+
   {path:'grade1/maths/level1/counting',component:Counting1Component},
   {path:'grade1/maths/level1/countingconcepts',component:Countingconcepts1Component},
   {path:'grade1/maths/level1/additions',component:Additions1Component },
@@ -107,6 +121,7 @@ const appRoutes:Routes = [
   {path:'grade1/maths/level3/volume',component:Volume3Component },
   {path:'grade1/maths/level3/shapes',component:Shapes3Component},
 
+  {path:'grade1/maths/level3/shapes',component:Shapes3Component},
 
 ]
 @NgModule({
@@ -158,7 +173,7 @@ const appRoutes:Routes = [
     Time3Component,
     Volume3Component,
     Shapes3Component,
-    AnimalsComponent,
+    Sinhalalevel3Component,
   
   ],
   imports: [
