@@ -41,11 +41,13 @@
   
   .button3:hover span {
     padding-right: 25px;
+    background-color:white;
   }
   
   .button3:hover span:after {
     opacity: 1;
     right: 0;
+    background-color:white;
   }
   
   .center {

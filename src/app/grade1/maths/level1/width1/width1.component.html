@@ -1,86 +1,30 @@
+<body style="height:40em; 
+background-size:cover; 
+width:100%;
+background-image:url(/assets/images/lengtback.jpg);
+background-position:50% 50%;
+margin-top:-50px;">
 
-<html>
-    <!-- <body style="height:40em; 
-    background-size:cover; 
-    width:100%;
-    background-image:url(/assets/images/sweetarea.jpg);
-    background-position:50% 50%;
-    margin-top:-50px;
-    opacity: initial;"> -->
-    
-    <form name="f1">
-    
-    <div id="block" style="position: absolute; top:50px; left: 100px;">
-    <!-- image boxes -->
-
-    <div id="box1" style="position:absolute; top:80px; left:20px; width:300px; height:300px; border:solid;border-width:20px;background-color: aliceblue;" ></div>
-    <img  name="clipa"  src="/assets/images/ice1.gif" style="position:absolute;border-style: dotted; top:110px; left:60px;width:40px" onClick="testlengthgame1();" >
-    <img  name="clipb" src="/assets/images/ice1.gif" style="position:absolute;border-style: dotted; top:180px; left:60px;width:85px"  onClick="testlengthgame2();">
-    <img name="clip1" src="/assets/images/blank.png" style="position:absolute; top:100px; left:70px;">
-    <img name="clip2" src="/assets/images/blank.png" style="position:absolute; top:150px; left:70px;">
-
-    <div id="box5" style="position:absolute; top:80px; left:420px; width:300px; height:300px; border:solid;border-width:20px;background-color: aliceblue;" ></div>
-    <img  name="clipc"  src="/assets/images/ice2.gif" style="position:absolute;border-style: dotted; top:110px; left:460px;width:40px" onClick="testlengthgame3();" >
-    <img  name="clipd" src="/assets/images/ice2.gif" style="position:absolute;border-style: dotted; top:180px; left:460px;width:85px"  onClick="testlengthgame4();">
-    <img name="clip3" src="/assets/images/blank.png" style="position:absolute; top:100px; left:430px;">
-    <img name="clip4" src="/assets/images/blank.png" style="position:absolute; top:150px; left:430px;">
-    
-    <div id="box9" style="position:absolute; top:80px; left:820px; width:300px; height:300px; border:solid;border-width:20px;background-color: aliceblue;" ></div>
-    <img  name="clipe"  src="/assets/images/ice1.gif" style="position:absolute;border-style: dotted; top:110px; left:860px;width:40px" onClick="testlengthgame5();" >
-    <img  name="clipf" src="/assets/images/ice2.gif" style="position:absolute;border-style: dotted; top:180px; left:860px;width:85px"  onClick="testlengthgame6();">
-    <img name="clip5" src="/assets/images/blank.png" style="position:absolute; top:100px; left:430px;">
-    <img name="clip6" src="/assets/images/blank.png" style="position:absolute; top:150px; left:430px;">
-    
-    
-    <!-- when selected answer--incorrect/correct image message -->
-    <div id="box11" style="position:absolute;margin-top:460px; left:90px;width:200px; height:180px" >
-    <img name="clip7" style="position:absolute; width:120px;height:120px" src="/assets/images/blank.png" >
+<div id="block" style="position:absolute;top:40px;left:150px;">
+<!-- page1 -->
+<a href="/grade1/maths/level1/length" style ='margin-top:70px;margin-left:-60px;color:green;height:50px ;' class="previous button1">&laquo; Previous</a>
+<a href="/grade1/maths/level1/volume" style ='margin-top:70px;margin-left:900px;color:green;height:50px ;' class="previous button1"> Next &raquo;</a>
+<form name="f1">
+    <!-- tall image -->
+    <div id="box23" style="position:absolute; top:100px; left:300px;width:300px; height:300px;" >
+    <img  name="clip1" style="height:300px;width:300px;margin-top:140px" src="/assets/images/elephant.gif" onClick="testlength5();">
     </div>
-
-    <div id="box3" style="position:absolute;margin-top:460px; left:490px;width:200px; height:180px" >
-    <img name="clip8" style="position:absolute; width:120px;height:120px" src="/assets/images/blank.png" >
+    <!-- short image -->
+    <div id="box24" style="position:absolute; top:100px; left:600px; width:250px; height:200px;" >
+    <img  name="clip1" style ="margin-top:220px;height:200px"src="/assets/images/bird.gif" onClick="testlength6();">
     </div>
-    <div id="box4" style="position:absolute;margin-top:460px; left:890px;width:200px; height:180px" >
-    <img name="clip9" style="position:absolute; width:120px;height:120px" src="/assets/images/blank.png" >
-    </div>
-</div>
-  
-    <!-- when selected answer--incorrect/correct text message -->
     
-    <div id="box13" style="position:absolute; margin-top:400px; left:150px;width:150px; height:50px" >
-    <input type="text" name="txt1" value=""readonly="true" style= "width:190px; height:50px; text-align:center; font-weight:bold; color:blue; font-size:30px">
-    </div>
-    <div id="box14" style="position:absolute; margin-top:400px; left:550px;width:150px; height:50px" >
-    <input type="text" name="txt2" value=""readonly="true" style= "width:190px; height:50px; text-align:center; font-weight:bold; color:blue; font-size:30px">
-    </div>
-    <div id="box17" style="position:absolute; margin-top:400px; left:950px;width:150px; height:50px" >
-    <input type="text" name="txt3" value=""readonly="true" style= "width:190px; height:50px; text-align:center; font-weight:bold; color:blue; font-size:30px">
-    </div>
-
-
-    
-    <!-- <form name="f2" action="index2.html">
-    <div id="box15" style="position:absolute; top:500; left:150; 
-    width:200; height:35    " >
-    <input type="submit" name="but1" value="නැවතත්" 
-    style=" width:100; height:35;    color:blue; font-size:20" >
-    
-    </div> -->
-    <!-- </form>
-    <form name="f3" action="index.html">
-    <div id="box16" style="position:absolute; top:500; left:40; 
-    width:100; height:35    " > 
-    <input type="submit" name="but2" value="ආපසු" 
-    style=" width:100; height:35;    color:blue; font-size:20" >
-    </div>
-    </form>
-    <form name="f4" action="index2.html">
-    <div id="box16" style="position:absolute; top:500; left:260; 
-    width:100; height:35    " >
-    <input type="submit" name="but3" value="ඉදිරියට" 
-    style=" width:100; height:35;    color:blue; font-size:20" >
+    <div id="bo27" style="position:absolute; top:520px; left:300px; width:200px; height:50px">
+    <input type="text" name="txt5" value="" readonly="true" style= "width:200px; height:50px; text-align:center; font-weight:bold;background-color:transparent;border-color:transparent;color:black; font-size:30px">
     </div> 
-    </form>-->
-    
- 
-   
+
+    <div id="box28" style="position:absolute; top:520px; left:600px;width:200px; height:50px" >
+    <input type="text" name="txt6" value="" readonly="true" style= "width:200px; height:50px; text-align:center; font-weight:bold;background-color:transparent;border-color:transparent; color:black; font-size:30px">
+    </div>
+</form>
+</div>
