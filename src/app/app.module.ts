@@ -59,7 +59,7 @@ import { Width3Component } from './grade1/maths/level3/width3/width3.component';
 import { Time3Component } from './grade1/maths/level3/time3/time3.component';
 import { Volume3Component } from './grade1/maths/level3/volume3/volume3.component';
 import { Shapes3Component } from './grade1/maths/level3/shapes3/shapes3.component';
-import { Sinhalalevel3Component } from './grade1/sinhala/level3/sinhalalevel3/sinhalalevel3.component';
+
 
 
 
@@ -173,7 +173,6 @@ const appRoutes:Routes = [
     Time3Component,
     Volume3Component,
     Shapes3Component,
-    Sinhalalevel3Component,
   
   ],
   imports: [
