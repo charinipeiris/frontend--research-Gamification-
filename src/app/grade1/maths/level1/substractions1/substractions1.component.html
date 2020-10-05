@@ -1,10 +1,30 @@
-<body style="height:40em; 
-background-size:cover; 
-width:100%;
-background-image:url(/assets/images/lengtback.jpg);
-background-position:50% 50%;
-margin-top:-50px;">
+<body class="back-image">
+  <h1 style="margin-top:35px; margin-left: -150px; margin-bottom: 50px;">ooooo</h1>
+<!-- page 01 -->
+  <div class = "center" id="Page1" data-value="0" > 
+    <a href="/grade1/maths/level1/volume" style ='margin-top:-520px;margin-left:0px;color:green;height:50px;width:200px' class="previous button1">&laquo; Previous</a>
+    <a href="#" style ='margin-top:-520px;margin-left:865px;color:green;height:50px ;' onclick="return show('Page2','Page1','Page3');" class="previous button1"> Next &raquo;</a>
+  </div>
 
-<div id="block" style="position:absolute;top:40px;left:150px;">
-  <a href="/grade1/maths/level1/volume" style ='margin-top:70px;margin-left:-60px;color:green;height:50px ;' class="previous button1">&laquo; Previous</a>
-</div>
+
+<!-- page 02 -->
+  <div class= "center1" style="display:none" id="Page2" data-value="1">
+  
+      <h1>Fun2</h1>
+      <a href="#" style="margin-top:120px;margin-left:120px ;" class="button3" onclick="return show('Page1','Page2','Page3');">ආපසු</a>
+      <a href="#" style ='margin-top:-520px;margin-left:865px;color:green;height:50px ;' onclick="return show('Page3','Page2','Page1');" class="previous button1"> Next &raquo;</a>
+ 
+  </div>
+
+  <!-- page 03 -->
+
+  <div class= "center1" style="display:none" id="Page3">
+    
+    <h1>Fun3</h1>
+
+  </div>
+
+</body>
+
+
+

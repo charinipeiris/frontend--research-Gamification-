@@ -1,14 +1,4 @@
 @import "~bootstrap/dist/css/bootstrap.css";
- .image{
-    height:45em; 
-    background-size:cover; 
-    width:100%;
-    /* background-image:url(/assets/images/sweet-shop.png); */
-    background-color: azure;
-    background-position:50% 50%;
-    margin-top:-50px;
-   
-  }
   .button1 {
     border-radius: 12px;
     background-color:#ffffff;
