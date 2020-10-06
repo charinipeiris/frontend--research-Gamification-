@@ -304,3 +304,31 @@ $(document).ready(function(){
            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
        );
    }
+
+
+ // Javascript to enable "next" button after the video ends
+ // -------------------------------------------------------------------------
+
+//var element = document.getElementById('#myVideo_shapes');
+
+//element.onended = function() {
+ //    document.getElementById('#playbtn_shapes').disabled = false;
+// };
+// -------------------------------------------------------------------------
+//$("#myVideo_shapes").click(function(){
+     //     $("#playbtn_shapes")[0].src += "?autoplay=1";
+      //});
+
+ //  $(document).ready(function(){
+ //      $("myVideo_shapes").on("ended", function (e) {
+ //             alert("The video has ended");
+  //            //$('#playbtn_shapes').prop('disabled', false);
+//   });
+//});
+// -------------------------------------------------------------------------
+
+//document.getElementById('#myVideo_shapes').addEventListener('ended',myHandler,false);
+//function myHandler(e) {
+ //   $('#playbtn_shapes').prop('disabled',false);
+//}
+
