@@ -1,109 +1,72 @@
 
+<html>
+    <head></head>
     <body class="back-image">
-        <a href="/grade1/maths/level1" style ='margin-top:70px;margin-left:50px;color:green;height:50px ;' class="previous button1">&laquo; Previous</a>
-        <a href="/grade1/maths/level1/countingconcepts" style ='margin-top:70px;margin-left:950px;color:green;height:50px ;' class="previous button1"> Next &raquo;</a>
-        <h1 style =  "margin-left:10em; margin-top:-40px;background-color:white;width:500px;padding:5px;border-radius:15px ;"><b>හැඩතල ඉගෙනගනිමු</b></h1>
-        <br>
-<!-- page 01 -->
-        <div class = "center" id="Page1" data-value="0"> 
-                <h1 style="margin-top: -5em; margin-left: -150px; margin-bottom: 50px;">හඳුන්වාදීමේ වීඩියෝව</h1>          
-                <a href="#" style="margin-left:-350px;" class="button4" onclick="return show('Page2','Page1','Page3');">සෙල්ලම් කරන්න</a>
-        </div>
 
-<!-- page cancelled -->
-        <!-- <div class = "center" id="Page2" data-value="0">           
-                <img src="/assets/images/triangle.png" class = "img1" onClick="play_tri()">
-                <img src="/assets/images/square.png" class = "img2" onClick="play_sq()"> 
-                <img src="/assets/images/rect.png" class = "img3" onClick="play_rec()"> 
-                <img src="/assets/images/circle.png" class = "img4" onClick="play_c()"> 
-                <br>
-                <a href="#" style="margin-left:400px;" class="button4" onclick="return show('Page3','Page1','Page2');">සෙල්ලම් කරන්න</a>
-        </div> -->
+        <h1 style =  "margin-left:14em; margin-top: 30px; margin-bottom: 20px;"><b>හැඩතල ඉගෙනගනිමු</b></h1>
+        <!-- page 01 -->
+                <div class = "center" id="Page1" data-value="0"> 
+                        <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                                <iframe id = "myVideo_shapes" class="embed-responsive-item" src="https://drive.google.com/file/d/1T3rOR2GD4k8gcITFrD_QFtVXK51c0gQT/preview" width="640" height="480"
+                                  allowfullscreen></iframe>
+                        </div>   
+                        <a style="margin-left:700px;" id ="playbtn_shapes" class="button1" onclick="return show_shapesL1('Page2','Page1');">සෙල්ලම් කරන්න</a>
+                </div>
 
-<!-- page 02 -->
-        <div class= "center1" style="display:none" id="Page2" data-value="1">
-            <!--game background image-->
-            <img src = "/assets/images/shape_game.jpg" style="position:relative; height: 554px; width: auto; margin-right:300px; z-index:1;">
-
-            <!-- game objects -circle -->
-            <img src = "/assets/images/shape_sun.png" class="shape-image" id="img2-1" style="position: relative; z-index: 2;margin-top: -26.5em;height:88px; margin-left:-61em">
-            <img src = "/assets/images/shape_tree.png" class="shape-image" id="img3-1" style="position: relative; z-index: 2;margin-top: 6em;height:68px; margin-left:440px">
-            <img src = "/assets/images/shape_tire.png" class="shape-image" id="img4-1" style="position: relative; z-index: 2;margin-top: 10em;height:73px; margin-left:-582px">
-            <img src = "/assets/images/shape_tire.png" class="shape-image" id="img5-1" style="position: relative; z-index: 2;margin-top: 11.6em;height:50px; margin-left:57px">
-        
-            <!-- game objects -triangle -->
-            <img src = "/assets/images/shape_triangle.png" class="shape-image" id="img6-1" style="position: relative; z-index: 2;margin-top: -14.9em;height:74px; width: 175px;margin-left:253px">
-            <img src = "/assets/images/shape_triangle_1.png" class="shape-image" id="img7-1" style="position: relative; z-index: 2;margin-top: -11.5em;height:119px; margin-left:-41.8em">
-
-            <!-- game objects -square -->
-            <img src = "/assets/images/shape_square.png" class="shape-image" id="img8-1" style="position: relative; z-index: 2;margin-top: -4.2em;height:61px; margin-left:472px">
-            <img src = "/assets/images/shape_square_1.png" class="shape-image" id="img9-1" style="position: relative; z-index: 2;margin-top: 1.7em;height:38px; margin-left:-32.9em">
-           
-            <!-- game objects -rectangle -->
-            <img src = "/assets/images/shape_rect.png" class="shape-image" id="img10-1" style="position: relative; z-index: 2;margin-top: -0.2em;height:70px; margin-left:219px">
-            <!-- <img src = "/assets/images/shape_square_1.png" class="shape-image" id="img11" style="position: relative; z-index: 2;margin-top: 1.7em;height:38px; margin-left:-32.9em"> -->
-           
-            <!--  if answer correct -->
-            <img src = "/assets/images/yay_bunny.gif" id="popUp_right" style="display: none;position: absolute; z-index:2;height:180px; margin-top: 11em; margin-left:450px">
-            <audio id="kids_say_yay" src="assets/audio/kids_yay.mp3" type="audio/mp3" control>Your browser does not support the audio element. </audio>
-
-            <!--  if answer wrong -->
-            <img src = "/assets/images/w.gif" id="popUp_wrong" style="display: none;position: absolute; z-index:2;height:180px; margin-top: 11em; margin-left:450px">
-            <audio id="kids_say_ohno" src="assets/audio/kids_say_ohno.mov" type="audio/mov" control>Your browser does not support the audio element. </audio>
-
-            <!-- question audio -->
-            <img src = "/assets/images/shape_sound2.gif" id="question-circle" style="position: absolute; z-index:2;height:140px; margin-top: 1em; margin-left:600px">
-            <audio id="quest_audio1" src="assets/audio/shapes_audio_circle.m4a" type="audio/m4a" control>Your browser does not support the audio element. </audio>
-            <img src = "/assets/images/click.gif" style="position: absolute; z-index:2;height:60px; margin-top: 3.5em; margin-left:500px">
-
-            <!-- <a href="#"  class="button3" onclick="return show('Page4','Page2','Page1');">next</a> -->
-            <a href="#"  class="button3" onclick="return show('Page1','Page2','Page3');">ආපසු</a>
-            <a href="#"  class="button2" onclick="return show('Page3','Page2','Page1');">ඊලග</a>
-
-            <h2 style="margin-top: -13.5em; margin-left: 850px;z-index: 2">සවන් දෙන්න <span style="font-weight: bold;">"වෘත්තය"</span></h2>
-        </div>
+          <!-- page 02 -->       
+         <div class= "center1" style="display:none" id="Page2" data-value="1">
 
 
-        <!-- page 03 -->
-        <div class= "center1" style="display:none" id="Page3">
-            <!--game background image-->
-            <img src = "/assets/images/shape_game.jpg" style="position:relative; height: 554px; width: auto; margin-right:300px; z-index:1;">
-
-            <!-- game objects -circle -->
-            <img src = "/assets/images/shape_sun.png" class="shape-image" id="img2-2" style="position: relative; z-index: 2;margin-top: -26.5em;height:88px; margin-left:-61em">
-            <img src = "/assets/images/shape_tree.png" class="shape-image" id="img3-2" style="position: relative; z-index: 2;margin-top: 6em;height:68px; margin-left:440px">
-            <img src = "/assets/images/shape_tire.png" class="shape-image" id="img4-2" style="position: relative; z-index: 2;margin-top: 10em;height:73px; margin-left:-582px">
-            <img src = "/assets/images/shape_tire.png" class="shape-image" id="img5-2" style="position: relative; z-index: 2;margin-top: 11.6em;height:50px; margin-left:57px">
-        
-            <!-- game objects -triangle -->
-            <img src = "/assets/images/shape_triangle.png" class="shape-image" id="img6-2" style="position: relative; z-index: 2;margin-top: -14.9em;height:74px; width: 175px;margin-left:253px">
-            <img src = "/assets/images/shape_triangle_1.png" class="shape-image" id="img7-2" style="position: relative; z-index: 2;margin-top: -11.5em;height:119px; margin-left:-41.8em">
-           
-            <!-- game objects -square -->           
-            <img src = "/assets/images/shape_square.png" class="shape-image" id="img8-2" style="position: relative; z-index: 2;margin-top: -4.2em;height:61px; margin-left:472px">
-            <img src = "/assets/images/shape_square_1.png" class="shape-image" id="img9-2" style="position: relative; z-index: 2;margin-top: 1.7em;height:38px; margin-left:-32.9em">
+    
+            <form name="f1">
             
-            <!-- game objects -rectangle -->
-            <img src = "/assets/images/shape_rect.png" class="shape-image" id="img10-2" style="position: relative; z-index: 2;margin-top: -0.2em;height:70px; margin-left:219px">
-            <!-- <img src = "/assets/images/shape_square_1.png" class="shape-image" id="img11" style="position: relative; z-index: 2;margin-top: 1.7em;height:38px; margin-left:-32.9em"> -->
-           
-            <!--  if answer correct -->
-            <img src = "/assets/images/yay_bunny.gif" id="popUp_right1" style="display: none;position: fixed; z-index:2;height:180px;  margin-top: 11em; margin-left:450px">
-            <audio id="kids_say_yay" src="assets/audio/kids_yay.mp3" type="audio/mp3" control>Your browser does not support the audio element. </audio>
+            <h3 style ="margin-top: 20px; margin-left: 30px;">වම් පසින් ඇති හැඩතලයට සමාන හැඩය සහිත <br> රූපය දකුණු පස ඇති රූප දෙකෙන් තෝරා click කරන්න.</h3>
+            <img src = "/assets/images/click.gif" style="position: absolute; height: 70px; margin-top: -75px; margin-left: 600px;">
+            <img src = "/assets/images/shape_sound2.gif" id="question-shapes" style="position: absolute; height:140px; margin-top: -95px; margin-left:700px">
+            <audio id="quest_audio" src="assets/audio/shapesL1_quest.m4a" type="audio/m4a" control>Your browser does not support the audio element. </audio>
+                <fieldset style ="margin-left: 30px; margin-top: 30px;">
+                <img src="/assets/images/triangle.png" style="border-style:solid; border-color:rgb(140, 179, 102); background:#cfebb9; border-radius: 15px; height: 100px; width: 100px; margin-left: 130px; margin-right: 350px; padding: 8px;">
+                <img name="clip1" src="/assets/images/blank.jpeg" style="height:80px; width:80px;border:solid thin">
+                <img name="rw1" src="/assets/images/blank.jpeg" style="height:80px; width:150px; ">
+                <img name="brown" src="/assets/images/pizza.png" class="imagex" style="margin-right:30px;" onclick="test1_shapes()">
+                <img name="red" src="/assets/images/clock.png" class="imagex" onclick="test2_shapes()"> 
 
-            <!--  if answer wrong -->
-            <img src = "/assets/images/w.gif" id="popUp_wrong1" style="display: none;position: fixed; z-index:2;height:180px;  margin-top: 11em; margin-left:450px">
-            <audio id="kids_say_ohno" src="assets/audio/kids_say_ohno.mov" type="audio/mov" control>Your browser does not support the audio element. </audio>
+                </fieldset>
 
-            <!-- question audio -->
-            <img src = "/assets/images/shape_sound2.gif" id="question-triangle" style="position: absolute; z-index:2;height:140px; margin-top: 1em; margin-left:600px">
-            <audio id="quest_audio2" src="assets/audio/shapes_audio_triangle.m4a" type="audio/m4a" control>Your browser does not support the audio element. </audio>
-            <img src = "/assets/images/click.gif" style="position: absolute; z-index:2;height:60px; margin-top: 3.5em; margin-left:500px">
+            <br>
+                <fieldset style ="margin-left: 30px; margin-top: 10px;">
+                <img src="/assets/images/shape_square_1.png" style="border-style:solid; border-color:rgb(83, 107, 173); background:#acaddd; border-radius: 15px; height: 100px; width: 100px; margin-left: 130px; margin-right: 350px; padding: 15px;">
+                <img name="clip2" src="/assets/images/blank.jpeg" style="height:80px; width:80px;border:solid thin">
+                <img name="rw2" src="/assets/images/blank.jpeg" style="height:80px; width:150px; ">
+                <img name="rect" src="/assets/images/book.png"  class="imagex" style="margin-right:30px;" onclick="test3_shapes()">
+                <img name="sqr" src="/assets/images/watermelon.png"  class="imagex" onclick="test4_shapes()"> 
+                </fieldset>
+            <br>
 
-            <a href="#"  class="button2" onclick="return show('Page1','Page3','Page2');">ආපසු</a>
-            <h2 style="margin-top: -13.5em; margin-left: 850px;z-index: 2">සවන් දෙන්න <span style="font-weight: bold;">"ත්‍රිකෝණය"</span></h2>
-
+                <fieldset style ="margin-left: 30px; margin-top: 10px;">
+                <img src="/assets/images/circle.png" style="border-style:solid; border-color:rgb(167, 127, 69); background:#ddc4ac; border-radius: 15px; height: 100px; width: 100px; margin-left: 130px; margin-right: 350px; padding: 15px;">
+                <img name="clip3" src="/assets/images/blank.jpeg" style="height:80px; width:80px;border:solid thin">
+                <img name="rw3" src="/assets/images/blank.jpeg" style="height:80px; width:150px; ">
+                <img name="leaf1" src="/assets/images/bag.png" class="imagex" style="margin-right:30px;" onclick="test5_shapes()">
+                <img name="leaf2" src="/assets/images/ball_shapes.png" class="imagex" onclick="test6_shapes()"> 
+                </fieldset>
+            <br>
+            
+            </form>
             </div>
+            <!-- <form>
+            <input type="submit" value="නැවත" style="position:absolute;top:510px;left:60px;width:100px;height:35px;font-size:20;color:blue" ></form> -->
+            <!-- <div id="back_box" style="position:absolute; top: 0px; left: 0px; background: rgb(117,179,240); width: 100%; height: 50px;"><span style="font-weight: bold; font-size: 28pt; margin-left: 10px;">රටාවේ ඊළඟට ගැළපෙන රූපය තෝරන්න.</span></div> -->
+            <!-- <div id="back_box2" style="position:absolute; bottom: 0px; left: 0px; background: rgb(117,179,240); width: 100%; height: 35px; padding-top: 15px; text-align: right;"><span style="font-weight: bold; font-size: 12pt; margin-right: 10px;">ගණිතය - 1 ශ්‍රේණිය</span></div> -->
         
-    </body>
+            <!-- <a href="#"  class="button3" onclick="return show('Page1','Page2');">ආපසු</a> -->
 
+        
+        
+        
+        
+        
+        
+
+</body>
+</html> 
