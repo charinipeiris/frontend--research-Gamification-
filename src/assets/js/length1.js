@@ -66,7 +66,7 @@ function testlgame(){
     document.f1.clip4.src="/assets/images/blank.png";
     //document.f1.clip3.src="/assets/images/wow.gif";
     document.f1.clip8.src="/assets/images/Tress.gif";
-    document.getElementById("t1").style.pointerEvents ="none";
+    document.getElementById("tree2").style.pointerEvents ="none";
     }
     
     function testlgame4(){
@@ -74,7 +74,7 @@ function testlgame(){
     document.f1.clip3.src="/assets/images/blank.png"; 
    // document.f1.clip4. src="/assets/images/line1.gif";
     document.f1.clip8.src="/assets/images/w.gif";
-    document.getElementById("t2").style.pointerEvents ="none";
+    document.getElementById("tree1").style.pointerEvents ="none";
     }
     
     function testlgame5(){
@@ -82,7 +82,7 @@ function testlgame(){
     document.f1.clip6.src="/assets/images/blank.png";
     // document.f1.clip5. src="/assets/images/line1.gif";
     document.f1.clip9.src="/assets/images/w.gif";
-    document.getElementById("p1").style.pointerEvents ="none";
+    document.getElementById("pen2").style.pointerEvents ="none";
     }
     
     function testlgame6(){
@@ -90,5 +90,5 @@ function testlgame(){
     document.f1.clip5.src="/assets/images/blank.png"; 
     //document.f1.clip6. src="/assets/images/wow.gif";
     document.f1.clip9.src="/assets/images/Tress.gif";
-    document.getElementById("p2").style.pointerEvents ="none";
+    document.getElementById("pen1").style.pointerEvents ="none";
     }
