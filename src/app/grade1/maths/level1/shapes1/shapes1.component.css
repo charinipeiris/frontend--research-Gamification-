@@ -60,7 +60,6 @@
     transition: all 0.5s;
     cursor: pointer;
     position: absolute; 
-    z-index:2;
     margin-top: -10px; 
     margin-left:850px;
   }
@@ -77,8 +76,8 @@
     cursor: pointer;
     position: absolute; 
     z-index:2;
-    margin-top: -10px; 
-    margin-left:580px;
+    margin-top: 350px; 
+    margin-left:460px;
   }
 
   /* The Modal (background) */
@@ -97,7 +96,8 @@
   
   /* Modal Content/Box */
   .modal-content {
-    background-color: #d2ecb5;
+    /* background-color: #d2ecb5; */
+    background-color: #ffffff;
     margin: 10% auto; /* 15% from the top and centered */
     padding: 20px;
     border: 10px solid rgb(73, 160, 52);
@@ -121,17 +121,18 @@
     text-decoration: none;
     cursor: pointer;
   }
-
-  .congrats_img{
-    width: 100px;
-    height: 100px;
-    position: absolute;
+  .coin_img{
     animation-name: example;
     animation-duration: 3s;  
     animation-fill-mode: forwards;
   }
-  @keyframes example {
-    from {top: 0px;}
-    to {top: 200px; }
-  }
 
+  @keyframes example {
+    from {top: 10px;}
+    to {top: 70px; }
+  }
+  .coin_img{
+    animation-name: example;
+    animation-duration: 3s;  
+    animation-fill-mode: forwards;
+  }
