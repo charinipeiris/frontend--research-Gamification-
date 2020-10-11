@@ -72,6 +72,7 @@ import { EnvGrade1Level2Game2Component } from './grade1/environment/env-level2/e
 import { EnvGrade1Level2Game3Component } from './grade1/environment/env-level2/env-grade1-level2-game3/env-grade1-level2-game3.component';
 import { EnvGrade1Level2Game4Component } from './grade1/environment/env-level2/env-grade1-level2-game4/env-grade1-level2-game4.component';
 import { AnimalsGameComponent } from './grade1/environment/env-level1/animals-game/animals-game.component';
+import { SchoolGameComponent } from './grade1/environment/env-level1/school-game/school-game.component';
 
 
 const appRoutes:Routes = [
@@ -133,6 +134,7 @@ const appRoutes:Routes = [
   {path:'grade1/environment/level1/game2',component:EnvGrade1Level1Game2Component},
   {path:'grade1/environment/level1/game3',component:EnvGrade1Level1Game3Component},
   {path:'grade1/environment/level1/game4',component:EnvGrade1Level1Game4Component},
+  {path:'grade1/environment/level1/schoolgame',component:SchoolGameComponent},
 
   //-----environment grade1 level2--
   {path:'grade1/environment/level2',component: EnvLevel2Component},
@@ -198,6 +200,7 @@ const appRoutes:Routes = [
     EnvGrade1Level2Game3Component,
     EnvGrade1Level2Game4Component,
     AnimalsGameComponent,
+    SchoolGameComponent,
 
   
   ],
