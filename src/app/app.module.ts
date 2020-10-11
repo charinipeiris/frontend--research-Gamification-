@@ -59,6 +59,10 @@ import { Width3Component } from './grade1/maths/level3/width3/width3.component';
 import { Time3Component } from './grade1/maths/level3/time3/time3.component';
 import { Volume3Component } from './grade1/maths/level3/volume3/volume3.component';
 import { Shapes3Component } from './grade1/maths/level3/shapes3/shapes3.component';
+import { Sgame2Component } from './grade1/sinhala/level1/sgame2/sgame2.component';
+import { Sgame3Component } from './grade1/sinhala/level1/sgame3/sgame3.component';
+import { Sgame4Component } from './grade1/sinhala/level1/sgame4/sgame4.component';
+import { Sgame1Component } from './grade1/sinhala/level2/sgame1/sgame1.component';
 
 
 
@@ -173,6 +177,10 @@ const appRoutes:Routes = [
     Time3Component,
     Volume3Component,
     Shapes3Component,
+    Sgame2Component,
+    Sgame3Component,
+    Sgame4Component,
+    Sgame1Component,
   
   ],
   imports: [
