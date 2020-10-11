@@ -8,9 +8,9 @@ function show_sinhalaL1(Page1, Page2) {
   {
   document.f1.clip1.src="/assets/images/child_running.PNG";
   document.f1.brown.src="/assets/images/trans.svg";
-  document.f1.red.src="/assets/images/child_running.PNG";
+  document.f1.red.src="/assets/images/child_crying.PNG";
   document.f1.rw1.src="/assets/images/yay_bunny2.gif";
-  document.getElementById("runchild").style.pointerEvents = "none";
+  document.getElementById("crychild").style.pointerEvents = "none";
   document.getElementById("mark1").checked = true; //kid gave right answer 
   
   }
@@ -18,9 +18,9 @@ function show_sinhalaL1(Page1, Page2) {
   {
   document.f1.clip1.src="/assets/images/child_crying.PNG";
   document.f1.red.src="/assets/images/trans.svg";
-  document.f1.brown.src="/assets/images/child_crying.PNG";
+  document.f1.brown.src="/assets/images/child_running.PNG";
   document.f1.rw1.src="/assets/images/w.gif";
-  document.getElementById("crychild").style.pointerEvents = "none";
+  document.getElementById("runchild").style.pointerEvents = "none";
   document.getElementById("unmark1").checked = true; //kid gave wrong answer 
   }
   
@@ -28,9 +28,9 @@ function show_sinhalaL1(Page1, Page2) {
   {
   document.f1.clip2.src="/assets/images/mother-cooking.PNG";
   document.f1.rect.src="/assets/images/trans.svg";
-  document.f1.sqr.src="/assets/images/mother-cooking.PNG";
+  document.f1.sqr.src="/assets/images/mother-scolding.PNG";
   document.f1.rw2.src="/assets/images/yay_bunny2.gif";
-  document.getElementById("b2").style.pointerEvents = "none";
+  document.getElementById("blamemother").style.pointerEvents = "none";
   document.getElementById("mark2").checked = true; //kid gave right answer 
   
   }
@@ -38,9 +38,9 @@ function show_sinhalaL1(Page1, Page2) {
   {
   document.f1.clip2.src="/assets/images/mother-scolding.PNG";
   document.f1.sqr.src="/assets/images/trans.svg";
-  document.f1.rect.src="/assets/images/mother-scolding.PNG";
+  document.f1.rect.src="/assets/images/mother-cooking.PNG";
   document.f1.rw2.src="/assets/images/w.gif";
-  document.getElementById("b5").style.pointerEvents = "none";
+  document.getElementById("cookmother").style.pointerEvents = "none";
   document.getElementById("unmark2").checked = true; //kid gave wrong answer 
   }
   
@@ -48,9 +48,9 @@ function show_sinhalaL1(Page1, Page2) {
   {
   document.f1.clip3.src="/assets/images/sun.PNG";
   document.f1.leaf1.src="/assets/images/trans.svg";
-  document.f1.leaf2.src="/assets/images/sun.PNG";
+  document.f1.leaf2.src="/assets/images/moon.PNG";
   document.f1.rw3.src="/assets/images/w.gif";
-  document.getElementById("c5").style.pointerEvents = "none";
+  document.getElementById("moon").style.pointerEvents = "none";
   document.getElementById("unmark3").checked = true; //kid gave wrong answer 
   
   }
@@ -58,9 +58,9 @@ function show_sinhalaL1(Page1, Page2) {
   {
   document.f1.clip3.src="/assets/images/moon.PNG";
   document.f1.leaf2.src="/assets/images/trans.svg";
-  document.f1.leaf1.src="/assets/images/moon.PNG";
+  document.f1.leaf1.src="/assets/images/sun.PNG";
   document.f1.rw3.src="/assets/images/yay_bunny2.gif";
-  document.getElementById("c10").style.pointerEvents = "none";  
+  document.getElementById("sun").style.pointerEvents = "none";  
   document.getElementById("mark3").checked = true; //kid gave right answer 
   }
   

@@ -13,7 +13,7 @@ export class SinhalaGrade1Level1Game1Component implements OnInit {
 }
 
 markstot_sinhala1(){
-var totalm = 0;
+var total1 = 0;
 
 let element1 = <HTMLInputElement> document.getElementById("mark1");  
 let element2 = <HTMLInputElement> document.getElementById("mark2");  
@@ -23,32 +23,32 @@ let element4 = <HTMLInputElement> document.getElementById("unmark1");
 let element5 = <HTMLInputElement> document.getElementById("unmark2");  
 let element6 = <HTMLInputElement> document.getElementById("unmark3");  
 
-if  (element1.checked ){
-  totalm = totalm + 1;
+if (element1.checked ){
+  total1 = total1 + 1;
  }
 else if ((!element1.checked) && (!element4.checked)){
   // document.getElementById('alert1').style.visibility = "visible";
 }
 
 if (element2.checked)
-    totalm = totalm + 1;
+    total1 = total1 + 1;
 
 else if  ((!element2.checked) && (!element5.checked)){
   // document.getElementById('alert2').style.visibility = "visible";
 
 }
 if (element3.checked)
-    totalm = totalm + 1;
+    total1 = total1 + 1;
 
 else if  ((!element3.checked) && (!element6.checked)){
   // document.getElementById('alert3').style.visibility = "visible";
 }
 
-console.log(totalm);
+console.log(total1);
 var chk = document.querySelectorAll('input[type="checkbox"]:checked').length;
 if (chk==3){
  
-  if (totalm == 3){
+  if (total1 == 3){
 var modal = document.getElementById("myModal");
 var subbtn = document.getElementById("submit");
 modal.style.display = "block";
@@ -67,7 +67,7 @@ setTimeout(function(){
 
 
 }
-else if (totalm == 2){
+else if (total1 == 2){
 var modal = document.getElementById("myModal");
 modal.style.display = "block";
 setTimeout(function(){
@@ -84,7 +84,7 @@ setTimeout(function(){
   document.getElementById('coin3').style.opacity ="0.3";
 }
 
-else if(totalm == 1){
+else if(total1 == 1){
 var modal = document.getElementById("myModal");
 modal.style.display = "block";
   setTimeout(function(){
@@ -103,7 +103,7 @@ modal.style.display = "block";
     
   
 }
-else if(totalm == 0){
+else if(total1 == 0){
   var modal = document.getElementById("myModal");
   modal.style.display = "block";
     setTimeout(function(){
