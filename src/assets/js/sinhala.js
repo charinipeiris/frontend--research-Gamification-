@@ -26,9 +26,9 @@ function show_sinhalaL1(Page1, Page2) {
   
   function test3_sinhala()
   {
-  document.f1.clip2.src="/assets/images/2.jpg";
+  document.f1.clip2.src="/assets/images/mother-cooking.PNG";
   document.f1.rect.src="/assets/images/trans.svg";
-  document.f1.sqr.src="/assets/images/2.jpg";
+  document.f1.sqr.src="/assets/images/mother-cooking.PNG";
   document.f1.rw2.src="/assets/images/yay_bunny2.gif";
   document.getElementById("b2").style.pointerEvents = "none";
   document.getElementById("mark2").checked = true; //kid gave right answer 
@@ -36,9 +36,9 @@ function show_sinhalaL1(Page1, Page2) {
   }
   function test4_sinhala()
   {
-  document.f1.clip2.src="/assets/images/5.png";
+  document.f1.clip2.src="/assets/images/mother-scolding.PNG";
   document.f1.sqr.src="/assets/images/trans.svg";
-  document.f1.rect.src="/assets/images/5.png";
+  document.f1.rect.src="/assets/images/mother-scolding.PNG";
   document.f1.rw2.src="/assets/images/w.gif";
   document.getElementById("b5").style.pointerEvents = "none";
   document.getElementById("unmark2").checked = true; //kid gave wrong answer 
@@ -46,9 +46,9 @@ function show_sinhalaL1(Page1, Page2) {
   
   function test5_sinhala()
   {
-  document.f1.clip3.src="/assets/images/5.png";
+  document.f1.clip3.src="/assets/images/sun.PNG";
   document.f1.leaf1.src="/assets/images/trans.svg";
-  document.f1.leaf2.src="/assets/images/5.png";
+  document.f1.leaf2.src="/assets/images/sun.PNG";
   document.f1.rw3.src="/assets/images/w.gif";
   document.getElementById("c5").style.pointerEvents = "none";
   document.getElementById("unmark3").checked = true; //kid gave wrong answer 
@@ -56,9 +56,9 @@ function show_sinhalaL1(Page1, Page2) {
   }
   function test6_sinhala()
   {
-  document.f1.clip3.src="/assets/images/10.png";
+  document.f1.clip3.src="/assets/images/moon.PNG";
   document.f1.leaf2.src="/assets/images/trans.svg";
-  document.f1.leaf1.src="/assets/images/10.png";
+  document.f1.leaf1.src="/assets/images/moon.PNG";
   document.f1.rw3.src="/assets/images/yay_bunny2.gif";
   document.getElementById("c10").style.pointerEvents = "none";  
   document.getElementById("mark3").checked = true; //kid gave right answer 
