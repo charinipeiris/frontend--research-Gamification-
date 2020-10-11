@@ -11,15 +11,11 @@ import * as $ from "jquery";
 })
 export class Shapes1Component implements OnInit {
    totalmarks: any;
-  constructor() { 
-    
+  constructor() {  
   }
-
 
   ngOnInit(){   
    
-  
-  
 }
 markstot(){
 var total = 0;

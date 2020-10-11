@@ -28,14 +28,12 @@ import { Level1Component } from './grade1/maths/level1/level1.component';
 import { Level2Component } from './grade1/maths/level2/level2.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
-import { Additions1Component } from './grade1/maths/level1/additions1/additions1.component';
 import { Countingconcepts1Component } from './grade1/maths/level1/countingconcepts1/countingconcepts1.component';
 import { Counting1Component } from './grade1/maths/level1/counting1/counting1.component';
 import { Substractions1Component } from './grade1/maths/level1/substractions1/substractions1.component';
 import { Money1Component } from './grade1/maths/level1/money1/money1.component';
 import { Length1Component } from './grade1/maths/level1/length1/length1.component';
 import { Width1Component } from './grade1/maths/level1/width1/width1.component';
-import { Time1Component } from './grade1/maths/level1/time1/time1.component';
 import { Volume1Component } from './grade1/maths/level1/volume1/volume1.component';
 import { Shapes1Component } from './grade1/maths/level1/shapes1/shapes1.component';
 import { Shapes2Component } from './grade1/maths/level2/shapes2/shapes2.component';
@@ -87,12 +85,10 @@ const appRoutes:Routes = [
   {path:'grade1/maths/level1',component:Level1Component},
   {path:'grade1/maths/level1/counting',component:Counting1Component},
   {path:'grade1/maths/level1/countingconcepts',component:Countingconcepts1Component},
-  {path:'grade1/maths/level1/additions',component:Additions1Component },
   {path:'grade1/maths/level1/substraction',component:Substractions1Component},
   {path:'grade1/maths/level1/money',component: Money1Component},
   {path:'grade1/maths/level1/length',component:Length1Component },
   {path:'grade1/maths/level1/width',component:Width1Component},
-  {path:'grade1/maths/level1/time',component:Time1Component},
   {path:'grade1/maths/level1/volume',component:Volume1Component },
   {path:'grade1/maths/level1/shapes',component:Shapes1Component},
 
@@ -162,14 +158,12 @@ const appRoutes:Routes = [
     Level2Component,
     NavbarComponent,
     HomeComponent,
-    Additions1Component,
     Countingconcepts1Component,
     Counting1Component,
     Substractions1Component,
     Money1Component,
     Length1Component,
     Width1Component,
-    Time1Component,
     Volume1Component,
     Shapes1Component,
     Shapes2Component,
