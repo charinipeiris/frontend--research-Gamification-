@@ -4,32 +4,30 @@
     <body class="back-image">
 
         <!-- page 01 -->
-        <h1 style =  "margin-left:14em; margin-top: 30px; margin-bottom: 20px;"><b>රූපයට ගැලපෙන වගන්තිය තෝරමු</b></h1>
+        <h1 style =  "margin-left:14em; margin-top: 30px; margin-bottom: 20px;"><b>කාසි ඉගෙනගනිමු</b></h1>
                 <div class = "center" id="Page1" data-value="0">
                         <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
-                                <iframe id = "myVideo_shapes" class="embed-responsive-item" src="https://drive.google.com/file/d/1T3rOR2GD4k8gcITFrD_QFtVXK51c0gQT/preview" width="640" height="480"
+                                <iframe id = "myVideo_sinhala" class="embed-responsive-item" src="https://drive.google.com/file/d/1oTb0kxWzMRnxyecLjcGkfDQsF741s8hy/preview" width="640" height="480" width="640" height="480"
                                   allowfullscreen></iframe>
                         </div>
-                        <a style="margin-left:700px;" id ="playbtn_shapes" class="button1" onclick="return show_shapesL1('Page2','Page1');">සෙල්ලම් කරන්න</a>
+                        <a style="margin-left:700px;" id ="playbtn_sinhala" class="button1" onclick="return show_sinhalaL1('Page2','Page1');">සෙල්ලම් කරන්න</a>
                 </div>
 
           <!-- page 02 -->
          <div class= "center1" style="display:none" id="Page2" data-value="1">
 
-
-
             <form name="f1">
 
-            <h3 style ="margin-top: 20px; margin-left: 30px;">වම් පසින් ඇති රූපයට අදාළ වගන්තිය <br>දකුණු පස ඇති වගන්ති දෙකෙන් තෝරා click කරන්න.</h3>
+            <h3 style ="margin-top: 20px; margin-left: 30px;">වම් පසින් ඇති අගයට සමාන අගය සහිත <br>කාසිය දකුණු පස ඇති රූප දෙකෙන් තෝරා click කරන්න.</h3>
             <h2 id="alert" style="visibility: hidden; color: red;"> සියල්ලටම පිලිතුරු සපයන්න</h2>
-            <img src = "/assets/images/click.gif" style="position: absolute; height: 70px; margin-top: -75px; margin-left: 600px;">
-            <img src = "/assets/images/shape_sound2.gif" id="question-shapes" style="position: absolute; height:140px; margin-top: -95px; margin-left:700px">
-            <audio id="quest_audio" src="assets/audio/shapesL1_quest.m4a" type="audio/m4a" control>Your browser does not support the audio element.</audio>
+            <img src = "/assets/images/click.gif" style="position: absolute; height: 70px; margin-top: -75px; margin-left: 800px;">
+            <img src = "/assets/images/shape_sound2.gif" id="question-sinhala" style="position: absolute; height:140px; margin-top: -95px; margin-left:900px">
+            <audio id="quest_audio" src="assets/audio/sinhalaL1_quest.m4a" type="audio/m4a" control>Your browser does not support the audio element. </audio>
                 <fieldset style ="margin-left: 30px; margin-top: 30px;">
-                <img src="/assets/images/running-gif.gif" style="border-style:solid; border-color:rgb(0, 0, 0); background:#ffffff; border-radius: 15px; height: 120px; width: 120px; margin-left: 100px; margin-right: 250px; padding: 8px;">
-                <img name="clip1" src="/assets/images/question_mark.png" style="height:90px; width:90px;border:solid; border-radius: 15px; margin-right:150px">
-                <img name="brown" src="/assets/images/child-running.PNG" id="run"  style="margin-right: 30px;border-style:solid; border-color:rgb(0, 0, 0); background:#ffffff; border-radius: 15px; height: 80px; width: 160px; padding: 12px;" onclick="test1_shapes()">
-                <img name="red" src="/assets/images/child-crying.PNG"  id="cry" style="border-style:solid; border-color:rgb(0, 0, 0); background:#ffffff; border-radius: 15px; height: 80px; width: 160px; padding: 12px;" onclick="test2_shapes()">
+                <img src="/assets/images/running-gif.gif" style="border-style:solid; border-color:rgb(0, 0, 0); background:#ffffff; border-radius: 15px; height: 100px; width: 100px; margin-left: 100px; margin-right: 250px; padding: 8px;">
+                <img name="clip1" src="/assets/images/question_mark.png" style="height:85px; width:85px;border:solid; border-radius: 15px; margin-right:150px">
+                <img name="brown" src="/assets/images/child_running.PNG" id="runchild"  style="margin-right: 30px;border-style:solid; border-color:rgb(0, 0, 0); background:#ffffff; border-radius: 15px; height: 85px; width: 85px; padding: 12px;" onclick="test1_sinhala()">
+                <img name="red" src="/assets/images/child_crying.PNG"  id="crychild" style="border-style:solid; border-color:rgb(0, 0, 0); background:#ffffff; border-radius: 15px; height: 85px; width: 85px; padding: 12px;" onclick="test2_sinhala()">
                 <img name="rw1" src="/assets/images/trans.svg" style="height:100px; width:100px; ">
                 <input type="checkbox" hidden name="fruit" id="mark1"/>
                 <input type="checkbox" hidden name="fruit" id="unmark1"/>
@@ -37,10 +35,10 @@
 
             <br>
                 <fieldset style ="margin-left: 30px; margin-top: 10px;">
-                <img src="/assets/images/shape_square_1.png" style="border-style:solid; border-color:rgb(0, 0, 0); background:#ffffff; border-radius: 15px; height: 120px; width: 120px; margin-left: 100px; margin-right: 250px; padding: 15px;">
-                <img name="clip2" src="/assets/images/question_mark.png" style="height:100px; width:100px;border:solid; border-radius: 12px; margin-right:150px">
-                <img name="rect" src="/assets/images/book.png"  id="book" class="imagex" style="margin-right: 30px;border-style:solid; border-color:rgb(0, 0, 0); background:#ffffff; border-radius: 15px; height: 100px; width: 100px; padding: 12px;" onclick="test3_shapes()">
-                <img name="sqr" src="/assets/images/watermelon.png"  id="watermelon" style="border-style:solid; border-color:rgb(0, 0, 0); background:#ffffff; border-radius: 12px; height: 100px; width: 100px; padding: 15px;" onclick="test4_shapes()">
+                <img src="/assets/images/m2.png" style="border-style:solid; border-color:rgb(0, 0, 0); background:#ffffff; border-radius: 15px; height: 100px; width: 100px; margin-left: 100px; margin-right: 250px; padding: 15px;">
+                <img name="clip2" src="/assets/images/question_mark.png" style="height:85px; width:85px;border:solid; border-radius: 12px; margin-right:150px">
+                <img name="rect" src="/assets/images/2.jpg"  id="b2" class="imagex" style="margin-right: 30px;border-style:solid; border-color:rgb(0, 0, 0); background:#ffffff; border-radius: 15px; height: 85px; width: 85px; padding: 12px;" onclick="test3_sinhala()">
+                <img name="sqr" src="/assets/images/5.png"  id="b5" style="border-style:solid; border-color:rgb(0, 0, 0); background:#ffffff; border-radius: 12px; height: 85px; width: 85px; padding: 15px;" onclick="test4_sinhala()">
                 <img name="rw2" src="/assets/images/trans.svg" style="height:100px; width:100px; ">
                 <input type="checkbox"  hidden name="fruit" id="mark2"/>
                 <input type="checkbox"  hidden name="fruit" id="unmark2"/>
@@ -48,10 +46,10 @@
             <br>
 
                 <fieldset style ="margin-left: 30px; margin-top: 10px;">
-                <img src="/assets/images/circle.png" style="border-style:solid; border-color:rgb(0, 0, 0); background:#ffffff; border-radius: 15px; height: 120px; width: 120px; margin-left: 100px; margin-right: 250px; padding: 13px;">
-                <img name="clip3" src="/assets/images/question_mark.png" style="height:100px; width:100px;border:solid; border-radius: 12px; margin-right:150px">
-                <img name="leaf1" src="/assets/images/bag.png" id="bag"  style="margin-right: 30px;border-style:solid; border-color:rgb(0, 0, 0); background:#ffffff; border-radius: 15px; height: 100px; width: 100px; padding: 12px;" onclick="test5_shapes()">
-                <img name="leaf2" src="/assets/images/ball_shapes.png" id="ball_shapes" style="border-style:solid; border-color:rgb(0, 0, 0); background:#ffffff; border-radius: 15px; height: 100px; width: 100px; padding: 12px;"  onclick="test6_shapes()">
+                <img src="/assets/images/m10.png" style="border-style:solid; border-color:rgb(0, 0, 0); background:#ffffff; border-radius: 15px; height: 100px; width: 100px; margin-left: 100px; margin-right: 250px; padding: 13px;">
+                <img name="clip3" src="/assets/images/question_mark.png" style="height:85px; width:85px;border:solid; border-radius: 12px; margin-right:150px">
+                <img name="leaf1" src="/assets/images/5.png" id="c5"  style="margin-right: 30px;border-style:solid; border-color:rgb(0, 0, 0); background:#ffffff; border-radius: 15px; height: 85px; width: 85px; padding: 12px;" onclick="test5_sinhala()">
+                <img name="leaf2" src="/assets/images/10.png" id="c10" style="border-style:solid; border-color:rgb(0, 0, 0); background:#ffffff; border-radius: 15px; height: 85px; width: 85px; padding: 12px;"  onclick="test6_sinhala()">
                 <img name="rw3" src="/assets/images/trans.svg" style="height:100px; width:100px; ">
                 <input type="checkbox"  hidden name="fruit" id="mark3"/>
                 <input type="checkbox"  hidden name="fruit" id="unmark3"/>
@@ -62,7 +60,7 @@
             </form>
 
 
-            <button id="submit" class="button2" style="display: block;" (click)="markstot()">ඉවරයි</button>
+        <button id="submit" class="button2" style="display: block;" (click)="markstot_sinhala1()">ඉවරයි</button> 
 
             <!-- Trigger/Open The Modal -->
             <!-- <a id="myBtn" class="button2" >Submit</a> -->
@@ -79,34 +77,12 @@
                 <img id ="coin3" src="/assets/images/win_coin.gif" class= "coin_img" style = "visibility:hidden; height: 220px; width: 550px; margin-left: 390px; position: absolute">
                 <img id ="sad_coin" src="/assets/images/sad.gif" class= "coin_img" style = "visibility:hidden; height: 220px; width: 220px; margin-left: 380px; position: absolute">
                 <h1 style="font-family:Chalkduster, fantasy; margin-left: 380px; position: absolute; color:darkcyan">Completed!!!</h1>
-                <a href="#"  class="button3" onclick="return show('Page1','Page2');">ආපසු</a>
-
+                <!-- <a href="#"  class="button3" onclick="return show('Page1','Page2');">ආපසු</a> -->
+                <a href=""  class="button3">ආපසු</a>
               </div>
             </div>
 
 
-
-
-
             </div>
-
-
-
-
-
-            <!-- <form>
-            <input type="submit" value="නැවත" style="position:absolute;top:510px;left:60px;width:100px;height:35px;font-size:20;color:blue" ></form> -->
-            <!-- <div id="back_box" style="position:absolute; top: 0px; left: 0px; background: rgb(117,179,240); width: 100%; height: 50px;"><span style="font-weight: bold; font-size: 28pt; margin-left: 10px;">රටාවේ ඊළඟට ගැළපෙන රූපය තෝරන්න.</span></div> -->
-            <!-- <div id="back_box2" style="position:absolute; bottom: 0px; left: 0px; background: rgb(117,179,240); width: 100%; height: 35px; padding-top: 15px; text-align: right;"><span style="font-weight: bold; font-size: 12pt; margin-right: 10px;">ගණිතය - 1 ශ්‍රේණිය</span></div> -->
-
-
-
-
-
-
-
-
-
-
 </body>
 </html>
