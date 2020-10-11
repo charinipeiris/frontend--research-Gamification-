@@ -26,7 +26,6 @@ import { SinhalaComponent } from './grade1/sinhala/sinhala.component';
 import { EnvironmentComponent } from './grade1/environment/environment.component';
 import { Level1Component } from './grade1/maths/level1/level1.component';
 import { Level2Component } from './grade1/maths/level2/level2.component';
-import { Level3Component } from './grade1/maths/level3/level3.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { Additions1Component } from './grade1/maths/level1/additions1/additions1.component';
@@ -49,22 +48,17 @@ import { Substractions2Component } from './grade1/maths/level2/substractions2/su
 import { Counting2Component } from './grade1/maths/level2/counting2/counting2.component';
 import { Countingconcepts2Component } from './grade1/maths/level2/countingconcepts2/countingconcepts2.component';
 import { Additions2Component } from './grade1/maths/level2/additions2/additions2.component';
-import { Additions3Component } from './grade1/maths/level3/additions3/additions3.component';
-import { Countingconcepts3Component } from './grade1/maths/level3/countingconcepts3/countingconcepts3.component';
-import { Counting3Component } from './grade1/maths/level3/counting3/counting3.component';
-import { Substractions3Component } from './grade1/maths/level3/substractions3/substractions3.component';
-import { Money3Component } from './grade1/maths/level3/money3/money3.component';
-import { Length3Component } from './grade1/maths/level3/length3/length3.component';
-import { Width3Component } from './grade1/maths/level3/width3/width3.component';
-import { Time3Component } from './grade1/maths/level3/time3/time3.component';
-import { Volume3Component } from './grade1/maths/level3/volume3/volume3.component';
-import { Shapes3Component } from './grade1/maths/level3/shapes3/shapes3.component';
-import { Sgame2Component } from './grade1/sinhala/level1/sgame2/sgame2.component';
-import { Sgame3Component } from './grade1/sinhala/level1/sgame3/sgame3.component';
-import { Sgame4Component } from './grade1/sinhala/level1/sgame4/sgame4.component';
-import { Sgame1Component } from './grade1/sinhala/level2/sgame1/sgame1.component';
+import { SinhalaLevel1Component } from './grade1/sinhala/sinhala-level1/sinhala-level1.component';
+import { SinhalaLevel2Component } from './grade1/sinhala/sinhala-level2/sinhala-level2.component';
 
-
+import { SinhalaG1L2G1Component } from './grade1/sinhala/sinhala-level2/sinhala-g1-l2-g1/sinhala-g1-l2-g1.component';
+import { SinhalaG1L2G2Component } from './grade1/sinhala/sinhala-level2/sinhala-g1-l2-g2/sinhala-g1-l2-g2.component';
+import { SinhalaG1L2G3Component } from './grade1/sinhala/sinhala-level2/sinhala-g1-l2-g3/sinhala-g1-l2-g3.component';
+import { SinhalaG1L2G4Component } from './grade1/sinhala/sinhala-level2/sinhala-g1-l2-g4/sinhala-g1-l2-g4.component';
+import { SinhalaGrade1Level1Game4Component } from './grade1/sinhala/sinhala-level1/sinhala-grade1-level1-game4/sinhala-grade1-level1-game4.component';
+import { SinhalaGrade1Level1Game3Component } from './grade1/sinhala/sinhala-level1/sinhala-grade1-level1-game3/sinhala-grade1-level1-game3.component';
+import { SinhalaGrade1Level1Game2Component } from './grade1/sinhala/sinhala-level1/sinhala-grade1-level1-game2/sinhala-grade1-level1-game2.component';
+import { SinhalaGrade1Level1Game1Component } from './grade1/sinhala/sinhala-level1/sinhala-grade1-level1-game1/sinhala-grade1-level1-game1.component';
 
 
 const appRoutes:Routes = [
@@ -78,19 +72,10 @@ const appRoutes:Routes = [
 
   {path:'grade1/maths/level1',component:Level1Component},
   {path:'grade1/maths/level2',component:Level2Component},
-  {path:'grade1/maths/level3',component:Level3Component},
-
-  {path:'grade1/sinhala/level1',component:Level1Component},
-  {path:'grade1/sinhala/level2',component:Level2Component},
-  {path:'grade1/sinhala/level3',component:Level3Component},
-  
-  {path:'grade1/environment/level1',component:Level1Component},
-  {path:'grade1/environment/level2',component:Level2Component},
-  {path:'grade1/environment/level3',component:Level3Component},
   
   {path:'grade2/maths/level1',component:Level1Component},
   {path:'grade2/maths/level2',component:Level2Component},
-  {path:'grade2/maths/level3',component:Level3Component},
+
 
   {path:'grade1/maths/level1/counting',component:Counting1Component},
   {path:'grade1/maths/level1/countingconcepts',component:Countingconcepts1Component},
@@ -113,20 +98,13 @@ const appRoutes:Routes = [
   {path:'grade1/maths/level2/time',component:Time2Component},
   {path:'grade1/maths/level2/volume',component:Volume2Component },
   {path:'grade1/maths/level2/shapes',component:Shapes2Component},
+
+  {path:'grade1/sinhala/level1/game1',component:SinhalaGrade1Level1Game1Component},
+  {path:'grade1/sinhala/level1/game2',component:SinhalaGrade1Level1Game2Component},
+  {path:'grade1/sinhala/level1/game3',component:SinhalaGrade1Level1Game3Component},
+  {path:'grade1/sinhala/level1/game4',component:SinhalaGrade1Level1Game4Component},
+  {path:'grade1/sinhala/level1',component:SinhalaLevel1Component },
   
-  {path:'grade1/maths/level3/counting',component:Counting3Component},
-  {path:'grade1/maths/level3/countingconcepts',component:Countingconcepts3Component},
-  {path:'grade1/maths/level3/additions',component:Additions3Component },
-  {path:'grade1/maths/level3/substraction',component:Substractions3Component},
-  {path:'grade1/maths/level3/money',component: Money3Component},
-  {path:'grade1/maths/level3/length',component:Length3Component },
-  {path:'grade1/maths/level3/width',component:Width3Component},
-  {path:'grade1/maths/level3/time',component:Time3Component},
-  {path:'grade1/maths/level3/volume',component:Volume3Component },
-  {path:'grade1/maths/level3/shapes',component:Shapes3Component},
-
-  {path:'grade1/maths/level3/shapes',component:Shapes3Component},
-
 ]
 @NgModule({
   declarations: [
@@ -144,7 +122,6 @@ const appRoutes:Routes = [
     EnvironmentComponent,
     Level1Component,
     Level2Component,
-    Level3Component,
     NavbarComponent,
     HomeComponent,
     Additions1Component,
@@ -167,20 +144,17 @@ const appRoutes:Routes = [
     Counting2Component,
     Countingconcepts2Component,
     Additions2Component,
-    Additions3Component,
-    Countingconcepts3Component,
-    Counting3Component,
-    Substractions3Component,
-    Money3Component,
-    Length3Component,
-    Width3Component,
-    Time3Component,
-    Volume3Component,
-    Shapes3Component,
-    Sgame2Component,
-    Sgame3Component,
-    Sgame4Component,
-    Sgame1Component,
+    SinhalaLevel1Component,
+    SinhalaLevel2Component,
+    SinhalaG1L2G1Component,
+    SinhalaG1L2G2Component,
+    SinhalaG1L2G3Component,
+    SinhalaG1L2G4Component,
+    SinhalaGrade1Level1Game4Component,
+    SinhalaGrade1Level1Game3Component,
+    SinhalaGrade1Level1Game2Component,
+    SinhalaGrade1Level1Game1Component,
+
   
   ],
   imports: [
