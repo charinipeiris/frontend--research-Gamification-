@@ -48,6 +48,7 @@ import { Substractions2Component } from './grade1/maths/level2/substractions2/su
 import { Counting2Component } from './grade1/maths/level2/counting2/counting2.component';
 import { Countingconcepts2Component } from './grade1/maths/level2/countingconcepts2/countingconcepts2.component';
 import { Additions2Component } from './grade1/maths/level2/additions2/additions2.component';
+
 import { SinhalaLevel1Component } from './grade1/sinhala/sinhala-level1/sinhala-level1.component';
 import { SinhalaLevel2Component } from './grade1/sinhala/sinhala-level2/sinhala-level2.component';
 
@@ -55,28 +56,35 @@ import { SinhalaG1L2G1Component } from './grade1/sinhala/sinhala-level2/sinhala-
 import { SinhalaG1L2G2Component } from './grade1/sinhala/sinhala-level2/sinhala-g1-l2-g2/sinhala-g1-l2-g2.component';
 import { SinhalaG1L2G3Component } from './grade1/sinhala/sinhala-level2/sinhala-g1-l2-g3/sinhala-g1-l2-g3.component';
 import { SinhalaG1L2G4Component } from './grade1/sinhala/sinhala-level2/sinhala-g1-l2-g4/sinhala-g1-l2-g4.component';
+
 import { SinhalaGrade1Level1Game4Component } from './grade1/sinhala/sinhala-level1/sinhala-grade1-level1-game4/sinhala-grade1-level1-game4.component';
 import { SinhalaGrade1Level1Game3Component } from './grade1/sinhala/sinhala-level1/sinhala-grade1-level1-game3/sinhala-grade1-level1-game3.component';
 import { SinhalaGrade1Level1Game2Component } from './grade1/sinhala/sinhala-level1/sinhala-grade1-level1-game2/sinhala-grade1-level1-game2.component';
 import { SinhalaGrade1Level1Game1Component } from './grade1/sinhala/sinhala-level1/sinhala-grade1-level1-game1/sinhala-grade1-level1-game1.component';
+import { EnvLevel2Component } from './grade1/environment/env-level2/env-level2.component';
+import { EnvLevel1Component } from './grade1/environment/env-level1/env-level1.component';
+
+import { EnvGrade1Level1Game1Component } from './grade1/environment/env-level1/env-grade1-level1-game1/env-grade1-level1-game1.component';
+import { EnvGrade1Level1Game2Component } from './grade1/environment/env-level1/env-grade1-level1-game2/env-grade1-level1-game2.component';
+import { EnvGrade1Level1Game3Component } from './grade1/environment/env-level1/env-grade1-level1-game3/env-grade1-level1-game3.component';
+import { EnvGrade1Level1Game4Component } from './grade1/environment/env-level1/env-grade1-level1-game4/env-grade1-level1-game4.component';
+
+import { EnvGrade1Level2Game1Component } from './grade1/environment/env-level2/env-grade1-level2-game1/env-grade1-level2-game1.component';
+import { EnvGrade1Level2Game2Component } from './grade1/environment/env-level2/env-grade1-level2-game2/env-grade1-level2-game2.component';
+import { EnvGrade1Level2Game3Component } from './grade1/environment/env-level2/env-grade1-level2-game3/env-grade1-level2-game3.component';
+import { EnvGrade1Level2Game4Component } from './grade1/environment/env-level2/env-grade1-level2-game4/env-grade1-level2-game4.component';
 
 
 const appRoutes:Routes = [
   {path:'login',component:LoginComponent},
   {path:'grade1',component:Grade1Component},
   {path:'home',component:HomeComponent},
+
+  //-----maths--
   {path:'grade1/maths',component:MathsComponent},
-  {path:'grade1/sinhala',component:SinhalaComponent},
-  {path:'grade1/environment',component:EnvironmentComponent},
   {path:'grade2/maths',component:MathsComponent},
-
+  //-----maths grade1 level1--
   {path:'grade1/maths/level1',component:Level1Component},
-  {path:'grade1/maths/level2',component:Level2Component},
-  
-  {path:'grade2/maths/level1',component:Level1Component},
-  {path:'grade2/maths/level2',component:Level2Component},
-
-
   {path:'grade1/maths/level1/counting',component:Counting1Component},
   {path:'grade1/maths/level1/countingconcepts',component:Countingconcepts1Component},
   {path:'grade1/maths/level1/additions',component:Additions1Component },
@@ -88,6 +96,8 @@ const appRoutes:Routes = [
   {path:'grade1/maths/level1/volume',component:Volume1Component },
   {path:'grade1/maths/level1/shapes',component:Shapes1Component},
 
+//-----maths garde1 level2--
+  {path:'grade1/maths/level2',component:Level2Component},
   {path:'grade1/maths/level2/counting',component:Counting2Component},
   {path:'grade1/maths/level2/countingconcepts',component:Countingconcepts2Component},
   {path:'grade1/maths/level2/additions',component:Additions2Component },
@@ -99,12 +109,40 @@ const appRoutes:Routes = [
   {path:'grade1/maths/level2/volume',component:Volume2Component },
   {path:'grade1/maths/level2/shapes',component:Shapes2Component},
 
+  //-----maths grade2 level1--
+  {path:'grade2/maths/level1',component:Level1Component},
+   //-----maths grade2 level2--
+  {path:'grade2/maths/level2',component:Level2Component},
+
+    //-----sinhala
+  {path:'grade1/sinhala',component:SinhalaComponent},
+    //-----sinhla grade1 level1--
+  {path:'grade1/sinhala/level1',component:SinhalaLevel1Component },
   {path:'grade1/sinhala/level1/game1',component:SinhalaGrade1Level1Game1Component},
   {path:'grade1/sinhala/level1/game2',component:SinhalaGrade1Level1Game2Component},
   {path:'grade1/sinhala/level1/game3',component:SinhalaGrade1Level1Game3Component},
   {path:'grade1/sinhala/level1/game4',component:SinhalaGrade1Level1Game4Component},
-  {path:'grade1/sinhala/level1',component:SinhalaLevel1Component },
-  
+ //-----sinhla grade1 level2--
+ {path:'grade1/sinhala/level2',component: SinhalaLevel2Component},
+ {path:'grade1/sinhala/level2/game1',component:SinhalaG1L2G1Component},
+ {path:'grade1/sinhala/level2/game2',component:SinhalaG1L2G2Component},
+ {path:'grade1/sinhala/level2/game3',component:SinhalaG1L2G3Component},
+ {path:'grade1/sinhala/level2/game4',component:SinhalaG1L2G4Component},
+  //-----environment 
+  {path:'grade1/environment',component:EnvironmentComponent}, 
+  //----environment grade1 level1--
+  {path:'grade1/environment/level1',component: EnvLevel1Component},
+  {path:'grade1/environment/level1/game1',component:EnvGrade1Level1Game1Component},
+  {path:'grade1/environment/level1/game2',component:EnvGrade1Level1Game2Component},
+  {path:'grade1/environment/level1/game3',component:EnvGrade1Level1Game3Component},
+  {path:'grade1/environment/level1/game4',component:EnvGrade1Level1Game4Component},
+
+  //-----environment grade1 level2--
+  {path:'grade1/environment/level2',component: EnvLevel2Component},
+  {path:'grade1/environment/level2/game1',component:EnvGrade1Level2Game1Component},
+  {path:'grade1/environment/level2/game2',component:EnvGrade1Level2Game2Component},
+  {path:'grade1/environment/level2/game3',component:EnvGrade1Level2Game3Component},
+  {path:'grade1/environment/level2/game4',component:EnvGrade1Level2Game4Component},
 ]
 @NgModule({
   declarations: [
@@ -154,6 +192,16 @@ const appRoutes:Routes = [
     SinhalaGrade1Level1Game3Component,
     SinhalaGrade1Level1Game2Component,
     SinhalaGrade1Level1Game1Component,
+    EnvLevel2Component,
+    EnvLevel1Component,
+    EnvGrade1Level1Game1Component,
+    EnvGrade1Level1Game2Component,
+    EnvGrade1Level1Game3Component,
+    EnvGrade1Level1Game4Component,
+    EnvGrade1Level2Game1Component,
+    EnvGrade1Level2Game2Component,
+    EnvGrade1Level2Game3Component,
+    EnvGrade1Level2Game4Component,
 
   
   ],
