@@ -6,7 +6,7 @@
     height:47em; 
     background-size:cover; 
     width:100%;
-    background-image:url(/assets/images/shapesL1_back.png);
+    background-image:url(/assets/images/sinhala-bg.jpg);
     background-position:50% 50%;
     margin-top:-60px;
     padding: 30px;
@@ -136,3 +136,9 @@
     animation-duration: 3s;  
     animation-fill-mode: forwards;
   }
+
+  .previous {
+    background-color:#ffffff;
+  
+      color: black;
+    }
