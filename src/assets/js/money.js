@@ -1,55 +1,76 @@
-function show(shown, hidden) {
-    document.getElementById(shown).style.display='block';
-    document.getElementById(hidden).style.display='none';
-    return false;
-}
 
-// function showImage(){
-//       document.getElementById('loadingImage').style.visibility="visible";
-//       //coin disappears after 4 seconds. Remove if you dont need
-//       setTimeout (function() {
-//         $( "#loadingImage" ).hide();
-//                   }, 4000);
-    
-//   }
-
- function showImage2(){
-        document.getElementById('loadingImage2').style.display='block';
-         //coin disappears after 4 seconds. Remove if you dont need
-        setTimeout (function() {
-            $( "#loadingImage2" ).hide();
-                      }, 4000);
-        
-      }
-      function showImage3(){
-        document.getElementById('loadingImage3').style.display='block';
-         //coin disappears after 4 seconds. Remove if you dont need
-        setTimeout (function() {
-            $( "#loadingImage3" ).hide();
-                      }, 4000);
-        
-      }
- 
-
-      function testWrong(){
-        document.f1.txt1.value="නැවතත්";
-        
-        // document.f1.clip2.src="./images/blank.gif";
-        // document.f1.clip1. src="./images/line.gif";
-        
-        document.f1.clip7.src="assets/images/mad_bunny.gif";
+      function show_moneyL1(Page1, Page2) {
+          document.getElementById(Page1).style.display='block';
+          document.getElementById(Page2).style.display='none'; 
         }
-        
-        
-        
-        function testRight(){
-        document.f1.txt1.value="හරියට හරි";
-        
-        // document.f1.clip1.src="./images/blank.gif"; 
-        // document.f1.clip2. src="./images/line.gif";
-        
-        document.f1.clip7.src="assets/images/yay_bunny.gif";
-        }
-        
-        
-
+      
+      function test1_money()
+      {
+      document.f1.clip1.src="/assets/images/5.png";
+      document.f1.brown.src="/assets/images/trans.svg";
+      document.f1.red.src="/assets/images/5.png";
+      document.f1.rw1.src="/assets/images/yay_bunny2.gif";
+      document.getElementById("a5").style.pointerEvents = "none";
+      document.getElementById("mark1").checked = true; //kid gave right answer 
+      
+      }
+      function test2_money()
+      {
+      document.f1.clip1.src="/assets/images/10.png";
+      document.f1.red.src="/assets/images/trans.svg";
+      document.f1.brown.src="/assets/images/10.png";
+      document.f1.rw1.src="/assets/images/w.gif";
+      document.getElementById("a10").style.pointerEvents = "none";
+      document.getElementById("unmark1").checked = true; //kid gave wrong answer 
+      }
+      
+      function test3_money()
+      {
+      document.f1.clip2.src="/assets/images/2.jpg";
+      document.f1.rect.src="/assets/images/trans.svg";
+      document.f1.sqr.src="/assets/images/2.jpg";
+      document.f1.rw2.src="/assets/images/yay_bunny2.gif";
+      document.getElementById("b2").style.pointerEvents = "none";
+      document.getElementById("mark2").checked = true; //kid gave right answer 
+      
+      }
+      function test4_money()
+      {
+      document.f1.clip2.src="/assets/images/5.png";
+      document.f1.sqr.src="/assets/images/trans.svg";
+      document.f1.rect.src="/assets/images/5.png";
+      document.f1.rw2.src="/assets/images/w.gif";
+      document.getElementById("b5").style.pointerEvents = "none";
+      document.getElementById("unmark2").checked = true; //kid gave wrong answer 
+      }
+      
+      function test5_money()
+      {
+      document.f1.clip3.src="/assets/images/5.png";
+      document.f1.leaf1.src="/assets/images/trans.svg";
+      document.f1.leaf2.src="/assets/images/5.png";
+      document.f1.rw3.src="/assets/images/w.gif";
+      document.getElementById("c5").style.pointerEvents = "none";
+      document.getElementById("unmark3").checked = true; //kid gave wrong answer 
+      
+      }
+      function test6_money()
+      {
+      document.f1.clip3.src="/assets/images/10.png";
+      document.f1.leaf2.src="/assets/images/trans.svg";
+      document.f1.leaf1.src="/assets/images/10.png";
+      document.f1.rw3.src="/assets/images/yay_bunny2.gif";
+      document.getElementById("c10").style.pointerEvents = "none";  
+      document.getElementById("mark3").checked = true; //kid gave right answer 
+      }
+      
+      
+      $(document).ready(function(){
+          $(document).on('click',"#question-money",function () {
+          var audio = document.getElementById("quest_audio");
+          if (audio.paused) audio.play();
+          else audio.pause();
+      });
+      });
+      
+      
