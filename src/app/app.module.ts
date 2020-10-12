@@ -75,6 +75,30 @@ import { AnimalsGameComponent } from './grade1/environment/env-level1/animals-ga
 import { SchoolGameComponent } from './grade1/environment/env-level1/school-game/school-game.component';
 
 
+
+import { Maths2Component } from './grade2/maths2/maths2.component';
+import { Sinhala2Component } from './grade2/sinhala2/sinhala2.component';
+import { Environment2Component } from './grade2/environment2/environment2.component';
+
+import { MLevel1Component } from './grade2/maths2/m-level1/m-level1.component';
+import { MLevel2Component } from './grade2/maths2/m-level2/m-level2.component';
+
+import { CountingL1Component } from './grade2/maths2/m-level1/counting-l1/counting-l1.component';
+import { AdditionL1Component } from './grade2/maths2/m-level1/addition-l1/addition-l1.component';
+import { SubstractionL1Component } from './grade2/maths2/m-level1/substraction-l1/substraction-l1.component';
+import { MoneyL1Component } from './grade2/maths2/m-level1/money-l1/money-l1.component';
+import { ShapesL1Component } from './grade2/maths2/m-level1/shapes-l1/shapes-l1.component';
+import { LengthL1Component } from './grade2/maths2/m-level1/length-l1/length-l1.component';
+
+import { LengthL2Component } from './grade2/maths2/m-level2/length-l2/length-l2.component';
+import { MoneyL2Component } from './grade2/maths2/m-level2/money-l2/money-l2.component';
+import { SubstractionL2Component } from './grade2/maths2/m-level2/substraction-l2/substraction-l2.component';
+import { AdditionL2Component } from './grade2/maths2/m-level2/addition-l2/addition-l2.component';
+import { CountingL2Component } from './grade2/maths2/m-level2/counting-l2/counting-l2.component';
+import { ShapesL2Component } from './grade2/maths2/m-level2/shapes-l2/shapes-l2.component';
+
+
+
 const appRoutes:Routes = [
   {path:'login',component:LoginComponent},
   {path:'grade1',component:Grade1Component},
@@ -109,8 +133,23 @@ const appRoutes:Routes = [
 
   //-----maths grade2 level1--
   {path:'grade2/maths/level1',component:Level1Component},
+  {path:'grade2/maths/level2',component:Level2Component},
+
+  {path:'grade2/maths/level2/counting',component:Counting2Component},
+  {path:'grade1/maths/level2/additions',component:Additions2Component },
+  {path:'grade1/maths/level2/substraction',component:Substractions2Component},
+  {path:'grade1/maths/level2/money',component: Money2Component},
+  {path:'grade1/maths/level2/length',component:Length2Component },
+  {path:'grade1/maths/level2/shapes',component:Shapes2Component},
    //-----maths grade2 level2--
   {path:'grade2/maths/level2',component:Level2Component},
+
+  {path:'grade2/maths/level2/counting',component:Counting2Component},
+  {path:'grade1/maths/level2/additions',component:Additions2Component },
+  {path:'grade1/maths/level2/substraction',component:Substractions2Component},
+  {path:'grade1/maths/level2/money',component: Money2Component},
+  {path:'grade1/maths/level2/length',component:Length2Component },
+  {path:'grade1/maths/level2/shapes',component:Shapes2Component},
 
     //-----sinhala
   {path:'grade1/sinhala',component:SinhalaComponent},
@@ -201,7 +240,25 @@ const appRoutes:Routes = [
     EnvGrade1Level2Game4Component,
     AnimalsGameComponent,
     SchoolGameComponent,
-
+    Maths2Component,
+    Sinhala2Component,
+    Environment2Component,
+    MLevel1Component,
+    MLevel2Component,
+    CountingL1Component,
+    AdditionL1Component,
+    SubstractionL1Component,
+    MoneyL1Component,
+    ShapesL1Component,
+    LengthL1Component,
+    LengthL2Component,
+    MoneyL2Component,
+    SubstractionL2Component,
+    AdditionL2Component,
+    CountingL2Component,
+    ShapesL2Component,
+   
+    
   
   ],
   imports: [
