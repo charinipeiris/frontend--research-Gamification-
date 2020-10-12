@@ -181,6 +181,7 @@ function loadAnswer2(imgid)
               else{
                      //no mark for second answer
               }
+              
               document.getElementById("next2").style.visibility= "visible"; //to enable "NEXT" button
               marksArea.innerHTML = sub_total;
               // document.getElementById(sub_total).style.visibility="visible";

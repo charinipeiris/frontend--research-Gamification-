@@ -158,10 +158,9 @@ document.f1.clip11.src="/assets/images/blank.png"
 }
 
 
-//--------------------------addition intro
+//--------------------------addition intro---------------
 
-
-    
+ 
 var k=580
 var t
 function put9(){
@@ -265,7 +264,7 @@ var d=580
 var t
 function put3(){
 document.f1.t1.value=eval(document.f1.t1.value)+1;
-if(document.f1.t1.value==1)
+if(document.f1.t1.value==50)
 {document.f1.clip5.style.visibility="visible";
 document.f1.clip6.style.visibility="visible";
 document.f1.clip7.style.visibility="visible";
@@ -332,4 +331,4 @@ clearTimeout(t);
 document.f3.txt1.value=parseInt(document.f3.txt1.value)+1
 }
 }
-function test(){document.f3.txt3.value=parseInt(document.f3.txt1.value)+parseInt(document.f3.txt2.value)}
+function testaddition(){document.f3.txt3.value=parseInt(document.f3.txt1.value)+parseInt(document.f3.txt2.value)}
