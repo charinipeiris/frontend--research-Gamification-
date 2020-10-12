@@ -106,7 +106,7 @@ const appRoutes:Routes = [
 
   //-----maths--
   {path:'grade1/maths',component:MathsComponent},
-  {path:'grade2/maths',component:MathsComponent},
+  {path:'grade2/maths',component:Maths2Component},
   //-----maths grade1 level1--
   {path:'grade1/maths/level1',component:Level1Component},
   {path:'grade1/maths/level1/counting',component:Counting1Component},
@@ -132,24 +132,25 @@ const appRoutes:Routes = [
   {path:'grade1/maths/level2/shapes',component:Shapes2Component},
 
   //-----maths grade2 level1--
-  {path:'grade2/maths/level1',component:Level1Component},
+  {path:'grade2/maths/level1',component: MLevel1Component},
+  {path:'grade2/maths/level2',component: MLevel2Component},
+
+  {path:'grade2/maths/level1/counting',component:CountingL1Component },
+  {path:'grade2/maths/level1/additions',component:AdditionL1Component },
+  {path:'grade2/maths/level1/substraction',component:SubstractionL1Component},
+  {path:'grade2/maths/level1/money',component:MoneyL1Component},
+  {path:'grade2/maths/level1/length',component:LengthL1Component },
+  {path:'grade2/maths/level1/shapes',component:ShapesL1Component },
+   
+  //-----maths grade2 level2--
   {path:'grade2/maths/level2',component:Level2Component},
 
-  {path:'grade2/maths/level2/counting',component:Counting2Component},
-  {path:'grade1/maths/level2/additions',component:Additions2Component },
-  {path:'grade1/maths/level2/substraction',component:Substractions2Component},
-  {path:'grade1/maths/level2/money',component: Money2Component},
-  {path:'grade1/maths/level2/length',component:Length2Component },
-  {path:'grade1/maths/level2/shapes',component:Shapes2Component},
-   //-----maths grade2 level2--
-  {path:'grade2/maths/level2',component:Level2Component},
-
-  {path:'grade2/maths/level2/counting',component:Counting2Component},
-  {path:'grade1/maths/level2/additions',component:Additions2Component },
-  {path:'grade1/maths/level2/substraction',component:Substractions2Component},
-  {path:'grade1/maths/level2/money',component: Money2Component},
-  {path:'grade1/maths/level2/length',component:Length2Component },
-  {path:'grade1/maths/level2/shapes',component:Shapes2Component},
+  {path:'grade2/maths/level2/counting',component:CountingL2Component},
+  {path:'grade2/maths/level2/additions',component:AdditionL2Component},
+  {path:'grade2/maths/level2/substraction',component:SubstractionL2Component},
+  {path:'grade2/maths/level2/money',component:MoneyL2Component  },
+  {path:'grade2/maths/level2/length',component:LengthL2Component },
+  {path:'grade2/maths/level2/shapes',component:ShapesL2Component},
 
     //-----sinhala
   {path:'grade1/sinhala',component:SinhalaComponent},
