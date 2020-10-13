@@ -337,225 +337,104 @@ function testaddition(){document.f3.txt3.value=parseInt(document.f3.txt1.value)+
 //-------------------addition game level2 grade 1----------------
 
 //-------------------addition01---------
-function tesadd1()
-{
-document.f1.t3.value=1;
-document.f1.clip11.src="/assets/images/blank.gif";
-document.f1.clip10.src="/assets/images/blank.gif";
-}
-function tesadd2()
-{
-document.f1.t3.value=2;
-document.f1.clip11.src="/assets/images/blank.gif";
-document.f1.clip10.src="/assets/images/blank.gif";
-}
+
 function tesadd3()
 {
 document.f1.t3.value=3;
-document.f1.clip11.src="/assets/images/blank.gif";
-document.f1.clip10.src="/assets/images/blank.gif";
+// document.f1.clip11.src="/assets/images/blank.gif";
+// document.f1.clip10.src="/assets/images/blank.gif";
+document.f1.rw1.src="/assets/images/yay_bunny2.gif";
+document.getElementById("n1").style.pointerEvents = "none";
+document.getElementById("n3").style.pointerEvents = "none";
+document.getElementById("mark1").checked = true; //kid gave right answer 
 }
 function tesadd4()
 {
 document.f1.t3.value=4;
-document.f1.clip11.src="/assets/images/blank.gif";
-document.f1.clip10.src="/assets/images/blank.gif";
+document.f1.rw1.src="/assets/images/w.gif";
+document.getElementById("n1").style.pointerEvents = "none";
+document.getElementById("n2").style.pointerEvents = "none";
+document.getElementById("unmark1").checked = true; //kid gave right answer 
 }
-function tesadd5()
-{
-document.f1.t3.value=5;
-document.f1.clip11.src="/assets/images/blank.gif";
-document.f1.clip10.src="/assets/images/blank.gif";
-}
+
 function tesadd6()
 {
 document.f1.t3.value=6;
-document.f1.clip11.src="/assets/images/blank.gif";
-document.f1.clip10.src="/assets/images/blank.gif";
-}
-function tesadd7()
-{
-document.f1.t3.value=7;
-document.f1.clip11.src="/assets/images/blank.gif";
-document.f1.clip10.src="/assets/images/blank.gif";
-}
-function tesadd8()
-{
-document.f1.t3.value=8;
-document.f1.clip11.src="/assets/images/blank.gif";
-document.f1.clip10.src="/assets/images/blank.gif";
-}
-function tesadd9()
-{
-document.f1.t3.value=9;
-document.f1.clip11.src="/assets/images/blank.gif";
-document.f1.clip10.src="/assets/images/blank.gif";
-}
-function tesadd10()
-{
-document.f1.t3.value=10;
-document.f1.clip11.src="/assets/images/blank.gif";
-document.f1.clip10.src="/assets/images/blank.gif";
+document.f1.rw1.src="/assets/images/w.gif";
+// document.f1.clip11.src="/assets/images/blank.gif";
+// document.f1.clip10.src="/assets/images/blank.gif";
+document.getElementById("n2").style.pointerEvents = "none";
+document.getElementById("n3").style.pointerEvents = "none";
+document.getElementById("unmark1").checked = true; //kid gave right answer 
 }
 
-function test2add()
-{
-if(document.f1.t3.value==eval(document.f1.t1.value)+eval(document.f1.t2.value))
-{
-document.f1.clip11.src="/assets/images/yay_bunny2.gif";
-//document.f1.clip10.src="/assets/images/sad.png";
-}else{
-//document.f1.clip10.src="/assets/images/w.png";
-document.f1.clip11.src="/assets/images/blank.gif";
-}
-}
 
 //-------------addition02---------
 
-function tesadd12()
-{
-document.f2.t6.value=1;
-document.f2.clip11.src="/assets/images/blank.gif";
-document.f2.clip10.src="/assets/images/blank.gif";
-}
-function tesadd22()
-{
-document.f2.t6.value=2;
-document.f2.clip11.src="/assets/images/blank.gif";
-document.f2.clip10.src="/assets/images/blank.gif";
-}
+
 function tesadd32()
 {
 document.f2.t6.value=3;
-document.f2.clip11.src="/assets/images/blank.gif";
-document.f2.clip10.src="/assets/images/blank.gif";
+document.f2.rw2.src="/assets/images/w.gif";
+// document.f2.clip11.src="/assets/images/blank.gif";
+// document.f2.clip10.src="/assets/images/blank.gif";
+document.getElementById("n5").style.pointerEvents = "none";
+document.getElementById("n6").style.pointerEvents = "none";
+document.getElementById("unmark2").checked = true; //kid gave right answer 
 }
-function tesadd42()
-{
-document.f2.t6.value=4;
-document.f2.clip11.src="/assets/images/blank.gif";
-document.f2.clip10.src="/assets/images/blank.gif";
-}
+
 function tesadd52()
 {
 document.f2.t6.value=5;
-document.f2.clip11.src="/assets/images/blank.gif";
-document.f2.clip10.src="/assets/images/blank.gif";
+document.f2.rw2.src="/assets/images/yay_bunny2.gif";
+// document.f2.clip11.src="/assets/images/blank.gif";
+// document.f2.clip10.src="/assets/images/blank.gif";
+document.getElementById("n6").style.pointerEvents = "none";
+document.getElementById("n4").style.pointerEvents = "none";
+document.getElementById("mark2").checked = true; //kid gave right answer 
 }
 function tesadd62()
 {
 document.f2.t6.value=6;
-document.f2.clip11.src="/assets/images/blank.gif";
-document.f2.clip10.src="/assets/images/blank.gif";
-}
-function tesadd72()
-{
-document.f2.t6.value=7;
-document.f2.clip11.src="/assets/images/blank.gif";
-document.f2.clip10.src="/assets/images/blank.gif";
-}
-function tesadd82()
-{
-document.f2.t6.value=8;
-document.f2.clip11.src="/assets/images/blank.gif";
-document.f2.clip10.src="/assets/images/blank.gif";
-}
-function tesadd92()
-{
-document.f2.t6.value=9;
-document.f2.clip11.src="/assets/images/blank.gif";
-document.f2.clip10.src="/assets/images/blank.gif";
-}
-function tesadd102()
-{
-document.f2.t6.value=10;
-document.f2.clip11.src="/assets/images/blank.gif";
-document.f2.clip10.src="/assets/images/blank.gif";
-}
-
-function test2add2()
-{
-if(document.f2.t6.value==eval(document.f2.t4.value)+eval(document.f2.t5.value))
-{
-document.f2.clip11.src="/assets/images/yay_bunny2.gif";
-//document.f1.clip10.src="/assets/images/sad.png";
-}else{
-//document.f1.clip10.src="/assets/images/w.png";
-document.f2.clip11.src="/assets/images/blank.gif";
-}
+document.f2.rw2.src="/assets/images/w.gif";
+// document.f2.clip11.src="/assets/images/blank.gif";
+// document.f2.clip10.src="/assets/images/blank.gif";
+document.getElementById("n5").style.pointerEvents = "none";
+document.getElementById("n4").style.pointerEvents = "none";
+document.getElementById("unmark2").checked = true; //kid gave right answer 
 }
 
 //-------------addition03--------
 
-function tesadd123()
-{
-document.f3.t9.value=1;
-document.f3.clip11.src="/assets/images/blank.gif";
-document.f3.clip10.src="/assets/images/blank.gif";
-}
-function tesadd223()
-{
-document.f3.t9.value=2;
-document.f3.clip11.src="/assets/images/blank.gif";
-document.f3.clip10.src="/assets/images/blank.gif";
-}
-function tesadd323()
-{
-document.f3.t9.value=3;
-document.f3.clip11.src="/assets/images/blank.gif";
-document.f3.clip10.src="/assets/images/blank.gif";
-}
-function tesadd423()
-{
-document.f3.t9.value=4;
-document.f3.clip11.src="/assets/images/blank.gif";
-document.f3.clip10.src="/assets/images/blank.gif";
-}
-function tesadd523()
-{
-document.f3.t9.value=5;
-document.f3.clip11.src="/assets/images/blank.gif";
-document.f3.clip10.src="/assets/images/blank.gif";
-}
-function tesadd623()
-{
-document.f3.t9.value=6;
-document.f3.clip11.src="/assets/images/blank.gif";
-document.f3.clip10.src="/assets/images/blank.gif";
-}
-function tesadd723()
+function testadd723()
 {
 document.f3.t9.value=7;
-document.f3.clip11.src="/assets/images/blank.gif";
-document.f3.clip10.src="/assets/images/blank.gif";
-}
-function tesadd82()
-{
-document.f3.t9.value=8;
-document.f3.clip11.src="/assets/images/blank.gif";
-document.f3.clip10.src="/assets/images/blank.gif";
-}
-function tesadd923()
-{
-document.f3.t9.value=9;
-document.f3.clip11.src="/assets/images/blank.gif";
-document.f3.clip10.src="/assets/images/blank.gif";
-}
-function tesadd1023()
-{
-document.f3.t9.value=10;
-document.f3.clip11.src="/assets/images/blank.gif";
-document.f3.clip10.src="/assets/images/blank.gif";
+document.f3.rw3.src="/assets/images/yay_bunny2.gif";
+// document.f3.clip11.src="/assets/images/blank.gif";
+// document.f3.clip10.src="/assets/images/blank.gif";
+document.getElementById("n8").style.pointerEvents = "none";
+document.getElementById("n9").style.pointerEvents = "none";
+document.getElementById("mark3").checked = true; //kid gave right answer 
 }
 
-function test2add23()
+function testadd923()
 {
-if(document.f3.t9.value==eval(document.f3.t7.value)+eval(document.f3.t8.value))
+document.f3.t9.value=9;
+document.f3.rw3.src="/assets/images/w.gif";
+// document.f3.clip11.src="/assets/images/blank.gif";
+// document.f3.clip10.src="/assets/images/blank.gif";
+document.getElementById("n7").style.pointerEvents = "none";
+document.getElementById("n9").style.pointerEvents = "none";
+document.getElementById("unmark3").checked = true; //kid gave right answer 
+}
+function testadd1023()
 {
-document.f3.clip11.src="/assets/images/yay_bunny2.gif";
-//document.f1.clip10.src="/assets/images/sad.png";
-}else{
-//document.f1.clip10.src="/assets/images/w.png";
-document.f3.clip11.src="/assets/images/blank.gif";
+document.f3.t9.value=10;
+document.f3.rw3.src="/assets/images/w.gif";
+// document.f3.clip11.src="/assets/images/blank.gif";
+// document.f3.clip10.src="/assets/images/blank.gif";
+document.getElementById("n8").style.pointerEvents = "none";
+document.getElementById("n7").style.pointerEvents = "none";
+document.getElementById("unmark3").checked = true; //kid gave right answer 
 }
-}
+
