@@ -63,14 +63,4 @@
       document.getElementById("c10").style.pointerEvents = "none";  
       document.getElementById("mark3").checked = true; //kid gave right answer 
       }
-      
-      
-      $(document).ready(function(){
-          $(document).on('click',"#question-money",function () {
-          var audio = document.getElementById("quest_audio");
-          if (audio.paused) audio.play();
-          else audio.pause();
-      });
-      });
-      
   
