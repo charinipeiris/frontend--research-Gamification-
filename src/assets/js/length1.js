@@ -98,3 +98,19 @@ function testlgame(){
     document.getElementById("pen1").style.pointerEvents ="none";
     document.getElementById("mark3").checked = true; //kid gave wrong answer 
     }
+
+
+
+    //fucntion to laod next and previous pages
+    function showpages_length(page){
+        var p1 = document.getElementById(page).getAttribute("id");
+
+        if (p1=="page1-length"){
+            document.getElementById("page1-length").style.display='block';
+            document.getElementById("page2-length").style.display='none'; 
+        }
+        else if (p1=="page2-length"){
+            document.getElementById("page1-length").style.display='none';
+            document.getElementById("page2-length").style.display='block'; 
+        } 
+    }
