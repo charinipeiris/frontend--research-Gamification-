@@ -1,6 +1,5 @@
 //-------------------shapes 2-------------------
 
-
 function show_shapesL1(Page1, Page2) {
     document.getElementById(Page1).style.display='block';
     document.getElementById(Page2).style.display='none'; 
@@ -74,21 +73,7 @@ $(document).ready(function(){
 });
 });
 
-//-----------------enable nextpage 3
-document.getElementById("next2").style.visibility= "visible"; //to enable "NEXT" button
-marksArea.innerHTML = sub_total;
-// document.getElementById(sub_total).style.visibility="visible";
-for (i = 0; i < 9; i++) {
-       if( (document.getElementById(i).getAttribute("id")) == sub_total){
-               document.getElementById(i).style.visibility="visible";
-       }
-       else{
-        document.getElementById(i).style.visibility="hidden";
-       }
-
-      }
-
-//----------------------addition game
+//----------------------addition game --------
 
 var k=580
 var t
