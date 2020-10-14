@@ -71,5 +71,23 @@
     .round {
       border-radius: 50%;
     }
+
+  /* #page1-length::before{    
+      content: "";
+      background-image: url(/assets/images/length-L2-back.jpg);
+      background-size: cover;
+      position: absolute;
+      opacity: 0.75;
+      } */
+
   
+  /* #page2-length {
+  background-size:cover;
+  background-image:url(/assets/images/volume-bg.jpg);
+  background-position:50% 50%;
+  margin-top:40px;
+  left: 400px;
+  height:40em;  
+  width:100%;
+} */
       

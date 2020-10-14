@@ -99,8 +99,6 @@ function testlgame(){
     document.getElementById("mark3").checked = true; //kid gave wrong answer 
     }
 
-
-
     //fucntion to laod next and previous pages
     function showpages_length(page){
         var p1 = document.getElementById(page).getAttribute("id");
@@ -114,3 +112,34 @@ function testlgame(){
             document.getElementById("page2-length").style.display='block'; 
         } 
     }
+
+
+    //Length-Level2
+
+    function testweight1(){
+        document.f1.txt7.value="මම බරින් වැඩියි";
+        document.f1.txt8.value="";
+        var myAudio = new Audio('/assets/audio/heavyweighted.m4a');
+        myAudio.play();
+        }
+             
+    function testweight2(){
+        document.f1.txt8.value="මම බරින් අඩුයි";
+        document.f1.txt7.value="";
+        var myAudio = new Audio('/assets/audio/lightweighted.m4a');
+        myAudio.play();
+        }
+
+    function testweight3(){
+        document.f2.txt9.value="මගේ වතුර ප්‍රමාණය අඩුයි";
+        document.f2.txt10.value="";
+        var myAudio = new Audio('/assets/audio/heavyweighted.m4a');
+        myAudio.play();
+        }
+                 
+    function testweight4(){
+        document.f2.txt10.value="මගේ වතුර ප්‍රමාණය වැඩියි";
+        document.f2.txt9.value="";
+        var myAudio = new Audio('/assets/audio/lightweighted.m4a');
+        myAudio.play();
+        }
