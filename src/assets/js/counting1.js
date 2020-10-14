@@ -160,7 +160,6 @@ document.f1.clip11.src="/assets/images/blank.png"
 
 //--------------------------addition intro---------------
 
- 
 var k=580
 var t
 function put9(){
@@ -308,7 +307,7 @@ document.f3.txt1.value=parseInt(document.f3.txt1.value)+1
 }
 }
 
-var b=600
+var b=-80
 var t
 function put1(){
 document.f1.t1.value=eval(document.f1.t1.value)+1;
@@ -324,7 +323,7 @@ document.f3.txt3.value="";
 document.f1.clip1.style.visibility="hidden";
 document.f1.p1.style.left=b;
 t=setTimeout("put1()",50);
-b=b-5;
+b=b+5;
 if(b<200)
 {
 clearTimeout(t);
@@ -370,7 +369,6 @@ document.getElementById("unmark1").checked = true; //kid gave right answer
 
 
 //-------------addition02---------
-
 
 function tesadd32()
 {
