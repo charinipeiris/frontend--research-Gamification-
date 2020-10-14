@@ -181,7 +181,7 @@ function loadAnswer2(imgid)
               else{
                      //no mark for second answer
               }
-              
+
               document.getElementById("next2").style.visibility= "visible"; //to enable "NEXT" button
               marksArea.innerHTML = sub_total;
               // document.getElementById(sub_total).style.visibility="visible";
@@ -395,30 +395,103 @@ $(document).ready(function(){
        );
    }
 
+// ----------------------------------------------------
+//function for the stopwatch which tracks time spent on the game
+function startgame(){
+document.getElementById("startdiv").style.visibility= "hidden";
+startStop();
+}
 
- // Javascript to enable "next" button after the video ends
- // -------------------------------------------------------------------------
+//Define vars to hold time values
+let seconds = 0;
+let minutes = 0;
+let hours = 0;
 
-//var element = document.getElementById('#myVideo_shapes');
+//Define vars to hold "display" value
+let displaySeconds = 0;
+let displayMinutes = 0;
+let displayHours = 0;
 
-//element.onended = function() {
- //    document.getElementById('#playbtn_shapes').disabled = false;
-// };
-// -------------------------------------------------------------------------
-//$("#myVideo_shapes").click(function(){
-     //     $("#playbtn_shapes")[0].src += "?autoplay=1";
-      //});
+//Define var to hold setInterval() function
+let interval = null;
 
- //  $(document).ready(function(){
- //      $("myVideo_shapes").on("ended", function (e) {
- //             alert("The video has ended");
-  //            //$('#playbtn_shapes').prop('disabled', false);
-//   });
-//});
-// -------------------------------------------------------------------------
+//Define var to hold stopwatch status
+let status = "stopped";
 
-//document.getElementById('#myVideo_shapes').addEventListener('ended',myHandler,false);
-//function myHandler(e) {
- //   $('#playbtn_shapes').prop('disabled',false);
-//}
+// //Stopwatch function (logic to determine when to increment next value, etc.)
+function stopWatch(){
 
+    seconds++;
+
+    //Logic to determine when to increment next value
+    if(seconds / 60 === 1){
+        seconds = 0;
+        minutes++;
+
+        if(minutes / 60 === 1){
+            minutes = 0;
+            hours++;
+        }
+
+    }
+
+    //If seconds/minutes/hours are only one digit, add a leading 0 to the value
+    if(seconds < 10){
+        displaySeconds = "0" + seconds.toString();
+    }
+    else{
+        displaySeconds = seconds;
+    }
+
+    if(minutes < 10){
+        displayMinutes = "0" + minutes.toString();
+    }
+    else{
+        displayMinutes = minutes;
+    }
+
+    if(hours < 10){
+        displayHours = "0" + hours.toString();
+    }
+    else{
+        displayHours = hours;
+    }
+
+    //Display updated time values to user
+    document.getElementById("display").innerHTML = displayHours + ":" + displayMinutes + ":" + displaySeconds;
+
+}
+
+
+
+function startStop(){
+
+    if(status === "stopped"){
+
+        //Start the stopwatch (by calling the setInterval() function)
+        interval = window.setInterval(stopWatch, 1000);
+        document.getElementById("startStop").innerHTML = "Stop";
+        status = "started";
+
+    }
+    else{
+
+        window.clearInterval(interval);
+        document.getElementById("startStop").innerHTML = "Start";
+        status = "stopped";
+
+    }
+
+}
+
+//Function to reset the stopwatch
+function reset(){
+
+    window.clearInterval(interval);
+    seconds = 0;
+    minutes = 0;
+    hours = 0;
+    document.getElementById("display").innerHTML = "00:00:00";
+    document.getElementById("startStop").innerHTML = "Start";
+
+}
