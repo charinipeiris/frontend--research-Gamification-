@@ -57,7 +57,7 @@ console.log(total);
 // this.gamesService.submitGame({    
 //   completed_games : [
 //   {
-//   game_id : "s02",
+//   game_id : "M14",
 //   marks : total,
 //   time_spent : time
 //   }
