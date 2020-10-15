@@ -1,29 +1,51 @@
 <body class="back-image">
-  <h1 style="margin-top:35px; margin-left:450px; margin-bottom: 50px;color:black">නිවරැදි රුපය තොරමු</h1>
-<!-- page 01 -->
-  <div class = "center" id="Page1" data-value="0"> 
-    <a href="/grade1/maths/level1/volume" style ='margin-top:-520px;margin-left:-1100px;color:green;height:50px;width:200px' class="previous button1">&laquo; Previous</a>
-  
+
+
+  <div id="time-back" style="z-index: 2;margin-top:60px; position: absolute; margin-left: 1020px; background-color: rgb(208, 224, 168); border-radius: 10px; width: 200px">
+    <div id="display" style="margin-left:15px; font-size: 50px; font-family: 'Permanent Marker', cursive;">
+      00:00:00
   </div>
 
+  <div class="buttons" >
+      <button hidden id="startStop" onclick="startStop()">Start</button> 
+      <button hidden id="reset" onclick="reset()">Reset</button>
+  </div>
+
+
+</div>
+
+ <div id = "startdiv" style ="z-index: 3; background-color: rgba(236, 236, 208, 0.95); border-style: solid; border-color: rgb(146, 146, 89); border-radius: 10px; margin-left: 30px;height: 700px; width: 1300px; position: absolute;">
+  <button id="startbtn" onclick = "startgame()" class="button4"><b>ආරම්භ කරන්න</b></button>
+  <img src = "/assets/images/start_button.png" style=" opacity: 0.85;margin-top: -300px; margin-left: 150px">
+ </div>
+
+ <app-emotiondetector></app-emotiondetector>
+
+  <h1 style="margin-top:45px; margin-left:530px; margin-bottom: 50px;color:black"><b>නිවරැදි රූපය තෝරමු</b></h1>
+<!-- page 01 -->
+  <!-- <div class = "center" id="Page1" data-value="0">  -->
+    <a href="/grade1/maths/level1/volume" style ='margin-top:-520px;margin-left:100px;color:green;height:50px;width:200px' class="previous button1">&laquo; Previous</a>
+  
+  <!-- </div> -->
+
 <form name="f1" >
-<div id="box1" style="position:absolute; top:220px; left:330px; width:240px; height:140px; border:transparent">
-<h6><B>ලොකු රුපය තොරමු</B></h6>
-<img  name="clipa" id="lkid1" src="/assets/images/lkid2.gif" style="height:120px;width:120px"onclick="testlgame2();" hspace=10 >
+<div id="box1" style=" background-color: #ffffff;height: 280px; width : 280px;position:absolute; top:220px; left:250px; border: black; border-style:solid; border-radius: 20px;">
+<h6 style ="margin-left: 50px; margin-top:20px; font-size: 25px;"><B>ලොකු රූපය තෝරමු</B></h6>
+<img  name="clipa" id="lkid1" src="/assets/images/lkid2.gif" style="margin-top: 20px;margin-left: 30px;height:120px;width:120px" onclick="testlgame2();" hspace=10 >
 <img name="clipb" id="lkid2" src="/assets/images/lkid1.gif" style="height:60px;width:60px" onclick="testlgame();">
 <input type="checkbox"  hidden name="fruit" id="mark1"/>
 <input type="checkbox"  hidden name="fruit" id="unmark1"/>
 </div>
 
-<div id="box2" style="position:absolute; top:340px; left:335px; width:400px; height:80px">
+<div id="box2" style="position:absolute; top:340px; left:335px; width:400px; height:80px; ">
 <img name="clip1" src="/assets/images/blank.png">
 <img name="clip2" src="/assets/images/blank.png" hspace=100>
 </div>
 
-<div id="box5" style="position:absolute; top:220px; left:575px; width:240px; height:140px;border:transparent " >
-<h6><b>මිටි රුපය තොරමු</b></h6>
-<img  name="clipc" id="tree1" src="/assets/images/tree1.gif"  style="height:60px;width:40px" onclick="testlgame3();">
-<img  name="clipd" id="tree2" src="/assets/images/tree2.gif" style="height:120px;width:80px" onclick="testlgame4();" hspace=10>
+<div id="box5" style="background-color: #ffffff; height: 280px; width : 280px ;position:absolute; top:220px; left:575px;  border: black; border-style:solid; border-radius: 20px;" >
+<h6 style ="margin-left: 50px; margin-top:20px; font-size: 25px;"><b>මිටි රූපය තෝරමු</b></h6>
+<img  name="clipc" id="tree1" src="/assets/images/tree.png"  style="margin-top: 75px;margin-left: 50px;height:80px;width:60px" onclick="testlgame3();">
+<img  name="clipd" id="tree2" src="/assets/images/tree.png" style="margin-left: 20px;margin-top: 30px;height:130px;width:90px" onclick="testlgame4();" hspace=10>
 <input type="checkbox"  hidden name="fruit" id="mark2"/>
 <input type="checkbox"  hidden name="fruit" id="unmark2"/>
 </div>
@@ -34,10 +56,10 @@
 </div>
 
 
-<div id="box9" style="position:absolute; top:220px;left:820px;width:440px;height:140px;border:transparent" >
-<h6><b>දිග රුපය තොරමු</b></h6>
-<img name="clipe" id="pen1" src="/assets/images/pen1.gif"  style="height:60px;width:80px" onclick="testlgame5();" hspace=10; vspace=9>
-<img name="clipf" id="pen2" src="/assets/images/pen2.gif" style="height:60px;width:180px" onclick="testlgame6();" vspace=9>
+<div id="box9" style=" background-color: #ffffff; height: 280px; width : 280px; position:absolute; top:220px;left:900px; border: black; border-style:solid; border-radius: 20px;" >
+<h6 style ="margin-left: 50px; margin-top:20px; font-size: 25px;"><b>දිග රූපය තෝරමු</b></h6>
+<img name="clipe" id="pen1" src="/assets/images/pen.png"  style="margin-left: 40px; margin-top: 30px;height:75px;width:80px" onclick="testlgame5();" hspace=10; vspace=9>
+<img name="clipf" id="pen2" src="/assets/images/pen.png" style="margin-left: 40px; height:80px;width:180px" onclick="testlgame6();" vspace=9>
 <input type="checkbox"  hidden name="fruit" id="mark3"/>
 <input type="checkbox"  hidden name="fruit" id="unmark3"/>
 </div>
@@ -47,31 +69,31 @@
 <img name="clip6" src="/assets/images/blank.png" hspace=90>
 </div>
 
-<div id="box11" style="position:absolute; top:450px; left:290px; width:200px; height:180px" >
-<img name="clip7" style="position:absolute; width:100px;height:100px" src="/assets/images/blank.png" >
+<div id="box11" style="position:absolute; top:490px; left:330px; width:200px; height:180px" >
+<img name="clip7" style="position:absolute; width:130px;height:130px" src="/assets/images/blank.png" >
 </div>
 
-<div id="box3" style="position:absolute; top:450px; left:550px; width:200px; height:180px" >
-<img name="clip8" style="position:absolute; width:100px;height:100px" src="/assets/images/blank.png" >
+<div id="box3" style="position:absolute; top:490px; left:660px; width:200px; height:180px" >
+<img name="clip8" style="position:absolute; width:130px;height:130px" src="/assets/images/blank.png" >
 </div>
 
-<div id="box4" style="position:absolute; top:450px; left:800px;width:200px; height:180px" >
-<img name="clip9"style="position:absolute; width:100px;height:100px" src="/assets/images/blank.png" >
+<div id="box4" style="position:absolute; top:490px; left:980px;width:200px; height:180px" >
+<img name="clip9"style="position:absolute; width:130px;height:130px" src="/assets/images/blank.png" >
 </div>
 
-<div id="box13" style="position:absolute; top:380px; left:360px; width:150px; height:50px" >
+<!-- <div id="box13" style="position:absolute; top:380px; left:360px; width:150px; height:50px" >
 <input type="text" name="txt1" value=""  readonly="true"style= "width:190px; height:50px; text-align:center; font-weight:bold; color:blue; font-size:30px;border:transparent">
-</div>
+</div> -->
 
-<div id="box14" style="position:absolute; top:380px; left:600px;width:150px; height:50px" >
+<!-- <div id="box14" style="position:absolute; top:380px; left:600px;width:150px; height:50px" >
 <input type="text" name="txt2" value=""  readonly="true"style= "width:190px; height:50px; text-align:center; font-weight:bold; color:blue; font-size:30px;border:transparent">
-</div>
+</div> -->
 
-<div id="box17" style="position:absolute; top:380px; left:850px;width:150px;height:50px" >
+<!-- <div id="box17" style="position:absolute; top:380px; left:850px;width:150px;height:50px" >
 <input type="text" name="txt3" value=""  readonly="true" style= "width:190px; height:50px; text-align:center; font-weight:bold; color:blue; font-size:30px;border:transparent">
-</div>
+</div> -->
 
-<button id="submit" class="button2" style="display: block;" (click)="markstot_length1()">ඉවරයි</button> 
+<button id="submit" class="button2" style="display: none;" (click)="markstot_length1()">ඉවරයි</button> 
 
             <!-- Trigger/Open The Modal -->
             <!-- <a id="myBtn" class="button2" >Submit</a> -->
@@ -88,8 +110,8 @@
                 <img id ="coin3" src="/assets/images/win_coin.gif" class= "coin_img" style = "visibility:hidden; height: 220px; width: 550px; margin-left: 390px; position: absolute">
                 <img id ="sad_coin" src="/assets/images/sad.gif" class= "coin_img" style = "visibility:hidden; height: 220px; width: 220px; margin-left: 380px; position: absolute">
                 <h1 style="font-family:Chalkduster, fantasy; margin-left: 380px; position: absolute; color:darkcyan">Completed!!!</h1>
-                <!-- <a href="#"  class="button3" onclick="return show('Page1','Page2');">ආපසු</a> -->
-                <a href=""  class="button3">ආපසු</a>
+                <h5 style ="position: absolute; margin-top: 300px; margin-left: 350px; font-size: 30px">ගත වූ කාලය : <span id="perf-time"></span></h5>
+                <a href="grade1/maths/level1"  class="button3">ආපසු</a>
               </div>
             </div>
 
