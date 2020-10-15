@@ -51,7 +51,6 @@ export class Shapes1Component implements OnInit {
       total = total + 1;
 
 
-
     console.log(total);
 
     let username = localStorage.getItem('uname');

@@ -37,12 +37,8 @@ import { Width1Component } from './grade1/maths/level1/width1/width1.component';
 import { Volume1Component } from './grade1/maths/level1/volume1/volume1.component';
 import { Shapes1Component } from './grade1/maths/level1/shapes1/shapes1.component';
 import { Shapes2Component } from './grade1/maths/level2/shapes2/shapes2.component';
-import { Volume2Component } from './grade1/maths/level2/volume2/volume2.component';
-import { Time2Component } from './grade1/maths/level2/time2/time2.component';
-import { Width2Component } from './grade1/maths/level2/width2/width2.component';
 import { Length2Component } from './grade1/maths/level2/length2/length2.component';
 import { Money2Component } from './grade1/maths/level2/money2/money2.component';
-import { Substractions2Component } from './grade1/maths/level2/substractions2/substractions2.component';
 import { Counting2Component } from './grade1/maths/level2/counting2/counting2.component';
 import { Countingconcepts2Component } from './grade1/maths/level2/countingconcepts2/countingconcepts2.component';
 import { Additions2Component } from './grade1/maths/level2/additions2/additions2.component';
@@ -124,12 +120,8 @@ const appRoutes:Routes = [
   {path:'grade1/maths/level2/counting',component:Counting2Component},
   {path:'grade1/maths/level2/countingconcepts',component:Countingconcepts2Component},
   {path:'grade1/maths/level2/additions',component:Additions2Component },
-  {path:'grade1/maths/level2/substraction',component:Substractions2Component},
   {path:'grade1/maths/level2/money',component: Money2Component},
   {path:'grade1/maths/level2/length',component:Length2Component },
-  {path:'grade1/maths/level2/width',component:Width2Component},
-  {path:'grade1/maths/level2/time',component:Time2Component},
-  {path:'grade1/maths/level2/volume',component:Volume2Component },
   {path:'grade1/maths/level2/shapes',component:Shapes2Component},
 
   //-----maths grade2 level1--
@@ -211,12 +203,8 @@ const appRoutes:Routes = [
     Volume1Component,
     Shapes1Component,
     Shapes2Component,
-    Volume2Component,
-    Time2Component,
-    Width2Component,
     Length2Component,
     Money2Component,
-    Substractions2Component,
     Counting2Component,
     Countingconcepts2Component,
     Additions2Component,

@@ -157,180 +157,179 @@ document.f1.clip10.src="/assets/images/blank.png";
 document.f1.clip11.src="/assets/images/blank.png"
 }
 
+    //fucntion to laod next and previous pages
+    function showpages_length(page){
+        var p1 = document.getElementById(page).getAttribute("id");
+
+        if (p1=="page1-length"){
+            document.getElementById("page1-addition").style.display='block';
+            document.getElementById("page2-addition").style.display='none'; 
+        }
+        else if (p1=="page2-length"){
+            document.getElementById("page1-addition").style.display='none';
+            document.getElementById("page2-addition").style.display='block'; 
+        } 
+    }
 
 //--------------------------addition intro---------------
 
-var k=580
-var t
+
+
 function put9(){
 document.f3.txt3.value="";
 document.f1.clip9.style.visibility="hidden";
-document.f1.p9.style.left=k;
-t=setTimeout("put9()",50);
-k=k-5;
-if(k<150)
-{
-clearTimeout(t);
 document.f3.txt2.value=parseInt(document.f3.txt2.value)+1
+
+// document.f1.p9.style.left=k;
+// t=setTimeout("put9()",1);
+// k=k+5;
+// if(k<86)
+// {
+// clearTimeout(t);
+// document.f3.txt2.value=parseInt(document.f3.txt2.value)+1
+// }
 }
-}
-var j=670
-var t
+
 function put8(){
 document.f3.txt3.value="";
 document.f1.clip8.style.visibility="hidden";
-document.f1.p8.style.left=j;
-t=setTimeout("put8()",50);
-j=j-5;
-if(j<210)
-{
-clearTimeout(t);
 document.f3.txt2.value=parseInt(document.f3.txt2.value)+1
-}
+// document.f1.p8.style.left=j;
+// t=setTimeout("put8()",1);
+// j=j-5;
+// if(j<210)
+// {
+// clearTimeout(t);
+// document.f3.txt2.value=parseInt(document.f3.txt2.value)+1
+// }
 }
 
-var h=640
-var t
+
 function put7(){
 document.f3.txt3.value="";
 document.f1.clip7.style.visibility="hidden";
-document.f1.p7.style.left=h;
-t=setTimeout("put7()",50);
-h=h-5;
-if(h<250)
-{
-clearTimeout(t);
 document.f3.txt2.value=parseInt(document.f3.txt2.value)+1
-}
+// document.f1.p7.style.left=h;
+// t=setTimeout("put7()",1);
+// h=h-5;
+// if(h<250)
+// {
+// clearTimeout(t);
+// document.f3.txt2.value=parseInt(document.f3.txt2.value)+1
+// }
 }
 
-var g=560
-var t
 function put6(){
 document.f3.txt3.value="";
 document.f1.clip6.style.visibility="hidden";
-document.f1.p6.style.left=g;
-t=setTimeout("put6()",50);
-g=g-5;
-if(g<150)
-{
-clearTimeout(t);
 document.f3.txt2.value=parseInt(document.f3.txt2.value)+1
-}
+// document.f1.p6.style.left=g;
+// t=setTimeout("put6()",1);
+// g=g-5;
+// if(g<150)
+// {
+// clearTimeout(t);
+// document.f3.txt2.value=parseInt(document.f3.txt2.value)+1
+// }
 }
 
-var f=600
-var t
 function put5(){
 document.f3.txt3.value="";
 document.f1.clip5.style.visibility="hidden";
-document.f1.p5.style.left=f;
-t=setTimeout("put5()",50);
-f=f-5;
-if(f<200)
-{
-clearTimeout(t);
 document.f3.txt2.value=parseInt(document.f3.txt2.value)+1
-}
+// document.f1.p5.style.left=f;
+// t=setTimeout("put5()",1);
+// f=f-5;
+// if(f<200)
+// {
+// clearTimeout(t);
+
+// }
 }
 
-
-var e=670
-var t
 function put4(){
 document.f1.t1.value=eval(document.f1.t1.value)+1;
 if(document.f1.t1.value==1)
-{document.f1.clip5.style.visibility="visible";
-document.f1.clip6.style.visibility="visible";
-document.f1.clip7.style.visibility="visible";
-document.f1.clip8.style.visibility="visible";
-document.f1.clip9.style.visibility="visible";
+{
 }
 document.f3.txt3.value="";
-
-
 document.f1.clip4.style.visibility="hidden";
-document.f1.p4.style.left=e;
-t=setTimeout("put4()",50);
-e=e-5;
-if(e<210)
-{
-clearTimeout(t);
 document.f3.txt1.value=parseInt(document.f3.txt1.value)+1
+// document.f1.p4.style.left=e;
+// t=setTimeout("put4()",1);
+// e=e-5;
+// if(e<210)
+// {
+// clearTimeout(t);
+// document.f3.txt1.value=parseInt(document.f3.txt1.value)+1
+// }
 }
-}
-var d=580
-var t
+
 function put3(){
 document.f1.t1.value=eval(document.f1.t1.value)+1;
 if(document.f1.t1.value==50)
-{document.f1.clip5.style.visibility="visible";
-document.f1.clip6.style.visibility="visible";
-document.f1.clip7.style.visibility="visible";
-document.f1.clip8.style.visibility="visible";
-document.f1.clip9.style.visibility="visible";
+{
 }
 document.f3.txt3.value="";
-
 document.f1.clip3.style.visibility="hidden";
-document.f1.p3.style.left=d;
-t=setTimeout("put3()",50);
-d=d-5;
-if(d<150)
-{
-clearTimeout(t);
 document.f3.txt1.value=parseInt(document.f3.txt1.value)+1
+
+// document.f1.p3.style.left=d;
+// t=setTimeout("put3()",1);
+// d=d-5;
+// if(d<150)
+// {
+// clearTimeout(t);
+// document.f3.txt1.value=parseInt(document.f3.txt1.value)+1
+// }
 }
-}
-var c=640
-var t
+
 function put2(){
 document.f1.t1.value=eval(document.f1.t1.value)+1;
 if(document.f1.t1.value==1)
-{document.f1.clip5.style.visibility="visible";
-document.f1.clip6.style.visibility="visible";
-document.f1.clip7.style.visibility="visible";
-document.f1.clip8.style.visibility="visible";
-document.f1.clip9.style.visibility="visible";
+{
 }
 document.f3.txt3.value="";
-
-
 document.f1.clip2.style.visibility="hidden";
-document.f1.p2.style.left=c;
-t=setTimeout("put2()",50);
-c=c-5;
-if(c<250)
-{
-clearTimeout(t);
 document.f3.txt1.value=parseInt(document.f3.txt1.value)+1
-}
+// document.f1.p2.style.left=c;
+// t=setTimeout("put2()",0.1);
+// c=c-5;
+// if(c<250)
+// {
+// clearTimeout(t);
+// document.f3.txt1.value=parseInt(document.f3.txt1.value)+1
+// }
 }
 
-var b=-80
-var t
+
 function put1(){
 document.f1.t1.value=eval(document.f1.t1.value)+1;
 if(document.f1.t1.value==1)
-{document.f1.clip5.style.visibility="visible";
+{
+document.f1.clip5.style.visibility="visible";
 document.f1.clip6.style.visibility="visible";
 document.f1.clip7.style.visibility="visible";
 document.f1.clip8.style.visibility="visible";
 document.f1.clip9.style.visibility="visible";
+
 }
 document.f3.txt3.value="";
-
 document.f1.clip1.style.visibility="hidden";
-document.f1.p1.style.left=b;
-t=setTimeout("put1()",50);
-b=b+5;
-if(b<200)
-{
-clearTimeout(t);
 document.f3.txt1.value=parseInt(document.f3.txt1.value)+1
+//document.f1.p1.style.left=b;
+// t=setTimeout("put1()");
+// b=b+5;
+// if(b<200)
+// {
+// clearTimeout(t);
+// document.f3.txt1.value=parseInt(document.f3.txt1.value)+1
+// }
 }
+function testaddition(){
+    document.f3.txt3.value=parseInt(document.f3.txt1.value)+parseInt(document.f3.txt2.value)
 }
-function testaddition(){document.f3.txt3.value=parseInt(document.f3.txt1.value)+parseInt(document.f3.txt2.value)}
+
 
 
 //-------------------addition game level2 grade 1----------------

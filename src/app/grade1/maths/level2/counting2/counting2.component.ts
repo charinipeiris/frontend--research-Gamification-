@@ -12,7 +12,7 @@ export class Counting2Component implements OnInit {
   ngOnInit(){   
 }
 
-markstot_counting2(){
+markstot_additions2(){
 var total6 = 0;
 
 let element1 = <HTMLInputElement> document.getElementById("mark1");  
