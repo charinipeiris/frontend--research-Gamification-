@@ -152,6 +152,7 @@ function enableSubmit(){
   var chk = document.querySelectorAll('input[type="checkbox"]:checked').length;
 if (chk == 3){
   document.getElementById("submit").style.display="block";
+  document.getElementById("arrow").style.display="block";
 }
 else{
   document.getElementById("submit").style.display="none";
