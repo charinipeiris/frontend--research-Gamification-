@@ -96,6 +96,7 @@ import { SubstractionL2Component } from './grade2/maths2/m-level2/substraction-l
 import { AdditionL2Component } from './grade2/maths2/m-level2/addition-l2/addition-l2.component';
 import { CountingL2Component } from './grade2/maths2/m-level2/counting-l2/counting-l2.component';
 import { ShapesL2Component } from './grade2/maths2/m-level2/shapes-l2/shapes-l2.component';
+import { EmotiondetectorComponent } from './emotiondetector/emotiondetector.component';
 
 
 
@@ -258,6 +259,7 @@ const appRoutes:Routes = [
     AdditionL2Component,
     CountingL2Component,
     ShapesL2Component,
+    EmotiondetectorComponent,
    
     
   
