@@ -1,104 +1,72 @@
+
 <html>
-    <body style="height:40em; 
-    background-size:cover; 
-    width:100%;
-    background-image:url(/assets/images/shapesL1_back.png);
-    background-position:50% 50%;
-    margin-top:-50px;" >
-<head>
-    
-<style type="text/css">
-.txt{width:70px; height:70px; color:blue; font-size:50px; text-align:center}
-#but{width:150px; height:40px; color:blue; font-size:25}
-</style>
+    <head></head>
+    <body class="back-image">
 
-</head>
-<br>
-<br>
-<br>
-<h3 style="margin-left:130px;">ඉලක්කම් දෙක එකතු කිරිමෙන් ලැබෙන නිවැරදි අගය පහත ඉලක්කම් අතුරින් තොරන්න</h3>
-    <form name="f1" >
-    <!-- <div style="position:absolute;top:100;left:10"></div> -->
-        <div style="position:absolute;top:100px;left:40px">
-            <input type="text"  value="." readonly="true" style="width:50px;height:50px; font-size:20px;background:transparent; color:black; border-width:0px">
-        </div>
-    
-        <input type="text" name="t1" value="1"  readonly="true" style="position:absolute;top:150px;left:200px;height:70px;width:70px;text-align:center;font-size:50px; color:brown;border-radius:15px ;">
-        <input type="text" name="t2" value="2" readonly="true" style="position:absolute;top:250px;left:200px;height:70px;width:70px;text-align:center;font-size:50px; color:brown;border-radius:15px">
-        <input type="text" name="t3" value="" readonly="true" style="position:absolute;top:350px;left:200px;height:70px;width:70px;text-align:center;font-size:50px; color:blue;border-radius:15px">
-        <img src="/assets/images/+.png" style="position:absolute;top:260px;left:120px;width:50px;height:50px">
+          <br>
+            <form name="f1">
 
-        <div style="position:absolute;top:440px;left:200px;border:solid thin;width:68px;height:0px"></div>
-        <div style="position:absolute;top:335px;left:200px;border:solid thin; ;width:68px;height:2px"></div>
-         
-        <img src="/assets/images/engine.png" style="margin-top:380px;left:00px;width:150px;height:150px">
-        <div style="position:absolute;top:500px;left:150px;height:100px;width:250px;border-style: solid;background-color: black;">
-            <input type="button" id="n1" class="txt" name="b6" value="6"  onclick="tesadd6()" style="position:absolute;top:10px;left:10px;border-radius:15px">
-            <input type="button" id="n2" class="txt" name="b3" value="3"  onclick="tesadd3()" style="position:absolute;top:10px;left:90px;border-radius:15px">
-            <input type="button" id="n3" class="txt" name="b4" value="4"  onclick="tesadd4()" style="position:absolute;top:10px;left:170px;border-radius:15px">
-            <img name="rw1" src="/assets/images/trans.svg" style="height:150px; width:150px;margin-top:-190px;margin-left:160px  ; ">
-            <input type="checkbox" hidden name="fruit" id="mark1"/>
-            <input type="checkbox" hidden name="fruit" id="unmark1"/>
-        </div>
-
-         </form>
-    <!-------------addition 2 --------------->
-
-    <form name="f2" >
-     
-        <div style="position:absolute;top:100px;left:40px">
-            <input type="text"  value="." readonly="true" style="width:50px;height:50px; font-size:20px;background:transparent; color:black; border-width:0px">
-        </div>
-        
-        <input type="text" name="t4" value="2"  readonly="true" style="position:absolute;top:150px;left:610px;height:70px;width:70px;text-align:center;font-size:50px; color:brown;border-radius:15px">
-        <input type="text" name="t5" value="3" readonly="true" style="position:absolute;top:250px;left:610px;height:70px;width:70px;text-align:center;font-size:50px; color:brown;border-radius:15px">
-        <input type="text" name="t6" value="" readonly="true" style="position:absolute;top:350px;left:610px;height:70px;width:70px;text-align:center;font-size:50px; color:blue;border-radius:15px">
-        <img src="/assets/images/+.png" style="position:absolute;top:260px;left:550px;width:50px;height:50px">
-        <div style="position:absolute;top:440px;left:610px;border:solid thin;width:68px;height:0px"></div>
-        <div style="position:absolute;top:335px;left:610px;border:solid thin; ;width:68px;height:2px"></div>   
-        
-        <div style="position:absolute;top:500px;left:520px;height:100px;width:250px;border-style: solid;background-color: black;">
-           
-            <input type="button" id="n4"class="txt" name="b32" value="3"  onclick="tesadd32()" style="position:absolute;top:10px;left:10px;border-radius:15px ;">
-            <input type="button" id="n5"class="txt" name="b52" value="5"  onclick="tesadd52()" style="position:absolute;top:10px;left:90px;border-radius:15px">
-            <input type="button" id="n6"class="txt" name="b62" value="6"  onclick="tesadd62()" style="position:absolute;top:10px;left:170px;border-radius:15px">
-            <img name="rw2" src="/assets/images/trans.svg" style="height:150px; width:150px;margin-top:-190px;margin-left:200px  ; ">
-            <input type="checkbox" hidden name="fruit" id="mark2"/>
-            <input type="checkbox" hidden name="fruit" id="unmark2"/>
-        </div>
-    
-
-        </form> 
-
-        <!-- --------//addition 3------ -->
-        <form name="f3" >
- 
-            <div style="position:absolute;top:100px;left:40px">
-            <input type="text"  value="." readonly="true" style="width:50px;height:50px; font-size:20px;background:transparent; color:black; border-width:0px">
-            </div>
-            
-            <input type="text" name="t7" value="5"  readonly="true" style="position:absolute;top:150px;left:1000px;height:70px;width:70px;text-align:center;font-size:50px; color:brown;border-radius:15px">
-            <input type="text" name="t8" value="2" readonly="true" style="position:absolute;top:250px;left:1000px;height:70px;width:70px;text-align:center;font-size:50px; color:brown;border-radius:15px">
-            <input type="text" name="t9" value="" readonly="true" style="position:absolute;top:350px;left:1000px;height:70px;width:70px;text-align:center;font-size:50px; color:blue;border-radius:15px">
-            <img src="/assets/images/+.png" style="position:absolute;top:260px;left:940px;width:50px;height:50px">
-            <div style="position:absolute;top:440px;left:1000px;border:solid thin;width:68px;height:0px"></div>
-            <div style="position:absolute;top:335px;left:1000px;border:solid thin; ;width:68px;height:2px"></div>   
-            
-            <div style="position:absolute;top:500px;left:900px;height:100px;width:250px;border-style: solid;background-color: black;">
+            <h3 style ="margin-top: 20px; margin-left: 30px;"><b>අපි පැණිරස කැම සල්ලි දීලා ගන්න ගැලපෙන කාසිය තොරමු.</b></h3>
+            <h2 id="alert" style="visibility: hidden; color: red;"> සියල්ලටම පිලිතුරු සපයන්න</h2>
+            <img src = "/assets/images/click.gif" style="position: absolute; height: 70px; margin-top:-155px; margin-left: 900px;">
+            <img src = "/assets/images/shape_sound2.gif" id="question-money" style="position: absolute; height:140px; margin-top:-155px; margin-left:1000px">
+            <audio id="quest_audio" src="assets/audio/moneyL1_quest.m4a" type="audio/m4a" control>Your browser does not support the audio element. </audio>
                 
-                <input type="button" id="n7" class="txt" name="b723" value="7"  onclick="testadd723()" style="position:absolute;top:10px;left:10px;border-radius:15px">
-                <input type="button" id="n8" class="txt" name="b923" value="9"  onclick="testadd923()" style="position:absolute;top:10px;left:90px;border-radius:15px">
-                <input type="button" id="n9" class="txt" name="b1023" value="10"  onclick="testadd1023()" style="position:absolute;top:10px;left:170px;font-size:50px;border-radius:15px">
-                <img name="rw3" src="/assets/images/trans.svg" style="height:150px; width:150px;margin-top:-190px;margin-left:220px  ; ">
-                <input type="checkbox" hidden name="fruit" id="mark3"/>
-                <input type="checkbox" hidden name="fruit" id="unmark3"/>
-            </div>
+
+                <fieldset style ="margin-left: 30px; margin-top: 20px;">
+                  <img src="/assets/images/ice4.JPG" style="border-style:solid; border-color:rgb(0, 0, 0); background:#ffffff; border-radius: 15px; height: 130px; width: 130px; margin-left: 100px; margin-right:10px; padding: 8px;">
+                  <img src="/assets/images/ice3.JPG" style="border-style:solid; border-color:rgb(0, 0, 0); background:#ffffff; border-radius: 15px; height: 130px; width: 130px; margin-right: 70px; padding: 8px;">
+                  
+                  
+                  <img name="clip1" src="/assets/images/question_mark.png" style="height:85px; width:85px;border:solid; border-radius: 15px; margin-right:150px">
+                  <img name="brown" src="/assets/images/q7.JPG" id="q7"  style="margin-right: 30px;border-style:solid; border-color:rgb(0, 0, 0); background:#ffffff; border-radius: 15px; height: 85px; width: 85px; padding: 12px;" onclick="test1_addto()">
+                  <img name="red" src="/assets/images/q5.JPG"  id="q5" style="margin-right: 30px;border-style:solid; border-color:rgb(0, 0, 0); background:#ffffff; border-radius: 15px; height: 85px; width: 85px; padding: 12px;" onclick="test2_addto()">
+                  <img name="green" src="/assets/images/q8.JPG"  id="q8" style="border-style:solid; border-color:rgb(0, 0, 0); background:#ffffff; border-radius: 15px; height: 85px; width: 85px; padding: 12px;" onclick="test3_addto()">
+                  <img name="rw1" src="/assets/images/trans.svg" style="height:100px; width:100px; ">
+                  <input type="checkbox" hidden name="fruit" id="mark1"/>
+                  <input type="checkbox" hidden name="fruit" id="unmark1"/>
+                  </fieldset>
+            <br>
+      
+
+            <fieldset style ="margin-left: 30px; margin-top: 10px;">
+              <img src="/assets/images/m3.JPG" style="border-style:solid; border-color:rgb(0, 0, 0); background:#ffffff; border-radius: 15px; height: 130px; width: 130px; margin-left: 100px; margin-right:10px; padding: 15px;">
+              <img src="/assets/images/m2.JPG" style="border-style:solid; border-color:rgb(0, 0, 0); background:#ffffff; border-radius: 15px; height: 130px; width: 130px;  margin-right: 70px; padding: 8px;">
+             
+              <img name="clip2" src="/assets/images/question_mark.png" style="height:85px; width:85px;border:solid; border-radius: 15px; margin-right:150px">
+              <img name="rect" src="/assets/images/q6.JPG"  id="q6" class="imagex" style="margin-right:30px;border-style:solid; border-color:rgb(0, 0, 0); background:#ffffff; border-radius: 15px; height: 85px; width: 85px; padding: 12px;" onclick="test4_addto()">
+              <img name="sqr" src="/assets/images/q5.JPG"  id="qq5" style="margin-right: 30px;border-style:solid; border-color:rgb(0, 0, 0); background:#ffffff; border-radius: 12px; height: 85px; width: 85px; padding: 15px;" onclick="test5_addto()">
+              <img name="cir" src="/assets/images/q3.JPG"  id="q3" style="border-style:solid; border-color:rgb(0, 0, 0); background:#ffffff; border-radius: 12px; height: 85px; width: 85px; padding: 15px;" onclick="test6_addto()">
+              <img name="rw2" src="/assets/images/trans.svg" style="height:100px; width:100px; ">
+              <input type="checkbox"  hidden name="fruit" id="mark2"/>
+              <input type="checkbox"  hidden name="fruit" id="unmark2"/>
+              </fieldset>
+             <br>
+
+                <fieldset style ="margin-left: 30px; margin-top: 10px;">
+                <img src="/assets/images/d2.JPG" style="border-style:solid; border-color:rgb(0, 0, 0); background:#ffffff; border-radius: 15px; height: 130px; width: 130px; margin-left: 100px; margin-right: 10px; padding: 13px;">
+                <img src="/assets/images/d2.JPG" style="border-style:solid; border-color:rgb(0, 0, 0); background:#ffffff; border-radius: 15px; height: 130px; width: 130px;margin-right: 70px; padding: 8px;">
+
+                <img name="clip3" src="/assets/images/question_mark.png" style="height:85px; width:85px;border:solid; border-radius: 15px; margin-right:150px">
             
-            </form>  
-            
+                <img name="leaf1" src="/assets/images/q3.JPG" id="q3"  style="margin-right: 30px;border-style:solid; border-color:rgb(0, 0, 0); background:#ffffff; border-radius: 15px; height: 85px; width: 85px; padding: 12px;" onclick="test7_addto()">
+                <img name="leaf2" src="/assets/images/q4.JPG" id="q4" style="border-style:solid; border-color:rgb(0, 0, 0); background:#ffffff; border-radius: 15px; height: 85px; width: 85px; padding: 12px;"  onclick="test8_addto()">
+                <img name="leaf3" src="/assets/images/q6.JPG" id="qq6" style="border-style:solid;margin-left:30px ;border-color:rgb(0, 0, 0); background:#ffffff; border-radius: 15px; height: 85px; width: 85px; padding: 12px;"  onclick="test9_addto()">
+                
+                <img name="rw3" src="/assets/images/trans.svg" style="height:100px; width:100px; ">
+                <input type="checkbox"  hidden name="fruit" id="mark3"/>
+                <input type="checkbox"  hidden name="fruit" id="unmark3"/>
+               
+            </fieldset>
+            <br>
+
+            </form>
 
 
-            <button id="submit" class="button2" style="display: block;" (click)="markstot_additions2()">ඉවරයි</button> 
+        <button id="submit" class="button2" style="display: block;" (click)="markstot_money2()">ඉවරයි</button>  
+
+            <!-- Trigger/Open The Modal -->
+            <!-- <a id="myBtn" class="button2" >Submit</a> -->
 
             <!-- The Modal -->
             <div id="myModal" class="modal">
@@ -117,8 +85,19 @@
               </div>
             </div>
 
+            <!-- <form>
+            <input type="submit" value="නැවත" style="position:absolute;top:510px;left:60px;width:100px;height:35px;font-size:20;color:blue" ></form> -->
+            <!-- <div id="back_box" style="position:absolute; top: 0px; left: 0px; background: rgb(117,179,240); width: 100%; height: 50px;"><span style="font-weight: bold; font-size: 28pt; margin-left: 10px;">රටාවේ ඊළඟට ගැළපෙන රූපය තෝරන්න.</span></div> -->
+            <!-- <div id="back_box2" style="position:absolute; bottom: 0px; left: 0px; background: rgb(117,179,240); width: 100%; height: 35px; padding-top: 15px; text-align: right;"><span style="font-weight: bold; font-size: 12pt; margin-right: 10px;">ගණිතය - 1 ශ්‍රේණිය</span></div> -->
 
 
-    </body>
-    
-    </html>
+
+
+
+
+
+
+
+
+</body>
+</html>

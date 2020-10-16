@@ -303,10 +303,128 @@ function game15(){
         document.f7.txt16.value="9";
     }
 
-//---------------------------------------------------------
+//-------------addition level 2 - grade 1--------------
 
 
-//-------------------addition game level2 grade 1----------------
+      function test1_addto()
+      {
+      document.f1.clip1.src="/assets/images/q7.JPG";
+      document.f1.brown.src="/assets/images/trans.svg";
+      document.f1.red.src="/assets/images/q5.JPG";
+      document.f1.green.src="/assets/images/q8.JPG";
+  
+      document.f1.rw1.src="/assets/images/yay_bunny2.gif";
+      document.getElementById("q5").style.pointerEvents = "none";
+      document.getElementById("q8").style.pointerEvents = "none";
+      document.getElementById("mark1").checked = true; //kid gave right answer 
+      
+      }
+      function test2_addto()
+      {
+      document.f1.clip1.src="/assets/images/q5.JPG";
+      document.f1.red.src="/assets/images/trans.svg";
+      document.f1.brown.src="/assets/images/q7.JPG";
+      document.f1.green.src="/assets/images/q8.JPG";
+     
+      document.f1.rw1.src="/assets/images/w.gif";
+      document.getElementById("q7").style.pointerEvents = "none";
+      document.getElementById("q8").style.pointerEvents = "none";
+      document.getElementById("unmark1").checked = true; //kid gave wrong answer 
+      }
+  
+      function test3_addto()
+      {
+      document.f1.clip1.src="/assets/images/q8.JPG";
+      document.f1.green.src="/assets/images/trans.svg";
+      document.f1.brown.src="/assets/images/q7.JPG";
+      document.f1.red.src="/assets/images/q5.JPG";
+  
+      document.f1.rw1.src="/assets/images/w.gif";
+      document.getElementById("q5").style.pointerEvents = "none";
+      document.getElementById("q7").style.pointerEvents = "none";
+      document.getElementById("unmark1").checked = true; //kid gave wrong answer 
+      }
+      
+      function test4_addto()
+      {
+      document.f1.clip2.src="/assets/images/q6.JPG";
+      document.f1.rect.src="/assets/images/trans.svg";
+      document.f1.sqr.src="/assets/images/q5.JPG";
+      document.f1.cir.src="/assets/images/q3.JPG";
+  
+      document.f1.rw2.src="/assets/images/w.gif";
+      document.getElementById("qq5").style.pointerEvents = "none";
+      document.getElementById("q3").style.pointerEvents = "none";
+      document.getElementById("unmark2").checked = true; //kid gave right answer 
+      
+      }
+      function test5_addto()
+      {
+      document.f1.clip2.src="/assets/images/q5.JPG";
+      document.f1.sqr.src="/assets/images/trans.svg";
+      document.f1.rect.src="/assets/images/q6.JPG";
+      document.f1.cir.src="/assets/images/q3.JPG";
+  
+      document.f1.rw2.src="/assets/images/yay_bunny2.gif";
+      document.getElementById("q6").style.pointerEvents = "none";
+      document.getElementById("q3").style.pointerEvents = "none";
+      document.getElementById("mark2").checked = true; //kid gave wrong answer 
+      }
+  
+      function test6_addto()
+      {
+      document.f1.clip2.src="/assets/images/q3.JPG";
+      document.f1.cir.src="/assets/images/trans.svg";
+      document.f1.sqr.src="/assets/images/q6.JPG";
+      document.f1.rect.src="/assets/images/q5.JPG";
+  
+      document.f1.rw2.src="/assets/images/w.gif";
+      document.getElementById("q55").style.pointerEvents = "none";
+      document.getElementById("q6").style.pointerEvents = "none";
+      document.getElementById("unmark2").checked = true; //kid gave wrong answer 
+      }
+      
+      function test7_addto()
+      {
+      document.f1.clip3.src="/assets/images/q3.JPG";
+      document.f1.leaf1.src="/assets/images/trans.svg";
+      document.f1.leaf2.src="/assets/images/q4.JPG";
+      document.f1.leaf3.src="/assets/images/q6.JPG";
+  
+      document.f1.rw3.src="/assets/images/w.gif";
+      document.getElementById("q4").style.pointerEvents = "none";
+      document.getElementById("qq6").style.pointerEvents = "none";
+      document.getElementById("unmark3").checked = true; //kid gave wrong answer 
+      
+      }
+      function test8_addto()
+      {
+      document.f1.clip3.src="/assets/images/q4.JPG";
+      document.f1.leaf2.src="/assets/images/trans.svg";
+      document.f1.leaf1.src="/assets/images/q3.JPG";
+      document.f1.leaf3.src="/assets/images/q6.JPG";
+  
+      document.f1.rw3.src="/assets/images/yay_bunny2.gif";
+      document.getElementById("qq3").style.pointerEvents = "none";  
+      document.getElementById("qq6").style.pointerEvents = "none"; 
+      document.getElementById("mark3").checked = true; //kid gave right answer 
+      }
+  
+      function test9_addto()
+      {
+      document.f1.clip3.src="/assets/images/q6.JPG";
+      document.f1.leaf3.src="/assets/images/trans.svg";
+      document.f1.leaf1.src="/assets/images/q3.JPG";
+      document.f1.leaf2.src="/assets/images/q4.JPG";
+  
+      document.f1.rw3.src="/assets/images/w.gif";
+      document.getElementById("qq3").style.pointerEvents = "none";
+      document.getElementById("q4").style.pointerEvents = "none";
+      document.getElementById("unmark3").checked = true; //kid gave wrong answer 
+      
+      }
+
+//-------------------addition game level2 grade 2----------------
 
 //-------------------addition01---------
 
