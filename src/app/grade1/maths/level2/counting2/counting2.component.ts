@@ -12,7 +12,7 @@ export class Counting2Component implements OnInit {
   ngOnInit(){   
 }
 
-markstot_money2(){
+markstot_addto(){
 var totalm = 0;
 
 let element1 = <HTMLInputElement> document.getElementById("mark1");  
