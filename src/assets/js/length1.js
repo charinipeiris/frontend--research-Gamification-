@@ -1,24 +1,92 @@
-   //fucntion to laod next and previous pages
-   function showpages_length(page){
-    var p1 = document.getElementById(page).getAttribute("id");
-
-    if (p1=="page1-length"){
-        document.getElementById("page1-length").style.display='block';
-        document.getElementById("page2-length").style.display='none'; 
-        document.getElementById("page3-length").style.display='none'; 
+function testlgame(){
+    document.f1.txt1.value="Sorry";
+    // document.f1.txt1.value="Sorry";
+    document.f1.clip2.src="/assets/images/blank.png";
+   // document.f1.clip1. src="/assets/images/line1.gif";
+    document.f1.clip7.src="/assets/images/w.gif";
+    document.getElementById("lkid1").style.pointerEvents ="none";
+    document.getElementById("mark1").checked = true; //kid gave wrong answer 
+    document.getElementById("unmark1").checked = true; //kid gave wrong answer 
+    enableSubmit_length()
     }
-    else if (p1=="page2-length"){
-        document.getElementById("page1-length").style.display='none';
-        document.getElementById("page2-length").style.display='block'; 
-        document.getElementById("page3-length").style.display='none'; 
-    } 
-    else if (p1=="page3-length"){
-        document.getElementById("page1-length").style.display='none';
-        document.getElementById("page2-length").style.display='none'; 
-        document.getElementById("page3-length").style.display='block'; 
+    
+    function testlgame2(){
+    document.f1.txt1.value="Congrats!!";
+    // document.f1.txt1.value="Congrats!!";
+    document.f1.clip1.src="/assets/images/blank.png"; 
+    //document.f1.clip2. src="/assets/images/wow.gif";
+    document.f1.clip7.src="/assets/images/Tress.gif";
+    document.f1.clip7.src="/assets/images/yay_bunny2.gif";
+    document.getElementById("lkid2").style.pointerEvents ="none";
+    document.getElementById("unmark1").checked = true; //kid gave wrong answer 
+    document.getElementById("mark1").checked = true; //kid gave wrong answer 
+    enableSubmit_length()
+    }
+    
+    function testlgame3(){ 
+    document.f1.txt2.value="Congrats!!";
+    // document.f1.txt2.value="Congrats!!";
+    document.f1.clip4.src="/assets/images/blank.png";
+    //document.f1.clip3.src="/assets/images/wow.gif";
+    document.f1.clip8.src="/assets/images/Tress.gif";
+    document.f1.clip8.src="/assets/images/yay_bunny2.gif";
+    document.getElementById("tree2").style.pointerEvents ="none";
+    document.getElementById("mark2").checked = true; //kid gave wrong answer 
+    enableSubmit_length()
+    }
+    
+    function testlgame4(){
+    document.f1.txt2.value="Sorry";
+    // document.f1.txt2.value="Sorry";
+    document.f1.clip3.src="/assets/images/blank.png"; 
+   // document.f1.clip4. src="/assets/images/line1.gif";
+    document.f1.clip8.src="/assets/images/w.gif";
+    document.getElementById("tree1").style.pointerEvents ="none";
+    document.getElementById("unmark2").checked = true; //kid gave wrong answer 
+    enableSubmit_length()
+    }
+    
+    function testlgame5(){
+    document.f1.txt3.value="Sorry";
+    // document.f1.txt3.value="Sorry";
+    document.f1.clip6.src="/assets/images/blank.png";
+    // document.f1.clip5. src="/assets/images/line1.gif";
+    document.f1.clip9.src="/assets/images/w.gif";
+    document.getElementById("pen2").style.pointerEvents ="none";
+    document.getElementById("unmark3").checked = true; //kid gave wrong answer 
+    enableSubmit_length()
+    }
+    
+    function testlgame6(){
+    document.f1.txt3.value="Congrats!!";
+    // document.f1.txt3.value="Congrats!!";
+    document.f1.clip5.src="/assets/images/blank.png"; 
+    //document.f1.clip6. src="/assets/images/wow.gif";
+    document.f1.clip9.src="/assets/images/Tress.gif";
+    document.f1.clip9.src="/assets/images/yay_bunny2.gif";
+    document.getElementById("pen1").style.pointerEvents ="none";
+    document.getElementById("mark3").checked = true; //kid gave wrong answer 
+    enableSubmit_length()
     }
 
-}
+    //fucntion to laod next and previous pages
+    function testlgame(){
+        var myAudio = new Audio('/assets/audio/lightweighted.m4a');
+        myAudio.play();
+        }
+
+
+  function enableSubmit_length(){
+    var chk = document.querySelectorAll('input[type="checkbox"]:checked').length;
+    if (chk == 3){
+         document.getElementById("submit").style.display="block";
+          }
+    else{
+        document.getElementById("submit").style.display="none";
+          }
+          }
+  
+  
   
   
   //----------------length intro grade 1 level 1-----------------
@@ -70,60 +138,87 @@
 // -------game grade 1 level1----------------------------------
 
 function testlgame(){
+<<<<<<< Updated upstream
     // document.f1.txt1.value="Sorry";
     // document.f1.clip2.src="/assets/images/blank.png";
+=======
+    document.f1.txt1.value="Sorry";
+    document.f1.clip2.src="/assets/images/blank.png";
+>>>>>>> Stashed changes
     document.f1.clip7.src="/assets/images/w.gif";
     document.getElementById("lkid1").style.pointerEvents ="none";
-    document.getElementById("unmark1").checked = true; //kid gave wrong answer 
-    enableSubmit_length()
+    document.getElementById("mark1").checked = true; //kid gave wrong answer 
     }
     
     function testlgame2(){
+<<<<<<< Updated upstream
     // document.f1.txt1.value="Congrats!!";
     // document.f1.clip1.src="/assets/images/blank.png"; 
     //document.f1.clip2. src="/assets/images/wow.gif";
     document.f1.clip7.src="/assets/images/yay_bunny2.gif";
+=======
+    document.f1.txt1.value="Congrats!!";
+    document.f1.clip1.src="/assets/images/blank.png"; 
+    document.f1.clip7.src="/assets/images/Tress.gif";
+>>>>>>> Stashed changes
     document.getElementById("lkid2").style.pointerEvents ="none";
-    document.getElementById("mark1").checked = true; //kid gave wrong answer 
-    enableSubmit_length()
+    document.getElementById("unmark1").checked = true; //kid gave wrong answer 
     }
     
     function testlgame3(){ 
+<<<<<<< Updated upstream
     // document.f1.txt2.value="Congrats!!";
     // document.f1.clip4.src="/assets/images/blank.png";
     //document.f1.clip3.src="/assets/images/wow.gif";
     document.f1.clip8.src="/assets/images/yay_bunny2.gif";
+=======
+    document.f1.txt2.value="Congrats!!";
+    document.f1.clip4.src="/assets/images/blank.png";
+    document.f1.clip8.src="/assets/images/Tress.gif";
+>>>>>>> Stashed changes
     document.getElementById("tree2").style.pointerEvents ="none";
     document.getElementById("mark2").checked = true; //kid gave wrong answer 
-    enableSubmit_length()
     }
     
     function testlgame4(){
+<<<<<<< Updated upstream
     // document.f1.txt2.value="Sorry";
     // document.f1.clip3.src="/assets/images/blank.png"; 
+=======
+    document.f1.txt2.value="Sorry";
+    document.f1.clip3.src="/assets/images/blank.png"; 
+>>>>>>> Stashed changes
     document.f1.clip8.src="/assets/images/w.gif";
     document.getElementById("tree1").style.pointerEvents ="none";
     document.getElementById("unmark2").checked = true; //kid gave wrong answer 
-    enableSubmit_length()
     }
     
     function testlgame5(){
+<<<<<<< Updated upstream
     // document.f1.txt3.value="Sorry";
     // document.f1.clip6.src="/assets/images/blank.png";
+=======
+    document.f1.txt3.value="Sorry";
+    document.f1.clip6.src="/assets/images/blank.png";
+>>>>>>> Stashed changes
     document.f1.clip9.src="/assets/images/w.gif";
     document.getElementById("pen2").style.pointerEvents ="none";
     document.getElementById("unmark3").checked = true; //kid gave wrong answer 
-    enableSubmit_length()
     }
     
     function testlgame6(){
+<<<<<<< Updated upstream
     // document.f1.txt3.value="Congrats!!";
     // document.f1.clip5.src="/assets/images/blank.png"; 
     //document.f1.clip6. src="/assets/images/wow.gif";
     document.f1.clip9.src="/assets/images/yay_bunny2.gif";
+=======
+    document.f1.txt3.value="Congrats!!";
+    document.f1.clip5.src="/assets/images/blank.png"; 
+    document.f1.clip9.src="/assets/images/Tress.gif";
+>>>>>>> Stashed changes
     document.getElementById("pen1").style.pointerEvents ="none";
     document.getElementById("mark3").checked = true; //kid gave wrong answer 
-    enableSubmit_length()
     }
 
     //-----------Length intro - Level2 - grade 1
@@ -205,13 +300,3 @@ function testlgame(){
             document.getElementById("pen1").style.pointerEvents ="none";
             document.getElementById("mark3").checked = true; //kid gave wrong answer 
             }
-
-  function enableSubmit_length(){
-    var chk = document.querySelectorAll('input[type="checkbox"]:checked').length;
-    if (chk == 3){
-         document.getElementById("submit").style.display="block";
-          }
-    else{
-        document.getElementById("submit").style.display="none";
-          }
-          }

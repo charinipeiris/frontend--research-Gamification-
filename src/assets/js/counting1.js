@@ -171,8 +171,24 @@ document.f1.clip11.src="/assets/images/blank.png"
         } 
     }
 
-//--------------------------addition intro---------------
+//---------------addition level2 grade 1-----------
 
+function showpages_addition2(page){
+    var p1 = document.getElementById(page).getAttribute("id");
+
+    if (p1=="page1-addition2"){
+        document.getElementById("page1-addition2").style.display='block';
+        document.getElementById("page2-addition2").style.display='none'; 
+        document.getElementById("page3-addition2").style.display='none'; 
+    }
+    else if (p1=="page2-addition2"){
+        document.getElementById("page1-addition2").style.display='none';
+        document.getElementById("page2-addition2").style.display='block'; 
+        document.getElementById("page3-addition2").style.display='none'; 
+    } 
+
+}
+//--------------------------addition intro---------------
 
 
 function put9(){

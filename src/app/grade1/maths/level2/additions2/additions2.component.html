@@ -1,79 +1,33 @@
+  
+<body style="background-size:cover;
+background-image:url(/assets/images/sweetback.jpg);
+background-position:50% 50%;
+margin-top:-50px;
+left: 50px;
+height:40em;  
+width:100%;">
 
-<HTML>
-    <body style="height:40em; 
-    background-size:cover; 
-    width:100%;
-    background-image:url(/assets/images/sweetback.jpg);
-    background-position:50% 50%;
-    margin-top:-50px;" >
+
+<!--page 01 (weight) -->
+<div id="page1-addition2">
+    <!-- <a href="/grade1/maths/level2" style ='margin-top:70px;margin-left:-60px;color:green;height:50px ;' class="previous button1">&laquo; Previous</a>
+    <a href="/grade1/maths/level2/length" style ='margin-top:70px;margin-left:900px;color:green;height:50px ;' class="previous button1"> Next &raquo;</a> -->
+   
+    <a href="/grade1/maths/level2" style ='margin-top:70px;margin-left:70px;color:green;height:50px ;' class="previous button1">&laquo; Previous</a>
+    <a style ='margin-top:70px;margin-left:900px;color:green;height:50px ;' class="previous button1" onclick="showpages_addition2('page2-addition2')"> Next &raquo;</a>
+
+
+    <div>
+        <img src="/assets/images/babyduck.png">
+    </div>
+</div>
+
+
+<!--page 02-->
+<div id="page2-addition2" style="display:none;position:absolute;top:40px;left:150px;">   
+    <a  style ='margin-top:70px;margin-left:-60px;color:green;height:50px;' class="previous button1" onclick="showpages_addition2('page1-addition2')">&laquo; Previous</a>
+    <a href="/grade1/maths/level2/counting" style ='margin-top:70px;margin-left:900px;color:green;height:50px ;' class="previous button1" > Next &raquo;</a>
+</div>
+
     
 
-    <a href="/grade1/maths/level2" style ='margin-top:70px;margin-left:30px;color:green;height:50px ;' class="previous button1">&laquo; Previous</a>
-    <a href="/grade1/maths/level2/counting" style ='margin-top:70px;margin-left:980px;color:green;height:50px ;' class="previous button1"> Next &raquo;</a>
-
-    <div id="block" style="position:absolute;top:50px;left:100px;">
-    <!-- <img name="box"  src="/assets/images/box.gif" style="position:absolute; top:50px; left:340px;width:50px">
-    <img name="box0"  src="/assets/images/box.gif" style="position:absolute; top:225px; left:140px;width:50px"> -->
-    <!-- <img name="line"  src="/assets/images/-.gif" style="position:absolute; top:300px; left:30px">
-    <img name="line2"  src="/assets/images/=.gif" style="position:absolute; top:400px; left:30px">-->
-    <img name="+"  src="/assets/images/+.png" style="position:absolute; top:100px; left:280px;width:100px;height:100px"> 
-    
-    <form name="f1">
-        <img name="p1" src="/assets/images/click.png"  style="position:absolute; top:260px;left:-80px;;" width="110px" height="110px" >
-        <img name="p2" src="/assets/images/click.png"  style="position:absolute; top:260px; left:100px;" width="110px;" height="110px" >
-        <img name="p3" src="/assets/images/click.png"  style="position:absolute; top:400px; left:-80px;" width="110px;" height="110px" >
-        <img name="p4" src="/assets/images/click.png"  style="position:absolute; top:400px; left:100px;" width="110px;" height="110px">
-    
-        <img name="clip1" src="/assets/images/click.gif" onClick="put1 ()" style="position:absolute; top:330px;left:-80px" width="60px" height="60px" >
-        <img name="clip2" src="/assets/images/click.gif" onClick="put2 ()" style="position:absolute; top:330px; left:100px" width="60px" height="60px" >
-        <img name="clip3" src="/assets/images/click.gif" onClick="put3 ()" style="position:absolute; top:480px; left:-80px" width="60px" height="60px" >
-        <img name="clip4" src="/assets/images/click.gif" onClick="put4 ()" style="position:absolute; top:480px; left:100px" width="60px" height="60px"> 
-     
-        <img name="p5" src="/assets/images/click.png"  style="position:absolute; top:260px; left:400px;"  width="110px" height="110px" >
-        <img name="p6" src="/assets/images/click.png"  style="position:absolute; top:260px; left:580px;" width="110px" height="110px" >
-        <img name="p7" src="/assets/images/click.png"  style="position:absolute; top:400px; left:350px;"  width="110px" height="110px">
-        <img name="p8" src="/assets/images/click.png"  style="position:absolute; top:400px; left:530px;"  width="110px" height="110px">
-        <img name="p9" src="/assets/images/click.png"  style="position:absolute; top:400px; left:710px;"  width="110px" height="110px">
-    
-        <img name="clip5" src="/assets/images/click.gif" onClick="put5 ()" style="position:absolute; top:340px; left:400px;" width="60px" height="60px">
-        <img name="clip6" src="/assets/images/click.gif" onClick="put6 ()" style="position:absolute; top:340px; left:580px;" width="60px" height="60px">
-        <img name="clip7" src="/assets/images/click.gif" onClick="put7 ()" style="position:absolute; top:480px; left:350px;" width="60px" height="60px">
-        <img name="clip8" src="/assets/images/click.gif" onClick="put8 ()" style="position:absolute; top:480px; left:530px;"  width="60px" height="60px">
-        <img name="clip9" src="/assets/images/click.gif" onClick="put9 ()" style="position:absolute; top:480px; left:710px;"  width="60px" height="60px"> 
-        <input type="text" name="t1" value=0 style="visibility:hidden">
-    </form>
-    
-    <div id="box1" style="position:absolute; top:120px; left:805px; width:300px; height:35px;border-radius:20px" >
-        <input type="button" name="but1" value="=" onClick="testaddition();"style="width:150px; height:80px; color:black; font-size:46px;border-radius:20px ">
-    </div>
-    
-    <form name="f2" action="">
-
-    <div id="box2" style="position:absolute; top:425px; left:1080px; width:100px; height:35px" >
-        <input type="submit" class="previous button1" value="නැවතත්" onClick="location.reload();" style ='margin-top:70px;margin-left:30px;color:green;height:50px;'>
-    </div>
-
-    </form>
-    
-    </div>
-    
-    
-    <form name="f3">
-    
-    <div id="box3" style="position:absolute; top:150px; left:1235px;width:100px; height:100px " >
-        <input type="text" name="txt3" value="" readonly= "true"style=" width:100px; height:100px; text-align:center; color:red; font-size:48px;border-radius:15px">
-    </div>
-    
-    <div id="box4" style="position:absolute; top:150px; left:150px;width:50px; height:50px " >
-        <input type="text" name="txt1" value="0" MaxLength="1" readonly= "true"style=" width:100px; height:100px; text-align:center; color:red; font-size:48px;border-radius:15px ">
-    </div>
-    
-    <div id="box5" style="position:absolute; top:150px; left:635px;width:50px; height:50px" >
-        <input type="text" name="txt2" value="0" MaxLength="1" readonly= "true"style=" width:100px; height:100px; text-align:center; color:red; font-size:48px;border-radius:15px ">
-    </div>
-
-    </form>
-    
-    </body>
-    
-    </HTML>
