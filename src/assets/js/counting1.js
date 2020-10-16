@@ -216,7 +216,17 @@ function showpages_addition2(page){
 
 }
 //--------------------------addition intro---------------
-//---pg1------------
+
+
+$(document).ready(function(){
+    $(document).on('click',"#addition-intro",function () {
+    var audio = document.getElementById("intro_audio");
+    if (audio.paused) audio.play();
+    else audio.pause();
+});
+});
+
+
 function game1(){
 document.f3.txt1.value="2";
 }
