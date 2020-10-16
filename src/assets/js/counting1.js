@@ -180,26 +180,39 @@ function showpages_addition2(page){
         document.getElementById("page1-addition2").style.display='block';
         document.getElementById("page2-addition2").style.display='none'; 
         document.getElementById("page3-addition2").style.display='none';
-        document.getElementById("page4-addition2").style.display='none';  
+        document.getElementById("page4-addition2").style.display='none';
+        document.getElementById("page5-addition2").style.display='none';    
     }
     else if (p1=="page2-addition2"){
         document.getElementById("page1-addition2").style.display='none';
         document.getElementById("page2-addition2").style.display='block'; 
         document.getElementById("page3-addition2").style.display='none';
-        document.getElementById("page4-addition2").style.display='none';  
+        document.getElementById("page4-addition2").style.display='none'; 
+        document.getElementById("page5-addition2").style.display='none';   
     } 
     else if (p1=="page3-addition2"){
         document.getElementById("page1-addition2").style.display='none';
         document.getElementById("page3-addition2").style.display='block'; 
         document.getElementById("page2-addition2").style.display='none'; 
-        document.getElementById("page4-addition2").style.display='none'; 
+        document.getElementById("page4-addition2").style.display='none';
+        document.getElementById("page5-addition2").style.display='none';   
     } 
     else if (p1=="page4-addition2"){
         document.getElementById("page1-addition2").style.display='none';
         document.getElementById("page4-addition2").style.display='block'; 
         document.getElementById("page3-addition2").style.display='none';
         document.getElementById("page2-addition2").style.display='none';  
+        document.getElementById("page5-addition2").style.display='none';  
     } 
+
+    else if (p1=="page5-addition2"){
+        document.getElementById("page1-addition2").style.display='none';
+        document.getElementById("page5-addition2").style.display='block'; 
+        document.getElementById("page3-addition2").style.display='none';
+        document.getElementById("page2-addition2").style.display='none';  
+        document.getElementById("page4-addition2").style.display='none';  
+    } 
+
 
 }
 //--------------------------addition intro---------------
@@ -268,7 +281,16 @@ function game15(){
     
 //---pg5-----------
     function game17(){
-        document.f6.txt17.value="5";
+        document.f7.txt17.value="6";
+    }
+    function game18(){
+        document.f7.txt18.value="7";
+    }
+   function game19(){
+        document.f7.txt19.value="8";
+    }
+    function game20(){
+        document.f7.txt16.value="9";
     }
 
 //---------------------------------------------------------
