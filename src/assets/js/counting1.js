@@ -179,17 +179,31 @@ function showpages_addition2(page){
     if (p1=="page1-addition2"){
         document.getElementById("page1-addition2").style.display='block';
         document.getElementById("page2-addition2").style.display='none'; 
-        document.getElementById("page3-addition2").style.display='none'; 
+        document.getElementById("page3-addition2").style.display='none';
+        document.getElementById("page4-addition2").style.display='none';  
     }
     else if (p1=="page2-addition2"){
         document.getElementById("page1-addition2").style.display='none';
         document.getElementById("page2-addition2").style.display='block'; 
-        document.getElementById("page3-addition2").style.display='none'; 
+        document.getElementById("page3-addition2").style.display='none';
+        document.getElementById("page4-addition2").style.display='none';  
+    } 
+    else if (p1=="page3-addition2"){
+        document.getElementById("page1-addition2").style.display='none';
+        document.getElementById("page3-addition2").style.display='block'; 
+        document.getElementById("page2-addition2").style.display='none'; 
+        document.getElementById("page4-addition2").style.display='none'; 
+    } 
+    else if (p1=="page4-addition2"){
+        document.getElementById("page1-addition2").style.display='none';
+        document.getElementById("page4-addition2").style.display='block'; 
+        document.getElementById("page3-addition2").style.display='none';
+        document.getElementById("page2-addition2").style.display='none';  
     } 
 
 }
 //--------------------------addition intro---------------
-
+//---pg1------------
 function game1(){
 document.f3.txt1.value="2";
 }
@@ -205,165 +219,60 @@ function game4(){
     document.f3.txt4.value="5";
 }
 
+//---pg2------------
 function game5(){
-    document.f3.txt5.value="6";
+    document.f4.txt5.value="3";
 }
+function game6(){
+    document.f4.txt6.value="4";
+    }
+    
+function game7(){
+        document.f4.txt7.value="5";
+    }
+    
+function game8(){
+        document.f4.txt8.value="6";
+    }
+
+//---pg3------------
+function game9(){
+        document.f5.txt9.value="4";
+    }
+    
+function game10(){
+        document.f5.txt10.value="5";
+    }
+
+function game11(){
+        document.f5.txt11.value="6";
+    }
+function game12(){
+        document.f5.txt12.value="7";
+    }
+
+//---pg4------------
+function game13(){
+        document.f6.txt13.value="5";
+    }
+function game14(){
+        document.f6.txt14.value="6";
+    }
+function game15(){
+        document.f6.txt15.value="7";
+    }
+    function game16(){
+        document.f6.txt16.value="8";
+    }
+
+    
+//---pg5-----------
+    function game17(){
+        document.f6.txt17.value="5";
+    }
 
 //---------------------------------------------------------
-function put9(){
-document.f3.txt3.value="";
-document.f1.clip9.style.visibility="hidden";
-document.f3.txt2.value=parseInt(document.f3.txt2.value)+1
 
-// document.f1.p9.style.left=k;
-// t=setTimeout("put9()",1);
-// k=k+5;
-// if(k<86)
-// {
-// clearTimeout(t);
-// document.f3.txt2.value=parseInt(document.f3.txt2.value)+1
-// }
-}
-
-function put8(){
-document.f3.txt3.value="";
-document.f1.clip8.style.visibility="hidden";
-document.f3.txt2.value=parseInt(document.f3.txt2.value)+1
-// document.f1.p8.style.left=j;
-// t=setTimeout("put8()",1);
-// j=j-5;
-// if(j<210)
-// {
-// clearTimeout(t);
-// document.f3.txt2.value=parseInt(document.f3.txt2.value)+1
-// }
-}
-
-
-function put7(){
-document.f3.txt3.value="";
-document.f1.clip7.style.visibility="hidden";
-document.f3.txt2.value=parseInt(document.f3.txt2.value)+1
-// document.f1.p7.style.left=h;
-// t=setTimeout("put7()",1);
-// h=h-5;
-// if(h<250)
-// {
-// clearTimeout(t);
-// document.f3.txt2.value=parseInt(document.f3.txt2.value)+1
-// }
-}
-
-function put6(){
-document.f3.txt3.value="";
-document.f1.clip6.style.visibility="hidden";
-document.f3.txt2.value=parseInt(document.f3.txt2.value)+1
-// document.f1.p6.style.left=g;
-// t=setTimeout("put6()",1);
-// g=g-5;
-// if(g<150)
-// {
-// clearTimeout(t);
-// document.f3.txt2.value=parseInt(document.f3.txt2.value)+1
-// }
-}
-
-function put5(){
-document.f3.txt3.value="";
-document.f1.clip5.style.visibility="hidden";
-document.f3.txt2.value=parseInt(document.f3.txt2.value)+1
-// document.f1.p5.style.left=f;
-// t=setTimeout("put5()",1);
-// f=f-5;
-// if(f<200)
-// {
-// clearTimeout(t);
-
-// }
-}
-
-function put4(){
-document.f1.t1.value=eval(document.f1.t1.value)+1;
-if(document.f1.t1.value==1)
-{
-}
-document.f3.txt3.value="";
-document.f1.clip4.style.visibility="hidden";
-document.f3.txt1.value=parseInt(document.f3.txt1.value)+1
-// document.f1.p4.style.left=e;
-// t=setTimeout("put4()",1);
-// e=e-5;
-// if(e<210)
-// {
-// clearTimeout(t);
-// document.f3.txt1.value=parseInt(document.f3.txt1.value)+1
-// }
-}
-
-function put3(){
-document.f1.t1.value=eval(document.f1.t1.value)+1;
-if(document.f1.t1.value==50)
-{
-}
-document.f3.txt3.value="";
-document.f1.clip3.style.visibility="hidden";
-document.f3.txt1.value=parseInt(document.f3.txt1.value)+1
-
-// document.f1.p3.style.left=d;
-// t=setTimeout("put3()",1);
-// d=d-5;
-// if(d<150)
-// {
-// clearTimeout(t);
-// document.f3.txt1.value=parseInt(document.f3.txt1.value)+1
-// }
-}
-
-function put2(){
-document.f1.t1.value=eval(document.f1.t1.value)+1;
-if(document.f1.t1.value==1)
-{
-}
-document.f3.txt3.value="";
-document.f1.clip2.style.visibility="hidden";
-document.f3.txt1.value=parseInt(document.f3.txt1.value)+1
-// document.f1.p2.style.left=c;
-// t=setTimeout("put2()",0.1);
-// c=c-5;
-// if(c<250)
-// {
-// clearTimeout(t);
-// document.f3.txt1.value=parseInt(document.f3.txt1.value)+1
-// }
-}
-
-
-function put1(){
-document.f1.t1.value=eval(document.f1.t1.value)+1;
-if(document.f1.t1.value==1)
-{
-document.f1.clip5.style.visibility="visible";
-document.f1.clip6.style.visibility="visible";
-document.f1.clip7.style.visibility="visible";
-document.f1.clip8.style.visibility="visible";
-document.f1.clip9.style.visibility="visible";
-
-}
-document.f3.txt3.value="";
-document.f1.clip1.style.visibility="hidden";
-document.f3.txt1.value=parseInt(document.f3.txt1.value)+1
-//document.f1.p1.style.left=b;
-// t=setTimeout("put1()");
-// b=b+5;
-// if(b<200)
-// {
-// clearTimeout(t);
-// document.f3.txt1.value=parseInt(document.f3.txt1.value)+1
-// }
-}
-function testaddition(){
-    document.f3.txt3.value=parseInt(document.f3.txt1.value)+parseInt(document.f3.txt2.value)
-}
 
 //-------------------addition game level2 grade 1----------------
 
