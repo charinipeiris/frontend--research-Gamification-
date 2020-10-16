@@ -135,8 +135,26 @@
     cursor: pointer;
     position: absolute; 
     z-index:2;
-    margin-top: 22em; 
+    margin-top: 18em; 
     margin-left:450px
+  }
+
+  .button4 {
+    border-radius: 12px;
+    background-color:#3f9454;
+    border: 5px solid #315032;;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 25px;
+    padding: 5px;
+    width: 250px;
+    height: 60px;
+    transition: all 0.5s;
+    cursor: pointer;
+    position: relative; 
+    margin-top: 320px;
+    margin-left: 490px;
+    z-index: 4;
   }
 
   .shape-image:hover{

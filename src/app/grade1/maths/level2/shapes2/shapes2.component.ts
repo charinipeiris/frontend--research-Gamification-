@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { GamesService } from "../../../../services/games.service";
+import { EmotiondetectorComponent } from '../../../../emotiondetector/emotiondetector.component';
 
 @Component({
   selector: 'app-shapes2',
@@ -7,7 +9,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Shapes2Component implements OnInit {
 
-  constructor() { }
+  @ViewChild(EmotiondetectorComponent) child: EmotiondetectorComponent;
+
+  constructor(private gamesService: GamesService) { }
 
   ngOnInit(): void {
   }
@@ -15,9 +19,15 @@ export class Shapes2Component implements OnInit {
 
 
 markstot(){
+
+  var time = document.getElementById("display").innerHTML;
+  console.log(time);
+  document.getElementById("time-back").style.visibility = "hidden";
+
   var total = parseInt(document.getElementById("marksArea").innerHTML)
 
- 
+  var finaltotal = 0;
+
     if (total == 8){
 
   var modal = document.getElementById("myModal");
@@ -39,7 +49,9 @@ markstot(){
   setTimeout(function(){
         document.getElementById('coin4').style.visibility = "visible";
         },2200);
-  
+        document.getElementById("perf-time").innerHTML = time;
+        finaltotal = finaltotal + 4;
+    console.log(finaltotal);
   
   }
   else if (total == 7){
@@ -62,6 +74,11 @@ markstot(){
     setTimeout(function(){
           document.getElementById('coin4').style.visibility = "visible";
           },2200);
+
+          document.getElementById("perf-time").innerHTML = time;
+
+          finaltotal = finaltotal + 4;
+          console.log(finaltotal);
   }
   
   else if(total == 6){
@@ -83,6 +100,9 @@ markstot(){
          document.getElementById('coin4').style.visibility = "visible";
             },1000);
      document.getElementById('coin4').style.opacity ="0.3";
+     document.getElementById("perf-time").innerHTML = time;
+     finaltotal = finaltotal + 3;
+     console.log(finaltotal);
       
     
   }
@@ -106,6 +126,9 @@ markstot(){
            document.getElementById('coin4').style.visibility = "visible";
               },1000);
        document.getElementById('coin4').style.opacity ="0.3";
+       document.getElementById("perf-time").innerHTML = time;
+       finaltotal = finaltotal + 3;
+       console.log(finaltotal);
     }
   
     else if (total==4) {
@@ -128,6 +151,10 @@ markstot(){
              document.getElementById('coin4').style.visibility = "visible";
                 },1000);
          document.getElementById('coin4').style.opacity ="0.3";
+         document.getElementById("perf-time").innerHTML = time;
+
+         finaltotal = finaltotal + 2;
+         console.log(finaltotal);
     }
   
     else if (total == 3){
@@ -150,6 +177,10 @@ markstot(){
              document.getElementById('coin4').style.visibility = "visible";
                 },1000);
          document.getElementById('coin4').style.opacity ="0.3";
+         document.getElementById("perf-time").innerHTML = time;
+
+         finaltotal = finaltotal + 2;
+         console.log(finaltotal);
     }
 
     else if (total == 2){
@@ -173,6 +204,10 @@ markstot(){
              document.getElementById('coin4').style.visibility = "visible";
                 },1000);
          document.getElementById('coin4').style.opacity ="0.3";
+         document.getElementById("perf-time").innerHTML = time;
+
+         finaltotal = finaltotal + 1;
+         console.log(finaltotal);
     }
    
     else if (total ==1){
@@ -196,6 +231,10 @@ markstot(){
              document.getElementById('coin4').style.visibility = "visible";
                 },1000);
          document.getElementById('coin4').style.opacity ="0.3";
+         document.getElementById("perf-time").innerHTML = time;
+
+         finaltotal = finaltotal + 1;
+         console.log(finaltotal);
       
     }
     else if(total == 0){
@@ -204,10 +243,26 @@ markstot(){
         setTimeout(function(){
           document.getElementById('sad_coin').style.visibility = "visible";
           },1000);
+          document.getElementById("perf-time").innerHTML = time;
+
+          console.log(finaltotal);
     }
     else{
       
     }
+
+    //  let username = localStorage.getItem('uname');
+    // this.gamesService.submitGame({    
+    //   completed_games : [
+    //   {
+    //   game_id : "M24",
+    //   marks : finaltotal,
+    //   time_spent : time,
+    //   emotions: this.child.emotions
+    //   }
+    // ]},username).subscribe(res=>{console.log("success")}, err=>{console.log("error")});
+
+    this.child.endgame(); 
   
   
   }
