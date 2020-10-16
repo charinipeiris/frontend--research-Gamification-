@@ -190,7 +190,26 @@ function showpages_addition2(page){
 }
 //--------------------------addition intro---------------
 
+function game1(){
+document.f3.txt1.value="2";
+}
 
+function game2(){
+    document.f3.txt2.value="3";
+}
+
+function game3(){
+    document.f3.txt3.value="4";
+}
+function game4(){
+    document.f3.txt4.value="5";
+}
+
+function game5(){
+    document.f3.txt5.value="6";
+}
+
+//---------------------------------------------------------
 function put9(){
 document.f3.txt3.value="";
 document.f1.clip9.style.visibility="hidden";
