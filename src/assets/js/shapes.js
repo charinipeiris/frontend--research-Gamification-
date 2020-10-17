@@ -1,3 +1,7 @@
+
+//=======================grade 1====================
+
+
 function show(Page1) {
        var p1 = document.getElementById(Page1).getAttribute("id");
        console.log(p1);
