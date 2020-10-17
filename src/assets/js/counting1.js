@@ -257,13 +257,13 @@ function testcountsgame(){
 function showpages_length(page){
     var p1 = document.getElementById(page).getAttribute("id");
 
-    if (p1=="page1-length"){
-        document.getElementById("page1-addition").style.display='block';
-        document.getElementById("page2-addition").style.display='none'; 
+    if (p1=="page1-addition2"){
+        document.getElementById("page1-addition2").style.display='block';
+        document.getElementById("page2-addition2").style.display='none'; 
     }
-    else if (p1=="page2-length"){
-        document.getElementById("page1-addition").style.display='none';
-        document.getElementById("page2-addition").style.display='block'; 
+    else if (p1=="page2-addition2"){
+        document.getElementById("page1-addition2").style.display='none';
+        document.getElementById("page2-addition2").style.display='block'; 
     } 
 }
 
@@ -630,3 +630,22 @@ document.getElementById("unmark3").checked = true; //kid gave right answer
 
 
 
+
+
+//------------------level1 -counting game (grade 2)
+function show_countL1(pg1_count) {
+    var p1 = document.getElementById(pg1_count).getAttribute("id");
+    console.log(p1);
+    if (p1 == "pg1_count"){
+           document.getElementById("pg1_count").style.display='block';
+           document.getElementById("pg2_count").style.display='none';
+    }
+    else if (p1 == "pg2_count"){
+           document.getElementById("pg1_count").style.display='none';
+           document.getElementById("pg2_count").style.display='block';  
+    }
+
+    // function show_countL1(pg1_count, pg2_count){
+    //     document.getElementById(pg1_count).style.display='block';
+    //     document.getElementById(pg2_count).style.display='none'; 
+    //   }
