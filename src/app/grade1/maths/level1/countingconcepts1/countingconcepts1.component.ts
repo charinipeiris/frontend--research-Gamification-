@@ -19,22 +19,92 @@ export class Countingconcepts1Component implements OnInit {
 }
 
 
-markstot_c1(){
+markstotc1(){
 
-  var time = document.getElementById("display").innerHTML;
-  console.log(time);
-  document.getElementById("time-back").style.visibility = "hidden";
-
-  var total = parseInt(document.getElementById("marksArea").innerHTML)
-
-  var finaltotal = 0;
+  var total1 = 0;
 
   
+let element1 = <HTMLInputElement> document.getElementById("mark1");  
+let element2 = <HTMLInputElement> document.getElementById("mark2");  
+let element3 = <HTMLInputElement> document.getElementById("mark3");  
+let element4 = <HTMLInputElement> document.getElementById("mark4"); 
+let element5 = <HTMLInputElement> document.getElementById("mark5"); 
 
-  if (total == 10){
+let element6 = <HTMLInputElement> document.getElementById("unmark1");  
+let element7 = <HTMLInputElement> document.getElementById("unmark2");  
+let element8 = <HTMLInputElement> document.getElementById("unmark3"); 
+let element9 = <HTMLInputElement> document.getElementById("unmark4");  
+let element10 = <HTMLInputElement> document.getElementById("unmark5"); 
+  
+if (element1.checked ){
+  total1 = total1 + 1;
+ }
+else if ((!element1.checked) && (!element6.checked)){
+  // document.getElementById('alert1').style.visibility = "visible";
+}
 
+if (element2.checked)
+    total1 = total1 + 1;
+
+else if  ((!element2.checked) && (!element7.checked)){
+  // document.getElementById('alert2').style.visibility = "visible";
+
+}
+if (element3.checked)
+    total1 = total1 + 1;
+
+else if  ((!element3.checked) && (!element8.checked)){
+  // document.getElementById('alert3').style.visibility = "visible";
+}
+
+if (element4.checked)
+    total1 = total1 + 1;
+
+else if  ((!element3.checked) && (!element9.checked)){
+  // document.getElementById('alert3').style.visibility = "visible";
+}
+
+if (element5.checked)
+    total1 = total1 + 1;
+
+else if  ((!element5.checked) && (!element10.checked)){
+  // document.getElementById('alert3').style.visibility = "visible";
+}
+
+console.log(total1);
+var chk = document.querySelectorAll('input[type="checkbox"]:checked').length;
+if (chk==5){
+  if (total1 == 5){
     var modal = document.getElementById("myModal");
-    var subbtn = document.getElementById("final_button");
+    var subbtn = document.getElementById("submit");
+    modal.style.display = "block";
+    subbtn.style.display = "none";
+    setTimeout(function(){
+      document.getElementById('coin1').style.visibility = "visible";
+      },1000);
+    
+    setTimeout(function(){
+      document.getElementById('coin2').style.visibility = "visible";
+      },1500);
+    
+    setTimeout(function(){
+        document.getElementById('coin3').style.visibility = "visible";
+        },2000);
+
+    setTimeout(function(){
+          document.getElementById('coin4').style.visibility = "visible";
+          },2000);
+
+    setTimeout(function(){
+            document.getElementById('coin5').style.visibility = "visible";
+            },2200);
+    
+    }
+
+
+  else if (total1 == 4){
+    var modal = document.getElementById("myModal");
+    var subbtn = document.getElementById("submit");
     modal.style.display = "block";
     subbtn.style.display = "none";
     setTimeout(function(){
@@ -51,319 +121,108 @@ markstot_c1(){
     
     setTimeout(function(){
           document.getElementById('coin4').style.visibility = "visible";
-          },2200);
+          },2000);
+
     setTimeout(function(){
             document.getElementById('coin5').style.visibility = "visible";
             },2200);
-          document.getElementById("perf-time").innerHTML = time;
-          finaltotal = finaltotal + 5;
-      console.log(finaltotal);
+    document.getElementById('coin5').style.opacity ="0.3";
+    }
     
-    }
-    else if (total == 9){
-      var modal = document.getElementById("myModal");
-      var subbtn = document.getElementById("final_button");
-      modal.style.display = "block";
-      subbtn.style.display = "none";
-      setTimeout(function(){
-        document.getElementById('coin1').style.visibility = "visible";
-        },1000);
-      
-      setTimeout(function(){
-        document.getElementById('coin2').style.visibility = "visible";
-        },1500);
-      
-      setTimeout(function(){
-          document.getElementById('coin3').style.visibility = "visible";
+
+  if (total1 == 3){
+var modal = document.getElementById("myModal");
+var subbtn = document.getElementById("submit");
+modal.style.display = "block";
+subbtn.style.display = "none";
+setTimeout(function(){
+  document.getElementById('coin1').style.visibility = "visible";
+  },1000);
+
+setTimeout(function(){
+  document.getElementById('coin2').style.visibility = "visible";
+  },1500);
+
+setTimeout(function(){
+    document.getElementById('coin3').style.visibility = "visible";
+    },2000);
+
+setTimeout(function(){
+    document.getElementById('coin4').style.visibility = "visible";
           },2000);
-      
-      setTimeout(function(){
-            document.getElementById('coin4').style.visibility = "visible";
+    document.getElementById('coin5').style.opacity ="0.3";
+setTimeout(function(){
+    document.getElementById('coin5').style.visibility = "visible";
             },2200);
-      setTimeout(function(){
-              document.getElementById('coin5').style.visibility = "visible";
-              },2200);
-  
-            document.getElementById("perf-time").innerHTML = time;
-  
-            finaltotal = finaltotal + 5;
-            console.log(finaltotal);
-    }
- 
+    document.getElementById('coin5').style.opacity ="0.3";
 
-  else if (total == 8){
+}
+else if (total1 == 2){
+var modal = document.getElementById("myModal");
+modal.style.display = "block";
+setTimeout(function(){
+  document.getElementById('coin1').style.visibility = "visible";
+  },1000);
 
-  var modal = document.getElementById("myModal");
-  var subbtn = document.getElementById("final_button");
-  modal.style.display = "block";
-  subbtn.style.display = "none";
+setTimeout(function(){
+  document.getElementById('coin2').style.visibility = "visible";
+  },1500);
+
+  setTimeout(function(){
+    document.getElementById('coin3').style.visibility = "visible";
+    },1900);
+  document.getElementById('coin3').style.opacity ="0.3";
+  setTimeout(function(){
+    document.getElementById('coin4').style.visibility = "visible";
+          },2000);
+    document.getElementById('coin5').style.opacity ="0.3";
+setTimeout(function(){
+    document.getElementById('coin5').style.visibility = "visible";
+            },2200);
+    document.getElementById('coin5').style.opacity ="0.3";
+}
+
+else if(total1 == 1){
+var modal = document.getElementById("myModal");
+modal.style.display = "block";
   setTimeout(function(){
     document.getElementById('coin1').style.visibility = "visible";
     },1000);
   
-  setTimeout(function(){
+    setTimeout(function(){
     document.getElementById('coin2').style.visibility = "visible";
-    },1500);
-  
-  setTimeout(function(){
-      document.getElementById('coin3').style.visibility = "visible";
-      },2000);
-  
-  setTimeout(function(){
-        document.getElementById('coin4').style.visibility = "visible";
-        },2200);
-  setTimeout(function(){
-          document.getElementById('coin5').style.visibility = "visible";
-          },2200);
-          document.getElementById('coin5').style.opacity ="0.3";
-        document.getElementById("perf-time").innerHTML = time;
-        finaltotal = finaltotal + 4;
-    console.log(finaltotal);
-  
-  }
-  else if (total == 7){
-    var modal = document.getElementById("myModal");
-    var subbtn = document.getElementById("final_button");
-    modal.style.display = "block";
-    subbtn.style.display = "none";
-    setTimeout(function(){
-      document.getElementById('coin1').style.visibility = "visible";
-      },1000);
-    
-    setTimeout(function(){
-      document.getElementById('coin2').style.visibility = "visible";
       },1500);
-    
-    setTimeout(function(){
-        document.getElementById('coin3').style.visibility = "visible";
-        },2000);
-    
-    setTimeout(function(){
-          document.getElementById('coin4').style.visibility = "visible";
-          },2200);
-    setTimeout(function(){
-            document.getElementById('coin5').style.visibility = "visible";
-            },2200);
-          document.getElementById('coin5').style.opacity ="0.3";
-          document.getElementById("perf-time").innerHTML = time;
+      document.getElementById('coin2').style.opacity ="0.3";
 
-          finaltotal = finaltotal + 4;
-          console.log(finaltotal);
-  }
+    setTimeout(function(){
+      document.getElementById('coin3').style.visibility = "visible";
+        },1900);
+      document.getElementById('coin3').style.opacity ="0.3";
+      setTimeout(function(){
+        document.getElementById('coin4').style.visibility = "visible";
+              },2000);
+        document.getElementById('coin5').style.opacity ="0.3";
+    setTimeout(function(){
+        document.getElementById('coin5').style.visibility = "visible";
+                },2200);
+        document.getElementById('coin5').style.opacity ="0.3";
+    
   
-  else if(total == 6){
+}
+else if(total1 == 0){
   var modal = document.getElementById("myModal");
   modal.style.display = "block";
     setTimeout(function(){
-      document.getElementById('coin1').style.visibility = "visible";
+      document.getElementById('sad_coin').style.visibility = "visible";
       },1000);
-    
-      setTimeout(function(){
-        document.getElementById('coin2').style.visibility = "visible";
-        },1000);
-      
-     setTimeout(function(){
-          document.getElementById('coin3').style.visibility = "visible";
-          },1000);
-
-     setTimeout(function(){
-         document.getElementById('coin4').style.visibility = "visible";
-            },1000);
-
-    setTimeout(function(){
-              document.getElementById('coin5').style.visibility = "visible";
-              },2200);
-     document.getElementById('coin4').style.opacity ="0.3";
-     document.getElementById("perf-time").innerHTML = time;
-     finaltotal = finaltotal + 3;
-     console.log(finaltotal);
-      
-    
-  }
-  else if(total == 5){
-    var modal = document.getElementById("myModal");
-    var modal = document.getElementById("myModal");
-    modal.style.display = "block";
-      setTimeout(function(){
-        document.getElementById('coin1').style.visibility = "visible";
-        },1000);
-      
-        setTimeout(function(){
-          document.getElementById('coin2').style.visibility = "visible";
-          },1000);
-        
-       setTimeout(function(){
-            document.getElementById('coin3').style.visibility = "visible";
-            },1000);
-  
-       setTimeout(function(){
-           document.getElementById('coin4').style.visibility = "visible";
-              },1000);
-      document.getElementById('coin4').style.opacity ="0.3";
-      setTimeout(function(){
-                document.getElementById('coin5').style.visibility = "visible";
-                },2200);
-       document.getElementById('coin5').style.opacity ="0.3";
-       document.getElementById("perf-time").innerHTML = time;
-       finaltotal = finaltotal + 3;
-       console.log(finaltotal);
-    }
-  
-    else if (total==4) {
-      var modal = document.getElementById("myModal");
-      modal.style.display = "block";
-        setTimeout(function(){
-          document.getElementById('coin1').style.visibility = "visible";
-          },1000);
-        
-          setTimeout(function(){
-            document.getElementById('coin2').style.visibility = "visible";
-            },1000);
-          
-         setTimeout(function(){
-              document.getElementById('coin3').style.visibility = "visible";
-              },1000);
-        document.getElementById('coin3').style.opacity ="0.3";
-    
-         setTimeout(function(){
-             document.getElementById('coin4').style.visibility = "visible";
-                },1000);
-         document.getElementById('coin4').style.opacity ="0.3";
-         setTimeout(function(){
-                  document.getElementById('coin5').style.visibility = "visible";
-                  },2200);
-         document.getElementById('coin5').style.opacity ="0.3";
-         document.getElementById("perf-time").innerHTML = time;
-
-         finaltotal = finaltotal + 2;
-         console.log(finaltotal);
-    }
-  
-    else if (total == 3){
-      var modal = document.getElementById("myModal");
-      modal.style.display = "block";
-        setTimeout(function(){
-          document.getElementById('coin1').style.visibility = "visible";
-          },1000);
-        
-          setTimeout(function(){
-            document.getElementById('coin2').style.visibility = "visible";
-            },1000);
-          
-         setTimeout(function(){
-              document.getElementById('coin3').style.visibility = "visible";
-              },1000);
-        document.getElementById('coin3').style.opacity ="0.3";
-    
-         setTimeout(function(){
-             document.getElementById('coin4').style.visibility = "visible";
-                },1000);
-        document.getElementById('coin4').style.opacity ="0.3";       
-         setTimeout(function(){
-                  document.getElementById('coin5').style.visibility = "visible";
-                  },2200);
-         document.getElementById('coin5').style.opacity ="0.3";
-         document.getElementById("perf-time").innerHTML = time;
-
-         finaltotal = finaltotal + 2;
-         console.log(finaltotal);
-    }
-
-    else if (total == 2){
-      var modal = document.getElementById("myModal");
-      modal.style.display = "block";
-        setTimeout(function(){
-          document.getElementById('coin1').style.visibility = "visible";
-          },1000);
-        
-          setTimeout(function(){
-            document.getElementById('coin2').style.visibility = "visible";
-            },1000);
-            document.getElementById('coin2').style.opacity ="0.3";
-          
-         setTimeout(function(){
-              document.getElementById('coin3').style.visibility = "visible";
-              },1000);
-        document.getElementById('coin3').style.opacity ="0.3";
-    
-         setTimeout(function(){
-             document.getElementById('coin4').style.visibility = "visible";
-                },1000);
-        document.getElementById('coin4').style.opacity ="0.3";
-        setTimeout(function(){
-                  document.getElementById('coin5').style.visibility = "visible";
-                  },2200);
-         document.getElementById('coin5').style.opacity ="0.3";
-        
-         document.getElementById("perf-time").innerHTML = time;
-
-         finaltotal = finaltotal + 1;
-         console.log(finaltotal);
-    }
-   
-    else if (total ==1){
-      var modal = document.getElementById("myModal");
-      modal.style.display = "block";
-        setTimeout(function(){
-          document.getElementById('coin1').style.visibility = "visible";
-          },1000);
-        
-          setTimeout(function(){
-            document.getElementById('coin2').style.visibility = "visible";
-            },1000);
-            document.getElementById('coin2').style.opacity ="0.3";
-          
-         setTimeout(function(){
-              document.getElementById('coin3').style.visibility = "visible";
-              },1000);
-        document.getElementById('coin3').style.opacity ="0.3";
-    
-         setTimeout(function(){
-             document.getElementById('coin4').style.visibility = "visible";
-                },1000);
-        document.getElementById('coin4').style.opacity ="0.3";
-          setTimeout(function(){
-                  document.getElementById('coin5').style.visibility = "visible";
-                  },2200);
-         document.getElementById('coin5').style.opacity ="0.3";
-
-         document.getElementById("perf-time").innerHTML = time;
-
-         finaltotal = finaltotal + 1;
-         console.log(finaltotal);
-      
-    }
-    else if(total == 0){
-      var modal = document.getElementById("myModal");
-      modal.style.display = "block";
-        setTimeout(function(){
-          document.getElementById('sad_coin').style.visibility = "visible";
-          },1000);
-          document.getElementById("perf-time").innerHTML = time;
-
-          console.log(finaltotal);
-    }
-    else {
-     
-    }
-
-
   }
 
+}
+else {
+  document.getElementById('alert').style.visibility = "visible";
+}
 
-    //  let username = localStorage.getItem('uname');
-    // this.gamesService.submitGame({    
-    //   completed_games : [
-    //   {
-    //   game_id : "M24",
-    //   marks : finaltotal,
-    //   time_spent : time,
-    //   emotions: this.child.emotions
-    //   }
-    // ]},username).subscribe(res=>{console.log("success")}, err=>{console.log("error")});
-
-    //this.child.endgame(); 
-  
+}
   
   }
 
