@@ -121,16 +121,25 @@ function showpages_length(page){
         document.getElementById("page1-length").style.display='block';	
         document.getElementById("page2-length").style.display='none'; 	
         document.getElementById("page3-length").style.display='none'; 	
+        document.getElementById("page4-length").style.display='none'; 	
     }
     else if (p1=="page2-length"){
         document.getElementById("page1-length").style.display='none';	
         document.getElementById("page2-length").style.display='block'; 	
         document.getElementById("page3-length").style.display='none'; 
+        document.getElementById("page4-length").style.display='none'; 	
         }
    else if (p1=="page3-length"){
     document.getElementById("page1-length").style.display='none';	
     document.getElementById("page2-length").style.display='none'; 	
     document.getElementById("page3-length").style.display='block'; 
+    document.getElementById("page2-length").style.display='none'; 	
+   }	
+   else if (p1=="page4-length"){
+    document.getElementById("page1-length").style.display='none';	
+    document.getElementById("page2-length").style.display='none'; 	
+    document.getElementById("page4-length").style.display='block'; 
+    document.getElementById("page3-length").style.display='none'; 	
    }	
         
 
@@ -169,37 +178,88 @@ function showpages_length(page){
         //-----------length game grade 1 level 2------------------
 
       
-            function testl2game3(){ 
-            document.f3.txt2.value="Congrats!!";
-            document.f3.clip4.src="/assets/images/blank.png";
-            document.f3.clip8.src="/assets/images/Tress.gif";
-            document.getElementById("tree2").style.pointerEvents ="none";
-            document.getElementById("mark2").checked = true; //kid gave wrong answer 
-            }
-            
-            function testl2game4(){
-            document.f3.txt2.value="Sorry";
-            document.f3.clip3.src="/assets/images/blank.png"; 
-            document.f3.clip8.src="/assets/images/w.gif";
-            document.getElementById("tree1").style.pointerEvents ="none";
-            document.getElementById("unmark2").checked = true; //kid gave wrong answer 
-            }
-            
-            function testl2game5(){
-            document.f3.txt3.value="Sorry";
-            document.f3.clip6.src="/assets/images/blank.png";
-            document.f3.clip9.src="/assets/images/w.gif";
-            document.getElementById("pen2").style.pointerEvents ="none";
-            document.getElementById("unmark3").checked = true; //kid gave wrong answer 
-            }
-            
-            function testl2game6(){
-            document.f3.txt3.value="Congrats!!";
-            document.f3.clip5.src="/assets/images/blank.png"; 
-            document.f3.clip9.src="/assets/images/Tress.gif";
-            document.getElementById("pen1").style.pointerEvents ="none";
-            document.getElementById("mark3").checked = true; //kid gave wrong answer 
-            }
+        function test1_len()
+        {
+        document.f3.rw1.src="/assets/images/yay_bunny2.gif";
+        document.getElementById("a2").style.pointerEvents = "none";
+        document.getElementById("a1").style.pointerEvents = "none";
+        document.getElementById("mark1").checked = true; //kid gave right answer 
+
+        
+        }
+        function test2_len()
+        {
+        document.f3.rw1.src="/assets/images/w.gif";
+        document.getElementById("a5").style.pointerEvents = "none";
+        document.getElementById("a2").style.pointerEvents = "none";
+        document.getElementById("unmark1").checked = true; //kid gave wrong answer 
+    
+        }
+    
+        function test3_len()
+        {
+        document.f3.rw1.src="/assets/images/w.gif";
+        document.getElementById("a1").style.pointerEvents = "none";
+        document.getElementById("a5").style.pointerEvents = "none";
+        document.getElementById("unmark1").checked = true; //kid gave wrong answer 
+
+        }
+        
+        function test4_len()
+        {
+        document.f3.rw2.src="/assets/images/w.gif";
+        document.getElementById("b2").style.pointerEvents = "none";
+        document.getElementById("b5").style.pointerEvents = "none";
+        document.getElementById("unmark2").checked = true; //kid gave right answer 
+    
+        
+        }
+        function test5_len()
+        {
+    
+        document.f3.rw2.src="/assets/images/yay_bunny2.gif";
+        document.getElementById("b1").style.pointerEvents = "none";
+        document.getElementById("b2").style.pointerEvents = "none";
+        document.getElementById("mark2").checked = true; //kid gave wrong answer 
+
+        }
+    
+        function test6_len()
+        {
+        document.f3.rw2.src="/assets/images/w.gif";
+        document.getElementById("b2").style.pointerEvents = "none";
+        document.getElementById("b1").style.pointerEvents = "none";
+        document.getElementById("unmark2").checked = true; //kid gave wrong answer 
+
+        }
+        
+        function test7_len()
+        {
+        document.f3.rw3.src="/assets/images/w.gif";
+        document.getElementById("c1").style.pointerEvents = "none";
+        document.getElementById("c2").style.pointerEvents = "none";
+        document.getElementById("unmark3").checked = true; //kid gave wrong answer 
+        
+        }
+        function test8_len()
+        {
+        document.f3.rw3.src="/assets/images/yay_bunny2.gif";
+        document.getElementById("c5").style.pointerEvents = "none";  
+        document.getElementById("c2").style.pointerEvents = "none"; 
+        document.getElementById("mark3").checked = true; //kid gave right answer 
+    
+        }
+    
+        function test9_len()
+        {
+    
+        document.f3.rw3.src="/assets/images/w.gif";
+        document.getElementById("c5").style.pointerEvents = "none";
+        document.getElementById("c1").style.pointerEvents = "none";
+        document.getElementById("unmark3").checked = true; //kid gave wrong answer 
+
+        
+        }
 
 
 
