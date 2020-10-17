@@ -398,7 +398,7 @@ function game15(){
         document.f7.txt19.value="8";
     }
     function game20(){
-        document.f7.txt16.value="9";
+        document.f7.txt20.value="9";
     }
 
 //-------------addition level 2 - grade  1 game --------------
