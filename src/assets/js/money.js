@@ -171,6 +171,7 @@ document.getElementById("submit").style.display="none";
       //   document.getElementById(Page1).style.display='block';
       //   document.getElementById(Page2).style.display='none'; 
       // }
+      
     
       function test1_money2()
       {
@@ -183,6 +184,7 @@ document.getElementById("submit").style.display="none";
       document.getElementById("a2").style.pointerEvents = "none";
       document.getElementById("a1").style.pointerEvents = "none";
       document.getElementById("mark1").checked = true; //kid gave right answer 
+      enableSubmit_money()
       
       }
       function test2_money2()
@@ -196,6 +198,7 @@ document.getElementById("submit").style.display="none";
       document.getElementById("a5").style.pointerEvents = "none";
       document.getElementById("a2").style.pointerEvents = "none";
       document.getElementById("unmark1").checked = true; //kid gave wrong answer 
+      enableSubmit_money()
       }
   
       function test3_money2()
@@ -209,6 +212,7 @@ document.getElementById("submit").style.display="none";
       document.getElementById("a1").style.pointerEvents = "none";
       document.getElementById("a5").style.pointerEvents = "none";
       document.getElementById("unmark1").checked = true; //kid gave wrong answer 
+      enableSubmit_money()
       }
       
       function test4_money2()
@@ -222,6 +226,7 @@ document.getElementById("submit").style.display="none";
       document.getElementById("b2").style.pointerEvents = "none";
       document.getElementById("b5").style.pointerEvents = "none";
       document.getElementById("unmark2").checked = true; //kid gave right answer 
+      enableSubmit_money()
       
       }
       function test5_money2()
@@ -235,6 +240,7 @@ document.getElementById("submit").style.display="none";
       document.getElementById("b1").style.pointerEvents = "none";
       document.getElementById("b2").style.pointerEvents = "none";
       document.getElementById("mark2").checked = true; //kid gave wrong answer 
+      enableSubmit_money()
       }
   
       function test6_money2()
@@ -248,6 +254,7 @@ document.getElementById("submit").style.display="none";
       document.getElementById("b2").style.pointerEvents = "none";
       document.getElementById("b1").style.pointerEvents = "none";
       document.getElementById("unmark2").checked = true; //kid gave wrong answer 
+      enableSubmit_money()
       }
       
       function test7_money2()
@@ -261,6 +268,7 @@ document.getElementById("submit").style.display="none";
       document.getElementById("c1").style.pointerEvents = "none";
       document.getElementById("c2").style.pointerEvents = "none";
       document.getElementById("unmark3").checked = true; //kid gave wrong answer 
+      enableSubmit_money()
       
       }
       function test8_money2()
@@ -274,19 +282,21 @@ document.getElementById("submit").style.display="none";
       document.getElementById("c5").style.pointerEvents = "none";  
       document.getElementById("c2").style.pointerEvents = "none"; 
       document.getElementById("mark3").checked = true; //kid gave right answer 
+      enableSubmit_money()
       }
   
       function test9_money2()
       {
       document.f1.clip3.src="/assets/images/2.jpg";
       document.f1.leaf3.src="/assets/images/trans.svg";
-      document.f1.leaf1.src="/assets/images/5.png";
-      document.f1.leaf2.src="/assets/images/1.png";
+      // document.f1.leaf1.src="/assets/images/5.png";
+      // document.f1.leaf2.src="/assets/images/1.png";
   
       document.f1.rw3.src="/assets/images/w.gif";
       document.getElementById("c5").style.pointerEvents = "none";
       document.getElementById("c1").style.pointerEvents = "none";
       document.getElementById("unmark3").checked = true; //kid gave wrong answer 
+      enableSubmit_money()
       
       }
   
