@@ -648,4 +648,4 @@ function show_countL1(pg1_count) {
     // function show_countL1(pg1_count, pg2_count){
     //     document.getElementById(pg1_count).style.display='block';
     //     document.getElementById(pg2_count).style.display='none'; 
-    //   }
+      }
