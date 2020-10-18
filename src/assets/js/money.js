@@ -306,3 +306,19 @@ document.getElementById("submit").style.display="none";
       
       }
   
+//==========================Grade 2========================
+//==========Money level 2
+//---------------------------money grade 2 page level 1--------------------------------
+
+
+function showpages_mon1(page){
+  var p1 = document.getElementById(page).getAttribute("id");
+  if (p1=="page1-sub"){	
+      document.getElementById("page1-mon1").style.display='block';	
+      document.getElementById("page2-mon1").style.display='none'; 	
+  }
+  else if (p1=="page2-mon1"){
+      document.getElementById("page1-mon1").style.display='none';	
+      document.getElementById("page2-mon1").style.display='block'; 	 
+      }
+}	

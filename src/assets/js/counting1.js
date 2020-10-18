@@ -644,8 +644,35 @@ function show_countL1(pg1_count) {
            document.getElementById("pg1_count").style.display='none';
            document.getElementById("pg2_count").style.display='block';  
     }
-
-    // function show_countL1(pg1_count, pg2_count){
-    //     document.getElementById(pg1_count).style.display='block';
-    //     document.getElementById(pg2_count).style.display='none'; 
       }
+
+//---------------------------substraction grade 2 page transitionlevel 1--------------------------------
+
+
+function showpages_sub(page){
+    var p1 = document.getElementById(page).getAttribute("id");
+    if (p1=="page1-sub"){	
+        document.getElementById("page1-sub").style.display='block';	
+        document.getElementById("page2-sub").style.display='none'; 	
+    }
+    else if (p1=="page2-sub"){
+        document.getElementById("page1-sub").style.display='none';	
+        document.getElementById("page2-sub").style.display='block'; 	 
+        }
+}	
+
+
+//---------------------------addition grade 2 page transition level 1--------------------------------
+
+
+function showpages_ad(page){
+    var p1 = document.getElementById(page).getAttribute("id");
+    if (p1=="page1-ad"){	
+        document.getElementById("page1-ad").style.display='block';	
+        document.getElementById("page2-ad").style.display='none'; 	
+    }
+    else if (p1=="page2-ad"){
+        document.getElementById("page1-ad").style.display='none';	
+        document.getElementById("page2-ad").style.display='block'; 	 
+        }
+}	
