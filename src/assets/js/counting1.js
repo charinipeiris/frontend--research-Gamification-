@@ -254,18 +254,18 @@ function testcountsgame(){
 
 //fucntion to laod next and previous pages of grade 1 level 2 (Addition)---------
 
-function showpages_length(page){
-    var p1 = document.getElementById(page).getAttribute("id");
+// function showpages_length(page){
+//     var p1 = document.getElementById(page).getAttribute("id");
 
-    if (p1=="page1-addition2"){
-        document.getElementById("page1-addition2").style.display='block';
-        document.getElementById("page2-addition2").style.display='none'; 
-    }
-    else if (p1=="page2-addition2"){
-        document.getElementById("page1-addition2").style.display='none';
-        document.getElementById("page2-addition2").style.display='block'; 
-    } 
-}
+//     if (p1=="page1-addition2"){
+//         document.getElementById("page1-addition2").style.display='block';
+//         document.getElementById("page2-addition2").style.display='none'; 
+//     }
+//     else if (p1=="page2-addition2"){
+//         document.getElementById("page1-addition2").style.display='none';
+//         document.getElementById("page2-addition2").style.display='block'; 
+//     } 
+// }
 
 //---------------addition level2 grade 1 (page transition) -----------
 

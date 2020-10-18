@@ -120,26 +120,26 @@ function showpages_length(page){
     if (p1=="page1-length"){	
         document.getElementById("page1-length").style.display='block';	
         document.getElementById("page2-length").style.display='none'; 	
-        document.getElementById("page3-length").style.display='none'; 	
+        document.getElementById("page3-length").style.display='none'; 
         document.getElementById("page4-length").style.display='none'; 	
     }
     else if (p1=="page2-length"){
         document.getElementById("page1-length").style.display='none';	
         document.getElementById("page2-length").style.display='block'; 	
         document.getElementById("page3-length").style.display='none'; 
-        document.getElementById("page4-length").style.display='none'; 	
+        document.getElementById("page4-length").style.display='none'; 
         }
    else if (p1=="page3-length"){
     document.getElementById("page1-length").style.display='none';	
     document.getElementById("page2-length").style.display='none'; 	
-    document.getElementById("page3-length").style.display='block'; 
-    document.getElementById("page2-length").style.display='none'; 	
+    document.getElementById("page3-length").style.display='block';
+    document.getElementById("page4-length").style.display='none';  
    }	
-   else if (p1=="page4-length"){
+   else if(p1=="page4-length"){
     document.getElementById("page1-length").style.display='none';	
     document.getElementById("page2-length").style.display='none'; 	
     document.getElementById("page4-length").style.display='block'; 
-    document.getElementById("page3-length").style.display='none'; 	
+    document.getElementById("page3-length").style.display='none'; 
    }	
         
 
@@ -252,13 +252,10 @@ function showpages_length(page){
     
         function test9_len()
         {
-    
         document.f3.rw3.src="/assets/images/w.gif";
         document.getElementById("c5").style.pointerEvents = "none";
         document.getElementById("c1").style.pointerEvents = "none";
         document.getElementById("unmark3").checked = true; //kid gave wrong answer 
-
-        
         }
 
 
