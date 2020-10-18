@@ -150,24 +150,37 @@
   animation-fill-mode: forwards;
 }
 
-  /* Split the screen in half */
+  /* Split the screen in half
   .split {
     height: 100%;
     width: 50%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    overflow-x: hidden;
-    padding-top: 20px;
+    /* position: absolute; */
+    /* z-index: 1;
+    top: 0; */
+    /* overflow-x: hidden; */
+    /* padding-top: 20px;
   }
-  
+   */
   /* Control the left side */
-  .left {
+  /* .left {
     left: 0;
   }
-  
+   */
   /* Control the right side */
-  .right {
+  /* .right {
     right: 0;
     
+  }  */
+
+  .column {
+    float: left;
+    width: 50%;
+
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
   }
