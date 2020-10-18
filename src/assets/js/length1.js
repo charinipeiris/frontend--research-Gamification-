@@ -235,28 +235,56 @@ function showpages_length(page){
         
         function test7_len()
         {
-        document.f3.rw3.src="/assets/images/w.gif";
-        document.getElementById("c1").style.pointerEvents = "none";
-        document.getElementById("c2").style.pointerEvents = "none";
-        document.getElementById("unmark3").checked = true; //kid gave wrong answer 
+        document.f4.rw1.src="/assets/images/yay_bunny2.gif";
+        document.getElementById("a2x").style.pointerEvents = "none";
+        document.getElementById("a1x").style.pointerEvents = "none";
+        document.getElementById("mark3").checked = true; //kid gave right answer 
+
         
         }
         function test8_len()
         {
-        document.f3.rw3.src="/assets/images/yay_bunny2.gif";
-        document.getElementById("c5").style.pointerEvents = "none";  
-        document.getElementById("c2").style.pointerEvents = "none"; 
-        document.getElementById("mark3").checked = true; //kid gave right answer 
+        document.f4.rw1.src="/assets/images/w.gif";
+        document.getElementById("a5x").style.pointerEvents = "none";
+        document.getElementById("a2x").style.pointerEvents = "none";
+        document.getElementById("unmark3").checked = true; //kid gave wrong answer 
     
         }
     
         function test9_len()
         {
-        document.f3.rw3.src="/assets/images/w.gif";
-        document.getElementById("c5").style.pointerEvents = "none";
-        document.getElementById("c1").style.pointerEvents = "none";
+        document.f4.rw1.src="/assets/images/w.gif";
+        document.getElementById("a1x").style.pointerEvents = "none";
+        document.getElementById("a5x").style.pointerEvents = "none";
         document.getElementById("unmark3").checked = true; //kid gave wrong answer 
+
         }
+        
+        function test10_len()
+        {
+        document.f4.rw2.src="/assets/images/w.gif";
+        document.getElementById("b2x").style.pointerEvents = "none";
+        document.getElementById("b5x").style.pointerEvents = "none";
+        document.getElementById("unmark4").checked = true; //kid gave right answer 
+    
+        
+        }
+        function test11_len()
+        {
+    
+        document.f4.rw2.src="/assets/images/yay_bunny2.gif";
+        document.getElementById("b1x").style.pointerEvents = "none";
+        document.getElementById("b2x").style.pointerEvents = "none";
+        document.getElementById("mark4").checked = true; //kid gave wrong answer 
 
+        }
+    
+        function test12_len()
+        {
+        document.f4.rw2.src="/assets/images/w.gif";
+        document.getElementById("b2x").style.pointerEvents = "none";
+        document.getElementById("b1x").style.pointerEvents = "none";
+        document.getElementById("unmark4").checked = true; //kid gave wrong answer 
 
+        }
 

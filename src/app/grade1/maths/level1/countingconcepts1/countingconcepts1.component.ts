@@ -150,7 +150,7 @@ setTimeout(function(){
 setTimeout(function(){
     document.getElementById('coin4').style.visibility = "visible";
           },2000);
-    document.getElementById('coin5').style.opacity ="0.3";
+    document.getElementById('coin4').style.opacity ="0.3";
 setTimeout(function(){
     document.getElementById('coin5').style.visibility = "visible";
             },2200);
@@ -175,7 +175,7 @@ setTimeout(function(){
   setTimeout(function(){
     document.getElementById('coin4').style.visibility = "visible";
           },2000);
-    document.getElementById('coin5').style.opacity ="0.3";
+    document.getElementById('coin4').style.opacity ="0.3";
 setTimeout(function(){
     document.getElementById('coin5').style.visibility = "visible";
             },2200);
@@ -201,7 +201,7 @@ modal.style.display = "block";
       setTimeout(function(){
         document.getElementById('coin4').style.visibility = "visible";
               },2000);
-        document.getElementById('coin5').style.opacity ="0.3";
+        document.getElementById('coin4').style.opacity ="0.3";
     setTimeout(function(){
         document.getElementById('coin5').style.visibility = "visible";
                 },2200);
