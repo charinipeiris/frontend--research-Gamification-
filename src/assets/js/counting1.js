@@ -202,7 +202,7 @@ function testcountsgame(){
     document.f1.txt1.value="Wrong";
     document.f1.clip2.src="/assets/images/blank.png";
     document.f1.clip7.src="/assets/images/w.gif";
-    document.getElementById("60").style.pointerEvents ="none";
+    document.getElementById("lkid1").style.pointerEvents ="none";
     document.getElementById("unmark1").checked = true; //kid gave wrong answer 
     }
     
@@ -210,7 +210,7 @@ function testcountsgame(){
     document.f1.txt1.value="Correct!!";
     document.f1.clip1.src="/assets/images/blank.png"; 
     document.f1.clip7.src="/assets/images/yay_bunny2.gif";
-    document.getElementById("50").style.pointerEvents ="none";
+    document.getElementById("lkid2").style.pointerEvents ="none";
     document.getElementById("mark1").checked = true; //kid gave wrong answer 
     }
     
@@ -218,7 +218,7 @@ function testcountsgame(){
     document.f1.txt2.value="Correct!!";
     document.f1.clip4.src="/assets/images/blank.png";
     document.f1.clip8.src="/assets/images/yay_bunny2.gif";
-    document.getElementById("33").style.pointerEvents ="none";
+    document.getElementById("tree2").style.pointerEvents ="none";
     document.getElementById("mark2").checked = true; //kid gave wrong answer 
     }
     
@@ -227,7 +227,7 @@ function testcountsgame(){
     document.f1.clip3.src="/assets/images/blank.png"; 
    // document.f1.clip4. src="/assets/images/line1.gif";
     document.f1.clip8.src="/assets/images/w.gif";
-    document.getElementById("32").style.pointerEvents ="none";
+    document.getElementById("tree1").style.pointerEvents ="none";
     document.getElementById("unmark2").checked = true; //kid gave wrong answer 
     }
     
@@ -236,7 +236,7 @@ function testcountsgame(){
     document.f1.clip6.src="/assets/images/blank.png";
     // document.f1.clip5. src="/assets/images/line1.gif";
     document.f1.clip9.src="/assets/images/w.gif";
-    document.getElementById("61").style.pointerEvents ="none";
+    document.getElementById("pen2").style.pointerEvents ="none";
     document.getElementById("unmark3").checked = true; //kid gave wrong answer 
     }
     
@@ -245,7 +245,7 @@ function testcountsgame(){
     document.f1.clip5.src="/assets/images/blank.png"; 
     //document.f1.clip6. src="/assets/images/wow.gif";
     document.f1.clip9.src="/assets/images/yay_bunny2.gif";
-    document.getElementById("71").style.pointerEvents ="none";
+    document.getElementById("pen1").style.pointerEvents ="none";
     document.getElementById("mark3").checked = true; //kid gave wrong answer 
     }
 
@@ -985,3 +985,150 @@ document.getElementById("unmark3").checked = true; //kid gave right answer
 }
 
 
+//------------------level1 - counting game (grade 2)----------------------------------------------------------------
+function show_countL1(pg1_count) {
+    var p1 = document.getElementById(pg1_count).getAttribute("id");
+    console.log(p1);
+    if (p1 == "pg1_count"){
+           document.getElementById("pg1_count").style.display='block';
+           document.getElementById("pg2_count").style.display='none';
+           document.getElementById("pg3_count").style.display='none';
+    }
+    else if (p1 == "pg2_count"){
+           document.getElementById("pg1_count").style.display='none';
+           document.getElementById("pg2_count").style.display='block'; 
+           document.getElementById("pg3_count").style.display='none'; 
+    }
+    else if (p1 == "pg3_count"){
+        document.getElementById("pg1_count").style.display='none';
+        document.getElementById("pg2_count").style.display='none'; 
+        document.getElementById("pg3_count").style.display='block'; 
+ }
+}
+
+function showNxt(pg1_count) {
+    var p1 = document.getElementById(pg1_count).getAttribute("id");
+    console.log(p1);
+    if (p1 == "pg1_count"){
+           document.getElementById("pg1_count").style.display='block';
+           document.getElementById("pg2_count").style.display='none'; 
+           document.getElementById("pg3_count").style.display='none'; 
+    }
+
+    if (p1 == "pg2_count"){
+        document.getElementById("pg1_count").style.display='none';
+        document.getElementById("pg2_count").style.display='block'; 
+        document.getElementById("pg3_count").style.display='none'; 
+    }
+
+    if (p1 == "pg3_count"){
+        document.getElementById("pg1_count").style.display='none';
+        document.getElementById("pg2_count").style.display='none'; 
+        document.getElementById("pg3_count").style.display='block'; 
+    }
+}
+
+
+// Game
+//Page 2
+
+function testcount1()
+{
+document.f1.text1.value="Correct!!";
+document.f1.clip07.src="/assets/images/yay_bunny2.gif";
+document.getElementById("60").style.pointerEvents = "none";
+document.getElementById("mark1").checked = true; //kid gave right answer 
+}
+
+function testcount2()
+{
+document.f1.text1.value="Wrong";
+document.f1.clip07.src="/assets/images/w.gif";
+document.getElementById("50").style.pointerEvents = "none";
+document.getElementById("unmark1").checked = true; //kid gave right answer 
+}
+
+
+function testcount3()
+{
+document.f1.text2.value="Correct!!";
+document.f1.clip08.src="/assets/images/yay_bunny2.gif";
+document.getElementById("33").style.pointerEvents = "none";
+document.getElementById("mark2").checked = true; //kid gave right answer 
+}
+
+function testcount4()
+{
+document.f1.text2.value="Wrong";
+document.f1.clip08.src="/assets/images/w.gif";
+document.getElementById("32").style.pointerEvents = "none";
+document.getElementById("unmark2").checked = true; //kid gave right answer 
+}
+
+function testcount6()
+{
+document.f1.text3.value="Correct!!";
+document.f1.clip09.src="/assets/images/yay_bunny2.gif";
+document.getElementById("71").style.pointerEvents = "none";
+document.getElementById("mark3").checked = true; //kid gave right answer 
+}
+
+function testcount5()
+{
+document.f1.text3.value="Wrong";
+document.f1.clip09.src="/assets/images/w.gif";
+document.getElementById("61").style.pointerEvents = "none";
+document.getElementById("unmark3").checked = true; //kid gave right answer 
+}
+
+
+//Page 3
+
+function testcount7()
+{
+document.f2.text4.value="Correct!!";
+document.f2.clip10.src="/assets/images/yay_bunny2.gif";
+document.getElementById("97").style.pointerEvents = "none";
+document.getElementById("mark01").checked = true; //kid gave right answer 
+}
+
+function testcount8()
+{
+document.f2.text4.value="Wrong";
+document.f2.clip10.src="/assets/images/w.gif";
+document.getElementById("87").style.pointerEvents = "none";
+document.getElementById("unmark01").checked = true; //kid gave right answer 
+}
+
+
+function testcount9()
+{
+document.f2.text5.value="Correct!!";
+document.f2.clip11.src="/assets/images/yay_bunny2.gif";
+document.getElementById("78").style.pointerEvents = "none";
+document.getElementById("mark02").checked = true; //kid gave right answer 
+}
+
+function testcount10()
+{
+document.f2.text5.value="Wrong";
+document.f2.clip11.src="/assets/images/w.gif";
+document.getElementById("68").style.pointerEvents = "none";
+document.getElementById("unmark02").checked = true; //kid gave right answer 
+}
+
+function testcount12()
+{
+document.f2.text6.value="Correct!!";
+document.f2.clip12.src="/assets/images/yay_bunny2.gif";
+document.getElementById("95").style.pointerEvents = "none";
+document.getElementById("mark03").checked = true; //kid gave right answer 
+}
+
+function testcount11()
+{
+document.f2.text6.value="Wrong";
+document.f2.clip12.src="/assets/images/w.gif";
+document.getElementById("85").style.pointerEvents = "none";
+document.getElementById("unmark03").checked = true; //kid gave right answer 
+}
