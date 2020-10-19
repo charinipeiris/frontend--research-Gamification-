@@ -1089,7 +1089,7 @@ function testcount7()
 document.f2.text4.value="Correct!!";
 document.f2.clip10.src="/assets/images/yay_bunny2.gif";
 document.getElementById("97").style.pointerEvents = "none";
-document.getElementById("mark01").checked = true; //kid gave right answer 
+document.getElementById("mark4").checked = true; //kid gave right answer 
 }
 
 function testcount8()
@@ -1097,7 +1097,7 @@ function testcount8()
 document.f2.text4.value="Wrong";
 document.f2.clip10.src="/assets/images/w.gif";
 document.getElementById("87").style.pointerEvents = "none";
-document.getElementById("unmark01").checked = true; //kid gave right answer 
+document.getElementById("unmark4").checked = true; //kid gave right answer 
 }
 
 
@@ -1106,7 +1106,7 @@ function testcount9()
 document.f2.text5.value="Correct!!";
 document.f2.clip11.src="/assets/images/yay_bunny2.gif";
 document.getElementById("78").style.pointerEvents = "none";
-document.getElementById("mark02").checked = true; //kid gave right answer 
+document.getElementById("mark5").checked = true; //kid gave right answer 
 }
 
 function testcount10()
@@ -1114,7 +1114,7 @@ function testcount10()
 document.f2.text5.value="Wrong";
 document.f2.clip11.src="/assets/images/w.gif";
 document.getElementById("68").style.pointerEvents = "none";
-document.getElementById("unmark02").checked = true; //kid gave right answer 
+document.getElementById("unmark5").checked = true; //kid gave right answer 
 }
 
 function testcount12()
@@ -1122,7 +1122,7 @@ function testcount12()
 document.f2.text6.value="Correct!!";
 document.f2.clip12.src="/assets/images/yay_bunny2.gif";
 document.getElementById("95").style.pointerEvents = "none";
-document.getElementById("mark03").checked = true; //kid gave right answer 
+document.getElementById("mark6").checked = true; //kid gave right answer 
 }
 
 function testcount11()
@@ -1130,5 +1130,5 @@ function testcount11()
 document.f2.text6.value="Wrong";
 document.f2.clip12.src="/assets/images/w.gif";
 document.getElementById("85").style.pointerEvents = "none";
-document.getElementById("unmark03").checked = true; //kid gave right answer 
+document.getElementById("unmark6").checked = true; //kid gave right answer 
 }
