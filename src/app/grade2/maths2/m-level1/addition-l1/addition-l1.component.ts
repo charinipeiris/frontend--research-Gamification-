@@ -13,7 +13,7 @@ export class AdditionL1Component implements OnInit {
   ngOnInit(){   
 }
 
-markstot_additions2(){
+markstot_additions5(){
 var total6 = 0;
 
 let element1 = <HTMLInputElement> document.getElementById("mark1");  

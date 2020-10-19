@@ -575,7 +575,210 @@ function showpages_ad(page){
 
 //-----------adddition grade 2 intro  level 1----------------------
 
-//-------------------addition game level1 grade 2----------------
+//-------------addition game level 1 grade 2
+
+function testoadd3()
+{
+document.f1.t3.value=25;
+// document.f1.clip11.src="/assets/images/blank.gif";
+// document.f1.clip10.src="/assets/images/blank.gif";
+document.f1.rw1.src="/assets/images/yay_bunny2.gif";
+document.getElementById("n1").style.pointerEvents = "none";
+document.getElementById("n3").style.pointerEvents = "none";
+document.getElementById("mark1").checked = true; //kid gave right answer 
+}
+function testoadd4()
+{
+document.f1.t3.value=26;
+document.f1.rw1.src="/assets/images/w.gif";
+document.getElementById("n1").style.pointerEvents = "none";
+document.getElementById("n2").style.pointerEvents = "none";
+document.getElementById("unmark1").checked = true; //kid gave right answer 
+}
+
+function testoadd6()
+{
+document.f1.t3.value=27;
+document.f1.rw1.src="/assets/images/w.gif";
+// document.f1.clip11.src="/assets/images/blank.gif";
+// document.f1.clip10.src="/assets/images/blank.gif";
+document.getElementById("n2").style.pointerEvents = "none";
+document.getElementById("n3").style.pointerEvents = "none";
+document.getElementById("unmark1").checked = true; //kid gave right answer 
+}
+
+//-------------addition02---------
+
+function testoadd32()
+{
+document.f2.t6.value=23;
+document.f2.rw2.src="/assets/images/w.gif";
+// document.f2.clip11.src="/assets/images/blank.gif";
+// document.f2.clip10.src="/assets/images/blank.gif";
+document.getElementById("n5").style.pointerEvents = "none";
+document.getElementById("n6").style.pointerEvents = "none";
+document.getElementById("unmark2").checked = true; //kid gave right answer 
+}
+
+function testoadd52()
+{
+document.f2.t6.value=25;
+document.f2.rw2.src="/assets/images/yay_bunny2.gif";
+// document.f2.clip11.src="/assets/images/blank.gif";
+// document.f2.clip10.src="/assets/images/blank.gif";
+document.getElementById("n6").style.pointerEvents = "none";
+document.getElementById("n4").style.pointerEvents = "none";
+document.getElementById("mark2").checked = true; //kid gave right answer 
+}
+function testoadd62()
+{
+document.f2.t6.value=28;
+document.f2.rw2.src="/assets/images/w.gif";
+// document.f2.clip11.src="/assets/images/blank.gif";
+// document.f2.clip10.src="/assets/images/blank.gif";
+document.getElementById("n5").style.pointerEvents = "none";
+document.getElementById("n4").style.pointerEvents = "none";
+document.getElementById("unmark2").checked = true; //kid gave right answer 
+}
+
+//-------------addition03--------
+
+function testoadd723()
+{
+document.f3.t9.value=29;
+document.f3.rw3.src="/assets/images/yay_bunny2.gif";
+// document.f3.clip11.src="/assets/images/blank.gif";
+// document.f3.clip10.src="/assets/images/blank.gif";
+document.getElementById("n8").style.pointerEvents = "none";
+document.getElementById("n9").style.pointerEvents = "none";
+document.getElementById("mark3").checked = true; //kid gave right answer 
+}
+
+function testoadd923()
+{
+document.f3.t9.value=19;
+document.f3.rw3.src="/assets/images/w.gif";
+// document.f3.clip11.src="/assets/images/blank.gif";
+// document.f3.clip10.src="/assets/images/blank.gif";
+document.getElementById("n7").style.pointerEvents = "none";
+document.getElementById("n9").style.pointerEvents = "none";
+document.getElementById("unmark3").checked = true; //kid gave right answer 
+}
+function testoadd1023()
+{
+document.f3.t9.value=23;
+document.f3.rw3.src="/assets/images/w.gif";
+// document.f3.clip11.src="/assets/images/blank.gif";
+// document.f3.clip10.src="/assets/images/blank.gif";
+document.getElementById("n8").style.pointerEvents = "none";
+document.getElementById("n7").style.pointerEvents = "none";
+document.getElementById("unmark3").checked = true; //kid gave right answer 
+}
+//-------------------substraction game level1 grade 2----------------
+
+//-------------------substraction 01---------
+
+function tes_2sub3()
+{
+document.f1.t3.value=5;
+// document.f1.clip11.src="/assets/images/blank.gif";
+// document.f1.clip10.src="/assets/images/blank.gif";
+document.f1.rw1.src="/assets/images/yay_bunny2.gif";
+document.getElementById("n1").style.pointerEvents = "none";
+document.getElementById("n3").style.pointerEvents = "none";
+document.getElementById("mark1").checked = true; //kid gave right answer 
+}
+function tes_2sub4()
+{
+document.f1.t3.value=31;
+document.f1.rw1.src="/assets/images/w.gif";
+document.getElementById("n1").style.pointerEvents = "none";
+document.getElementById("n2").style.pointerEvents = "none";
+document.getElementById("unmark1").checked = true; //kid gave right answer 
+}
+
+function tes_2sub6()
+{
+document.f1.t3.value=19;
+document.f1.rw1.src="/assets/images/w.gif";
+// document.f1.clip11.src="/assets/images/blank.gif";
+// document.f1.clip10.src="/assets/images/blank.gif";
+document.getElementById("n2").style.pointerEvents = "none";
+document.getElementById("n3").style.pointerEvents = "none";
+document.getElementById("unmark1").checked = true; //kid gave right answer 
+}
+
+//-------------substraction 02---------
+
+function tes_2sub32()
+{
+document.f2.t6.value=12;
+document.f2.rw2.src="/assets/images/w.gif";
+// document.f2.clip11.src="/assets/images/blank.gif";
+// document.f2.clip10.src="/assets/images/blank.gif";
+document.getElementById("n5").style.pointerEvents = "none";
+document.getElementById("n6").style.pointerEvents = "none";
+document.getElementById("unmark2").checked = true; //kid gave right answer 
+}
+
+function tes_2sub52()
+{
+document.f2.t6.value=2;
+document.f2.rw2.src="/assets/images/yay_bunny2.gif";
+// document.f2.clip11.src="/assets/images/blank.gif";
+// document.f2.clip10.src="/assets/images/blank.gif";
+document.getElementById("n6").style.pointerEvents = "none";
+document.getElementById("n4").style.pointerEvents = "none";
+document.getElementById("mark2").checked = true; //kid gave right answer 
+}
+function tes_2sub62()
+{
+document.f2.t6.value=18;
+document.f2.rw2.src="/assets/images/w.gif";
+// document.f2.clip11.src="/assets/images/blank.gif";
+// document.f2.clip10.src="/assets/images/blank.gif";
+document.getElementById("n5").style.pointerEvents = "none";
+document.getElementById("n4").style.pointerEvents = "none";
+document.getElementById("unmark2").checked = true; //kid gave right answer 
+}
+
+//-------------substraction 03--------
+
+function tes_2sub723()
+{
+document.f3.t9.value=11;
+document.f3.rw3.src="/assets/images/yay_bunny2.gif";
+// document.f3.clip11.src="/assets/images/blank.gif";
+// document.f3.clip10.src="/assets/images/blank.gif";
+document.getElementById("n8").style.pointerEvents = "none";
+document.getElementById("n9").style.pointerEvents = "none";
+document.getElementById("mark3").checked = true; //kid gave right answer 
+}
+
+function tes_2sub923()
+{
+document.f3.t9.value=33;
+document.f3.rw3.src="/assets/images/w.gif";
+// document.f3.clip11.src="/assets/images/blank.gif";
+// document.f3.clip10.src="/assets/images/blank.gif";
+document.getElementById("n7").style.pointerEvents = "none";
+document.getElementById("n9").style.pointerEvents = "none";
+document.getElementById("unmark3").checked = true; //kid gave right answer 
+}
+function tes_2sub1023()
+{
+document.f3.t9.value=21;
+document.f3.rw3.src="/assets/images/w.gif";
+// document.f3.clip11.src="/assets/images/blank.gif";
+// document.f3.clip10.src="/assets/images/blank.gif";
+document.getElementById("n8").style.pointerEvents = "none";
+document.getElementById("n7").style.pointerEvents = "none";
+document.getElementById("unmark3").checked = true; //kid gave right answer 
+}
+
+//============================level 02============================
+
+//-------------------addition game leve2 grade 2----------------
 
 //-------------------addition01---------
 
@@ -679,7 +882,7 @@ document.getElementById("unmark3").checked = true; //kid gave right answer
 
 
 
-//-------------------substraction game level1 grade 2----------------
+//-------------------substraction game level2 grade 2----------------
 
 //-------------------substraction 01---------
 
@@ -780,3 +983,5 @@ document.getElementById("n8").style.pointerEvents = "none";
 document.getElementById("n7").style.pointerEvents = "none";
 document.getElementById("unmark3").checked = true; //kid gave right answer 
 }
+
+
