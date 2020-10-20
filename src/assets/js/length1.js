@@ -144,6 +144,7 @@ function showpages_length(page){
         
 
 }
+
 function startgame_length(){
     document.getElementById("startdiv").style.visibility= "hidden";
     document.getElementById("time-back").style.display="block";
@@ -189,7 +190,8 @@ function startgame_length(){
         document.getElementById("a1").style.pointerEvents = "none";
         document.getElementById("mark1").checked = true; //kid gave right answer 
         enableNext_lengthG1L2();
-        
+
+
         }
         function test2_len()
         {
@@ -198,6 +200,7 @@ function startgame_length(){
         document.getElementById("a2").style.pointerEvents = "none";
         document.getElementById("unmark1").checked = true; //kid gave wrong answer 
         enableNext_lengthG1L2();
+    
         }
     
         function test3_len()
@@ -207,6 +210,7 @@ function startgame_length(){
         document.getElementById("a5").style.pointerEvents = "none";
         document.getElementById("unmark1").checked = true; //kid gave wrong answer 
         enableNext_lengthG1L2();
+
         }
         
         function test4_len()
@@ -216,6 +220,7 @@ function startgame_length(){
         document.getElementById("b5").style.pointerEvents = "none";
         document.getElementById("unmark2").checked = true; //kid gave right answer 
         enableNext_lengthG1L2();
+    
         
         }
         function test5_len()
@@ -244,7 +249,8 @@ function startgame_length(){
         document.getElementById("a1x").style.pointerEvents = "none";
         document.getElementById("mark3").checked = true; //kid gave right answer 
         enableSubmit_lengthG1L2();
-        
+
+
         }
         function test8_len()
         {
@@ -253,6 +259,7 @@ function startgame_length(){
         document.getElementById("a2x").style.pointerEvents = "none";
         document.getElementById("unmark3").checked = true; //kid gave wrong answer 
         enableSubmit_lengthG1L2();
+    
         }
     
         function test9_len()
@@ -311,5 +318,5 @@ function enableSubmit_lengthG1L2(){
     else{
         document.getElementById("final_button").style.display="none";
          }
-      }               
+        }
 
