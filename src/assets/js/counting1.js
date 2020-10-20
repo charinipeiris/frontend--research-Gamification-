@@ -416,6 +416,7 @@ function game15(){
       document.getElementById("q8").style.pointerEvents = "none";
       document.getElementById("mark1").checked = true; //kid gave right answer 
       
+      enableSubmit_count();
       }
       function test2_addto()
       {
@@ -428,6 +429,7 @@ function game15(){
       document.getElementById("q7").style.pointerEvents = "none";
       document.getElementById("q8").style.pointerEvents = "none";
       document.getElementById("unmark1").checked = true; //kid gave wrong answer 
+      enableSubmit_count();
       }
   
       function test3_addto()
@@ -441,6 +443,7 @@ function game15(){
       document.getElementById("q5").style.pointerEvents = "none";
       document.getElementById("q7").style.pointerEvents = "none";
       document.getElementById("unmark1").checked = true; //kid gave wrong answer 
+      enableSubmit_count();
       }
       
       function test4_addto()
@@ -454,6 +457,7 @@ function game15(){
       document.getElementById("qq5").style.pointerEvents = "none";
       document.getElementById("q3").style.pointerEvents = "none";
       document.getElementById("unmark2").checked = true; //kid gave right answer 
+      enableSubmit_count();
       
       }
       function test5_addto()
@@ -467,6 +471,7 @@ function game15(){
       document.getElementById("q6").style.pointerEvents = "none";
       document.getElementById("q3").style.pointerEvents = "none";
       document.getElementById("mark2").checked = true; //kid gave wrong answer 
+      enableSubmit_count();
       }
   
       function test6_addto()
@@ -480,6 +485,7 @@ function game15(){
       document.getElementById("q55").style.pointerEvents = "none";
       document.getElementById("q6").style.pointerEvents = "none";
       document.getElementById("unmark2").checked = true; //kid gave wrong answer 
+      enableSubmit_count();
       }
       
       function test7_addto()
@@ -493,6 +499,7 @@ function game15(){
       document.getElementById("q4").style.pointerEvents = "none";
       document.getElementById("qq6").style.pointerEvents = "none";
       document.getElementById("unmark3").checked = true; //kid gave wrong answer 
+      enableSubmit_count();
       
       }
       function test8_addto()
@@ -506,6 +513,7 @@ function game15(){
       document.getElementById("qq3").style.pointerEvents = "none";  
       document.getElementById("qq6").style.pointerEvents = "none"; 
       document.getElementById("mark3").checked = true; //kid gave right answer 
+      enableSubmit_count();
       }
   
       function test9_addto()
@@ -519,9 +527,21 @@ function game15(){
       document.getElementById("qq3").style.pointerEvents = "none";
       document.getElementById("q4").style.pointerEvents = "none";
       document.getElementById("unmark3").checked = true; //kid gave wrong answer 
+      enableSubmit_count();
       
       }
 
+      function enableSubmit_count(){
+        var chk = document.querySelectorAll('input[type="checkbox"]:checked').length;
+        if (chk == 3){
+        document.getElementById("submit").style.display="block";
+        // document.getElementById("arrow1").style.display="block";
+        
+        }
+        else{
+        document.getElementById("submit").style.display="none";
+        }
+        }
 
 
 

@@ -4,12 +4,29 @@
     <body class="back-image">
 
           <br>
+          <div id="time-back" style="z-index: 2; margin-top: 40px; position: absolute; margin-left: 900px; background-color: azure; border-radius: 10px; width: 200px;">
+            <div id="display" style="margin-left:15px; font-size: 50px; font-family: 'Permanent Marker', cursive;">
+              00:00:00
+          </div>
+    
+          <div class="buttons" >
+              <button hidden id="startStop" onclick="startStop()">Start</button> 
+              <button hidden id="reset" onclick="reset()">Reset</button>
+          </div>
+    
+    
+     </div>
+
+         <div id = "startdiv" style ="margin-top:15px;margin-left: 70px;z-index: 3; background-color: rgba(236, 236, 208, 0.95); border-style: solid; border-color: rgb(146, 146, 89); border-radius: 10px; height: 600px; width: 1200px; position: absolute;">
+          <button id="startbtn" onclick = "startgame()" class="button4"><b>ආරම්භ කරන්න</b></button>
+          <img src = "/assets/images/start_button.png" style=" opacity: 0.85;margin-top: -300px; margin-left: 150px">
+         </div>
             <form name="f1">
 
-            <h3 style ="margin-top: 20px; margin-left: 30px;"><b>අපි පැණිරස කැම සල්ලි දීලා ගන්න ගැලපෙන කාසිය තොරමු.</b></h3>
+            <h3 style ="margin-top: 20px; margin-left: 30px;"><b>ගොඩවල් දෙකෙම රූප වල එකතුව සොයමු.</b></h3>
             <h2 id="alert" style="visibility: hidden; color: red;"> සියල්ලටම පිලිතුරු සපයන්න</h2>
-            <img src = "/assets/images/click.gif" style="position: absolute; height: 70px; margin-top:-155px; margin-left: 900px;">
-            <img src = "/assets/images/shape_sound2.gif" id="question-money" style="position: absolute; height:140px; margin-top:-155px; margin-left:1000px">
+            <img src = "/assets/images/click.gif" style="position: absolute; height: 70px; margin-top: -80px; margin-left: 600px;">
+            <img src = "/assets/images/shape_sound2.gif" id="question-money" style="position: absolute; height: 140px; margin-top: -105px; margin-left: 700px;">
             <audio id="quest_audio" src="assets/audio/moneyL1_quest.m4a" type="audio/m4a" control>Your browser does not support the audio element. </audio>
                 
 
@@ -61,9 +78,9 @@
             <br>
 
             </form>
+            <app-emotiondetector></app-emotiondetector>
 
-
-        <button id="submit" class="button2" style="display: block;" (click)="markstot_addto()">ඉවරයි</button>  
+        <button id="submit" class="button2" style="display: none;" (click)="markstot_addto()">ඉවරයි</button>  
 
             <!-- Trigger/Open The Modal -->
             <!-- <a id="myBtn" class="button2" >Submit</a> -->
@@ -80,8 +97,8 @@
                 <img id ="coin3" src="/assets/images/win_coin.gif" class= "coin_img" style = "visibility:hidden; height: 220px; width: 550px; margin-left: 390px; position: absolute">
                 <img id ="sad_coin" src="/assets/images/sad.gif" class= "coin_img" style = "visibility:hidden; height: 220px; width: 220px; margin-left: 380px; position: absolute">
                 <h1 style="font-family:Chalkduster, fantasy; margin-left: 380px; position: absolute; color:darkcyan">Completed!!!</h1>
-                <!-- <a href="#"  class="button3" onclick="return show('Page1','Page2');">ආපසු</a> -->
-                <a href=""  class="button3">ආපසු</a>
+                <h5 style ="position: absolute; margin-top: 300px; margin-left: 350px; font-size: 30px">ගත වූ කාලය : <span id="perf-time"></span></h5>
+                <a href="grade1/maths/level2"  id="submit" class="button3">ආපසු</a>
               </div>
             </div>
 
