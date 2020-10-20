@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { LoginService } from '../services/login.service';
 import { Router } from '@angular/router';
 import { DataService } from '../services/data.service';
+import { GamesService } from '../services/games.service';
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
@@ -13,8 +14,10 @@ export class NavbarComponent implements OnInit {
   grade1: any;
   grade2: any;
   message: any;
+  marks: number;
 
-  constructor(private loginService: LoginService, private router: Router, private dataService: DataService) {
+  constructor(private loginService: LoginService, private router: Router, private dataService: DataService, private gameService: GamesService) {
+  this.marks = -1;
 
     if (localStorage.getItem('token') != null) {
       this.loginService.getUserName().subscribe((data) => {
@@ -26,6 +29,13 @@ export class NavbarComponent implements OnInit {
         this.studentname = data;
       }, (error) => {
         this.router.navigate(['/home']);
+      });
+      var uname = localStorage.getItem('uname');
+      this.gameService.getStudentDetails(uname).subscribe((data:any) => {
+        console.log(data.totalMarks);
+        this.marks = data.totalMarks;
+      }, (error) => {
+        
       });
     } else {
       this.router.navigate(['/home']);
@@ -86,6 +96,10 @@ export class NavbarComponent implements OnInit {
     localStorage.removeItem('token');
     localStorage.removeItem('uname');
     this.router.navigate(['/login']);
+  }
+
+  checkToken(){
+    return localStorage.getItem('token') != null;
   }
 
 }

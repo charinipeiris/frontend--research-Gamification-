@@ -93,6 +93,8 @@ import { AdditionL2Component } from './grade2/maths2/m-level2/addition-l2/additi
 import { CountingL2Component } from './grade2/maths2/m-level2/counting-l2/counting-l2.component';
 import { ShapesL2Component } from './grade2/maths2/m-level2/shapes-l2/shapes-l2.component';
 import { EmotiondetectorComponent } from './emotiondetector/emotiondetector.component';
+import { AchievementsComponent } from './achievements/achievements.component';
+import { LeaderboardComponent } from './leaderboard/leaderboard.component';
 
 
 
@@ -100,6 +102,8 @@ const appRoutes:Routes = [
   {path:'login',component:LoginComponent},
   {path:'grade1',component:Grade1Component},
   {path:'home',component:HomeComponent},
+  {path:'achievements',component:AchievementsComponent},
+  {path:'leaderboard',component:LeaderboardComponent},
 
   //-----maths--
   {path:'grade1/maths',component:MathsComponent},
@@ -248,6 +252,8 @@ const appRoutes:Routes = [
     CountingL2Component,
     ShapesL2Component,
     EmotiondetectorComponent,
+    AchievementsComponent,
+    LeaderboardComponent,
    
     
   

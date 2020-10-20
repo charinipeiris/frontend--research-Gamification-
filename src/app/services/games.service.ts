@@ -8,6 +8,7 @@ export class GamesService {
 
   public showSpinner: boolean = false;
   private url: string = "http://localhost:8080/api/users/savemarks/";
+  private url1: string = "http://localhost:8080/api/users/";
 
   constructor(private http: HttpClient) { }
 
@@ -16,5 +17,38 @@ export class GamesService {
     return this.http.post(this.url + username, body);
   }
 
+  getStudentDetails(studentname){
+    // console.log("uname",studentname)
+    return this.http.get(this.url1 + 'getdetails/' + studentname, {
+      observe: 'body',
+    });
+  }
 
+  getTotalMarks(studentname){
+    // console.log("uname",studentname)
+    return this.http.get(this.url1 + 'getmarks/' + studentname, {
+      observe: 'body',
+    });
+  }
+
+  getUserInfo(username){
+        // console.log("uname",studentname)
+        return this.http.get(this.url1 + 'getdetails/' + username, {
+          observe: 'body',
+        }).toPromise();
+  }
+  
+  getComletedGames(username){
+    // console.log("uname",studentname)
+    return this.http.get(this.url1 + 'getcompletedgames/' + username, {
+      observe: 'body',
+    });
+  }
+
+  getranks(grade){
+    // console.log("uname",studentname)
+    return this.http.get(this.url1 + 'getranks/' + grade, {
+      observe: 'body',
+    });
+  }
 }
