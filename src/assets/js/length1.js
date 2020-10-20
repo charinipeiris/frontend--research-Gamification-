@@ -144,7 +144,11 @@ function showpages_length(page){
         
 
 }
-
+function startgame_length(){
+    document.getElementById("startdiv").style.visibility= "hidden";
+    document.getElementById("time-back").style.display="block";
+    startStop();
+}
     //-----------Length intro - Level2 - grade 1 -------------------------------
 
     function testweight1(){
@@ -184,7 +188,7 @@ function showpages_length(page){
         document.getElementById("a2").style.pointerEvents = "none";
         document.getElementById("a1").style.pointerEvents = "none";
         document.getElementById("mark1").checked = true; //kid gave right answer 
-
+        enableNext_lengthG1L2();
         
         }
         function test2_len()
@@ -193,7 +197,7 @@ function showpages_length(page){
         document.getElementById("a5").style.pointerEvents = "none";
         document.getElementById("a2").style.pointerEvents = "none";
         document.getElementById("unmark1").checked = true; //kid gave wrong answer 
-    
+        enableNext_lengthG1L2();
         }
     
         function test3_len()
@@ -202,7 +206,7 @@ function showpages_length(page){
         document.getElementById("a1").style.pointerEvents = "none";
         document.getElementById("a5").style.pointerEvents = "none";
         document.getElementById("unmark1").checked = true; //kid gave wrong answer 
-
+        enableNext_lengthG1L2();
         }
         
         function test4_len()
@@ -211,7 +215,7 @@ function showpages_length(page){
         document.getElementById("b2").style.pointerEvents = "none";
         document.getElementById("b5").style.pointerEvents = "none";
         document.getElementById("unmark2").checked = true; //kid gave right answer 
-    
+        enableNext_lengthG1L2();
         
         }
         function test5_len()
@@ -221,7 +225,7 @@ function showpages_length(page){
         document.getElementById("b1").style.pointerEvents = "none";
         document.getElementById("b2").style.pointerEvents = "none";
         document.getElementById("mark2").checked = true; //kid gave wrong answer 
-
+        enableNext_lengthG1L2();
         }
     
         function test6_len()
@@ -230,7 +234,7 @@ function showpages_length(page){
         document.getElementById("b2").style.pointerEvents = "none";
         document.getElementById("b1").style.pointerEvents = "none";
         document.getElementById("unmark2").checked = true; //kid gave wrong answer 
-
+        enableNext_lengthG1L2()();
         }
         
         function test7_len()
@@ -239,7 +243,7 @@ function showpages_length(page){
         document.getElementById("a2x").style.pointerEvents = "none";
         document.getElementById("a1x").style.pointerEvents = "none";
         document.getElementById("mark3").checked = true; //kid gave right answer 
-
+        enableSubmit_lengthG1L2();
         
         }
         function test8_len()
@@ -248,7 +252,7 @@ function showpages_length(page){
         document.getElementById("a5x").style.pointerEvents = "none";
         document.getElementById("a2x").style.pointerEvents = "none";
         document.getElementById("unmark3").checked = true; //kid gave wrong answer 
-    
+        enableSubmit_lengthG1L2();
         }
     
         function test9_len()
@@ -257,7 +261,7 @@ function showpages_length(page){
         document.getElementById("a1x").style.pointerEvents = "none";
         document.getElementById("a5x").style.pointerEvents = "none";
         document.getElementById("unmark3").checked = true; //kid gave wrong answer 
-
+        enableSubmit_lengthG1L2();
         }
         
         function test10_len()
@@ -266,7 +270,7 @@ function showpages_length(page){
         document.getElementById("b2x").style.pointerEvents = "none";
         document.getElementById("b5x").style.pointerEvents = "none";
         document.getElementById("unmark4").checked = true; //kid gave right answer 
-    
+        enableSubmit_lengthG1L2();
         
         }
         function test11_len()
@@ -276,7 +280,7 @@ function showpages_length(page){
         document.getElementById("b1x").style.pointerEvents = "none";
         document.getElementById("b2x").style.pointerEvents = "none";
         document.getElementById("mark4").checked = true; //kid gave wrong answer 
-
+        enableSubmit_lengthG1L2();
         }
     
         function test12_len()
@@ -285,6 +289,27 @@ function showpages_length(page){
         document.getElementById("b2x").style.pointerEvents = "none";
         document.getElementById("b1x").style.pointerEvents = "none";
         document.getElementById("unmark4").checked = true; //kid gave wrong answer 
-
+        enableSubmit_lengthG1L2();
         }
+
+        function enableNext_lengthG1L2(){
+            var chk = document.querySelectorAll('input[type="checkbox"]:checked').length;
+            if (chk == 2){
+                 document.getElementById("next-length").style.display="block";
+                  }
+            else{
+                document.getElementById("next-length").style.display="none";
+                  }
+                  }
+
+function enableSubmit_lengthG1L2(){
+    var chk = document.querySelectorAll('input[type="checkbox"]:checked').length;
+    console.log(chk);
+    if (chk == 4){
+         document.getElementById("final_button").style.display="block";
+        }
+    else{
+        document.getElementById("final_button").style.display="none";
+         }
+      }               
 

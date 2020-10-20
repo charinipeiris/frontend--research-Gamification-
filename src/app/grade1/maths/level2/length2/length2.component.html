@@ -7,7 +7,16 @@ left: 50px;
 height:40em;  
 width:100%;">
 
+<div id="time-back" style="display: none; z-index: 2; margin-top: 80px; position: absolute; margin-left: 280px; background-color: azure; border-radius: 10px; width: 200px;">
+    <div id="display" style="margin-left:15px; font-size: 50px; font-family: 'Permanent Marker', cursive;">
+      00:00:00
+  </div>
 
+  <div class="buttons" >
+      <button hidden id="startStop" onclick="startStop()">Start</button> 
+      <button hidden id="reset" onclick="reset()">Reset</button>
+  </div>
+</div>
 <!--page 01 (weight) -->
 <div id="page1-length">
     <!-- <a href="/grade1/maths/level2" style ='margin-top:70px;margin-left:-60px;color:green;height:50px ;' class="previous button1">&laquo; Previous</a>
@@ -44,7 +53,7 @@ width:100%;">
 
 </div>
 
-
+<app-emotiondetector></app-emotiondetector>
 <!--page 02 (volume) -->
 <div id="page2-length" style="display:none;position:absolute;top:40px;left:150px;">
     <!-- <a href="/grade1/maths/level2" style ='margin-top:70px;margin-left:-60px;color:green;height:50px ;' class="previous button1">&laquo; Previous</a>
@@ -78,8 +87,15 @@ width:100%;">
     
 <div id="page3-length" style="display:none;position:absolute;top:40px;left:150px;">
     
+
+     <div id = "startdiv" style ="margin-top: 20px; z-index: 3; background-color: rgba(236, 236, 208, 0.95); border-style: solid; border-color: rgb(146, 146, 89); border-radius: 10px; height: 580px; width: 1200px; position: absolute;">
+      <button id="startbtn" onclick = "startgame_length()" class="button4"><b>ආරම්භ කරන්න</b></button>
+      <img src = "/assets/images/start_button.png" style=" opacity: 0.85;margin-top: -300px; margin-left: 150px">
+     </div>
+
+
     <a  style='margin-top:70px;margin-left:-60px;color:green;height:50px;' class="previous button1" onclick="showpages_length('page2-length')"> &laquo; Previous</a>
-    <a  style='margin-top:70px;margin-left:900px;color:green;height:50px;' class="previous button1" onclick="showpages_length('page4-length')"> Next &raquo;</a> 
+    <a  id ="next-length" style='display:none;margin-top: -60px;margin-left:900px;color:green;height:50px;' class="previous button1" onclick="showpages_length('page4-length')"> Next &raquo;</a> 
     <form name="f3">
         <div class="row">
         <div class="column">
@@ -129,8 +145,8 @@ width:100%;">
 </div>
 
 <div id="page4-length" style="display:none;position:absolute;top:40px;left:150px;">
-    <a  style ='margin-top:70px;margin-left:900px;color:green;height:50px;' class="previous button1" onclick="showpages_length('page3-length')"> Previous &raquo;</a>
-    <form name="f4">
+    <!-- <a  style ='margin-top:70px;margin-left:900px;color:green;height:50px;' class="previous button1" onclick="showpages_length('page3-length')"> Previous &raquo;</a> -->
+    <form name="f4" style="margin-top: 120px">
         <div class="row">
         <div class="column">
             <br>
@@ -174,7 +190,7 @@ width:100%;">
           
           </div>
         </div>
-        <button id="final_button" (click)="markstot_l22()">ඉවරයි</button>
+        <button class="button2" style="display: none;z-index:2" id="final_button" (click)="markstot_l22()">ඉවරයි</button>
     </form>
     
 
