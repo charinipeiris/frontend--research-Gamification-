@@ -1132,3 +1132,227 @@ document.f2.clip12.src="/assets/images/w.gif";
 document.getElementById("85").style.pointerEvents = "none";
 document.getElementById("unmark6").checked = true; //kid gave right answer 
 }
+
+
+//------------------level2 - counting game (grade 2)----------------------------------------------------------------
+
+function showNxt(pg1_count) {
+    var p1 = document.getElementById(pg1_count).getAttribute("id");
+    console.log(p1);
+    if (p1 == "pg1_count"){
+           document.getElementById("pg1_count").style.display='block';
+           document.getElementById("pg2_count").style.display='none'; 
+           document.getElementById("pg3_count").style.display='none'; 
+    }
+
+    if (p1 == "pg2_count"){
+        document.getElementById("pg1_count").style.display='none';
+        document.getElementById("pg2_count").style.display='block'; 
+        document.getElementById("pg3_count").style.display='none'; 
+    }
+
+    if (p1 == "pg3_count"){
+        document.getElementById("pg1_count").style.display='none';
+        document.getElementById("pg2_count").style.display='none'; 
+        document.getElementById("pg3_count").style.display='block'; 
+    }
+}
+
+
+// Game
+//Page 1
+
+function testcountL2_1()
+{
+document.f1.text1.value="Wrong";
+document.f1.clip07.src="/assets/images/w.gif";
+document.getElementById("35").style.pointerEvents = "none";
+document.getElementById("36").style.pointerEvents = "none";
+document.getElementById("37").style.pointerEvents = "none";
+document.getElementById("unmark1").checked = true; //kid gave wrong answer 
+}
+
+function testcountL2_2()
+{
+document.f1.text1.value="Correct!!";
+document.f1.clip07.src="/assets/images/yay_bunny2.gif";
+document.getElementById("34").style.pointerEvents = "none";
+document.getElementById("36").style.pointerEvents = "none";
+document.getElementById("37").style.pointerEvents = "none";
+document.getElementById("mark1").checked = true; //kid gave right answer 
+}
+
+function testcountL2_3()
+{
+document.f1.text1.value="Wrong";
+document.f1.clip07.src="/assets/images/w.gif";
+document.getElementById("34").style.pointerEvents = "none";
+document.getElementById("35").style.pointerEvents = "none";
+document.getElementById("37").style.pointerEvents = "none";
+document.getElementById("unmark1").checked = true; //kid gave wrong answer 
+}
+
+function testcountL2_4()
+{
+document.f1.text1.value="Wrong";
+document.f1.clip07.src="/assets/images/w.gif";
+document.getElementById("34").style.pointerEvents = "none";
+document.getElementById("35").style.pointerEvents = "none";
+document.getElementById("36").style.pointerEvents = "none";
+document.getElementById("unmark1").checked = true; //kid gave wrong answer 
+}
+
+
+function testcountL2_5()
+{
+document.f1.text2.value="Wrong";
+document.f1.clip08.src="/assets/images/w.gif";
+document.getElementById("39").style.pointerEvents = "none";
+document.getElementById("40").style.pointerEvents = "none";
+document.getElementById("41").style.pointerEvents = "none";
+document.getElementById("unmark2").checked = true; //kid gave right answer 
+}
+
+function testcountL2_6()
+{
+document.f1.text2.value="Wrong";
+document.f1.clip08.src="/assets/images/w.gif";
+document.getElementById("38").style.pointerEvents = "none";
+document.getElementById("40").style.pointerEvents = "none";
+document.getElementById("41").style.pointerEvents = "none";
+document.getElementById("unmark2").checked = true; //kid gave right answer 
+}
+
+function testcountL2_7()
+{
+document.f1.text2.value="Correct!!";
+document.f1.clip08.src="/assets/images/yay_bunny2.gif";
+document.getElementById("38").style.pointerEvents = "none";
+document.getElementById("39").style.pointerEvents = "none";
+document.getElementById("41").style.pointerEvents = "none";
+document.getElementById("mark2").checked = true; //kid gave right answer 
+}
+
+function testcountL2_8()
+{
+document.f1.text2.value="Wrong";
+document.f1.clip08.src="/assets/images/w.gif";
+document.getElementById("38").style.pointerEvents = "none";
+document.getElementById("39").style.pointerEvents = "none";
+document.getElementById("40").style.pointerEvents = "none";
+document.getElementById("unmark2").checked = true; //kid gave right answer 
+}
+
+
+//Page 3
+
+function testcountL2_9()
+{
+document.f2.text4.value="Correct!!";
+document.f2.clip10.src="/assets/images/yay_bunny2.gif";
+document.getElementById("17").style.pointerEvents = "none";
+document.getElementById("18").style.pointerEvents = "none";
+document.getElementById("15").style.pointerEvents = "none";
+document.getElementById("mark01").checked = true; //kid gave right answer 
+}
+
+function testcountL2_10()
+{
+document.f2.text4.value="Wrong";
+document.f2.clip10.src="/assets/images/w.gif";
+document.getElementById("16").style.pointerEvents = "none";
+document.getElementById("18").style.pointerEvents = "none";
+document.getElementById("15").style.pointerEvents = "none";
+document.getElementById("unmark01").checked = true; //kid gave right answer 
+}
+
+
+function testcountL2_12()
+{
+document.f2.text4.value="Wrong";
+document.f2.clip10.src="/assets/images/w.gif";
+document.getElementById("16").style.pointerEvents = "none";
+document.getElementById("17").style.pointerEvents = "none";
+document.getElementById("15").style.pointerEvents = "none";
+document.getElementById("unmark01").checked = true; //kid gave right answer 
+}
+
+function testcountL2_13()
+{
+document.f2.text5.value="Wrong";
+document.f2.clip11.src="/assets/images/w.gif";
+document.getElementById("25").style.pointerEvents = "none";
+document.getElementById("35").style.pointerEvents = "none";
+document.getElementById("30").style.pointerEvents = "none";
+document.getElementById("unmark02").checked = true; //kid gave right answer 
+}
+
+function testcountL2_14()
+{
+document.f2.text5.value="Wrong";
+document.f2.clip11.src="/assets/images/w.gif";
+document.getElementById("20").style.pointerEvents = "none";
+document.getElementById("35").style.pointerEvents = "none";
+document.getElementById("30").style.pointerEvents = "none";
+document.getElementById("unmark02").checked = true; //kid gave right answer 
+}
+
+function testcountL2_15()
+{
+document.f2.text5.value="Wrong";
+document.f2.clip11.src="/assets/images/w.gif";
+document.getElementById("20").style.pointerEvents = "none";
+document.getElementById("25").style.pointerEvents = "none";
+document.getElementById("30").style.pointerEvents = "none";
+document.getElementById("unmark02").checked = true; //kid gave right answer 
+}
+
+function testcountL2_16()
+{
+document.f2.text5.value="Correct!!";
+document.f2.clip11.src="/assets/images/yay_bunny2.gif";
+document.getElementById("20").style.pointerEvents = "none";
+document.getElementById("25").style.pointerEvents = "none";
+document.getElementById("35").style.pointerEvents = "none";
+document.getElementById("mark02").checked = true; //kid gave right answer 
+}
+
+function testcountL2_17()
+{
+document.f2.text6.value="Wrong";
+document.f2.clip12.src="/assets/images/w.gif";
+document.getElementById("80").style.pointerEvents = "none";
+document.getElementById("70").style.pointerEvents = "none";
+document.getElementById("100").style.pointerEvents = "none";
+document.getElementById("unmark03").checked = true; //kid gave right answer 
+}
+
+function testcountL2_18()
+{
+document.f2.text6.value="Correct!!";
+document.f2.clip12.src="/assets/images/yay_bunny2.gif";
+document.getElementById("90").style.pointerEvents = "none";
+document.getElementById("70").style.pointerEvents = "none";
+document.getElementById("100").style.pointerEvents = "none";
+document.getElementById("mark03").checked = true; //kid gave right answer 
+}
+
+function testcountL2_19()
+{
+document.f2.text6.value="Wrong";
+document.f2.clip12.src="/assets/images/w.gif";
+document.getElementById("90").style.pointerEvents = "none";
+document.getElementById("80").style.pointerEvents = "none";
+document.getElementById("100").style.pointerEvents = "none";
+document.getElementById("unmark03").checked = true; //kid gave right answer 
+}
+
+function testcountL2_20()
+{
+document.f2.text6.value="Wrong";
+document.f2.clip12.src="/assets/images/w.gif";
+document.getElementById("90").style.pointerEvents = "none";
+document.getElementById("80").style.pointerEvents = "none";
+document.getElementById("70").style.pointerEvents = "none";
+document.getElementById("unmark03").checked = true; //kid gave right answer 
+}
