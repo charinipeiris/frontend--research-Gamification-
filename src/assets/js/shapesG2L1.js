@@ -13,6 +13,7 @@ document.f1.red.src="/assets/images/a_rec.JPG";
 document.f1.rw1.src="/assets/images/yay_bunny2.gif";
 document.getElementById("a_rec").style.pointerEvents = "none";
 document.getElementById("mark1").checked = true; //kid gave right answer 
+enableSubmit_Shapes2();
 
 }
 function test2_shapes2()
@@ -23,6 +24,7 @@ document.f1.brown.src="/assets/images/a_circle.JPG";
 document.f1.rw1.src="/assets/images/w.gif";
 document.getElementById("a_circle").style.pointerEvents = "none";
 document.getElementById("unmark1").checked = true; //kid gave wrong answer 
+enableSubmit_Shapes2();
 }
 
 function test3_shapes2()
@@ -33,6 +35,7 @@ document.f1.sqr.src="/assets/images/b_circle.JPG";
 document.f1.rw2.src="/assets/images/yay_bunny2.gif";
 document.getElementById("b_circle").style.pointerEvents = "none";
 document.getElementById("mark2").checked = true; //kid gave right answer 
+enableSubmit_Shapes2();
 
 }
 function test4_shapes2()
@@ -43,6 +46,7 @@ document.f1.rect.src="/assets/images/a_triangle.JPG";
 document.f1.rw2.src="/assets/images/w.gif";
 document.getElementById("a_tri").style.pointerEvents = "none";
 document.getElementById("unmark2").checked = true; //kid gave wrong answer 
+enableSubmit_Shapes2();
 }
 
 function test5_shapes2()
@@ -53,6 +57,7 @@ document.f1.leaf2.src="/assets/images/a_square.JPG";
 document.f1.rw3.src="/assets/images/w.gif";
 document.getElementById("a_sqa").style.pointerEvents = "none";
 document.getElementById("unmark3").checked = true; //kid gave wrong answer 
+enableSubmit_Shapes2();
 
 }
 function test6_shapes2()
@@ -63,6 +68,7 @@ document.f1.leaf1.src="/assets/images/b_triangle.JPG";
 document.f1.rw3.src="/assets/images/yay_bunny2.gif";
 document.getElementById("b_tri").style.pointerEvents = "none";  
 document.getElementById("mark3").checked = true; //kid gave right answer 
+enableSubmit_Shapes2();
 }
 
 $(document).ready(function(){
@@ -72,6 +78,18 @@ $(document).ready(function(){
     else audio.pause();
 });
 });
+
+
+function enableSubmit_Shapes2(){
+  var chk = document.querySelectorAll('input[type="checkbox"]:checked').length;
+if (chk == 3){
+  document.getElementById("submit").style.display="block";
+  document.getElementById("arrow").style.display="block";
+}
+else{
+  document.getElementById("submit").style.display="none";
+}
+}
 
 //----------------------addition game --------
 
