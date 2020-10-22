@@ -17,6 +17,26 @@
 <br>
 <br>
 <h3 style="margin-left:130px;">ඉලක්කම් දෙක එකතු කිරිමෙන් ලැබෙන නිවැරදි අගය පහත ඉලක්කම් අතුරින් තොරන්න</h3>
+
+
+<div id="time-back" style="z-index: 2;margin-top:-50px; position: absolute; margin-left: 1120px; background-color: azure; border-radius: 10px; width: 200px">
+    <div id="display" style="margin-left:15px; font-size: 50px; font-family: 'Permanent Marker', cursive;">
+      00:00:00
+  </div>
+
+  <div class="buttons" >
+      <button hidden id="startStop" onclick="startStop()">Start</button> 
+      <button hidden id="reset" onclick="reset()">Reset</button>
+  </div>
+
+
+</div>
+
+ <div id = "startdiv" style ="z-index: 3; background-color: rgba(236, 236, 208, 0.95); border-style: solid; border-color: rgb(146, 146, 89); border-radius: 10px; height: 580px; width: 1200px; position: absolute; margin-left:100px;margin-top:-50px">
+  <button id="startbtn" onclick = "startgame()" class="button4"><b>ආරම්භ කරන්න</b></button>
+  <img src = "/assets/images/start_button.png" style=" opacity: 0.85;margin-top: -300px; margin-left: 150px">
+ </div>
+
     <form name="f1" >
     <!-- <div style="position:absolute;top:100;left:10"></div> -->
         <div style="position:absolute;top:100px;left:40px">
@@ -97,8 +117,9 @@
             </form>  
             
 
-
-            <button id="submit" class="button2" style="display: block;" (click)="markstot_additions2()">ඉවරයි</button> 
+            <app-emotiondetector></app-emotiondetector>
+            <!-- <img id ="arrow1" src ="/assets/images/arrow_submit.gif" style="display: none; margin-top: 360px; margin-left: 1010px; height: 130px; width: 130px; position: absolute;"> -->
+            <button id="submit" class="button2" style="display: none;" (click)="markstot_additions2()">ඉවරයි</button> 
 
             <!-- The Modal -->
             <div id="myModal" class="modal">
@@ -112,7 +133,7 @@
                 <img id ="coin3" src="/assets/images/win_coin.gif" class= "coin_img" style = "visibility:hidden; height: 220px; width: 550px; margin-left: 390px; position: absolute">
                 <img id ="sad_coin" src="/assets/images/sad.gif" class= "coin_img" style = "visibility:hidden; height: 220px; width: 220px; margin-left: 380px; position: absolute">
                 <h1 style="font-family:Chalkduster, fantasy; margin-left: 380px; position: absolute; color:darkcyan">Completed!!!</h1>
-                <!-- <a href="#"  class="button3" onclick="return show('Page1','Page2');">ආපසු</a> -->
+                <h5 style ="position: absolute; margin-top: 300px; margin-left: 350px; font-size: 30px">ගත වූ කාලය : <span id="perf-time"></span></h5>
                 <a href="grade2/maths/level2"  class="button3">ආපසු</a>
               </div>
             </div>
