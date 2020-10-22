@@ -8,13 +8,23 @@ left: 50px;
 height:40em;  
 width:100%;">
 
+<div id="time-back" style="display: none; z-index: 2; margin-top: 80px; position: absolute; margin-left: 850px; background-color: azure; border-radius: 10px; width: 200px;">
+    <div id="display" style="margin-left:15px; font-size: 50px; font-family: 'Permanent Marker', cursive;">
+      00:00:00
+  </div>
+
+  <div class="buttons" >
+      <button hidden id="startStop" onclick="startStop()">Start</button> 
+      <button hidden id="reset" onclick="reset()">Reset</button>
+  </div>
+</div>
 
 <!--page 01 -->
 <br>
 <br>
-<h1 style ="margin-left:440px; margin-top: 30px; margin-bottom: 20px;"><b>කාසි ඉගෙනගනිමු - 1</b></h1>
+
 <div class="center" id="page1-mon1">
-   
+    <!-- <h1 style ="margin-left:440px; margin-top: 30px; margin-bottom: 20px;"><b>කාසි ඉගෙනගනිමු - 1</b></h1>   -->
     <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
         <iframe id = "myVideo_money" class="embed-responsive-item" src="https://drive.google.com/file/d/1vXBuMdd2o5xa6uV1u6wkSDbiIulzxO2l/preview" width="640" height="450" width="640" height="450"
           allowfullscreen>
@@ -27,9 +37,14 @@ width:100%;">
 
 <!--page 02 -->
 <div id="page2-mon1" style="display:none;position:absolute;top:40px;left:150px;">
-   
-    <a style ='margin-top:70px;margin-left:-60px;color:green;height:50px ;' class="previous button1" onclick="showpages_mon1('page1-mon1')">&laquo; Previous</a>
-    <a style ='margin-top:70px;margin-left:900px;color:green;height:50px ;' class="previous button1" onclick="showpages_mon1('page3-mon1')"> Next &raquo;</a>
+
+     <div id = "startdiv" style ="margin-top: 20px; z-index: 3; background-color: rgba(236, 236, 208, 0.95); border-style: solid; border-color: rgb(146, 146, 89); border-radius: 10px; height: 580px; width: 1250px; position: absolute; margin-left: -20px;">
+      <button id="startbtn" onclick = "startgame_money()" class="button4"><b>ආරම්භ කරන්න</b></button>
+      <img src = "/assets/images/start_button.png" style=" opacity: 0.85;margin-top: -300px; margin-left: 150px">
+     </div>
+
+    <!-- <a style ='margin-top:70px;margin-left:-60px;color:green;height:50px ;' class="previous button1" onclick="showpages_mon1('page1-mon1')">&laquo; Previous</a> -->
+    <a id = "next1" style ='display: none; margin-top: 40px; margin-left: 1000px; color: green;' class="previous button1" onclick="showpages_mon1('page3-mon1')"> Next &raquo;</a>
     <br>
     <br>
     <h4>පහතින් දැක්වෙන චොකල්ට් එක මිලදී ගැනීමට උවමනා කාසි 2 තෝරමු.</h4>
@@ -55,8 +70,8 @@ width:100%;">
 
 <div id="page3-mon1" style="display:none;position:absolute;top:40px;left:150px;">
    
-    <a style ='margin-top:70px;margin-left:-60px;color:green;height:50px ;' class="previous button1" onclick="showpages_mon1('page2-mon1')">&laquo; Previous</a>
-    <a style ='margin-top:70px;margin-left:900px;color:green;height:50px ;' class="previous button1" onclick="showpages_mon1('page4-mon1')"> Next &raquo;</a>
+    <!-- <a style ='margin-top:70px;margin-left:-60px;color:green;height:50px ;' class="previous button1" onclick="showpages_mon1('page2-mon1')">&laquo; Previous</a> -->
+    <a id = "next2" style ='display: none; margin-top: 40px; margin-left: 1000px; color: green;' class="previous button1" onclick="showpages_mon1('page4-mon1')"> Next &raquo;</a>
     <br>
     <br>
     <h4>පහතින් දැක්වෙන කේක් එක මිලදී ගැනීමට උවමනා කාසි 2 තෝරමු.</h4>
@@ -85,7 +100,7 @@ width:100%;">
 <!--page 04 -->
 
 <div id="page4-mon1" style="display:none;position:absolute;top:40px;left:150px;">  
-    <a style ='margin-top:70px;margin-left:-60px;color:green;height:50px ;' class="previous button1" onclick="showpages_mon1('page3-mon1')">&laquo; Previous</a>
+    <!-- <a style ='margin-top:70px;margin-left:-60px;color:green;height:50px ;' class="previous button1" onclick="showpages_mon1('page3-mon1')">&laquo; Previous</a> -->
     <br>
     <br>
     <h4>පහතින් දැක්වෙන රසකැවිල්ල මිලදී ගැනීමට උවමනා කාසි 2 තෝරමු.</h4>
@@ -106,7 +121,10 @@ width:100%;">
 
     </form>
 
-    <button id="submit" class="button2" style="display: block;" (click)="markstot_mono1()">ඉවරයි</button> 
+    <app-emotiondetector></app-emotiondetector>
+
+    <img id ="arrow1" src ="/assets/images/arrow_submit.gif" style="display: none; margin-top: 360px; margin-left: 1010px; height: 130px; width: 130px; position: absolute;">
+    <button id="submit" class="button2" style="display:none;" (click)="markstot_mono1()">ඉවරයි</button> 
 
 <div id="myModal" class="modal">
 
@@ -119,7 +137,7 @@ width:100%;">
         <img id ="coin3" src="/assets/images/win_coin.gif" class= "coin_img" style = "visibility:hidden; height: 220px; width: 550px; margin-left: 390px; position: absolute">
         <img id ="sad_coin" src="/assets/images/sad.gif" class= "coin_img" style = "visibility:hidden; height: 220px; width: 220px; margin-left: 380px; position: absolute">
         <h1 style="font-family:Chalkduster, fantasy; margin-left: 380px; position: absolute; color:darkcyan">Completed!!!</h1>
-        <!-- <a href="#"  class="button3" onclick="return show('Page1','Page2');">ආපසු</a> -->
+        <h5 style ="position: absolute; margin-top: 300px; margin-left: 350px; font-size: 30px">ගත වූ කාලය : <span id="perf-time"></span></h5>
         <a href="grade2/maths/level1"  class="button3">ආපසු</a>
       </div>
     </div>

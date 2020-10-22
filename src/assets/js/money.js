@@ -355,6 +355,7 @@ document.f1.rw1.src="/assets/images/w.gif";
 document.getElementById("b").style.pointerEvents = "none";  
 document.getElementById("c").style.pointerEvents = "none"; 
 document.getElementById("unmark1").checked = true; //kid gave right answer 
+enableNext1_money();
 }
 
 function test2_mono()
@@ -368,6 +369,7 @@ document.f1.rw1.src="/assets/images/yay_bunny2.gif";
 document.getElementById("a").style.pointerEvents = "none";  
 document.getElementById("c").style.pointerEvents = "none"; 
 document.getElementById("mark1").checked = true; //kid gave right answer 
+enableNext1_money();
 }
 
 function test3_mono()
@@ -381,6 +383,7 @@ document.f1.rw1.src="/assets/images/w.gif";
 document.getElementById("b").style.pointerEvents = "none";  
 document.getElementById("a").style.pointerEvents = "none"; 
 document.getElementById("unmark1").checked = true; //kid gave right answer 
+enableNext1_money()
 }
 
 
@@ -397,6 +400,7 @@ document.f2.rw1.src="/assets/images/w.gif";
 document.getElementById("b").style.pointerEvents = "none";  
 document.getElementById("c").style.pointerEvents = "none"; 
 document.getElementById("unmark2").checked = true; //kid gave right answer 
+enableNext2_money();
 }
 
 function test5_mono()
@@ -410,6 +414,7 @@ document.f2.rw1.src="/assets/images/w.gif";
 document.getElementById("a").style.pointerEvents = "none";  
 document.getElementById("c").style.pointerEvents = "none"; 
 document.getElementById("unmark2").checked = true; //kid gave right answer 
+enableNext2_money();
 }
 
 function test6_mono()
@@ -423,6 +428,7 @@ document.f2.rw1.src="/assets/images/yay_bunny2.gif";
 document.getElementById("b").style.pointerEvents = "none";  
 document.getElementById("a").style.pointerEvents = "none"; 
 document.getElementById("mark2").checked = true; //kid gave right answer 
+enableNext2_money();
 }
 
 
@@ -439,6 +445,7 @@ document.f4.rw1.src="/assets/images/yay_bunny2.gif";
 document.getElementById("b").style.pointerEvents = "none";  
 document.getElementById("c").style.pointerEvents = "none"; 
 document.getElementById("mark3").checked = true; //kid gave right answer 
+enableSubmit_money();
 }
 
 function test8_mono()
@@ -452,6 +459,7 @@ document.f4.rw1.src="/assets/images/w.gif";
 document.getElementById("a").style.pointerEvents = "none";  
 document.getElementById("c").style.pointerEvents = "none"; 
 document.getElementById("unmark3").checked = true; //kid gave right answer 
+enableSubmit_money();
 }
 
 function test9_mono()
@@ -465,8 +473,34 @@ document.f4.rw1.src="/assets/images/w.gif";
 document.getElementById("b").style.pointerEvents = "none";  
 document.getElementById("a").style.pointerEvents = "none"; 
 document.getElementById("unmark3").checked = true; //kid gave right answer 
+enableSubmit_money();
 }
 
+function startgame_money(){
+  document.getElementById("startdiv").style.visibility= "hidden";
+  document.getElementById("time-back").style.display="block";
+  startStop();
+}
+
+function enableNext1_money(){
+  var chk = document.querySelectorAll('input[type="checkbox"]:checked').length;
+  if (chk == 1){
+  document.getElementById("next1").style.display="block";
+  }
+  else{
+  document.getElementById("next1").style.display="none";
+  }
+  }
+
+  function enableNext2_money(){
+    var chk = document.querySelectorAll('input[type="checkbox"]:checked').length;
+    if (chk == 2){
+    document.getElementById("next2").style.display="block";
+    }
+    else{
+    document.getElementById("next2").style.display="none";
+    }
+    } 
 
 // function moneycheck(){
 //   var x=(document.f1.clip1.src);
