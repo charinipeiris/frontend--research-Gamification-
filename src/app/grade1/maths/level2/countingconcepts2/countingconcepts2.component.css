@@ -79,6 +79,24 @@
     margin-top: 350px; 
     margin-left:460px;
   }
+
+  .button4 {
+    border-radius: 12px;
+    background-color:#3f9454;
+    border: 5px solid #315032;;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 25px;
+    padding: 5px;
+    width: 250px;
+    height: 60px;
+    transition: all 0.5s;
+    cursor: pointer;
+    position: relative; 
+    margin-top: 270px;
+    margin-left: 450px;
+    z-index: 4;
+  }
   
   /* The Modal (background) */
   .modal {

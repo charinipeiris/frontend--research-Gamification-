@@ -25,6 +25,24 @@ width:100%;">
 
 <!--page 02 -->
 <div id="page2-sub" style="display:none;position:absolute;top:40px;left:50px;">
+
+
+    <div id="time-back" style="z-index: 2; margin-top: 30px; position: absolute; margin-left: 950px; background-color: azure; border-radius: 10px; width: 200px;">
+        <div id="display" style="margin-left:15px; font-size: 50px; font-family: 'Permanent Marker', cursive;">
+          00:00:00
+      </div>
+
+      <div class="buttons" >
+          <button hidden id="startStop" onclick="startStop()">Start</button> 
+          <button hidden id="reset" onclick="reset()">Reset</button>
+      </div>
+ </div>
+
+     <div id = "startdiv" style ="margin-top:20px;z-index: 3; background-color: rgba(236, 236, 208, 0.95); border-style: solid; border-color: rgb(146, 146, 89); border-radius: 10px; height: 580px; width: 1200px; position: absolute;margin-left:30px;">
+      <button id="startbtn" onclick = "startgame()" class="button4"><b>ආරම්භ කරන්න</b></button>
+      <img src = "/assets/images/start_button.png" style=" opacity: 0.85;margin-top: -300px; margin-left: 150px">
+     </div>
+
    
     <a style ='margin-top:30px;margin-left:-60px;color:green;height:50px ;' class="previous button1" onclick="showpages_sub('page1-sub')">&laquo; Previous</a>
 
@@ -109,8 +127,9 @@ width:100%;">
             </form>  
             
 
+            <app-emotiondetector></app-emotiondetector>
 
-            <button id="submit" class="button2" style="display: block;" (click)="markstot_substraction2()">ඉවරයි</button> 
+            <button id="submit" class="button2" style="display: none;" (click)="markstot_substraction2()">ඉවරයි</button> 
 
             <!-- The Modal -->
             <div id="myModal" class="modal">
@@ -124,8 +143,8 @@ width:100%;">
                 <img id ="coin3" src="/assets/images/win_coin.gif" class= "coin_img" style = "visibility:hidden; height: 220px; width: 550px; margin-left: 390px; position: absolute">
                 <img id ="sad_coin" src="/assets/images/sad.gif" class= "coin_img" style = "visibility:hidden; height: 220px; width: 220px; margin-left: 380px; position: absolute">
                 <h1 style="font-family:Chalkduster, fantasy; margin-left: 380px; position: absolute; color:darkcyan">Completed!!!</h1>
-                <!-- <a href="#"  class="button3" onclick="return show('Page1','Page2');">ආපසු</a> -->
-                <a href="grade1/maths/level2"  class="button3">ආපසු</a>
+                <h5 style ="position: absolute; margin-top: 300px; margin-left: 350px; font-size: 30px">ගත වූ කාලය : <span id="perf-time"></span></h5>
+                <a href="grade2/maths/level1"  class="button3">ආපසු</a>
               </div>
             </div>
 
@@ -133,23 +152,7 @@ width:100%;">
 
     
 
-<div id="myModal" class="modal">
 
-    <!-- Modal content -->
-    <div class="modal-content">
-      <!-- <span id ="close1" class="close">&times;</span> -->
-      <!-- <img src="/assets/images/congratulations.gif" class="congrats_img" style = "margin-left: 270px;height: 280px; width: 450px;"> -->
-      <img id="coin1" src="/assets/images/win_coin.gif" class= "coin_img" style = "visibility:hidden; height: 220px; width: 550px; margin-left: 5px; position: absolute">
-      <img id ="coin2" src="/assets/images/win_coin.gif" class= "coin_img" style = "visibility:hidden; height: 220px; width: 550px; margin-left: 150px; margin-top: -50px; position: absolute;">
-      <img id ="coin3" src="/assets/images/win_coin.gif" class= "coin_img" style = "visibility:hidden; height: 220px; width: 550px; margin-left: 290px; margin-top: -50px; position: absolute">
-      <img id ="coin4" src="/assets/images/win_coin.gif" class= "coin_img" style = "visibility:hidden; height: 220px; width: 550px; margin-left: 430px; position: absolute">
-      <img id ="sad_coin" src="/assets/images/sad.gif" class= "coin_img" style = "visibility:hidden; height: 220px; width: 220px; margin-left: 380px; position: absolute">
-      <h1 style="font-family:Chalkduster, fantasy; margin-left: 380px; position: absolute; color:darkcyan">Completed!!!</h1>
-      <h5 style ="position: absolute; margin-top: 300px; margin-left: 350px; font-size: 30px">ගත වූ කාලය : <span id="perf-time"></span></h5>
-      <a href="grade1/maths/level2"  class="button3">ආපසු</a>
-
-    </div>
-</div>
 
 
 
