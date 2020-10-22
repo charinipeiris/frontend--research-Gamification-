@@ -113,6 +113,7 @@ function testcounts1game(){
     //document.f1.clip7.src="/assets/images/w.gif";
     document.getElementById("lkid1a").style.pointerEvents ="none";
     document.getElementById("unmark1").checked = true; //kid gave wrong answer 
+    enableNext_count();
     }
     
     function testcounts1game2(){
@@ -121,6 +122,8 @@ function testcounts1game(){
     //document.f1.clip7.src="/assets/images/yay_bunny2.gif";
     document.getElementById("lkid2a").style.pointerEvents ="none";
     document.getElementById("mark1").checked = true; //kid gave wrong answer 
+    enableNext_count();
+    
     }
     
     function testcounts1game3(){ 
@@ -129,6 +132,7 @@ function testcounts1game(){
     //document.f1.clip8.src="/assets/images/yay_bunny2.gif";
     document.getElementById("tree2a").style.pointerEvents ="none";
     document.getElementById("mark2").checked = true; //kid gave wrong answer 
+    enableNext_count();
     }
     
     function testcounts1game4(){
@@ -138,6 +142,7 @@ function testcounts1game(){
     //document.f1.clip8.src="/assets/images/w.gif";
     document.getElementById("tree1a").style.pointerEvents ="none";
     document.getElementById("unmark2").checked = true; //kid gave wrong answer 
+    enableNext_count();
     }
     
     function testcounts1game5(){
@@ -147,6 +152,7 @@ function testcounts1game(){
    // document.f1.clip9.src="/assets/images/w.gif";
     document.getElementById("pen2a").style.pointerEvents ="none";
     document.getElementById("unmark3").checked = true; //kid gave wrong answer 
+    enableNext_count();
     }
     
     function testcounts1game6(){
@@ -156,6 +162,7 @@ function testcounts1game(){
     //.f1.clip9.src="/assets/images/yay_bunny2.gif";
     document.getElementById("pen1a").style.pointerEvents ="none";
     document.getElementById("mark3").checked = true; //kid gave wrong answer 
+    enableNext_count();
     }
 
     function testcounts1game7(){
@@ -164,6 +171,7 @@ function testcounts1game(){
         //document.f2.clip71.src="/assets/images/w.gif";
         document.getElementById("lkid1ab").style.pointerEvents ="none";
         document.getElementById("unmark4").checked = true; //kid gave wrong answer 
+        enableSubmit_count1();
         }
         
         function testcounts1game8(){
@@ -172,6 +180,7 @@ function testcounts1game(){
        // document.f2.clip71.src="/assets/images/yay_bunny2.gif";
         document.getElementById("lkid2ab").style.pointerEvents ="none";
         document.getElementById("mark4").checked = true; //kid gave wrong answer 
+        enableSubmit_count1();
         }
         
         function testcounts1game9(){ 
@@ -180,6 +189,7 @@ function testcounts1game(){
        // document.f2.clip81.src="/assets/images/yay_bunny2.gif";
         document.getElementById("tree2ab").style.pointerEvents ="none";
         document.getElementById("mark5").checked = true; //kid gave wrong answer 
+        enableSubmit_count1();
         }
         
         function testcounts1game10(){
@@ -189,7 +199,33 @@ function testcounts1game(){
         //document.f1.clip81.src="/assets/images/w.gif";
         document.getElementById("tree1ab").style.pointerEvents ="none";
         document.getElementById("unmark5").checked = true; //kid gave wrong answer 
+        enableSubmit_count1();
         }
+
+        function enableNext_count(){
+            var chk = document.querySelectorAll('input[type="checkbox"]:checked').length;
+            if (chk == 3){
+            document.getElementById("next").style.display="block";
+            // document.getElementById("arrow1").style.display="block";
+            
+            }
+            else{
+            document.getElementById("next").style.display="none";
+            }
+            }
+
+            function enableSubmit_count1(){
+                var chk = document.querySelectorAll('input[type="checkbox"]:checked').length;
+                console.log(chk);
+                if (chk == 5){
+                document.getElementById("submit").style.display="block";
+                document.getElementById("arrow").style.display="block";
+                
+                }
+                else{
+                document.getElementById("submit").style.display="none";
+                }
+                }
 
 //========================Grade 1 level 2==================================
 

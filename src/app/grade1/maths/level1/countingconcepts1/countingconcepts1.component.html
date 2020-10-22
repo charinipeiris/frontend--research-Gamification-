@@ -2,13 +2,31 @@
   
     <body class="back-image">
 
+
+        <div id="time-back" style="z-index: 2; margin-top: 40px; position: absolute; margin-left: 720px; background-color: azure; border-radius: 10px; width: 200px;">
+            <div id="display" style="margin-left:15px; font-size: 50px; font-family: 'Permanent Marker', cursive;">
+              00:00:00
+          </div>
+    
+          <div class="buttons" >
+              <button hidden id="startStop" onclick="startStop()">Start</button> 
+              <button hidden id="reset" onclick="reset()">Reset</button>
+          </div>
+    
+    
+     </div>
+
     <!--page 01 -->
 <div id="page1-count_intro">
+    <div id = "startdiv" style ="z-index: 3; background-color: rgba(236, 236, 208, 0.95); border-style: solid; border-color: rgb(146, 146, 89); border-radius: 10px; height: 600px; width: 1300px; position: absolute;margin-left:50px; margin-top: 40px">
+        <button id="startbtn" onclick = "startgame()" class="button4"><b>ආරම්භ කරන්න</b></button>
+        <img src = "/assets/images/start_button.png" style=" opacity: 0.85;margin-top: -300px; margin-left: 150px">
+       </div>
     <br>
     <br>
     <br>
     <a href="/grade1/maths/level1/counting" style ='margin-top:70px;margin-left:70px;color:green;height:50px;background-color:white ' class="previous button1">&laquo; Previous</a>
-    <a style ='margin-top:70px;margin-left:900px;color:green;height:50px;background-color:white ;' class="previous button1" onclick="showpages_count_intro('page2-count_intro')"> Next &raquo;</a>
+    <a id="next" style ='display: none; margin-top: -50px; margin-left: 1050px; color: green; background-color: white;' class="previous button1" onclick="showpages_count_intro('page2-count_intro')"> Next &raquo;</a>
         
         <h5 style =  "margin-left:440px;" ><B>රූපයට ගැළපෙන ඉලක්කම තොරමු.</B></h5>
       
@@ -115,7 +133,9 @@
      </div>
   
 </form>
-<button id="submit" class="button2" style="display: block;margin-top:-300px ;" (click)="markstotc1()">ඉවරයි</button> 
+<app-emotiondetector></app-emotiondetector>
+<img id ="arrow" src ="/assets/images/arrow_submit.gif" style="display: none; margin-top: 60px; margin-left: 980px; height: 130px; width: 130px; position: absolute;">
+<button id="submit" class="button2" style="display: none; margin-top: 200px; margin-left: 1000px;" (click)="markstotc1()">ඉවරයි</button> 
         <div id="myModal" class="modal">
         
                       <!-- Modal content -->

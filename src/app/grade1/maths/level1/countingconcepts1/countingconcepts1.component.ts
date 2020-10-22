@@ -1,9 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-declare function test1(): any;
-declare function test2(): any;
-declare function test3(): any;
-declare function ov(): any;
-declare function out(): any;
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { GamesService } from "../../../../services/games.service";
+import { EmotiondetectorComponent } from '../../../../emotiondetector/emotiondetector.component';
 
 
 @Component({
@@ -13,7 +10,9 @@ declare function out(): any;
 })
 export class Countingconcepts1Component implements OnInit {
   totalmarks: any;
-  constructor() { 
+
+  @ViewChild(EmotiondetectorComponent) child: EmotiondetectorComponent;
+  constructor(private gamesService: GamesService) { 
   }
   ngOnInit(){   
 }
@@ -21,6 +20,9 @@ export class Countingconcepts1Component implements OnInit {
 
 markstotc1(){
 
+  var time = document.getElementById("display").innerHTML;
+  console.log(time);
+  document.getElementById("time-back").style.visibility = "hidden";
   var total1 = 0;
 
   
@@ -29,49 +31,42 @@ let element2 = <HTMLInputElement> document.getElementById("mark2");
 let element3 = <HTMLInputElement> document.getElementById("mark3");  
 let element4 = <HTMLInputElement> document.getElementById("mark4"); 
 let element5 = <HTMLInputElement> document.getElementById("mark5"); 
-
-let element6 = <HTMLInputElement> document.getElementById("unmark1");  
-let element7 = <HTMLInputElement> document.getElementById("unmark2");  
-let element8 = <HTMLInputElement> document.getElementById("unmark3"); 
-let element9 = <HTMLInputElement> document.getElementById("unmark4");  
-let element10 = <HTMLInputElement> document.getElementById("unmark5"); 
   
 if (element1.checked ){
   total1 = total1 + 1;
  }
-else if ((!element1.checked) && (!element6.checked)){
-  // document.getElementById('alert1').style.visibility = "visible";
-}
+
 
 if (element2.checked)
     total1 = total1 + 1;
 
-else if  ((!element2.checked) && (!element7.checked)){
-  // document.getElementById('alert2').style.visibility = "visible";
 
-}
 if (element3.checked)
     total1 = total1 + 1;
 
-else if  ((!element3.checked) && (!element8.checked)){
-  // document.getElementById('alert3').style.visibility = "visible";
-}
 
 if (element4.checked)
     total1 = total1 + 1;
 
-else if  ((!element3.checked) && (!element9.checked)){
-  // document.getElementById('alert3').style.visibility = "visible";
-}
 
 if (element5.checked)
     total1 = total1 + 1;
 
-else if  ((!element5.checked) && (!element10.checked)){
-  // document.getElementById('alert3').style.visibility = "visible";
-}
 
 console.log(total1);
+
+    // let username = localStorage.getItem('uname');
+    // this.gamesService.submitGame({    
+    //   completed_games : [
+    //   {
+    //   game_id : "M11",
+    //   marks : total1,
+    //   time_spent : time,
+    //   emotions: this.child.emotions
+    //   }
+    // ]},username).subscribe(res=>{console.log("success")}, err=>{console.log("error")});
+
+
 var chk = document.querySelectorAll('input[type="checkbox"]:checked').length;
 if (chk==5){
   if (total1 == 5){
@@ -98,7 +93,7 @@ if (chk==5){
     setTimeout(function(){
             document.getElementById('coin5').style.visibility = "visible";
             },2200);
-    
+            document.getElementById("perf-time").innerHTML = time;   
     }
 
 
@@ -127,6 +122,7 @@ if (chk==5){
             document.getElementById('coin5').style.visibility = "visible";
             },2200);
     document.getElementById('coin5').style.opacity ="0.3";
+    document.getElementById("perf-time").innerHTML = time;
     }
     
 
@@ -155,6 +151,7 @@ setTimeout(function(){
     document.getElementById('coin5').style.visibility = "visible";
             },2200);
     document.getElementById('coin5').style.opacity ="0.3";
+    document.getElementById("perf-time").innerHTML = time;
 
 }
 else if (total1 == 2){
@@ -180,6 +177,7 @@ setTimeout(function(){
     document.getElementById('coin5').style.visibility = "visible";
             },2200);
     document.getElementById('coin5').style.opacity ="0.3";
+    document.getElementById("perf-time").innerHTML = time;
 }
 
 else if(total1 == 1){
@@ -206,6 +204,7 @@ modal.style.display = "block";
         document.getElementById('coin5').style.visibility = "visible";
                 },2200);
         document.getElementById('coin5').style.opacity ="0.3";
+        document.getElementById("perf-time").innerHTML = time;
     
   
 }
@@ -215,6 +214,7 @@ else if(total1 == 0){
     setTimeout(function(){
       document.getElementById('sad_coin').style.visibility = "visible";
       },1000);
+      document.getElementById("perf-time").innerHTML = time;
   }
 
 }
@@ -222,6 +222,7 @@ else {
   document.getElementById('alert').style.visibility = "visible";
 }
 
+this.child.endgame(); 
 }
   
   }
