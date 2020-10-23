@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { GamesService } from "../../../../services/games.service";
+import { EmotiondetectorComponent } from '../../../../emotiondetector/emotiondetector.component';
 
 @Component({
   selector: 'app-counting-l1',
@@ -8,12 +10,17 @@ import { Component, OnInit } from '@angular/core';
 export class CountingL1Component implements OnInit {
 
   totalmarks: any;
-  constructor() { 
+  @ViewChild(EmotiondetectorComponent) child: EmotiondetectorComponent;
+  constructor(private gamesService: GamesService) {
   }
   ngOnInit(){   
 }
 
 markstot_counting_gd21(){
+  var time = document.getElementById("display").innerHTML;
+  console.log(time);
+  document.getElementById("time-back").style.visibility = "hidden";
+
 var total6 = 0;
 
 let element1 = <HTMLInputElement> document.getElementById("mark1");  
@@ -23,57 +30,42 @@ let element4 = <HTMLInputElement> document.getElementById("mark4");
 let element5 = <HTMLInputElement> document.getElementById("mark5");  
 let element6 = <HTMLInputElement> document.getElementById("mark6");  
 
-let element7 = <HTMLInputElement> document.getElementById("unmark1");  
-let element8 = <HTMLInputElement> document.getElementById("unmark2");  
-let element9 = <HTMLInputElement> document.getElementById("unmark3");  
-let element10 = <HTMLInputElement> document.getElementById("unmark4"); 
-let element11 = <HTMLInputElement> document.getElementById("unmark5");
-let element12 = <HTMLInputElement> document.getElementById("unmark6");  
-
 
 if  (element1.checked ){
   total6 = total6 + 1;
  }
-else if ((!element1.checked) && (!element7.checked)){
-  // document.getElementById('alert1').style.visibility = "visible";
-}
 
 if (element2.checked)
     total6 = total6 + 1;
 
-else if  ((!element2.checked) && (!element8.checked)){
-  // document.getElementById('alert2').style.visibility = "visible";
-
-}
 if (element3.checked)
     total6 = total6 + 1;
 
-else if  ((!element3.checked) && (!element9.checked)){
-  // document.getElementById('alert3').style.visibility = "visible";
-}
 if (element4.checked)
     total6 = total6 + 1;
-
-else if  ((!element4.checked) && (!element10.checked)){
-  // document.getElementById('alert3').style.visibility = "visible";
-}
 
 if (element5.checked)
     total6 = total6 + 1;
 
-else if  ((!element5.checked) && (!element11.checked)){
-  // document.getElementById('alert3').style.visibility = "visible";
-}
-
 if (element6.checked)
     total6 = total6 + 1;
 
-else if  ((!element6.checked) && (!element12.checked)){
-  // document.getElementById('alert3').style.visibility = "visible";
-}
 
 
 console.log(total6);
+
+
+  //  let username = localStorage.getItem('uname');
+  //   this.gamesService.submitGame({    
+  //     completed_games : [
+  //     {
+  //     game_id : "m11",
+  //     marks : total6,
+  //     time_spent : time,
+  //     emotions: this.child.emotions
+  //     }
+  //   ]},username).subscribe(res=>{console.log("success")}, err=>{console.log("error")});
+
 var chk = document.querySelectorAll('input[type="checkbox"]:checked').length;
 if (chk==6){
  
@@ -102,6 +94,7 @@ setTimeout(function(){
  setTimeout(function(){
     document.getElementById('coin6').style.visibility = "visible";
           },2900);
+          document.getElementById("perf-time").innerHTML = time;
 
 }
 else if (total6 == 5){
@@ -128,6 +121,7 @@ setTimeout(function(){
     document.getElementById('coin6').style.visibility = "visible";
         },2700);
     document.getElementById('coin6').style.opacity ="0.3";
+    document.getElementById("perf-time").innerHTML = time;
 }
 
 
@@ -154,6 +148,7 @@ else if (total6 == 4){
           document.getElementById('coin6').style.visibility = "visible";
           },2400);
           document.getElementById('coin6').style.opacity ="0.3";
+          document.getElementById("perf-time").innerHTML = time;
   }
   else if (total6 == 3){
     var modal = document.getElementById("myModal");
@@ -181,6 +176,7 @@ else if (total6 == 4){
             document.getElementById('coin6').style.visibility = "visible";
             },2700);
             document.getElementById('coin6').style.opacity ="0.3";
+            document.getElementById("perf-time").innerHTML = time;
     }
     else if (total6 == 2){
       var modal = document.getElementById("myModal");
@@ -209,6 +205,7 @@ else if (total6 == 4){
               document.getElementById('coin6').style.visibility = "visible";
               },2700);
               document.getElementById('coin6').style.opacity ="0.3";
+              document.getElementById("perf-time").innerHTML = time;
       }
  
 else if(total6 == 1){
@@ -239,6 +236,7 @@ modal.style.display = "block";
          document.getElementById('coin6').style.visibility = "visible";
               },1900);
          document.getElementById('coin6').style.opacity ="0.3";
+         document.getElementById("perf-time").innerHTML = time;
 }
 else if(total6 == 0){
   var modal = document.getElementById("myModal");
@@ -246,13 +244,14 @@ else if(total6 == 0){
     setTimeout(function(){
       document.getElementById('sad_coin').style.visibility = "visible";
       },1000);
+      document.getElementById("perf-time").innerHTML = time;
   }
 
 }
 else {
   document.getElementById('alert').style.visibility = "visible";
 }
-
+this.child.endgame(); 
 }
 
 }

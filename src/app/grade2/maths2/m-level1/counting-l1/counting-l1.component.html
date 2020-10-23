@@ -8,6 +8,18 @@
     </head>
     
 <body class = "image">
+    <div id="time-back" style="display: none; z-index: 2; margin-top: 65px; position: absolute; margin-left: 790px; background-color: azure; border-radius: 10px; width: 200px;">
+        <div id="display" style="margin-left:15px; font-size: 50px; font-family: 'Permanent Marker', cursive;">
+          00:00:00
+      </div>
+
+      <div class="buttons" >
+          <button hidden id="startStop" onclick="startStop()">Start</button> 
+          <button hidden id="reset" onclick="reset()">Reset</button>
+      </div>
+
+
+ </div>
     
     <!-- page 01 -->
         <div id="pg1_count" style="position: absolute; top: 30px; left: 250px;">
@@ -25,8 +37,15 @@
 
 
     <!-- page 02 -->
-        <div id="pg2_count" style="position: absolute; top: 30px; left: 200px; display:none;">
-            <a class="previous button1" style ='margin-top:70px; margin-left:900px; color:green;height:50px;'onclick="return showNxt('pg3_count');"> Next &#8811; </a>
+        <div id="pg2_count" style="position: absolute; top: 90px; left: 200px; display:none;">
+
+
+            <div id = "startdiv" style ="z-index: 3; background-color: rgba(236, 236, 208, 0.95); border-style: solid; border-color: rgb(146, 146, 89); border-radius: 10px; height: 580px; width: 1250px; position: absolute; margin-left: -100px; margin-top: -30px;">
+                <button id="startbtn" onclick = "startgame_counting()" class="button4"><b>ආරම්භ කරන්න</b></button>
+                <img src = "/assets/images/start_button.png" style=" opacity: 0.85;margin-top: -300px; margin-left: 150px">
+               </div>
+
+            <a id="next" class="previous button1" style ='display:none;margin-top:70px; margin-left:900px; color:green;height:50px;'onclick="return showNxt('pg3_count');"> Next &#8811; </a>
     
             <div class= "center1" data-value="1">
                 <h5><B>රූප ගණන් කර, ගළපෙන ඉලක්කම තෝරමු</B></h5>
@@ -106,10 +125,10 @@
 
         <!-- page 03 -->
         <div id="pg3_count" style="position: absolute; top: 100px; left: 200px; display:none;">
-            <div class= "center1" data-value="1">
+            <!-- <div class= "center1" data-value="1"> --> 
                 <!-- <h5><B>රූප ගණන් කර, ගළපෙන ඉලක්කම තෝරමු-2</B></h5> -->
-                <br>
-            </div>
+                <!-- <br>
+            </div>-->
             
         <form name="f2" >
             <img src ="/assets/images/count-87.PNG" style="width:300px;height:300px;margin-right:100px; margin-left:-100px; border:black; border-style: solid">
@@ -176,9 +195,9 @@
             <div id="box17" style="position:absolute; top:480px; left:748px; width:150px;height:50px" >
                 <input type="text" name="text6" value=""  readonly="true" style= "width:190px; height:50px; text-align:center; font-weight:bold; color:blue; font-size:30px;border:transparent">
             </div>
-            <button id="submit" class="button2" style="display: block;margin-top:300px ;" (click)="markstot_counting_gd21()">ඉවරයි</button> 
         </form>
-
+        <app-emotiondetector></app-emotiondetector>
+        <button id="submit" class="button2" style="display: none; margin-top: -300px;margin-left: 1100px " (click)="markstot_counting_gd21()">ඉවරයි</button> 
 
         <!-- The Modal -->
         <div id="myModal" class="modal">
@@ -187,16 +206,16 @@
             <div class="modal-content">
               <!-- <span id ="close1" class="close">&times;</span> -->
               <!-- <img src="/assets/images/congratulations.gif" class="congrats_img" style = "margin-left: 270px;height: 280px; width: 450px;"> -->
-              <img id="coin1" src="/assets/images/win_coin.gif" class= "coin_img" style = "visibility:hidden; height: 220px; width: 550px; margin-left: 5px; position: absolute">
-              <img id ="coin2" src="/assets/images/win_coin.gif" class= "coin_img" style = "visibility:hidden; height: 220px; width: 550px; margin-left: 220px; margin-top: -50px; position: absolute;">
-              <img id ="coin3" src="/assets/images/win_coin.gif" class= "coin_img" style = "visibility:hidden; height: 220px; width: 550px; margin-left: 390px; position: absolute">
-              <img id ="coin4" src="/assets/images/win_coin.gif" class= "coin_img" style = "visibility:hidden; height: 220px; width: 550px; margin-left: 420px; position: absolute">
-              <img id ="coin5" src="/assets/images/win_coin.gif" class= "coin_img" style = "visibility:hidden; height: 220px; width: 550px; margin-left: 520px; position: absolute">
-              <img id ="coin6" src="/assets/images/win_coin.gif" class= "coin_img" style = "visibility:hidden; height: 220px; width: 550px; margin-left: 690px; position: absolute">
+              <img id="coin1" src="/assets/images/win_coin.gif" class= "coin_img" style = "visibility: hidden; height: 220px; width: 550px; margin-left: -100px; position: absolute;">
+              <img id ="coin2" src="/assets/images/win_coin.gif" class= "coin_img" style = "visibility: hidden; height: 220px; width: 550px; margin-left: 40px; margin-top: -30px; position: absolute;">
+              <img id ="coin3" src="/assets/images/win_coin.gif" class= "coin_img" style = "visibility: hidden; height: 220px; width: 550px; margin-left: 180px; position: absolute;margin-top:-50px">
+              <img id ="coin4" src="/assets/images/win_coin.gif" class= "coin_img" style = "visibility: hidden; height: 220px; width: 550px; margin-left: 320px; position: absolute; opacity: 0.3;margin-top:-50px">
+              <img id ="coin5" src="/assets/images/win_coin.gif" class= "coin_img" style = "visibility: hidden; height: 220px; width: 550px; margin-left: 470px; position: absolute; opacity: 0.3;margin-top:-30px">
+              <img id ="coin6" src="/assets/images/win_coin.gif" class= "coin_img" style = "visibility: hidden; height: 220px; width: 550px; margin-left: 600px; position: absolute; opacity: 0.3;">
               <img id ="sad_coin" src="/assets/images/sad.gif" class= "coin_img" style = "visibility:hidden; height: 220px; width: 220px; margin-left: 380px; position: absolute">
               <h1 style="font-family:Chalkduster, fantasy; margin-left: 380px; position: absolute; color:darkcyan">Completed!!!</h1>
-              <!-- <a href="#"  class="button3" onclick="return show('Page1','Page2');">ආපසු</a> -->
-              <a href="grade1/maths/level2"  class="button3">ආපසු</a>
+              <h5 style ="position: absolute; margin-top: 300px; margin-left: 350px; font-size: 30px">ගත වූ කාලය : <span id="perf-time"></span></h5>
+              <a href="grade2/maths/level1"  class="button3">ආපසු</a>
             </div>
           </div>
         </div>    

@@ -1123,7 +1123,11 @@ function showNxt(pg1_count) {
     }
 }
 
-
+function startgame_counting(){
+    document.getElementById("startdiv").style.visibility= "hidden";
+    document.getElementById("time-back").style.display="block";
+    startStop();
+}
 // Game
 //Page 2
 
@@ -1133,6 +1137,7 @@ document.f1.text1.value="Correct!!";
 document.f1.clip07.src="/assets/images/yay_bunny2.gif";
 document.getElementById("60").style.pointerEvents = "none";
 document.getElementById("mark1").checked = true; //kid gave right answer 
+enableNext_count();
 }
 
 function testcount2()
@@ -1141,6 +1146,7 @@ document.f1.text1.value="Wrong";
 document.f1.clip07.src="/assets/images/w.gif";
 document.getElementById("50").style.pointerEvents = "none";
 document.getElementById("unmark1").checked = true; //kid gave right answer 
+enableNext_count();
 }
 
 
@@ -1150,6 +1156,7 @@ document.f1.text2.value="Correct!!";
 document.f1.clip08.src="/assets/images/yay_bunny2.gif";
 document.getElementById("33").style.pointerEvents = "none";
 document.getElementById("mark2").checked = true; //kid gave right answer 
+enableNext_count();
 }
 
 function testcount4()
@@ -1158,6 +1165,7 @@ document.f1.text2.value="Wrong";
 document.f1.clip08.src="/assets/images/w.gif";
 document.getElementById("32").style.pointerEvents = "none";
 document.getElementById("unmark2").checked = true; //kid gave right answer 
+enableNext_count();
 }
 
 function testcount6()
@@ -1166,6 +1174,7 @@ document.f1.text3.value="Correct!!";
 document.f1.clip09.src="/assets/images/yay_bunny2.gif";
 document.getElementById("71").style.pointerEvents = "none";
 document.getElementById("mark3").checked = true; //kid gave right answer 
+enableNext_count();
 }
 
 function testcount5()
@@ -1174,6 +1183,7 @@ document.f1.text3.value="Wrong";
 document.f1.clip09.src="/assets/images/w.gif";
 document.getElementById("61").style.pointerEvents = "none";
 document.getElementById("unmark3").checked = true; //kid gave right answer 
+enableNext_count();
 }
 
 
@@ -1185,6 +1195,7 @@ document.f2.text4.value="Correct!!";
 document.f2.clip10.src="/assets/images/yay_bunny2.gif";
 document.getElementById("97").style.pointerEvents = "none";
 document.getElementById("mark4").checked = true; //kid gave right answer 
+enableSubmit_countG2L1();
 }
 
 function testcount8()
@@ -1193,6 +1204,7 @@ document.f2.text4.value="Wrong";
 document.f2.clip10.src="/assets/images/w.gif";
 document.getElementById("87").style.pointerEvents = "none";
 document.getElementById("unmark4").checked = true; //kid gave right answer 
+enableSubmit_countG2L1();
 }
 
 
@@ -1202,6 +1214,7 @@ document.f2.text5.value="Correct!!";
 document.f2.clip11.src="/assets/images/yay_bunny2.gif";
 document.getElementById("78").style.pointerEvents = "none";
 document.getElementById("mark5").checked = true; //kid gave right answer 
+enableSubmit_countG2L1();
 }
 
 function testcount10()
@@ -1210,6 +1223,7 @@ document.f2.text5.value="Wrong";
 document.f2.clip11.src="/assets/images/w.gif";
 document.getElementById("68").style.pointerEvents = "none";
 document.getElementById("unmark5").checked = true; //kid gave right answer 
+enableSubmit_countG2L1();
 }
 
 function testcount12()
@@ -1218,6 +1232,7 @@ document.f2.text6.value="Correct!!";
 document.f2.clip12.src="/assets/images/yay_bunny2.gif";
 document.getElementById("95").style.pointerEvents = "none";
 document.getElementById("mark6").checked = true; //kid gave right answer 
+enableSubmit_countG2L1();
 }
 
 function testcount11()
@@ -1226,9 +1241,22 @@ document.f2.text6.value="Wrong";
 document.f2.clip12.src="/assets/images/w.gif";
 document.getElementById("85").style.pointerEvents = "none";
 document.getElementById("unmark6").checked = true; //kid gave right answer 
+enableSubmit_countG2L1();
 }
 
 
+function enableSubmit_countG2L1(){
+    var chk = document.querySelectorAll('input[type="checkbox"]:checked').length;
+    console.log(chk);
+    if (chk == 6){
+    document.getElementById("submit").style.display="block";
+    // document.getElementById("arrow").style.display="block";
+    
+    }
+    else{
+    document.getElementById("submit").style.display="none";
+    }
+    }
 //------------------level2 - counting game (grade 2)----------------------------------------------------------------
 
 function showNxt(pg1_count) {
