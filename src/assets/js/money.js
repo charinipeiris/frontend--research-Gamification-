@@ -544,14 +544,14 @@ function enableNext1_money(){
 
 function showpages_mon2(page){
   var p1 = document.getElementById(page).getAttribute("id");
-  if (p1=="page1-mon2"){	
-      document.getElementById("page1-mon2").style.display='block';	
-      document.getElementById("page2-mon2").style.display='none'; 	
-      document.getElementById("page3-mon2").style.display='none';
-      document.getElementById("page4-mon2").style.display='none';  	
-  }
-  else if (p1=="page2-mon2"){
-      document.getElementById("page1-mon2").style.display='none';	
+  // if (p1=="page1-mon2"){	
+  //     document.getElementById("page1-mon2").style.display='block';	
+  //     document.getElementById("page2-mon2").style.display='none'; 	
+  //     document.getElementById("page3-mon2").style.display='none';
+  //     document.getElementById("page4-mon2").style.display='none';  	
+  // }
+  if (p1=="page2-mon2"){
+      // document.getElementById("page1-mon2").style.display='none';	
       document.getElementById("page2-mon2").style.display='block'; 	 
       document.getElementById("page3-mon2").style.display='none'; 
       document.getElementById("page4-mon2").style.display='none'; 	
@@ -559,14 +559,14 @@ function showpages_mon2(page){
   else if (p1=="page3-mon2"){
       document.getElementById("page2-mon2").style.display='none';	
       document.getElementById("page3-mon2").style.display='block'; 	 
-      document.getElementById("page1-mon2").style.display='none'; 	
+      // document.getElementById("page1-mon2").style.display='none'; 	
       document.getElementById("page4-mon2").style.display='none'; 
         }
   else if (p1=="page4-mon2"){
       document.getElementById("page2-mon2").style.display='none';	
       document.getElementById("page4-mon2").style.display='block'; 	 
       document.getElementById("page3-mon2").style.display='none'; 	
-      document.getElementById("page1-mon2").style.display='none'; 
+      // document.getElementById("page1-mon2").style.display='none'; 
             }
 }	
 //--------money game  level 2 grade 2 -------------
@@ -583,6 +583,7 @@ document.f1.rw1.src="/assets/images/w.gif";
 document.getElementById("b").style.pointerEvents = "none";  
 document.getElementById("c").style.pointerEvents = "none"; 
 document.getElementById("unmark1").checked = true; //kid gave right answer 
+enableNext1_money();
 }
 
 function test2_mono2()
@@ -596,6 +597,7 @@ document.f1.rw1.src="/assets/images/yay_bunny2.gif";
 document.getElementById("a").style.pointerEvents = "none";  
 document.getElementById("c").style.pointerEvents = "none"; 
 document.getElementById("mark1").checked = true; //kid gave right answer 
+enableNext1_money();
 }
 
 function test3_mono2()
@@ -609,6 +611,7 @@ document.f1.rw1.src="/assets/images/w.gif";
 document.getElementById("b").style.pointerEvents = "none";  
 document.getElementById("a").style.pointerEvents = "none"; 
 document.getElementById("unmark1").checked = true; //kid gave right answer 
+enableNext1_money();
 }
 
 
@@ -625,6 +628,7 @@ document.f2.rw1.src="/assets/images/w.gif";
 document.getElementById("b").style.pointerEvents = "none";  
 document.getElementById("c").style.pointerEvents = "none"; 
 document.getElementById("unmark2").checked = true; //kid gave right answer 
+enableNext2_money();
 }
 
 function test5_mono2()
@@ -638,6 +642,7 @@ document.f2.rw1.src="/assets/images/w.gif";
 document.getElementById("a").style.pointerEvents = "none";  
 document.getElementById("c").style.pointerEvents = "none"; 
 document.getElementById("unmark2").checked = true; //kid gave right answer 
+enableNext2_money();
 }
 
 function test6_mono2()
@@ -651,6 +656,7 @@ document.f2.rw1.src="/assets/images/yay_bunny2.gif";
 document.getElementById("b").style.pointerEvents = "none";  
 document.getElementById("a").style.pointerEvents = "none"; 
 document.getElementById("mark2").checked = true; //kid gave right answer 
+enableNext2_money();
 }
 
 
@@ -667,6 +673,7 @@ document.f4.rw1.src="/assets/images/yay_bunny2.gif";
 document.getElementById("b").style.pointerEvents = "none";  
 document.getElementById("c").style.pointerEvents = "none"; 
 document.getElementById("mark3").checked = true; //kid gave right answer 
+enableSubmit_money();
 }
 
 function test8_mono2()
@@ -680,6 +687,7 @@ document.f4.rw1.src="/assets/images/w.gif";
 document.getElementById("a").style.pointerEvents = "none";  
 document.getElementById("c").style.pointerEvents = "none"; 
 document.getElementById("unmark3").checked = true; //kid gave right answer 
+enableSubmit_money();
 }
 
 function test9_mono2()
@@ -693,4 +701,5 @@ document.f4.rw1.src="/assets/images/w.gif";
 document.getElementById("b").style.pointerEvents = "none";  
 document.getElementById("a").style.pointerEvents = "none"; 
 document.getElementById("unmark3").checked = true; //kid gave right answer 
+enableSubmit_money();
 }

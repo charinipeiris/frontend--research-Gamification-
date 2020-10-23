@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { GamesService } from "../../../../services/games.service";
+import { EmotiondetectorComponent } from '../../../../emotiondetector/emotiondetector.component';
 
 @Component({
   selector: 'app-money-l2',
@@ -7,11 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MoneyL2Component implements OnInit {
   totalmarks: any;
-  constructor() { 
+  @ViewChild(EmotiondetectorComponent) child: EmotiondetectorComponent;
+  constructor(private gamesService: GamesService) {
   }
   ngOnInit(){   
 }
   markstot_mono2(){
+
+    var time = document.getElementById("display").innerHTML;
+    console.log(time);
+    document.getElementById("time-back").style.visibility = "hidden";
+
     var total6 = 0;
     
     let element1 = <HTMLInputElement> document.getElementById("mark1");  
@@ -25,25 +33,26 @@ export class MoneyL2Component implements OnInit {
     if  (element1.checked ){
       total6 = total6 + 1;
      }
-    else if ((!element1.checked) && (!element4.checked)){
-      // document.getElementById('alert1').style.visibility = "visible";
-    }
     
     if (element2.checked)
         total6 = total6 + 1;
-    
-    else if  ((!element2.checked) && (!element5.checked)){
-      // document.getElementById('alert2').style.visibility = "visible";
-    
-    }
+
     if (element3.checked)
         total6 = total6 + 1;
-    
-    else if  ((!element3.checked) && (!element6.checked)){
-      // document.getElementById('alert3').style.visibility = "visible";
-    }
-    
+
     console.log(total6);
+
+    // let username = localStorage.getItem('uname');
+    // this.gamesService.submitGame({    
+    //   completed_games : [
+    //   {
+    //   game_id : "m23",
+    //   marks : total6,
+    //   time_spent : time,
+    //   emotions: this.child.emotions
+    //   }
+    // ]},username).subscribe(res=>{console.log("success")}, err=>{console.log("error")});
+
     var chk = document.querySelectorAll('input[type="checkbox"]:checked').length;
     if (chk==3){
      
@@ -63,7 +72,7 @@ export class MoneyL2Component implements OnInit {
     setTimeout(function(){
         document.getElementById('coin3').style.visibility = "visible";
         },2000);
-    
+        document.getElementById("perf-time").innerHTML = time;
     
     }
     else if (total6 == 2){
@@ -81,6 +90,7 @@ export class MoneyL2Component implements OnInit {
         document.getElementById('coin3').style.visibility = "visible";
         },1900);
       document.getElementById('coin3').style.opacity ="0.3";
+      document.getElementById("perf-time").innerHTML = time;
     }
     
     else if(total6 == 1){
@@ -99,6 +109,7 @@ export class MoneyL2Component implements OnInit {
           document.getElementById('coin3').style.visibility = "visible";
             },1900);
           document.getElementById('coin3').style.opacity ="0.3";
+          document.getElementById("perf-time").innerHTML = time;
         
       
     }
@@ -108,13 +119,14 @@ export class MoneyL2Component implements OnInit {
         setTimeout(function(){
           document.getElementById('sad_coin').style.visibility = "visible";
           },1000);
+          document.getElementById("perf-time").innerHTML = time;
       }
     
     }
     else {
       document.getElementById('alert').style.visibility = "visible";
     }
-    
+    this.child.endgame(); 
     }
 
 }
