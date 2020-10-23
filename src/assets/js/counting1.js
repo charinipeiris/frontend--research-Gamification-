@@ -1292,7 +1292,8 @@ document.f1.clip07.src="/assets/images/w.gif";
 document.getElementById("35").style.pointerEvents = "none";
 document.getElementById("36").style.pointerEvents = "none";
 document.getElementById("37").style.pointerEvents = "none";
-document.getElementById("unmark1").checked = true; //kid gave wrong answer 
+document.getElementById("unmark01").checked = true; //kid gave wrong answer 
+enableNext_countG2L2();
 }
 
 function testcountL2_2()
@@ -1302,7 +1303,8 @@ document.f1.clip07.src="/assets/images/yay_bunny2.gif";
 document.getElementById("34").style.pointerEvents = "none";
 document.getElementById("36").style.pointerEvents = "none";
 document.getElementById("37").style.pointerEvents = "none";
-document.getElementById("mark1").checked = true; //kid gave right answer 
+document.getElementById("mark01").checked = true; //kid gave right answer 
+enableNext_countG2L2();
 }
 
 function testcountL2_3()
@@ -1312,7 +1314,8 @@ document.f1.clip07.src="/assets/images/w.gif";
 document.getElementById("34").style.pointerEvents = "none";
 document.getElementById("35").style.pointerEvents = "none";
 document.getElementById("37").style.pointerEvents = "none";
-document.getElementById("unmark1").checked = true; //kid gave wrong answer 
+document.getElementById("unmark01").checked = true; //kid gave wrong answer 
+enableNext_countG2L2();
 }
 
 function testcountL2_4()
@@ -1322,7 +1325,8 @@ document.f1.clip07.src="/assets/images/w.gif";
 document.getElementById("34").style.pointerEvents = "none";
 document.getElementById("35").style.pointerEvents = "none";
 document.getElementById("36").style.pointerEvents = "none";
-document.getElementById("unmark1").checked = true; //kid gave wrong answer 
+document.getElementById("unmark01").checked = true; //kid gave wrong answer 
+enableNext_countG2L2();
 }
 
 
@@ -1333,7 +1337,8 @@ document.f1.clip08.src="/assets/images/w.gif";
 document.getElementById("39").style.pointerEvents = "none";
 document.getElementById("40").style.pointerEvents = "none";
 document.getElementById("41").style.pointerEvents = "none";
-document.getElementById("unmark2").checked = true; //kid gave right answer 
+document.getElementById("unmark02").checked = true; //kid gave right answer 
+enableNext_countG2L2();
 }
 
 function testcountL2_6()
@@ -1343,7 +1348,8 @@ document.f1.clip08.src="/assets/images/w.gif";
 document.getElementById("38").style.pointerEvents = "none";
 document.getElementById("40").style.pointerEvents = "none";
 document.getElementById("41").style.pointerEvents = "none";
-document.getElementById("unmark2").checked = true; //kid gave right answer 
+document.getElementById("unmark02").checked = true; //kid gave right answer 
+enableNext_countG2L2();
 }
 
 function testcountL2_7()
@@ -1353,7 +1359,8 @@ document.f1.clip08.src="/assets/images/yay_bunny2.gif";
 document.getElementById("38").style.pointerEvents = "none";
 document.getElementById("39").style.pointerEvents = "none";
 document.getElementById("41").style.pointerEvents = "none";
-document.getElementById("mark2").checked = true; //kid gave right answer 
+document.getElementById("mark02").checked = true; //kid gave right answer 
+enableNext_countG2L2();
 }
 
 function testcountL2_8()
@@ -1363,7 +1370,8 @@ document.f1.clip08.src="/assets/images/w.gif";
 document.getElementById("38").style.pointerEvents = "none";
 document.getElementById("39").style.pointerEvents = "none";
 document.getElementById("40").style.pointerEvents = "none";
-document.getElementById("unmark2").checked = true; //kid gave right answer 
+document.getElementById("unmark02").checked = true; //kid gave right answer 
+enableNext_countG2L2();
 }
 
 
@@ -1376,7 +1384,8 @@ document.f2.clip10.src="/assets/images/yay_bunny2.gif";
 document.getElementById("17").style.pointerEvents = "none";
 document.getElementById("18").style.pointerEvents = "none";
 document.getElementById("15").style.pointerEvents = "none";
-document.getElementById("mark01").checked = true; //kid gave right answer 
+document.getElementById("mark03").checked = true; //kid gave right answer 
+enableSubmit_count1();
 }
 
 function testcountL2_10()
@@ -1386,7 +1395,18 @@ document.f2.clip10.src="/assets/images/w.gif";
 document.getElementById("16").style.pointerEvents = "none";
 document.getElementById("18").style.pointerEvents = "none";
 document.getElementById("15").style.pointerEvents = "none";
-document.getElementById("unmark01").checked = true; //kid gave right answer 
+document.getElementById("unmark03").checked = true; //kid gave right answer 
+enableSubmit_count1();
+}
+function testcountL2_11()
+{
+document.f2.text4.value="Wrong";
+document.f2.clip10.src="/assets/images/w.gif";
+document.getElementById("16").style.pointerEvents = "none";
+document.getElementById("18").style.pointerEvents = "none";
+document.getElementById("15").style.pointerEvents = "none";
+document.getElementById("unmark03").checked = true; //kid gave right answer 
+enableSubmit_count1();
 }
 
 
@@ -1397,7 +1417,8 @@ document.f2.clip10.src="/assets/images/w.gif";
 document.getElementById("16").style.pointerEvents = "none";
 document.getElementById("17").style.pointerEvents = "none";
 document.getElementById("15").style.pointerEvents = "none";
-document.getElementById("unmark01").checked = true; //kid gave right answer 
+document.getElementById("unmark03").checked = true; //kid gave right answer 
+enableSubmit_count1();
 }
 
 function testcountL2_13()
@@ -1407,7 +1428,8 @@ document.f2.clip11.src="/assets/images/w.gif";
 document.getElementById("25").style.pointerEvents = "none";
 document.getElementById("35").style.pointerEvents = "none";
 document.getElementById("30").style.pointerEvents = "none";
-document.getElementById("unmark02").checked = true; //kid gave right answer 
+document.getElementById("unmark04").checked = true; //kid gave right answer 
+enableSubmit_count1();
 }
 
 function testcountL2_14()
@@ -1417,7 +1439,8 @@ document.f2.clip11.src="/assets/images/w.gif";
 document.getElementById("20").style.pointerEvents = "none";
 document.getElementById("35").style.pointerEvents = "none";
 document.getElementById("30").style.pointerEvents = "none";
-document.getElementById("unmark02").checked = true; //kid gave right answer 
+document.getElementById("unmark04").checked = true; //kid gave right answer 
+enableSubmit_count1();
 }
 
 function testcountL2_15()
@@ -1427,7 +1450,8 @@ document.f2.clip11.src="/assets/images/w.gif";
 document.getElementById("20").style.pointerEvents = "none";
 document.getElementById("25").style.pointerEvents = "none";
 document.getElementById("30").style.pointerEvents = "none";
-document.getElementById("unmark02").checked = true; //kid gave right answer 
+document.getElementById("unmark04").checked = true; //kid gave right answer 
+enableSubmit_count1();
 }
 
 function testcountL2_16()
@@ -1437,7 +1461,8 @@ document.f2.clip11.src="/assets/images/yay_bunny2.gif";
 document.getElementById("20").style.pointerEvents = "none";
 document.getElementById("25").style.pointerEvents = "none";
 document.getElementById("35").style.pointerEvents = "none";
-document.getElementById("mark02").checked = true; //kid gave right answer 
+document.getElementById("mark04").checked = true; //kid gave right answer 
+enableSubmit_count1();
 }
 
 function testcountL2_17()
@@ -1447,7 +1472,8 @@ document.f2.clip12.src="/assets/images/w.gif";
 document.getElementById("80").style.pointerEvents = "none";
 document.getElementById("70").style.pointerEvents = "none";
 document.getElementById("100").style.pointerEvents = "none";
-document.getElementById("unmark03").checked = true; //kid gave right answer 
+document.getElementById("unmark05").checked = true; //kid gave right answer 
+enableSubmit_count1();
 }
 
 function testcountL2_18()
@@ -1457,7 +1483,8 @@ document.f2.clip12.src="/assets/images/yay_bunny2.gif";
 document.getElementById("90").style.pointerEvents = "none";
 document.getElementById("70").style.pointerEvents = "none";
 document.getElementById("100").style.pointerEvents = "none";
-document.getElementById("mark03").checked = true; //kid gave right answer 
+document.getElementById("mark05").checked = true; //kid gave right answer 
+enableSubmit_count1();
 }
 
 function testcountL2_19()
@@ -1467,7 +1494,8 @@ document.f2.clip12.src="/assets/images/w.gif";
 document.getElementById("90").style.pointerEvents = "none";
 document.getElementById("80").style.pointerEvents = "none";
 document.getElementById("100").style.pointerEvents = "none";
-document.getElementById("unmark03").checked = true; //kid gave right answer 
+document.getElementById("unmark05").checked = true; //kid gave right answer 
+enableSubmit_count1();
 }
 
 function testcountL2_20()
@@ -1477,5 +1505,17 @@ document.f2.clip12.src="/assets/images/w.gif";
 document.getElementById("90").style.pointerEvents = "none";
 document.getElementById("80").style.pointerEvents = "none";
 document.getElementById("70").style.pointerEvents = "none";
-document.getElementById("unmark03").checked = true; //kid gave right answer 
+document.getElementById("unmark05").checked = true; //kid gave right answer 
+enableSubmit_count1();
 }
+function enableNext_countG2L2(){
+    var chk = document.querySelectorAll('input[type="checkbox"]:checked').length;
+    if (chk == 2){
+    document.getElementById("next").style.display="block";
+    // document.getElementById("arrow1").style.display="block";
+    
+    }
+    else{
+    document.getElementById("next").style.display="none";
+    }
+    }
