@@ -59,7 +59,7 @@ console.log(total6);
   //   this.gamesService.submitGame({    
   //     completed_games : [
   //     {
-  //     game_id : "m22",
+  //     game_id : "m21",
   //     marks : total6,
   //     time_spent : time,
   //     emotions: this.child.emotions
