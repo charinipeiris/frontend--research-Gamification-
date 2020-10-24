@@ -320,3 +320,119 @@ function enableSubmit_lengthG1L2(){
          }
         }
 
+//===============================Grade 2================================
+
+function showpages_lengths(page){
+    var p1 = document.getElementById(page).getAttribute("id");
+    if (p1=="page1-lengths"){	
+        document.getElementById("page1-lengths").style.display='block';	
+        document.getElementById("page2-lengths").style.display='none'; 	
+        document.getElementById("page3-lengths").style.display='none'; 
+     
+    }
+    else if (p1=="page2-lengths"){
+        document.getElementById("page1-lengths").style.display='none';	
+        document.getElementById("page2-lengths").style.display='block'; 	
+        document.getElementById("page3-lengths").style.display='none'; 
+      
+        }
+   else if (p1=="page3-lengths"){
+    document.getElementById("page1-lengths").style.display='none';	
+    document.getElementById("page2-lengths").style.display='none'; 	
+    document.getElementById("page3-lengths").style.display='block';
+  
+   }	
+ 
+   }
+   
+   
+   
+function test1_len2()
+{
+document.f1.clip1.src="/assets/images/q4.JPG";
+document.f1.brown.src="/assets/images/trans.svg";
+document.f1.red.src="/assets/images/q5.JPG";
+document.f1.rw1.src="/assets/images/yay_bunny2.gif";
+document.getElementById("a59").style.pointerEvents = "none";
+document.getElementById("mark1").checked = true; //kid gave right answer 
+
+
+}
+function test2_len2()
+{
+document.f1.clip1.src="/assets/images/q5.JPG";
+document.f1.red.src="/assets/images/trans.svg";
+document.f1.brown.src="/assets/images/q4.JPG";
+document.f1.rw1.src="/assets/images/w.gif";
+document.getElementById("a109").style.pointerEvents = "none";
+document.getElementById("unmark1").checked = true; //kid gave wrong answer 
+}
+
+function test3_len2()
+{
+document.f1.clip2.src="/assets/images/q5.JPG";
+document.f1.rect.src="/assets/images/trans.svg";
+document.f1.sqr.src="/assets/images/q4.JPG";
+document.f1.rw2.src="/assets/images/yay_bunny2.gif";
+document.getElementById("b29").style.pointerEvents = "none";
+document.getElementById("mark2").checked = true; //kid gave right answer 
+
+
+}
+function test4_len2()
+{
+document.f1.clip2.src="/assets/images/q4.JPG";
+document.f1.sqr.src="/assets/images/trans.svg";
+document.f1.rect.src="/assets/images/q5.JPG";
+document.f1.rw2.src="/assets/images/w.gif";
+document.getElementById("b59").style.pointerEvents = "none";
+document.getElementById("unmark2").checked = true; //kid gave wrong answer 
+
+}
+
+   
+function test5_len2()
+{
+document.f2.clip1.src="/assets/images/q6.JPG";
+document.f2.brown.src="/assets/images/trans.svg";
+document.f2.red.src="/assets/images/q7.JPG";
+document.f2.rw1.src="/assets/images/yay_bunny2.gif";
+document.getElementById("a59").style.pointerEvents = "none";
+document.getElementById("mark3").checked = true; //kid gave right answer 
+
+
+}
+function test6_len2()
+{
+document.f2.clip1.src="/assets/images/q7.JPG";
+document.f2.red.src="/assets/images/trans.svg";
+document.f2.brown.src="/assets/images/q6.JPG";
+document.f2.rw1.src="/assets/images/w.gif";
+document.getElementById("a109").style.pointerEvents = "none";
+document.getElementById("unmark3").checked = true; //kid gave wrong answer 
+enableSubmit_money()
+}
+
+function test7_len2()
+{
+document.f2.clip2.src="/assets/images/q5.JPG";
+document.f2.rect.src="/assets/images/trans.svg";
+document.f2.sqr.src="/assets/images/q4.JPG";
+document.f2.rw2.src="/assets/images/w.gif";
+document.getElementById("b29").style.pointerEvents = "none";
+document.getElementById("unmark4").checked = true; //kid gave right answer 
+
+
+}
+function test8_len2()
+{
+document.f2.clip2.src="/assets/images/q4.JPG";
+document.f2.sqr.src="/assets/images/trans.svg";
+document.f2.rect.src="/assets/images/q5.JPG";
+document.f2.rw2.src="/assets/images/yay_bunny2.gif";
+document.getElementById("b59").style.pointerEvents = "none";
+document.getElementById("mark4").checked = true; //kid gave wrong answer 
+
+}
+
+        
