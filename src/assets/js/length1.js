@@ -420,10 +420,16 @@ function test7_len2()
 {
 document.f2.clip2.src="/assets/images/q5.JPG";
 document.f2.rect.src="/assets/images/trans.svg";
-document.f2.sqr.src="/assets/images/q4.JPG";
+document.f2.sqr.src="/assets/images/q4.JPG";trans.svg
 document.f2.rw2.src="/assets/images/w.gif";
 document.getElementById("b29").style.pointerEvents = "none";
 document.getElementById("unmark4").checked = true; //kid gave right answer 
+enableSubmit_lengthG1L2();
+}
+
+function test8_len2(){
+document.f2.clip2.src="/assets/images/q4.JPG";
+document.f2.sqr.src="/assets/images/trans.svg";
 document.f2.rect.src="/assets/images/q5.JPG";
 document.f2.rw2.src="/assets/images/yay_bunny2.gif";
 document.getElementById("b59").style.pointerEvents = "none";

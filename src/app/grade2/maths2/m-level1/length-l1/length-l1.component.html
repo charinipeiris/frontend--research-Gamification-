@@ -1,8 +1,8 @@
 
     <body class="back-image">
 
-        <div id="time-back" style="display: none; z-index: 2; margin-top: 80px; position: absolute; margin-left: 880px; background-color: azure; border-radius: 10px; width: 200px;">
-            <div id="display" style="margin-left:15px; font-size: 50px; font-family: 'Permanent Marker', cursive;">
+        <div id="time-back" style="display: none; z-index: 2; margin-top: 80px; position: absolute; margin-left: 880px; background-color: azure; border-radius: 10px; width: 250px;">
+            <div id="display" style="margin-left:15px; font-size: 50px; font-family:'Permanent Marker', cursive;">
               00:00:00
           </div>
         
@@ -13,26 +13,26 @@
         </div>
   
         <!-- page 01 -->
-        <h1 style =  "margin-left:14em; margin-top: 30px; margin-bottom: 20px;"><b>දිග, පළල මනිමු.</b></h1>
+        <h1 style =  "margin-left:480px; margin-top: 30px; margin-bottom: 20px;"><b>දිග, පළල මනිමු.</b></h1>
                 <div class = "center" id="page1-lengths" >
                         <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
-                                <iframe id = "myVideo_money" class="embed-responsive-item" src="https://drive.google.com/file/d/1d-LMsp8iicXTnY5qBaEC0QEAZiJUgIfI/preview" width="640" height="480" width="640" height="480"
+                                <iframe id = "myVideo_money" class="embed-responsive-item" src="https://drive.google.com/file/d/1d-LMsp8iicXTnY5qBaEC0QEAZiJUgIfI/preview" width="640px" height="480px" width="640px" height="480px"
                                   allowfullscreen>
                                 </iframe>
                         </div>
-                        <a style="margin-left:700px;" id ="playbtn_money" class="button1" onclick="return showpages_lengths('page2-lengths')">සෙල්ලම් කරන්න</a>
+                        <a style="margin-left:700px;width:200px;height:60px" id ="playbtn_money" class="button1" onclick="return showpages_lengths('page2-lengths')">සෙල්ලම් කරන්න</a>
                 </div>
   
           <!-- page 02 -->
          <div class= "center1" style="display:none" id="page2-lengths" >
 
             <div id = "startdiv" style ="z-index: 3; background-color:rgba(236, 236, 208, 0.95); border-style:solid; border-color:rgb(146, 146, 89); border-radius: 10px; height: 600px; width: 1200px; position: absolute">
-                <button id="startbtn" onclick = "startgame_length()()" class="button4"><b>ආරම්භ කරන්න</b></button>
+                <button id="startbtn" onclick = "startgame_length()" class="button4"><b>ආරම්භ කරන්න</b></button>
                 <img src = "/assets/images/start_button.png" style=" opacity: 0.85;margin-top: -300px; margin-left: 150px">
                </div>
 
             <form name="f1">
-                <a id="next-length" class="previous button1" style ='display: none; padding: 12px; width: 170px; margin-top: -10px; margin-left: 1050px;' onclick="return  showpages_lengths('page3-lengths');"> Next &#8811; </a>
+                <a id="next-length" class="previous button1" style ='display: none; padding: 12px; width: 170px; margin-top: -10px; margin-left: 1100px;' onclick="return  showpages_lengths('page3-lengths');"> Next &#8811; </a>
             <h3 style ="margin-top: 20px; margin-left: 30px;">වම් පස රූපයෙ දිග ගිනිකූරු වලින් මනිමු.</h3>
             <h2 id="alert" style="visibility: hidden; color: red;"> සියල්ලටම පිලිතුරු සපයන්න</h2>
             <img src = "/assets/images/click.gif" style="position: absolute; height: 70px; margin-top: -95px; margin-left: 450px;">
@@ -113,7 +113,7 @@
                   <img id ="sad_coin" src="/assets/images/sad.gif" class= "coin_img" style = "visibility:hidden; height: 220px; width: 220px; margin-left: 380px; position: absolute">
                   <h1 style="font-family:Chalkduster, fantasy; margin-left: 380px; position: absolute; color:darkcyan">Completed!!!</h1>
                   <h5 style ="position: absolute; margin-top: 300px; margin-left: 350px; font-size: 30px">ගත වූ කාලය : <span id="perf-time"></span></h5>
-                  <a href="grade2/maths/level1"  class="button3">ආපසු</a>
+                  <a href="grade2/maths/level1" style="margin-left:440px;" class="button3">ආපසු</a>
                 </div>
               </div>
                 </div>
