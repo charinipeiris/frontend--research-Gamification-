@@ -586,6 +586,14 @@ function game15(){
         }
 
 
+//Question Addition
+        $(document).ready(function(){
+            $(document).on('click',"#question-addition-gif",function () {
+            var audio = document.getElementById("quest_addition");
+            if (audio.paused) audio.play();
+            else audio.pause();
+        });
+     });
 
 //------------------level1 -counting game (grade 2)
 function show_countL1(pg1_count) {
