@@ -524,7 +524,7 @@ function game15(){
       document.f1.rect.src="/assets/images/q5.JPG";
   
       document.f1.rw2.src="/assets/images/w.gif";
-      document.getElementById("q55").style.pointerEvents = "none";
+      document.getElementById("qq5").style.pointerEvents = "none";
       document.getElementById("q6").style.pointerEvents = "none";
       document.getElementById("unmark2").checked = true; //kid gave wrong answer 
       enableSubmit_count();
