@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { GamesService } from "../../../../services/games.service";
+import { EmotiondetectorComponent } from '../../../../emotiondetector/emotiondetector.component';
+
 
 @Component({
   selector: 'app-length-l1',
@@ -7,12 +10,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LengthL1Component implements OnInit {
 
-  constructor() { 
+  @ViewChild(EmotiondetectorComponent) child: EmotiondetectorComponent;
+  constructor(private gamesService: GamesService) {
   }
   ngOnInit(){   
 }
 
 markstot_lengthsm(){
+
+  var time = document.getElementById("display").innerHTML;
+  console.log(time);
+  document.getElementById("time-back").style.visibility = "hidden";
+
 var total6 = 0;
 
 let element1 = <HTMLInputElement> document.getElementById("mark1");  
@@ -20,42 +29,45 @@ let element2 = <HTMLInputElement> document.getElementById("mark2");
 let element3 = <HTMLInputElement> document.getElementById("mark3");  
 let element4 = <HTMLInputElement> document.getElementById("mark4");  
 
-let element5 = <HTMLInputElement> document.getElementById("unmark1");  
-let element6 = <HTMLInputElement> document.getElementById("unmark2");  
-let element7 = <HTMLInputElement> document.getElementById("unmark3");  
-let element8 = <HTMLInputElement> document.getElementById("unmark4");  
+
 
 if  (element1.checked ){
   total6 = total6 + 1;
  }
-else if ((!element1.checked) && (!element5.checked)){
-  // document.getElementById('alert1').style.visibility = "visible";
-}
+
 
 if (element2.checked)
     total6 = total6 + 1;
 
-else if  ((!element2.checked) && (!element6.checked)){
-  // document.getElementById('alert2').style.visibility = "visible";
 
-}
 if (element3.checked)
     total6 = total6 + 1;
 
-else if  ((!element3.checked) && (!element7.checked)){
-  // document.getElementById('alert3').style.visibility = "visible";
-}
-else if  ((!element4.checked) && (!element8.checked)){
-  // document.getElementById('alert3').style.visibility = "visible";
-}
+if (element4.checked)
+    total6 = total6 + 1;
+
 
 console.log(total6);
+
+  //  let username = localStorage.getItem('uname');
+  //   this.gamesService.submitGame({    
+  //     completed_games : [
+  //     {
+  //     game_id : "m12",
+  //     marks : total6,
+  //     time_spent : time,
+  //     emotions: this.child.emotions
+  //     }
+  //   ]},username).subscribe(res=>{console.log("success")}, err=>{console.log("error")});
+
+
+
 var chk = document.querySelectorAll('input[type="checkbox"]:checked').length;
 if (chk==4){
  
   if (total6 == 4){
 var modal = document.getElementById("myModal");
-var subbtn = document.getElementById("submit");
+var subbtn = document.getElementById("final_button");
 modal.style.display = "block";
 subbtn.style.display = "none";
 setTimeout(function(){
@@ -72,7 +84,7 @@ setTimeout(function(){
 setTimeout(function(){
       document.getElementById('coin4').style.visibility = "visible";
       },2200);
-
+      document.getElementById("perf-time").innerHTML = time;
 }
 else if (total6 == 3){
 var modal = document.getElementById("myModal");
@@ -94,6 +106,7 @@ setTimeout(function(){
       },2200);
     
   document.getElementById('coin4').style.opacity ="0.3";
+  document.getElementById("perf-time").innerHTML = time;
 }
 
 else if(total6 == 2){
@@ -105,7 +118,6 @@ modal.style.display = "block";
     setTimeout(function(){
     document.getElementById('coin2').style.visibility = "visible";
       },1500);
-      document.getElementById('coin2').style.opacity ="0.3";
 
     setTimeout(function(){
       document.getElementById('coin3').style.visibility = "visible";
@@ -115,6 +127,7 @@ modal.style.display = "block";
         document.getElementById('coin4').style.visibility = "visible";
         },2200);
        document.getElementById('coin4').style.opacity ="0.3";
+       document.getElementById("perf-time").innerHTML = time;
     
   
 }
@@ -139,6 +152,7 @@ else if(total6 == 1){
           },2200);
         
       document.getElementById('coin4').style.opacity ="0.3";
+      document.getElementById("perf-time").innerHTML = time;
       
     
   }
@@ -148,6 +162,7 @@ else if(total6 == 0){
     setTimeout(function(){
       document.getElementById('sad_coin').style.visibility = "visible";
       },1000);
+      document.getElementById("perf-time").innerHTML = time;
   }
 
 }
@@ -156,6 +171,6 @@ else {
 }
 
   
-
+this.child.endgame(); 
 }
 }

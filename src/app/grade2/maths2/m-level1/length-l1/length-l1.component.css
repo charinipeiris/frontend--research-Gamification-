@@ -40,12 +40,11 @@
     color: #FFFFFF;
     text-align: center;
     font-size: 20px;
-    padding: 20px;
-    width: 150px;
-    height: 5px;
+    padding: 18px;
+    width: 170px;
     transition: all 0.5s;
     cursor: pointer;
-    position: relative; 
+    position: absolute; 
   }
   
   .button2 {
@@ -60,8 +59,8 @@
     transition: all 0.5s;
     cursor: pointer;
     position: absolute; 
-    margin-top: -10px; 
-    margin-left:1060px;
+    margin-top: -600px; 
+    margin-left:1080px;
   }
   .button3 {
     border-radius: 12px;
