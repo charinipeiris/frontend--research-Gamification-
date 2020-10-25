@@ -58,6 +58,8 @@
         }
 
     //function to enable the "iwarai" button in Grade 1 Level 01 length game
+
+
   function enableSubmit_length(){
     var chk = document.querySelectorAll('input[type="checkbox"]:checked').length;
     if (chk == 3){
@@ -72,14 +74,14 @@
 function testlgame(){
     document.f1.clip7.src="/assets/images/w.gif";
     document.getElementById("lkid1").style.pointerEvents ="none";
-    document.getElementById("mark1").checked = true; //kid gave wrong answer 
+    document.getElementById("unmark1").checked = true; //kid gave wrong answer 
     enableSubmit_length();
     }
     
     function testlgame2(){
     document.f1.clip7.src="/assets/images/yay_bunny2.gif";
     document.getElementById("lkid2").style.pointerEvents ="none";
-    document.getElementById("unmark1").checked = true; //kid gave wrong answer 
+    document.getElementById("mark1").checked = true; //kid gave wrong answer 
     enableSubmit_length();
     }
     
@@ -343,10 +345,8 @@ function showpages_lengths(page){
   
    }	
  
-   }
-   
-   
-   
+}
+
 function test1_len2()
 {
 document.f1.clip1.src="/assets/images/q4.JPG";
@@ -393,7 +393,6 @@ document.getElementById("unmark2").checked = true; //kid gave wrong answer
 enableNext_lengthG1L2();
 
 }
-
    
 function test5_len2()
 {
@@ -425,13 +424,6 @@ document.f2.sqr.src="/assets/images/q4.JPG";
 document.f2.rw2.src="/assets/images/w.gif";
 document.getElementById("b29").style.pointerEvents = "none";
 document.getElementById("unmark4").checked = true; //kid gave right answer 
-enableSubmit_lengthG1L2();
-
-}
-function test8_len2()
-{
-document.f2.clip2.src="/assets/images/q4.JPG";
-document.f2.sqr.src="/assets/images/trans.svg";
 document.f2.rect.src="/assets/images/q5.JPG";
 document.f2.rw2.src="/assets/images/yay_bunny2.gif";
 document.getElementById("b59").style.pointerEvents = "none";
