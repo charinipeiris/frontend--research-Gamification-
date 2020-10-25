@@ -446,8 +446,7 @@ document.f1.rw1.src="/assets/images/w.gif";
 document.getElementById("r5").style.pointerEvents = "none";
 document.getElementById("r3").style.pointerEvents = "none";
 document.getElementById("unmark1").checked = true; //kid gave right answer 
-
-
+enableSubmit_length();
 
 }
 function test2_len2x()
@@ -461,7 +460,7 @@ document.f1.rw1.src="/assets/images/w.gif";
 document.getElementById("r4").style.pointerEvents = "none";
 document.getElementById("r3").style.pointerEvents = "none";
 document.getElementById("unmark1").checked = true; //kid gave wrong answer 
-
+enableSubmit_length();
 }
 
 function test3_len2x()
@@ -475,7 +474,7 @@ document.f1.rw1.src="/assets/images/yay_bunny2.gif";
 document.getElementById("r5").style.pointerEvents = "none";
 document.getElementById("r4").style.pointerEvents = "none";
 document.getElementById("mark1").checked = true; //kid gave right answer 
-
+enableSubmit_length();
 }
 //-------
 
@@ -490,7 +489,7 @@ document.f1.rw2.src="/assets/images/yay_bunny2.gif";
 document.getElementById("r61").style.pointerEvents = "none";
 document.getElementById("r71").style.pointerEvents = "none";
 document.getElementById("mark2").checked = true; //kid gave wrong answer 
-
+enableSubmit_length();
 
 }
    
@@ -505,7 +504,7 @@ document.f1.rw2.src="/assets/images/w.gif";
 document.getElementById("r51").style.pointerEvents = "none";
 document.getElementById("r71").style.pointerEvents = "none";
 document.getElementById("unmark2").checked = true; //kid gave right answer 
-
+enableSubmit_length();
 
 }
 function test6_len2x()
@@ -519,7 +518,7 @@ document.f1.rw2.src="/assets/images/w.gif";
 document.getElementById("r61").style.pointerEvents = "none";
 document.getElementById("r51").style.pointerEvents = "none";
 document.getElementById("unmark2").checked = true; //kid gave wrong answer 
-
+enableSubmit_length();
 }
 //-------------------------
 
@@ -534,6 +533,7 @@ document.f1.rw3.src="/assets/images/w.gif";
 document.getElementById("r82").style.pointerEvents = "none";
 document.getElementById("r122").style.pointerEvents = "none";
 document.getElementById("unmark3").checked = true; //kid gave right answer 
+enableSubmit_length();
 }
 
 
@@ -548,6 +548,7 @@ document.f1.rw3.src="/assets/images/w.gif";
 document.getElementById("r112").style.pointerEvents = "none";
 document.getElementById("r122").style.pointerEvents = "none";
 document.getElementById("unmark3").checked = true; //kid gave right answer 
+enableSubmit_length();
 }
 
 
@@ -562,5 +563,6 @@ document.f1.rw3.src="/assets/images/yay_bunny2.gif";
 document.getElementById("r112").style.pointerEvents = "none";
 document.getElementById("r82").style.pointerEvents = "none";
 document.getElementById("mark3").checked = true; //kid gave right answer 
+enableSubmit_length();
 
 }
