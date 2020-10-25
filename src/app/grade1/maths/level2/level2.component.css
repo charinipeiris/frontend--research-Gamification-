@@ -153,3 +153,39 @@
   .round {
     border-radius: 50%;
   }
+
+  ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    background-color: rgba(255, 255, 255, 0.658);
+    margin-top: 50px;
+
+  }
+  ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: #684d03;
+    content: "➤\00a0";
+  }
+  ul.breadcrumb li a {
+    color: #684d03;
+    text-decoration: none;
+    border-radius:10px;
+    background-color: rgb(226, 198, 120);
+  }
+
+  ul.breadcrumb li a:active{
+    color: #9e8c5b;
+    text-decoration: none;
+    background-color: #46360d;
+  }
+  ul.breadcrumb li a:hover {
+    color: #413003;;
+    /* text-decoration: underline; */
+    background-color: rgb(223, 215, 193);
+    border-radius: 15px;
+  }
