@@ -37,6 +37,37 @@
 
     
   }
+  .dis-button3 span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .dis-button3 span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .dis-button3:hover span {
+    padding-right: 25px;
+    /* background-color:white; */
+  }
+  
+  .dis-button3:hover span:after {
+    opacity: 1;
+    right: 0;
+    /* background-color:white; */
+  }
+  .button3:hover  {
+    padding-right: 25px;
+    background-color:#195c1b;;
+    color: white;
+  }
   
   .button3 span {
     cursor: pointer;
@@ -56,13 +87,13 @@
   
   .button3:hover span {
     padding-right: 25px;
-    background-color:white;
+
   }
   
   .button3:hover span:after {
     opacity: 1;
     right: 0;
-    background-color:white;
+
   }
   
   .center {
@@ -134,18 +165,18 @@
   }
   
   a:hover {
-    background-color:#ffffff;
-    color: black;
+    /* background-color:#ffffff; */
+    color: rgb(255, 255, 255);
   }
   
   .previous {
-  background-color:#ffffff;
+  /* background-color:#ffffff; */
 
     color: black;
   }
   
   .next {
-    background-color:white;
+    /* background-color:white; */
     color: white;
   }
   
