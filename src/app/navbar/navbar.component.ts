@@ -15,9 +15,11 @@ export class NavbarComponent implements OnInit {
   grade2: any;
   message: any;
   marks: number;
+  check: number;
 
   constructor(private loginService: LoginService, private router: Router, private dataService: DataService, private gameService: GamesService) {
   this.marks = -1;
+  this.check = 0;
 
     if (localStorage.getItem('token') != null) {
       this.loginService.getUserName().subscribe((data) => {
@@ -90,6 +92,7 @@ export class NavbarComponent implements OnInit {
       });
     }
 
+
   }
 
   logout() {
@@ -100,6 +103,9 @@ export class NavbarComponent implements OnInit {
 
   checkToken(){
     return localStorage.getItem('token') != null;
+  }
+  checkNullToken(){
+    return localStorage.getItem('token') == null;
   }
 
 }
