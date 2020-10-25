@@ -24,26 +24,72 @@
     
         <div style="width: 100%;">
             <div style="float:left;margin-inline-start:248px ;">  
-               <div>
-                <button class="button3"><a routerLink='/grade2/maths/level2/counting'><span>ඉලක්කම් ඉගෙනගමු</span></a></button> 
-               </div> 
-               <div>
-                <button class="button3"><a routerLink='/grade2/maths/level2/additions'><span>එකතු කරමු</span></a></button> 
-               </div> 
-               <div>
-                <button class="button3"><a routerLink='/grade2/maths/level2/substraction'><span>අඩු කරමු</span></a></button> 
-               </div> 
-             </div>
+         <!-- button 1 -->
+         <div *ngIf="btn1 == 0">
+            <button class="button3"><a routerLink='/grade2/maths/level2/counting'><span>ඉලක්කම් ඉගෙනගමු</span></a></button> 
+           </div> 
+
+           <div *ngIf="btn1 == 1">
+            <button class="dis-button3"><a disabled="disabled">
+                <span>ඉලක්කම් ඉගෙනගමු <img src = "/assets/images/completed.png" style="margin-top:-25px;margin-bottom:-15px;height: 60px;"></span></a></button> 
+            
+           </div> 
+
+           <!-- button 2 -->
+           <div *ngIf="btn4 == 0">
+            <button class="button3"><a routerLink='/grade2/maths/level2/additions'><span>එකතු කරමු</span></a></button> 
+           </div> 
+
+           <div *ngIf="btn4 == 1">
+            <button class="dis-button3"><a disabled="disabled"><span>එකතු කරමු
+                <img src = "/assets/images/completed.png" style="margin-top:-25px;margin-bottom:-15px;height: 60px;">
+            </span></a></button> 
+           </div> 
+
+           <!-- button 3 -->
+           <div *ngIf="btn5 == 0">
+            <button class="button3"><a routerLink='/grade2/maths/level2/substraction'><span>අඩු කරමු</span></a></button> 
+           </div> 
+
+           <div *ngIf="btn5 == 1">
+            <button class="dis-button3"><a disabled="disabled"><span>අඩු කරමු
+                <img src = "/assets/images/completed.png" style="margin-top:-25px;margin-bottom:-15px;height: 60px;">
+            </span></a></button> 
+           </div> 
+         </div>
           
             <div style="margin-inline-end:130px;">
-                <div>
+                <!-- button 4 -->
+                <div *ngIf="btn2 == 0">
                     <button class="button3"><a routerLink='/grade2/maths/level2/length'><span>දිග, පළල, උස, බර මනිමු </span></a></button> 
                    </div> 
-                   <div>
+
+                   <div *ngIf="btn2 == 1">
+                    <button class="dis-button3"><a disabled="disabled"><span>දිග, පළල, උස, බර මනිමු 
+                        <img src = "/assets/images/completed.png" style="margin-top:-25px;margin-bottom:-15px;height: 60px;">
+                    </span></a></button> 
+                   </div> 
+
+                <!-- button 5 -->
+                   <div *ngIf="btn6 == 0">
                     <button class="button3"><a routerLink='/grade2/maths/level2/shapes'><span>හැඩතල ඉගෙනගමු</span></a></button> 
                    </div> 
-                   <div>
+
+                   <div *ngIf="btn6 == 1">
+                    <button class="dis-button3"><a disabled="disabled"><span>හැඩතල ඉගෙනගමු
+                        <img src = "/assets/images/completed.png" style="margin-top:-25px;margin-bottom:-15px;height: 60px;">
+                    </span></a></button> 
+                   </div> 
+
+             <!-- button 6 -->       
+                   <div *ngIf="btn3 == 0">
                     <button class="button3"><a routerLink='/grade2/maths/level2/money'><span>කාසි අදුරගමු</span></a></button> 
+                   </div> 
+
+                   <div *ngIf="btn3 == 1">
+                    <button class="dis-button3"><a disabled="disabled"><span>කාසි අදුරගමු
+                        <img src = "/assets/images/completed.png" style="margin-top:-25px;margin-bottom:-15px;height: 60px;">
+                    </span></a></button> 
                    </div> 
             </div>
         </div> 

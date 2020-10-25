@@ -51,4 +51,10 @@ export class GamesService {
       observe: 'body',
     });
   }
+  getGamesforNav(username){
+    return this.http.get(this.url1 + 'getgamesfornav/' + username, {
+      observe: 'body',
+    });
+  }
 }
+
