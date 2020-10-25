@@ -1,29 +1,52 @@
-@import "~bootstrap/dist/css/bootstrap.css";
- .image{
-    height:40em; 
-    background-size:cover; 
-    width:100%;
-    background-image:url(/assets/images/baba.jpg);
-    background-position:50% 50%;
-    margin-top:-50px;
-  }
+.imagex{
+  width: 80px;
+  height: 80px;
+}
+.back-image{
+  height:47em; 
+  background-size:cover; 
+  width:100%;
+  background-image:url(/assets/images/by.jpg);
+  background-position:50% 50%;
+  margin-top:-60px;
+  padding: 30px;
+}
+.center {
+  /* line-height: 300px; */
+  background-color: #FFFFFF;
+  height: 543px;
+  width: 60em;
+  border: 3px solid rgb(73, 75, 187);
+  margin: auto;
+  
+}
+.center1 {
+  /* line-height: 300px; */
+  /* background-image: url(/assets/images/shape_game.jpg); */
+  /* opacity: 0.95; */
+  /* background-color: #FFFFFF; */
+  /* background-color: rgba(255, 250, 250, 0.6); */
+  height: 560px;
+  width: 76em;
+  /* border: 3px solid rgb(73, 75, 187); */
+  margin: auto;
+}
 
- /*-----button1 ----->*/
+
 .button1 {
   border-radius: 12px;
-  background-color:#ffffff;
+  background-color:#3f9454;
   border: none;
-  color:black;
+  color: #FFFFFF;
   text-align: center;
-  font:green;
   font-size: 20px;
-  padding: 10px;
+  padding: 20px;
   width: 150px;
+  /* height: 5px; */
   transition: all 0.5s;
   cursor: pointer;
-  margin: 5px;
-  height:60px;
-} 
+  position:absolute; 
+}
 
 .button2 {
   border-radius: 12px;
@@ -37,8 +60,8 @@
   transition: all 0.5s;
   cursor: pointer;
   position: absolute; 
-  margin-top: -620px; 
-  margin-left:1180px;
+  margin-top: -10px; 
+  margin-left:850px;
 }
 .button3 {
   border-radius: 12px;
@@ -48,7 +71,7 @@
   text-align: center;
   font-size: 20px;
   padding: 20px;
-  width: 80px;
+  width: 180px;
   transition: all 0.5s;
   cursor: pointer;
   position: absolute; 
@@ -56,6 +79,8 @@
   margin-top: 350px; 
   margin-left:460px;
 }
+
+
 
 
 .button4 {
@@ -75,65 +100,31 @@
   margin-left: 450px;
   z-index: 4;
 }
-
-/*-----button2-----*/
-.button span {
-  cursor: pointer;
+a {
+  text-decoration: none;
   display: inline-block;
-  position: relative;
-  transition: 0.5s;
+  padding: 8px 16px;
 }
 
-.button span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-
-.button:hover span {
-  padding-right: 25px;
-}
-
-.button:hover span:after {
-  opacity: 1;
-  right: 0;
-}
-
-.center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  a {
-    text-decoration: none;
-    display: inline-block;
-    padding: 8px 16px;
-  }
-  
-  a:hover {
-    background-color:#ffffff;
-    color: black;
-  }
-  
-  .previous {
+a:hover {
   background-color:#ffffff;
+  color: black;
+}
 
-    color: black;
-  }
-  
-  .next {
-    background-color:white;
-    color: white;
-  }
-  
-  .round {
-    border-radius: 50%;
-  }
-  
+.previous {
+background-color:#ffffff;
+
+  color: black;
+}
+
+.next {
+  background-color:white;
+  color: white;
+}
+
+.round {
+  border-radius: 50%;
+}
 /* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
