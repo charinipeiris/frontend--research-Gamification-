@@ -171,14 +171,14 @@ function startgame_length(){
     function testweight3(){
         document.f2.txt9.value="මගේ වතුර ප්‍රමාණය අඩුයි";
         document.f2.txt10.value="";
-        var myAudio = new Audio('/assets/audio/heavyweighted.m4a');
+        var myAudio = new Audio('/assets/audio/less-volume.m4a');
         myAudio.play();
         }
                  
     function testweight4(){
         document.f2.txt10.value="මගේ වතුර ප්‍රමාණය වැඩියි";
         document.f2.txt9.value="";
-        var myAudio = new Audio('/assets/audio/lightweighted.m4a');
+        var myAudio = new Audio('/assets/audio/more-volume.m4a');
         myAudio.play();
         }
 
