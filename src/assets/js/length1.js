@@ -113,6 +113,35 @@ function testlgame(){
     enableSubmit_length();
     }
 
+
+//Audio of the three questions 
+    $(document).ready(function(){
+        $(document).on('click',"#question-length-1",function () {
+        var audio = document.getElementById("quest_audio_length1");
+        if (audio.paused) audio.play();
+        else audio.pause();
+    });
+ });
+
+ $(document).ready(function(){
+    $(document).on('click',"#question-length-2",function () {
+    var audio = document.getElementById("quest_audio_length2");
+    if (audio.paused) audio.play();
+    else audio.pause();
+    });
+});
+
+$(document).ready(function(){
+    $(document).on('click',"#question-length-3",function () {
+    var audio = document.getElementById("quest_audio_length3");
+    if (audio.paused) audio.play();
+    else audio.pause();
+    });
+});
+
+
+
+
     //=========================Grade 1 Level 2===============
 
     //=====fucntion to laod next and previous pages level 2===========
@@ -321,6 +350,24 @@ function enableSubmit_lengthG1L2(){
         document.getElementById("final_button").style.display="none";
          }
         }
+
+//Audio of the two questions 
+$(document).ready(function(){
+    $(document).on('click',"#question-big",function () {
+    var audio = document.getElementById("quest_audio_big");
+    if (audio.paused) audio.play();
+    else audio.pause();
+    });
+});
+
+$(document).ready(function(){
+    $(document).on('click',"#question-big-2",function () {
+    var audio = document.getElementById("quest_audio_big_2");
+    if (audio.paused) audio.play();
+    else audio.pause();
+    });
+});
+
 
 //===============================Grade 2================================
 

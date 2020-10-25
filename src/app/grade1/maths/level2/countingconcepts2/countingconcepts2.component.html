@@ -43,40 +43,42 @@
 
 
             <h5><B>ඇපල් ගෙඩි ගණනට ගැළපෙන ඉලක්කම තොරමු.</B></h5>
+            <img src = "/assets/images/click.gif" style="position: absolute; height: 70px; margin-top: -10px; margin-left: 30px;">
+            <img src = "/assets/images/shape_sound2.gif" id="question-money" style="position: absolute; height: 140px; margin-top: -35px; margin-left: 100px;">
+            <audio id="quest_audio_money" src="assets/audio/count-question.m4a" type="audio/m4a" control>Your browser does not support the audio element. </audio>
             <br>
+           
+<form name="f1">
+    <img src ="/assets/images/ganimu1.JPG" style="width:300px;height:200px;margin-right:150px;margin-top:50px;border-style:solid ;border-radius:15px ;border-color: black;">
+    <img src ="/assets/images/ganimu2.JPG" style="width:330px;height:200px;margin-right:150px;margin-top:50px;border-style:solid ;border-radius:15px;border-color: black;">
+    <img src ="/assets/images/ganimu3.JPG" style="width:270px;height:200px;margin-top:50px;border-style:solid ;border-radius:15px;border-color: black;">
 
-            
-<form name="f1" >
-    <img src ="/assets/images/ganimu1.JPG" style="width:300px;height:200px;margin-right:150px;border-style:solid ;border-radius:15px ;border-color: black;">
-    <img src ="/assets/images/ganimu2.JPG" style="width:330px;height:200px;margin-right:150px;border-style:solid ;border-radius:15px;border-color: black;">
-    <img src ="/assets/images/ganimu3.JPG" style="width:270px;height:200px;border-style:solid ;border-radius:15px;border-color: black;">
-
-    <div id="box1" style="position:absolute; top:420px; left:130px; width:240px; height:140px; border:transparent">
+    <div id="box1" style="position:absolute; top:470px; left:130px; width:240px; height:140px; border:transparent">
     <img  name="clipa" id="lkid1" src="/assets/images/lkid2.JPG" style="height:80px;width:80px;border-style:solid ;border-radius:15px ;border-color: black;"onclick="testcountsgame2();" hspace=10 >
     <img name="clipb" id="lkid2" src="/assets/images/lkid1.JPG" style="height:80px;width:80px;border-style:solid ;border-radius:15px ;border-color: black" onclick="testcountsgame();">
     <input type="checkbox"  hidden name="fruit" id="mark1"/>
     <input type="checkbox"  hidden name="fruit" id="unmark1"/>
     </div>
     
-    <div id="box2" style="position:absolute; top:540px; left:135px; width:400px; height:80px">
+    <div id="box2" style="position:absolute; top:590px; left:135px; width:400px; height:80px">
     <img name="clip1" src="/assets/images/blank.png">
     <img name="clip2" src="/assets/images/blank.png" hspace=100>
     </div>
     
-    <div id="box5" style="position:absolute; top:420px; left:600px; width:240px; height:140px;border:transparent " >
+    <div id="box5" style="position:absolute; top:470px; left:600px; width:240px; height:140px;border:transparent " >
     <img  name="clipc" id="tree1" src="/assets/images/tree1.JPG"  style="height:80px;width:80px;border-style:solid ;border-radius:15px ;border-color: black" onclick="testcountsgame3();">
     <img  name="clipd" id="tree2" src="/assets/images/tree2.JPG" style="height:80px;width:80px;border-style:solid ;border-radius:15px ;border-color: black" onclick="testcountsgame4();" hspace=10>
     <input type="checkbox"  hidden name="fruit" id="mark2"/>
     <input type="checkbox"  hidden name="fruit" id="unmark2"/>
     </div>
     
-    <div id="box6" style="position:absolute; top:540px; left:1105px;width:400px; height:80px" >
+    <div id="box6" style="position:absolute; top:590px; left:1105px;width:400px; height:80px" >
     <img name="clip3" src="/assets/images/blank.png">
     <img name="clip4" src="/assets/images/blank.png" hspace=95>
     </div>
     
     
-    <div id="box9" style="position:absolute; top:420px;left:1060px;width:440px;height:140px;border:transparent" >
+    <div id="box9" style="position:absolute; top:470px;left:1060px;width:440px;height:140px;border:transparent" >
     <img name="clipe" id="pen1" src="/assets/images/pen1.JPG"  style="height:80px;width:80px;border-style:solid ;border-radius:15px ;border-color: black" onclick="testcountsgame5();" hspace=10; vspace=9>
     <img name="clipf" id="pen2" src="/assets/images/pen2.JPG" style="height:80px;width:80px;border-style:solid ;border-radius:15px ;border-color: black" onclick="testcountsgame6();" vspace=9>
     <input type="checkbox"  hidden name="fruit" id="mark3"/>
@@ -111,7 +113,7 @@
     <div id="box17" style="position:absolute; top:580px; left:1075px;width:150px;height:50px" >
     <input type="text" name="txt3" value=""  readonly="true" style= "width:190px; height:50px; text-align:center; font-weight:bold; color:blue; font-size:30px;border:transparent">
     </div>
-            
+        
     <app-emotiondetector></app-emotiondetector>     
                 <button id="submit" class="button2" style="display: none;margin-top:-300px ;margin-left:1000px ;" (click)="markstot_countingconcepts2()">ඉවරයි</button> 
                 

@@ -169,6 +169,14 @@ document.getElementById("submit").style.display="none";
 }
 
 
+$(document).ready(function(){
+  $(document).on('click',"#question-money",function () {
+  var audio = document.getElementById("quest_audio_money");
+  if (audio.paused) audio.play();
+  else audio.pause();
+});
+});
+
 //===================Level 2========================================
 
 //-------------money level 2 - grade 1--------------
