@@ -76,7 +76,7 @@
     cursor: pointer;
     position: absolute; 
     z-index:2;
-    margin-top: 350px; 
+    margin-top: 400px; 
     margin-left:460px;
   }
 
@@ -154,4 +154,29 @@
     animation-name: example;
     animation-duration: 3s;  
     animation-fill-mode: forwards;
+  }
+
+
+  #content {
+    width: 50px;
+    border: 1px dashed #dc0000;
+    font-size: 5px;
+    text-align: center;
+    /* margin: 0 auto; */
+    /* margin-top: 50px; */
+    padding: 0px;
+    user-select: none;
+    position: absolute;
+  }
+
+  #clickarea {
+    width: 100%;
+    height : 47em;
+    /* border: 2px solid #dc0000; */
+    /* font-size: 20px;
+    text-align: center;
+    margin: 0 auto; */
+    /* margin-top: 50px; */
+    /* padding: 20px;
+    position: relative; */
   }
