@@ -468,18 +468,7 @@ function startgame(){
        document.getElementById("startdiv").style.visibility= "hidden";
        startStop();
 }
-  // we set a click event listener on the start button
-//   startBtn.addEventListener("click", function(e) {
-//        startGame();
-//      });
-   
-     // we add a click event listener on the click area div to update the score when the user will click
-//      clickArea.addEventListener("click", function(e) {
-//        if (!ended) {
-//          score++;
-//          scoreTxt.textContent = score;
-//        }
-//      });
+
 
 
 //Define vars to hold time values
@@ -575,3 +564,11 @@ function reset(){
     document.getElementById("startStop").innerHTML = "Start";
 
 }
+
+$(document).ready(function(){
+       $(document).on('click',"#question-shapes1",function () {
+       var audio = document.getElementById("quest_audio_shapes");
+       if (audio.paused) audio.play();
+       else audio.pause();
+   });
+});
