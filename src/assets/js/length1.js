@@ -432,4 +432,135 @@ enableSubmit_lengthG1L2();
 
 }
 
-        
+//--------------------grade 2 level 2 length----------------------/
+
+
+function test1_len2x()
+{
+document.f1.clip1.src="/assets/images/q4.JPG";
+document.f1.r4.src="/assets/images/trans.svg";
+document.f1.r5.src="/assets/images/q5.JPG";
+document.f1.r3.src="/assets/images/q3.JPG";
+
+document.f1.rw1.src="/assets/images/w.gif";
+document.getElementById("r5").style.pointerEvents = "none";
+document.getElementById("r3").style.pointerEvents = "none";
+document.getElementById("unmark1").checked = true; //kid gave right answer 
+
+
+
+}
+function test2_len2x()
+{
+document.f1.clip1.src="/assets/images/q5.JPG";
+document.f1.r5.src="/assets/images/trans.svg";
+document.f1.r4.src="/assets/images/q4.JPG";
+document.f1.r3.src="/assets/images/q3.JPG";
+
+document.f1.rw1.src="/assets/images/w.gif";
+document.getElementById("r4").style.pointerEvents = "none";
+document.getElementById("r3").style.pointerEvents = "none";
+document.getElementById("unmark1").checked = true; //kid gave wrong answer 
+
+}
+
+function test3_len2x()
+{
+document.f1.clip1.src="/assets/images/q3.JPG";
+document.f1.r3.src="/assets/images/trans.svg";
+document.f1.r4.src="/assets/images/q4.JPG";
+document.f1.r5.src="/assets/images/q5.JPG";
+
+document.f1.rw1.src="/assets/images/yay_bunny2.gif";
+document.getElementById("r5").style.pointerEvents = "none";
+document.getElementById("r4").style.pointerEvents = "none";
+document.getElementById("mark1").checked = true; //kid gave right answer 
+
+}
+//-------
+
+function test4_len2x()
+{
+document.f1.clip2.src="/assets/images/q5.JPG";
+document.f1.r51.src="/assets/images/trans.svg";
+document.f1.r61.src="/assets/images/q6.JPG";
+document.f1.r71.src="/assets/images/q7.JPG";
+
+document.f1.rw2.src="/assets/images/yay_bunny2.gif";
+document.getElementById("r61").style.pointerEvents = "none";
+document.getElementById("r71").style.pointerEvents = "none";
+document.getElementById("mark2").checked = true; //kid gave wrong answer 
+
+
+}
+   
+function test5_len2x()
+{
+document.f1.clip2.src="/assets/images/q6.JPG";
+document.f1.r61.src="/assets/images/trans.svg";
+document.f1.r51.src="/assets/images/q5.JPG";
+document.f1.r71.src="/assets/images/q7.JPG";
+
+document.f1.rw2.src="/assets/images/w.gif";
+document.getElementById("r51").style.pointerEvents = "none";
+document.getElementById("r71").style.pointerEvents = "none";
+document.getElementById("unmark2").checked = true; //kid gave right answer 
+
+
+}
+function test6_len2x()
+{
+document.f1.clip2.src="/assets/images/q7.JPG";
+document.f1.r71.src="/assets/images/trans.svg";
+document.f1.r61.src="/assets/images/q6.JPG";
+document.f1.r51.src="/assets/images/q5.JPG";
+
+document.f1.rw2.src="/assets/images/w.gif";
+document.getElementById("r61").style.pointerEvents = "none";
+document.getElementById("r51").style.pointerEvents = "none";
+document.getElementById("unmark2").checked = true; //kid gave wrong answer 
+
+}
+//-------------------------
+
+function test7_len2x()
+{
+document.f1.clip3.src="/assets/images/q11.JPG";
+document.f1.r112.src="/assets/images/trans.svg";
+document.f1.r82.src="/assets/images/q8.JPG";
+document.f1.r122.src="/assets/images/q12.JPG";
+
+document.f1.rw3.src="/assets/images/w.gif";
+document.getElementById("r82").style.pointerEvents = "none";
+document.getElementById("r122").style.pointerEvents = "none";
+document.getElementById("unmark3").checked = true; //kid gave right answer 
+}
+
+
+function test8_len2x()
+{
+document.f1.clip3.src="/assets/images/q8.JPG";
+document.f1.r82.src="/assets/images/trans.svg";
+document.f1.r112.src="/assets/images/q11.JPG";
+document.f1.r122.src="/assets/images/q12.JPG";
+
+document.f1.rw3.src="/assets/images/w.gif";
+document.getElementById("r112").style.pointerEvents = "none";
+document.getElementById("r122").style.pointerEvents = "none";
+document.getElementById("unmark3").checked = true; //kid gave right answer 
+}
+
+
+function test9_len2x()
+{
+document.f1.clip3.src="/assets/images/q12.JPG";
+document.f1.r122.src="/assets/images/trans.svg";
+document.f1.r82.src="/assets/images/q8.JPG";
+document.f1.r112.src="/assets/images/q11.JPG";
+
+document.f1.rw3.src="/assets/images/yay_bunny2.gif";
+document.getElementById("r112").style.pointerEvents = "none";
+document.getElementById("r82").style.pointerEvents = "none";
+document.getElementById("mark3").checked = true; //kid gave right answer 
+
+}
