@@ -34,7 +34,7 @@ export class NavbarComponent implements OnInit {
       });
       var uname = localStorage.getItem('uname');
       this.gameService.getStudentDetails(uname).subscribe((data:any) => {
-        console.log(data.totalMarks);
+        // console.log(data.totalMarks);
         this.marks = data.totalMarks;
       }, (error) => {
         
