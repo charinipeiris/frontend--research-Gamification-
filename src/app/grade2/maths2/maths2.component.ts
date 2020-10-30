@@ -28,7 +28,7 @@ export class Maths2Component implements OnInit {
        for (var j in this.levelGames1) {
           // console.log(this.levelGames[j]); 
           if((this.levelGames1[j])==(this.GamesArray[i])) {
-            console.log(this.GamesArray[i]);
+            // console.log(this.GamesArray[i]);
             this.btn1 = this.btn1+ 1
           }
         }
@@ -39,7 +39,7 @@ export class Maths2Component implements OnInit {
         for (var j in this.levelGames2) {
            // console.log(this.levelGames[j]); 
            if((this.levelGames2[j])==(this.GamesArray[i])) {
-             console.log(this.GamesArray[i]);
+            //  console.log(this.GamesArray[i]);
              this.btn2 = this.btn2 + 1
            }
          }
