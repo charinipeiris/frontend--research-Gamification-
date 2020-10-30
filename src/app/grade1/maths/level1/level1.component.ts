@@ -12,11 +12,15 @@ export class Level1Component implements OnInit {
   btn2: number;
   btn3: number;
   btn4: number;
+  nxtBtn : number;
+  levelGames1 = [];
   constructor(private gameService: GamesService) { 
     this.btn1 = 0;
     this.btn2 = 0;
     this.btn3 = 0;
     this.btn4 = 0;
+    this.nxtBtn = 0;
+    this.levelGames1 =["M11","M12", "M13", "M14"];
 
   }
 
@@ -37,6 +41,16 @@ export class Level1Component implements OnInit {
         if (this.GamesArray.indexOf("M14") !== -1){
           this.btn4 = this.btn4 + 1
           }
+
+          for (var i in this.GamesArray){
+            for (var j in this.levelGames1) {
+               // console.log(this.levelGames[j]); 
+               if((this.levelGames1[j])==(this.GamesArray[i])) {
+                //  console.log(this.GamesArray[i]);
+                 this.nxtBtn = this.nxtBtn + 1;
+               }
+             }
+           }
 
     }, (error) => {
       
