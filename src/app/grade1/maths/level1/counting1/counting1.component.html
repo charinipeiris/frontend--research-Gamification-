@@ -12,7 +12,25 @@
     <div id="block" style="position: absolute; top: 150px; left: 80px;">
     <h3 style="background-color:white;width:380px;padding:10px;border-radius:15px;" ><b>පියවර 1 - ගණන් කිරීම</b></h3>
     <form name="f"> 
-        <input type="button" class="button1" name="but1" value="PLAY >>>" style="color:white;background-color:green;height:60px ;" onClick="testcountintro()" >
+        <br>
+        <!-- <img src = "/assets/images/click.gif" style="position: absolute; height: 70px; margin-top: -125px; margin-left: 600px;"> -->
+            <img src = "/assets/images/shape_sound2.gif" id="question-shapes1" style="position: absolute; height: 140px; margin-top: -120px; margin-left: 350px;">
+            <audio id="quest_audio_shapes" src="assets/audio/G1L1CountIntro.mp3" type="audio/m4a" control>Your browser does not support the audio element. </audio>
+        <br>    
+        <input type="button" class="button1" name="but1" value="PLAY 1" style="color:white;background-color:green;height:60px; margin-top:-150px; margin-left:100px;" onClick="testcountintro1()" >
+        <br>
+        <br>
+        <input type="button" class="button1" name="but2" value="PLAY 2" style="color:white;background-color:green;height:60px; margin-left:100px;" onClick="testcountintro2()" >
+        <br>
+        <br>
+        <input type="button" class="button1" name="but3" value="PLAY 3" style="color:white;background-color:green;height:60px; margin-left:100px;" onClick="testcountintro3()" >
+        <br>
+        <br>
+        <input type="button" class="button1" name="but4" value="PLAY 4" style="color:white;background-color:green;height:60px; margin-left:100px;" onClick="testcountintro4()" >
+        <br>
+        <br>
+        <input type="button" class="button1" name="but5" value="PLAY 5" style="color:white;background-color:green;height:60px; margin-left:100px;" onClick="testcountintro5()" >
+        
         <img src="/assets/images/b.png" style="position:absolute;top:0px; left:500px;width:350px; height:320px;">
         <img src="/assets/images/0.gif" style="position:absolute;top:60px; left:200px;width:350px; height:320px;">
     <!-- <img src="/assets/images/m.gif" style="position:absolute;top:180px; left:6px;width:350px; height:320px;"> -->
@@ -22,20 +40,23 @@
     <br>
     <div id="box1" style="position:absolute;  top:115px; left:525px;width:300px; height:150px;   " >
     <input type="text" name="txt1" value="" readonly="true" style= "width:80px; height:120px; text-align:center; color:green; border-width:0; font-size:70px;visibility:hidden">
+    <input type="text" name="txt2" value="" readonly="true" style= "width:200px; height:120px; text-align:center; color:blue;border-width:0; font-size:70px;visibility:hidden">
     <input type="text" name="txt3" value="" readonly="true" style= "width:200px; height:120px; text-align:center; color:blue;border-width:0; font-size:70px;visibility:hidden">
+    <input type="text" name="txt4" value="" readonly="true" style= "width:200px; height:120px; text-align:center; color:blue;border-width:0; font-size:70px;visibility:hidden">
+    <input type="text" name="txt5" value="" readonly="true" style= "width:200px; height:120px; text-align:center; color:blue;border-width:0; font-size:70px;visibility:hidden">
     
     </div>
     
     </form>
     <form name="f2">
-    <img name="clip2" src="/assets/images/ball.png" style="position:absolute;top:180px; left:0px;width:0px;height:0px">
-    <img name="clip3" src="/assets/images/ball.png"style="position:absolute;top:200px; left:1000px;width:0px;height:0px ">
-    <img name="clip4" src="/assets/images/ball.png"style="position:absolute;top:220px; left:1000px;width:0px;height:0px ">
-    <img name="clip5" src="/assets/images/ball.png"style="position:absolute;top:240px; left:1000px;width:0px;height:0px ">
-    <img name="clip6" src="/assets/images/ball.png"style="position:absolute;top:260px; left:1000px;width:0px;height:0px "> 
+    <img name="clip1" src="/assets/images/b.png" style="position:absolute;top:180px; left:0px;width:0px;height:0px">
+    <img name="clip2" src="/assets/images/b.png"style="position:absolute;top:200px; left:1000px;width:0px;height:0px ">
+    <img name="clip3" src="/assets/images/b.png"style="position:absolute;top:220px; left:1000px;width:0px;height:0px ">
+    <img name="clip4" src="/assets/images/b.png"style="position:absolute;top:240px; left:1000px;width:0px;height:0px ">
+    <img name="clip5" src="/assets/images/b.png"style="position:absolute;top:260px; left:1000px;width:0px;height:0px "> 
     </form>
     
-    <form name="f3">
+    <!-- <form name="f3">
     
     <div id="box3" style="position:absolute;  top:10px; left:870px;width:100px; height:100px;   " >
     <img name="clip1" src="/assets/images/b.png" style="visibility:hidden"> 
@@ -44,7 +65,7 @@
     </div>
     
     
-    </form>
+    </form> -->
     
     
     <form name="f4" action="">
