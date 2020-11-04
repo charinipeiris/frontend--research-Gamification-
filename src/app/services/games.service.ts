@@ -56,5 +56,10 @@ export class GamesService {
       observe: 'body',
     });
   }
+
+  sendEmail(body: any, username: string){
+    // console.log("uname",studentname)
+    return this.http.post(this.url1 + 'sendemail/' + username, body); 
+}
 }
 
