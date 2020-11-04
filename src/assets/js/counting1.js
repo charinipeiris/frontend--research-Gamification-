@@ -29,23 +29,23 @@ function testcountintro1(){
 }
 
 function testcountintro2(){
-    document.f1.txt2.value="2";
-    document.f2.clip2.src="/assets/images/2.gif";
+    document.f1.txt1.value="2";
+    document.f2.clip1.src="/assets/images/2.gif";
 }
 
 function testcountintro3(){
-    document.f1.txt3.value="3";
-    document.f2.clip3.src="/assets/images/3.gif";
+    document.f1.txt1.value="3";
+    document.f2.clip1.src="/assets/images/3.gif";
 }
 
 function testcountintro4(){
-    document.f1.txt4.value="4";
-    document.f2.clip4.src="/assets/images/4.gif";
+    document.f1.txt1.value="4";
+    document.f2.clip1.src="/assets/images/4.gif";
 }
 
 function testcountintro5(){
-    document.f1.txt5.value="5";
-    document.f2.clip5.src="/assets/images/5.gif";
+    document.f1.txt1.value="5";
+    document.f2.clip1.src="/assets/images/5.gif";
 }
 //---------------- counting game - garade 1 level 1--------------//
 
