@@ -45,7 +45,7 @@ width:100%;">
  </div>
 
      <div id = "startdiv" style ="margin-top:20px;z-index: 3; background-color: rgba(236, 236, 208, 0.95); border-style: solid; border-color: rgb(146, 146, 89); border-radius: 10px; height: 580px; width: 1200px; position: absolute;margin-left:30px;">
-      <button id="startbtn" onclick = "startgame()" class="button4"><b>ආරම්භ කරන්න</b></button>
+      <button id="startbtn" onclick = "startgame_shape3()" class="button4"><b>ආරම්භ කරන්න</b></button>
       <img src = "/assets/images/start_button.png" style=" opacity: 0.85;margin-top: -300px; margin-left: 150px">
      </div>
 
@@ -134,6 +134,7 @@ width:100%;">
 
             <app-emotiondetector></app-emotiondetector>
             <button id="submit" class="button2" style="display: none;margin-top:-100px ;margin-left:1200px ;" (click)="markstot_additions5()">ඉවරයි</button> 
+            <div hidden id="clickarray"></div>
 
             <!-- The Modal -->
             <div id="myModal" class="modal">

@@ -19,8 +19,10 @@ export class AdditionL1Component implements OnInit {
 markstot_additions5(){
 
   var time = document.getElementById("display").innerHTML;
-  console.log(time);
   document.getElementById("time-back").style.visibility = "hidden";
+  var clicksarray = document.getElementById("clickarray").innerHTML ;
+  // console.log(clicksarray);
+
 
 var total6 = 0;
 
@@ -43,18 +45,19 @@ if (element3.checked)
     total6 = total6 + 1;
 
 
-console.log(total6);
 
-  //  let username = localStorage.getItem('uname');
-  //   this.gamesService.submitGame({    
-  //     completed_games : [
-  //     {
-  //     game_id : "m24",
-  //     marks : total6,
-  //     time_spent : time,
-  //     emotions: this.child.emotions
-  //     }
-  //   ]},username).subscribe(res=>{console.log("success")}, err=>{console.log("error")});
+
+   let username = localStorage.getItem('uname');
+    this.gamesService.submitGame({    
+      completed_games : [
+      {
+      game_id : "m14",
+      marks : total6,
+      time_spent : time,
+      emotions: this.child.emotions,
+      max_idle_time :  clicksarray
+      }
+    ]},username).subscribe(res=>{console.log("success")}, err=>{console.log("error")});
 
 var chk = document.querySelectorAll('input[type="checkbox"]:checked').length;
 if (chk==3){
