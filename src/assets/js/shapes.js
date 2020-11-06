@@ -404,66 +404,32 @@ $(document).ready(function(){
 function startgame_shape(){
 document.getElementById("startdiv").style.visibility= "hidden";
 startStop();
+var last, diff;
+var timeArray =[];
 
-var score; // to store the current score
-var duration = 60; // 60 seconds
-var startTime; // start time
-var ended = true; // boolean indicating if game is ended
-// we get DOM References for some HTML elements
-var timerTxt = document.getElementById("timer");
-var scoreTxt = document.getElementById("score");
-var clicksTxt = document.getElementById("clicks");
-// var startBtn = document.getElementById("start");
-var clickArea = document.getElementById("clickarea");
+$( "#Page2" ).click(function( event)  {
+       if ( last ) {
+              diff = event.timeStamp - last;
+              diff1 = (diff/1000).toFixed(2)
+              timeArray.push(diff1);
+       } 
+       last = event.timeStamp;
+       let max = parseFloat(timeArray[0]);
+       document.getElementById("clickarray").innerHTML = max
 
-// we define two functions for showing or hiding a HTML element
-var show = function(elem) {
-  elem.style.display = 'inline';
-};
-
-var hide = function(elem) {
-  elem.style.display = 'none';
-};
-
-// Method called when the game starts
-
-//   hide(startBtn);
-  score = 0;
-  ended = false;
-  // we get start time
-  startTime = new Date().getTime();
-
-  // we create a timer with the setInterval method
-  var timerId = setInterval(function() {
-    var total = (new Date().getTime() - startTime) / 1000;
-
-    // while total lower than duration, we update timer and the clicks by seconds
-    if (total < duration) {
-      timerTxt.innerHTML = total.toFixed(3);
-      clicksTxt.innerHTML = (score / total).toFixed(2);
-//       console.log(clicksTxt);
-    } else {
-      // otherwise, game is ended, we clear interval and we set game as ended
-      ended = true;
-      clearInterval(timerId);
-      console.log(score);
-      document.getElementById("btnclick").innerHTML = score;
-      // we call the end game method
-      
-    }
-  }, 1);
-  $(document).ready(function(){
-       $(document).on('click',function () {
-              if (!ended) {
-                     score++;
-                     scoreTxt.textContent = score;
-
-                   }
+       for (let i = 1; i < timeArray.length; i++) {
+              let value = parseFloat(timeArray[i]);
+              if (value > max){
+                     max = value;
+                     document.getElementById("clickarray").innerHTML = max
+                     }
+                         
+              }
    });
-});
-
 
 }
+
+
 function startgame(){
        document.getElementById("startdiv").style.visibility= "hidden";
        startStop();
