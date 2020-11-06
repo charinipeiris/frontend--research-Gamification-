@@ -28,7 +28,7 @@
      </div>
 
          <div id = "startdiv" style ="z-index: 3; background-color:rgba(236, 236, 208, 0.95); border-style:solid; border-color:rgb(146, 146, 89); border-radius: 10px; height: 600px; width: 1200px; position: absolute">
-          <button id="startbtn" onclick = "startgame()" class="button4"><b>ආරම්භ කරන්න</b></button>
+          <button id="startbtn" onclick = "startgame_shape()" class="button4"><b>ආරම්භ කරන්න</b></button>
           <img src = "/assets/images/start_button.png" style=" opacity: 0.85;margin-top: -300px; margin-left: 150px">
          </div>
 
@@ -81,6 +81,7 @@
             <app-emotiondetector></app-emotiondetector>
             <img id ="arrow" src ="/assets/images/arrow_submit.gif" style="display: none; margin-top: -150px; margin-left: 1035px; height: 130px; width: 130px; position: absolute;">
             <button id="submit" class="button2" style="display: none;margin-left: 1050px" (click)="markstot_shapes2()">ඉවරයි</button>
+            <div hidden id="clickarray"></div>
 
             <!-- Trigger/Open The Modal -->
             <!-- <a id="myBtn" class="button2" >Submit</a> -->
@@ -98,7 +99,7 @@
                 <img id ="sad_coin" src="/assets/images/sad.gif" class= "coin_img" style = "visibility:hidden; height: 220px; width: 220px; margin-left: 380px; position: absolute">
                 <h1 style="font-family:Chalkduster, fantasy; margin-left: 380px; position: absolute; color:darkcyan">Completed!!!</h1>
                 <h5 style ="position: absolute; margin-top: 300px; margin-left: 350px; font-size: 30px">ගත වූ කාලය : <span id="perf-time"></span></h5>
-                <a href="grade2/maths/level2"  class="button3" onclick="return show('Page3');">ආපසු</a>
+                <a href="grade2/maths/level1"  class="button3" onclick="return show('Page3');">ආපසු</a>
                 <!-- <a id ="next2" class="button3" style ="visibility: hidden" onclick="return show('Page3');">ඊලග</a> -->
               </div>
             </div>
