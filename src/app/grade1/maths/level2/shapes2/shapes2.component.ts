@@ -21,11 +21,11 @@ export class Shapes2Component implements OnInit {
 markstot(){
 
   var time = document.getElementById("display").innerHTML;
-  console.log(time);
   document.getElementById("time-back").style.visibility = "hidden";
 
   var total = parseInt(document.getElementById("marksArea").innerHTML)
-
+  var clicksarray = document.getElementById("clickarray").innerHTML ;
+  // console.log(clicksarray);
   var finaltotal = 0;
 
     if (total == 8){
@@ -258,7 +258,8 @@ markstot(){
     //   game_id : "M25",
     //   marks : finaltotal,
     //   time_spent : time,
-    //   emotions: this.child.emotions
+    //   emotions: this.child.emotions,
+    //   max_idle_time :  clicksarray
     //   }
     // ]},username).subscribe(res=>{console.log("success")}, err=>{console.log("error")});
 
