@@ -37,7 +37,7 @@
      </div>
 
      <div id = "startdiv" style ="z-index: 3; background-color:rgba(236, 236, 208, 0.95); border-style:solid; border-color:rgb(146, 146, 89); border-radius: 10px; height: 600px; width: 1200px; position: absolute">
-      <button id="startbtn" onclick = "startgame()" class="button4"><b>ආරම්භ කරන්න</b></button>
+      <button id="startbtn" onclick = "startgame_shape()" class="button4"><b>ආරම්භ කරන්න</b></button>
       <img src = "/assets/images/start_button.png" style=" opacity: 0.85;margin-top: -300px; margin-left: 150px">
      </div>
 
@@ -115,7 +115,8 @@
     </div>
         
     <app-emotiondetector></app-emotiondetector>     
-                <button id="submit" class="button2" style="display: none;margin-top:-300px ;margin-left:1000px ;" (click)="markstot_countingconcepts2()">ඉවරයි</button> 
+     <button id="submit" class="button2" style="display: none;margin-top:-300px ;margin-left:1000px ;" (click)="markstot_countingconcepts2()">ඉවරයි</button> 
+     <div hidden id="clickarray"></div>
                 
                             <!-- The Modal -->
                             <div id="myModal" class="modal">
