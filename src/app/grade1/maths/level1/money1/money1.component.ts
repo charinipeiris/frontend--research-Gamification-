@@ -20,18 +20,16 @@ markstot_money1(){
 
     // document.getElementById("reset").click;
     var time = document.getElementById("display").innerHTML;
-    console.log(time);
+    // console.log(time);
     document.getElementById("time-back").style.visibility = "hidden";
+    var clicksarray = document.getElementById("clickarray").innerHTML ;
+    // console.log(clicksarray);
 
     var total = 0;
 
     let element1 = <HTMLInputElement>document.getElementById("mark1");
     let element2 = <HTMLInputElement>document.getElementById("mark2");
     let element3 = <HTMLInputElement>document.getElementById("mark3");
-
-    let element4 = <HTMLInputElement>document.getElementById("unmark1");
-    let element5 = <HTMLInputElement>document.getElementById("unmark2");
-    let element6 = <HTMLInputElement>document.getElementById("unmark3");
 
     if (element1.checked) {
       total = total + 1;
@@ -45,7 +43,7 @@ markstot_money1(){
 
 
 
-    console.log(total);
+    // console.log(total);
 
     // let username = localStorage.getItem('uname');
     // this.gamesService.submitGame({    
@@ -54,7 +52,8 @@ markstot_money1(){
     //   game_id : "M13",
     //   marks : total,
     //   time_spent : time,
-    //   emotions: this.child.emotions
+    //   emotions: this.child.emotions,
+    //   max_idle_time :  clicksarray
     //   }
     // ]},username).subscribe(res=>{console.log("success")}, err=>{console.log("error")});
 
