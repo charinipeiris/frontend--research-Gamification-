@@ -19,8 +19,10 @@ export class Substractions1Component implements OnInit {
 markstot_length1(){
 
   var time = document.getElementById("display").innerHTML;
-  console.log(time);
+  // console.log(time);
   document.getElementById("time-back").style.visibility = "hidden";
+  var clicksarray = document.getElementById("clickarray").innerHTML ;
+  // console.log(clicksarray);
 
 var total1 = 0;
 
@@ -28,9 +30,6 @@ let element1 = <HTMLInputElement> document.getElementById("mark1");
 let element2 = <HTMLInputElement> document.getElementById("mark2");  
 let element3 = <HTMLInputElement> document.getElementById("mark3");  
 
-let element4 = <HTMLInputElement> document.getElementById("unmark1");  
-let element5 = <HTMLInputElement> document.getElementById("unmark2");  
-let element6 = <HTMLInputElement> document.getElementById("unmark3");  
 
 if (element1.checked) {
   total1 = total1 + 1;
@@ -51,7 +50,8 @@ console.log(total1);
     //   game_id : "M12",
     //   marks : total1,
     //   time_spent : time,
-    //   emotions: this.child.emotions
+    //   emotions: this.child.emotions,
+    //   max_idle_time :  clicksarray
     //   }
     // ]},username).subscribe(res=>{console.log("success")}, err=>{console.log("error")});
 
