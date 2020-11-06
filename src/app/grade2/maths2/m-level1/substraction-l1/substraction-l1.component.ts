@@ -18,8 +18,10 @@ export class SubstractionL1Component implements OnInit {
 markstot_substraction2(){
 
   var time = document.getElementById("display").innerHTML;
-  console.log(time);
   document.getElementById("time-back").style.visibility = "hidden";
+  var clicksarray = document.getElementById("clickarray").innerHTML ;
+  // console.log(clicksarray);
+
 var total6 = 0;
 
 let element1 = <HTMLInputElement> document.getElementById("mark1");  
@@ -36,7 +38,6 @@ if (element2.checked)
 if (element3.checked)
     total6 = total6 + 1;
 
-console.log(total6);
 
     // let username = localStorage.getItem('uname');
     // this.gamesService.submitGame({    
@@ -45,7 +46,8 @@ console.log(total6);
     //   game_id : "m15",
     //   marks : total6,
     //   time_spent : time,
-    //   emotions: this.child.emotions
+    //   emotions: this.child.emotions,
+    //   max_idle_time :  clicksarray
     //   }
     // ]},username).subscribe(res=>{console.log("success")}, err=>{console.log("error")});
 
