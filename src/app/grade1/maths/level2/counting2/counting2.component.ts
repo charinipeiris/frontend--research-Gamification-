@@ -19,40 +19,27 @@ export class Counting2Component implements OnInit {
 
 markstot_addto(){
 var time = document.getElementById("display").innerHTML;
-console.log(time);
 document.getElementById("time-back").style.visibility = "hidden";
+var clicksarray = document.getElementById("clickarray").innerHTML ;
+// console.log(clicksarray);
+
 var totalm = 0;
 
 let element1 = <HTMLInputElement> document.getElementById("mark1");  
 let element2 = <HTMLInputElement> document.getElementById("mark2");  
 let element3 = <HTMLInputElement> document.getElementById("mark3");  
 
-let element4 = <HTMLInputElement> document.getElementById("unmark1");  
-let element5 = <HTMLInputElement> document.getElementById("unmark2");  
-let element6 = <HTMLInputElement> document.getElementById("unmark3");  
 
 if  (element1.checked ){
   totalm = totalm + 1;
  }
-// else if ((!element1.checked) && (!element4.checked)){
-//   // document.getElementById('alert1').style.visibility = "visible";
-// }
 
 if (element2.checked)
     totalm = totalm + 1;
 
-// else if  ((!element2.checked) && (!element5.checked)){
-//   // document.getElementById('alert2').style.visibility = "visible";
-
-// }
 if (element3.checked)
     totalm = totalm + 1;
 
-// else if  ((!element3.checked) && (!element6.checked)){
-//   // document.getElementById('alert3').style.visibility = "visible";
-// }
-
-console.log(totalm);
 
 
     // let username = localStorage.getItem('uname');
@@ -62,7 +49,8 @@ console.log(totalm);
     //   game_id : "M24",
     //   marks : totalm,
     //   time_spent : time,
-    //   emotions: this.child.emotions
+    //   emotions: this.child.emotions,
+    //   max_idle_time :  clicksarray
     //   }
     // ]},username).subscribe(res=>{console.log("success")}, err=>{console.log("error")});
 
