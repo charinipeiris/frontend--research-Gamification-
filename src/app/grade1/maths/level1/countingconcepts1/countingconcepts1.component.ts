@@ -21,9 +21,9 @@ export class Countingconcepts1Component implements OnInit {
 markstotc1(){
 
   var time = document.getElementById("display").innerHTML;
-  console.log(time);
   document.getElementById("time-back").style.visibility = "hidden";
   var total1 = 0;
+  var clicksarray = document.getElementById("clickarray").innerHTML ;
 
   
 let element1 = <HTMLInputElement> document.getElementById("mark1");  
@@ -53,7 +53,7 @@ if (element5.checked)
     total1 = total1 + 1;
 
 
-console.log(total1);
+
 
     // let username = localStorage.getItem('uname');
     // this.gamesService.submitGame({    
@@ -62,7 +62,8 @@ console.log(total1);
     //   game_id : "M11",
     //   marks : total1,
     //   time_spent : time,
-    //   emotions: this.child.emotions
+    //   emotions: this.child.emotions,
+    //   max_idle_time :  clicksarray
     //   }
     // ]},username).subscribe(res=>{console.log("success")}, err=>{console.log("error")});
 
