@@ -514,6 +514,36 @@ function startgame_shape4(){
           });
        
        }
+//for G2 L2 shapes
+       function startgame_shape5(){
+              document.getElementById("startdiv").style.visibility= "hidden";
+              startStop();
+              var last, diff;
+              var timeArray =[];
+              
+              $( "#PageMouse" ).click(function( event)  {
+                     if ( last ) {
+                            diff = event.timeStamp - last;
+                            diff1 = (diff/1000).toFixed(2)
+                            timeArray.push(diff1);
+                     } 
+                     last = event.timeStamp;
+                     let max = parseFloat(timeArray[0]);
+                     document.getElementById("clickarray").innerHTML = max
+              
+                     for (let i = 1; i < timeArray.length; i++) {
+                            let value = parseFloat(timeArray[i]);
+                            if (value > max){
+                                   max = value;
+                                   document.getElementById("clickarray").innerHTML = max
+                                   }
+                                       
+                            }
+                 });
+              
+              }
+
+
 function startgame(){
        document.getElementById("startdiv").style.visibility= "hidden";
        startStop();

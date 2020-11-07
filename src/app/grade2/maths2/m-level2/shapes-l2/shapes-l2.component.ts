@@ -23,6 +23,7 @@ markstot(){
   var time = document.getElementById("display").innerHTML;
   console.log(time);
   document.getElementById("time-back").style.visibility = "hidden";
+  var clicksarray = document.getElementById("clickarray").innerHTML ;
 
   var total = parseInt(document.getElementById("marksArea").innerHTML)
 
@@ -258,11 +259,12 @@ markstot(){
     //   game_id : "m26",
     //   marks : finaltotal,
     //   time_spent : time,
-    //   emotions: this.child.emotions
+    //   emotions: this.child.emotions,
+    //   max_idle_time :  clicksarray
     //   }
     // ]},username).subscribe(res=>{console.log("success")}, err=>{console.log("error")});
 
-    // this.child.endgame(); 
+    this.child.endgame(); 
   
   
   }

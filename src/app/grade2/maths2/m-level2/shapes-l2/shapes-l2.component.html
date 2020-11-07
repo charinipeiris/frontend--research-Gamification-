@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head></head>
-    <body class="back-image">
+    <body class="back-image" id="PageMouse">
       <h1 style =  "margin-left:14em; margin-top: 30px;"><b>හැඩතල ඉගෙනගනිමු</b></h1>
       <h3 id="marksArea" style = "visibility:hidden; margin-left:12em; margin-top: 30px"></h3>
       <img id="0" src = "/assets/images/0star.png" style ="height: 420px; position:absolute; margin-left: 52em; margin-top: -160px;">
@@ -25,13 +25,13 @@
       </div>
     </div> 
     <app-emotiondetector></app-emotiondetector>
-
+    <div hidden id="clickarray"></div>
 
  <!-- page 01 -->     
  <div name= "center1" class= "center1" id="Page1" data-value="1">
 
             <div id = "startdiv" style ="z-index: 3; background-color: rgba(236, 236, 208, 0.95); border-style: solid; border-color: rgb(146, 146, 89); border-radius: 10px; margin-left: -50px; height:580px; width: 1300px; position: absolute;">
-                <button id="startbtn" onclick = "startgame()" class="button4"><b>ආරම්භ කරන්න</b></button>
+                <button id="startbtn" onclick = "startgame_shape5()" class="button4"><b>ආරම්භ කරන්න</b></button>
                 <img src = "/assets/images/start_button.png" style=" opacity: 0.85;margin-top: -300px; margin-left: 150px">
                </div>
 
