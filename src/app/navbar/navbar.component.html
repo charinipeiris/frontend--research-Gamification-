@@ -44,14 +44,14 @@
 
      <!-- <li style="margin-left:700px"><a [routerLink]="['/dashboard']"><span>Hello {{username}} {{studentname}} !!</span></a></li> -->
      
-     <li *ngIf="checkNullToken()" style="margin-left:950px">
+     <li *ngIf="checkNullToken()" style="margin-left:850px">
          <a [routerLink]="['/dashboard']">
             <img src = "/assets/images/nav_start.png" style ="position:absolute;height: 50px; width:70px;margin-top:-20px">
             <span style="margin-inline-start: 60px;">Play Games</span>
          </a>
       </li>
 
-      <li *ngIf="checkToken()" style="margin-left:525px">
+      <li *ngIf="checkToken()" style="margin-left:425px">
          <a [routerLink]="['/dashboard']">
             <img src = "/assets/images/nav_start.png" style ="position:absolute;height: 50px; width:70px;margin-top:-20px">
             <span style="margin-inline-start: 60px;">Play Games</span>
@@ -83,7 +83,7 @@
     </a>
  </li>
 
-   <li *ngIf="checkToken()" style="margin-inline-start:-30px"><a  href="#" role="button" style ="color:rgb(255, 255, 255)" (click)="logout()">Logout</a></li> 
+   <li *ngIf="checkToken()" style="margin-inline-start:-30px;"><a  href="#" role="button" style ="color:rgb(255, 255, 255)" (click)="logout()">Logout</a></li> 
 
 
   </ul>
