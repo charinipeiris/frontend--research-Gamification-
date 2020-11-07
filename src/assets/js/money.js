@@ -687,10 +687,87 @@ document.getElementById("unmark3").checked = true; //kid gave right answer
 enableSubmit_money();	
 }
 
+// function startgame_money(){	
+//   document.getElementById("startdiv").style.visibility= "hidden";	
+//   document.getElementById("time-back").style.display="block";	
+//   startStop();	
+// }	
+
 function startgame_money(){	
   document.getElementById("startdiv").style.visibility= "hidden";	
   document.getElementById("time-back").style.display="block";	
   startStop();	
+
+  var last, diff;
+  var timeArray =[];
+  
+  $( "#page2-mon1" ).click(function( event)  {
+         if ( last ) {
+                diff = event.timeStamp - last;
+                diff1 = (diff/1000).toFixed(2)
+                timeArray.push(diff1);
+         }
+  
+         last = event.timeStamp;
+         let max = parseFloat(timeArray[0]);
+         document.getElementById("clickarray").innerHTML = max
+  
+         for (let i = 1; i < timeArray.length; i++) {
+                let value = parseFloat(timeArray[i]);
+                if (value > max){
+                       max = value;
+                       document.getElementById("clickarray").innerHTML = max
+                      //  console.log(max);
+                       }
+                           
+                }
+
+     });
+     $( "#page3-mon1" ).click(function( event)  {
+      if ( last ) {
+             diff = event.timeStamp - last;
+             diff1 = (diff/1000).toFixed(2)
+             timeArray.push(diff1);
+      }
+
+      last = event.timeStamp;
+      let max = parseFloat(timeArray[0]);
+      document.getElementById("clickarray").innerHTML = max
+
+      for (let i = 1; i < timeArray.length; i++) {
+             let value = parseFloat(timeArray[i]);
+             if (value > max){
+                    max = value;
+                    document.getElementById("clickarray").innerHTML = max
+                   //  console.log(max);
+                    }
+                        
+             }
+
+  });
+  $( "#page4-mon1" ).click(function( event)  {
+    if ( last ) {
+           diff = event.timeStamp - last;
+           diff1 = (diff/1000).toFixed(2)
+           timeArray.push(diff1);
+    }
+
+    last = event.timeStamp;
+    let max = parseFloat(timeArray[0]);
+    document.getElementById("clickarray").innerHTML = max
+
+    for (let i = 1; i < timeArray.length; i++) {
+           let value = parseFloat(timeArray[i]);
+           if (value > max){
+                  max = value;
+                  document.getElementById("clickarray").innerHTML = max
+                 //  console.log(max);
+                  }
+                      
+           }
+
+});
+
 }	
 
 function enableNext1_money(){	

@@ -1073,11 +1073,74 @@ function showNxt(pg1_count) {
     }
 }
 
+// function startgame_counting(){
+//     document.getElementById("startdiv").style.visibility= "hidden";
+//     document.getElementById("time-back").style.display="block";
+//     startStop();
+// }
+
 function startgame_counting(){
     document.getElementById("startdiv").style.visibility= "hidden";
     document.getElementById("time-back").style.display="block";
     startStop();
+
+    var last, diff;
+    var timeArray =[];
+    
+    $( "#pg2_count" ).click(function( event)  {
+           if ( last ) {
+                  diff = event.timeStamp - last;
+                  diff1 = (diff/1000).toFixed(2)
+                  timeArray.push(diff1);
+           }
+    
+           last = event.timeStamp;
+           let max = parseFloat(timeArray[0]);
+           document.getElementById("clickarray").innerHTML = max
+    
+           for (let i = 1; i < timeArray.length; i++) {
+                  let value = parseFloat(timeArray[i]);
+                  if (value > max){
+                         max = value;
+                         document.getElementById("clickarray").innerHTML = max
+                        //  console.log(max);
+                         }
+                             
+                  }
+
+       });
+
+       $( "#pg3_count" ).click(function( event)  {
+        if ( last ) {
+               diff = event.timeStamp - last;
+               diff1 = (diff/1000).toFixed(2)
+               timeArray.push(diff1);
+        }
+ 
+        last = event.timeStamp;
+        let max = parseFloat(timeArray[0]);
+        document.getElementById("clickarray").innerHTML = max
+ 
+        for (let i = 1; i < timeArray.length; i++) {
+               let value = parseFloat(timeArray[i]);
+               if (value > max){
+                      max = value;
+                      document.getElementById("clickarray").innerHTML = max
+                     //  console.log(max);
+                      }
+                          
+               }
+
+    });
 }
+
+
+
+
+
+
+
+
 // Game
 //Page 2
 
