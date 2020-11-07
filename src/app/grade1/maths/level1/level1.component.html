@@ -18,77 +18,83 @@
             <li><a routerLink='/dashboard'>1 ශ්‍රේණිය</a></li>
             <li><a>ගණිතය</a></li>
             <li><a routerLink='/grade1/maths'>පියවර 1</a></li>
-    <li><a style="background-color: #46360d; color:blanchedalmond; border-radius:10px " routerLink='/grade1/maths/level1'>සෙල්ලම් කරමු</a></li>
-          </ul>
+            <li><a style="background-color: #46360d; color:blanchedalmond; border-radius:10px " routerLink='/grade1/maths/level1'>සෙල්ලම් කරමු</a></li>
+        </ul>
         <!-- <br>
         <br>
         <br> -->
         <br>
         <br>
-    <h1 align ="center"><b>  පියවර 1- ගණිතය (1 ශ්‍රේණිය)</b></h1>
-    <br>
-    <br>
+        <!-- <h1 align ="center"><b>  පියවර 1- ගණිතය (1 ශ්‍රේණිය)</b></h1> -->
+        <br>
+        <br>
         <div style="width: 100%;">
-            <div style="float:left;margin-inline-start:248px ;">  
+            <div style="float:left;margin-inline-start:200px ;">  
                <!-- <div>
-                <button class="button3"><a routerLink='/grade1/maths/level1/counting'><span>ඉලක්කම් ඉගෙනගමු</span></a></button> 
+                    <button class="button3"><a routerLink='/grade1/maths/level1/counting'><span>ඉලක්කම් ඉගෙනගමු</span></a></button> 
                </div> 
                <div>
-                <button class="button3"><a routerLink='/grade1/maths/level1/money'><span>කාසි අදුරගමු</span></a></button> 
+                    <button class="button3"><a routerLink='/grade1/maths/level1/money'><span>කාසි අදුරගමු</span></a></button> 
                </div>   -->
 
-                 <!-- button 1 -->
-                 <div *ngIf="btn1 == 0">
+                <!-- button 1 -->
+                <div *ngIf="btn1 == 0">
                     <button class="button3"><a routerLink='/grade1/maths/level1/counting'><span>ඉලක්කම් ඉගෙනගමු</span></a></button> 
-                   </div> 
+                    <img src="assets/images/counting-icon.png" style="height: 100px; width: 100px; margin-left: -450px; margin-top:-10px">
+                </div> 
     
-                   <div *ngIf="btn1 == 1">
+                <div *ngIf="btn1 == 1">
                     <button class="dis-button3"><a disabled="disabled">
-                        <span>ඉලක්කම් ඉගෙනගමු <img src = "/assets/images/completed.png" style="margin-top:-25px;margin-bottom:-15px;height: 60px;"></span></a></button> 
-                    
-                   </div> 
+                    <img src="assets/images/counting-icon.png" style="height: 100px; width: 100px; margin-left: -450px; margin-top:-10px">
+                    <span>ඉලක්කම් ඉගෙනගමු <img src = "/assets/images/completed.png" style="margin-top:-25px;margin-bottom:-15px;height: 60px;"></span></a></button> 
+                </div> 
     
-                   <!-- button 2 -->
-                   <div *ngIf="btn3 == 0">
+                <!-- button 2 -->
+                <div *ngIf="btn3 == 0">
                     <button class="button3"><a routerLink='/grade1/maths/level1/money'><span>කාසි අදුරගමු</span></a></button> 
-                   </div> 
+                    <img src="assets/images/money-icon.png" style="height: 100px; width: 100px; margin-left: -430px; margin-top:-10px">
+                </div> 
     
-                   <div *ngIf="btn3 == 1">
+                <div *ngIf="btn3 == 1">
                     <button class="dis-button3"><a disabled="disabled"><span>කාසි අදුරගමු
-                        <img src = "/assets/images/completed.png" style="margin-top:-25px;margin-bottom:-15px;height: 60px;">
+                    <img src="assets/images/money-icon.png" style="height: 100px; width: 100px; margin-left: -430px; margin-top:-10px">
+                    <img src = "/assets/images/completed.png" style="margin-top:-25px;margin-bottom:-15px;height: 60px;">
                     </span></a></button> 
-                   </div> 
+                </div> 
              </div>
           
-            <div style="margin-inline-end:130px;">
+            <div style="margin-inline-end: 500px; margin-left:700px;">
                 <!-- <div>
                     <button class="button3"><a routerLink='/grade1/maths/level1/length'><span>දිග, පළල, උස, බර මනිමු </span></a></button> 
-                   </div> 
-                   <div>
+                </div> 
+                <div>
                     <button class="button3"><a routerLink='/grade1/maths/level1/shapes'><span>හැඩතල ඉගෙනගමු</span></a></button> 
-                   </div>  -->
+                </div>  -->
 
                  <!-- button 3 -->
-                 <div *ngIf="btn2 == 0">
+                <div *ngIf="btn2 == 0">
                     <button class="button3"><a routerLink='/grade1/maths/level1/length'><span>දිග, පළල, උස, බර මනිමු </span></a></button> 
-                   </div> 
+                    <img src="assets/images/measure-icon.png" style="height: 100px; width: 100px; margin-left: 20px; margin-top: -170px;">
+                </div> 
     
-                   <div *ngIf="btn2 == 1">
+                <div *ngIf="btn2 == 1">
                     <button class="dis-button3"><a disabled="disabled">
-                        <span>දිග, පළල, උස, බර මනිමු <img src = "/assets/images/completed.png" style="margin-top:-25px;margin-bottom:-15px;height: 60px;"></span></a></button> 
-                    
-                   </div> 
+                    <img src="assets/images/measure-icon.png" style="height: 100px; width: 100px; margin-left: 20px; margin-top: -170px;">
+                    <span>දිග, පළල, උස, බර මනිමු <img src = "/assets/images/completed.png" style="margin-top:-25px;margin-bottom:-15px;height: 60px;"></span></a></button> 
+                </div> 
     
-                   <!-- button 3 -->
-                   <div *ngIf="btn4 == 0">
-                    <button class="button3"><a routerLink='/grade1/maths/level1/shapes'><span>හැඩතල ඉගෙනගමු</span></a></button> 
-                   </div> 
+                <!-- button 3 -->
+                <div *ngIf="btn4 == 0">
+                    <button class="button3" style="margin-top:-19px;"><a routerLink='/grade1/maths/level1/shapes'><span>හැඩතල ඉගෙනගමු</span></a></button> 
+                    <img src="assets/images/shapes-icon.png" style="height: 100px; width: 100px; margin-left: 20px; margin-top: -170px;">
+                </div> 
     
-                   <div *ngIf="btn4 == 1">
-                    <button class="dis-button3"><a disabled="disabled"><span>හැඩතල ඉගෙනගමු
-                        <img src = "/assets/images/completed.png" style="margin-top:-25px;margin-bottom:-15px;height: 60px;">
+                <div *ngIf="btn4 == 1">
+                    <button class="dis-button3" style="margin-top:-19px;"><a disabled="disabled"><span>හැඩතල ඉගෙනගමු
+                    <img src="assets/images/shapes-icon.png" style="height: 100px; width: 100px; margin-left: 20px; margin-top: -170px;">
+                    <img src = "/assets/images/completed.png" style="margin-top:-25px;margin-bottom:-15px;height: 60px;">
                     </span></a></button> 
-                   </div> 
+                </div> 
             </div>
         </div> 
 
@@ -96,16 +102,15 @@
         <div *ngIf="nxtBtn == 4">
             <img src ="/assets/images/arrow_submit.gif" style="margin-top: -100px; margin-left: 1180px; height: 130px; width: 130px; position: absolute;">
             <a href="/grade1/maths/level2" style ='margin-top: 35px; margin-left: 1160px; color: green; height: 50px;' class="previous button1"> පියවර 2ට&raquo;</a>   
-               </div> 
-<!-- <div class="w3-container">
-    <img style="margin-left: 120px;width:400px;height:400px" src="/assets/images/learn.gif">
-  <button style="text-decoration: none;width:500px;height:300px;background-color:DodgerBlue;;margin-left:30px;border-radius:15px ;text-decoration: none;font-size:50px;"><a routerLink='/grade1/maths/level1/counting'>ගණන් කරන්න ඉගෙන ගමු.</a></button>
-  
-  <a class="w3-button w3-black w3-disabled" href="#">Link Button</a>
-</div> -->
+        </div> 
 
-    
-    
-      </body>
-      </html>
+        <!-- <div class="w3-container">
+            <img style="margin-left: 120px;width:400px;height:400px" src="/assets/images/learn.gif">
+        <button style="text-decoration: none;width:500px;height:300px;background-color:DodgerBlue;;margin-left:30px;border-radius:15px ;text-decoration: none;font-size:50px;"><a routerLink='/grade1/maths/level1/counting'>ගණන් කරන්න ඉගෙන ගමු.</a></button>
+        
+        <a class="w3-button w3-black w3-disabled" href="#">Link Button</a>
+        </div> -->
+
+    </body>
+</html>
       

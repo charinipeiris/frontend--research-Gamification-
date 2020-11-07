@@ -25,7 +25,7 @@
 
 
     <!--Section: Content-->
-    <section style="margin-top:-50px" class="">
+    <section style="margin-top:-70px" class="">
   
       <!-- Section heading -->
     <!-- <h1 class="text-center font-weight-bold mb-5" style ="font-family:Holtwood One SC, serif; font-size:50px">GRADE 1</h1> -->
@@ -36,12 +36,12 @@
     <br>
     <br>
     <br>
-    <h1 align ="center" style ="font-family:Pangolin, cursive; color:rgb(8, 8, 8);text-decoration:double;"><b>ගණිතය - 1 ශ්‍රේණිය</b></h1>
+    <!-- <h1 align ="center" style ="font-family:Pangolin, cursive; color:rgb(8, 8, 8);text-decoration:double;"><b>ගණිතය - 1 ශ්‍රේණිය</b></h1> -->
         <!-- Grid row -->
       <div class="row" style="margin-inline-start:180px ;">
           
         <!-- Grid column -->
-        <div class="col-lg-4 col-md-8 mb-lg-0 mb-4" style="margin-top: 90px;">
+        <div class="col-lg-4 col-md-8 mb-lg-0 mb-4" style="margin-top: 5px;">
   
           <!-- Card (LEVEL 1: if all the level 1 games are not complete)-->
           <div *ngIf ="btn1 !== 4 "class="card hoverable bg-success" >
@@ -51,10 +51,13 @@
   
             <!-- Card content -->
             <div class="card-body">
-  
+
+              <!-- Card Image -->
+              <img src="assets/images/level-easy.png" style="height: 100px; width: 100px; margin-top: 5px; margin-left:70px;">
+
               <!-- Title -->
               <h3 class="text-center font-weight-bold mb-5" style ="font-family:Pangolin, cursive; color:rgb(255, 255, 255)">
-                පියවර 1</h3>
+                පහසු</h3>
               <!-- Text -->       
                    
               <button class="button1"><a routerLink='/grade1/maths/level1' style="color: green;"><span>PLAY <img src="assets/images/play.gif" style="width:30px;height:30px"></span></a></button>  
@@ -72,10 +75,13 @@
   
             <!-- Card content -->
             <div class="card-body">
+
+              <!-- Card Image -->
+              <img src="assets/images/level-easy.png" style="height: 100px; width: 100px; margin-top: 5px; margin-left:70px;">
   
               <!-- Title -->
               <h3 class="text-center font-weight-bold mb-5" style ="font-family:Pangolin, cursive; color:rgb(255, 255, 255)">
-                පියවර 1</h3>
+                පහසු</h3>
               <!-- Text -->       
                    
               <button class="button1"><a style="color: green;padding:0px"><span>COMPLETED<img src = "/assets/images/completed.png" style="height: 60px;margin-top: -10px"> </span></a></button>  
@@ -91,7 +97,7 @@
         <!-- Grid column -->
   
         <!-- Grid column -->
-        <div class="col-lg-4 col-md-6 mb-md-0 mb-4"  style="margin-top: 90px;margin-inline-start:100px;">
+        <div class="col-lg-4 col-md-6 mb-md-0 mb-4"  style="margin-top: 5px;margin-inline-start:100px;">
   
           <!-- Card (LEVEL 2: if all the level 1 games are completed)-->
           <div *ngIf="btn1 == 4 && btn2 !== 5" class="card hoverable bg-success">
@@ -101,10 +107,13 @@
   
             <!-- Card content -->
             <div class="card-body">
-  
+            
+            <!-- Card image -->
+            <img src="assets/images/level-difficult.png" style="height: 100px; width: 100px; margin-top: 5px; margin-left:90px;">
+              
               <!-- Title -->
               <h3 class="text-center font-weight-bold mb-5" style ="font-family:Pangolin, cursive; color:rgb(255, 255, 255)">
-                පියවර 2</h3>
+                අසීරු</h3>
               <!-- Text -->
                           
               <button class="button1"><a routerLink='/grade1/maths/level2' style="color: green;"><span>PLAY <img src="assets/images/play.gif" style="width:30px;height:30px"></span></a></button>              
@@ -118,14 +127,15 @@
           <div *ngIf="btn1 !== 4" class="card hoverable" style="background-color: #7b8a7b;">
   
             <!-- Card image -->
-         
-  
+            <img src="assets/images/level-difficult.png" style="height: 100px; width: 100px; margin-top: 5px; margin-left:90px;">
+            
             <!-- Card content -->
             <div class="card-body">
   
               <!-- Title -->
-              <h3 class="text-center font-weight-bold mb-5" style ="font-family:Pangolin, cursive; color:rgb(255, 255, 255)">
-                පියවර 2</h3>
+              <h3 class="text-center font-weight-bold mb-5" style ="font-family:Pangolin, cursive; color:rgb(255, 255, 255); word-wrap: normal;">
+                අසීරු</h3>
+              
               <!-- Text -->
                           
               <button class="button1"><a style="color: green;"><span>PLAY <img src="assets/images/play.gif" style="width:30px;height:30px"></span></a></button>              
@@ -142,10 +152,13 @@
   
             <!-- Card content -->
             <div class="card-body">
+
+            <!-- Card image -->
+            <img src="assets/images/level-difficult.png" style="height: 100px; width: 100px; margin-top: 5px; margin-left:90px;">
   
               <!-- Title -->
               <h3 class="text-center font-weight-bold mb-5" style ="font-family:Pangolin, cursive; color:rgb(255, 255, 255)">
-                පියවර 2</h3>
+                අසීරු</h3>
               <!-- Text -->       
                    
               <button class="button1"><a style="color: green;padding:0px"><span>COMPLETED<img src = "/assets/images/completed.png" style="height: 60px;margin-top: -10px"> </span></a></button>  
