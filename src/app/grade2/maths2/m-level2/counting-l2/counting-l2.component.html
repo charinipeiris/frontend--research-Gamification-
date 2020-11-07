@@ -7,7 +7,7 @@
             </style>
     </head>
     
-<body class = "image">
+<body class = "image" id = "Page2">
     <div id="time-back" style="z-index: 2; margin-top: 40px; position: absolute; margin-left: 720px; background-color: azure; border-radius: 10px; width: 250px;">
         <div id="display" style="margin-left:15px; font-size: 50px; font-family: 'Permanent Marker', cursive;">
           00:00:00
@@ -17,14 +17,14 @@
           <button hidden id="startStop" onclick="startStop()">Start</button> 
           <button hidden id="reset" onclick="reset()">Reset</button>
       </div>
-
+      <div hidden id="clickarray"></div>
 
  </div>
     <!-- page 01 -->
         <div id="pg1_count" style="position: absolute; top: 40px; left: 160px;">
 
             <div id = "startdiv" style ="z-index: 3; background-color: rgba(236, 236, 208, 0.95); border-style: solid; border-color: rgb(146, 146, 89); border-radius: 10px; height: 600px; width: 1350px; position: absolute; margin-left: -100px; margin-top: 40px;">
-                <button id="startbtn" onclick = "startgame()" class="button4"><b>ආරම්භ කරන්න</b></button>
+                <button id="startbtn" onclick = "startgame_shape()" class="button4"><b>ආරම්භ කරන්න</b></button>
                 <img src = "/assets/images/start_button.png" style=" opacity: 0.85;margin-top: -300px; margin-left: 150px">
                </div>
 
