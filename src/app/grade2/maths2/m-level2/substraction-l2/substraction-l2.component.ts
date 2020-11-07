@@ -20,6 +20,7 @@ markstot_substraction3(){
   var time = document.getElementById("display").innerHTML;
   console.log(time);
   document.getElementById("time-back").style.visibility = "hidden";
+  var clicksarray = document.getElementById("clickarray").innerHTML ;
 
 var total6 = 0;
 
@@ -37,16 +38,17 @@ if (element2.checked)
 if (element3.checked)
     total6 = total6 + 1;
 
-console.log(total6);
+
 
     // let username = localStorage.getItem('uname');
     // this.gamesService.submitGame({    
     //   completed_games : [
     //   {
-    //   game_id : "m26",
+    //   game_id : "m25",
     //   marks : total6,
     //   time_spent : time,
-    //   emotions: this.child.emotions
+    //   emotions: this.child.emotions,
+    //   max_idle_time :  clicksarray
     //   }
     // ]},username).subscribe(res=>{console.log("success")}, err=>{console.log("error")});
 
