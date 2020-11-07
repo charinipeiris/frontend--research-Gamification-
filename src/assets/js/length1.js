@@ -176,11 +176,68 @@ function showpages_length(page){
 
 }
 
+// function startgame_length(){
+//     document.getElementById("startdiv").style.visibility= "hidden";
+//     document.getElementById("time-back").style.display="block";
+//     startStop();
+// }
+
+
 function startgame_length(){
     document.getElementById("startdiv").style.visibility= "hidden";
     document.getElementById("time-back").style.display="block";
     startStop();
-}
+    var last, diff;
+    var timeArray =[];
+    
+    $( "#page2-lengths" ).click(function( event)  {
+           if ( last ) {
+                  diff = event.timeStamp - last;
+                  diff1 = (diff/1000).toFixed(2)
+                  timeArray.push(diff1);
+           }
+    
+           last = event.timeStamp;
+           let max = parseFloat(timeArray[0]);
+           document.getElementById("clickarray").innerHTML = max
+    
+           for (let i = 1; i < timeArray.length; i++) {
+                  let value = parseFloat(timeArray[i]);
+                  if (value > max){
+                         max = value;
+                         document.getElementById("clickarray").innerHTML = max
+                        //  console.log(max);
+                         }
+                             
+                  }
+
+       });
+
+       $( "#page3-lengths").click(function( event)  {
+        
+        if ( last ) {
+               diff = event.timeStamp - last;
+               diff1 = (diff/1000).toFixed(2)
+               timeArray.push(diff1);
+        }
+        last = event.timeStamp;
+         let max = document.getElementById("clickarray").innerHTML
+        document.getElementById("clickarray").innerHTML = max
+ 
+        for (let i = 1; i < timeArray.length; i++) {
+               let value = parseFloat(timeArray[i]);
+               if (value > max){
+                      max = value;
+                      document.getElementById("clickarray").innerHTML = max
+                    //   console.log(max)
+                      }
+                          
+               }
+    });
+    
+    }
+
+
     //-----------Length intro - Level2 - grade 1 -------------------------------
 
     function testweight1(){
@@ -467,7 +524,7 @@ function test7_len2()
 {
 document.f2.clip2.src="/assets/images/q5.JPG";
 document.f2.rect.src="/assets/images/trans.svg";
-document.f2.sqr.src="/assets/images/q4.JPG";trans.svg
+document.f2.sqr.src="/assets/images/q4.JPG";
 document.f2.rw2.src="/assets/images/w.gif";
 document.getElementById("b29").style.pointerEvents = "none";
 document.getElementById("unmark4").checked = true; //kid gave right answer 
