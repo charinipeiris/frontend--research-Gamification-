@@ -24,27 +24,27 @@ function showpages_count_intro(page){
 //-----------counting intro(1-5) level 1 grade 1---------------
 
 function testcountintro1(){
-    document.f1.txt1.value="1";
+    document.f1.txt1.value="එක";
     document.f2.clip1.src="/assets/images/1.gif";
 }
 
 function testcountintro2(){
-    document.f1.txt1.value="2";
+    document.f1.txt1.value="දෙක";
     document.f2.clip1.src="/assets/images/2.gif";
 }
 
 function testcountintro3(){
-    document.f1.txt1.value="3";
+    document.f1.txt1.value="තුන";
     document.f2.clip1.src="/assets/images/3.gif";
 }
 
 function testcountintro4(){
-    document.f1.txt1.value="4";
+    document.f1.txt1.value="හතර";
     document.f2.clip1.src="/assets/images/4.gif";
 }
 
 function testcountintro5(){
-    document.f1.txt1.value="5";
+    document.f1.txt1.value="පහ";
     document.f2.clip1.src="/assets/images/5.gif";
 }
 //---------------- counting game - garade 1 level 1--------------//

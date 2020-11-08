@@ -32,11 +32,11 @@
                </div>
 
             <form name="f1">
-                <a id="next-length" class="previous button1" style ='display: none; padding: 12px; width: 170px; margin-top: -10px; margin-left: 1100px;' onclick="return  showpages_lengths('page3-lengths');"> Next &#8811; </a>
+                <a id="next-length" class="previous button1" style ='display: none; padding: 12px; width: 170px; margin-top: -10px; margin-left: 1100px;background-color:white ;color: green;' onclick="return  showpages_lengths('page3-lengths');"> Next &#8811; </a>
             <h3 style ="margin-top: 20px; margin-left: 30px;">වම් පස රූපයෙ දිග ගිනිකූරු වලින් මනිමු.</h3>
             <h2 id="alert" style="visibility: hidden; color: red;"> සියල්ලටම පිලිතුරු සපයන්න</h2>
-            <img src = "/assets/images/click.gif" style="position: absolute; height: 70px; margin-top: -95px; margin-left: 450px;">
-            <img src = "/assets/images/shape_sound2.gif" id="question-money" style="position: absolute; height: 140px; margin-top: -125px; margin-left: 550px;">
+            <img src = "/assets/images/click.gif" style="position: absolute; height: 70px; margin-top: -95px; margin-left: 600px;">
+            <img src = "/assets/images/shape_sound2.gif" id="question-money" style="position: absolute; height: 140px; margin-top: -125px; margin-left: 700px;">
             <audio id="quest_audio" src="assets/audio/moneyL1_quest.m4a" type="audio/m4a" control>Your browser does not support the audio element. </audio>
                 <fieldset style ="margin-left: 30px; margin-top: 30px;">
                 <img src="/assets/images/limage1.JPG" style="border-style:solid; border-color:rgb(0, 0, 0); background:#ffffff; border-radius: 15px; height: 200px; width: 550px; margin-left: 100px; margin-right: 50px; padding: 8px;">
@@ -71,8 +71,8 @@
       
                 <h3 style ="margin-top: 20px; margin-left: 30px;">වම් පස රූපයෙ බර ගල් වලින් මනිමු.</h3>
                 <h2 id="alert" style="visibility: hidden; color: red;"> සියල්ලටම පිලිතුරු සපයන්න</h2>
-                <img src = "/assets/images/click.gif" style="position: absolute; height: 70px; margin-top: -95px; margin-left: 450px;">
-                <img src = "/assets/images/shape_sound2.gif" id="question-money" style="position: absolute; height: 140px; margin-top: -125px; margin-left: 550px;">
+                <img src = "/assets/images/click.gif" style="position: absolute; height: 70px; margin-top: -95px; margin-left: 600px;">
+                <img src = "/assets/images/shape_sound2.gif" id="question-money" style="position: absolute; height: 140px; margin-top: -125px; margin-left: 700px;">
                 <audio id="quest_audio" src="assets/audio/moneyL1_quest.m4a" type="audio/m4a" control>Your browser does not support the audio element. </audio>
                     <fieldset style ="margin-left: 30px; margin-top: 30px;">
                     <img src="/assets/images/orange.png" style="border-style:solid; border-color:rgb(0, 0, 0); background:#ffffff; border-radius: 15px; height: 200px; width: 350px; margin-left: 100px; margin-right: 50px; padding: 8px;">
@@ -101,12 +101,14 @@
       
                 </form>
 
-                <app-emotiondetector></app-emotiondetector>   
-           <button id="final_button" class="button2" style="display: none;" (click)="markstot_lengthsm()">ඉවරයි</button> 
+                <app-emotiondetector></app-emotiondetector>  
+                <img id ="arrow1" src ="/assets/images/arrow_submit.gif" style=" margin-top: -195px; margin-left: 1050px; height: 130px; width: 130px; position: absolute;">
+           <button id="final_button" class="button2" style="display: none;margin-top:-20px" (click)="markstot_lengthsm()">ඉවරයි</button> 
   
             <div id="myModal" class="modal">
                 <div class="modal-content">
-                    <img id="coin1" src="/assets/images/win_coin.gif" class= "coin_img" style = "visibility:hidden; height: 220px; width: 550px; margin-left: 5px; position: absolute">
+                    <div  style="margin-left:-50px" >
+                        <img id="coin1" src="/assets/images/win_coin.gif" class= "coin_img" style = "visibility:hidden; height: 220px; width: 550px; margin-left: 5px; position: absolute">
                     <img id ="coin2" src="/assets/images/win_coin.gif" class= "coin_img" style = "visibility:hidden; height: 220px; width: 550px; margin-left: 150px; margin-top: -50px; position: absolute;">
                     <img id ="coin3" src="/assets/images/win_coin.gif" class= "coin_img" style = "visibility:hidden; height: 220px; width: 550px; margin-left: 290px; margin-top: -50px; position: absolute">
                     <img id ="coin4" src="/assets/images/win_coin.gif" class= "coin_img" style = "visibility:hidden; height: 220px; width: 550px; margin-left: 430px; position: absolute">
@@ -114,6 +116,8 @@
                   <h1 style="font-family:Chalkduster, fantasy; margin-left: 380px; position: absolute; color:darkcyan">Completed!!!</h1>
                   <h5 style ="position: absolute; margin-top: 300px; margin-left: 350px; font-size: 30px">ගත වූ කාලය : <span id="perf-time"></span></h5>
                   <a href="grade2/maths/level1" style="margin-left:440px;" class="button3">ආපසු</a>
+                    </div>
+                    
                 </div>
               </div>
                 </div>
