@@ -95,6 +95,7 @@ import { ShapesL2Component } from './grade2/maths2/m-level2/shapes-l2/shapes-l2.
 import { EmotiondetectorComponent } from './emotiondetector/emotiondetector.component';
 import { AchievementsComponent } from './achievements/achievements.component';
 import { LeaderboardComponent } from './leaderboard/leaderboard.component';
+import { NgxPaginationModule } from 'ngx-pagination';
 
 
 
@@ -104,6 +105,7 @@ const appRoutes:Routes = [
   {path:'home',component:HomeComponent},
   {path:'achievements',component:AchievementsComponent},
   {path:'leaderboard',component:LeaderboardComponent},
+
 
   //-----maths--
   {path:'grade1/maths',component:MathsComponent},
@@ -254,6 +256,7 @@ const appRoutes:Routes = [
     EmotiondetectorComponent,
     AchievementsComponent,
     LeaderboardComponent,
+
    
     
   
@@ -268,6 +271,7 @@ const appRoutes:Routes = [
     WebcamModule,
     [RouterModule.forRoot(appRoutes)],
     ReactiveFormsModule,
+    NgxPaginationModule,
   ],
   providers: [LoginService, RegisterService, DataService, BlockUiService],
   bootstrap: [AppComponent]

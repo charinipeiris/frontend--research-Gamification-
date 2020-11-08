@@ -8,8 +8,30 @@ import { GamesService } from '../services/games.service';
 })
 export class AchievementsComponent implements OnInit {
 
-  GamesArray = [];
-  constructor(private gameService: GamesService) { }
+  GamesArray = []; 
+  config: any;
+// x
+  
+
+  constructor(private gameService: GamesService) {
+          //Create dummy data
+    // for (var i = 0; i < this.collection.count; i++) {
+    //     this.collection.data.push(
+    //       {
+    //         id: i + 1,
+    //         value: "items number " + (i + 1)
+    //       }
+    //     );
+    //   }
+  
+      this.config = {
+        itemsPerPage: 3,
+        currentPage: 1,
+        totalItems: this.GamesArray.length
+      };
+    }
+  
+
 
   ngOnInit(): void {
     var uname = localStorage.getItem("uname");
@@ -18,6 +40,12 @@ export class AchievementsComponent implements OnInit {
     }, (error) => {
       
     });
+
   }
+
+  pageChanged(event){
+    this.config.currentPage = event;
+  }
+
 
 }
