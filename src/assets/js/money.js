@@ -186,7 +186,16 @@ $(document).ready(function(){
       //   document.getElementById(Page2).style.display='none'; 
       // }
       
-    
+//Question audio 
+$(document).ready(function(){
+       $(document).on('click',"#question-money-L2",function () {
+       var audio = document.getElementById("quest_audio");
+       if (audio.paused) audio.play();
+       else audio.pause();
+       });
+   });
+
+  //Game 
       function test1_money2()
       {
       document.f1.clip1.src="/assets/images/5.png";

@@ -27,7 +27,7 @@
         <br> -->
         <br>
         <br>
-    <h1 align ="center"><b>  පියවර 2- ගණිතය (1 ශ්‍රේණිය)</b></h1>
+    <!-- <h1 align ="center"><b>  පියවර 2- ගණිතය (1 ශ්‍රේණිය)</b></h1> -->
     <br>
     
         <div style="width: 100%;">
@@ -42,24 +42,28 @@
                                 <!-- button 1 -->
                                 <div *ngIf="btn1 == 0">
                                     <button class="button3"><a routerLink='/grade1/maths/level2/countingconcepts'><span>ඉලක්කම් ඉගෙනගමු</span></a></button> 
-                                   </div> 
+                                    <img src="assets/images/counting-icon.png" style="position: absolute; height: 80px; width: 80px; margin-left: -440px; margin-top:10px">   
+                                </div> 
                     
-                                   <div *ngIf="btn1 == 1">
+                                <div *ngIf="btn1 == 1">
                                     <button class="dis-button3"><a disabled="disabled">
                                         <span>ඉලක්කම් ඉගෙනගමු <img src = "/assets/images/completed.png" style="margin-top:-25px;margin-bottom:-15px;height: 60px;"></span></a></button> 
-                                    
-                                   </div> 
+                                        <img src="assets/images/counting-icon.png" style="position: absolute; height: 80px; width: 80px; margin-left: -440px; margin-top:10px">
+                                </div> 
                     
-                                   <!-- button 2 -->
-                                   <div *ngIf="btn4 == 0">
+                                <!-- button 2 -->
+                                <div *ngIf="btn4 == 0">
                                     <button class="button3"><a routerLink='/grade1/maths/level2/additions'><span>එකතු කරමු</span></a></button> 
-                                   </div> 
+                                    <img src="assets/images/addition-icon.png" style="position: absolute; height: 80px; width: 80px; margin-left: -400px; margin-top:10px">
+                                </div> 
                     
-                                   <div *ngIf="btn4 == 1">
+                                <div *ngIf="btn4 == 1">
                                     <button class="dis-button3"><a disabled="disabled"><span>එකතු කරමු
+                                        <img src="assets/images/addition-icon.png" style="position: absolute; height: 80px; width: 80px; margin-left: -400px; margin-top:10px">
                                         <img src = "/assets/images/completed.png" style="margin-top:-25px;margin-bottom:-15px;height: 60px;">
-                                    </span></a></button> 
-                                   </div> 
+                                    </span></a>
+                                    </button> 
+                                </div> 
                
              </div>
           
@@ -71,44 +75,49 @@
                     <button class="button3"><a routerLink='/grade1/maths/level2/shapes'><span>හැඩතල ඉගෙනගමු</span></a></button> 
                    </div>  -->
     <!-- button 3 -->
-    <div *ngIf="btn2 == 0">
-        <button class="button3"><a routerLink='/grade1/maths/level2/length'><span>දිග, පළල, උස, බර මනිමු</span></a></button> 
-       </div> 
+                                <div *ngIf="btn2 == 0">
+                                    <button class="button3"><a routerLink='/grade1/maths/level2/length'><span>දිග, පළල, උස, බර මනිමු</span></a></button> 
+                                    <img src="assets/images/measure-icon.png" style="position: absolute; height: 80px; width: 80px; margin-left: -450px; margin-top:10px">
+                                </div> 
 
-       <div *ngIf="btn2 == 1">
-        <button class="dis-button3"><a disabled="disabled">
-            <span>දිග, පළල, උස, බර මනිමු <img src = "/assets/images/completed.png" style="margin-top:-25px;margin-bottom:-15px;height: 60px;"></span></a></button> 
-        
-       </div> 
+                                <div *ngIf="btn2 == 1">
+                                    <button class="dis-button3"><a disabled="disabled">
+                                        <span>දිග, පළල, උස, බර මනිමු <img src = "/assets/images/completed.png" style="margin-top:-25px;margin-bottom:-15px;height: 60px;"></span></a></button> 
+                                        <img src="assets/images/measure-icon.png" style="position: absolute; height: 80px; width: 80px; margin-left: -450px; margin-top:10px">
+                                </div> 
 
-       <!-- button 4 -->
-       <div *ngIf="btn5 == 0">
-        <button class="button3"><a routerLink='/grade1/maths/level2/shapes'><span>හැඩතල ඉගෙනගමු</span></a></button> 
-       </div> 
+                                <!-- button 4 -->
+                                <div *ngIf="btn5 == 0">
+                                    <button class="button3"><a routerLink='/grade1/maths/level2/shapes'><span>හැඩතල ඉගෙනගමු</span></a></button> 
+                                    <img src="assets/images/shapes-icon.png" style="position: absolute; height: 80px; width: 80px; margin-left: -440px; margin-top:10px">
+                                </div> 
 
-       <div *ngIf="btn5 == 1">
-        <button class="dis-button3"><a disabled="disabled"><span>හැඩතල ඉගෙනගමු
-            <img src = "/assets/images/completed.png" style="margin-top:-25px;margin-bottom:-15px;height: 60px;">
-        </span></a></button> 
-       </div>                 
-            </div>
-        </div> 
-        <div style="width: 100%;">
-            <!-- <div style="margin-left:450px;">
-                <button class="button3"><a routerLink='/grade1/maths/level2/money'><span>කාසි අදුරගමු</span></a></button> 
-               </div>  -->
+                                <div *ngIf="btn5 == 1">
+                                    <button class="dis-button3"><a disabled="disabled"><span>හැඩතල ඉගෙනගමු
+                                        <img src="assets/images/shapes-icon.png" style="position: absolute; height: 80px; width: 80px; margin-left: -440px; margin-top:10px">
+                                        <img src = "/assets/images/completed.png" style="margin-top:-25px;margin-bottom:-15px;height: 60px;">
+                                    </span></a></button> 
+                                </div>                 
+                                        </div>
+                                    </div> 
+                                    <div style="width: 100%;">
+                                        <!-- <div style="margin-left:450px;">
+                                            <button class="button3"><a routerLink='/grade1/maths/level2/money'><span>කාසි අදුරගමු</span></a></button> 
+                                        </div>  -->
 
-        <!-- button 5 -->
-       <div *ngIf="btn3 == 0" style="margin-left:450px;">
-        <button class="button3"><a routerLink='/grade1/maths/level2/money'><span>කාසි අදුරගමු</span></a></button> 
-       </div> 
+                                    <!-- button 5 -->
+                                <div *ngIf="btn3 == 0" style="margin-left:450px;">
+                                    <button class="button3"><a routerLink='/grade1/maths/level2/money'><span>කාසි අදුරගමු</span></a></button>
+                                    <img src="assets/images/money-icon.png" style="position: absolute; height: 80px; width: 80px; margin-left: -400px; margin-top:10px"> 
+                                </div> 
 
-       <div *ngIf="btn3 == 1" style="margin-left:450px;">
-        <button class="dis-button3"><a disabled="disabled"><span>කාසි අදුරගමු
-            <img src = "/assets/images/completed.png" style="margin-top:-25px;margin-bottom:-15px;height: 60px;">
-        </span></a></button> 
-       </div>   
-        </div>
+                                <div *ngIf="btn3 == 1" style="margin-left:450px;">
+                                    <button class="dis-button3"><a disabled="disabled"><span>කාසි අදුරගමු
+                                        <img src="assets/images/money-icon.png" style="position: absolute; height: 80px; width: 80px; margin-left: -400px; margin-top:10px">
+                                        <img src = "/assets/images/completed.png" style="margin-top:-25px;margin-bottom:-15px;height: 60px;">
+                                    </span></a></button> 
+                                </div>   
+                                    </div>
 
 
 

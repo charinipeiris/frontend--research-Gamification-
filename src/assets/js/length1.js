@@ -462,7 +462,7 @@ function enableSubmit_lengthG1L2(){
          }
         }
 
-//Audio of the two questions 
+//Audio of the four questions 
 $(document).ready(function(){
     $(document).on('click',"#question-big",function () {
     var audio = document.getElementById("quest_audio_big");
@@ -474,6 +474,22 @@ $(document).ready(function(){
 $(document).ready(function(){
     $(document).on('click',"#question-big-2",function () {
     var audio = document.getElementById("quest_audio_big_2");
+    if (audio.paused) audio.play();
+    else audio.pause();
+    });
+});
+
+$(document).ready(function(){
+    $(document).on('click',"#question-big-3",function () {
+    var audio = document.getElementById("quest_audio_big_3");
+    if (audio.paused) audio.play();
+    else audio.pause();
+    });
+});
+
+$(document).ready(function(){
+    $(document).on('click',"#question-big-4",function () {
+    var audio = document.getElementById("quest_audio_big_4");
     if (audio.paused) audio.play();
     else audio.pause();
     });
