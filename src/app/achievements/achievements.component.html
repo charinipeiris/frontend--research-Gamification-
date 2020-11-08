@@ -21,11 +21,11 @@
 
               <section id="maths" class="tab-panel">
 
-                 <div class="card" *ngFor="let item of GamesArray">
+                 <div class="card" *ngFor="let item of GamesArray | paginate: config">
                     <div class="row">
 
                       <div class="column left">
-                          <img src="/assets/images/trophy_icon.jpg" style ="height: 140px; width: 140px; border-radius: 10px; border: 6px solid rgb(250, 223, 187)">
+                          <img src="/assets/images/trophy_icon.jpg" style ="height: 100px; width: 100px; border-radius: 10px; border: 6px solid rgb(250, 223, 187)">
                       </div>
 
                       <div class="column right">
@@ -61,8 +61,12 @@
                       </div>
                     </div>
                   </div>
+                  <pagination-controls (pageChange)="pageChanged($event)"></pagination-controls>
 
-
+                  <!-- <div id="listingTable"></div> -->
+                  <!-- <a (click)="prevPage()" id="btn_prev">Prev</a>
+                  <a (click)="nextPage()" id="btn_next">Next</a>
+                  page: <span id="page"></span> -->
             </section>
 
               <section id="sinhala" class="tab-panel">
