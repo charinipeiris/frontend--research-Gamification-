@@ -25,7 +25,7 @@ function showpages_count_intro(page){
 
 function testcountintro1(){
     document.f1.txt1.value="1";
-    document.f2.clip1.src="/assets/images/yay_bunny.gif";
+    document.f2.clip1.src="/assets/images/1.gif";
 }
 
 function testcountintro2(){
