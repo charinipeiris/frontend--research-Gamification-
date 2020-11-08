@@ -21,15 +21,15 @@ width:100%;">
 <!--page 01 -->
 <br>
 <br>
-
+<h1 style ="margin-left:440px; margin-top: 30px; margin-bottom: 20px;"></h1> 
 <div class="center" id="page1-mon1">
-    <!-- <h1 style ="margin-left:440px; margin-top: 30px; margin-bottom: 20px;"><b>කාසි ඉගෙනගනිමු - 1</b></h1>   -->
+   
     <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
         <iframe id = "myVideo_money" class="embed-responsive-item" src="https://drive.google.com/file/d/1vXBuMdd2o5xa6uV1u6wkSDbiIulzxO2l/preview" width="640" height="450" width="640" height="450"
           allowfullscreen>
     </iframe>
     </div>
-<a style="margin-left:700px;width:200px;height:70px;margin-top: -20px;" id ="playbtn_money" class="button1" onclick="return showpages_mon1('page2-mon1');">සෙල්ලම් කරන්න</a>
+<a style="margin-left:700px;width:200px;height:70px;margin-top: -20px;padding:20px" id ="playbtn_money" class="button1" onclick="return showpages_mon1('page2-mon1');">සෙල්ලම් කරන්න</a>
 
 </div>
 
@@ -43,7 +43,7 @@ width:100%;">
      </div>
 
     <!-- <a style ='margin-top:70px;margin-left:-60px;color:green;height:50px ;' class="previous button1" onclick="showpages_mon1('page1-mon1')">&laquo; Previous</a> -->
-    <a id = "next1" style ='display: none; margin-top: 40px; margin-left: 1000px; color: green;height:50px' class="previous button1" onclick="showpages_mon1('page3-mon1')"> Next &raquo;</a>
+    <a id = "next1" style ='display: none; margin-top: 40px; margin-left: 1000px; color: green;height:50px;background-color:white;' class="previous button1" onclick="showpages_mon1('page3-mon1')"> Next &raquo;</a>
     <br>
     <br>
     <h4>පහතින් දැක්වෙන චොකල්ට් එක මිලදී ගැනීමට උවමනා කාසි 2 තෝරමු.</h4>
@@ -70,7 +70,7 @@ width:100%;">
 <div id="page3-mon1" style="display:none;position:absolute;top:40px;left:150px;">
    
     <!-- <a style ='margin-top:70px;margin-left:-60px;color:green;height:50px ;' class="previous button1" onclick="showpages_mon1('page2-mon1')">&laquo; Previous</a> -->
-    <a id = "next2" style ='display: none; margin-top: 40px; margin-left: 1000px; color: green;height:50px' class="previous button1" onclick="showpages_mon1('page4-mon1')"> Next &raquo;</a>
+    <a id = "next2" style ='display: none; margin-top: 40px; margin-left: 1000px; color: green;height:50px;background-color:white;' class="previous button1" onclick="showpages_mon1('page4-mon1')"> Next &raquo;</a>
     <br>
     <br>
     <h4>පහතින් දැක්වෙන කේක් එක මිලදී ගැනීමට උවමනා කාසි 2 තෝරමු.</h4>
@@ -122,22 +122,23 @@ width:100%;">
 
     <app-emotiondetector></app-emotiondetector>
 
-    <img id ="arrow1" src ="/assets/images/arrow_submit.gif" style="display: none; margin-top: 360px; margin-left: 1010px; height: 130px; width: 130px; position: absolute;">
+    <img id ="arrow1" src ="/assets/images/arrow_submit.gif" style=" margin-top: -100px; margin-left: 830px; height: 130px; width: 130px; position: absolute;">
     <button id="submit" class="button2" style="display:none;" (click)="markstot_mono1()">ඉවරයි</button> 
 
 <div id="myModal" class="modal">
 
     <!-- Modal content -->
     <div class="modal-content">
-        <!-- <span id ="close1" class="close">&times;</span> -->
-        <!-- <img src="/assets/images/congratulations.gif" class="congrats_img" style = "margin-left: 270px;height: 280px; width: 450px;"> -->
-        <img id="coin1" src="/assets/images/win_coin.gif" class= "coin_img" style = "visibility:hidden; height: 220px; width: 550px; margin-left: 55px; position: absolute">
+        <div style="margin-left:-60px ;">
+            <img id="coin1" src="/assets/images/win_coin.gif" class= "coin_img" style = "visibility:hidden; height: 220px; width: 550px; margin-left: 55px; position: absolute">
         <img id ="coin2" src="/assets/images/win_coin.gif" class= "coin_img" style = "visibility:hidden; height: 220px; width: 550px; margin-left: 220px; margin-top: -50px; position: absolute;">
         <img id ="coin3" src="/assets/images/win_coin.gif" class= "coin_img" style = "visibility:hidden; height: 220px; width: 550px; margin-left: 390px; position: absolute">
         <img id ="sad_coin" src="/assets/images/sad.gif" class= "coin_img" style = "visibility:hidden; height: 220px; width: 220px; margin-left: 380px; position: absolute">
         <h1 style="font-family:Chalkduster, fantasy; margin-left: 380px; position: absolute; color:darkcyan">Completed!!!</h1>
         <h5 style ="position: absolute; margin-top: 300px; margin-left: 350px; font-size: 30px">ගත වූ කාලය : <span id="perf-time"></span></h5>
         <a href="grade2/maths/level1"  style="margin-left:440px;"class="button3">ආපසු</a>
+        </div>
+        
       </div>
     </div>
 
