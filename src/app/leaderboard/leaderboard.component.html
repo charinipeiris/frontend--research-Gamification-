@@ -7,7 +7,7 @@
         <img src="/assets/images/1837.png" style="margin-left:390px; height:120px;">
         <h2 style="font-family: Holtwood One SC, serif; margin-top: -55px; margin-left: 560px;">Leaderboard</h2>
         <div class="lead-back">
-        <div *ngFor="let item of RanksArray" class="card">
+        <div *ngFor="let item of RanksArray | paginate: config" class="card">
             <div class="row">
                 <div class="column left">
                     <div *ngIf="item.rank=='1'">
@@ -37,7 +37,12 @@
                 </div>
             </div>
         </div>
+        <div style="margin-left: 220px;margin-top:25px;">
+            <pagination-controls (pageChange)="pageChanged($event)"></pagination-controls>
+        </div>
+
     </div>
+
      </body>
 </html>
 

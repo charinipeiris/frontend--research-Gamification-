@@ -7,8 +7,16 @@ import { GamesService } from '../services/games.service';
   styleUrls: ['./leaderboard.component.css']
 })
 export class LeaderboardComponent implements OnInit {
+  config: any;
 RanksArray = [];
-  constructor(private gameService: GamesService) { }
+  constructor(private gameService: GamesService) { 
+    this.config = {
+      itemsPerPage: 5,
+      currentPage: 1,
+      totalItems: this.RanksArray.length
+    };
+  }
+  
 
   ngOnInit(): void {
     var grade = localStorage.getItem("grade");
@@ -19,4 +27,9 @@ RanksArray = [];
     });
   }
 
+  pageChanged(event){
+    this.config.currentPage = event;
+  }
+
 }
+
