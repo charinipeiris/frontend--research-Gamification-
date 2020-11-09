@@ -6,6 +6,7 @@ import { DataService } from '../services/data.service';
 import { from } from 'rxjs';
 import { faCamera } from '@fortawesome/free-solid-svg-icons';
 import { ElementAst } from '@angular/compiler';
+import { GamesService } from '../services/games.service';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -25,7 +26,7 @@ export class LoginComponent implements OnInit {
   validPass: any;
   validStudentName: any;
   validface: any;
-  constructor(private loginService: LoginService, private router: Router, private activatedRoute: ActivatedRoute, private dataService: DataService, private ref: ChangeDetectorRef) {
+  constructor(private loginService: LoginService, private router: Router, private activatedRoute: ActivatedRoute, private dataService: DataService, private ref: ChangeDetectorRef, private GameService: GamesService) {
     this.loginForm = new FormGroup({
       username: new FormControl(null, Validators.required),
       password: new FormControl(null, Validators.required)
@@ -95,10 +96,17 @@ export class LoginComponent implements OnInit {
   facelogin() {
     this.loginMethod = "face";
     this.faceLoginForm.controls['image'].setValue(this.imageUrl);
-    console.log("hhhhh",this.faceLoginForm.valid)
+    // console.log("hhhhh",this.faceLoginForm.valid)
     if (this.faceLoginForm.valid) {
       this.loginService.faceLogin(this.faceLoginForm.value).subscribe(data => {
         localStorage.setItem('token', data.toString());
+        // this.student = this.faceLoginForm.get('studentname').value 
+        this.GameService.getUserNameforFace(this.faceLoginForm.value.studentname).subscribe((data:any) => {  
+          localStorage.setItem('uname', data.username);
+         }, error => {
+          console.log("username not found");
+        }
+        );
         this.router.navigate(['/dashboard']);
       }, error => {
         console.log(error.error.message);
@@ -131,7 +139,7 @@ export class LoginComponent implements OnInit {
   }
 
   newFaceMessage() {
-    console.log(this.faceLoginForm.value.studentname, this.loginMethod)
+    // console.log(this.faceLoginForm.value.studentname, this.loginMethod)
     this.dataService.changeMessage(this.faceLoginForm.value.studentname, this.loginMethod);
   }
 

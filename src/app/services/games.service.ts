@@ -61,5 +61,11 @@ export class GamesService {
     // console.log("uname",studentname)
     return this.http.post(this.url1 + 'sendemail/' + username, body); 
 }
+getUserNameforFace(studentname){
+  return this.http.get(this.url1 + 'getstudentuname/' + studentname, {
+    observe: 'body',
+  });
+}
+
 }
 
