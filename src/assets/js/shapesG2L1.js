@@ -72,8 +72,8 @@ enableSubmit_Shapes2();
 }
 
 $(document).ready(function(){
-    $(document).on('click',"#question-shapes",function () {
-    var audio = document.getElementById("quest_audio");
+    $(document).on('click',"#question-shapes-g2",function () {
+    var audio = document.getElementById("quest_audio_g2");
     if (audio.paused) audio.play();
     else audio.pause();
 });
