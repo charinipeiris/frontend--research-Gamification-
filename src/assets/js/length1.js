@@ -3,6 +3,17 @@
   //---------------------level 1-----------------------------
   
   //----------------length intro grade 1 level 1-----------------
+
+  //Instruction audio
+  $(document).ready(function(){
+    $(document).on('click',"#click-1",function () {
+    var audio = document.getElementById("click-audio-1");
+    if (audio.paused) audio.play();
+    else audio.pause();
+});
+});
+
+
   function testlength1(){
     document.f1.txt1.value="මම උසයි";
     document.f1.txt2.value="";
