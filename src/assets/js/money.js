@@ -361,6 +361,16 @@ function showpages_mon1(page){
 
 //----------------page 1----------------
 
+
+//Audio question 1
+$(document).ready(function(){
+       $(document).on('click',"#question-money-choco",function () {
+       var audio = document.getElementById("quest_audio_money_choco");
+       if (audio.paused) audio.play();
+       else audio.pause();
+   });
+   });
+
 function test1_mono()
 {
 document.f1.clip1.src="/assets/images/a_1.JPG";
@@ -406,6 +416,17 @@ enableNext1_money();
 
 //----------------page 2----------------
 
+
+//Audio question 2
+$(document).ready(function(){
+       $(document).on('click',"#question-money-cake",function () {
+       var audio = document.getElementById("quest_audio_money_cake");
+       if (audio.paused) audio.play();
+       else audio.pause();
+   });
+   });
+
+
 function test4_mono()
 {
 document.f2.clip1.src="/assets/images/a_1.JPG";
@@ -414,8 +435,8 @@ document.f2.b.src="/assets/images/a_2.JPG";
 document.f2.c.src="/assets/images/a_4.JPG";
 
 document.f2.rw1.src="/assets/images/w.gif";
-document.getElementById("b").style.pointerEvents = "none";  
-document.getElementById("c").style.pointerEvents = "none"; 
+document.getElementById("bb").style.pointerEvents = "none";  
+document.getElementById("cc").style.pointerEvents = "none"; 
 document.getElementById("unmark2").checked = true; //kid gave right answer 
 enableNext2_money();	 
 }
@@ -428,8 +449,8 @@ document.f2.a.src="/assets/images/a_1.JPG";
 document.f2.c.src="/assets/images/a_4.JPG";
 
 document.f2.rw1.src="/assets/images/w.gif";
-document.getElementById("a").style.pointerEvents = "none";  
-document.getElementById("c").style.pointerEvents = "none"; 
+document.getElementById("aa").style.pointerEvents = "none";  
+document.getElementById("cc").style.pointerEvents = "none"; 
 document.getElementById("unmark2").checked = true; //kid gave right answer
 enableNext2_money();	  
 }
@@ -442,14 +463,23 @@ document.f2.a.src="/assets/images/a_1.JPG";
 document.f2.b.src="/assets/images/a_2.JPG";
 
 document.f2.rw1.src="/assets/images/yay_bunny2.gif";
-document.getElementById("b").style.pointerEvents = "none";  
-document.getElementById("a").style.pointerEvents = "none"; 
+document.getElementById("bb").style.pointerEvents = "none";  
+document.getElementById("aa").style.pointerEvents = "none"; 
 document.getElementById("mark2").checked = true; //kid gave right answer
 enableNext2_money();	  
 }
 
 
 //----------------page 3----------------
+
+//Audio question 3
+$(document).ready(function(){
+       $(document).on('click',"#question-money-sweet",function () {
+       var audio = document.getElementById("quest_audio_money_sweet");
+       if (audio.paused) audio.play();
+       else audio.pause();
+   });
+   });
 
 function test7_mono()
 {
@@ -459,8 +489,8 @@ document.f4.b.src="/assets/images/a_2.JPG";
 document.f4.c.src="/assets/images/a_3.JPG";
 
 document.f4.rw1.src="/assets/images/yay_bunny2.gif";
-document.getElementById("b").style.pointerEvents = "none";  
-document.getElementById("c").style.pointerEvents = "none"; 
+document.getElementById("bbb").style.pointerEvents = "none";  
+document.getElementById("ccc").style.pointerEvents = "none"; 
 document.getElementById("mark3").checked = true; //kid gave right answer 
 enableSubmit_money();
 }
@@ -473,8 +503,8 @@ document.f4.a.src="/assets/images/a_1.JPG";
 document.f4.c.src="/assets/images/a_3.JPG";
 
 document.f4.rw1.src="/assets/images/w.gif";
-document.getElementById("a").style.pointerEvents = "none";  
-document.getElementById("c").style.pointerEvents = "none"; 
+document.getElementById("aaa").style.pointerEvents = "none";  
+document.getElementById("ccc").style.pointerEvents = "none"; 
 document.getElementById("unmark3").checked = true; //kid gave right answer
 enableSubmit_money(); 
 }
@@ -487,8 +517,8 @@ document.f4.a.src="/assets/images/a_1.JPG";
 document.f4.b.src="/assets/images/a_2.JPG";
 
 document.f4.rw1.src="/assets/images/w.gif";
-document.getElementById("b").style.pointerEvents = "none";  
-document.getElementById("a").style.pointerEvents = "none"; 
+document.getElementById("bbb").style.pointerEvents = "none";  
+document.getElementById("aaa").style.pointerEvents = "none"; 
 document.getElementById("unmark3").checked = true; //kid gave right answer 
 enableSubmit_money();
 }
@@ -638,8 +668,8 @@ document.f2.b.src="/assets/images/s25.JPG";
 document.f2.c.src="/assets/images/s30.JPG";
 
 document.f2.rw1.src="/assets/images/w.gif";
-document.getElementById("b").style.pointerEvents = "none";  
-document.getElementById("c").style.pointerEvents = "none"; 
+document.getElementById("bb").style.pointerEvents = "none";  
+document.getElementById("cc").style.pointerEvents = "none"; 
 document.getElementById("unmark2").checked = true; //kid gave right answer 
 enableNext2_money();
 }
@@ -652,8 +682,8 @@ document.f2.a.src="/assets/images/s17.JPG";
 document.f2.c.src="/assets/images/s30.JPG";
 
 document.f2.rw1.src="/assets/images/w.gif";
-document.getElementById("a").style.pointerEvents = "none";  
-document.getElementById("c").style.pointerEvents = "none"; 
+document.getElementById("aa").style.pointerEvents = "none";  
+document.getElementById("cc").style.pointerEvents = "none"; 
 document.getElementById("unmark2").checked = true; //kid gave right answer 
 enableNext2_money();
 }
@@ -666,8 +696,8 @@ document.f2.a.src="/assets/images/s17.JPG";
 document.f2.b.src="/assets/images/s25.JPG";
 
 document.f2.rw1.src="/assets/images/yay_bunny2.gif";
-document.getElementById("b").style.pointerEvents = "none";  
-document.getElementById("a").style.pointerEvents = "none"; 
+document.getElementById("bb").style.pointerEvents = "none";  
+document.getElementById("aa").style.pointerEvents = "none"; 
 document.getElementById("mark2").checked = true; //kid gave right answer 
 enableNext2_money();
 }
@@ -694,8 +724,8 @@ document.f4.b.src="/assets/images/s25.JPG";
 document.f4.c.src="/assets/images/s30.JPG";
 
 document.f4.rw1.src="/assets/images/yay_bunny2.gif";
-document.getElementById("b").style.pointerEvents = "none";  
-document.getElementById("c").style.pointerEvents = "none"; 
+document.getElementById("bbb").style.pointerEvents = "none";  
+document.getElementById("ccc").style.pointerEvents = "none"; 
 document.getElementById("mark3").checked = true; //kid gave right answer 
 enableSubmit_money();	
 }
@@ -708,8 +738,8 @@ document.f4.a.src="/assets/images/s17.JPG";
 document.f4.c.src="/assets/images/s30.JPG";
 
 document.f4.rw1.src="/assets/images/w.gif";
-document.getElementById("a").style.pointerEvents = "none";  
-document.getElementById("c").style.pointerEvents = "none"; 
+document.getElementById("aaa").style.pointerEvents = "none";  
+document.getElementById("ccc").style.pointerEvents = "none"; 
 document.getElementById("unmark3").checked = true; //kid gave right answer 
 enableSubmit_money();	
 }
@@ -722,8 +752,8 @@ document.f4.a.src="/assets/images/s17.JPG";
 document.f4.b.src="/assets/images/s25.JPG";
 
 document.f4.rw1.src="/assets/images/w.gif";
-document.getElementById("b").style.pointerEvents = "none";  
-document.getElementById("a").style.pointerEvents = "none"; 
+document.getElementById("bbb").style.pointerEvents = "none";  
+document.getElementById("aaa").style.pointerEvents = "none"; 
 document.getElementById("unmark3").checked = true; //kid gave right answer 
 enableSubmit_money();	
 }

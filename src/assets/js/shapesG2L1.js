@@ -55,7 +55,7 @@ document.f1.clip3.src="/assets/images/b_triangle.JPG";
 document.f1.leaf1.src="/assets/images/trans.svg";
 document.f1.leaf2.src="/assets/images/a_square.JPG";
 document.f1.rw3.src="/assets/images/w.gif";
-document.getElementById("a_sqa").style.pointerEvents = "none";
+document.getElementById("b_tri").style.pointerEvents = "none";
 document.getElementById("unmark3").checked = true; //kid gave wrong answer 
 enableSubmit_Shapes2();
 
@@ -66,7 +66,7 @@ document.f1.clip3.src="/assets/images/a_square.JPG";
 document.f1.leaf2.src="/assets/images/trans.svg";
 document.f1.leaf1.src="/assets/images/b_triangle.JPG";
 document.f1.rw3.src="/assets/images/yay_bunny2.gif";
-document.getElementById("b_tri").style.pointerEvents = "none";  
+document.getElementById("a_sqa").style.pointerEvents = "none";  
 document.getElementById("mark3").checked = true; //kid gave right answer 
 enableSubmit_Shapes2();
 }
