@@ -43,17 +43,17 @@ if (element3.checked)
 
 
 
-  //  let username = localStorage.getItem('uname');
-  //   this.gamesService.submitGame({    
-  //     completed_games : [
-  //     {
-  //     game_id : "m22",
-  //     marks : total6,
-  //     time_spent : time,
-  //     emotions: this.child.emotions,
-  //   max_idle_time :  clicksarray
-  //     }
-  //   ]},username).subscribe(res=>{console.log("success")}, err=>{console.log("error")});
+   let username = localStorage.getItem('uname');
+    this.gamesService.submitGame({    
+      completed_games : [
+      {
+      game_id : "m22",
+      marks : total6,
+      time_spent : time,
+      emotions: this.child.emotions,
+    max_idle_time :  clicksarray
+      }
+    ]},username).subscribe(res=>{console.log("success")}, err=>{console.log("error")});
 
 var chk = document.querySelectorAll('input[type="checkbox"]:checked').length;
 if (chk==3){

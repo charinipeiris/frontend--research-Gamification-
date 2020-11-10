@@ -26,26 +26,36 @@ function showpages_count_intro(page){
 function testcountintro1(){
     document.f1.txt1.value="එක";
     document.f2.clip1.src="/assets/images/1.gif";
+    var myAudio = new Audio('/assets/audio/a1.aac');
+    myAudio.play();
 }
 
 function testcountintro2(){
     document.f1.txt1.value="දෙක";
     document.f2.clip1.src="/assets/images/2.gif";
+    var myAudio = new Audio('/assets/audio/a2.aac');
+    myAudio.play();
 }
 
 function testcountintro3(){
     document.f1.txt1.value="තුන";
     document.f2.clip1.src="/assets/images/3.gif";
+    var myAudio = new Audio('/assets/audio/a3.aac');
+    myAudio.play();
 }
 
 function testcountintro4(){
     document.f1.txt1.value="හතර";
     document.f2.clip1.src="/assets/images/4.gif";
+    var myAudio = new Audio('/assets/audio/a4.aac');
+    myAudio.play();
 }
 
 function testcountintro5(){
     document.f1.txt1.value="පහ";
     document.f2.clip1.src="/assets/images/5.gif";
+    var myAudio = new Audio('/assets/audio/a5.aac');
+    myAudio.play();
 }
 //---------------- counting game - garade 1 level 1--------------//
 
