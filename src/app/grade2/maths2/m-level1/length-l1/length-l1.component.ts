@@ -50,17 +50,17 @@ if (element4.checked)
 
 
 
-   let username = localStorage.getItem('uname');
-    this.gamesService.submitGame({    
-      completed_games : [
-      {
-      game_id : "m12",
-      marks : total6,
-      time_spent : time,
-      emotions: this.child.emotions,
-    max_idle_time :  clicksarray
-      }
-    ]},username).subscribe(res=>{console.log("success")}, err=>{console.log("error")});
+  //  let username = localStorage.getItem('uname');
+  //   this.gamesService.submitGame({    
+  //     completed_games : [
+  //     {
+  //     game_id : "m12",
+  //     marks : total6,
+  //     time_spent : time,
+  //     emotions: this.child.emotions,
+  //   max_idle_time :  clicksarray
+  //     }
+  //   ]},username).subscribe(res=>{console.log("success")}, err=>{console.log("error")});
 
 
 

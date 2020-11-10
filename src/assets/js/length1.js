@@ -438,7 +438,7 @@ function startgame_length(){
     
         document.f4.rw2.src="/assets/images/yay_bunny2.gif";
         document.getElementById("b1x").style.pointerEvents = "none";
-        document.getElementById("b2x").style.pointerEvents = "none";
+        document.getElementById("b5x").style.pointerEvents = "none";
         document.getElementById("mark4").checked = true; //kid gave wrong answer 
         enableSubmit_lengthG1L2();
         }
@@ -446,8 +446,8 @@ function startgame_length(){
         function test12_len()
         {
         document.f4.rw2.src="/assets/images/w.gif";
-        document.getElementById("b2x").style.pointerEvents = "none";
         document.getElementById("b1x").style.pointerEvents = "none";
+        document.getElementById("b2x").style.pointerEvents = "none";
         document.getElementById("unmark4").checked = true; //kid gave wrong answer 
         enableSubmit_lengthG1L2();
         }
