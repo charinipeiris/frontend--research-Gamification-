@@ -24,27 +24,32 @@
 <div class="container">
   <div class="container form-group" style="margin-bottom: 6%;">
     <div class="d-flex justify-content-center align-content-center flex-wrap">
-      <h2>Signup</h2>
+      <!-- <h2>Student Signup</h2> -->
     </div>
   </div>
 
-  <div class="jumbotron vertical-center" style="padding-bottom: 32px; padding-top: 32px;">
+  <div class="jumbotron vertical-center" style="border-radius:10px;border: 5px solid #88733a;background-color:#ddcc9d;padding-bottom: 32px; padding-top: 32px; margin-top:-50px">
 
     <form focusInvalidInput class="form-horizontal" [formGroup]="registerForm">
       <fieldset>
 
         <div *ngIf="form1">
-          <p class="lead">Fill the following information regarding the student</p>
+          <img src="/assets/images/wood_login.png" style="height: 120px; width:550px">
+          <h3 style="color: rgb(36, 20, 3); font-family: Holtwood One SC, serif; margin-top: -90px; margin-left: 130px;">Student Signup</h3>
+          <br>
+          <br>
+          <p class="lead" style="font-family:'Poppins', sans-serif;"><b>Fill the following information regarding the student (ශිෂ්‍යයා පිළිබඳ පහත තොරතුරු පුරවන්න)</b></p>
           <hr class="my-4">
+          <img src="/assets/images/4019700.png" style="height: 250px; position: absolute; margin-left: 500px; margin-top: -40px;">
           <div class="control-group">
             <!-- StudentName -->
-            <label class="control-label" for="studentName">Student Name</label>
+            <label style="font-family:'Poppins', sans-serif;"class="control-label" for="studentName">Student Name (ශිෂ්‍යාගේ නම)</label>
             <div class="controls">
               <div class="form-group">
                 <input type="text" class="form-control" placeholder="" aria-label="studentName"
                   aria-describedby="basic-addon1" formControlName="studentname" autofocus
                   ng-class="{true:'focus',false:'blur'}[isFocused]" ng-focus="isFocused=true" ng-blur="isFocused=false">
-                <p *ngIf="isValid('studentname')" class="help-block  text-danger">Student's name must not be empty</p>
+                <p *ngIf="isValid('studentname')" class="help-block  text-danger">Student's name must not be empty (ශිෂ්‍යයාගේ නම ඇතුලත් කරන්න)</p>
 
               </div>
 
@@ -55,17 +60,17 @@
 
           <div class="control-group" style="margin-bottom: 2%;margin-top: 2%;">
             <!-- grade -->
-            <label class="control-label" for="grade">Grade</label>
+            <label style="font-family:'Poppins', sans-serif;" class="control-label" for="grade">Grade (ශ්‍රේණිය)</label>
             <div class="controls">
               <div class="form-group">
 
                 <select class="form-control" id="grade" formControlName="grade" name="grade"
                   (ngModelChange)="onChange($event)" required #grade>
                   <option selected="selected" disabled>Choose...</option>
-                  <option value="Grade 1">Grade 1</option>
-                  <option value="Grade 2">Grade 2</option>
+                  <option value="Grade 1">Grade 1 (1 ශ්‍රේණිය)</option>
+                  <option value="Grade 2">Grade 2 (2 ශ්‍රේණිය)</option>
                 </select>
-                <p *ngIf="gradeSelected" class="help-block text-danger">Grade Should not be blank</p>
+                <p *ngIf="gradeSelected" class="help-block text-danger">Grade Should not be blank (ශ්‍රේණිය ඇතුලත් කරන්න)</p>
 
               </div>
             </div>
@@ -74,20 +79,20 @@
           <div class="control-group" style="text-align: center;">
             <!-- Button -->
             <div class="controls">
-              <button #buttonRef1 class="btn btn-primary float-right mybtn btn-lg"
+              <button #buttonRef1 class="btn btn-success float-right mybtn btn-lg"
                 (click)="next('buttonRef1')">Next</button>
 
 
             </div>
           </div>
         </div>
-        <div *ngIf="form2">
-          <p class="lead">Face the student's face in front of the camera for face identification
-            <button class="btn btn-primary float-right" (click)="back()">
+        <div *ngIf="form2" style="margin-top:-10px">
+          <p class="lead" style="font-family:'Poppins', sans-serif;"><b>Face the student's face in front of the camera for face identification </b>
+            <button class="btn btn-success float-right" (click)="back()">
               <fa-icon [icon]="faChevronLeft"></fa-icon>
-              
             </button>
           </p>
+          <p><b>(අනන්‍යතාවය තහවුරු කරගැනීමට දරුවාගේ මුහුණ කැමරාව වෙත යොමු කරන්න)</b></p>
           <hr class="my-4">
 
           <div class="card text-center" style="width: 50%;">
@@ -106,7 +111,7 @@
           <div class="control-group" style="margin-top: 2%;">
             <!-- Button -->
             <div class="controls">
-              <button #buttonRef2 class="btn btn-primary float-right mybtn btn-lg"
+              <button #buttonRef2 style="margin-top:-50px;"class="btn btn-success float-right mybtn btn-lg"
                 (click)="next('buttonRef2')">Next</button>
 
             </div>
@@ -115,8 +120,12 @@
         <div *ngIf="form3">
 
           <div class="control-group" style="margin-top: 2%;">
+            <img src="/assets/images/wood_login.png" style="height:120px; width:550px;margin-top:-30px">
+            <h3 style="color: rgb(36, 20, 3);font-family: Holtwood One SC, serif; ;margin-top: -90px; margin-left:135px;">Parent Signup</h3>
+            <br>
+            <br>
             <!-- Username -->
-            <label class="control-label" for="username">Username</label>
+            <label style="font-family:'Poppins', sans-serif;" class="control-label" for="username">Username</label>
             <div class="controls">
               <div class="form-group">
                 <input type="text" id="username" name="username" placeholder="" class="form-control"
@@ -132,7 +141,7 @@
 
           <div class="control-group" style="margin-top: 2%;">
             <!-- Password-->
-            <label class="control-label" for="password">Password</label>
+            <label style="font-family:'Poppins', sans-serif;" class="control-label" for="password">Password</label>
             <div class="controls">
               <div class="form-group">
                 <input type="password" id="password" name="password" placeholder="" class="form-control"
@@ -149,7 +158,7 @@
 
           <div class="control-group" style="margin-top: 2%;">
             <!-- Password -->
-            <label class="control-label" for="password_confirm">Password (Confirm)</label>
+            <label style="font-family:'Poppins', sans-serif;" class="control-label" for="password_confirm">Password (Confirm)</label>
             <div class="controls">
               <div class="form-group">
                 <input type="password" id="password_confirm" name="password_confirm" placeholder="" class="form-control"
@@ -169,7 +178,7 @@
             <div class="controls">
               <button type="button" class="btn btn-danger mybtn btn-lg" data-toggle="modal"
                 data-target="#exampleModalCenter">Cancel</button>
-              <button type="button" class="btn btn-primary float-right mybtn btn-lg" data-toggle="modal"
+              <button type="button" class="btn btn-success float-right mybtn btn-lg" data-toggle="modal"
                 (click)="isSubmitted()" data-target="#exampleModal">Submit</button>
 
             </div>
@@ -178,14 +187,15 @@
               <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Welcome !!</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Welcome (සුභ පැතුම්)</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                       <span aria-hidden="true">&times;</span>
                     </button>
                   </div>
                   <div class="modal-body">
 
-                    You have registered successfully! Please log in again!
+                    <p>You have registered successfully! Please log in again!</p>
+                    <p>ඔබ සාර්ථකව ලියාපදිංචි වී ඇත! කරුණාකර නැවත ලොග් වන්න!</p>
                   </div>
 
                   <div class="modal-footer">
@@ -226,8 +236,3 @@
 
 
 </div>
-<footer>
-  <div class="card-footer text-muted fixed-bottom text-center bg-light border-primary" style="height: 6%;">
-    <p>Copyrights<span>&#169;</span>2020</p>
-  </div>
-</footer>
