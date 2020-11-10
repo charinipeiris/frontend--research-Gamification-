@@ -53,50 +53,49 @@ export class MathsComponent implements OnInit {
   });
 
 
-  // var username = localStorage.getItem("uname");
-  // this.gameService.getStudentDetails(username).subscribe((data:any) => {
-  //   this.mL1 = data.mL1;
-  //   this.mL2 = data.mL2;
-  //   if (this.mL1 == 0){
-  //     if (this.btn1 == 4)
+  var username = localStorage.getItem("uname");
+  this.gameService.getStudentDetails(username).subscribe((data:any) => {
+    this.mL1 = data.mL1;
+    this.mL2 = data.mL2;
+    if (this.mL1 == 0){
+      if (this.btn1 == 4)
 
-  //    {
+     {
           
-  //         this.gameService.sendEmail({   
-  //             level_completed : [
-  //             {
-  //             grade : "1 ශ්‍රේණිය",
-  //             subject : "ගණිතය",
-  //             games : ["M11","M12", "M13", "M14"],
-  //             level : "1",
-  //             column : "1"
-  //             }
-  //           ]},username).subscribe(res=>{console.log("success")}, err=>{console.log("error")});
-  //       }
+          this.gameService.sendEmail({   
+              level_completed : [
+              {
+              grade : "1 ශ්‍රේණිය",
+              subject : "ගණිතය",
+              games : ["M11","M12", "M13", "M14"],
+              level : "1",
+              column : "1"
+              }
+            ]},username).subscribe(res=>{console.log("success")}, err=>{console.log("error")});
+        }
       
-  //   }
+    }
 
+console.log(this.btn2);
+    if (this.mL2 == 0){
+      if (this.btn2 == 5)
 
-    // if (this.mL2 == 0){
-    //   if (this.btn2 == 5)
-
-
-    //  {
+     {
           
-    //       this.gameService.sendEmail({   
-    //           level_completed : [
-    //           {
-    //           grade : "1 ශ්‍රේණිය",
-    //           subject : "ගණිතය",
-    //           games : ["M21","M22", "M23", "M24", "M25"],
-    //           level : "2",
-    //           column : "2"
-    //           }
-    //         ]},username).subscribe(res=>{console.log("success")}, err=>{console.log("error")});
-    //     }
+          this.gameService.sendEmail({   
+              level_completed : [
+              {
+              grade : "1 ශ්‍රේණිය",
+              subject : "ගණිතය",
+              games : ["M21","M22", "M23", "M24", "M25"],
+              level : "2",
+              column : "2"
+              }
+            ]},username).subscribe(res=>{console.log("success")}, err=>{console.log("error")});
+        }
       
-    // }
-  // }, (error) => {});
+    }
+  }, (error) => {});
 
   }
   
