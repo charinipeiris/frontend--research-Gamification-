@@ -261,7 +261,7 @@ $(document).ready(function(){
   
       document.f1.rw2.src="/assets/images/yay_bunny2.gif";
       document.getElementById("b1").style.pointerEvents = "none";
-      document.getElementById("b2").style.pointerEvents = "none";
+      document.getElementById("b5").style.pointerEvents = "none";
       document.getElementById("mark2").checked = true; //kid gave wrong answer 
       enableSubmit_money()
       }
@@ -274,8 +274,8 @@ $(document).ready(function(){
       document.f1.rect.src="/assets/images/1.jpg";
   
       document.f1.rw2.src="/assets/images/w.gif";
-      document.getElementById("b2").style.pointerEvents = "none";
       document.getElementById("b1").style.pointerEvents = "none";
+      document.getElementById("b2").style.pointerEvents = "none";
       document.getElementById("unmark2").checked = true; //kid gave wrong answer 
       enableSubmit_money()
       }
