@@ -3,6 +3,17 @@
   //---------------------level 1-----------------------------
   
   //----------------length intro grade 1 level 1-----------------
+
+  //Instruction audio
+  $(document).ready(function(){
+    $(document).on('click',"#click-1",function () {
+    var audio = document.getElementById("click-audio-1");
+    if (audio.paused) audio.play();
+    else audio.pause();
+});
+});
+
+
   function testlength1(){
     document.f1.txt1.value="මම උසයි";
     document.f1.txt2.value="";
@@ -370,7 +381,7 @@ function startgame_length(){
     
         document.f3.rw2.src="/assets/images/yay_bunny2.gif";
         document.getElementById("b1").style.pointerEvents = "none";
-        document.getElementById("b2").style.pointerEvents = "none";
+        document.getElementById("b5").style.pointerEvents = "none";
         document.getElementById("mark2").checked = true; //kid gave wrong answer 
         enableNext_lengthG1L2();
         }
@@ -378,8 +389,8 @@ function startgame_length(){
         function test6_len()
         {
         document.f3.rw2.src="/assets/images/w.gif";
-        document.getElementById("b2").style.pointerEvents = "none";
         document.getElementById("b1").style.pointerEvents = "none";
+        document.getElementById("b2").style.pointerEvents = "none";
         document.getElementById("unmark2").checked = true; //kid gave wrong answer 
         enableNext_lengthG1L2()();
         }

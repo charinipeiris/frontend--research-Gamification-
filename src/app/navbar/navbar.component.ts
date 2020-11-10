@@ -16,7 +16,7 @@ export class NavbarComponent implements OnInit {
   message: any;
   marks: number;
   check: number;
-
+grade: number;
   constructor(private loginService: LoginService, private router: Router, private dataService: DataService, private gameService: GamesService) {
   this.marks = -1;
   this.check = 0;
@@ -46,10 +46,12 @@ export class NavbarComponent implements OnInit {
     if (localStorage.getItem('grade') === 'Grade 1') {
       this.grade1 = true;
       this.grade2 = false;
+      this.grade = 1
     }
     if (localStorage.getItem('grade') === 'Grade 2') {
       this.grade1 = false;
       this.grade2 = true;
+      this.grade = 2
     }
 
   }
