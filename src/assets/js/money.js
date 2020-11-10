@@ -564,6 +564,16 @@ function showpages_mon2(page){
 //--------money game  level 2 grade 2 -------------
 //----------------page 1----------------
 
+
+//Audio of the question
+$(document).ready(function(){
+       $(document).on('click',"#question-money-apple",function () {
+       var audio = document.getElementById("quest_audio_money_apple");
+       if (audio.paused) audio.play();
+       else audio.pause();
+       });
+   });
+
 function test1_mono2()
 {
 document.f1.clip1.src="/assets/images/s17.JPG";
@@ -609,6 +619,17 @@ enableNext1_money();
 
 //----------------page 2----------------
 
+
+//Audio of the question
+$(document).ready(function(){
+       $(document).on('click',"#question-money-ball",function () {
+       var audio = document.getElementById("quest_audio_money_ball");
+       if (audio.paused) audio.play();
+       else audio.pause();
+       });
+   });
+
+
 function test4_mono2()
 {
 document.f2.clip1.src="/assets/images/s17.JPG";
@@ -653,6 +674,17 @@ enableNext2_money();
 
 
 //----------------page 3----------------
+
+
+//Audio of the question
+$(document).ready(function(){
+       $(document).on('click',"#question-money-pen",function () {
+       var audio = document.getElementById("quest_audio_money_pen");
+       if (audio.paused) audio.play();
+       else audio.pause();
+       });
+   });
+
 
 function test7_mono2()
 {

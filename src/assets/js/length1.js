@@ -614,6 +614,15 @@ enableSubmit_lengthG1L2();
 
 //--------------------grade 2 level 2 length----------------------/
 
+//Audio of the question
+$(document).ready(function(){
+    $(document).on('click',"#question-volume",function () {
+    var audio = document.getElementById("quest_audio_volume");
+    if (audio.paused) audio.play();
+    else audio.pause();
+    });
+});
+
 
 function test1_len2x()
 {

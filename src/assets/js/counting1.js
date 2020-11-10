@@ -809,6 +809,15 @@ enableSubmit_count();
 
 //-------------------addition01---------
 
+//Audio of the question
+$(document).ready(function(){
+    $(document).on('click',"#question-add",function () {
+    var audio = document.getElementById("quest_audio_add");
+    if (audio.paused) audio.play();
+    else audio.pause();
+    });
+});
+
 function tesadd3()
 {
 document.f1.t3.value=69;
@@ -919,6 +928,15 @@ enableSubmit_count();
 
 
 //-------------------substraction game level2 grade 2----------------
+
+//Audio of the question
+$(document).ready(function(){
+    $(document).on('click',"#question-sub",function () {
+    var audio = document.getElementById("quest_audio_sub");
+    if (audio.paused) audio.play();
+    else audio.pause();
+    });
+});
 
 //-------------------substraction 01---------
 
