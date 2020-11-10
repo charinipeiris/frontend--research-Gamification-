@@ -65,13 +65,21 @@
        </a>
     </li>
 
-     <li *ngIf="checkToken() && marks!= -1" style="margin-inline-start:-30px ">
+     <li *ngIf="checkToken() && marks!= -1 && grade == 1" style="margin-inline-start:-30px ">
         <a> 
          <img src = "/assets/images/star_score3.png" style ="position:absolute;height: 50px; width:50px;margin-top:-20px">
          <span style="margin-inline-start: 30px; background-color: rgb(179, 166, 52);padding-left: 20px; padding-top:5px; padding-right:10px;padding-bottom:5px;border-radius: 10px;border-style:solid; border-color:rgb(110, 102, 23);">
-            {{marks}}  /  100</span> 
+            {{marks}}  /  31</span> 
       </a>
    </li>
+
+   <li *ngIf="checkToken() && marks!= -1 && grade == 2" style="margin-inline-start:-30px ">
+      <a> 
+       <img src = "/assets/images/star_score3.png" style ="position:absolute;height: 50px; width:50px;margin-top:-20px">
+       <span style="margin-inline-start: 30px; background-color: rgb(179, 166, 52);padding-left: 20px; padding-top:5px; padding-right:10px;padding-bottom:5px;border-radius: 10px;border-style:solid; border-color:rgb(110, 102, 23);">
+          {{marks}}  /  42</span> 
+    </a>
+ </li>
 
    <li *ngIf="checkToken() && marks== -1" style="margin-inline-start:-30px ">
       <a> 
