@@ -496,7 +496,26 @@ $(document).ready(function(){
 });
 
 
-//===============================Grade 2================================
+//===============================Grade 2 - Level 1================================
+
+//Audio of the question 1
+$(document).ready(function(){
+    $(document).on('click',"#question-length-g2l1",function () {
+    var audio = document.getElementById("quest_audio_g2l1");
+    if (audio.paused) audio.play();
+    else audio.pause();
+    });
+});
+
+//Audio of the question 2
+$(document).ready(function(){
+    $(document).on('click',"#question-length-g2l1-2",function () {
+    var audio = document.getElementById("quest_audio_g2l1_2");
+    if (audio.paused) audio.play();
+    else audio.pause();
+    });
+});
+
 
 function showpages_lengths(page){
     var p1 = document.getElementById(page).getAttribute("id");
@@ -596,7 +615,7 @@ document.f2.clip2.src="/assets/images/q5.JPG";
 document.f2.rect.src="/assets/images/trans.svg";
 document.f2.sqr.src="/assets/images/q4.JPG";
 document.f2.rw2.src="/assets/images/w.gif";
-document.getElementById("b29").style.pointerEvents = "none";
+document.getElementById("b59").style.pointerEvents = "none";
 document.getElementById("unmark4").checked = true; //kid gave right answer 
 enableSubmit_lengthG1L2();
 }
@@ -606,7 +625,7 @@ document.f2.clip2.src="/assets/images/q4.JPG";
 document.f2.sqr.src="/assets/images/trans.svg";
 document.f2.rect.src="/assets/images/q5.JPG";
 document.f2.rw2.src="/assets/images/yay_bunny2.gif";
-document.getElementById("b59").style.pointerEvents = "none";
+document.getElementById("b29").style.pointerEvents = "none";
 document.getElementById("mark4").checked = true; //kid gave wrong answer 
 enableSubmit_lengthG1L2();
 
