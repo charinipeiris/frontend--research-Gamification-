@@ -13,13 +13,16 @@ export class Level2Component implements OnInit {
   btn3: number;
   btn4: number;
   btn5: number;
-  
+  nxtBtn : number;
+  levelGames2 = [];
   constructor(private gameService: GamesService) {
     this.btn1 = 0;
     this.btn2 = 0;
     this.btn3 = 0;
     this.btn4 = 0;
     this.btn5 = 0;
+    this.nxtBtn = 0;
+    this.levelGames2 =["M21","M22", "M23", "M24","M25"];
    }
 
   ngOnInit(): void {
@@ -42,6 +45,17 @@ export class Level2Component implements OnInit {
           if (this.GamesArray.indexOf("M25") !== -1){
             this.btn5 = this.btn5 + 1
             }
+
+
+            for (var i in this.GamesArray){
+              for (var j in this.levelGames2) {
+                 // console.log(this.levelGames[j]); 
+                 if((this.levelGames2[j])==(this.GamesArray[i])) {
+                  //  console.log(this.GamesArray[i]);
+                   this.nxtBtn = this.nxtBtn + 1;
+                 }
+               }
+             }
 
     }, (error) => {
       

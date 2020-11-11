@@ -467,6 +467,7 @@ function enableSubmit_lengthG1L2(){
     console.log(chk);
     if (chk == 4){
          document.getElementById("final_button").style.display="block";
+         document.getElementById("arrow1").style.display="block";
         }
     else{
         document.getElementById("final_button").style.display="none";
