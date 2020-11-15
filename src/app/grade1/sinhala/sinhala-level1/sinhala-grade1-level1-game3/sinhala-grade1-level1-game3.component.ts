@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { GamesService } from "../../../../services/games.service";
+import { EmotiondetectorComponent } from '../../../../emotiondetector/emotiondetector.component';
 
 @Component({
   selector: 'app-sinhala-grade1-level1-game3',
@@ -7,44 +9,51 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SinhalaGrade1Level1Game3Component implements OnInit {
   totalmarks: any;
-  constructor() { 
+  @ViewChild(EmotiondetectorComponent) child: EmotiondetectorComponent;
+  constructor(private gamesService: GamesService) {
+
   }
   ngOnInit(){   
 }
 
 markstot_sinhala1(){
+  var time = document.getElementById("display").innerHTML;
+  // console.log(time);
+  document.getElementById("time-back").style.visibility = "hidden";
+  var clicksarray = document.getElementById("clickarray").innerHTML ;
+
+
 var total1 = 0;
 
 let element1 = <HTMLInputElement> document.getElementById("mark1");  
 let element2 = <HTMLInputElement> document.getElementById("mark2");  
 let element3 = <HTMLInputElement> document.getElementById("mark3");  
 
-let element4 = <HTMLInputElement> document.getElementById("unmark1");  
-let element5 = <HTMLInputElement> document.getElementById("unmark2");  
-let element6 = <HTMLInputElement> document.getElementById("unmark3");  
-
 if (element1.checked ){
   total1 = total1 + 1;
  }
-else if ((!element1.checked) && (!element4.checked)){
-  // document.getElementById('alert1').style.visibility = "visible";
-}
 
 if (element2.checked)
     total1 = total1 + 1;
 
-else if  ((!element2.checked) && (!element5.checked)){
-  // document.getElementById('alert2').style.visibility = "visible";
-
-}
 if (element3.checked)
     total1 = total1 + 1;
 
-else if  ((!element3.checked) && (!element6.checked)){
-  // document.getElementById('alert3').style.visibility = "visible";
-}
 
-console.log(total1);
+let username = localStorage.getItem('uname');
+this.gamesService.submitGame({    
+  completed_games : [
+  {
+  game_id : "S11",
+  marks : total1,
+  time_spent : time,
+  emotions: this.child.emotions,
+  max_idle_time :  clicksarray
+  }
+]},username).subscribe(res=>{console.log("success")}, err=>{console.log("error")});
+
+
+
 var chk = document.querySelectorAll('input[type="checkbox"]:checked').length;
 if (chk==3){
  
@@ -115,7 +124,7 @@ else if(total1 == 0){
 else {
   document.getElementById('alert').style.visibility = "visible";
 }
-
+this.child.endgame(); 
 }
 
 }

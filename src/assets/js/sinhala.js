@@ -12,6 +12,7 @@ function show_sinhalaL1(Page1, Page2) {
   document.f1.rw1.src="/assets/images/yay_bunny2.gif";
   document.getElementById("crychild").style.pointerEvents = "none";
   document.getElementById("mark1").checked = true; //kid gave right answer 
+  enableSubmit();
   
   }
   function test2_sinhala()
@@ -22,6 +23,7 @@ function show_sinhalaL1(Page1, Page2) {
   document.f1.rw1.src="/assets/images/w.gif";
   document.getElementById("runchild").style.pointerEvents = "none";
   document.getElementById("unmark1").checked = true; //kid gave wrong answer 
+  enableSubmit();
   }
   
   function test3_sinhala()
@@ -32,6 +34,7 @@ function show_sinhalaL1(Page1, Page2) {
   document.f1.rw2.src="/assets/images/yay_bunny2.gif";
   document.getElementById("blamemother").style.pointerEvents = "none";
   document.getElementById("mark2").checked = true; //kid gave right answer 
+  enableSubmit();
   
   }
   function test4_sinhala()
@@ -42,6 +45,7 @@ function show_sinhalaL1(Page1, Page2) {
   document.f1.rw2.src="/assets/images/w.gif";
   document.getElementById("cookmother").style.pointerEvents = "none";
   document.getElementById("unmark2").checked = true; //kid gave wrong answer 
+  enableSubmit();
   }
   
   function test5_sinhala()
@@ -52,7 +56,7 @@ function show_sinhalaL1(Page1, Page2) {
   document.f1.rw3.src="/assets/images/w.gif";
   document.getElementById("moon").style.pointerEvents = "none";
   document.getElementById("unmark3").checked = true; //kid gave wrong answer 
-  
+  enableSubmit();
   }
   function test6_sinhala()
   {
@@ -62,6 +66,7 @@ function show_sinhalaL1(Page1, Page2) {
   document.f1.rw3.src="/assets/images/yay_bunny2.gif";
   document.getElementById("sun").style.pointerEvents = "none";  
   document.getElementById("mark3").checked = true; //kid gave right answer 
+  enableSubmit();
   }
   
   
