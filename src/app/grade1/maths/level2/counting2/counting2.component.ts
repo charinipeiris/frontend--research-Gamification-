@@ -50,7 +50,7 @@ if (element3.checked)
       marks : totalm,
       time_spent : time,
       emotions: this.child.emotions,
-      max_idle_time :  clicksarray
+     max_idle_time :  clicksarray
       }
     ]},username).subscribe(res=>{console.log("success")}, err=>{console.log("error")});
 
