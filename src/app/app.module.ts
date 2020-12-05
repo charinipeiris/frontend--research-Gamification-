@@ -46,15 +46,6 @@ import { Additions2Component } from './grade1/maths/level2/additions2/additions2
 import { SinhalaLevel1Component } from './grade1/sinhala/sinhala-level1/sinhala-level1.component';
 import { SinhalaLevel2Component } from './grade1/sinhala/sinhala-level2/sinhala-level2.component';
 
-import { SinhalaG1L2G1Component } from './grade1/sinhala/sinhala-level2/sinhala-g1-l2-g1/sinhala-g1-l2-g1.component';
-import { SinhalaG1L2G2Component } from './grade1/sinhala/sinhala-level2/sinhala-g1-l2-g2/sinhala-g1-l2-g2.component';
-import { SinhalaG1L2G3Component } from './grade1/sinhala/sinhala-level2/sinhala-g1-l2-g3/sinhala-g1-l2-g3.component';
-import { SinhalaG1L2G4Component } from './grade1/sinhala/sinhala-level2/sinhala-g1-l2-g4/sinhala-g1-l2-g4.component';
-
-import { SinhalaGrade1Level1Game4Component } from './grade1/sinhala/sinhala-level1/sinhala-grade1-level1-game4/sinhala-grade1-level1-game4.component';
-import { SinhalaGrade1Level1Game3Component } from './grade1/sinhala/sinhala-level1/sinhala-grade1-level1-game3/sinhala-grade1-level1-game3.component';
-import { SinhalaGrade1Level1Game2Component } from './grade1/sinhala/sinhala-level1/sinhala-grade1-level1-game2/sinhala-grade1-level1-game2.component';
-import { SinhalaGrade1Level1Game1Component } from './grade1/sinhala/sinhala-level1/sinhala-grade1-level1-game1/sinhala-grade1-level1-game1.component';
 import { EnvLevel2Component } from './grade1/environment/env-level2/env-level2.component';
 import { EnvLevel1Component } from './grade1/environment/env-level1/env-level1.component';
 
@@ -96,6 +87,19 @@ import { EmotiondetectorComponent } from './emotiondetector/emotiondetector.comp
 import { AchievementsComponent } from './achievements/achievements.component';
 import { LeaderboardComponent } from './leaderboard/leaderboard.component';
 import { NgxPaginationModule } from 'ngx-pagination';
+
+import { SentencesComponent } from './grade1/sinhala/sinhala-level1/sentences/sentences.component';
+import { WordsComponent } from './grade1/sinhala/sinhala-level1/words/words.component';
+import {PoemsComponent} from './grade1/sinhala/sinhala-level1/poems/poems.component';
+import { Poems1Component } from './grade1/sinhala/sinhala-level2/poems1/poems1.component';
+import { Words1Component } from './grade1/sinhala/sinhala-level2/words1/words1.component';
+import { Sentences1Component } from './grade1/sinhala/sinhala-level2/sentences1/sentences1.component';
+import { L2Sentences2Component } from './grade2/sinhala2/sinhala-level2/l2-sentences2/l2-sentences2.component';
+import { L2Words2Component } from './grade2/sinhala2/sinhala-level2/l2-words2/l2-words2.component';
+import { L2Poems2Component } from './grade2/sinhala2/sinhala-level2/l2-poems2/l2-poems2.component';
+import { L1Poems1Component } from './grade2/sinhala2/sinhala-level1/l1-poems1/l1-poems1.component';
+import { L1Words1Component } from './grade2/sinhala2/sinhala-level1/l1-words1/l1-words1.component';
+import { L1Sentences1Component } from './grade2/sinhala2/sinhala-level1/l1-sentences1/l1-sentences1.component';
 
 
 
@@ -155,16 +159,32 @@ const appRoutes:Routes = [
   {path:'grade1/sinhala',component:SinhalaComponent},
     //-----sinhla grade1 level1--
   {path:'grade1/sinhala/level1',component:SinhalaLevel1Component },
-  {path:'grade1/sinhala/level1/game1',component:SinhalaGrade1Level1Game1Component},
-  {path:'grade1/sinhala/level1/game2',component:SinhalaGrade1Level1Game2Component},
-  {path:'grade1/sinhala/level1/game3',component:SinhalaGrade1Level1Game3Component},
-  {path:'grade1/sinhala/level1/game4',component:SinhalaGrade1Level1Game4Component},
- //-----sinhla grade1 level2--
+  {path:'grade1/sinhala/level1/game1',component:PoemsComponent},
+  {path:'grade1/sinhala/level1/game2',component:WordsComponent},
+  {path:'grade1/sinhala/level1/game3',component:Sentences1Component},
+  //{path:'grade1/sinhala/level1/game4',component:},
+
+ //-----sinhala grade1 level2--
+ {path:'grade2/sinhala/level2',component: SinhalaLevel2Component},
+ {path:'grade2/sinhala/level2/game1',component: Poems1Component},
+ {path:'grade2/sinhala/level2/game2',component:Words1Component},
+ {path:'grade2/sinhala/level2/game3',component:Sentences1Component},
+
+
+  //-----sinhla grade2 level1--
+  {path:'grade2/sinhala/level1',component:SinhalaLevel1Component },
+  {path:'grade2/sinhala/level1/game1',component:PoemsComponent},
+  {path:'grade2/sinhala/level1/game2',component:WordsComponent},
+  {path:'grade2/sinhala/level1/game3',component:Sentences1Component},
+  //{path:'grade1/sinhala/level1/game4',component:},
+
+ //-----sinhla grade2 level2--
  {path:'grade1/sinhala/level2',component: SinhalaLevel2Component},
- {path:'grade1/sinhala/level2/game1',component:SinhalaG1L2G1Component},
- {path:'grade1/sinhala/level2/game2',component:SinhalaG1L2G2Component},
- {path:'grade1/sinhala/level2/game3',component:SinhalaG1L2G3Component},
- {path:'grade1/sinhala/level2/game4',component:SinhalaG1L2G4Component},
+ {path:'grade1/sinhala/level2/game1',component: Poems1Component},
+ {path:'grade1/sinhala/level2/game2',component:Words1Component},
+ {path:'grade1/sinhala/level2/game3',component:Sentences1Component},
+
+ 
   //-----environment 
   {path:'grade1/environment',component:EnvironmentComponent}, 
   //----environment grade1 level1--
@@ -216,14 +236,6 @@ const appRoutes:Routes = [
     Additions2Component,
     SinhalaLevel1Component,
     SinhalaLevel2Component,
-    SinhalaG1L2G1Component,
-    SinhalaG1L2G2Component,
-    SinhalaG1L2G3Component,
-    SinhalaG1L2G4Component,
-    SinhalaGrade1Level1Game4Component,
-    SinhalaGrade1Level1Game3Component,
-    SinhalaGrade1Level1Game2Component,
-    SinhalaGrade1Level1Game1Component,
     EnvLevel2Component,
     EnvLevel1Component,
     EnvGrade1Level1Game1Component,
@@ -256,6 +268,17 @@ const appRoutes:Routes = [
     EmotiondetectorComponent,
     AchievementsComponent,
     LeaderboardComponent,
+    SentencesComponent,
+    WordsComponent,
+    Poems1Component,
+    Words1Component,
+    Sentences1Component,
+    L2Sentences2Component,
+    L2Words2Component,
+    L2Poems2Component,
+    L1Poems1Component,
+    L1Words1Component,
+    L1Sentences1Component,
 
    
     
