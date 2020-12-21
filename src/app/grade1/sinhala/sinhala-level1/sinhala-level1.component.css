@@ -1,14 +1,6 @@
 @import "~bootstrap/dist/css/bootstrap.css";
  .bg{
-    height:40em; 
-    background-size:cover; 
-    background-image:url(/assets/images/1478.jpg);
-    margin-top:-50px;
-    background-image: url(/assets/images/1478.jpg);
-  
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
+   
     
 
 
