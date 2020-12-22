@@ -1,3 +1,6 @@
+//---------------------Grade 1-------------------------
+//------------level 1----------------------------------------
+//--------------Grade 1 level 1 -Sentences--------------------------
 
 function show_sinhalaL1(Page1, Page2) {
     document.getElementById(Page1).style.display='block';
@@ -79,5 +82,10 @@ function show_sinhalaL1(Page1, Page2) {
   });
   
   
-//Grade 1 Level 1 - Poems
+//--------------------------------Grade 1 Level 1 - Poems-----------------
 
+// -------------------------------Grade 1 Level 1 - words -----------------------
+
+
+
+//-----------------------------------Grade 2---------------------------
