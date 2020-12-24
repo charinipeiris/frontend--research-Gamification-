@@ -85,7 +85,147 @@ function show_sinhalaL1(Page1, Page2) {
 //--------------------------------Grade 1 Level 1 - Poems-----------------
 
 // -------------------------------Grade 1 Level 1 - words -----------------------
+//q1
+function wordgame1()
+  {
+  document.f1.clip1.src="/assets/images/ga.png";
+  document.f1.clip3.src="/assets/images/ga.png";
+  document.f1.w1.src="/assets/images/trans.svg";
+  document.f1.w2.src="/assets/images/ma.png";
+  document.f1.rw1.src="/assets/images/yay_bunny2.gif";
+  document.getElementById("mark1").checked = true; //kid gave right answer 
+  
+  }
+
+  function wordgame2()
+  {
+  document.f1.clip1.src="/assets/images/ma.png";
+  document.f1.clip3.src="/assets/images/sponge.png";
+  document.f1.w2.src="/assets/images/trans.svg";
+  document.f1.w1.src="/assets/images/ga.png";
+  document.f1.rw1.src="/assets/images/w.gif";
+
+  document.getElementById("unmark1").checked = true; //kid gave false answer 
+  
+  }
+
+  function wordgame3()
+  {
+  document.f1.clip2.src="/assets/images/ii.png";
+  document.f1.clip4.src="/assets/images/ii.png";
+  document.f1.w3.src="/assets/images/trans.svg";
+  document.f1.w4.src="/assets/images/sa.png";
+  document.f1.rw2.src="/assets/images/w.gif";
+  document.getElementById("unmark2").checked = true; //kid gave right answer 
+  
+  }
+
+  function wordgame4()
+  {
+  document.f1.clip2.src="/assets/images/sa.png";
+  document.f1.clip4.src="/assets/images/sa.png";
+  document.f1.w4.src="/assets/images/trans.svg";
+  document.f1.w3.src="/assets/images/ii.png";
+  document.f1.rw2.src="/assets/images/yay_bunny2.gif";
+
+  document.getElementById("mark2").checked = true; //kid gave false answer 
+  
+  }
+  //q2
+
+  function wordgame5()
+  {
+  document.f1.clip5.src="/assets/images/ga.png";
+  document.f1.clip7.src="/assets/images/ga.png";
+  document.f1.w6.src="/assets/images/ma.png";
+  document.f1.w5.src="/assets/images/trans.svg";
+  document.f1.rw3.src="/assets/images/w.gif";
+  document.getElementById("unmark3").checked = true; //kid gave right answer 
+  
+  }
+
+  function wordgame6()
+  {
+  document.f1.clip5.src="/assets/images/ma.png";
+  document.f1.clip7.src="/assets/images/ma.png";
+  document.f1.w5.src="/assets/images/ga.png";
+  document.f1.w6.src="/assets/images/trans.svg";
+  document.f1.rw3.src="/assets/images/yay_bunny2.gif";
+
+  document.getElementById("mark3").checked = true; //kid gave false answer 
+  
+  }
+
+  function wordgame7()
+  {
+  document.f1.clip6.src="/assets/images/ii.png";
+  document.f1.clip8.src="/assets/images/ii.png";
+  document.f1.w8.src="/assets/images/trans.svg";
+  document.f1.w7.src="/assets/images/ii.png";
+  document.f1.rw4.src="/assets/images/w.gif";
+  document.getElementById("unmark4").checked = true; //kid gave right answer 
+  
+  }
+
+  function wordgame8()
+  {
+  document.f1.clip6.src="/assets/images/la.png";
+  document.f1.clip8.src="/assets/images/la.png";
+  document.f1.w8.src="/assets/images/trans.svg";
+  document.f1.w7.src="/assets/images/la.png";
+  document.f1.rw4.src="/assets/images/yay_bunny2.gif";
+
+  document.getElementById("mark4").checked = true; //kid gave false answer 
+  
+  }
 
 
 
+  //q3
+
+  function wordgame9()
+  {
+  document.f1.clip9.src="/assets/images/ii.png";
+  document.f1.clip11.src="/assets/images/ii.png";
+  document.f1.w10.src="/assets/images/ma.png";
+  document.f1.w9.src="/assets/images/trans.svg";
+  document.f1.rw5.src="/assets/images/yay_bunny2.gif";
+  document.getElementById("mark5").checked = true; //kid gave right answer 
+  
+  }
+
+  function wordgame10()
+  {
+  document.f1.clip9.src="/assets/images/ma.png";
+  document.f1.clip11.src="/assets/images/ma.png";
+  document.f1.w9.src="/assets/images/ii.png";
+  document.f1.w10.src="/assets/images/trans.svg";
+  document.f1.rw5.src="/assets/images/w.gif";
+
+  document.getElementById("mark5").checked = true; //kid gave false answer 
+  
+  }
+
+  function wordgame11()
+  {
+  document.f1.clip10.src="/assets/images/ra.png";
+  document.f1.clip12.src="/assets/images/ra.png";
+  document.f1.w11.src="/assets/images/trans.svg";
+  document.f1.w12.src="/assets/images/sa.png";
+  document.f1.rw6.src="/assets/images/yay_bunny2.gif";
+  document.getElementById("mark6").checked = true; //kid gave right answer 
+  
+  }
+
+  function wordgame12()
+  {
+  document.f1.clip10.src="/assets/images/sa.png";
+  document.f1.clip12.src="/assets/images/sa.png";
+  document.f1.w12.src="/assets/images/trans.svg";
+  document.f1.w11.src="/assets/images/ra.png";
+  document.f1.rw6.src="/assets/images/w.gif";
+
+  document.getElementById("mark6").checked = true; //kid gave false answer 
+  
+  }
 //-----------------------------------Grade 2---------------------------
