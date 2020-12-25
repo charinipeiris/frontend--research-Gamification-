@@ -92,7 +92,7 @@ function wordgame1()
   document.f1.clip3.src="/assets/images/ga.png";
   document.f1.w1.src="/assets/images/trans.svg";
   document.f1.w2.src="/assets/images/ma.png";
-  document.f1.rw1.src="/assets/images/yay_bunny2.gif";
+  document.f1.rw1.src="/assets/images/sbob1.png";
   document.getElementById("mark1").checked = true; //kid gave right answer 
   
   }
@@ -100,7 +100,7 @@ function wordgame1()
   function wordgame2()
   {
   document.f1.clip1.src="/assets/images/ma.png";
-  document.f1.clip3.src="/assets/images/sponge.png";
+  document.f1.clip3.src="/assets/images/ma.png";
   document.f1.w2.src="/assets/images/trans.svg";
   document.f1.w1.src="/assets/images/ga.png";
   document.f1.rw1.src="/assets/images/w.gif";
@@ -126,7 +126,7 @@ function wordgame1()
   document.f1.clip4.src="/assets/images/sa.png";
   document.f1.w4.src="/assets/images/trans.svg";
   document.f1.w3.src="/assets/images/ii.png";
-  document.f1.rw2.src="/assets/images/yay_bunny2.gif";
+  document.f1.rw2.src="/assets/images/sbob1.png";
 
   document.getElementById("mark2").checked = true; //kid gave false answer 
   
@@ -150,7 +150,7 @@ function wordgame1()
   document.f1.clip7.src="/assets/images/ma.png";
   document.f1.w5.src="/assets/images/ga.png";
   document.f1.w6.src="/assets/images/trans.svg";
-  document.f1.rw3.src="/assets/images/yay_bunny2.gif";
+  document.f1.rw3.src="/assets/images/sbob1.png";
 
   document.getElementById("mark3").checked = true; //kid gave false answer 
   
@@ -173,7 +173,7 @@ function wordgame1()
   document.f1.clip8.src="/assets/images/la.png";
   document.f1.w8.src="/assets/images/trans.svg";
   document.f1.w7.src="/assets/images/la.png";
-  document.f1.rw4.src="/assets/images/yay_bunny2.gif";
+  document.f1.rw4.src="/assets/images/sbob1.png";
 
   document.getElementById("mark4").checked = true; //kid gave false answer 
   
@@ -189,7 +189,7 @@ function wordgame1()
   document.f1.clip11.src="/assets/images/ii.png";
   document.f1.w10.src="/assets/images/ma.png";
   document.f1.w9.src="/assets/images/trans.svg";
-  document.f1.rw5.src="/assets/images/yay_bunny2.gif";
+  document.f1.rw5.src="/assets/images/sbob1.png";
   document.getElementById("mark5").checked = true; //kid gave right answer 
   
   }
@@ -212,7 +212,7 @@ function wordgame1()
   document.f1.clip12.src="/assets/images/ra.png";
   document.f1.w11.src="/assets/images/trans.svg";
   document.f1.w12.src="/assets/images/sa.png";
-  document.f1.rw6.src="/assets/images/yay_bunny2.gif";
+  document.f1.rw6.src="/assets/images/sbob1.png";
   document.getElementById("mark6").checked = true; //kid gave right answer 
   
   }
