@@ -1,1 +1,281 @@
-<p>words1 works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Sinhala</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body style="background-size:cover;background-image:url(/assets/images/bool1.jpg);">
+   
+<div class="container" class="image" style="height:100% ;width:100%">
+    <br>
+  <div class="row">
+      <div class=" col-sm-3 col-xs-3  col-lg-3">
+        <a href="/grade1/sinhala/level2/" style ='margin-left:60px;color:green;height:50px ;' class="previous button1">&laquo; Previous</a>
+      </div>
+
+     
+
+      <div class="col-sm-6 col-xs-6 col-lg-6">
+
+        <div class="row">
+            <div class="col-sm-3 col-xs-3 col-lg-3">
+                <div class ="row">
+                    <!-- <div class="col-sm-4 col-xs-4 col-lg-4">
+                     <img src = "/assets/images/click.gif" style="height:45px;margin-left:10px;">
+                    </div> -->
+                    <div class="col-sm-4 col-xs-4 col-lg-4">
+                        <img src = "/assets/images/sound_audio3.gif" style="height:60px;">
+                    </div>
+                    <div class="col-sm-4 col-xs-4 col-lg-4">
+                        
+                    </div>
+                </div>
+             </div>
+            <div class="col-sm-9 col-xs-9 col-lg-9" >
+                <h1 style="margin-left:10px ;"><b>වචන හදමු - 2 </b></h1>   
+            </div>
+        </div>
+     
+      </div>
+
+
+      <div class=" col-sm-3 col-xs-3  col-lg-3">
+        <div id="time-back" style=" background-color: azure; border-radius: 15px; width: 175px;padding:5px ;margin-left: 60px;">
+            <div id="display" style=" font-size:38px; font-family: 'Permanent Marker', cursive;">
+               00:00:00
+          </div>
+      </div>
+      
+  </div>
+  <div class="row">
+    <h3 style ="margin-top:20px; margin-left:60px;"><b>රූපයට ගැලපෙන වචනය දී ඇති අකුරු වලින් සාදමූ.</b></h3><br>
+    <h3 id="alert" style=" color: red;margin-left:60px;margin-top: 20px;visibility:hidden"> සියල්ලටම පිලිතුරු සපයන්න</h3>
+  </div>
+
+  <form name="f1">
+        <div class="row" style ="margin-top:20px;margin-left:40px ;">
+          <img  src="/assets/images/mother.jpg" style="border-style:solid; border-color:rgb(0, 0, 0); background:#ffffff; border-radius: 15px; height: 100px; width: 100px; padding: 8px;margin-right:5px ;">
+          <img src ="/assets/images/arrow_right.gif" style="height:100px;width:100px">
+
+          <img name="clip1" src="/assets/images/question_mark.png" style="height:85px; width:85px;border:solid; border-radius: 15px;margin-right:5px ; "> 
+          <img name="clip2" src="/assets/images/question_mark.png" style="height:85px; width:85px;border:solid; border-radius: 15px;margin-right:5px ; "> 
+          <img name="clip3" src="/assets/images/question_mark.png" style="height:85px; width:85px;border:solid; border-radius: 15px;margin-right:5px ; "> 
+        </div>
+     
+        <div class="row" style ="margin-left:40px ;">
+          <div class=" col-sm-4 col-xs-4  col-lg-4">
+          <!-- letter 1 -->
+            <img src ="/assets/images/equal.png" style="height:90px;width:90px">
+
+            <img name="w1" src="/assets/images/ga.JPG" id="wo1"  style="border-style:solid; border-color:rgb(0, 0, 0); background:#ffffff; border-radius: 55px; height: 85px; width: 85px; padding: 12px;margin-right:5px ;" onclick="wordgames1()">
+            <img name="w2" src="/assets/images/aaa.JPG"  id="wo2" style="border-style:solid; border-color:rgb(0, 0, 0); background:#ffffff; border-radius: 55px; height: 85px; width: 85px; padding: 12px;margin-right:5px" onclick="wordgames2()">
+            
+            <img src = "/assets/images/click.gif" style="height:45px;margin-left:10px;">
+
+            <img name="clip4" src="/assets/images/question_mark.png" style="height:85px; width:85px;border:solid; border-radius: 15px;margin-right:5px ; "> 
+            <img name="rw1" src="/assets/images/trans.svg" style="height:130px; width:130px; ">
+            
+            <input type="checkbox" hidden name="fruit" id="mark1"/>
+            <input type="checkbox" hidden name="fruit" id="unmark1"/>
+            </div>
+           
+
+            <!-- letter 2 -->
+            <div class=" col-sm-4 col-xs-4  col-lg-4">
+            <img src ="/assets/images/+.png" style="height:90px;width:90px">
+
+            <img name="w3" src="/assets/images/mmm.JPG" id="wo3"  style="border-style:solid; border-color:rgb(0, 0, 0); background:#ffffff; border-radius: 55px; height: 85px; width: 85px; padding: 12px;margin-right:5px ;" onclick="wordgames3()">
+            <img name="w4" src="/assets/images/sa.JPG"  id="wo4" style="border-style:solid; border-color:rgb(0, 0, 0); background:#ffffff; border-radius: 55px; height: 85px; width: 85px; padding: 12px;margin-right:5px" onclick="wordgames4()">
+            
+            <img src = "/assets/images/click.gif" style="height:45px;margin-left:10px;">
+
+            <img name="clip5" src="/assets/images/question_mark.png" style="height:85px; width:85px;border:solid; border-radius: 15px;margin-right:5px ; "> 
+            <img name="rw2" src="/assets/images/trans.svg" style="height:130px; width:130px; "> 
+            
+            <input type="checkbox" hidden name="fruit" id="mark2"/>
+            <input type="checkbox" hidden name="fruit" id="unmark2"/>
+          </div>
+
+           <!-- letter 3 --> 
+           <div class=" col-sm-4 col-xs-4  col-lg-4">
+     
+            <img src ="/assets/images/+.png" style="height:90px;width:90px">
+
+            <img name="w5" src="/assets/images/maa.JPG" id="wo3"  style="border-style:solid; border-color:rgb(0, 0, 0); background:#ffffff; border-radius: 58px; height: 85px; width: 85px; padding: 12px;margin-right:5px ;" onclick="wordgames5()">
+            <img name="w6" src="/assets/images/sa.JPG"  id="wo4" style="border-style:solid; border-color:rgb(0, 0, 0); background:#ffffff; border-radius: 55px; height: 85px; width: 85px; padding: 12px;margin-right:5px" onclick="wordgames6()">
+            
+            <img src = "/assets/images/click.gif" style="height:45px;margin-left:10px;">
+
+            <img name="clip6" src="/assets/images/question_mark.png" style="height:85px; width:85px;border:solid; border-radius: 15px;margin-right:5px ; "> 
+            <img name="rw3" src="/assets/images/trans.svg" style="height:130px; width:130px; "> 
+            
+            <input type="checkbox" hidden name="fruit" id="mark3"/>
+            <input type="checkbox" hidden name="fruit" id="unmark3"/>
+           
+           
+       </div>
+        </div><br>
+
+
+        <!----q2--->
+
+        <div class="row" style ="margin-top:20px;margin-left:40px ;">
+          <img  src="/assets/images/house1.png" style="border-style:solid; border-color:rgb(0, 0, 0); background:#ffffff; border-radius: 15px; height: 100px; width: 100px; padding: 8px;margin-right:5px ;">
+          <img src ="/assets/images/arrow_right.gif" style="height:100px;width:100px">
+
+          <img name="clip7" src="/assets/images/question_mark.png" style="height:85px; width:85px;border:solid; border-radius: 15px;margin-right:5px ; "> 
+          <img name="clip8" src="/assets/images/question_mark.png" style="height:85px; width:85px;border:solid; border-radius: 15px;margin-right:5px ; "> 
+          <img name="clip9" src="/assets/images/question_mark.png" style="height:85px; width:85px;border:solid; border-radius: 15px;margin-right:5px ; "> 
+        </div>
+     
+        <div class="row" style ="margin-left:40px ;">
+          <div class=" col-sm-4 col-xs-4  col-lg-4">
+          <!-- letter 1 -->
+            <img src ="/assets/images/equal.png" style="height:90px;width:90px">
+
+            <img name="w7" src="/assets/images/aaa.JPG" id="wo1"  style="border-style:solid; border-color:rgb(0, 0, 0); background:#ffffff; border-radius: 55px; height: 85px; width: 85px; padding: 12px;margin-right:5px ;" onclick="wordgames7()">
+            <img name="w8" src="/assets/images/ge.JPG"  id="wo2" style="border-style:solid; border-color:rgb(0, 0, 0); background:#ffffff; border-radius: 55px; height: 85px; width: 85px; padding: 12px;margin-right:5px" onclick="wordgames8()">
+            
+            <img src = "/assets/images/click.gif" style="height:45px;margin-left:10px;">
+
+            <img name="clip10" src="/assets/images/question_mark.png" style="height:85px; width:85px;border:solid; border-radius: 15px;margin-right:5px ; "> 
+            <img name="rw4" src="/assets/images/trans.svg" style="height:130px; width:130px; ">
+            
+            <input type="checkbox" hidden name="fruit" id="mark1"/>
+            <input type="checkbox" hidden name="fruit" id="unmark1"/>
+            </div>
+           
+
+            <!-- letter 2 -->
+            <div class=" col-sm-4 col-xs-4  col-lg-4">
+            <img src ="/assets/images/+.png" style="height:90px;width:90px">
+
+            <img name="w9" src="/assets/images/mmm.JPG" id="wo3"  style="border-style:solid; border-color:rgb(0, 0, 0); background:#ffffff; border-radius: 55px; height: 85px; width: 85px; padding: 12px;margin-right:5px ;" onclick="wordgames9()">
+            <img name="w10" src="/assets/images/da.JPG"  id="wo4" style="border-style:solid; border-color:rgb(0, 0, 0); background:#ffffff; border-radius: 55px; height: 85px; width: 85px; padding: 12px;margin-right:5px" onclick="wordgames10()">
+            
+            <img src = "/assets/images/click.gif" style="height:45px;margin-left:10px;">
+
+            <img name="clip11" src="/assets/images/question_mark.png" style="height:85px; width:85px;border:solid; border-radius: 15px;margin-right:5px ; "> 
+            <img name="rw5" src="/assets/images/trans.svg" style="height:130px; width:130px; "> 
+            
+            <input type="checkbox" hidden name="fruit" id="mark2"/>
+            <input type="checkbox" hidden name="fruit" id="unmark2"/>
+          </div>
+
+           <!-- letter 3 --> 
+           <div class=" col-sm-4 col-xs-4  col-lg-4">
+     
+            <img src ="/assets/images/+.png" style="height:90px;width:90px">
+
+            <img name="w11" src="/assets/images/ra.JPG" id="wo3"  style="border-style:solid; border-color:rgb(0, 0, 0); background:#ffffff; border-radius: 55px; height: 85px; width: 85px; padding: 12px;margin-right:5px ;" onclick="wordgames11()">
+            <img name="w12" src="/assets/images/kk.JPG"  id="wo4" style="border-style:solid; border-color:rgb(0, 0, 0); background:#ffffff; border-radius: 55px; height: 85px; width: 85px; padding: 12px;margin-right:5px" onclick="wordgames12()">
+            
+            <img src = "/assets/images/click.gif" style="height:45px;margin-left:10px;">
+
+            <img name="clip12" src="/assets/images/question_mark.png" style="height:85px; width:85px;border:solid; border-radius: 15px;margin-right:5px ; "> 
+            <img name="rw6" src="/assets/images/trans.svg" style="height:130px; width:130px; "> 
+            
+            <input type="checkbox" hidden name="fruit" id="mark2"/>
+            <input type="checkbox" hidden name="fruit" id="unmark2"/>
+           
+           
+       </div>
+        </div><br>
+
+
+        <!----q3--->
+
+        <div class="row" style ="margin-top:20px;margin-left:40px ;">
+          <img  src="/assets/images/sister.jpeg" style="border-style:solid; border-color:rgb(0, 0, 0); background:#ffffff; border-radius: 15px; height: 100px; width: 100px; padding: 8px;margin-right:5px ;">
+          <img src ="/assets/images/arrow_right.gif" style="height:100px;width:100px">
+
+          <img name="clip13" src="/assets/images/question_mark.png" style="height:85px; width:85px;border:solid; border-radius: 15px;margin-right:5px ; "> 
+          <img name="clip14" src="/assets/images/question_mark.png" style="height:85px; width:85px;border:solid; border-radius: 15px;margin-right:5px ; "> 
+          <img name="clip15" src="/assets/images/question_mark.png" style="height:85px; width:85px;border:solid; border-radius: 15px;margin-right:5px ; "> 
+        </div>
+     
+        <div class="row" style ="margin-left:40px ;">
+          <div class=" col-sm-4 col-xs-4  col-lg-4">
+          <!-- letter 1 -->
+            <img src ="/assets/images/equal.png" style="height:90px;width:90px">
+
+            <img name="w13" src="/assets/images/aaa.JPG" id="wo1"  style="border-style:solid; border-color:rgb(0, 0, 0); background:#ffffff; border-radius: 55px; height: 85px; width: 85px; padding: 12px;margin-right:5px ;" onclick="wordgames13()">
+            <img name="w14" src="/assets/images/ge.JPG"  id="wo2" style="border-style:solid; border-color:rgb(0, 0, 0); background:#ffffff; border-radius: 55px; height: 85px; width: 85px; padding: 12px;margin-right:5px" onclick="wordgames14()">
+            
+            <img src = "/assets/images/click.gif" style="height:45px;margin-left:10px;">
+
+            <img name="clip16" src="/assets/images/question_mark.png" style="height:85px; width:85px;border:solid; border-radius: 15px;margin-right:5px ; "> 
+            <img name="rw7" src="/assets/images/trans.svg" style="height:130px; width:130px; ">
+            
+            <input type="checkbox" hidden name="fruit" id="mark1"/>
+            <input type="checkbox" hidden name="fruit" id="unmark1"/>
+            </div>
+           
+
+            <!-- letter 2 -->
+            <div class=" col-sm-4 col-xs-4  col-lg-4">
+            <img src ="/assets/images/+.png" style="height:90px;width:90px">
+
+            <img name="w15" src="/assets/images/da.JPG" id="wo3"  style="border-style:solid; border-color:rgb(0, 0, 0); background:#ffffff; border-radius: 55px; height: 85px; width: 85px; padding: 12px;margin-right:5px ;" onclick="wordgames15()">
+            <img name="w16" src="/assets/images/kk.JPG"  id="wo4" style="border-style:solid; border-color:rgb(0, 0, 0); background:#ffffff; border-radius: 55px; height: 85px; width: 85px; padding: 12px;margin-right:5px" onclick="wordgames16()">
+            
+            <img src = "/assets/images/click.gif" style="height:45px;margin-left:10px;">
+
+            <img name="clip17" src="/assets/images/question_mark.png" style="height:85px; width:85px;border:solid; border-radius: 15px;margin-right:5px ; "> 
+            <img name="rw8" src="/assets/images/trans.svg" style="height:130px; width:130px; "> 
+            
+            <input type="checkbox" hidden name="fruit" id="mark2"/>
+            <input type="checkbox" hidden name="fruit" id="unmark2"/>
+          </div>
+
+           <!-- letter 3 --> 
+           <div class=" col-sm-4 col-xs-4  col-lg-4">
+     
+            <img src ="/assets/images/+.png" style="height:90px;width:90px">
+
+            <img name="w17" src="/assets/images/kaaa.JPG" id="wo3"  style="border-style:solid; border-color:rgb(0, 0, 0); background:#ffffff; border-radius: 55px; height: 85px; width: 85px; padding: 12px;margin-right:5px ;" onclick="wordgames17()">
+            <img name="w18" src="/assets/images/maa.JPG"  id="wo4" style="border-style:solid; border-color:rgb(0, 0, 0); background:#ffffff; border-radius: 55px; height: 85px; width: 85px; padding: 12px;margin-right:5px" onclick="wordgames18()">
+            
+            <img src = "/assets/images/click.gif" style="height:45px;margin-left:10px;">
+
+            <img name="clip18" src="/assets/images/question_mark.png" style="height:85px; width:85px;border:solid; border-radius: 15px;margin-right:5px ; "> 
+            <img name="rw9" src="/assets/images/trans.svg" style="height:130px; width:130px; "> 
+            
+            <input type="checkbox" hidden name="fruit" id="mark2"/>
+            <input type="checkbox" hidden name="fruit" id="unmark2"/>
+           
+           
+       </div>
+        </div><br>
+       
+</form> 
+</div>
+
+<div class="row">
+  <div  class="col-sm-3 col-xs-3  col-lg-3"></div>
+  <div  class="col-sm-3 col-xs-3  col-lg-3"></div>
+  <div  class="col-sm-3 col-xs-3  col-lg-3"></div>
+  <div  class="col-sm-3 col-xs-3  col-lg-3">
+    <div class ="row">
+      <img id ="arrow1" src ="/assets/images/arrow_submit.gif" style=" height: 130px; width: 130px;margin-left:40px ">
+     
+    </div>
+    <div class ="row">
+      <button id="final_button" class="button2" style ="width:100px;margin-left:52px ;" >ඉවරයි</button> 
+    </div>
+    <br>
+  </div> 
+        
+
+
+
+
+
+
+
+
