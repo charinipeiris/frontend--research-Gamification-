@@ -74,13 +74,13 @@
   
   .dis-button3:hover span {
     padding-right: 25px;
-    background-color:white;
+    /* background-color:white; */
   }
   
   .dis-button3:hover span:after {
     opacity: 1;
     right: 0;
-    background-color:white;
+    /* background-color:white; */
   }
 
   .center {

@@ -161,7 +161,7 @@ const appRoutes:Routes = [
   {path:'grade1/sinhala/level1',component:SinhalaLevel1Component },
   {path:'grade1/sinhala/level1/game1',component:PoemsComponent},
   {path:'grade1/sinhala/level1/game2',component:WordsComponent},
-  {path:'grade1/sinhala/level1/game3',component:Sentences1Component},
+  {path:'grade1/sinhala/level1/game3',component:SentencesComponent},
   //{path:'grade1/sinhala/level1/game4',component:},
 
  //-----sinhala grade1 level2--

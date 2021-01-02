@@ -207,3 +207,100 @@ function wordgames1()
   document.getElementById("unmark3").checked = true; //kid gave false answer 
   
   }
+
+// -------------------------------Grade 1 Level 1 - sentences.component -----------------------
+
+function sentences1()
+{
+document.getElementById("one-r1").style.border = "4px solid red"; 
+document.getElementById("one-r2").style.pointerEvents = "none";
+document.getElementById("mark1").checked = true; 
+document.getElementById("rew1").style.filter = "grayscale(0%)"
+document.getElementById("cell-1").style.border = "4px solid #4b53bd";
+document.getElementById("one-r3").style.display = "block";
+enableSubmit_sinhala()
+}
+
+function sentences2()
+{
+document.getElementById("one-r2").style.border = "4px solid red"; 
+document.getElementById("one-r1").style.pointerEvents = "none";
+document.getElementById("unmark1").checked = true; 
+document.getElementById("one-r3").setAttribute("src", "/assets/images/w.gif")
+document.getElementById("one-r3").style.display = "block";
+enableSubmit_sinhala()
+}
+
+function sentences3()
+{
+document.getElementById("two-r1").style.border = "4px solid red"; 
+document.getElementById("two-r2").style.pointerEvents = "none";
+document.getElementById("unmark2").checked = true; 
+document.getElementById("two-r3").setAttribute("src", "/assets/images/w.gif")
+document.getElementById("two-r3").style.display = "block";
+enableSubmit_sinhala()
+}
+
+function sentences4()
+{
+document.getElementById("two-r2").style.border = "4px solid red"; 
+document.getElementById("two-r1").style.pointerEvents = "none";
+document.getElementById("mark2").checked = true; 
+document.getElementById("rew2").style.filter = "grayscale(0%)"
+document.getElementById("cell-2").style.border = "4px solid pink";
+document.getElementById("two-r3").style.display = "block";
+enableSubmit_sinhala()
+}
+
+function sentences5()
+{
+document.getElementById("three-r1").style.border = "4px solid red"; 
+document.getElementById("three-r2").style.pointerEvents = "none";
+document.getElementById("unmark3").checked = true; 
+document.getElementById("three-r3").setAttribute("src", "/assets/images/w.gif")
+document.getElementById("three-r3").style.display = "block";
+enableSubmit_sinhala()
+}
+
+function sentences6()
+{
+document.getElementById("three-r2").style.border = "4px solid red"; 
+document.getElementById("three-r1").style.pointerEvents = "none";
+document.getElementById("mark3").checked = true; 
+document.getElementById("rew3").style.filter = "grayscale(0%)"
+document.getElementById("cell-3").style.border = "4px solid red";
+document.getElementById("three-r3").style.display = "block";
+enableSubmit_sinhala()
+}
+
+function sentences7()
+{
+document.getElementById("four-r1").style.border = "4px solid red"; 
+document.getElementById("four-r2").style.pointerEvents = "none";
+document.getElementById("mark4").checked = true; 
+document.getElementById("rew4").style.filter = "grayscale(0%)"
+document.getElementById("cell-4").style.border = "4px solid yellow";
+document.getElementById("four-r3").style.display = "block";
+enableSubmit_sinhala()
+}
+
+function sentences8()
+{
+document.getElementById("four-r2").style.border = "4px solid red"; 
+document.getElementById("four-r1").style.pointerEvents = "none";
+document.getElementById("unmark4").checked = true; 
+document.getElementById("four-r3").setAttribute("src", "/assets/images/w.gif")
+document.getElementById("four-r3").style.display = "block";
+enableSubmit_sinhala()
+}
+
+function enableSubmit_sinhala(){
+  var chk = document.querySelectorAll('input[type="checkbox"]:checked').length;
+  if (chk == 4){
+       document.getElementById("submit").style.display="block";
+       document.getElementById("arrow1").style.display="block";
+        }
+  else{
+      document.getElementById("submit").style.display="none";
+        }
+        }
