@@ -100,6 +100,9 @@ import { L2Poems2Component } from './grade2/sinhala2/sinhala-level2/l2-poems2/l2
 import { L1Poems1Component } from './grade2/sinhala2/sinhala-level1/l1-poems1/l1-poems1.component';
 import { L1Words1Component } from './grade2/sinhala2/sinhala-level1/l1-words1/l1-words1.component';
 import { L1Sentences1Component } from './grade2/sinhala2/sinhala-level1/l1-sentences1/l1-sentences1.component';
+import { WordSelectiontionComponent } from './grade1/sinhala/sinhala-level1/word-selectiontion/word-selectiontion.component';
+import { L1WordSelectiontion1Component } from './grade2/sinhala2/sinhala-level1/l1-word-selectiontion1/l1-word-selectiontion1.component';
+import { L2WordSelectiontion2Component } from './grade2/sinhala2/sinhala-level2/l2-word-selectiontion2/l2-word-selectiontion2.component';
 
 
 
@@ -279,6 +282,9 @@ const appRoutes:Routes = [
     L1Poems1Component,
     L1Words1Component,
     L1Sentences1Component,
+    WordSelectiontionComponent,
+    L1WordSelectiontion1Component,
+    L2WordSelectiontion2Component,
 
    
     
