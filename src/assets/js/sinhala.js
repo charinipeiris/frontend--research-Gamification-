@@ -93,6 +93,8 @@ function wordgame1()
   document.f1.w1.src="/assets/images/trans.svg";
   document.f1.w2.src="/assets/images/ma.png";
   document.f1.rw1.src="/assets/images/sbob1.png";
+  document.f1.rw21.src="/assets/images/super1.JPG";
+  document.getElementById("wo2").style.pointerEvents = "none";
   document.getElementById("mark1").checked = true; //kid gave right answer 
   
   }
@@ -104,7 +106,8 @@ function wordgame1()
   document.f1.w2.src="/assets/images/trans.svg";
   document.f1.w1.src="/assets/images/ga.png";
   document.f1.rw1.src="/assets/images/w.gif";
-
+  document.f1.rw21.src="/assets/images/trans.svg";
+  document.getElementById("wo1").style.pointerEvents = "none";
   document.getElementById("unmark1").checked = true; //kid gave false answer 
   
   }
@@ -116,6 +119,8 @@ function wordgame1()
   document.f1.w3.src="/assets/images/trans.svg";
   document.f1.w4.src="/assets/images/sa.png";
   document.f1.rw2.src="/assets/images/w.gif";
+  document.f1.rw22.src="/assets/images/trans.svg";
+  document.getElementById("wo4").style.pointerEvents = "none";
   document.getElementById("unmark2").checked = true; //kid gave right answer 
   
   }
@@ -127,7 +132,8 @@ function wordgame1()
   document.f1.w4.src="/assets/images/trans.svg";
   document.f1.w3.src="/assets/images/ii.png";
   document.f1.rw2.src="/assets/images/sbob1.png";
-
+  document.f1.rw22.src="/assets/images/super2.JPG";
+  document.getElementById("wo3").style.pointerEvents = "none";
   document.getElementById("mark2").checked = true; //kid gave false answer 
   
   }
@@ -140,6 +146,8 @@ function wordgame1()
   document.f1.w6.src="/assets/images/ma.png";
   document.f1.w5.src="/assets/images/trans.svg";
   document.f1.rw3.src="/assets/images/w.gif";
+  document.f1.rw23.src="/assets/images/trans.svg";
+  document.getElementById("wo6").style.pointerEvents = "none";
   document.getElementById("unmark3").checked = true; //kid gave right answer 
   
   }
@@ -151,7 +159,8 @@ function wordgame1()
   document.f1.w5.src="/assets/images/ga.png";
   document.f1.w6.src="/assets/images/trans.svg";
   document.f1.rw3.src="/assets/images/sbob1.png";
-
+  document.f1.rw23.src="/assets/images/super3.JPG";
+  document.getElementById("wo5").style.pointerEvents = "none";
   document.getElementById("mark3").checked = true; //kid gave false answer 
   
   }
@@ -161,8 +170,10 @@ function wordgame1()
   document.f1.clip6.src="/assets/images/ii.png";
   document.f1.clip8.src="/assets/images/ii.png";
   document.f1.w8.src="/assets/images/trans.svg";
-  document.f1.w7.src="/assets/images/ii.png";
+  document.f1.w7.src="/assets/images/la.png";
   document.f1.rw4.src="/assets/images/w.gif";
+  document.f1.rw24.src="/assets/images/trans.svg";
+  document.getElementById("wo8").style.pointerEvents = "none";
   document.getElementById("unmark4").checked = true; //kid gave right answer 
   
   }
@@ -172,9 +183,10 @@ function wordgame1()
   document.f1.clip6.src="/assets/images/la.png";
   document.f1.clip8.src="/assets/images/la.png";
   document.f1.w8.src="/assets/images/trans.svg";
-  document.f1.w7.src="/assets/images/la.png";
+  document.f1.w7.src="/assets/images/ii.png";
   document.f1.rw4.src="/assets/images/sbob1.png";
-
+  document.f1.rw24.src="/assets/images/super4.JPG";
+  document.getElementById("wo7").style.pointerEvents = "none";
   document.getElementById("mark4").checked = true; //kid gave false answer 
   
   }
@@ -188,6 +200,8 @@ function wordgame1()
   document.f1.w10.src="/assets/images/ma.png";
   document.f1.w9.src="/assets/images/trans.svg";
   document.f1.rw5.src="/assets/images/sbob1.png";
+  document.f1.rw25.src="/assets/images/super5.JPG";
+  document.getElementById("wo10").style.pointerEvents = "none";
   document.getElementById("mark5").checked = true; //kid gave right answer 
   
   }
@@ -199,8 +213,9 @@ function wordgame1()
   document.f1.w9.src="/assets/images/ii.png";
   document.f1.w10.src="/assets/images/trans.svg";
   document.f1.rw5.src="/assets/images/w.gif";
-
-  document.getElementById("mark5").checked = true; //kid gave false answer 
+  document.f1.rw25.src="/assets/images/trans.svg";
+  document.getElementById("wo9").style.pointerEvents = "none";
+  document.getElementById("unmark5").checked = true; //kid gave false answer 
   
   }
 
@@ -211,6 +226,8 @@ function wordgame1()
   document.f1.w11.src="/assets/images/trans.svg";
   document.f1.w12.src="/assets/images/sa.png";
   document.f1.rw6.src="/assets/images/sbob1.png";
+  document.f1.rw26.src="/assets/images/super6.JPG";
+  document.getElementById("wo12").style.pointerEvents = "none";
   document.getElementById("mark6").checked = true; //kid gave right answer 
   
   }
@@ -222,8 +239,9 @@ function wordgame1()
   document.f1.w12.src="/assets/images/trans.svg";
   document.f1.w11.src="/assets/images/ra.png";
   document.f1.rw6.src="/assets/images/w.gif";
-
-  document.getElementById("mark6").checked = true; //kid gave false answer 
+  document.f1.rw26.src="/assets/images/trans.svg";
+  document.getElementById("wo11").style.pointerEvents = "none";
+  document.getElementById("unmark6").checked = true; //kid gave false answer 
   
   }
 //-----------------------------------Grade 2---------------------------

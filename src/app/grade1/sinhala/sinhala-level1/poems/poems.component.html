@@ -1,201 +1,112 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <style>
-        * {
-        box-sizing: border-box;
-        }
-        .menu-right{
-        float:right;
-        width:50%;
-        text-align:center;
-        background-color:#e5e5e5;
-        }
-        .sub-menu{
-        float:right;
-        max-width:25%;
-        max-height:100%;
-        text-align:center;
-        padding:15px;
-        background-color:#b6d495;
-        border-style:solid;
-        border-color: green;
-        border-width:2px;
-        }
-        .menu-left {
-        float:left;
-        width:50%;
-        text-align:center;
-        }
-        .main {
-        float:left;
-        width:60%;
-        padding:0 20px;
-        }
-        .click-img{
-        max-width:100px;
-        max-height:100px;
-        float: left;
-        }
-        .sound-img{
-        max-width:200px;
-        max-height:200px;
-        float: left;
-        }
-        .button-container {
-        padding-left: 20vh;
-        padding-bottom: 1vh;
-        display: inline-block;
-        }
-        .nextbtn {      
-        text-align:center;
-        font-size:20px;
-        transition:all 0.5s;
-        cursor:pointer;
-        color:#FFFFFF;
-        background-color:#3f9454;
-        border:none;
-        padding: 2vh;
-        text-decoration: none;
-        display: inline-block;
-        border-radius: 2vh;
-        }
-        .responsive {
-        width: 25%;
-        max-height: 100% ;
-        }
-
-        @media only screen and (max-width:620px) {
-        /* For mobile phones: */
-        .menu-right, .sub-menu, .menu-left, .main, .click-img, .sound-img, .nextbtn, .responsive {
-            width:100%;
-        }
-        }
-        </style>
+  <title>Sinhala</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
+<body style="background-size:cover;background-image:url(/assets/images/bool1.jpg);">
+   
+<div class="container" class="image" style="height:100% ;width:100%;background-color:green;">
+    <br>
+  <div class="row">
+      <div class=" col-sm-3 col-xs-3  col-lg-3">
+        <a href="/grade1/sinhala/level2/" style ='margin-left:60px;color:green;height:50px ;' class="previous button1">&laquo; Previous</a>
+      </div>
 
-<body style="font-family:Verdana;color:#aaaaaa;">
+     
 
-    <div style="background-color:#bba1a1;padding:15px;text-align:center;">
-      <h1 style="color: black;">කවි අසා රස විඳිමු</h1>
+      <div class="col-sm-6 col-xs-6 col-lg-6">
+
+        <div class="row">
+            <div class="col-sm-3 col-xs-3 col-lg-3">
+                <div class ="row">
+                    <div class="col-sm-4 col-xs-4 col-lg-4">
+                        <img src = "/assets/images/sound_audio3.gif" style="height:60px;">
+                    </div>
+                    <div class="col-sm-4 col-xs-4 col-lg-4">
+                        
+                    </div>
+                </div>
+             </div>
+            <div class="col-sm-9 col-xs-9 col-lg-9" >
+                <h1 style="margin-left:10px ;"><b>කවි අසා රස විඳිමු</b></h1>   
+            </div>
+        </div>
+     
+      </div>
+
+
+      <div class=" col-sm-3 col-xs-3  col-lg-3">
+        <div id="time-back" style=" background-color: azure; border-radius: 15px; width: 175px;padding:5px ;margin-left: 60px;">
+            <div id="display" style=" font-size:38px; font-family: 'Permanent Marker', cursive;">
+               00:00:00
+          </div>
+      </div>
+      
+  </div>
+  
+  <div class="row">
+    <h3 style ="margin-top:20px; margin-left:60px;"><b>කවි අසා නිවැරදි පිලිතුරු තොරමූ.</b></h3><br>
+    <h3 id="alert" style=" color: red;margin-left:60px;margin-top: 20px;visibility:hidden"> සියල්ලටම පිලිතුරු සපයන්න</h3>
+  </div>
+
+  
+    <div class="row">
+        <div class="col-sm-6 col-xs-6  col-lg-6" style ="background-color: red;">
+            <iframe src="https://drive.google.com/file/d/1fsy_5mfmHiVWjuiHQWIQ4VJ47hJtRumx/preview"  width="540px" height="360px"
+            allowfullscreen></iframe>
+            <br>
+        </div>
+        <div class="col-sm-6 col-xs-6  col-lg-6" style ="background-color:blue;">
+            
+            <div class="row">
+                <h1>සමනළයා මොන පාටද? </h1>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-xs-6  col-lg-6">
+                    <button>
+                        <img src="assets/images/red-butterfly.png" style="width:100px;height:100px">
+                        <p>රතු පාටයි</p>
+                    </button>
+                </div>
+                <div class="col-sm-6 col-xs-6  col-lg-6">
+                    <button>
+                        <img src="assets/images/gold-butterfly.png" style="width:100px;height:100px">
+                        <p>රන්වන් පාටයි</p>
+                    </button>  
+                </div>
+            </div>
+        </div>
+    </div>  
+
+</div>
+
+<div class="row">
+  <div  class="col-sm-3 col-xs-3  col-lg-3"></div>
+  <div  class="col-sm-3 col-xs-3  col-lg-3"></div>
+  <div  class="col-sm-3 col-xs-3  col-lg-3"></div>
+  <div  class="col-sm-3 col-xs-3  col-lg-3">
+    <div class ="row">
+      <img id ="arrow1" src ="/assets/images/arrow_submit.gif" style=" height: 130px; width: 130px;margin-left:40px ">
+     
     </div>
+    <div class ="row">
+      <button id="final_button" class="button2" style ="width:100px;margin-left:52px ;" >Next</button> 
+    </div>
+    <br>
+  </div> 
         
-        <div style="overflow:auto">
-
-<!-- page 01 -->
-        <div class="menu-left" id="Page1" data-value="0">
-            <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
-                <iframe id = "myVideo_shapes" class="embed-responsive-item" src="https://drive.google.com/file/d/1fsy_5mfmHiVWjuiHQWIQ4VJ47hJtRumx/preview" width="640px" height="480px"
-                allowfullscreen></iframe>
-            </div>
-        </div>    
-        
-        <div class="menu-right">
-            <img src = "/assets/images/click.gif" class="click-img">
-            <img src = "/assets/images/shape_sound2.gif" id="question-shapes1" class="sound-img">
-            <audio src="assets/audio/shapesL1_quest.m4a" id="quest_audio_shapes"  type="audio/m4a" control>Your browser does not support the audio element. </audio>
-            <br>
-            <h4>සමනළයා මොන පාටද?</h4>
-        </div>
-
-        <div class="sub-menu">
-            <button>
-            <img src="assets/images/red-butterfly.png" class="responsive">
-            <p>රතු පාටයි</p>
-            </button>
-        </div>
-        <div class="sub-menu">
-            <button>
-            <img src="assets/images/gold-butterfly.png" class="responsive">
-            <p>රන්වන් පාටයි</p>
-            </button>  
-        </div>
-        
-        <div class="button-container">
-            <a id ="next1" class="nextbtn" style ="visibility:hidden" onclick="return show('Page2');">ඊලග</a>
-        </div>
-
-        
-        <!-- page 02 -->
-        <div class="menu-left" id="Page2" data-value="0">
-            <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
-                <iframe id = "myVideo_shapes" class="embed-responsive-item" src="https://drive.google.com/file/d/1cNicGXv04ibYfotlaTdwD2qcaIoSh4tN/preview" width="640px" height="480px"
-                allowfullscreen></iframe>
-            </div>
-        </div>    
-
-        <div class="menu-right">
-            <img src = "/assets/images/click.gif" class="click-img">
-            <img src = "/assets/images/shape_sound2.gif" id="question-shapes1" class="sound-img">
-            <audio src="assets/audio/shapesL1_quest.m4a" id="quest_audio_shapes"  type="audio/m4a" control>Your browser does not support the audio element. </audio>
-            <br>
-            <h4>සමනළයා මොන පාටද?</h4>
-        </div>
-
-        <div class="sub-menu">
-            <button>
-            <img src="assets/images/red-butterfly.png" class="responsive">
-            <p>රතු පාටයි</p>
-            </button>
-        </div>
-        <div class="sub-menu">
-            <button>
-            <img src="assets/images/gold-butterfly.png" class="responsive">
-            <p>රන්වන් පාටයි</p>
-            </button>  
-        </div>
-
-        <div class="button-container">
-            <a id ="next1" class="nextbtn" style ="visibility:visible" onclick="return show('Page2');">ඊලග</a>
-        </div>
-        <!-- <div class="right">
-            <h2>About</h2>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-        </div> -->
-        </div>
-        
-         
-      <!-- <h1 style =  "margin-left:14em; margin-top: 30px;"><b></b></h1>
-
-      <div id="time-back" style="height: 70px; z-index: 2;margin-top:-73px; position: absolute; margin-left: 100px; background-color: rgb(255, 255, 255); border-radius: 10px; width: 250px">
-        <div id="display" style="margin-top: -5px;margin-left:15px; font-size: 50px; font-family: 'Permanent Marker', cursive;">
-          00:00:00
-      </div>
-    
-      <div class="buttons" >
-          <button hidden id="startStop" onclick="startStop()">Start</button> 
-          <button hidden id="reset" onclick="reset()">Reset</button>
-      </div>
-    </div> 
-    <div hidden id="clickarray"></div>
 
 
-    <app-emotiondetector></app-emotiondetector> -->
 
 
- 
-<!-- 
-        <div id="myModal" class="modal"> -->
-
-                        <!-- Modal content -->
-                        <!-- <div class="modal-content">
-                          <div style="margin-left:-50px">
-                          <img id="coin1" src="/assets/images/win_coin.gif" class= "coin_img" style = "visibility:hidden; height: 220px; width: 550px; margin-left: 5px; position: absolute">
-                          <img id ="coin2" src="/assets/images/win_coin.gif" class= "coin_img" style = "visibility:hidden; height: 220px; width: 550px; margin-left: 150px; margin-top: -50px; position: absolute;">
-                          <img id ="coin3" src="/assets/images/win_coin.gif" class= "coin_img" style = "visibility:hidden; height: 220px; width: 550px; margin-left: 290px; margin-top: -50px; position: absolute">
-                          <img id ="coin4" src="/assets/images/win_coin.gif" class= "coin_img" style = "visibility:hidden; height: 220px; width: 550px; margin-left: 430px; position: absolute">
-                          <img id ="sad_coin" src="/assets/images/sad.gif" class= "coin_img" style = "visibility:hidden; height: 220px; width: 220px; margin-left: 380px; position: absolute">
-                          <h1 style="font-family:Chalkduster, fantasy; margin-left: 380px; position: absolute; color:darkcyan">Completed!!!</h1>
-                          <h5 style ="position: absolute; margin-top: 300px; margin-left: 350px; font-size: 30px">ගත වූ කාලය : <span id="perf-time"></span></h5>
-                          <a href="grade1/maths/level2" style="margin-left:430px ;" class="button3" onclick="return show('Page1','Page2');">ආපසු</a>
-                          </div>
-                          
-          
-                        </div>
-                 </div> -->
 
 
-    </body>
-</html> 
+
+
 
