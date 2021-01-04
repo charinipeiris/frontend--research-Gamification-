@@ -30,13 +30,13 @@ export class SinhalaLevel1Component implements OnInit {
     this.gameService.getGamesforNav(username).subscribe((data:any[]) => {
       this.GamesArray = data;
 
-        if (this.GamesArray.indexOf("S12") !== -1){
+        if (this.GamesArray.indexOf("S11") !== -1){
             this.btn1 = this.btn1 + 1
           }
         if (this.GamesArray.indexOf("S13") !== -1){
           this.btn2 = this.btn2 + 1
           }
-        if (this.GamesArray.indexOf("S11") !== -1){
+        if (this.GamesArray.indexOf("S12") !== -1){
         this.btn3 = this.btn3 + 1
           }
         if (this.GamesArray.indexOf("S14") !== -1){
