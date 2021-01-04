@@ -1,4 +1,4 @@
-// -------------------------------Grade 1 Level 1 - words -----------------------
+// -------------------------------Grade 1 Level 2 - words -----------------------
 //q1
 function wordgames1()
   {
@@ -7,6 +7,8 @@ function wordgames1()
   document.f1.w1.src="/assets/images/trans.svg";
   document.f1.w2.src="/assets/images/aaa.JPG";
   document.f1.rw1.src="/assets/images/w.gif";
+  document.f1.rw31.src="/assets/images/trans.svg";
+  document.getElementById("wo21").style.pointerEvents = "none";
   document.getElementById("unmark1").checked = true; //kid gave right answer 
   
   }
@@ -18,7 +20,8 @@ function wordgames1()
   document.f1.w2.src="/assets/images/trans.svg";
   document.f1.w1.src="/assets/images/ga.JPG";
   document.f1.rw1.src="/assets/images/sbob1.png";
-
+  document.f1.rw31.src="/assets/images/super1.JPG";
+  document.getElementById("wo11").style.pointerEvents = "none";
   document.getElementById("mark1").checked = true; //kid gave false answer 
   
   }
@@ -30,6 +33,8 @@ function wordgames1()
   document.f1.w3.src="/assets/images/trans.svg";
   document.f1.w4.src="/assets/images/sa.JPG";
   document.f1.rw2.src="/assets/images/sbob1.png";
+  document.f1.rw32.src="/assets/images/super2.JPG";
+  document.getElementById("wo41").style.pointerEvents = "none";
   document.getElementById("mark2").checked = true; //kid gave right answer 
   
   }
@@ -41,7 +46,8 @@ function wordgames1()
   document.f1.w4.src="/assets/images/trans.svg";
   document.f1.w3.src="/assets/images/mmm.JPG";
   document.f1.rw2.src="/assets/images/w.gif";
-
+  document.f1.rw32.src="/assets/images/trans.svg";
+  document.getElementById("wo31").style.pointerEvents = "none";
   document.getElementById("unmark2").checked = true; //kid gave false answer 
   
   }
@@ -53,7 +59,8 @@ function wordgames1()
   document.f1.w5.src="/assets/images/trans.svg";
   document.f1.w6.src="/assets/images/sa.JPG";
   document.f1.rw3.src="/assets/images/sbob1.png";
-
+  document.f1.rw33.src="/assets/images/super3.JPG";
+  document.getElementById("wo61").style.pointerEvents = "none";
   document.getElementById("mark3").checked = true; //kid gave false answer 
   
   }
@@ -65,7 +72,8 @@ function wordgames1()
   document.f1.w6.src="/assets/images/trans.svg";
   document.f1.w5.src="/assets/images/maa.JPG";
   document.f1.rw3.src="/assets/images/w.gif";
-
+  document.f1.rw33.src="/assets/images/trans.svg";
+  document.getElementById("wo51").style.pointerEvents = "none";
   document.getElementById("unmark3").checked = true; //kid gave false answer 
   
   }
@@ -78,6 +86,8 @@ function wordgames1()
   document.f1.w7.src="/assets/images/trans.svg";
   document.f1.w8.src="/assets/images/ge.JPG";
   document.f1.rw4.src="/assets/images/w.gif";
+  document.f1.rw34.src="/assets/images/trans.svg";
+  document.getElementById("wo81").style.pointerEvents = "none";
   document.getElementById("unmark1").checked = true; //kid gave right answer 
   
   }
@@ -89,7 +99,8 @@ function wordgames1()
   document.f1.w8.src="/assets/images/trans.svg";
   document.f1.w7.src="/assets/images/aaa.JPG";
   document.f1.rw4.src="/assets/images/sbob1.png";
-
+  document.f1.rw34.src="/assets/images/super4.JPG";
+  document.getElementById("wo71").style.pointerEvents = "none";
   document.getElementById("mark1").checked = true; //kid gave false answer 
   
   }
@@ -101,6 +112,8 @@ function wordgames1()
   document.f1.w9.src="/assets/images/trans.svg";
   document.f1.w10.src="/assets/images/da.JPG";
   document.f1.rw5.src="/assets/images/w.gif";
+  document.f1.rw35.src="/assets/images/trans.svg";
+  document.getElementById("wo101").style.pointerEvents = "none";
   document.getElementById("mark2").checked = true; //kid gave right answer 
   
   }
@@ -112,7 +125,8 @@ function wordgames1()
   document.f1.w10.src="/assets/images/trans.svg";
   document.f1.w9.src="/assets/images/mmm.JPG";
   document.f1.rw5.src="/assets/images/sbob1.png";
-
+  document.f1.rw35.src="/assets/images/super5.JPG";
+  document.getElementById("wo91").style.pointerEvents = "none";
   document.getElementById("unmark2").checked = true; //kid gave false answer 
   
   }
@@ -124,6 +138,8 @@ function wordgames1()
   document.f1.w11.src="/assets/images/trans.svg";
   document.f1.w12.src="/assets/images/kk.JPG";
   document.f1.rw6.src="/assets/images/sbob1.png";
+  document.f1.rw36.src="/assets/images/super2.JPG";
+  document.getElementById("wo121").style.pointerEvents = "none";
   document.getElementById("mark3").checked = true; //kid gave false answer 
   
   }
@@ -135,6 +151,8 @@ function wordgames1()
   document.f1.w12.src="/assets/images/trans.svg";
   document.f1.w11.src="/assets/images/ra.JPG";
   document.f1.rw6.src="/assets/images/w.gif";
+  document.f1.rw36.src="/assets/images/trans.svg";
+  document.getElementById("wo111").style.pointerEvents = "none";
   document.getElementById("unmark3").checked = true; //kid gave false answer 
   
   }
@@ -148,6 +166,8 @@ function wordgames1()
   document.f1.w13.src="/assets/images/trans.svg";
   document.f1.w14.src="/assets/images/ge.JPG";
   document.f1.rw7.src="/assets/images/sbob1.png";
+  document.f1.rw37.src="/assets/images/super1.JPG";
+  document.getElementById("wo141").style.pointerEvents = "none";
   document.getElementById("mark1").checked = true; //kid gave right answer 
   
   }
@@ -159,7 +179,8 @@ function wordgames1()
   document.f1.w14.src="/assets/images/trans.svg";
   document.f1.w13.src="/assets/images/aaa.JPG";
   document.f1.rw7.src="/assets/images/w.gif";
-
+  document.f1.rw37.src="/assets/images/trans.svg";
+  document.getElementById("wo131").style.pointerEvents = "none";
   document.getElementById("unmark1").checked = true; //kid gave false answer 
   
   }
@@ -171,6 +192,8 @@ function wordgames1()
   document.f1.w15.src="/assets/images/trans.svg";
   document.f1.w16.src="/assets/images/kk.JPG";
   document.f1.rw8.src="/assets/images/w.gif";
+  document.f1.rw38.src="/assets/images/trans.svg";
+  document.getElementById("wo161").style.pointerEvents = "none";
   document.getElementById("unmark2").checked = true; //kid gave right answer 
   
   }
@@ -182,6 +205,8 @@ function wordgames1()
   document.f1.w16.src="/assets/images/trans.svg";
   document.f1.w15.src="/assets/images/da.JPG";
   document.f1.rw8.src="/assets/images/sbob1.png";
+  document.f1.rw38.src="/assets/images/super4.JPG";
+  document.getElementById("wo151").style.pointerEvents = "none";
   document.getElementById("mark2").checked = true; //kid gave false answer 
   
   }
@@ -193,6 +218,8 @@ function wordgames1()
   document.f1.w11.src="/assets/images/trans.svg";
   document.f1.w12.src="/assets/images/ma.JPG";
   document.f1.rw9.src="/assets/images/sbob1.png";
+  document.f1.rw39.src="/assets/images/super5.JPG"
+  document.getElementById("wo181").style.pointerEvents = "none";
   document.getElementById("mark3").checked = true; //kid gave false answer 
   
   }
@@ -204,6 +231,8 @@ function wordgames1()
   document.f1.w12.src="/assets/images/trans.svg";
   document.f1.w11.src="/assets/images/kaa.JPG";
   document.f1.rw9.src="/assets/images/w.gif";
+  document.f1.rw39.src="/assets/images/trans.svg";
+  document.getElementById("wo171").style.pointerEvents = "none";
   document.getElementById("unmark3").checked = true; //kid gave false answer 
   
   }
