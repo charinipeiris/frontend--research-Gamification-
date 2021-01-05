@@ -333,3 +333,42 @@ function enableSubmit_sinhala(){
       document.getElementById("submit").style.display="none";
         }
         }
+
+
+//poems (Grade 1 level 1)
+
+function poems1()
+{
+document.getElementById("po2").style.border = "4px solid red"; 
+document.getElementById("po2").style.pointerEvents = "none";
+document.getElementById("unmark1").checked = true; 
+document.getElementById("po3").style.display = "block";
+}
+
+function poems2()
+{
+document.getElementById("po2").style.border = "4px solid blue"; 
+document.getElementById("po1").style.pointerEvents = "none";
+document.getElementById("mark1").checked = true; 
+document.getElementById("po4").style.display = "block";
+document.getElementById("rew1").style.filter = "grayscale(0%)"
+document.getElementById("cell-1").style.border = "4px solid blue";
+}
+
+function poems3()
+{
+  document.getElementById("po5").style.border = "4px solid blue"; 
+  document.getElementById("po7").style.pointerEvents = "none";
+  document.getElementById("mark1").checked = true; 
+  document.getElementById("po6").style.display = "block";
+  document.getElementById("rew2").style.filter = "grayscale(0%)"
+document.getElementById("cell-2").style.border = "4px solid purple";
+}
+
+function poems4()
+{
+  document.getElementById("po5").style.border = "4px solid red"; 
+  document.getElementById("po5").style.pointerEvents = "none";
+  document.getElementById("unmark1").checked = true; 
+  document.getElementById("po8").style.display = "block";
+}
