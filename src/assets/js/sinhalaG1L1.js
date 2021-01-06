@@ -408,6 +408,35 @@ function poems23()
   document.getElementById("cell-1").style.border = "4px solid purple";
 }
 
+function poems021()
+{
+document.getElementById("pos02").style.border = "4px solid red"; 
+document.getElementById("pos03").style.pointerEvents = "none";
+document.getElementById("pos02").style.pointerEvents = "none";
+document.getElementById("unmark1").checked = true; 
+document.getElementById("pos04").style.display = "block";
+}
+
+function poems022()
+{
+  document.getElementById("pos02").style.border = "4px solid blue"; 
+  document.getElementById("pos01").style.pointerEvents = "none";
+  document.getElementById("pos03").style.pointerEvents = "none";
+  document.getElementById("mark1").checked = true; 
+  document.getElementById("pos05").style.display = "block";
+  document.getElementById("rew1").style.filter = "grayscale(0%)";
+  document.getElementById("cell-1").style.border = "4px solid purple";
+}
+
+function poems023()
+{
+document.getElementById("pos02").style.border = "4px solid red"; 
+document.getElementById("pos01").style.pointerEvents = "none";
+document.getElementById("pos02").style.pointerEvents = "none";
+document.getElementById("unmark1").checked = true; 
+document.getElementById("pos06").style.display = "block";
+}
+
 function poems24()
 {
   document.getElementById("pos9").style.border = "4px solid red"; 
