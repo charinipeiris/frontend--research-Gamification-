@@ -325,7 +325,7 @@ function poems3()
   document.getElementById("po7").style.pointerEvents = "none";
   document.getElementById("mark1").checked = true; 
   document.getElementById("po6").style.display = "block";
-  document.getElementById("rew2").style.filter = "grayscale(0%)"
+  document.getElementById("rew2").style.filter = "grayscale(0%)";
   document.getElementById("cell-2").style.border = "4px solid purple";
 }
 
