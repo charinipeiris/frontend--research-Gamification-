@@ -355,6 +355,26 @@ function poems4()
   document.getElementById("po8").style.display = "block";
 }
 
+function poems03()
+{
+  document.getElementById("po07").style.border = "4px solid red"; 
+  document.getElementById("po07").style.pointerEvents = "none";
+  document.getElementById("unmark1").checked = true; 
+  document.getElementById("po06").style.display = "block";
+}
+
+function poems04()
+{
+  document.getElementById("po07").style.border = "4px solid blue"; 
+  document.getElementById("po05").style.pointerEvents = "none";
+  document.getElementById("mark1").checked = true; 
+  document.getElementById("po08").style.display = "block";
+  document.getElementById("rew2").style.filter = "grayscale(0%)";
+  document.getElementById("cell-2").style.border = "4px solid purple";
+}
+
+
+
 
 
 //----------------poems grade 1 level 2-------------
