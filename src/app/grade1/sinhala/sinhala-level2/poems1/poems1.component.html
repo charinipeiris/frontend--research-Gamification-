@@ -11,8 +11,10 @@
 </head>
 <body style="background-size:cover;background-image:url(/assets/images/bool1.jpg);">
    
-<div class="container" class="image" style="height:100% ;width:100%">
+<div class="container" class="image" style="height:100% ;width:100%;">
     <br>
+
+<!-- row 1 -->
   <div class="row">
       <div class=" col-sm-3 col-xs-3  col-lg-3">
         <a href="/grade1/sinhala/level2/" style ='margin-left:60px;color:green;height:50px ;' class="previous button1">&laquo; Previous</a>
@@ -25,9 +27,6 @@
         <div class="row">
             <div class="col-sm-3 col-xs-3 col-lg-3">
                 <div class ="row">
-                    <!-- <div class="col-sm-4 col-xs-4 col-lg-4">
-                     <img src = "/assets/images/click.gif" style="height:45px;margin-left:10px;">
-                    </div> -->
                     <div class="col-sm-4 col-xs-4 col-lg-4">
                         <img src = "/assets/images/sound_audio3.gif" style="height:60px;">
                     </div>
@@ -37,7 +36,7 @@
                 </div>
              </div>
             <div class="col-sm-9 col-xs-9 col-lg-9" >
-                <h1 style="margin-left:10px ;"><b>කවි අසා රස විඳිමු </b></h1>   
+                <h1 style="margin-left:10px ;"><b>කවි/කතන්දර රස විඳිමු 2</b></h1>   
             </div>
         </div>
      
@@ -48,20 +47,131 @@
         <div id="time-back" style=" background-color: azure; border-radius: 15px; width: 175px;padding:5px ;margin-left: 60px;">
             <div id="display" style=" font-size:38px; font-family: 'Permanent Marker', cursive;">
                00:00:00
-          </div>
-      </div>
+            </div>
+        </div>
       
-  </div>
-  <div class="row">
-    <h3 style ="margin-top:20px; margin-left:60px;"><b>රූපයට ගැලපෙන වචනය දී ඇති අකුරු වලින් සාදමූ.</b></h3><br>
+      </div>
+</div>
+
+<!-- row 2 -->
+  
+  <div class="row" >
     <h3 id="alert" style=" color: red;margin-left:60px;margin-top: 20px;visibility:hidden"> සියල්ලටම පිලිතුරු සපයන්න</h3>
   </div>
+    <div class="row">
+        <div class="col-sm-6 col-xs-6  col-lg-6" style="border-color:purple;border-style:solid ;border-radius:15px ;">
+             <h2 style ="margin-top:20px; margin-left:60px;"><b>කවිය අසා නිවැරදි පිලිතුරු තොරමූ.</b></h2><br>
+            <iframe src="https://drive.google.com/file/d/16q1g1kcmXOge_oGgpY92YpHevxWPXJZ7/preview"  width="90%" height="360px" style ="margin-left:10px"></iframe>
+            <br>
+             
+            <div class="row">
+              <h2 style="margin-left:20px;">හාවා බය වුනේ කාටද? </h2>
+          </div>
+          <br>
+          <div class="row">
+              <div class="col-4">
+                  <button style="margin-left:20px;border-radius:15px ;border-style: solid;border-width:5px;border-color: black;" onclick="poems1()" id="po1">
+                      <img src="assets/images/kid-wbg.png" style="width:100px;height:100px;">
+                      <p>ළමයාට</p>
+                  </button>
+                  <img id ="po3" src="/assets/images/w.gif" style="display:none; width: 100%; max-width: 130px; min-width:30px; height: auto; margin:auto">
+                  
+                    
+                   
+              </div>
+              <div class="col-4">
+                  <button style="margin-left:10px;border-style: solid;border-radius:15px;border-width:5px;border-color: black;" onclick="poems2()" id="po2">
+                      <img src="assets/images/fox-wbg.png" style="width:100px;height:100px;">
+                      <p>නරියාට</p>
+                  </button>  
+                  <img id ="po4" src="/assets/images/sbob1.png" style="display:none; width: 100%; max-width: 130px; min-width:30px; height: auto; margin:auto">
+                 
+              </div>
 
-  <form name="f1">
-       
-       
-  </form> 
+              <div class="col-4">
+                  <button style="margin-left:10px;border-style: solid;border-radius:15px;border-width:5px;border-color: black;" onclick="poems2()" id="po2">
+                      <img src="assets/images/scarecrow-wbg.png" style="width:100px;height:100px;">
+                      <p>පඹයාට</p>
+                  </button>  
+                  <img id ="po4" src="/assets/images/sbob1.png" style="display:none; width: 100%; max-width: 130px; min-width:30px; height: auto; margin:auto">
+                 
+              </div>
+
+
+              <input type="checkbox" hidden name="fruit" id="mark1"/>
+              <input type="checkbox" hidden name="fruit" id="unmark1"/>
+          </div>
+        </div>
+        <div class="col-sm-6 col-xs-6  col-lg-6" style="border-color:purple;border-style:solid ;border-radius:15px ">
+          <h2 style ="margin-top:20px; margin-left:60px;"><b>කතන්දරය අසා නිවැරදි පිලිතුරු තොරමූ.</b></h2><br>
+          <iframe src="https://drive.google.com/file/d/1mYNQCTkMH3sMoS0uXLWI5fqayyh1ocun/preview"  width="90%" height="360px" style ="margin-left:10px"></iframe>
+          <br>
+           
+          <div class="row">
+            <h2 style="margin-left:20px;">තොප්පි වෙළෙන්දාගේ තොප්පි හොරකම් කළේ කවුද?</h2>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-4">
+                <button style="margin-left:10px;border-radius:15px ;border-style: solid;border-color: black;border-width:5px" onclick="poems3()" id="po5">
+                  <img src="assets/images/hat-seller-wbg.png" style="width:100px;height:100px;">
+                  <p>තොප්පි වෙළෙන්ඳා</p>
+                </button>
+                <img id ="po6" src="/assets/images/sbob1.png" style="display:none; width: 100%; max-width: 130px; min-width:30px; height: auto; margin:auto">
+            </div>
+
+            <div class="col-4">
+                <button style="margin-left:10px;border-radius:15px ;border-style: solid;border-color: black;border-width:5px" onclick="poems4()" id="po7">
+                  <img src="assets/images/thief-wbg.png" style="width:100px;height:100px;border-color: black;border-width:5px">
+                  <p>හොරෙක්</p>
+                </button>  
+                <img id ="po8" src="/assets/images/w.gif" style="display:none; width: 100%; max-width: 130px; min-width:30px; height: auto; margin:auto">
+            </div>
+
+            <div class="col-4">
+                <button style="margin-left:10px;border-radius:15px ;border-style: solid;border-color: black;border-width:5px" onclick="poems3()" id="po5">
+                  <img src="assets/images/monkeys-wbg.png" style="width:100px;height:100px;">
+                  <p>වඳුරෝ</p>
+                </button>
+                <img id ="po6" src="/assets/images/sbob1.png" style="display:none; width: 100%; max-width: 130px; min-width:30px; height: auto; margin:auto">
+            </div>
+
+        </div>
+        <br>
+    <br>
+    </div>  
+    
 </div>
+
+
+
+</div>
+
+<div class="row" style ="margin-top:30px;color:green;">
+  <div class="col-sm-3 col-md-4 col-lg-4">
+    <table style="margin-left:40px;">
+      <tr>
+        <td id="cell-1" style="background-color:white; border: 1px solid black;"><img class="reward-cell" id="rew1" src="assets/images/reward1.png">
+        </td>
+        
+      </tr>
+      </table>
+  </div>
+    <div class="col-sm-4 col-md-4 col-lg-4">
+     
+  </div>
+  <div class="col-sm-4 col-md-4 col-lg-4">
+    <table style="margin-left:40px;">
+      <tr>
+        <td id="cell-2" style="background-color:white; border: 1px solid black;"><img class="reward-cell" id="rew2" src="assets/images/reward2.png"></td>
+      </tr>
+      </table>
+  </div>
+
+</div>
+
+
+
 
 <div class="row">
   <div  class="col-sm-3 col-xs-3  col-lg-3"></div>
@@ -73,17 +183,7 @@
      
     </div>
     <div class ="row">
-      <button id="final_button" class="button2" style ="width:100px;margin-left:52px ;" >ඉවරයි</button> 
+      <button id="final_button" class="button2" style ="width:100px;margin-left:52px ;" >Next</button> 
     </div>
     <br>
   </div> 
-        
-
-
-
-
-
-
-
-
-
