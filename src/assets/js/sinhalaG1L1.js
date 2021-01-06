@@ -319,6 +319,24 @@ document.getElementById("rew1").style.filter = "grayscale(0%)"
 document.getElementById("cell-1").style.border = "4px solid blue";
 }
 
+function poems02()
+{
+document.getElementById("po01").style.border = "4px solid red"; 
+document.getElementById("po01").style.pointerEvents = "none";
+document.getElementById("unmark1").checked = true; 
+document.getElementById("po04").style.display = "block";
+}
+
+function poems01()
+{
+document.getElementById("po01").style.border = "4px solid blue"; 
+document.getElementById("po02").style.pointerEvents = "none";
+document.getElementById("mark1").checked = true; 
+document.getElementById("po03").style.display = "block";
+document.getElementById("rew1").style.filter = "grayscale(0%)"
+document.getElementById("cell-1").style.border = "4px solid blue";
+}
+
 function poems3()
 {
   document.getElementById("po5").style.border = "4px solid blue"; 
