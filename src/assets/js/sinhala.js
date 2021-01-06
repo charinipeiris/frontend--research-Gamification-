@@ -419,3 +419,61 @@ function wordgames12()
   document.getElementById("unmark3").checked = true; //kid gave false answer 
   document.getElementById("wo1712").style.border = "4px solid red"; 
   }
+
+  //Grade 2 - Level 1 - Songs
+
+  //-----------------poems (Grade 1 level 1)-------------------------------
+
+  function song1()
+  {
+  document.getElementById("so1").style.border = "4px solid red"; 
+  document.getElementById("so1").style.pointerEvents = "none";
+  document.getElementById("unmark1").checked = true; 
+  document.getElementById("so2").style.display = "block";
+  document.getElementById("so3").style.display = "block";
+  }
+  
+  function song2()
+  {
+  document.getElementById("po2").style.border = "4px solid red"; 
+  document.getElementById("po2").style.pointerEvents = "none";
+  document.getElementById("unmark1").checked = true; 
+  document.getElementById("po3").style.display = "block";
+  }
+  
+  function song3()
+  {
+  document.getElementById("po2").style.border = "4px solid blue"; 
+  document.getElementById("po1").style.pointerEvents = "none";
+  document.getElementById("mark1").checked = true; 
+  document.getElementById("po4").style.display = "block";
+  document.getElementById("rew1").style.filter = "grayscale(0%)"
+  document.getElementById("cell-1").style.border = "4px solid blue";
+  }
+
+  function song4()
+  {
+  document.getElementById("po2").style.border = "4px solid red"; 
+  document.getElementById("po2").style.pointerEvents = "none";
+  document.getElementById("unmark1").checked = true; 
+  document.getElementById("po3").style.display = "block";
+  }
+  
+  function song5()
+  {
+  document.getElementById("po2").style.border = "4px solid blue"; 
+  document.getElementById("po1").style.pointerEvents = "none";
+  document.getElementById("mark1").checked = true; 
+  document.getElementById("po4").style.display = "block";
+  document.getElementById("rew1").style.filter = "grayscale(0%)"
+  document.getElementById("cell-1").style.border = "4px solid blue";
+  }
+
+  function song6()
+  {
+  document.getElementById("po2").style.border = "4px solid red"; 
+  document.getElementById("po2").style.pointerEvents = "none";
+  document.getElementById("unmark1").checked = true; 
+  document.getElementById("po3").style.display = "block";
+  }
+  
