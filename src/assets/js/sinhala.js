@@ -216,3 +216,206 @@ function wordgame1()
   
   }
 //-----------------------------------Grade 2---------------------------
+
+// -------------------------------Grade 2 Level 1 - words -----------------------
+//q1
+function wordgames12()
+  {
+  
+  document.f1.clip1.src="/assets/images/ga.JPG";
+  
+  document.f1.rw12.src="/assets/images/w.gif";
+  document.f1.rw312.src="/assets/images/trans.svg";
+  document.getElementById("wo212").style.pointerEvents = "none";
+  document.getElementById("unmark1").checked = true; //kid gave right answer 
+  document.getElementById("wo212").style.border = "4px solid red"; 
+  }
+
+  function wordgames22()
+  {
+ 
+  document.f1.clip1.src="/assets/images/aaa.JPG";
+ 
+  document.f1.rw12.src="/assets/images/sbob1.png";
+  document.f1.rw312.src="/assets/images/super1.JPG";
+  document.getElementById("wo112").style.pointerEvents = "none";
+  document.getElementById("mark1").checked = true; //kid gave false answer 
+  document.getElementById("wo212").style.border = "4px solid blue"; 
+  }
+
+  function wordgames32()
+  {
+ 
+  document.f1.clip2.src="/assets/images/mmm.JPG";
+  
+  document.f1.rw22.src="/assets/images/sbob1.png";
+  document.f1.rw322.src="/assets/images/super2.JPG";
+  document.getElementById("wo412").style.pointerEvents = "none";
+  document.getElementById("mark2").checked = true; //kid gave right answer 
+  document.getElementById("wo312").style.border = "4px solid blue"; 
+  }
+
+  function wordgames42()
+  {
+  
+  document.f1.clip2.src="/assets/images/sa.JPG";
+  document.f1.rw22.src="/assets/images/w.gif";
+  document.f1.rw322.src="/assets/images/trans.svg";
+  document.getElementById("wo312").style.pointerEvents = "none";
+  document.getElementById("unmark2").checked = true; //kid gave false answer 
+  document.getElementById("wo312").style.border = "4px solid red"; 
+  }
+
+  function wordgames52()
+  {
+
+  document.f1.clip3.src="/assets/images/maa.JPG";
+  document.f1.rw32.src="/assets/images/sbob1.png";
+  document.f1.rw332.src="/assets/images/super3.JPG";
+  document.getElementById("wo612").style.pointerEvents = "none";
+  document.getElementById("mark3").checked = true; //kid gave false answer 
+  document.getElementById("wo512").style.border = "4px solid blue"; 
+  }
+
+  function wordgames62()
+  {
+  
+  document.f1.clip3.src="/assets/images/sa.JPG";
+  document.f1.rw32.src="/assets/images/w.gif";
+  document.f1.rw332.src="/assets/images/trans.svg";
+  document.getElementById("wo512").style.pointerEvents = "none";
+  document.getElementById("unmark3").checked = true; //kid gave false answer 
+  document.getElementById("wo512").style.border = "4px solid red"; 
+  }
+  //q2
+
+  function wordgames72()
+  {
+  
+  document.f1.clip7.src="/assets/images/aaa.JPG";
+  document.f1.rw42.src="/assets/images/w.gif";
+  document.f1.rw342.src="/assets/images/trans.svg";
+  document.getElementById("wo812").style.pointerEvents = "none";
+  document.getElementById("unmark1").checked = true; //kid gave right answer 
+  document.getElementById("wo812").style.border = "4px solid red"; 
+  }
+
+  function wordgames82()
+  {
+ 
+  document.f1.clip7.src="/assets/images/ge.JPG";
+  document.f1.rw42.src="/assets/images/sbob1.png";
+  document.f1.rw342.src="/assets/images/super4.JPG";
+  document.getElementById("wo712").style.pointerEvents = "none";
+  document.getElementById("mark1").checked = true; //kid gave false answer 
+  document.getElementById("wo812").style.border = "4px solid blue"; 
+  }
+
+  function wordgames92()
+  {
+  
+  document.f1.clip8.src="/assets/images/mmm.JPG";
+  document.f1.rw52.src="/assets/images/w.gif";
+  document.f1.rw352.src="/assets/images/trans.svg";
+  document.getElementById("wo1012").style.pointerEvents = "none";
+  document.getElementById("mark2").checked = true; //kid gave right answer 
+  document.getElementById("wo1012").style.border = "4px solid red"; 
+  }
+
+  function wordgames102()
+  {
+  
+  document.f1.clip8.src="/assets/images/da.JPG";
+  document.f1.rw52.src="/assets/images/sbob1.png";
+  document.f1.rw352.src="/assets/images/super5.JPG";
+  document.getElementById("wo912").style.pointerEvents = "none";
+  document.getElementById("unmark2").checked = true; //kid gave false answer 
+  document.getElementById("wo1012").style.border = "4px solid blue"; 
+  }
+
+  function wordgames112()
+  {
+  
+  document.f1.clip9.src="/assets/images/ra.JPG";
+  document.f1.rw62.src="/assets/images/sbob1.png";
+  document.f1.rw362.src="/assets/images/super2.JPG";
+  document.getElementById("wo1212").style.pointerEvents = "none";
+  document.getElementById("mark3").checked = true; //kid gave true answer 
+  document.getElementById("wo1112").style.border = "4px solid blue"; 
+  }
+
+  function wordgames122()
+  {
+  
+  document.f1.clip9.src="/assets/images/kk.JPG";
+  document.f1.rw62.src="/assets/images/w.gif";
+  document.f1.rw362.src="/assets/images/trans.svg";
+  document.getElementById("wo1112").style.pointerEvents = "none";
+  document.getElementById("unmark3").checked = true; //kid gave false answer 
+  document.getElementById("wo1112").style.border = "4px solid red"; 
+  }
+
+  //q3
+
+  function wordgames132()
+  {
+  
+  document.f1.clip13.src="/assets/images/aaa.JPG";
+  document.f1.rw72.src="/assets/images/sbob1.png";
+  document.f1.rw372.src="/assets/images/super1.JPG";
+  document.getElementById("wo1412").style.pointerEvents = "none";
+  document.getElementById("mark1").checked = true; //kid gave right answer 
+  document.getElementById("wo1312").style.border = "4px solid blue"; 
+  }
+
+  function wordgames142()
+  {
+  
+  document.f1.clip13.src="/assets/images/ge.JPG";
+  document.f1.rw72.src="/assets/images/w.gif";
+  document.f1.rw372.src="/assets/images/trans.svg";
+  document.getElementById("wo1312").style.pointerEvents = "none";
+  document.getElementById("unmark1").checked = true; //kid gave false answer 
+  document.getElementById("wo1312").style.border = "4px solid red"; 
+  }
+
+  function wordgames152()
+  {
+  document.f1.clip14.src="/assets/images/da.JPG";
+  document.f1.rw82.src="/assets/images/w.gif";
+  document.f1.rw382.src="/assets/images/trans.svg";
+  document.getElementById("wo1612").style.pointerEvents = "none";
+  document.getElementById("unmark2").checked = true; //kid gave right answer 
+  document.getElementById("wo1612").style.border = "4px solid red"; 
+  }
+
+  function wordgames162()
+  {
+
+  document.f1.clip14.src="/assets/images/kk.JPG";
+  document.f1.rw82.src="/assets/images/sbob1.png";
+  document.f1.rw382.src="/assets/images/super4.JPG";
+  document.getElementById("wo1512").style.pointerEvents = "none";
+  document.getElementById("mark2").checked = true; //kid gave false answer 
+  document.getElementById("wo1612").style.border = "4px solid blue"; 
+  }
+
+  function wordgames172()
+  {
+  document.f1.clip15.src="/assets/images/kaaa.JPG";
+  document.f1.rw92.src="/assets/images/sbob1.png";
+  document.f1.rw392.src="/assets/images/super5.JPG"
+  document.getElementById("wo1812").style.pointerEvents = "none";
+  document.getElementById("mark3").checked = true; //kid gave false answer 
+  document.getElementById("wo1712").style.border = "4px solid blue"; 
+  }
+
+  function wordgames182()
+  {
+  document.f1.clip15.src="/assets/images/maa.JPG";
+  document.f1.rw92.src="/assets/images/w.gif";
+  document.f1.rw392.src="/assets/images/trans.svg";
+  document.getElementById("wo1712").style.pointerEvents = "none";
+  document.getElementById("unmark3").checked = true; //kid gave false answer 
+  document.getElementById("wo1712").style.border = "4px solid red"; 
+  }
