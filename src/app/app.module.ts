@@ -94,16 +94,22 @@ import {PoemsComponent} from './grade1/sinhala/sinhala-level1/poems/poems.compon
 import { Poems1Component } from './grade1/sinhala/sinhala-level2/poems1/poems1.component';
 import { Words1Component } from './grade1/sinhala/sinhala-level2/words1/words1.component';
 import { Sentences1Component } from './grade1/sinhala/sinhala-level2/sentences1/sentences1.component';
-import { L2Sentences2Component } from './grade2/sinhala2/sinhala-level2/l2-sentences2/l2-sentences2.component';
-import { L2Words2Component } from './grade2/sinhala2/sinhala-level2/l2-words2/l2-words2.component';
-import { L2Poems2Component } from './grade2/sinhala2/sinhala-level2/l2-poems2/l2-poems2.component';
-import { L1Poems1Component } from './grade2/sinhala2/sinhala-level1/l1-poems1/l1-poems1.component';
-import { L1Words1Component } from './grade2/sinhala2/sinhala-level1/l1-words1/l1-words1.component';
-import { L1Sentences1Component } from './grade2/sinhala2/sinhala-level1/l1-sentences1/l1-sentences1.component';
+
 import { WordSelectiontionComponent } from './grade1/sinhala/sinhala-level1/word-selectiontion/word-selectiontion.component';
-import { L1WordSelectiontion1Component } from './grade2/sinhala2/sinhala-level1/l1-word-selectiontion1/l1-word-selectiontion1.component';
-import { L2WordSelectiontion2Component } from './grade2/sinhala2/sinhala-level2/l2-word-selectiontion2/l2-word-selectiontion2.component';
+
 import { WordSelectiontion1Component } from './grade1/sinhala/sinhala-level2/word-selectiontion1/word-selectiontion1.component';
+
+import { Level1sinhala2Component } from './grade2/sinhala2/level1sinhala2/level1sinhala2.component';
+import { Level2sinhala2Component } from './grade2/sinhala2/level2sinhala2/level2sinhala2.component';
+import { Words1L2Component } from './grade2/sinhala2/level2sinhala2/words1-l2/words1-l2.component';
+import { Poems1L2Component } from './grade2/sinhala2/level2sinhala2/poems1-l2/poems1-l2.component';
+import { Sentences1L2Component } from './grade2/sinhala2/level2sinhala2/sentences1-l2/sentences1-l2.component';
+import { WordSelectionL2Component } from './grade2/sinhala2/level2sinhala2/word-selection-l2/word-selection-l2.component';
+import { WordSelectionL1Component } from './grade2/sinhala2/level1sinhala2/word-selection-l1/word-selection-l1.component';
+import { WordsL1eComponent } from './grade2/sinhala2/level1sinhala2/words-l1e/words-l1e.component';
+import { SentencesL1Component } from './grade2/sinhala2/level1sinhala2/sentences-l1/sentences-l1.component';
+import { PoemsL1sL1Component } from './grade2/sinhala2/level1sinhala2/poems-l1s-l1/poems-l1s-l1.component';
+
 
 
 
@@ -176,19 +182,20 @@ const appRoutes:Routes = [
  {path:'grade1/sinhala/level2/game4',component:WordSelectiontion1Component},
 
   //-----sinhala grade2 level1--
-  // {path:'grade2/sinhala/level1',component:SinhalaLevel1Component },
-  // {path:'grade2/sinhala/level1/game1',component:PoemsComponent},
-  // {path:'grade2/sinhala/level1/game2',component:WordsComponent},
-  // {path:'grade2/sinhala/level1/game3',component:Sentences1Component},
-  // {path:'grade1/sinhala/level1/game4',component:L1WordSelectiontion1Component},
+  {path:'grade2/sinhala',component:Sinhala2Component},
+  //level 1
+  {path:'grade2/sinhala/level1',component:Level1sinhala2Component },
+  {path:'grade2/sinhala/level1/game1',component: PoemsL1sL1Component},
+  {path:'grade2/sinhala/level1/game2',component: WordsL1eComponent},
+  {path:'grade2/sinhala/level1/game3',component:SentencesL1Component},
+  {path:'grade2/sinhala/level1/game4',component:WordSelectionL1Component},
 
  //-----sinhala grade2 level2--
-//  {path:'grade1/sinhala/level2',component: SinhalaLevel2Component},
-//  {path:'grade1/sinhala/level2/game1',component: Poems1Component},
-//  {path:'grade1/sinhala/level2/game2',component:Words1Component},
-//  {path:'grade1/sinhala/level2/game3',component:Sentences1Component},
- {path:'grade2/sinhala/level2/game4',component:L2WordSelectiontion2Component},
- 
+   {path:'grade2/sinhala/level2',component: Level2sinhala2Component},
+   {path:'grade2/sinhala/level2/game1',component:Poems1L2Component },
+   {path:'grade2/sinhala/level2/game2',component:Words1L2Component},
+   {path:'grade2/sinhala/level2/game3',component:Sentences1L2Component},
+   {path:'grade2/sinhala/level2/game4',component:WordSelectionL2Component},
   //-----environment 
   {path:'grade1/environment',component:EnvironmentComponent}, 
   //----environment grade1 level1--
@@ -277,16 +284,20 @@ const appRoutes:Routes = [
     Poems1Component,
     Words1Component,
     Sentences1Component,
-    L2Sentences2Component,
-    L2Words2Component,
-    L2Poems2Component,
-    L1Poems1Component,
-    L1Words1Component,
-    L1Sentences1Component,
+ 
     WordSelectiontionComponent,
-    L1WordSelectiontion1Component,
-    L2WordSelectiontion2Component,
     WordSelectiontion1Component,
+    Level1sinhala2Component,
+    Level2sinhala2Component,
+    Words1L2Component,
+    Poems1L2Component,
+    Sentences1L2Component,
+    WordSelectionL2Component,
+    WordSelectionL1Component,
+    WordsL1eComponent,
+    SentencesL1Component,
+    PoemsL1sL1Component,
+  
 
    
     
