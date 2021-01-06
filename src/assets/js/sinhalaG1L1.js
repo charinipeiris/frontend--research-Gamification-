@@ -337,6 +337,66 @@ function poems4()
   document.getElementById("po8").style.display = "block";
 }
 
+
+
+//----------------poems grade 1 level 2-------------
+
+function poems21()
+{
+document.getElementById("pos3").style.border = "4px solid red"; 
+document.getElementById("pos2").style.pointerEvents = "none";
+document.getElementById("pos3").style.pointerEvents = "none";
+document.getElementById("unmark1").checked = true; 
+document.getElementById("pos4").style.display = "block";
+}
+
+function poems22()
+{
+document.getElementById("pos3").style.border = "4px solid red"; 
+document.getElementById("pos1").style.pointerEvents = "none";
+document.getElementById("pos3").style.pointerEvents = "none";
+document.getElementById("unmark1").checked = true; 
+document.getElementById("pos5").style.display = "block";
+}
+
+function poems23()
+{
+  document.getElementById("pos3").style.border = "4px solid blue"; 
+  document.getElementById("pos1").style.pointerEvents = "none";
+  document.getElementById("pos2").style.pointerEvents = "none";
+  document.getElementById("mark1").checked = true; 
+  document.getElementById("pos6").style.display = "block";
+  document.getElementById("rew1").style.filter = "grayscale(0%)";
+  document.getElementById("cell-1").style.border = "4px solid purple";
+}
+
+function poems24()
+{
+  document.getElementById("pos9").style.border = "4px solid red"; 
+  document.getElementById("pos8").style.pointerEvents = "none";
+  document.getElementById("pos9").style.pointerEvents = "none";
+  document.getElementById("unmark1").checked = true; 
+  document.getElementById("pos10").style.display = "block";
+}
+function poems25()
+{
+  document.getElementById("pos9").style.border = "4px solid red"; 
+  document.getElementById("pos7").style.pointerEvents = "none";
+  document.getElementById("pos9").style.pointerEvents = "none";
+  document.getElementById("mark1").checked = true; 
+  document.getElementById("pos11").style.display = "block";
+}
+function poems26()
+{
+  document.getElementById("pos9").style.border = "4px solid blue"; 
+  document.getElementById("pos7").style.pointerEvents = "none";
+  document.getElementById("pos8").style.pointerEvents = "none";
+  document.getElementById("unmark1").checked = true; 
+  document.getElementById("pos12").style.display = "block";
+  document.getElementById("rew2").style.filter = "grayscale(0%)";
+  document.getElementById("cell-2").style.border = "4px solid purple";
+}
+
 //----------------sentences grade 1 level 1 ------------------------
 
 function test2_sinhala()
