@@ -426,54 +426,55 @@ function wordgames12()
 
   function song1()
   {
-  document.getElementById("so1").style.border = "4px solid red"; 
-  document.getElementById("so1").style.pointerEvents = "none";
+  document.getElementById("so3").style.border = "4px solid red"; 
+  document.getElementById("so2").style.pointerEvents = "none";
+  document.getElementById("so3").style.pointerEvents = "none";
   document.getElementById("unmark1").checked = true; 
-  document.getElementById("so2").style.display = "block";
-  document.getElementById("so3").style.display = "block";
+  document.getElementById("so4").style.display = "block";
   }
   
   function song2()
   {
-  document.getElementById("po2").style.border = "4px solid red"; 
-  document.getElementById("po2").style.pointerEvents = "none";
+  document.getElementById("so3").style.border = "4px solid red"; 
+  document.getElementById("so3").style.pointerEvents = "none";
+  document.getElementById("so1").style.pointerEvents = "none";
   document.getElementById("unmark1").checked = true; 
-  document.getElementById("po3").style.display = "block";
+  document.getElementById("so5").style.display = "block";
   }
   
   function song3()
   {
-  document.getElementById("po2").style.border = "4px solid blue"; 
-  document.getElementById("po1").style.pointerEvents = "none";
+  document.getElementById("so3").style.border = "4px solid blue"; 
+  document.getElementById("so1").style.pointerEvents = "none";
+  document.getElementById("so2").style.pointerEvents = "none";
   document.getElementById("mark1").checked = true; 
-  document.getElementById("po4").style.display = "block";
-  document.getElementById("rew1").style.filter = "grayscale(0%)"
-  document.getElementById("cell-1").style.border = "4px solid blue";
+  document.getElementById("so6").style.display = "block";
   }
 
   function song4()
   {
-  document.getElementById("po2").style.border = "4px solid red"; 
-  document.getElementById("po2").style.pointerEvents = "none";
+  document.getElementById("so8").style.border = "4px solid red"; 
+  document.getElementById("so7").style.pointerEvents = "none";
+  document.getElementById("so9").style.pointerEvents = "none";
   document.getElementById("unmark1").checked = true; 
-  document.getElementById("po3").style.display = "block";
+  document.getElementById("so10").style.display = "block";
   }
   
   function song5()
   {
-  document.getElementById("po2").style.border = "4px solid blue"; 
-  document.getElementById("po1").style.pointerEvents = "none";
-  document.getElementById("mark1").checked = true; 
-  document.getElementById("po4").style.display = "block";
-  document.getElementById("rew1").style.filter = "grayscale(0%)"
-  document.getElementById("cell-1").style.border = "4px solid blue";
+  document.getElementById("so8").style.border = "4px solid blue"; 
+  document.getElementById("so7").style.pointerEvents = "none";
+  document.getElementById("so9").style.pointerEvents = "none";
+  document.getElementById("unmark1").checked = true; 
+  document.getElementById("so11").style.display = "block";
   }
 
   function song6()
   {
-  document.getElementById("po2").style.border = "4px solid red"; 
-  document.getElementById("po2").style.pointerEvents = "none";
-  document.getElementById("unmark1").checked = true; 
-  document.getElementById("po3").style.display = "block";
+  document.getElementById("so8").style.border = "4px solid red"; 
+  document.getElementById("so7").style.pointerEvents = "none";
+  document.getElementById("so9").style.pointerEvents = "none";
+  document.getElementById("mark1").checked = true; 
+  document.getElementById("so12").style.display = "block";
   }
   
