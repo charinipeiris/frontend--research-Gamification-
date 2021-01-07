@@ -422,8 +422,6 @@ function wordgames12()
 
   //Grade 2 - Level 1 - Songs
 
-  //-----------------poems (Grade 1 level 1)-------------------------------
-
   function song1()
   {
   document.getElementById("so3").style.border = "4px solid red"; 
@@ -767,3 +765,153 @@ function wordgames12()
   document.getElementById("mark4").checked = true; 
   document.getElementById("nsen24").style.display = "block";
   }
+  document.getElementById("sin6").style.border = "4px solid red"; 
+  document.getElementById("unmark3").checked = true; 
+  document.getElementById("sine6").style.display = "block";
+  
+  //Grade 2 - Level 2 - Songs
+
+  function song01()
+  {
+  document.getElementById("so01").style.border = "4px solid blue";
+  document.getElementById("so02").style.pointerEvents = "none";
+  document.getElementById("so03").style.pointerEvents = "none";
+  document.getElementById("so04").style.pointerEvents = "none";
+  document.getElementById("so05").style.pointerEvents = "none";
+  document.getElementById("mark1").checked = true; 
+  document.getElementById("so06").style.display = "block";
+  }
+  
+  function song02()
+  {
+  document.getElementById("so01").style.pointerEvents = "none";
+  document.getElementById("so02").style.pointerEvents = "none";
+  document.getElementById("so03").style.pointerEvents = "none";
+  document.getElementById("so04").style.pointerEvents = "none";
+  document.getElementById("so05").style.pointerEvents = "none";
+  document.getElementById("unmark1").checked = true; 
+  document.getElementById("so07").style.display = "block";
+  }
+  
+  function song03()
+  {
+  document.getElementById("so01").style.pointerEvents = "none";
+  document.getElementById("so02").style.pointerEvents = "none";
+  document.getElementById("so03").style.pointerEvents = "none";
+  document.getElementById("so04").style.pointerEvents = "none";
+  document.getElementById("so05").style.pointerEvents = "none";
+  document.getElementById("unmark1").checked = true; 
+  document.getElementById("so08").style.display = "block";
+  }
+
+  function song04()
+  {
+  document.getElementById("so01").style.pointerEvents = "none";
+  document.getElementById("so02").style.pointerEvents = "none";
+  document.getElementById("so03").style.pointerEvents = "none";
+  document.getElementById("so04").style.pointerEvents = "none";
+  document.getElementById("so05").style.pointerEvents = "none";
+  document.getElementById("unmark1").checked = true; 
+  document.getElementById("so09").style.display = "block";
+  }
+  
+  function song05()
+  {
+  document.getElementById("so01").style.pointerEvents = "none";
+  document.getElementById("so02").style.pointerEvents = "none";
+  document.getElementById("so03").style.pointerEvents = "none";
+  document.getElementById("so04").style.pointerEvents = "none";
+  document.getElementById("so05").style.border = "4px solid blue";
+  document.getElementById("mark1").checked = true; 
+  document.getElementById("so010").style.display = "block";
+}
+
+//--------------------------------Grade 2 Level 2 - Poems 
+
+function sirimath1()
+  {
+  document.getElementById("sin01").style.border = "4px solid blue"; 
+  document.getElementById("sin02").style.pointerEvents = "none";
+  document.getElementById("mark01").checked = true; 
+  document.getElementById("sine02").style.display = "block";
+  }
+  function sirimath2()
+  {
+  document.getElementById("sin01").style.border = "4px solid red"; 
+  document.getElementById("sin01").style.pointerEvents = "none";
+  document.getElementById("unmark01").checked = true; 
+  document.getElementById("sine01").style.display = "block";
+  }
+  function sirimath3()
+  {
+    document.getElementById("sin04").style.border = "4px solid red"; 
+    document.getElementById("sin04").style.pointerEvents = "none";
+    document.getElementById("unmark02").checked = true; 
+    document.getElementById("sine03").style.display = "block";
+  }
+  function sirimath4()
+  {
+    document.getElementById("sin04").style.border = "4px solid blue"; 
+    document.getElementById("sin03").style.pointerEvents = "none";
+    document.getElementById("mark02").checked = true; 
+    document.getElementById("sine04").style.display = "block";
+  }
+  function sirimath5()
+  {
+    document.getElementById("sin06").style.border = "4px solid red"; 
+    document.getElementById("sin06").style.pointerEvents = "none";
+    document.getElementById("unmark03").checked = true; 
+    document.getElementById("sine05").style.display = "block";
+  }
+  function sirimath6()
+  {
+    document.getElementById("sin06").style.border = "4px solid blue"; 
+    document.getElementById("sin05").style.pointerEvents = "none";
+    document.getElementById("mark03").checked = true; 
+    document.getElementById("sine06").style.display = "block";
+  }
+
+  function sirimath7()
+  {
+  document.getElementById("sin08").style.border = "4px solid red"; 
+  document.getElementById("sin08").style.pointerEvents = "none";
+  document.getElementById("unmark04").checked = true; 
+  document.getElementById("sine07").style.display = "block";
+  }
+  function sirimath8()
+  {
+  document.getElementById("sin08").style.border = "4px solid blue"; 
+  document.getElementById("sin07").style.pointerEvents = "none";
+  document.getElementById("mark04").checked = true; 
+  document.getElementById("sine08").style.display = "block";
+  }
+  function sirimath9()
+  {
+    document.getElementById("sin09").style.border = "4px solid blue"; 
+    document.getElementById("sin010").style.pointerEvents = "none";
+    document.getElementById("mark05").checked = true; 
+    document.getElementById("sine010").style.display = "block";
+  }
+  function sirimath10()
+  {
+    document.getElementById("sin09").style.border = "4px solid red"; 
+    document.getElementById("sin09").style.pointerEvents = "none";
+    document.getElementById("unmark05").checked = true; 
+    document.getElementById("sine09").style.display = "block";
+  }
+
+  function sirimath11()
+  {
+  document.getElementById("sin012").style.border = "4px solid red"; 
+  document.getElementById("sin012").style.pointerEvents = "none";
+  document.getElementById("unmark06").checked = true; 
+  document.getElementById("sine011").style.display = "block";
+  }
+  function sirimath12()
+  {
+  document.getElementById("sin012").style.border = "4px solid blue"; 
+  document.getElementById("sin011").style.pointerEvents = "none";
+  document.getElementById("mark06").checked = true; 
+  document.getElementById("sine012").style.display = "block";
+  }
+
