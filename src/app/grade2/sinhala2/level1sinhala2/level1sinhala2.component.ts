@@ -32,13 +32,13 @@ export class Level1sinhala2Component implements OnInit {
         if (this.GamesArray.indexOf("s11") !== -1){
             this.btn1 = this.btn1 + 1
           }
-        if (this.GamesArray.indexOf("s13") !== -1){
+        if (this.GamesArray.indexOf("s14") !== -1){
           this.btn2 = this.btn2 + 1
           }
         if (this.GamesArray.indexOf("s12") !== -1){
         this.btn3 = this.btn3 + 1
           }
-        if (this.GamesArray.indexOf("s14") !== -1){
+        if (this.GamesArray.indexOf("s13") !== -1){
           this.btn4 = this.btn4 + 1
           }
 
