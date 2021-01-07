@@ -478,3 +478,41 @@ function wordgames12()
   document.getElementById("so12").style.display = "block";
   }
   
+
+  //----------------sentences grade 1 level 1
+  function sinhala_s21()
+  {
+  document.getElementById("sin1").style.border = "4px solid red"; 
+  document.getElementById("unmark1").checked = true; 
+  document.getElementById("sine1").style.display = "block";
+  }
+  function sinhala_s22()
+  {
+  document.getElementById("sin2").style.border = "4px solid blue"; 
+  document.getElementById("mark1").checked = true; 
+  document.getElementById("sine2").style.display = "block";
+  }
+  function sinhala_s23()
+  {
+  document.getElementById("sin3").style.border = "4px solid blue"; 
+  document.getElementById("mark2").checked = true; 
+  document.getElementById("sine3").style.display = "block";
+  }
+  function sinhala_s24()
+  {
+  document.getElementById("sin4").style.border = "4px solid red"; 
+  document.getElementById("unmark2").checked = true; 
+  document.getElementById("sine4").style.display = "block";
+  }
+  function sinhala_s25()
+  {
+  document.getElementById("sin5").style.border = "4px solid blue"; 
+  document.getElementById("mark3").checked = true; 
+  document.getElementById("sine5").style.display = "block";
+  }
+  function sinhala_s26()
+  {
+  document.getElementById("sin6").style.border = "4px solid red"; 
+  document.getElementById("unmark3").checked = true; 
+  document.getElementById("sine6").style.display = "block";
+  }
