@@ -12,6 +12,7 @@ export class SinhalaLevel2Component implements OnInit {
   btn2: number;
   btn3: number;
   btn4: number;
+  btn5: number;
   nxtBtn : number;
   levelGames1 = [];
 
@@ -20,8 +21,9 @@ export class SinhalaLevel2Component implements OnInit {
     this.btn2 = 0;
     this.btn3 = 0;
     this.btn4 = 0;
+    this.btn5 = 0;
     this.nxtBtn = 0;
-    this.levelGames1 =["S21","S22", "S23", "S24"];
+    this.levelGames1 =["S21","S22", "S23", "S24", "S25"];
   }
 
   ngOnInit(): void {
@@ -38,9 +40,12 @@ export class SinhalaLevel2Component implements OnInit {
         if (this.GamesArray.indexOf("S22") !== -1){
         this.btn3 = this.btn3 + 1
           }
-        if (this.GamesArray.indexOf("S24") !== -1){
+        if (this.GamesArray.indexOf("S25") !== -1){
           this.btn4 = this.btn4 + 1
           }
+          if (this.GamesArray.indexOf("S24") !== -1){
+            this.btn5 = this.btn5 + 1
+            }
 
           for (var i in this.GamesArray){
             for (var j in this.levelGames1) {

@@ -13,6 +13,7 @@ export class SinhalaLevel1Component implements OnInit {
   btn2: number;
   btn3: number;
   btn4: number;
+  btn5: number;
   nxtBtn : number;
   levelGames1 = [];
   constructor(private gameService: GamesService) { 
@@ -20,8 +21,9 @@ export class SinhalaLevel1Component implements OnInit {
     this.btn2 = 0;
     this.btn3 = 0;
     this.btn4 = 0;
+    this.btn5 = 0;
     this.nxtBtn = 0;
-    this.levelGames1 =["S11","S12", "S13", "S14"];
+    this.levelGames1 =["S11","S12", "S13", "S14","S15"];
 
   }
 
@@ -39,8 +41,11 @@ export class SinhalaLevel1Component implements OnInit {
         if (this.GamesArray.indexOf("S12") !== -1){
         this.btn3 = this.btn3 + 1
           }
+        if (this.GamesArray.indexOf("S15") !== -1){
+            this.btn4 = this.btn4 + 1
+        }
         if (this.GamesArray.indexOf("S14") !== -1){
-          this.btn4 = this.btn4 + 1
+          this.btn5 = this.btn5 + 1
           }
 
           for (var i in this.GamesArray){

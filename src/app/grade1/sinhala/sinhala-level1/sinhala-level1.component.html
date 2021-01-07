@@ -80,7 +80,6 @@
 
       <div *ngIf="btn4 == 1">
       <button class="dis-button3"><a style="color:white;" disabled="disabled"><span> වගන්ති හදමු
-      <!-- <img src="assets/images/money-icon.png" style="position:absolute;height: 100px; width: 100px; margin-left: -235px; margin-top: -30px;"> -->
       <img src = "/assets/images/completed.png" class="completed-icon">
       </span></a></button> 
       </div>
@@ -95,9 +94,13 @@
   <div class="col-sm-4 col-xs-4  col-lg-4">
 
   </div>
-  <div class="col-sm-4 col-xs-4  col-lg-4">
+  <div *ngIf="btn5 == 0" class="col-sm-4 col-xs-4  col-lg-4">
   <button class="button3" ><a style="color:white;" routerLink='/grade1/sinhala/level1/game5'><span>කතන්දර අහමු</span></a></button> 
-
+  <div *ngIf="btn5 == 1">
+    <button class="dis-button3"><a style="color:white;" disabled="disabled"><span> කතන්දර අහමු
+    <img src = "/assets/images/completed.png" class="completed-icon">
+    </span></a></button> 
+    </div>
   </div>
   <div class="col-sm-4 col-xs-4  col-lg-4">
 
