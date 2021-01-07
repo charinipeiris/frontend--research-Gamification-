@@ -657,3 +657,87 @@ function wordgames12()
   document.getElementById("mark6").checked = true; 
   document.getElementById("sine12").style.display = "block";
   }
+
+
+  //--------------------sentences Grade 2 level 2 ----------------------
+
+  function newsent1()
+  {
+  document.getElementById("nsen3").style.border = "4px solid red"; 
+  document.getElementById("nsen2").style.pointerEvents = "none";
+  document.getElementById("nsen3").style.pointerEvents = "none";
+  document.getElementById("unmark1").checked = true; 
+  document.getElementById("nsen4").style.display = "block";
+  }
+
+  function newsent2()
+  {
+  document.getElementById("nsen3").style.border = "4px solid red"; 
+  document.getElementById("nsen1").style.pointerEvents = "none";
+  document.getElementById("nsen3").style.pointerEvents = "none";
+  document.getElementById("unmark1").checked = true; 
+  document.getElementById("nsen5").style.display = "block";
+  }
+  function newsent3()
+  {
+  document.getElementById("nsen3").style.border = "4px solid blue"; 
+  document.getElementById("nsen2").style.pointerEvents = "none";
+  document.getElementById("nsen1").style.pointerEvents = "none";
+  document.getElementById("mark1").checked = true; 
+  document.getElementById("nsen6").style.display = "block";
+  }
+
+  function newsent4()
+  {
+  document.getElementById("nsen8").style.border = "4px solid red"; 
+  document.getElementById("nsen8").style.pointerEvents = "none";
+  document.getElementById("nsen9").style.pointerEvents = "none";
+  document.getElementById("unmark2").checked = true; 
+  document.getElementById("nsen10").style.display = "block";
+  }
+
+  
+  function newsent5()
+  {
+  document.getElementById("nsen8").style.border = "4px solid blue"; 
+  document.getElementById("nsen7").style.pointerEvents = "none";
+  document.getElementById("nsen9").style.pointerEvents = "none";
+  document.getElementById("mark2").checked = true; 
+  document.getElementById("nsen11").style.display = "block";
+  }
+  function newsent6()
+  {
+  document.getElementById("nsen8").style.border = "4px solid red"; 
+  document.getElementById("nsen8").style.pointerEvents = "none";
+  document.getElementById("nsen7").style.pointerEvents = "none";
+  document.getElementById("unmark2").checked = true; 
+  document.getElementById("nsen12").style.display = "block";
+  }
+
+
+  function newsent7()
+  {
+  document.getElementById("nsen13").style.border = "4px solid blue"; 
+  document.getElementById("nsen14").style.pointerEvents = "none";
+  document.getElementById("nsen15").style.pointerEvents = "none";
+  document.getElementById("mark3").checked = true; 
+  document.getElementById("nsen16").style.display = "block";
+  }
+
+  function newsent8()
+  {
+  document.getElementById("nsen13").style.border = "4px solid red"; 
+  document.getElementById("nsen13").style.pointerEvents = "none";
+  document.getElementById("nsen15").style.pointerEvents = "none";
+  document.getElementById("unmark3").checked = true; 
+  document.getElementById("nsen17").style.display = "block";
+  }
+
+  function newsent9()
+  {
+  document.getElementById("nsen8").style.border = "4px solid red"; 
+  document.getElementById("nsen13").style.pointerEvents = "none";
+  document.getElementById("nsen14").style.pointerEvents = "none";
+  document.getElementById("unmark3").checked = true; 
+  document.getElementById("nsen18").style.display = "block";
+  }
