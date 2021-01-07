@@ -103,7 +103,7 @@ import { Level1sinhala2Component } from './grade2/sinhala2/level1sinhala2/level1
 import { Level2sinhala2Component } from './grade2/sinhala2/level2sinhala2/level2sinhala2.component';
 import { Words1L2Component } from './grade2/sinhala2/level2sinhala2/words1-l2/words1-l2.component';
 import { Poems1L2Component } from './grade2/sinhala2/level2sinhala2/poems1-l2/poems1-l2.component';
-import { Sentences1L2Component } from './grade2/sinhala2/level2sinhala2/sentences1-l2/sentences1-l2.component';
+// import { Sentences1L2Component } from './grade2/sinhala2/level2sinhala2/sentences1-l2/sentences1-l2.component';
 import { WordSelectionL2Component } from './grade2/sinhala2/level2sinhala2/word-selection-l2/word-selection-l2.component';
 import { WordSelectionL1Component } from './grade2/sinhala2/level1sinhala2/word-selection-l1/word-selection-l1.component';
 import { WordsL1eComponent } from './grade2/sinhala2/level1sinhala2/words-l1e/words-l1e.component';
@@ -112,6 +112,7 @@ import { PoemsL1sL1Component } from './grade2/sinhala2/level1sinhala2/poems-l1s-
 import { StoriesComponent } from './grade1/sinhala/sinhala-level1/stories/stories.component';
 import { Stories1Component } from './grade1/sinhala/sinhala-level2/stories1/stories1.component';
 import { Stories1sL2Component } from './grade2/sinhala2/level2sinhala2/stories1s-l2/stories1s-l2.component';
+import { Riddles1L2Component } from './grade2/sinhala2/level2sinhala2/riddles1-l2/riddles1-l2.component';
 
 
 
@@ -199,9 +200,11 @@ const appRoutes:Routes = [
    {path:'grade2/sinhala/level2',component: Level2sinhala2Component},
    {path:'grade2/sinhala/level2/game1',component:Poems1L2Component },
    {path:'grade2/sinhala/level2/game2',component:Words1L2Component},
-   {path:'grade2/sinhala/level2/game3',component:Sentences1L2Component},
+  //  {path:'grade2/sinhala/level2/game3',component:Sentences1L2Component},
    {path:'grade2/sinhala/level2/game4',component:WordSelectionL2Component},
    {path:'grade2/sinhala/level2/game5',component:Stories1sL2Component },
+   {path:'grade2/sinhala/level2/game3',component:Riddles1L2Component},
+   
   //-----environment 
   {path:'grade1/environment',component:EnvironmentComponent}, 
   //----environment grade1 level1--
@@ -297,7 +300,7 @@ const appRoutes:Routes = [
     Level2sinhala2Component,
     Words1L2Component,
     Poems1L2Component,
-    Sentences1L2Component,
+    // Sentences1L2Component,
     WordSelectionL2Component,
     WordSelectionL1Component,
     WordsL1eComponent,
@@ -306,6 +309,7 @@ const appRoutes:Routes = [
     StoriesComponent,
     Stories1Component,
     Stories1sL2Component,
+    Riddles1L2Component,
  
   
 
