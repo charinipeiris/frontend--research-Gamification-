@@ -307,6 +307,7 @@ document.getElementById("po2").style.border = "4px solid red";
 document.getElementById("po2").style.pointerEvents = "none";
 document.getElementById("unmark1").checked = true; 
 document.getElementById("po3").style.display = "block";
+enableSubmit_sinhalaPoems();
 }
 
 function poems2()
@@ -315,27 +316,41 @@ document.getElementById("po2").style.border = "4px solid blue";
 document.getElementById("po1").style.pointerEvents = "none";
 document.getElementById("mark1").checked = true; 
 document.getElementById("po4").style.display = "block";
-document.getElementById("rew1").style.filter = "grayscale(0%)"
-document.getElementById("cell-1").style.border = "4px solid blue";
+// document.getElementById("rew1").style.filter = "grayscale(0%)"
+// document.getElementById("cell-1").style.border = "4px solid blue";
+enableSubmit_sinhalaPoems();
 }
 
 function poems02()
 {
 document.getElementById("po01").style.border = "4px solid red"; 
 document.getElementById("po01").style.pointerEvents = "none";
-document.getElementById("unmark1").checked = true; 
+document.getElementById("unmark2").checked = true; 
 document.getElementById("po04").style.display = "block";
+enableSubmit_sinhalaPoems();
 }
 
 function poems01()
 {
 document.getElementById("po01").style.border = "4px solid blue"; 
 document.getElementById("po02").style.pointerEvents = "none";
-document.getElementById("mark1").checked = true; 
+document.getElementById("mark2").checked = true; 
 document.getElementById("po03").style.display = "block";
-document.getElementById("rew1").style.filter = "grayscale(0%)"
-document.getElementById("cell-1").style.border = "4px solid blue";
+// document.getElementById("rew1").style.filter = "grayscale(0%)"
+// document.getElementById("cell-1").style.border = "4px solid blue";
+enableSubmit_sinhalaPoems();
 }
+
+function enableSubmit_sinhalaPoems(){
+  var chk = document.querySelectorAll('input[type="checkbox"]:checked').length;
+  if (chk == 2){
+       document.getElementById("submit").style.display="block";
+       document.getElementById("arrow1").style.display="block";
+        }
+  else{
+      document.getElementById("submit").style.display="none";
+        }
+        }
 
 function poems3()
 {
