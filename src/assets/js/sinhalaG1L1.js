@@ -464,6 +464,36 @@ function poems26()
   document.getElementById("cell-2").style.border = "4px solid purple";
 }
 
+function poems024()
+{
+document.getElementById("pos08").style.border = "4px solid red"; 
+document.getElementById("pos09").style.pointerEvents = "none";
+document.getElementById("pos08").style.pointerEvents = "none";
+document.getElementById("unmark1").checked = true; 
+document.getElementById("pos010").style.display = "block";
+}
+
+function poems025()
+{
+  document.getElementById("pos08").style.border = "4px solid blue"; 
+  document.getElementById("pos07").style.pointerEvents = "none";
+  document.getElementById("pos09").style.pointerEvents = "none";
+  document.getElementById("mark1").checked = true; 
+  document.getElementById("pos011").style.display = "block";
+  document.getElementById("rew1").style.filter = "grayscale(0%)";
+  document.getElementById("cell-1").style.border = "4px solid purple";
+}
+
+function poems026()
+{
+document.getElementById("pos08").style.border = "4px solid red"; 
+document.getElementById("pos07").style.pointerEvents = "none";
+document.getElementById("pos08").style.pointerEvents = "none";
+document.getElementById("unmark1").checked = true; 
+document.getElementById("pos012").style.display = "block";
+}
+
+
 //----------------sentences grade 1 level 1 ------------------------
 
 function test2_sinhala()
