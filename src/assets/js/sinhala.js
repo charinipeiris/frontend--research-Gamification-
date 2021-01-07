@@ -741,3 +741,29 @@ function wordgames12()
   document.getElementById("unmark3").checked = true; 
   document.getElementById("nsen18").style.display = "block";
   }
+
+  function newsent10()
+  {
+  document.getElementById("nsen21").style.border = "4px solid red"; 
+  document.getElementById("nsen20").style.pointerEvents = "none";
+  document.getElementById("nsen21").style.pointerEvents = "none";
+  document.getElementById("unmark4").checked = true; 
+  document.getElementById("nsen22").style.display = "block";
+  }
+
+  function newsent11()
+  {
+  document.getElementById("nsen21").style.border = "4px solid red"; 
+  document.getElementById("nsen19").style.pointerEvents = "none";
+  document.getElementById("nsen21").style.pointerEvents = "none";
+  document.getElementById("unmark4").checked = true; 
+  document.getElementById("nsen23").style.display = "block";
+  }
+  function newsent12()
+  {
+  document.getElementById("nsen21").style.border = "4px solid blue"; 
+  document.getElementById("nsen19").style.pointerEvents = "none";
+  document.getElementById("nsen20").style.pointerEvents = "none";
+  document.getElementById("mark4").checked = true; 
+  document.getElementById("nsen24").style.display = "block";
+  }
