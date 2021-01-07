@@ -480,39 +480,92 @@ function wordgames12()
   
 
   //----------------sentences grade 1 level 1
+ 
   function sinhala_s21()
   {
-  document.getElementById("sin1").style.border = "4px solid red"; 
+  document.getElementById("sin2").style.border = "4px solid red"; 
+  document.getElementById("sin2").style.pointerEvents = "none";
   document.getElementById("unmark1").checked = true; 
   document.getElementById("sine1").style.display = "block";
   }
   function sinhala_s22()
   {
   document.getElementById("sin2").style.border = "4px solid blue"; 
+  document.getElementById("sin1").style.pointerEvents = "none";
   document.getElementById("mark1").checked = true; 
   document.getElementById("sine2").style.display = "block";
   }
   function sinhala_s23()
   {
-  document.getElementById("sin3").style.border = "4px solid blue"; 
-  document.getElementById("mark2").checked = true; 
-  document.getElementById("sine3").style.display = "block";
+    document.getElementById("sin3").style.border = "4px solid blue"; 
+    document.getElementById("sin4").style.pointerEvents = "none";
+    document.getElementById("mark2").checked = true; 
+    document.getElementById("sine4").style.display = "block";
   }
   function sinhala_s24()
   {
-  document.getElementById("sin4").style.border = "4px solid red"; 
-  document.getElementById("unmark2").checked = true; 
-  document.getElementById("sine4").style.display = "block";
+    document.getElementById("sin3").style.border = "4px solid red"; 
+    document.getElementById("sin3").style.pointerEvents = "none";
+    document.getElementById("unmark2").checked = true; 
+    document.getElementById("sine3").style.display = "block";
   }
   function sinhala_s25()
   {
-  document.getElementById("sin5").style.border = "4px solid blue"; 
-  document.getElementById("mark3").checked = true; 
-  document.getElementById("sine5").style.display = "block";
+    document.getElementById("sin5").style.border = "4px solid blue"; 
+    document.getElementById("sin6").style.pointerEvents = "none";
+    document.getElementById("mark3").checked = true; 
+    document.getElementById("sine6").style.display = "block";
   }
   function sinhala_s26()
   {
-  document.getElementById("sin6").style.border = "4px solid red"; 
-  document.getElementById("unmark3").checked = true; 
-  document.getElementById("sine6").style.display = "block";
+    document.getElementById("sin5").style.border = "4px solid red"; 
+    document.getElementById("sin5").style.pointerEvents = "none";
+    document.getElementById("unmark3").checked = true; 
+    document.getElementById("sine5").style.display = "block";
   }
+
+  function sinhala_s27()
+  {
+  document.getElementById("sin8").style.border = "4px solid red"; 
+  document.getElementById("sin8").style.pointerEvents = "none";
+  document.getElementById("unmark4").checked = true; 
+  document.getElementById("sine7").style.display = "block";
+  }
+  function sinhala_s28()
+  {
+  document.getElementById("sin8").style.border = "4px solid blue"; 
+  document.getElementById("sin7").style.pointerEvents = "none";
+  document.getElementById("mark4").checked = true; 
+  document.getElementById("sine8").style.display = "block";
+  }
+  function sinhala_s29()
+  {
+    document.getElementById("sin9").style.border = "4px solid blue"; 
+    document.getElementById("sin10").style.pointerEvents = "none";
+    document.getElementById("mark5").checked = true; 
+    document.getElementById("sine10").style.display = "block";
+  }
+  function sinhala_s30()
+  {
+    document.getElementById("sin9").style.border = "4px solid red"; 
+    document.getElementById("sin9").style.pointerEvents = "none";
+    document.getElementById("unmark5").checked = true; 
+    document.getElementById("sine9").style.display = "block";
+  }
+
+  function sinhala_s31()
+  {
+  document.getElementById("sin12").style.border = "4px solid red"; 
+  document.getElementById("sin12").style.pointerEvents = "none";
+  document.getElementById("unmark6").checked = true; 
+  document.getElementById("sine11").style.display = "block";
+  }
+  function sinhala_s32()
+  {
+  document.getElementById("sin12").style.border = "4px solid blue"; 
+  document.getElementById("sin11").style.pointerEvents = "none";
+  document.getElementById("mark6").checked = true; 
+  document.getElementById("sine12").style.display = "block";
+  }
+
+  
