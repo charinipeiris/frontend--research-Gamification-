@@ -20,7 +20,7 @@
 							<img class="question-audio" src = "/assets/images/shape_sound2.gif" id="question-shapes1">
 						</div> 
 						<div class="col-sm-6 col-md-6 col-lg-6">	
-							<h1>තේරවිලි තෝරමු</h1>
+							<h1 style="text-shadow: 2px 2px #000000;">තේරවිලි තෝරමු</h1>
 						</div>
 						<div class="col-sm-3 col-md-3 col-lg-3">	
 							<div class="timer" id="time-back">
@@ -42,70 +42,96 @@
 
 						<div class="row">
 							<div class="col-sm-8 col-md-8 col-lg-8">
-						<div class="row">
-						  <div class="col-4">
-                            <!-- <img src="assets/images/parrot.png" style="border: 2px solid black; border-radius: 10px; width: 100%; min-width: 45px; max-width:100px; height: auto;"> -->
-                            <h2>අලියා නොයන මග</h2>
+						<div class="row riddle-row1">
+						  <div class="col-5">
+                            <h2 class="riddle">අලියා නොයන මග</h2>
 						  </div>
-						  <div class="col-2">
-							<img id ="one-r1" src="assets/images/bird-text.png" onclick="sentences1()" style="border: 2px solid black; border-radius: 10px; width: 100%; min-width: 60px; max-width:150px;height: auto;">
+						  <div class="col-3">
+                            <div class="answer-box" id ="one-r1" onclick="sentences1()">
+                                <h2 class="answer-text">ඉණිමග</h2>
+                            </div>
 						</div>
-						  <div class="col-2">
-							<img id ="one-r2" src="assets/images/monkey-text.png" onclick="sentences2()" style="border: 2px solid black; border-radius: 10px; width: 100%; min-width: 60px;max-width:150px; height: auto;">
+						  <div class="col-3">
+                            <!-- <img id ="one-r2" src="assets/images/monkey-text.png" onclick="sentences2()" style="border: 2px solid black; border-radius: 10px; width: 100%; min-width: 60px;max-width:150px; height: auto;"> -->
+                            <div class="answer-box" id ="one-r2" onclick="sentences2()">
+                                <h2 class="answer-text">කතරගම</h2>
+                            </div>
 						  </div>
-						  <div class="col-2">
-							<img id ="one-r3" src="/assets/images/sbob1.png" style="display:none; width: 100%; max-width: 80px; min-width:30px; height: auto; margin:auto">
+						  <div class="col-1">
+							<img id ="one-r3" src="/assets/images/sbob1.png" style="display:none;  max-width: 70px; min-width:30px; height: auto; margin:auto">
 						  </div>
 						  <input type="checkbox" hidden name="fruit" id="mark1"/>
 						  <input type="checkbox" hidden name="fruit" id="unmark1"/>
 						</div>
 <br>
-						<div class="row">
-							<div class="col-3">
-							  <img src="assets/images/mammoty.png" style="border: 2px solid black; border-radius: 10px; width: 100%; min-width: 45px; max-width:100px; height: auto;">
+						<div class="row riddle-row2">
+							<div class="col-5">
+                              <h2 class="riddle" style="display:inline">ගහක් උඩ ගෙඩියක්</h2>
+                            <h2 class="riddle">ගෙඩියක් උඩ ගහක්</h2>
 							</div>
 							<div class="col-3" >
-								<img id ="two-r1" src="assets/images/morning-text.png" onclick="sentences3()" style="border: 2px solid black; border-radius: 10px; width: 100%;  min-width: 60px; max-width:150px; height: auto;">
+                                <!-- <img id ="two-r1" src="assets/images/morning-text.png" onclick="sentences3()" style="border: 2px solid black; border-radius: 10px; width: 100%;  min-width: 60px; max-width:150px; height: auto;"> -->
+                                <div class="answer-box" id ="two-r1" onclick="sentences3()">
+                                    <h2 class="answer-text">වංගෙඩිය</h2>
+                                </div>
 							</div>
 							<div class="col-3" >
-								<img id ="two-r2" src="assets/images/mammoty-text.png" onclick="sentences4()" style="border: 2px solid black; border-radius: 10px; width: 100%;  min-width: 60px; max-width:150px; height: auto;">
+                                <!-- <img id ="two-r2" src="assets/images/mammoty-text.png" onclick="sentences4()" style="border: 2px solid black; border-radius: 10px; width: 100%;  min-width: 60px; max-width:150px; height: auto;"> -->
+                                <div class="answer-box" id ="two-r2" onclick="sentences4()">
+                                    <h2 class="answer-text">අන්නාසි</h2>
+                                </div>
 							</div>
-							<div class="col-3">
-								<img id ="two-r3" src="/assets/images/sbob1.png" style="display:none; width: 100%; max-width: 80px; min-width:30px; height: auto; margin:auto">
+							<div class="col-1">
+								<img id ="two-r3" src="/assets/images/sbob1.png" style="display:none;  max-width: 70px; min-width:0px; height: auto; margin:auto">
 							  </div>
 							  <input type="checkbox" hidden name="fruit" id="mark2"/>
 							  <input type="checkbox" hidden name="fruit" id="unmark2"/>
 						  </div>
 <br>
-						  <div class="row">
-							<div class="col-3">
-							  <img src="assets/images/honey-bee.png" style="border: 2px solid black; border-radius: 10px; width: 100%; min-width: 45px; max-width:100px; height: auto;">
+						  <div class="row riddle-row3">
+							<div class="col-5">
+                              <h2 class="riddle" style="display:inline">ඇදල ගත්තා - දමලා ගැහුවා</h2>
+                            <h2 class="riddle">මලක් පිපුනා - මල පරවුනා </h2>
 							</div>
 							<div class="col-3">
-								<img id ="three-r1" src="assets/images/broom-text.png" onclick="sentences5()" style="border: 2px solid black; border-radius: 10px; width: 100%;  min-width: 60px; max-width:150px;height: auto;">
+                                <!-- <img id ="three-r1" src="assets/images/broom-text.png" onclick="sentences5()" style="border: 2px solid black; border-radius: 10px; width: 100%;  min-width: 60px; max-width:150px;height: auto;"> -->
+                                <div class="answer-box" id ="three-r1" onclick="sentences5()">
+                                    <h2 class="answer-text">පිච්ච මල</h2>
+                                </div>
 							</div>
 							<div class="col-3">
-								<img id ="three-r2" src="assets/images/honey-bee-text.png" onclick="sentences6()" style="border: 2px solid black; border-radius: 10px; width: 100%;  min-width: 60px; max-width:150px;height: auto;">
+                                <!-- <img id ="three-r2" src="assets/images/honey-bee-text.png" onclick="sentences6()" style="border: 2px solid black; border-radius: 10px; width: 100%;  min-width: 60px; max-width:150px;height: auto;"> -->
+                                <div class="answer-box" id ="three-r2" onclick="sentences6()">
+                                    <h2 class="answer-text">ගිණිකූර</h2>
+                                </div>
+                                
 							</div>
-							<div class="col-3">
-								<img id ="three-r3"  src="/assets/images/sbob1.png" style="display:none; width: 100%; max-width: 80px; min-width:30px; height: auto; margin:auto">
+							<div class="col-1">
+								<img id ="three-r3"  src="/assets/images/sbob1.png" style="display:none;  max-width: 70px; min-width:30px; height: auto; margin:auto">
 							  </div>
 							  <input type="checkbox" hidden name="fruit" id="mark3"/>
 							  <input type="checkbox" hidden name="fruit" id="unmark3"/>
 						  </div>
 <br>
-							<div class="row">
-								<div class="col-3">
-								<img src="assets/images/kettle.png" style="border: 2px solid black; border-radius: 10px; width: 100%; min-width: 45px; max-width:100px; height: auto;">
+							<div class="row riddle-row4">
+								<div class="col-5">
+                                <h2 class="riddle" style="display:inline;">අත්තක් උඩ බුම්මාගෙන</h2>
+                                    <h2 class="riddle">කටු රෙද්දක් පොරවාගෙන</h2>
 								</div>
 								<div class="col-3">
-									<img id ="four-r1" src="assets/images/kettle-text.png" onclick="sentences7()" style="border: 2px solid black; border-radius: 10px; width: 100%;  min-width: 60px; max-width:150px; height: auto;">								
+                                    <!-- <img id ="four-r1" src="assets/images/kettle-text.png" onclick="sentences7()" style="border: 2px solid black; border-radius: 10px; width: 100%;  min-width: 60px; max-width:150px; height: auto;">								 -->
+                                    <div class="answer-box" id ="four-r1" onclick="sentences7()">
+                                        <h2 class="answer-text">කොස්ගෙඩිය</h2>
+                                    </div>
 								</div>
 								<div class="col-3">
-									<img id ="four-r2" src="assets/images/bottle-text.png" onclick="sentences8()" style="border: 2px solid black; border-radius: 10px; width: 100%;  min-width: 60px; max-width:150px; height: auto;">								
+                                    <!-- <img id ="four-r2" src="assets/images/bottle-text.png" onclick="sentences8()" style="border: 2px solid black; border-radius: 10px; width: 100%;  min-width: 60px; max-width:150px; height: auto;">								 -->
+                                    <div class="answer-box" id ="four-r2" onclick="sentences8()">
+                                        <h2 class="answer-text">බකමූණා</h2>
+                                    </div>
 								</div>
-								<div class="col-3">
-									<img id ="four-r3" src="/assets/images/sbob1.png" style="display:none; width: 100%; max-width: 80px; min-width:30px; height: auto; margin:auto">
+								<div class="col-1">
+									<img id ="four-r3" src="/assets/images/sbob1.png" style="display:none; max-width: 70px; min-width:30px; height: auto; margin:auto">
 								  </div>
 								  <input type="checkbox" hidden name="fruit" id="mark4"/>
 								  <input type="checkbox" hidden name="fruit" id="unmark4"/>

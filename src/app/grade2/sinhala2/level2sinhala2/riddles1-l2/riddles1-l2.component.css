@@ -4512,5 +4512,80 @@
 		margin-left: 20px;
 	  }
   }
+.riddle{
+		font-weight: 400;
+		line-height: 1.5;
+		margin: 0 0 0.5rem 0;
+		color: rgb(5, 0, 0);
+		font-size: 1.7rem;
+		text-shadow: 1px 1px #cfb230;
+
+}
+
+.answer-box{
+	width:150px;
+	border: 2px solid black; 
+	border-radius: 10px;
+	background-color: seashell;
+	/* padding:5px; */
+}
+.answer-text{
+	margin: 0.6rem;
+	color:rgba(0, 0, 0, 0.95);
+	font-weight: 600;
+	font-size: 1.6rem;
+}
+.riddle-row1{
+	background-color: rgb(209, 196, 122);
+	width: 800px;
+	padding: 15px;
+	border: 2px solid rgb(255, 255, 255); 
+	border-radius: 8px;
+}
+.riddle-row2{
+	background-color: rgb(138, 182, 207);
+	width: 800px;
+	padding: 15px;
+	border: 2px solid rgb(255, 255, 255); 
+	border-radius: 8px;
+}
+.riddle-row3{
+	background-color: rgb(170, 218, 131);
+	width: 800px;
+	padding: 15px;
+	border: 2px solid rgb(255, 255, 255); 
+	border-radius: 8px;
+}
+.riddle-row4{
+	background-color: rgb(175, 119, 86);
+	width: 800px;
+	padding: 15px;
+	border: 2px solid rgb(255, 255, 255); 
+	border-radius: 8px;
+}
+
+@media screen and (max-width: 480px) {
+	.riddle{
+		line-height: 1.2;
+		margin-left: -10px;
+		font-size: 0.8rem;
+}
+.riddle-row1, .riddle-row2, .riddle-row3, .riddle-row4{
+	width: 280px;
+	margin-left:-40px;
+}
+.answer-box{
+	width:60px;
+	margin-right: 20px;
+}
+.answer-text{
+	margin: 0.1rem;
+	font-weight: 0;
+	font-size: 0.8rem;
+}
+}
+
+
+
 
 		  
