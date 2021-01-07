@@ -111,7 +111,6 @@ import { SentencesL1Component } from './grade2/sinhala2/level1sinhala2/sentences
 import { PoemsL1sL1Component } from './grade2/sinhala2/level1sinhala2/poems-l1s-l1/poems-l1s-l1.component';
 import { StoriesComponent } from './grade1/sinhala/sinhala-level1/stories/stories.component';
 import { Stories1Component } from './grade1/sinhala/sinhala-level2/stories1/stories1.component';
-import { Storiesl1sL1Component } from './grade2/sinhala2/level1sinhala2/storiesl1s-l1/storiesl1s-l1.component';
 import { Stories1sL2Component } from './grade2/sinhala2/level2sinhala2/stories1s-l2/stories1s-l2.component';
 
 
@@ -194,7 +193,7 @@ const appRoutes:Routes = [
   {path:'grade2/sinhala/level1/game2',component: WordsL1eComponent},
   {path:'grade2/sinhala/level1/game3',component:SentencesL1Component},
   {path:'grade2/sinhala/level1/game4',component:WordSelectionL1Component},
-  {path:'grade2/sinhala/level1/game5',component:Storiesl1sL1Component},
+ 
 
  //-----sinhala grade2 level2--
    {path:'grade2/sinhala/level2',component: Level2sinhala2Component},
@@ -306,7 +305,6 @@ const appRoutes:Routes = [
     PoemsL1sL1Component,
     StoriesComponent,
     Stories1Component,
-    Storiesl1sL1Component,
     Stories1sL2Component,
  
   
