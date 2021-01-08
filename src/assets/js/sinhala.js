@@ -970,5 +970,82 @@ function koholla1()
   document.getElementById("unmark001").checked = true; 
   document.getElementById("koh06").style.display = "block";
   }
-  
+
+
+  //------------------------grade 2 level 2 wachana thoramu----------------------
+
+  function new_work1()
+  {
+  document.getElementById("ax2").style.border = "4px solid red"; 
+  document.getElementById("ax2").style.pointerEvents = "none";
+  document.getElementById("ax3").style.pointerEvents = "none";
+  document.getElementById("unmark1").checked = true; 
+  document.getElementById("axe1").style.display = "block";
+  }
+  function new_work2()
+  {
+  document.getElementById("ax2").style.border = "4px solid blue"; 
+  document.getElementById("ax1").style.pointerEvents = "none";
+  document.getElementById("ax3").style.pointerEvents = "none";
+  document.getElementById("mark1").checked = true; 
+  document.getElementById("axe2").style.display = "block";
+  }
+
+  function new_work3()
+  {
+  document.getElementById("ax2").style.border = "4px solid red"; 
+  document.getElementById("ax2").style.pointerEvents = "none";
+  document.getElementById("ax1").style.pointerEvents = "none";
+  document.getElementById("unmark1").checked = true; 
+  document.getElementById("axe3").style.display = "block";
+  }
+
+  function new_work4()
+  {
+  document.getElementById("ax4").style.border = "4px solid blue"; 
+  document.getElementById("ax5").style.pointerEvents = "none";
+  document.getElementById("ax6").style.pointerEvents = "none";
+  document.getElementById("mark2").checked = true; 
+  document.getElementById("axe4").style.display = "block";
+  }
+  function new_work5()
+  {
+  document.getElementById("ax4").style.border = "4px solid red"; 
+  document.getElementById("ax4").style.pointerEvents = "none";
+  document.getElementById("ax6").style.pointerEvents = "none";
+  document.getElementById("unmark2").checked = true; 
+  document.getElementById("axe5").style.display = "block";
+  }
+  function new_work6()
+  {
+  document.getElementById("ax4").style.border = "4px solid red"; 
+  document.getElementById("ax4").style.pointerEvents = "none";
+  document.getElementById("ax5").style.pointerEvents = "none";
+  document.getElementById("unmark2").checked = true; 
+  document.getElementById("axe6").style.display = "block";
+  }
+  function new_work7()
+  {
+  document.getElementById("ax9").style.border = "4px solid red"; 
+  document.getElementById("ax8").style.pointerEvents = "none";
+  document.getElementById("ax9").style.pointerEvents = "none";
+  document.getElementById("unmark3").checked = true; 
+  document.getElementById("axe7").style.display = "block";
+  }
+  function new_work8()
+  {
+  document.getElementById("ax9").style.border = "4px solid red"; 
+  document.getElementById("ax7").style.pointerEvents = "none";
+  document.getElementById("ax9").style.pointerEvents = "none";
+  document.getElementById("unmark3").checked = true; 
+  document.getElementById("axe8").style.display = "block";
+  }
+  function new_work9()
+  {
+  document.getElementById("ax9").style.border = "4px solid blue"; 
+  document.getElementById("ax7").style.pointerEvents = "none";
+  document.getElementById("ax8").style.pointerEvents = "none";
+  document.getElementById("mark3").checked = true; 
+  document.getElementById("axe9").style.display = "block";
+  }
 
