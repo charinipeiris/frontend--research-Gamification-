@@ -201,6 +201,14 @@ function wordgames1()
   document.getElementById("wo171").style.border = "4px solid red"; 
   }
 
+
+  //Audio functions of the Grade 1 Level 1 words game
+
+  function words_play() {
+    var audio = document.getElementById("wordsL1_audio");
+    audio.play();
+  }
+
 // -------------------------------Grade 1 Level 1 - sentences.component -----------------------
 
 function sentences1()
@@ -393,6 +401,31 @@ function poems04()
   document.getElementById("cell-2").style.border = "4px solid purple";
 }
 
+//---------------------- Grade 1 Level 1 Poems game - Audio Functions
+
+// $(document).ready(function(){
+//   $(document).on('click',"#audio_img",function () {
+//   var audio = document.getElementById("poems_audio");
+//   if (audio.paused) audio.play();
+//   else audio.pause();
+// });
+// });
+
+function play1() {
+  var audio = document.getElementById("poems_audio_1");
+  audio.play();
+}
+
+function play2() {
+  var audio = document.getElementById("poems_audio_2");
+  audio.play();
+}
+
+function play3() {
+  var audio = document.getElementById("poems_audio_3");
+  audio.play();
+}
+
 
 
 
@@ -564,4 +597,13 @@ function test6_sinhala()
   document.getElementById("s12").style.display = "block";
   document.getElementById("cell-3").style.border = "4px solid pink";
   document.getElementById("rew3").style.filter = "grayscale(0%)"
+}
+
+//----------------sentences grade 1 level 1 ------------------------
+// Audio Functions
+
+
+function sentences_play() {
+  var audio = document.getElementById("sentences_G1_L1_audio");
+  audio.play();
 }
