@@ -1,1 +1,156 @@
-<p>stories1s-l2 works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Sinhala</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body style="background-size:cover;background-image:url(/assets/images/fun2.png);">
+   
+<div class="container" class="image" style="height:100% ;width:100%;">
+    <br>
+
+<!-- row 1 -->
+  <div class="row">
+      <div class=" col-sm-3 col-xs-3  col-lg-3">
+        <a href="/grade2/sinhala/level2/" style ='margin-left:60px;color:green;height:50px ;' class="previous button1">&laquo; Previous</a>
+      </div>
+
+     
+
+      <div class="col-sm-6 col-xs-6 col-lg-6">
+
+        <div class="row">
+            <div class="col-sm-3 col-xs-3 col-lg-3">
+                <div class ="row">
+                    <div class="col-sm-4 col-xs-4 col-lg-4">
+                        <img src = "/assets/images/sound_audio3.gif" style="height:60px;">
+                    </div>
+                    <div class="col-sm-4 col-xs-4 col-lg-4">
+                        
+                    </div>
+                </div>
+             </div>
+            <div class="col-sm-9 col-xs-9 col-lg-9" >
+                <h1 style="margin-left:10px ;"><b>කතන්දර රස විඳිමු-2</b></h1>   
+            </div>
+        </div>
+     
+      </div>
+
+
+      <div class=" col-sm-3 col-xs-3  col-lg-3">
+        <div id="time-back" style=" background-color: azure; border-radius: 15px; width: 175px;padding:5px ;margin-left: 60px;">
+            <div id="display" style=" font-size:38px; font-family: 'Permanent Marker', cursive;">
+               00:00:00
+            </div>
+        </div>
+      
+      </div>
+</div>
+
+<!-- row 2 -->
+  
+  <div class="row" >
+    <h3 id="alert" style=" color: red;margin-left:60px;margin-top: 20px;visibility:hidden"> සියල්ලටම පිලිතුරු සපයන්න</h3>
+  </div>
+    <div class="row">
+        
+      <div class="col-sm-6 col-xs-6  col-lg-6">
+          <h3 style ="margin-top:20px; margin-left:20px; font-size:2vw;"><b>කතන්දරය අසා නිවැරදි පිලිතුරු තෝරන්න</b></h3><br>
+          <iframe src="https://drive.google.com/file/d/1AqBwWVdUgwxhjWfNAdMgGeVRM2Dtebrv/preview"  width="90%" height="360px" style ="margin-left:20px;"></iframe>
+      </div>  
+
+    <div class="col-sm-6 col-xs-6  col-lg-6" >
+        <div class="row">
+            <h4 style="margin-left:10px;margin-top:20px;">1) නරි රාළ දඩයමයක් කරගන්න යොදා ගන්නේ මොනවාද?</h4>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-4">
+                <button style="background-color:#A9D18E; border-radius:10px; border-style:solid; border-color: black; border-width:3px" onclick="koholla1()" id="koh1">
+                  <img src="assets/images/koholla-1.png" style="max-width:100%">
+                </button>
+                <img id ="koh01" src="/assets/images/w.gif" style="display:none; width: 100%; max-width: 130px; min-width:30px; height: auto; margin:auto">
+            </div>
+
+            <div class="col-4">
+                <button style="background-color:#A9D18E; border-radius:10px; border-style:solid; border-color: black; border-width:3px;" onclick="koholla2()" id="koh2">
+                  <img src="assets/images/koholla-2.png" style="max-width:100%;">
+                </button>  
+                <img id ="koh02" src="/assets/images/sbob1.png" style="display:none; width: 100%; max-width: 130px; min-width:30px; height: auto; margin:auto">
+            </div>
+
+            <div class="col-4">
+              <button style="background-color:#A9D18E; border-radius:10px; border-style:solid; border-color: black; border-width:3px; margin-right: 10px;" onclick="koholla3()" id="koh3">
+                <img src="assets/images/koholla-3.png" style="max-width:100%;">
+              </button>  
+              <img id ="koh03" src="/assets/images/w.gif" style="display:none; width: 100%; max-width: 130px; min-width:30px; height: auto; margin:auto">
+          </div>
+
+            <input type="checkbox" hidden name="fruit" id="mark1"/>
+            <input type="checkbox" hidden name="fruit" id="unmark1"/>
+
+        </div>
+
+        <br>
+        <br>
+
+        <div class="row">
+          <h4 style="margin-left:10px;margin-top:20px;">2) හාවා ඇලුනේ මොකකටද?</h4>
+        </div>
+        <br>
+        
+        <div class="row">
+          <div class="col-4">
+            <button style="background-color:#A9D18E; border-radius:10px; border-style:solid; border-color: black; border-width:3px" onclick="koholla4()" id="koh4">
+              <img src="assets/images/koholla-4.png" style="max-width:100%;">
+            </button>
+              <img id ="koh04" src="/assets/images/w.gif" style="display:none; width: 100%; max-width: 130px; min-width:30px; height: auto; margin:auto">
+          </div>
+          
+          <div class="col-4">
+            <button style="background-color:#A9D18E; border-radius:10px; border-style:solid; border-color: black; border-width:3px" onclick="koholla5()" id="koh5">
+              <img src="assets/images/koholla-5.png" style="max-width:100%;">
+            </button>  
+              <img id ="koh05" src="/assets/images/sbob1.png" style="display:none; width: 100%; max-width: 130px; min-width:30px; height: auto; margin:auto">
+          </div>
+
+          <div class="col-4">
+            <button style="background-color:#A9D18E; border-radius:10px; border-style:solid; border-color: black; border-width:3px; margin-right: 10px;" onclick="koholla6()" id="koh6">
+              <img src="assets/images/koholla-6.png" style="max-width:100%;">
+            </button>  
+              <img id ="koh06" src="/assets/images/w.gif" style="display:none; width: 100%; max-width: 130px; min-width:30px; height: auto; margin:auto">
+          </div>
+
+          <input type="checkbox" hidden name="fruit" id="mark001"/>
+          <input type="checkbox" hidden name="fruit" id="unmark001"/>
+
+        </div>
+       
+     </div>
+
+
+</div>
+
+
+
+
+<div class="row">
+  <div  class="col-sm-3 col-xs-3  col-lg-3"></div>
+  <div  class="col-sm-3 col-xs-3  col-lg-3"></div>
+  <div  class="col-sm-3 col-xs-3  col-lg-3"></div>
+  <div  class="col-sm-3 col-xs-3  col-lg-3">
+    <div class ="row">
+      <img id ="arrow1" src ="/assets/images/arrow_submit.gif" style=" height: 130px; width: 130px;margin-left:40px ">
+     
+    </div>
+    <div class ="row">
+      <button id="final_button" class="button2" style ="width:100px;margin-left:52px ;" >Next</button> 
+    </div>
+    <br>
+  </div> 

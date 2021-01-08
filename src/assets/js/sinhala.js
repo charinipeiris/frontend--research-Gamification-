@@ -915,3 +915,60 @@ function sirimath1()
   document.getElementById("sine012").style.display = "block";
   }
 
+// -------------------------------Grade 2 Level 2 - stories - Koholla Baba -----------------------
+
+function koholla1()
+  {
+  document.getElementById("koh2").style.border = "4px solid red"; 
+  document.getElementById("koh3").style.pointerEvents = "none";
+  document.getElementById("koh2").style.pointerEvents = "none";
+  document.getElementById("unmark1").checked = true; 
+  document.getElementById("koh01").style.display = "block";
+  }
+  
+  function koholla2()
+  {
+  document.getElementById("koh2").style.border = "4px solid blue"; 
+  document.getElementById("koh1").style.pointerEvents = "none";
+  document.getElementById("koh3").style.pointerEvents = "none";
+  document.getElementById("mark1").checked = true; 
+  document.getElementById("koh02").style.display = "block";
+  }
+  
+  function koholla3()
+  {
+  document.getElementById("koh2").style.border = "4px solid red"; 
+  document.getElementById("koh1").style.pointerEvents = "none";
+  document.getElementById("koh2").style.pointerEvents = "none";
+  document.getElementById("unmark1").checked = true; 
+  document.getElementById("koh03").style.display = "block";
+  }
+
+  function koholla4()
+  {
+  document.getElementById("koh5").style.border = "4px solid red"; 
+  document.getElementById("koh6").style.pointerEvents = "none";
+  document.getElementById("koh5").style.pointerEvents = "none";
+  document.getElementById("unmark001").checked = true; 
+  document.getElementById("koh04").style.display = "block";
+  }
+  
+  function koholla5()
+  {
+  document.getElementById("koh5").style.border = "4px solid blue"; 
+  document.getElementById("koh4").style.pointerEvents = "none";
+  document.getElementById("koh6").style.pointerEvents = "none";
+  document.getElementById("mark001").checked = true; 
+  document.getElementById("koh05").style.display = "block";
+  }
+
+  function koholla6()
+  {
+  document.getElementById("koh5").style.border = "4px solid red"; 
+  document.getElementById("koh4").style.pointerEvents = "none";
+  document.getElementById("koh5").style.pointerEvents = "none";
+  document.getElementById("unmark001").checked = true; 
+  document.getElementById("koh06").style.display = "block";
+  }
+  
+
