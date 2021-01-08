@@ -546,6 +546,22 @@ document.getElementById("unmark1").checked = true;
 document.getElementById("pos012").style.display = "block";
 }
 
+// Audio Functions of Grade 1 Level 2 Poems game
+
+function poemsL201() {
+  var audio = document.getElementById("poemsL201");
+  audio.play();
+}
+
+function poemsL202() {
+  var audio = document.getElementById("poemsL202");
+  audio.play();
+}
+function poemsL203() {
+  var audio = document.getElementById("poemsL203");
+  audio.play();
+}
+
 
 //----------------sentences grade 1 level 1 ------------------------
 

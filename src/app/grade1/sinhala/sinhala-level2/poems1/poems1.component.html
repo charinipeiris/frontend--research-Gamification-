@@ -17,7 +17,7 @@
 <!-- row 1 -->
   <div class="row">
       <div class=" col-sm-3 col-xs-3  col-lg-3">
-        <a href="/grade1/sinhala/level2/" style ='margin-left:60px;color:green;height:50px ;' class="previous button1">&laquo; Previous</a>
+        <!-- <a href="/grade1/sinhala/level2/" style ='margin-left:60px;color:green;height:50px ;' class="previous button1">&laquo; Previous</a> -->
       </div>
 
      
@@ -28,7 +28,6 @@
             <div class="col-sm-3 col-xs-3 col-lg-3">
                 <div class ="row">
                     <div class="col-sm-4 col-xs-4 col-lg-4">
-                        <img src = "/assets/images/sound_audio3.gif" style="height:60px;">
                     </div>
                     <div class="col-sm-4 col-xs-4 col-lg-4">
                         
@@ -59,38 +58,50 @@
     <h3 id="alert" style=" color: red;margin-left:60px;margin-top: 20px;visibility:hidden"> සියල්ලටම පිලිතුරු සපයන්න</h3>
   </div>
     <div class="row">
-        <div class="col-sm-6 col-xs-6  col-lg-6">
-             <h2 style ="margin-top:20px; margin-left:60px;text-align:center"><b>කවිය අසා නිවැරදි පිලිතුරු තෝරන්න</b></h2><br>
+        <div class="col-sm-1 col-xs-1 col-lg-1">
+          <img src = "/assets/images/sound_audio3.gif" id="audio_img" class="question-audio" onclick="poemsL201()" style="height:60px; float: right;">
+          <audio id="poemsL201" src="assets/audio/sinhala/G1L1Poems1.mp3" type="audio/m4a" control>Your browser does not support the audio element. </audio>
+        </div>
+
+        <div class="col-sm-5 col-xs-5 col-lg-5">
+             <h2 style ="margin-top:20px; text-align:center"><b>කවිය අසා නිවැරදි පිලිතුරු තෝරන්න</b></h2><br>
             <iframe src="https://drive.google.com/file/d/16q1g1kcmXOge_oGgpY92YpHevxWPXJZ7/preview"  width="90%" height="360px" style ="margin-left:10px"></iframe>
             <br>
         </div>
 
         <div class="col-sm-6 col-xs-6  col-lg-6">
           <div class="row">
-            <h4 style="margin-left:20px;margin-top:20px;">1) කිරි සුදු හාවා බය වුනේ කාටද? </h4>
-          </div  >
+            <div class="col-sm-6 col-xs-6 col-lg-6">
+              <h4 style="margin-left:20px;margin-top:20px;">1) කිරි සුදු හාවා බය වුනේ කාටද?</h4>
+            </div>
+
+            <div class="col-sm-6 col-xs-6 col-lg-6">
+              <img src = "/assets/images/sound_audio3.gif" id="audio_img" class="question-audio" onclick="poemsL202()" style="height:60px; float: left;">
+              <audio id="poemsL202" src="assets/audio/sinhala/G1L1Poems2.mp3" type="audio/m4a" control>Your browser does not support the audio element. </audio>
+            </div>
+          </div>
           <br>
 
           <div class="row">
             <div class="col-4">
-                <button style="margin-left:20px;border-radius:15px ;border-style: solid;border-width:5px;border-color: black;" onclick="poems21()" id="pos1">
-                  <img src="assets/images/kid-wbg.png" style="width:100px;height:100px;">
+                <button style="border-radius:15px ;border-style: solid;border-width:5px;border-color: black;" onclick="poems21()" id="pos1">
+                  <img src="assets/images/kid-wbg.png" style="width:100px;height:100px; margin-left:20px; margin-right:10px;">
                   <p>ළමයාට</p>
                 </button>
                   <img id ="pos4" src="/assets/images/w.gif" style="display:none; width: 100%; max-width: 130px; min-width:30px; height: auto; margin:auto">
             </div>
 
             <div class="col-4">
-                <button style="margin-left:10px;border-style: solid;border-radius:15px;border-width:5px;border-color: black;" onclick="poems22()" id="pos2">
-                  <img src="assets/images/fox-wbg.png" style="width:100px;height:100px;">
+                <button style="border-style: solid;border-radius:15px;border-width:5px;border-color: black;" onclick="poems22()" id="pos2">
+                  <img src="assets/images/fox-wbg.png" style="margin-left:20px; margin-right:10px; width:100px;height:100px;">
                   <p>නරියාට</p>
                 </button>  
                   <img id ="pos5" src="/assets/images/w.gif" style="display:none; width: 100%; max-width: 130px; min-width:30px; height: auto; margin:auto">
             </div>
 
             <div class="col-4">
-                <button style="margin-left:10px;border-style: solid;border-radius:15px;border-width:5px;border-color: black;" onclick="poems23()" id="pos3">
-                    <img src="assets/images/scarecrow-wbg.png" style="width:100px;height:100px;">
+                <button style="border-style: solid;border-radius:15px;border-width:5px;border-color: black;" onclick="poems23()" id="pos3">
+                    <img src="assets/images/scarecrow-wbg.png" style="margin-left:20px; margin-right:10px; width:100px;height:100px;">
                     <p>පඹයාට</p>
                 </button>  
                     <img id ="pos6" src="/assets/images/sbob1.png" style="display:none; width: 100%; max-width: 130px; min-width:30px; height: auto; margin:auto">
@@ -103,7 +114,14 @@
         <br>
 
         <div class="row">
-          <h4 style="margin-left:20px;margin-top:20px;">2) හාවා පැන්නේ කුමකට උඩින්ද?</h4>
+          <div class="col-sm-6 col-xs-6 col-lg-6">
+            <h4 style="margin-left:20px;margin-top:20px;">2) හාවා පැන්නේ කුමකට උඩින්ද?</h4>
+          </div>
+
+          <div class="col-sm-6 col-xs-6 col-lg-6">
+            <img src = "/assets/images/sound_audio3.gif" id="audio_img" class="question-audio" onclick="poemsL203()" style="height:60px; float: left;">
+            <audio id="poemsL203" src="assets/audio/sinhala/G1L1Poems2.mp3" type="audio/m4a" control>Your browser does not support the audio element. </audio>
+          </div>
         </div>
         <br>
         
