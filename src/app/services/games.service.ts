@@ -38,7 +38,7 @@ export class GamesService {
         }).toPromise();
   }
   
-  getComletedGames(username){
+  getCompletedGames(username){
     // console.log("uname",studentname)
     return this.http.get(this.url1 + 'getcompletedgames/' + username, {
       observe: 'body',
@@ -66,6 +66,21 @@ getUserNameforFace(studentname){
     observe: 'body',
   });
 }
+
+getCompletedGamesMaths(username){
+  // console.log("uname",studentname)
+  return this.http.get(this.url1 + 'getcompletedgamesmaths/' + username, {
+    observe: 'body',
+  });
+}
+
+getCompletedGamesSinhala(username){
+  // console.log("uname",studentname)
+  return this.http.get(this.url1 + 'getcompletedgamessinhala/' + username, {
+    observe: 'body',
+  });
+}
+
 
 }
 

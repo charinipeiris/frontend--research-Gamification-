@@ -9,7 +9,12 @@ import { GamesService } from '../services/games.service';
 export class AchievementsComponent implements OnInit {
 
   GamesArray = []; 
-  config: any;
+  GamesArray_M = [];
+  GamesArray_S = [];
+  GamesArray_E = [];
+  config_M: any;
+  config_S: any;
+  config_E: any;
 // x
   
 
@@ -24,10 +29,16 @@ export class AchievementsComponent implements OnInit {
     //     );
     //   }
   
-      this.config = {
+      this.config_M = {
         itemsPerPage: 3,
         currentPage: 1,
-        totalItems: this.GamesArray.length
+        totalItems: this.GamesArray_M.length
+      };
+
+      this.config_S = {
+        itemsPerPage: 3,
+        currentPage: 1,
+        totalItems: this.GamesArray_S.length
       };
     }
   
@@ -35,16 +46,26 @@ export class AchievementsComponent implements OnInit {
 
   ngOnInit(): void {
     var uname = localStorage.getItem("uname");
-    this.gameService.getComletedGames(uname).subscribe((data:any[]) => {
-      this.GamesArray = data;
+    this.gameService.getCompletedGamesMaths(uname).subscribe((data:any[]) => {
+      this.GamesArray_M = data;
+    }, (error) => {
+      
+    });
+
+    this.gameService.getCompletedGamesSinhala(uname).subscribe((data:any[]) => {
+      this.GamesArray_S = data;
     }, (error) => {
       
     });
 
   }
 
-  pageChanged(event){
-    this.config.currentPage = event;
+  pageChanged_M(event){
+    this.config_M.currentPage = event;
+  }
+
+  pageChanged_S(event){
+    this.config_S.currentPage = event;
   }
 
 
