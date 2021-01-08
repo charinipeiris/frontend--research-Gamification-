@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap');
 
 .image{
-    height:43em; 
+    height:100%; 
     background-size:cover; 
     width:100%;
 	background-image:url(/assets/images/login_back2.jpg);
