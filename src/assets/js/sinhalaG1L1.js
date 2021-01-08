@@ -297,6 +297,11 @@ function enableSubmit_sinhala(){
       document.getElementById("submit").style.display="none";
         }
         }
+//-----audio functions for word selection and riddle game-----
+  function audio_sinhala_wordselect() {
+    var audio = document.getElementById("quest_audio_word-select");
+    audio.play();
+  }
 
 
 //-----------------poems (Grade 1 level 1)-------------------------------
