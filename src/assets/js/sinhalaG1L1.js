@@ -373,7 +373,7 @@ document.getElementById("po2").style.pointerEvents = "none";
 document.getElementById("unmark1").checked = true; 
 document.getElementById("po3").style.display = "block";
 var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
-  myAudio.play();
+myAudio.play();
 enableSubmit_sinhalaPoems();
 }
 

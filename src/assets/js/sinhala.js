@@ -528,6 +528,13 @@ function wordgames12()
   myAudio.play();
   }
 
+    //Audio functions of the Grade 2 Level 1 words game
+
+    function words_play_g2() {
+      var audio = document.getElementById("words_play_g2_l1_audio");
+      audio.play();
+    }
+
   //------------------------------Grade 2 - Level 1 - Songs 
 
   function song1()
@@ -863,6 +870,13 @@ function wordgames12()
   document.getElementById("sine12").style.display = "block";
   var myAudio = new Audio('/assets/audio/yay.mp3');
   myAudio.play();
+  }
+
+  // Grade 2 level 1 Sentences game - Audio Functions
+
+  function sentences_g2_l1_play() {
+    var audio = document.getElementById("sentences_g2_l1_audio");
+    audio.play();
   }
 
 

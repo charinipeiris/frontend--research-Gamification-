@@ -15,7 +15,7 @@
     <br>
   <div class="row">
       <div class=" col-sm-3 col-xs-3  col-lg-3">
-        <a href="/grade1/sinhala/level2/" style ='margin-left:60px;color:green;height:50px ;' class="previous button1">&laquo; Previous</a>
+        <!-- <a href="/grade1/sinhala/level2/" style ='margin-left:60px;color:green;height:50px ;' class="previous button1">&laquo; Previous</a> -->
       </div>
 
       <div class="col-sm-6 col-xs-6 col-lg-6">
@@ -27,7 +27,7 @@
                      <img src = "/assets/images/click.gif" style="height:45px;margin-left:10px;">
                     </div> -->
                     <div class="col-sm-4 col-xs-4 col-lg-4">
-                        <img src = "/assets/images/sound_audio3.gif" style="height:60px;">
+                
                     </div>
                     <div class="col-sm-4 col-xs-4 col-lg-4">
                         
@@ -52,25 +52,142 @@
   </div>
 </div>
 
-  <div class="row">
+  <!-- <div class="row">
     <h3 style ="margin-top:20px; margin-left:60px;"><b>රූපයට ගැලපෙන වගන්ති පමණක් තෝරන්න</b></h3><br>
     <h3 id="alert" style=" color: red;margin-left:60px;margin-top: 20px;visibility:hidden"> සියල්ලටම පිලිතුරු සපයන්න</h3>
+  </div> -->
+
+  <div class="row">
+    <div class="col-sm-12 col-xs-12 col-lg-12">
+      <img src = "/assets/images/sound_audio3.gif" id="audio_img" class="question-audio" onclick="sentences_g2_l1_play()" style="height:60px; float: left;">
+      <audio id="sentences_g2_l1_audio" src="assets/audio/sinhala/G1L2WordSelection1.mp3" type="audio/m4a" control>Your browser does not support the audio element. </audio>
+      <h3 style ="margin-top:20px; text-align:center;"><b>පහත රූපයෙන් පෙන්නුම් කරන සිද්ධීන්ට අදාළ වන වැකි ඉදිරියෙන් ඇති, ✔ හෝ ✖ ලකුණ නිවැරදි ලෙස තෝරන්න</b></h3><br>
+      <h3 id="alert" style=" color: red;margin-left:60px;margin-top: 20px;visibility:hidden"> සියල්ලටම පිලිතුරු සපයන්න</h3>
+    </div>
   </div>
 <br>
 
 
-  <div class="row" >
-       <div class="col-sm-4 col-xs-4  col-lg-4">
-        </div>
-        <div class="col-sm-4 col-xs-4  col-lg-4">
-            <img src ="/assets/images/sinhalaimage1.jpg" style="width:600px;height:auto">
-        </div>
-        <div class="col-sm-4 col-xs-4  col-lg-4">
-        </div>
+<div class="row" >
+  <div class="col-sm-6 col-xs-6  col-lg-6" >
+    <img src ="/assets/images/sinhalaimage1.jpg" style="margin-left:20px;width:90%;height:auto;">
+  </div>
+  <div class="col-sm-6 col-xs-6 col-lg-6">
+    <div class="row">
+      <div class="col-6">
+        <img src="/assets/images/g1.JPG" id="image1" style="max-width:100%; border: 2px solid black; border-radius: 10px;margin-right:5px" > 
+      </div>
+      <div class="col-2">      
+        <img src="/assets/images/correct.JPG" id="sin1" style="max-width:100%; border: 2px solid black; border-radius: 10px;margin-right:5px" onclick="sinhala_s21()"> 
+      </div>
+      <div class="col-2">      
+        <img src="/assets/images/wrong.JPG" id="sin2"  style="max-width:100%; border: 2px solid black; border-radius: 10px;" onclick="sinhala_s22()"> 
+      </div>
+      <div class="col-2">
+        <img id ="sine1" src="/assets/images/w.gif" style="display:none; width: 100%; max-width: 60px; min-width:30px; height: auto; margin-bottom:5px; float:left">
+        <img id ="sine2" src="/assets/images/sbob1.png" style="display:none; width: 100%; max-width: 50px; min-width:30px; height: auto; margin-bottom:5px; float:left">   
+      </div>
+      <input type="checkbox" hidden name="fruit" id="mark1"/>
+      <input type="checkbox" hidden name="fruit" id="unmark1"/> 
+      <br>
+    </div>
+
+    <div class="row" style="margin-top: 5px;">
+      <div class="col-6">
+        <img  src="/assets/images/g2.JPG" style=" max-width:100%; border: 2px solid black; border-radius: 10px;margin-right:5px "> 
+      </div>
+      <div class="col-2"> 
+        <img src="/assets/images/correct.JPG" id="sin3" style="max-width:100%; border: 2px solid black; border-radius: 10px;margin-right:5px" onclick="sinhala_s23()">
+      </div> 
+      <div class="col-2">
+        <img src="/assets/images/wrong.JPG" id="sin4" style="max-width:100%; border: 2px solid black; border-radius: 10px;" onclick="sinhala_s24()"> 
+      </div>
+      <div class="col-2">
+        <img id ="sine3" src="/assets/images/w.gif" style="display:none; width: 100%; max-width: 60px; min-width:30px; height: auto; margin-bottom:5px; float:left">
+        <img id ="sine4" src="/assets/images/sbob1.png" style="display:none; width: 100%; max-width: 50px; min-width:30px; height: auto; margin-bottom:5px; float:left">
+      </div>
+      <input type="checkbox" hidden name="fruit" id="mark2"/>
+      <input type="checkbox" hidden name="fruit" id="unmark2"/> 
+      <br>
+    </div>
     
+    <div class="row" style="margin-top: 5px;">
+      <div class="col-6">
+        <img  src="/assets/images/g3.JPG"  style=" max-width:100%; border: 2px solid black; border-radius: 10px;margin-right:5px " > 
+      </div>
+      <div class="col-2">
+        <img src="/assets/images/correct.JPG" id="sin5"  style="max-width:100%; border: 2px solid black; border-radius: 10px;margin-right:5px" onclick="sinhala_s25()"> 
+      </div>
+      <div class="col-2">
+        <img src="/assets/images/wrong.JPG" id="sin6"  style="max-width:100%; border: 2px solid black; border-radius: 10px;" onclick="sinhala_s26()">
+      </div>
+      <div class="col-2">
+        <img id ="sine5" src="/assets/images/w.gif" style="display:none; width: 100%; max-width: 60px; min-width:30px; height: auto; margin-bottom:5px; float:left">
+        <img id ="sine6" src="/assets/images/sbob1.png" style="display:none; width: 100%; max-width: 50px; min-width:30px; height: auto; margin-bottom:5px; float:left">    
+      </div>
+      <input type="checkbox" hidden name="fruit" id="mark3"/>
+      <input type="checkbox" hidden name="fruit" id="unmark3"/>
+      <br>
+    </div>
+
+    <div class="row" style="margin-top: 5px;">
+      <div class="col-6">
+        <img  src="/assets/images/g4.JPG"  style="max-width:100%; border: 2px solid black; border-radius: 10px; margin-right:5px ">
+      </div>
+      <div class="col-2">
+        <img src="/assets/images/correct.JPG" id="sin7" style="max-width:100%; border: 2px solid black; border-radius: 10px;margin-right:5px" onclick="sinhala_s27()">
+      </div>
+      <div class="col-2">
+        <img src="/assets/images/wrong.JPG" id="sin8" style="max-width:100%; border: 2px solid black; border-radius: 10px;" onclick="sinhala_s28()"> 
+      </div>
+      <div class="col-2">
+        <img id ="sine7" src="/assets/images/w.gif" style="display:none; width: 100%; max-width: 60px; min-width:30px; height: auto;margin-bottom:5px; float:left">
+        <img id ="sine8" src="/assets/images/sbob1.png" style="display:none; width: 100%; max-width: 50px; min-width:30px; height: auto; margin-bottom:5px; float:left">
+      </div>
+      <input type="checkbox" hidden name="fruit" id="mark4"/>
+      <input type="checkbox" hidden name="fruit" id="unmark4"/>
+      <br>
+    </div>
+
+    <div class="row" style="margin-top: 5px;">
+      <div class="col-6">
+        <img name="brown" src="/assets/images/g5.JPG"  style="max-width:100%; border: 2px solid black; border-radius: 10px; margin-right:5px ">
+      </div>
+      <div class="col-2">
+        <img src="/assets/images/correct.JPG" id="sin9"  style="max-width:100%; border: 2px solid black; border-radius: 10px;margin-right:5px" onclick="sinhala_s29()"> 
+      </div>
+      <div class="col-2">
+        <img src="/assets/images/wrong.JPG" id="sin10"  style="max-width:100%; border: 2px solid black; border-radius: 10px;" onclick="sinhala_s30()"> 
+      </div>
+      <div class="col-2">
+        <img id ="sine9" src="/assets/images/w.gif" style="display:none; width: 100%; max-width: 60px; min-width:30px; height: auto; margin-bottom:5px; float:left">
+        <img id ="sine10" src="/assets/images/sbob1.png" style="display:none; width: 100%; max-width: 50px; min-width:30px; height: auto; margin-bottom:5px; float:left">     
+      </div>
+      <input type="checkbox" hidden name="fruit" id="mark5"/>
+      <input type="checkbox" hidden name="fruit" id="unmark5"/>
+      <br>
+    </div>
+
+    <div class="row" style="margin-top: 5px;">
+      <div class="col-6">
+        <img  src="/assets/images/g6.JPG"  style="max-width:100%; border: 2px solid black; border-radius: 10px; margin-right:5px" > 
+      </div>
+      <div class="col-2">
+        <img src="/assets/images/correct.JPG" id="sin11" style="max-width:100%; border: 2px solid black; border-radius: 10px;margin-right:5px" onclick="sinhala_s31()"> 
+      </div>
+      <div class="col-2">
+        <img src="/assets/images/wrong.JPG" id="sin12" style="max-width:100%; border: 2px solid black; border-radius: 10px;" onclick="sinhala_s32()"> 
+      </div>
+      <div class="col-2">
+        <img id ="sine11" src="/assets/images/w.gif" style="display:none; width: 100%; max-width: 60px; min-width:30px; height: auto; margin:auto; float:left">
+        <img id ="sine12" src="/assets/images/sbob1.png" style="display:none; width: 100%; max-width: 50px; min-width:30px; height: auto; margin-bottom:5px; float:left">
+      </div>
+      <input type="checkbox" hidden name="fruit" id="mark6"/>
+      <input type="checkbox" hidden name="fruit" id="unmark6"/>  
+    </div> 
   </div>
 
-  <div class="row" style="margin-top:20px;margin-left:20px ;">
+  <!-- <div class="row" style="margin-top:20px;margin-left:20px ;">
     <div class="col-sm-6 col-xs-6  col-lg-6">
       <img src="/assets/images/g1.JPG" id="image1"  style="border: 2px solid black; border-radius: 10px;margin-right:5px" > 
       <img src="/assets/images/correct.JPG" id="sin1"  style="border: 2px solid black; border-radius: 10px;margin-right:5px" onclick="sinhala2_s21()"> 
@@ -134,7 +251,7 @@
     <input type="checkbox" hidden name="fruit" id="mark6"/>
 		<input type="checkbox" hidden name="fruit" id="unmark6"/>
 
-  </div>
+  </div> -->
 
 </div>
 
