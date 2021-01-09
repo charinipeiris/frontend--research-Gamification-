@@ -5,14 +5,18 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
 </head>
 <body style="background-size:cover;background-image:url(/assets/images/bool1.jpg);">
-   
+  <app-emotiondetector></app-emotiondetector> 
 <div class="container" class="image" style="height:100% ;width:100%;">
-    <br>
+  <div id = "startdiv">
+    <button id="startbtn" class="button4" onclick = "startgame_sinhala()"><b>ආරම්භ කරන්න</b></button>
+    <img id="start-img" src = "/assets/images/start_button.png" >
+  </div>
+  <br>
 
 <!-- row 1 -->
   <div class="row">
@@ -48,6 +52,10 @@
         <div id="time-back" style=" background-color: azure; border-radius: 15px; width: 175px;padding:5px ;margin-left: 60px;">
             <div id="display" style=" font-size:38px; font-family: 'Permanent Marker', cursive;">
                00:00:00
+            </div>
+            <div class="buttons" >
+              <button hidden id="startStop" onclick="startStop()">Start</button> 
+              <button hidden id="reset" onclick="reset()">Reset</button>
             </div>
         </div>
       
@@ -135,8 +143,55 @@
     </div>
 
 
+    <div hidden id="clickarray"></div>
+    <br>
+    <br>
+    <div class="row">
+      <div class=col-6>
+        <img id ="arrow1" class="arrow" style="display: none;" src ="/assets/images/arrow_right.gif">
+      </div>
+      <div class=col-6>
+        <button id="submit" class="button2" style="display: none;" (click)="markstot_sentences1()">ඉවරයි</button> 
+      </div>
+    </div>
+    
+    <div id="myModal" class="modal">
+    
+      <div class="modal-content">
+        <div class="row">
+          <div class="col-12">
+            <h1 class ="coin-heading">Completed!!!</h1>
+          </div>
+        </div>
+        <div class="row coins-row">
+          <div class="col-4 coin_img1">
+            <img id="coin1" src="/assets/images/win_coin_cropped.gif" style = "visibility:hidden;">
+          </div>
+          <div class="col-4 coin_img2">
+            <img id="coin2" src="/assets/images/win_coin_cropped.gif" style = "visibility:hidden;">
+          </div>
+          <div class="col-4 coin_img3">
+            <img id="coin3" src="/assets/images/win_coin_cropped.gif" style = "visibility:hidden;">
+          </div>
+    
+        </div>
+    
+        <div class="row">
+          <div class="col-12" class="perf-time1">
+            <h5 class="perf-time2">ගත වූ කාලය : <span id="perf-time"></span></h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <a href="grade1/sinhala/level1" class="button3">ආපසු</a>
+          </div>
+        </div>
+        </div>								    	
+             
+      </div>
+    
 
-
+<!-- 
 <div class="row">
   <div  class="col-sm-3 col-xs-3  col-lg-3"></div>
   <div  class="col-sm-3 col-xs-3  col-lg-3"></div>
@@ -150,7 +205,7 @@
       <button id="final_button" class="button2" style ="width:100px;margin-left:52px ;" >Next</button> 
     </div>
     <br>
-  </div> 
+  </div>  -->
         
   
  
