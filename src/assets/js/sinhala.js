@@ -1046,6 +1046,7 @@ function koholla1()
   document.getElementById("ax3").style.pointerEvents = "none";
   document.getElementById("unmark1").checked = true; 
   document.getElementById("axe1").style.display = "block";
+  enableSubmit_sinhalaword4()
   }
   function new_work2()
   {
@@ -1054,6 +1055,7 @@ function koholla1()
   document.getElementById("ax3").style.pointerEvents = "none";
   document.getElementById("mark1").checked = true; 
   document.getElementById("axe2").style.display = "block";
+  enableSubmit_sinhalaword4()
   }
 
   function new_work3()
@@ -1063,6 +1065,7 @@ function koholla1()
   document.getElementById("ax1").style.pointerEvents = "none";
   document.getElementById("unmark1").checked = true; 
   document.getElementById("axe3").style.display = "block";
+  enableSubmit_sinhalaword4()
   }
 
   function new_work4()
@@ -1072,6 +1075,7 @@ function koholla1()
   document.getElementById("ax6").style.pointerEvents = "none";
   document.getElementById("mark2").checked = true; 
   document.getElementById("axe4").style.display = "block";
+  enableSubmit_sinhalaword4()
   }
   function new_work5()
   {
@@ -1080,6 +1084,7 @@ function koholla1()
   document.getElementById("ax6").style.pointerEvents = "none";
   document.getElementById("unmark2").checked = true; 
   document.getElementById("axe5").style.display = "block";
+  enableSubmit_sinhalaword4()
   }
   function new_work6()
   {
@@ -1088,6 +1093,7 @@ function koholla1()
   document.getElementById("ax5").style.pointerEvents = "none";
   document.getElementById("unmark2").checked = true; 
   document.getElementById("axe6").style.display = "block";
+  enableSubmit_sinhalaword4()
   }
   function new_work7()
   {
@@ -1096,6 +1102,7 @@ function koholla1()
   document.getElementById("ax9").style.pointerEvents = "none";
   document.getElementById("unmark3").checked = true; 
   document.getElementById("axe7").style.display = "block";
+  enableSubmit_sinhalaword4()
   }
   function new_work8()
   {
@@ -1104,6 +1111,7 @@ function koholla1()
   document.getElementById("ax9").style.pointerEvents = "none";
   document.getElementById("unmark3").checked = true; 
   document.getElementById("axe8").style.display = "block";
+  enableSubmit_sinhalaword4()
   }
   function new_work9()
   {
@@ -1112,5 +1120,17 @@ function koholla1()
   document.getElementById("ax8").style.pointerEvents = "none";
   document.getElementById("mark3").checked = true; 
   document.getElementById("axe9").style.display = "block";
+  enableSubmit_sinhalaword4()
   }
 
+  function enableSubmit_sinhalaword4(){
+    var chk = document.querySelectorAll('input[type="checkbox"]:checked').length;
+    console.log(chk);
+    if (chk == 3){
+         document.getElementById("submit").style.display="block";
+         document.getElementById("arrow1").style.display="block";
+          }
+    else{
+        document.getElementById("submit").style.display="none";
+          }
+          }
