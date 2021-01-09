@@ -94,6 +94,7 @@ function wordgame1()
   document.getElementById("wo2").style.pointerEvents = "none";
   document.getElementById("mark1").checked = true; //kid gave right answer 
   document.getElementById("wo1").style.border = "4px solid blue";
+  enableSubmit_sinhalaWords()
   }
 
   function wordgame2()
@@ -104,6 +105,7 @@ function wordgame1()
   document.getElementById("wo1").style.pointerEvents = "none";
   document.getElementById("unmark1").checked = true; //kid gave false answer 
   document.getElementById("wo1").style.border = "4px solid red";
+  enableSubmit_sinhalaWords()
   }
 
   function wordgame3()
@@ -115,6 +117,7 @@ function wordgame1()
   document.getElementById("wo4").style.pointerEvents = "none";
   document.getElementById("unmark2").checked = true; //kid gave false answer 
   document.getElementById("wo4").style.border = "4px solid red";
+  enableSubmit_sinhalaWords()
   
   }
 
@@ -127,6 +130,7 @@ function wordgame1()
   document.getElementById("wo3").style.pointerEvents = "none";
   document.getElementById("mark2").checked = true; //kid gave true answer 
   document.getElementById("wo4").style.border = "4px solid blue";
+  enableSubmit_sinhalaWords()
   }
   //q2
 
@@ -139,6 +143,7 @@ function wordgame1()
   document.getElementById("wo6").style.pointerEvents = "none";
   document.getElementById("unmark3").checked = true; //kid gave false answer 
   document.getElementById("wo6").style.border = "4px solid red";
+  enableSubmit_sinhalaWords()
   }
 
   function wordgame6()
@@ -149,6 +154,7 @@ function wordgame1()
   document.getElementById("wo5").style.pointerEvents = "none";
   document.getElementById("mark3").checked = true; //kid gave true answer 
   document.getElementById("wo6").style.border = "4px solid blue";
+  enableSubmit_sinhalaWords()
   }
 
   function wordgame7()
@@ -159,6 +165,7 @@ function wordgame1()
   document.getElementById("wo8").style.pointerEvents = "none";
   document.getElementById("unmark4").checked = true; //kid gave false answer 
   document.getElementById("wo8").style.border = "4px solid red";
+  enableSubmit_sinhalaWords()
   
   }
 
@@ -170,6 +177,7 @@ function wordgame1()
   document.getElementById("wo7").style.pointerEvents = "none";
   document.getElementById("mark4").checked = true; //kid gave false answer 
   document.getElementById("wo8").style.border = "4px solid blue";
+  enableSubmit_sinhalaWords()
   }
 
   //q3
@@ -182,6 +190,7 @@ function wordgame1()
   document.getElementById("wo10").style.pointerEvents = "none";
   document.getElementById("mark5").checked = true; //kid gave right answer 
   document.getElementById("wo9").style.border = "4px solid blue";
+  enableSubmit_sinhalaWords()
   }
 
   function wordgame10()
@@ -193,6 +202,7 @@ function wordgame1()
   document.getElementById("wo9").style.pointerEvents = "none";
   document.getElementById("unmark5").checked = true; //kid gave false answer 
   document.getElementById("wo9").style.border = "4px solid red";
+  enableSubmit_sinhalaWords()
   }
 
   function wordgame11()
@@ -203,6 +213,7 @@ function wordgame1()
   document.getElementById("wo12").style.pointerEvents = "none";
   document.getElementById("mark6").checked = true; //kid gave right answer 
   document.getElementById("wo11").style.border = "4px solid blue";
+  enableSubmit_sinhalaWords()
   }
 
   function wordgame12()
@@ -213,8 +224,21 @@ function wordgame1()
   document.getElementById("wo11").style.pointerEvents = "none";
   document.getElementById("unmark6").checked = true; //kid gave false answer 
   document.getElementById("wo11").style.border = "4px solid red";
-  
+  enableSubmit_sinhalaWords()
   }
+
+
+
+  function enableSubmit_sinhalaWords(){
+    var chk = document.querySelectorAll('input[type="checkbox"]:checked').length;
+    if (chk == 3){
+         document.getElementById("submit").style.display="block";
+         document.getElementById("arrow1").style.display="block";
+          }
+    else{
+        document.getElementById("submit").style.display="none";
+          }
+          }
 //-----------------------------------Grade 2---------------------------
 
 // -------------------------------Grade 2 Level 1 - words -----------------------
@@ -771,9 +795,9 @@ function wordgames12()
   document.getElementById("mark4").checked = true; 
   document.getElementById("nsen24").style.display = "block";
   }
-  document.getElementById("sin6").style.border = "4px solid red"; 
-  document.getElementById("unmark3").checked = true; 
-  document.getElementById("sine6").style.display = "block";
+  // document.getElementById("sin6").style.border = "4px solid red"; 
+  // document.getElementById("unmark3").checked = true; 
+  // document.getElementById("sine6").style.display = "block";
   
   //Grade 2 - Level 2 - Songs
 

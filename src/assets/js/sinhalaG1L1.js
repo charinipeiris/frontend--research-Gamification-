@@ -371,8 +371,7 @@ function poems3()
   document.getElementById("po7").style.pointerEvents = "none";
   document.getElementById("mark1").checked = true; 
   document.getElementById("po6").style.display = "block";
-  document.getElementById("rew2").style.filter = "grayscale(0%)";
-  document.getElementById("cell-2").style.border = "4px solid purple";
+  enableSubmit_sinhalaStory();
 }
 
 function poems4()
@@ -381,24 +380,25 @@ function poems4()
   document.getElementById("po5").style.pointerEvents = "none";
   document.getElementById("unmark1").checked = true; 
   document.getElementById("po8").style.display = "block";
+  enableSubmit_sinhalaStory();
 }
 
 function poems03()
 {
   document.getElementById("po07").style.border = "4px solid red"; 
   document.getElementById("po07").style.pointerEvents = "none";
-  document.getElementById("unmark1").checked = true; 
+  document.getElementById("unmark2").checked = true; 
   document.getElementById("po06").style.display = "block";
+  enableSubmit_sinhalaStory();
 }
 
 function poems04()
 {
   document.getElementById("po07").style.border = "4px solid blue"; 
   document.getElementById("po05").style.pointerEvents = "none";
-  document.getElementById("mark1").checked = true; 
+  document.getElementById("mark2").checked = true; 
   document.getElementById("po08").style.display = "block";
-  document.getElementById("rew2").style.filter = "grayscale(0%)";
-  document.getElementById("cell-2").style.border = "4px solid purple";
+  enableSubmit_sinhalaStory();
 }
 
 //---------------------- Grade 1 Level 1 Poems game - Audio Functions
@@ -428,6 +428,17 @@ function play3() {
 
 
 
+function enableSubmit_sinhalaStory(){
+  var chk = document.querySelectorAll('input[type="checkbox"]:checked').length;
+  console.log(chk);
+  if (chk == 2){
+       document.getElementById("submit").style.display="block";
+       document.getElementById("arrow1").style.display="block";
+        }
+  else{
+      document.getElementById("submit").style.display="none";
+        }
+        }
 
 
 //----------------poems grade 1 level 2-------------
@@ -439,6 +450,7 @@ document.getElementById("pos2").style.pointerEvents = "none";
 document.getElementById("pos3").style.pointerEvents = "none";
 document.getElementById("unmark1").checked = true; 
 document.getElementById("pos4").style.display = "block";
+enableSubmit_sinhalapoem2()
 }
 
 function poems22()
@@ -448,6 +460,7 @@ document.getElementById("pos1").style.pointerEvents = "none";
 document.getElementById("pos3").style.pointerEvents = "none";
 document.getElementById("unmark1").checked = true; 
 document.getElementById("pos5").style.display = "block";
+enableSubmit_sinhalapoem2()
 }
 
 function poems23()
@@ -457,8 +470,7 @@ function poems23()
   document.getElementById("pos2").style.pointerEvents = "none";
   document.getElementById("mark1").checked = true; 
   document.getElementById("pos6").style.display = "block";
-  document.getElementById("rew1").style.filter = "grayscale(0%)";
-  document.getElementById("cell-1").style.border = "4px solid purple";
+  enableSubmit_sinhalapoem2()
 }
 
 function poems021()
@@ -466,8 +478,9 @@ function poems021()
 document.getElementById("pos02").style.border = "4px solid red"; 
 document.getElementById("pos03").style.pointerEvents = "none";
 document.getElementById("pos02").style.pointerEvents = "none";
-document.getElementById("unmark1").checked = true; 
+document.getElementById("unmark2").checked = true; 
 document.getElementById("pos04").style.display = "block";
+enableSubmit_sinhalapoem2()
 }
 
 function poems022()
@@ -475,10 +488,9 @@ function poems022()
   document.getElementById("pos02").style.border = "4px solid blue"; 
   document.getElementById("pos01").style.pointerEvents = "none";
   document.getElementById("pos03").style.pointerEvents = "none";
-  document.getElementById("mark1").checked = true; 
+  document.getElementById("mark2").checked = true; 
   document.getElementById("pos05").style.display = "block";
-  document.getElementById("rew1").style.filter = "grayscale(0%)";
-  document.getElementById("cell-1").style.border = "4px solid purple";
+  enableSubmit_sinhalapoem2()
 }
 
 function poems023()
@@ -486,9 +498,25 @@ function poems023()
 document.getElementById("pos02").style.border = "4px solid red"; 
 document.getElementById("pos01").style.pointerEvents = "none";
 document.getElementById("pos02").style.pointerEvents = "none";
-document.getElementById("unmark1").checked = true; 
+document.getElementById("unmark2").checked = true; 
 document.getElementById("pos06").style.display = "block";
+enableSubmit_sinhalapoem2()
 }
+function enableSubmit_sinhalapoem2(){
+  var chk = document.querySelectorAll('input[type="checkbox"]:checked').length;
+  console.log(chk);
+  if (chk == 2){
+       document.getElementById("submit").style.display="block";
+       document.getElementById("arrow1").style.display="block";
+        }
+  else{
+      document.getElementById("submit").style.display="none";
+        }
+        }
+
+        //------------------------------------------
+
+
 
 // Audio Functions of Grade 1 Level 2 Poems game
 
@@ -515,6 +543,7 @@ function poems24()
   document.getElementById("pos9").style.pointerEvents = "none";
   document.getElementById("unmark1").checked = true; 
   document.getElementById("pos10").style.display = "block";
+ 
 }
 function poems25()
 {
@@ -523,6 +552,7 @@ function poems25()
   document.getElementById("pos9").style.pointerEvents = "none";
   document.getElementById("mark1").checked = true; 
   document.getElementById("pos11").style.display = "block";
+  
 }
 function poems26()
 {
@@ -533,6 +563,7 @@ function poems26()
   document.getElementById("pos12").style.display = "block";
   document.getElementById("rew2").style.filter = "grayscale(0%)";
   document.getElementById("cell-2").style.border = "4px solid purple";
+  
 }
 
 function poems024()
@@ -542,6 +573,7 @@ document.getElementById("pos09").style.pointerEvents = "none";
 document.getElementById("pos08").style.pointerEvents = "none";
 document.getElementById("unmark1").checked = true; 
 document.getElementById("pos010").style.display = "block";
+
 }
 
 function poems025()
@@ -553,6 +585,7 @@ function poems025()
   document.getElementById("pos011").style.display = "block";
   document.getElementById("rew1").style.filter = "grayscale(0%)";
   document.getElementById("cell-1").style.border = "4px solid purple";
+ 
 }
 
 function poems026()
@@ -562,6 +595,7 @@ document.getElementById("pos07").style.pointerEvents = "none";
 document.getElementById("pos08").style.pointerEvents = "none";
 document.getElementById("unmark1").checked = true; 
 document.getElementById("pos012").style.display = "block";
+
 }
 //----------------Stories grade 1 level 2-------------
 
