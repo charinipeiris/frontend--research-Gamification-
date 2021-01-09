@@ -477,7 +477,7 @@ function wordgames12()
   }
   
 
-  //----------------sentences grade 1 level 2
+  //----------------Sentences(word-selection1.component.html) grade 1 level 2
  
   function sinhala_s21()
   {
@@ -564,6 +564,12 @@ function wordgames12()
   document.getElementById("sin11").style.pointerEvents = "none";
   document.getElementById("mark6").checked = true; 
   document.getElementById("sine12").style.display = "block";
+  }
+
+  // Audio functions of Sentences game (word-selection1.component.html) grade 1 level 2
+  function sentences_l2_play() {
+    var audio = document.getElementById("sentences_l2_audio");
+    audio.play();
   }
 
   

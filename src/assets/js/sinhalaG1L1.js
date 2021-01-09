@@ -490,6 +490,24 @@ document.getElementById("unmark1").checked = true;
 document.getElementById("pos06").style.display = "block";
 }
 
+// Audio Functions of Grade 1 Level 2 Poems game
+
+function poemsL201() {
+  var audio = document.getElementById("poemsL201");
+  audio.play();
+}
+
+function poemsL202() {
+  var audio = document.getElementById("poemsL202");
+  audio.play();
+}
+function poemsL203() {
+  var audio = document.getElementById("poemsL203");
+  audio.play();
+}
+
+//----------------Stories grade 1 level 2-------------
+
 function poems24()
 {
   document.getElementById("pos9").style.border = "4px solid red"; 
@@ -545,20 +563,20 @@ document.getElementById("pos08").style.pointerEvents = "none";
 document.getElementById("unmark1").checked = true; 
 document.getElementById("pos012").style.display = "block";
 }
+//----------------Stories grade 1 level 2-------------
 
-// Audio Functions of Grade 1 Level 2 Poems game
-
-function poemsL201() {
-  var audio = document.getElementById("poemsL201");
+function stories_play_1() {
+  var audio = document.getElementById("stories_l2_audio_1");
   audio.play();
 }
 
-function poemsL202() {
-  var audio = document.getElementById("poemsL202");
+function stories_play_2() {
+  var audio = document.getElementById("stories_l2_audio_2");
   audio.play();
 }
-function poemsL203() {
-  var audio = document.getElementById("poemsL203");
+
+function stories_play_3() {
+  var audio = document.getElementById("stories_l2_audio_3");
   audio.play();
 }
 
