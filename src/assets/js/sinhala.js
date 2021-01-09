@@ -420,7 +420,7 @@ function wordgames12()
   document.getElementById("wo912").style.pointerEvents = "none";
   document.getElementById("unmark2").checked = true; //kid gave false answer 
   document.getElementById("wo1012").style.border = "4px solid blue"; 
-  var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
+  var myAudio = new Audio('/assets/audio/yay.mp3');
   myAudio.play();
   }
 
@@ -711,7 +711,7 @@ function wordgames12()
   document.getElementById("sin7").style.pointerEvents = "none";
   document.getElementById("mark4").checked = true; 
   document.getElementById("sine8").style.display = "block";
-  var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
+  var myAudio = new Audio('/assets/audio/yay.mp3');
   myAudio.play();
   }
   function sinhala_s29()
@@ -1215,6 +1215,11 @@ function sirimath1()
   myAudio.play();
   }
 
+  // Grade 2 Level 2 Poems audio function
+  function poems_play_g2_l2() {
+    var audio = document.getElementById("poems_play_g2_l2_audio");
+    audio.play();
+  }
 // -------------------------------Grade 2 Level 2 - stories - Koholla Baba -----------------------
 
 function koholla1()
