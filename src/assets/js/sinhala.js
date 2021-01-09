@@ -445,7 +445,7 @@ function wordgames12()
   document.getElementById("wo1712").style.border = "4px solid red"; 
   }
 
-  //Grade 2 - Level 1 - Songs
+  //------------------------------Grade 2 - Level 1 - Songs 
 
   function song1()
   {
@@ -518,6 +518,24 @@ function wordgames12()
         document.getElementById("submit").style.display="none";
           }
           }
+
+  //------------------------------Audio functions of Grade 2 Level 1 - Songs game (poems-l1s-l1-component.html)
+  function poems_play_g2_l1() {
+    var audio = document.getElementById("poems_play_g2_l1_audio");
+    audio.play();
+  }
+
+  function poems_play_g2_l1_2() {
+    var audio = document.getElementById("poems_play_g2_l1_audio_2");
+    audio.play();
+  }
+
+  function poems_play_g2_l1_3() {
+    var audio = document.getElementById("poems_play_g2_l1_audio_3");
+    audio.play();
+  }
+
+
 
   //----------------Sentences(word-selection1.component.html) grade 1 level 2
  
