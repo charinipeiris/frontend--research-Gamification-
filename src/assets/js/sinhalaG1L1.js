@@ -10,6 +10,8 @@ function wordgames1()
   document.getElementById("wo21").style.pointerEvents = "none";
   document.getElementById("unmark1").checked = true; //kid gave right answer 
   document.getElementById("wo21").style.border = "4px solid red"; 
+  var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
+  myAudio.play();
   }
 
   function wordgames2()
@@ -22,6 +24,8 @@ function wordgames1()
   document.getElementById("wo11").style.pointerEvents = "none";
   document.getElementById("mark1").checked = true; //kid gave false answer 
   document.getElementById("wo21").style.border = "4px solid blue"; 
+  var myAudio = new Audio('/assets/audio/yay.mp3');
+  myAudio.play();
   }
 
   function wordgames3()
@@ -34,6 +38,8 @@ function wordgames1()
   document.getElementById("wo41").style.pointerEvents = "none";
   document.getElementById("mark2").checked = true; //kid gave right answer 
   document.getElementById("wo31").style.border = "4px solid blue"; 
+  var myAudio = new Audio('/assets/audio/yay.mp3');
+  myAudio.play();
   }
 
   function wordgames4()
@@ -45,6 +51,8 @@ function wordgames1()
   document.getElementById("wo31").style.pointerEvents = "none";
   document.getElementById("unmark2").checked = true; //kid gave false answer 
   document.getElementById("wo31").style.border = "4px solid red"; 
+  var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
+  myAudio.play();
   }
 
   function wordgames5()
@@ -56,6 +64,8 @@ function wordgames1()
   document.getElementById("wo61").style.pointerEvents = "none";
   document.getElementById("mark3").checked = true; //kid gave false answer 
   document.getElementById("wo51").style.border = "4px solid blue"; 
+  var myAudio = new Audio('/assets/audio/yay.mp3');
+  myAudio.play();
   }
 
   function wordgames6()
@@ -67,6 +77,8 @@ function wordgames1()
   document.getElementById("wo51").style.pointerEvents = "none";
   document.getElementById("unmark3").checked = true; //kid gave false answer 
   document.getElementById("wo51").style.border = "4px solid red"; 
+  var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
+  myAudio.play();
   }
   //q2
 
@@ -78,7 +90,9 @@ function wordgames1()
   document.f1.rw34.src="/assets/images/trans.svg";
   document.getElementById("wo81").style.pointerEvents = "none";
   document.getElementById("unmark1").checked = true; //kid gave right answer 
-  document.getElementById("wo81").style.border = "4px solid red"; 
+  document.getElementById("wo81").style.border = "4px solid red";
+  var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
+  myAudio.play(); 
   }
 
   function wordgames8()
@@ -90,6 +104,8 @@ function wordgames1()
   document.getElementById("wo71").style.pointerEvents = "none";
   document.getElementById("mark1").checked = true; //kid gave false answer 
   document.getElementById("wo81").style.border = "4px solid blue"; 
+  var myAudio = new Audio('/assets/audio/yay.mp3');
+  myAudio.play();
   }
 
   function wordgames9()
@@ -101,6 +117,8 @@ function wordgames1()
   document.getElementById("wo101").style.pointerEvents = "none";
   document.getElementById("mark2").checked = true; //kid gave right answer 
   document.getElementById("wo101").style.border = "4px solid red"; 
+  var myAudio = new Audio('/assets/audio/yay.mp3');
+  myAudio.play();
   }
 
   function wordgames10()
@@ -112,6 +130,8 @@ function wordgames1()
   document.getElementById("wo91").style.pointerEvents = "none";
   document.getElementById("unmark2").checked = true; //kid gave false answer 
   document.getElementById("wo101").style.border = "4px solid blue"; 
+  var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
+  myAudio.play();
   }
 
   function wordgames11()
@@ -123,6 +143,8 @@ function wordgames1()
   document.getElementById("wo121").style.pointerEvents = "none";
   document.getElementById("mark3").checked = true; //kid gave true answer 
   document.getElementById("wo111").style.border = "4px solid blue"; 
+  var myAudio = new Audio('/assets/audio/yay.mp3');
+  myAudio.play();
   }
 
   function wordgames12()
@@ -134,6 +156,8 @@ function wordgames1()
   document.getElementById("wo111").style.pointerEvents = "none";
   document.getElementById("unmark3").checked = true; //kid gave false answer 
   document.getElementById("wo111").style.border = "4px solid red"; 
+  var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
+  myAudio.play();
   }
 
   //q3
@@ -147,6 +171,8 @@ function wordgames1()
   document.getElementById("wo141").style.pointerEvents = "none";
   document.getElementById("mark1").checked = true; //kid gave right answer 
   document.getElementById("wo131").style.border = "4px solid blue"; 
+  var myAudio = new Audio('/assets/audio/yay.mp3');
+  myAudio.play();
   }
 
   function wordgames14()
@@ -158,6 +184,8 @@ function wordgames1()
   document.getElementById("wo131").style.pointerEvents = "none";
   document.getElementById("unmark1").checked = true; //kid gave false answer 
   document.getElementById("wo131").style.border = "4px solid red"; 
+  var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
+  myAudio.play();
   }
 
   function wordgames15()
@@ -168,6 +196,8 @@ function wordgames1()
   document.getElementById("wo161").style.pointerEvents = "none";
   document.getElementById("unmark2").checked = true; //kid gave right answer 
   document.getElementById("wo161").style.border = "4px solid red"; 
+  var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
+  myAudio.play();
   }
 
   function wordgames16()
@@ -179,6 +209,8 @@ function wordgames1()
   document.getElementById("wo151").style.pointerEvents = "none";
   document.getElementById("mark2").checked = true; //kid gave false answer 
   document.getElementById("wo161").style.border = "4px solid blue"; 
+  var myAudio = new Audio('/assets/audio/yay.mp3');
+  myAudio.play();
   }
 
   function wordgames17()
@@ -189,6 +221,8 @@ function wordgames1()
   document.getElementById("wo181").style.pointerEvents = "none";
   document.getElementById("mark3").checked = true; //kid gave false answer 
   document.getElementById("wo171").style.border = "4px solid blue"; 
+  var myAudio = new Audio('/assets/audio/yay.mp3');
+  myAudio.play();
   }
 
   function wordgames18()
@@ -198,7 +232,9 @@ function wordgames1()
   document.f1.rw39.src="/assets/images/trans.svg";
   document.getElementById("wo171").style.pointerEvents = "none";
   document.getElementById("unmark3").checked = true; //kid gave false answer 
-  document.getElementById("wo171").style.border = "4px solid red"; 
+  document.getElementById("wo171").style.border = "4px solid red";
+  var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
+  myAudio.play(); 
   }
 
 
@@ -219,6 +255,8 @@ document.getElementById("mark1").checked = true;
 document.getElementById("rew1").style.filter = "grayscale(0%)"
 document.getElementById("cell-1").style.border = "4px solid #4b53bd";
 document.getElementById("one-r3").style.display = "block";
+var myAudio = new Audio('/assets/audio/yay.mp3');
+  myAudio.play();
 enableSubmit_sinhala()
 }
 
@@ -229,6 +267,8 @@ document.getElementById("one-r1").style.pointerEvents = "none";
 document.getElementById("unmark1").checked = true; 
 document.getElementById("one-r3").setAttribute("src", "/assets/images/w.gif")
 document.getElementById("one-r3").style.display = "block";
+var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
+  myAudio.play();
 enableSubmit_sinhala()
 }
 
@@ -239,6 +279,8 @@ document.getElementById("two-r2").style.pointerEvents = "none";
 document.getElementById("unmark2").checked = true; 
 document.getElementById("two-r3").setAttribute("src", "/assets/images/w.gif")
 document.getElementById("two-r3").style.display = "block";
+var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
+myAudio.play();
 enableSubmit_sinhala()
 }
 
@@ -250,6 +292,8 @@ document.getElementById("mark2").checked = true;
 document.getElementById("rew2").style.filter = "grayscale(0%)"
 document.getElementById("cell-2").style.border = "4px solid pink";
 document.getElementById("two-r3").style.display = "block";
+var myAudio = new Audio('/assets/audio/yay.mp3');
+  myAudio.play();
 enableSubmit_sinhala()
 }
 
@@ -260,6 +304,8 @@ document.getElementById("three-r2").style.pointerEvents = "none";
 document.getElementById("unmark3").checked = true; 
 document.getElementById("three-r3").setAttribute("src", "/assets/images/w.gif")
 document.getElementById("three-r3").style.display = "block";
+var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
+  myAudio.play();
 enableSubmit_sinhala()
 }
 
@@ -271,6 +317,8 @@ document.getElementById("mark3").checked = true;
 document.getElementById("rew3").style.filter = "grayscale(0%)"
 document.getElementById("cell-3").style.border = "4px solid red";
 document.getElementById("three-r3").style.display = "block";
+var myAudio = new Audio('/assets/audio/yay.mp3');
+  myAudio.play();
 enableSubmit_sinhala()
 }
 
@@ -282,6 +330,8 @@ document.getElementById("mark4").checked = true;
 document.getElementById("rew4").style.filter = "grayscale(0%)"
 document.getElementById("cell-4").style.border = "4px solid yellow";
 document.getElementById("four-r3").style.display = "block";
+var myAudio = new Audio('/assets/audio/yay.mp3');
+  myAudio.play();
 enableSubmit_sinhala()
 }
 
@@ -292,6 +342,8 @@ document.getElementById("four-r1").style.pointerEvents = "none";
 document.getElementById("unmark4").checked = true; 
 document.getElementById("four-r3").setAttribute("src", "/assets/images/w.gif")
 document.getElementById("four-r3").style.display = "block";
+var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
+myAudio.play();
 enableSubmit_sinhala()
 }
 
@@ -320,6 +372,8 @@ document.getElementById("po2").style.border = "4px solid red";
 document.getElementById("po2").style.pointerEvents = "none";
 document.getElementById("unmark1").checked = true; 
 document.getElementById("po3").style.display = "block";
+var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
+  myAudio.play();
 enableSubmit_sinhalaPoems();
 }
 
@@ -329,6 +383,8 @@ document.getElementById("po2").style.border = "4px solid blue";
 document.getElementById("po1").style.pointerEvents = "none";
 document.getElementById("mark1").checked = true; 
 document.getElementById("po4").style.display = "block";
+var myAudio = new Audio('/assets/audio/yay.mp3');
+  myAudio.play();
 // document.getElementById("rew1").style.filter = "grayscale(0%)"
 // document.getElementById("cell-1").style.border = "4px solid blue";
 enableSubmit_sinhalaPoems();
@@ -340,6 +396,8 @@ document.getElementById("po01").style.border = "4px solid red";
 document.getElementById("po01").style.pointerEvents = "none";
 document.getElementById("unmark2").checked = true; 
 document.getElementById("po04").style.display = "block";
+var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
+  myAudio.play();
 enableSubmit_sinhalaPoems();
 }
 
@@ -349,6 +407,8 @@ document.getElementById("po01").style.border = "4px solid blue";
 document.getElementById("po02").style.pointerEvents = "none";
 document.getElementById("mark2").checked = true; 
 document.getElementById("po03").style.display = "block";
+var myAudio = new Audio('/assets/audio/yay.mp3');
+  myAudio.play();
 // document.getElementById("rew1").style.filter = "grayscale(0%)"
 // document.getElementById("cell-1").style.border = "4px solid blue";
 enableSubmit_sinhalaPoems();
@@ -398,6 +458,8 @@ function poems3()
   document.getElementById("po7").style.pointerEvents = "none";
   document.getElementById("mark1").checked = true; 
   document.getElementById("po6").style.display = "block";
+  var myAudio = new Audio('/assets/audio/yay.mp3');
+  myAudio.play();
   enableSubmit_sinhalaStory();
 }
 
@@ -407,6 +469,8 @@ function poems4()
   document.getElementById("po5").style.pointerEvents = "none";
   document.getElementById("unmark1").checked = true; 
   document.getElementById("po8").style.display = "block";
+  var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
+  myAudio.play();
   enableSubmit_sinhalaStory();
 }
 
@@ -416,6 +480,8 @@ function poems03()
   document.getElementById("po07").style.pointerEvents = "none";
   document.getElementById("unmark2").checked = true; 
   document.getElementById("po06").style.display = "block";
+  var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
+  myAudio.play();
   enableSubmit_sinhalaStory();
 }
 
@@ -425,6 +491,8 @@ function poems04()
   document.getElementById("po05").style.pointerEvents = "none";
   document.getElementById("mark2").checked = true; 
   document.getElementById("po08").style.display = "block";
+  var myAudio = new Audio('/assets/audio/yay.mp3');
+  myAudio.play();
   enableSubmit_sinhalaStory();
 }
 //---------------------- Grade 1 Level 1 Stories game - Audio Functions
@@ -469,6 +537,8 @@ document.getElementById("pos2").style.pointerEvents = "none";
 document.getElementById("pos3").style.pointerEvents = "none";
 document.getElementById("unmark1").checked = true; 
 document.getElementById("pos4").style.display = "block";
+var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
+ myAudio.play();
 enableSubmit_sinhalapoem2()
 }
 
@@ -478,6 +548,8 @@ document.getElementById("pos3").style.border = "4px solid red";
 document.getElementById("pos1").style.pointerEvents = "none";
 document.getElementById("pos3").style.pointerEvents = "none";
 document.getElementById("unmark1").checked = true; 
+var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
+  myAudio.play();
 document.getElementById("pos5").style.display = "block";
 enableSubmit_sinhalapoem2()
 }
@@ -489,6 +561,8 @@ function poems23()
   document.getElementById("pos2").style.pointerEvents = "none";
   document.getElementById("mark1").checked = true; 
   document.getElementById("pos6").style.display = "block";
+  var myAudio = new Audio('/assets/audio/yay.mp3');
+  myAudio.play();
   enableSubmit_sinhalapoem2()
 }
 
@@ -499,6 +573,8 @@ document.getElementById("pos03").style.pointerEvents = "none";
 document.getElementById("pos02").style.pointerEvents = "none";
 document.getElementById("unmark2").checked = true; 
 document.getElementById("pos04").style.display = "block";
+var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
+  myAudio.play();
 enableSubmit_sinhalapoem2()
 }
 
@@ -509,6 +585,8 @@ function poems022()
   document.getElementById("pos03").style.pointerEvents = "none";
   document.getElementById("mark2").checked = true; 
   document.getElementById("pos05").style.display = "block";
+  var myAudio = new Audio('/assets/audio/yay.mp3');
+  myAudio.play();
   enableSubmit_sinhalapoem2()
 }
 
@@ -519,6 +597,8 @@ document.getElementById("pos01").style.pointerEvents = "none";
 document.getElementById("pos02").style.pointerEvents = "none";
 document.getElementById("unmark2").checked = true; 
 document.getElementById("pos06").style.display = "block";
+var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
+  myAudio.play();
 enableSubmit_sinhalapoem2()
 }
 function enableSubmit_sinhalapoem2(){
@@ -562,6 +642,8 @@ function poems24()
   document.getElementById("pos9").style.pointerEvents = "none";
   document.getElementById("unmark1").checked = true; 
   document.getElementById("pos10").style.display = "block";
+  var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
+  myAudio.play();
   enableSubmit_sinhalastory2()
  
 }
@@ -572,6 +654,8 @@ function poems25()
   document.getElementById("pos9").style.pointerEvents = "none";
   document.getElementById("unmark1").checked = true; 
   document.getElementById("pos11").style.display = "block";
+  var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
+  myAudio.play();
   enableSubmit_sinhalastory2()
   
 }
@@ -582,6 +666,8 @@ function poems26()
   document.getElementById("pos8").style.pointerEvents = "none";
   document.getElementById("mark1").checked = true; 
   document.getElementById("pos12").style.display = "block";
+  var myAudio = new Audio('/assets/audio/yay.mp3');
+  myAudio.play();
   enableSubmit_sinhalastory2()
   
 }
@@ -593,6 +679,8 @@ document.getElementById("pos09").style.pointerEvents = "none";
 document.getElementById("pos08").style.pointerEvents = "none";
 document.getElementById("unmark2").checked = true; 
 document.getElementById("pos010").style.display = "block";
+var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
+myAudio.play();
 enableSubmit_sinhalastory2()
 
 }
@@ -604,6 +692,9 @@ function poems025()
   document.getElementById("pos09").style.pointerEvents = "none";
   document.getElementById("mark2").checked = true; 
   document.getElementById("pos011").style.display = "block";
+  var myAudio = new Audio('/assets/audio/yay.mp3');
+  myAudio.play();
+
   enableSubmit_sinhalastory2()
 }
 
@@ -614,6 +705,8 @@ document.getElementById("pos07").style.pointerEvents = "none";
 document.getElementById("pos08").style.pointerEvents = "none";
 document.getElementById("unmark2").checked = true; 
 document.getElementById("pos012").style.display = "block";
+var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
+myAudio.play();
 enableSubmit_sinhalastory2()
 
 }
@@ -655,6 +748,8 @@ function test2_sinhala()
   document.getElementById("s1").style.pointerEvents = "none";
   document.getElementById("unmark1").checked = true; 
   document.getElementById("s3").style.display = "block";
+  var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
+  myAudio.play();
 }
 
 function test1_sinhala()
@@ -664,7 +759,9 @@ function test1_sinhala()
   document.getElementById("mark1").checked = true; 
   document.getElementById("s4").style.display = "block";
   document.getElementById("cell-1").style.border = "4px solid blue";
-  document.getElementById("rew1").style.filter = "grayscale(0%)"
+  document.getElementById("rew1").style.filter = "grayscale(0%)";
+  var myAudio = new Audio('/assets/audio/yay.mp3');
+  myAudio.play();
 }
 function test3_sinhala()
 {
@@ -674,6 +771,8 @@ function test3_sinhala()
   document.getElementById("s8").style.display = "block";
   document.getElementById("rew2").style.filter = "grayscale(0%)"
   document.getElementById("cell-2").style.border = "4px solid purple";
+  var myAudio = new Audio('/assets/audio/yay.mp3');
+myAudio.play();
 }
 function test4_sinhala()
 {
@@ -681,6 +780,8 @@ function test4_sinhala()
   document.getElementById("s5").style.pointerEvents = "none";
   document.getElementById("unmark2").checked = true; 
   document.getElementById("s7").style.display = "block";
+  var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
+myAudio.play();
 }
 function test5_sinhala()
 {
@@ -688,6 +789,8 @@ function test5_sinhala()
   document.getElementById("s10").style.pointerEvents = "none";
   document.getElementById("unmark3").checked = true; 
   document.getElementById("s11").style.display = "block";
+  var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
+myAudio.play();
 }
 function test6_sinhala()
 {
@@ -697,6 +800,8 @@ function test6_sinhala()
   document.getElementById("s12").style.display = "block";
   document.getElementById("cell-3").style.border = "4px solid pink";
   document.getElementById("rew3").style.filter = "grayscale(0%)"
+  var myAudio = new Audio('/assets/audio/yay.mp3');
+myAudio.play();
 }
 
 //----------------sentences grade 1 level 1 ------------------------
