@@ -543,6 +543,7 @@ function poems24()
   document.getElementById("pos9").style.pointerEvents = "none";
   document.getElementById("unmark1").checked = true; 
   document.getElementById("pos10").style.display = "block";
+  enableSubmit_sinhalastory2()
  
 }
 function poems25()
@@ -550,8 +551,9 @@ function poems25()
   document.getElementById("pos9").style.border = "4px solid red"; 
   document.getElementById("pos7").style.pointerEvents = "none";
   document.getElementById("pos9").style.pointerEvents = "none";
-  document.getElementById("mark1").checked = true; 
+  document.getElementById("unmark1").checked = true; 
   document.getElementById("pos11").style.display = "block";
+  enableSubmit_sinhalastory2()
   
 }
 function poems26()
@@ -559,10 +561,9 @@ function poems26()
   document.getElementById("pos9").style.border = "4px solid blue"; 
   document.getElementById("pos7").style.pointerEvents = "none";
   document.getElementById("pos8").style.pointerEvents = "none";
-  document.getElementById("unmark1").checked = true; 
+  document.getElementById("mark1").checked = true; 
   document.getElementById("pos12").style.display = "block";
-  document.getElementById("rew2").style.filter = "grayscale(0%)";
-  document.getElementById("cell-2").style.border = "4px solid purple";
+  enableSubmit_sinhalastory2()
   
 }
 
@@ -571,8 +572,9 @@ function poems024()
 document.getElementById("pos08").style.border = "4px solid red"; 
 document.getElementById("pos09").style.pointerEvents = "none";
 document.getElementById("pos08").style.pointerEvents = "none";
-document.getElementById("unmark1").checked = true; 
+document.getElementById("unmark2").checked = true; 
 document.getElementById("pos010").style.display = "block";
+enableSubmit_sinhalastory2()
 
 }
 
@@ -581,11 +583,9 @@ function poems025()
   document.getElementById("pos08").style.border = "4px solid blue"; 
   document.getElementById("pos07").style.pointerEvents = "none";
   document.getElementById("pos09").style.pointerEvents = "none";
-  document.getElementById("mark1").checked = true; 
+  document.getElementById("mark2").checked = true; 
   document.getElementById("pos011").style.display = "block";
-  document.getElementById("rew1").style.filter = "grayscale(0%)";
-  document.getElementById("cell-1").style.border = "4px solid purple";
- 
+  enableSubmit_sinhalastory2()
 }
 
 function poems026()
@@ -593,11 +593,24 @@ function poems026()
 document.getElementById("pos08").style.border = "4px solid red"; 
 document.getElementById("pos07").style.pointerEvents = "none";
 document.getElementById("pos08").style.pointerEvents = "none";
-document.getElementById("unmark1").checked = true; 
+document.getElementById("unmark2").checked = true; 
 document.getElementById("pos012").style.display = "block";
+enableSubmit_sinhalastory2()
 
 }
-//----------------Stories grade 1 level 2-------------
+
+function enableSubmit_sinhalastory2(){
+  var chk = document.querySelectorAll('input[type="checkbox"]:checked').length;
+  console.log(chk);
+  if (chk == 2){
+       document.getElementById("submit").style.display="block";
+       document.getElementById("arrow1").style.display="block";
+        }
+  else{
+      document.getElementById("submit").style.display="none";
+        }
+        }
+
 
 function stories_play_1() {
   var audio = document.getElementById("stories_l2_audio_1");
