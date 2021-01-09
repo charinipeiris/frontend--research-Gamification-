@@ -972,6 +972,7 @@ function koholla1()
   document.getElementById("koh2").style.pointerEvents = "none";
   document.getElementById("unmark1").checked = true; 
   document.getElementById("koh01").style.display = "block";
+  enableSubmit_sinhalastory4()
   }
   
   function koholla2()
@@ -981,6 +982,7 @@ function koholla1()
   document.getElementById("koh3").style.pointerEvents = "none";
   document.getElementById("mark1").checked = true; 
   document.getElementById("koh02").style.display = "block";
+  enableSubmit_sinhalastory4()
   }
   
   function koholla3()
@@ -990,6 +992,7 @@ function koholla1()
   document.getElementById("koh2").style.pointerEvents = "none";
   document.getElementById("unmark1").checked = true; 
   document.getElementById("koh03").style.display = "block";
+  enableSubmit_sinhalastory4()
   }
 
   function koholla4()
@@ -997,8 +1000,9 @@ function koholla1()
   document.getElementById("koh5").style.border = "4px solid red"; 
   document.getElementById("koh6").style.pointerEvents = "none";
   document.getElementById("koh5").style.pointerEvents = "none";
-  document.getElementById("unmark001").checked = true; 
+  document.getElementById("unmark2").checked = true; 
   document.getElementById("koh04").style.display = "block";
+  enableSubmit_sinhalastory4()
   }
   
   function koholla5()
@@ -1006,8 +1010,9 @@ function koholla1()
   document.getElementById("koh5").style.border = "4px solid blue"; 
   document.getElementById("koh4").style.pointerEvents = "none";
   document.getElementById("koh6").style.pointerEvents = "none";
-  document.getElementById("mark001").checked = true; 
+  document.getElementById("mark2").checked = true; 
   document.getElementById("koh05").style.display = "block";
+  enableSubmit_sinhalastory4()
   }
 
   function koholla6()
@@ -1015,10 +1020,22 @@ function koholla1()
   document.getElementById("koh5").style.border = "4px solid red"; 
   document.getElementById("koh4").style.pointerEvents = "none";
   document.getElementById("koh5").style.pointerEvents = "none";
-  document.getElementById("unmark001").checked = true; 
+  document.getElementById("unmark2").checked = true; 
   document.getElementById("koh06").style.display = "block";
+  enableSubmit_sinhalastory4()
   }
 
+  function enableSubmit_sinhalastory4(){
+    var chk = document.querySelectorAll('input[type="checkbox"]:checked').length;
+    console.log(chk);
+    if (chk == 2){
+         document.getElementById("submit").style.display="block";
+         document.getElementById("arrow1").style.display="block";
+          }
+    else{
+        document.getElementById("submit").style.display="none";
+          }
+          }
 
   //------------------------grade 2 level 2 wachana thoramu----------------------
 
