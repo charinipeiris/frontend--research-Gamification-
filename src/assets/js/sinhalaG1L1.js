@@ -364,6 +364,33 @@ function enableSubmit_sinhalaPoems(){
       document.getElementById("submit").style.display="none";
         }
         }
+//---------------------- Grade 1 Level 1 Poems game - Audio Functions
+
+// $(document).ready(function(){
+//   $(document).on('click',"#audio_img",function () {
+//   var audio = document.getElementById("poems_audio");
+//   if (audio.paused) audio.play();
+//   else audio.pause();
+// });
+// });
+
+function play1() {
+  var audio = document.getElementById("poems_audio_1");
+  audio.play();
+}
+
+function play2() {
+  var audio = document.getElementById("poems_audio_2");
+  audio.play();
+}
+
+function play3() {
+  var audio = document.getElementById("poems_audio_3");
+  audio.play();
+}
+
+
+//-----------------Stories Grade 1 level 1 (stories.component.html)-------------------------------
 
 function poems3()
 {
@@ -400,29 +427,21 @@ function poems04()
   document.getElementById("po08").style.display = "block";
   enableSubmit_sinhalaStory();
 }
+//---------------------- Grade 1 Level 1 Stories game - Audio Functions
 
-//---------------------- Grade 1 Level 1 Poems game - Audio Functions
 
-// $(document).ready(function(){
-//   $(document).on('click',"#audio_img",function () {
-//   var audio = document.getElementById("poems_audio");
-//   if (audio.paused) audio.play();
-//   else audio.pause();
-// });
-// });
-
-function play1() {
-  var audio = document.getElementById("poems_audio_1");
+function stories_play_l1_1() {
+  var audio = document.getElementById("stories_l1_audio_1");
   audio.play();
 }
 
-function play2() {
-  var audio = document.getElementById("poems_audio_2");
+function stories_play_l1_2() {
+  var audio = document.getElementById("stories_l1_audio_2");
   audio.play();
 }
 
-function play3() {
-  var audio = document.getElementById("poems_audio_3");
+function stories_play_l1_3() {
+  var audio = document.getElementById("stories_l1_audio_3");
   audio.play();
 }
 
