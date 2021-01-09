@@ -190,32 +190,54 @@
     <br>
      
     
-
-
-
-
-<!-- <div class="row" style ="margin-top:30px;color:green;">
-  <div class="col-sm-3 col-md-4 col-lg-4">
-    <table style="margin-left:40px;">
-      <tr>
-        <td id="cell-1" style="background-color:white; border: 1px solid black;"><img class="reward-cell" id="rew1" src="assets/images/reward1.png">
-        </td>
-        
-      </tr>
-      </table>
+<div hidden id="clickarray"></div>
+<br>
+<br>
+<div class="row">
+  <div class=col-6>
+    <img id ="arrow1" class="arrow" style="display: none;" src ="/assets/images/arrow_right.gif">
   </div>
-    <div class="col-sm-4 col-md-4 col-lg-4">
-     
+  <div class=col-6>
+    <button id="submit" class="button2" style="display: none;" (click)="markstot_poem3()">ඉවරයි</button> 
   </div>
-  <div class="col-sm-4 col-md-4 col-lg-4">
-    <table style="margin-left:40px;">
-      <tr>
-        <td id="cell-2" style="background-color:white; border: 1px solid black;"><img class="reward-cell" id="rew2" src="assets/images/reward2.png"></td>
-      </tr>
-      </table>
+</div>
+
+<div id="myModal" class="modal">
+
+  <div class="modal-content">
+    <div class="row">
+      <div class="col-12">
+        <h1 class ="coin-heading">Completed!!!</h1>
+      </div>
+    </div>
+    <div class="row coins-row">
+      <div class="col-6 coin_img1">
+        <img id="coin1" src="/assets/images/win_coin_cropped.gif" style = "visibility:hidden;">
+      </div>
+      <div class="col-6 coin_img2">
+        <img id="coin2" src="/assets/images/win_coin_cropped.gif" style = "visibility:hidden;">
+      </div>
+
+    </div>
+
+    <div class="row">
+      <div class="col-12" class="perf-time1">
+        <h5 class="perf-time2">ගත වූ කාලය : <span id="perf-time"></span></h5>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <a href="grade2/sinhala/level1" class="button3">ආපසු</a>
+      </div>
+    </div>
+    </div>								    	
+         
   </div>
 
-</div> -->
+
+
+
+
 
 
 

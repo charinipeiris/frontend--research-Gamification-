@@ -432,6 +432,7 @@ function wordgames12()
   document.getElementById("wo1812").style.pointerEvents = "none";
   document.getElementById("mark3").checked = true; //kid gave false answer 
   document.getElementById("wo1712").style.border = "4px solid blue"; 
+  
   }
 
   function wordgames182()
@@ -453,6 +454,7 @@ function wordgames12()
   document.getElementById("so3").style.pointerEvents = "none";
   document.getElementById("unmark1").checked = true; 
   document.getElementById("so4").style.display = "block";
+  enableSubmit_sinhalapoem3()
   }
   
   function song2()
@@ -462,6 +464,7 @@ function wordgames12()
   document.getElementById("so1").style.pointerEvents = "none";
   document.getElementById("unmark1").checked = true; 
   document.getElementById("so5").style.display = "block";
+  enableSubmit_sinhalapoem3()
   }
   
   function song3()
@@ -471,6 +474,7 @@ function wordgames12()
   document.getElementById("so2").style.pointerEvents = "none";
   document.getElementById("mark1").checked = true; 
   document.getElementById("so6").style.display = "block";
+  enableSubmit_sinhalapoem3()
   }
 
   function song4()
@@ -478,8 +482,9 @@ function wordgames12()
   document.getElementById("so8").style.border = "4px solid red"; 
   document.getElementById("so7").style.pointerEvents = "none";
   document.getElementById("so9").style.pointerEvents = "none";
-  document.getElementById("unmark1").checked = true; 
+  document.getElementById("unmark2").checked = true; 
   document.getElementById("so10").style.display = "block";
+  enableSubmit_sinhalapoem3()
   }
   
   function song5()
@@ -487,8 +492,9 @@ function wordgames12()
   document.getElementById("so8").style.border = "4px solid blue"; 
   document.getElementById("so7").style.pointerEvents = "none";
   document.getElementById("so9").style.pointerEvents = "none";
-  document.getElementById("unmark1").checked = true; 
+  document.getElementById("mark2").checked = true; 
   document.getElementById("so11").style.display = "block";
+  enableSubmit_sinhalapoem3()
   }
 
   function song6()
@@ -496,10 +502,22 @@ function wordgames12()
   document.getElementById("so8").style.border = "4px solid red"; 
   document.getElementById("so7").style.pointerEvents = "none";
   document.getElementById("so9").style.pointerEvents = "none";
-  document.getElementById("mark1").checked = true; 
+  document.getElementById("unmark2").checked = true; 
   document.getElementById("so12").style.display = "block";
+  enableSubmit_sinhalapoem3()
   }
   
+  function enableSubmit_sinhalapoem3(){
+    var chk = document.querySelectorAll('input[type="checkbox"]:checked').length;
+    console.log(chk);
+    if (chk == 2){
+         document.getElementById("submit").style.display="block";
+         document.getElementById("arrow1").style.display="block";
+          }
+    else{
+        document.getElementById("submit").style.display="none";
+          }
+          }
 
   //----------------Sentences(word-selection1.component.html) grade 1 level 2
  
