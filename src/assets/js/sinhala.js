@@ -732,6 +732,7 @@ function wordgames12()
   document.getElementById("nsen3").style.pointerEvents = "none";
   document.getElementById("unmark1").checked = true; 
   document.getElementById("nsen4").style.display = "block";
+  enableSubmit_sinhalasentences4()
   }
 
   function newsent2()
@@ -741,6 +742,7 @@ function wordgames12()
   document.getElementById("nsen3").style.pointerEvents = "none";
   document.getElementById("unmark1").checked = true; 
   document.getElementById("nsen5").style.display = "block";
+  enableSubmit_sinhalasentences4()
   }
   function newsent3()
   {
@@ -749,6 +751,7 @@ function wordgames12()
   document.getElementById("nsen1").style.pointerEvents = "none";
   document.getElementById("mark1").checked = true; 
   document.getElementById("nsen6").style.display = "block";
+  enableSubmit_sinhalasentences4()
   }
 
   function newsent4()
@@ -758,6 +761,7 @@ function wordgames12()
   document.getElementById("nsen9").style.pointerEvents = "none";
   document.getElementById("unmark2").checked = true; 
   document.getElementById("nsen10").style.display = "block";
+  enableSubmit_sinhalasentences4()
   }
 
   
@@ -768,6 +772,7 @@ function wordgames12()
   document.getElementById("nsen9").style.pointerEvents = "none";
   document.getElementById("mark2").checked = true; 
   document.getElementById("nsen11").style.display = "block";
+  enableSubmit_sinhalasentences4()
   }
   function newsent6()
   {
@@ -776,6 +781,7 @@ function wordgames12()
   document.getElementById("nsen7").style.pointerEvents = "none";
   document.getElementById("unmark2").checked = true; 
   document.getElementById("nsen12").style.display = "block";
+  enableSubmit_sinhalasentences4()
   }
 
 
@@ -786,6 +792,7 @@ function wordgames12()
   document.getElementById("nsen15").style.pointerEvents = "none";
   document.getElementById("mark3").checked = true; 
   document.getElementById("nsen16").style.display = "block";
+  enableSubmit_sinhalasentences4()
   }
 
   function newsent8()
@@ -795,6 +802,7 @@ function wordgames12()
   document.getElementById("nsen15").style.pointerEvents = "none";
   document.getElementById("unmark3").checked = true; 
   document.getElementById("nsen17").style.display = "block";
+  enableSubmit_sinhalasentences4()
   }
 
   function newsent9()
@@ -804,6 +812,7 @@ function wordgames12()
   document.getElementById("nsen14").style.pointerEvents = "none";
   document.getElementById("unmark3").checked = true; 
   document.getElementById("nsen18").style.display = "block";
+  enableSubmit_sinhalasentences4()
   }
 
   function newsent10()
@@ -813,6 +822,7 @@ function wordgames12()
   document.getElementById("nsen21").style.pointerEvents = "none";
   document.getElementById("unmark4").checked = true; 
   document.getElementById("nsen22").style.display = "block";
+  enableSubmit_sinhalasentences4()
   }
 
   function newsent11()
@@ -822,6 +832,7 @@ function wordgames12()
   document.getElementById("nsen21").style.pointerEvents = "none";
   document.getElementById("unmark4").checked = true; 
   document.getElementById("nsen23").style.display = "block";
+  enableSubmit_sinhalasentences4()
   }
   function newsent12()
   {
@@ -830,10 +841,18 @@ function wordgames12()
   document.getElementById("nsen20").style.pointerEvents = "none";
   document.getElementById("mark4").checked = true; 
   document.getElementById("nsen24").style.display = "block";
+  enableSubmit_sinhalasentences4()
   }
-  // document.getElementById("sin6").style.border = "4px solid red"; 
-  // document.getElementById("unmark3").checked = true; 
-  // document.getElementById("sine6").style.display = "block";
+  function enableSubmit_sinhalasentences4(){
+    var chk = document.querySelectorAll('input[type="checkbox"]:checked').length;
+    if (chk == 4){
+         document.getElementById("submit").style.display="block";
+         document.getElementById("arrow1").style.display="block";
+          }
+    else{
+        document.getElementById("submit").style.display="none";
+          }
+          }
   
   //Grade 2 - Level 2 - Songs
 
