@@ -1,12 +1,11 @@
 @import "~bootstrap/dist/css/bootstrap.css";
  .image{
-    height:40em; 
+    height:100%;
     background-size:cover; 
     width:100%;
     background-image:url(/assets/images/1478.jpg);
     background-position:50% 50%;
-    margin-top:-50px;
-   
+    /* margin-top:-10px;  */
   }
 
 
@@ -94,15 +93,8 @@
     list-style: none;
     background-color: rgba(255, 255, 255, 0.658);
     /* margin-top: 50px; */
-
   }
-  ul.breadcrumb {
-    padding: 10px 16px;
-    list-style: none;
-    background-color: rgba(255, 255, 255, 0.658);
-    margin-top: 50px;
 
-  }
   ul.breadcrumb li {
     display: inline;
     font-size: 18px;
@@ -130,4 +122,13 @@
     /* text-decoration: underline; */
     background-color: rgb(223, 215, 193);
     border-radius: 15px;
+  }
+
+  @media screen and (max-width: 480px) {
+    ul.breadcrumb li {
+      font-size: 13px;
+    }
+    ul.breadcrumb {
+      padding: 8px 14px;
+    }
   }

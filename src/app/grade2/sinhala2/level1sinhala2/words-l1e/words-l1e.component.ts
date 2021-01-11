@@ -25,7 +25,7 @@ export class WordsL1eComponent implements OnInit {
 
 
     var total = 0;
-
+    var final_total=0;
     let element1 = <HTMLInputElement>document.getElementById("mark1");
     let element2 = <HTMLInputElement>document.getElementById("mark2");
     let element3 = <HTMLInputElement>document.getElementById("mark3");
@@ -34,7 +34,7 @@ export class WordsL1eComponent implements OnInit {
     let element6 = <HTMLInputElement>document.getElementById("mark6");
     let element7 = <HTMLInputElement>document.getElementById("mark7");
     let element8 = <HTMLInputElement>document.getElementById("mark8");
-    let element9 = <HTMLInputElement>document.getElementById("mark6");
+    let element9 = <HTMLInputElement>document.getElementById("mark9");
     if (element1.checked) {
       total = total + 1;
     }
@@ -64,14 +64,26 @@ export class WordsL1eComponent implements OnInit {
       total = total + 1;
     // console.log(total);
 
+    if (total==9 || total==8 || total == 7){
+      final_total=3;
+    }
+    if (total==6 || total==5 || total == 4){
+      final_total=2;
+    }
+    if (total==3 || total==2 || total == 1){
+      final_total=1;
+    }
+    if (total==0){
+      final_total=0;
+    }
     // let username = localStorage.getItem('uname');
     // this.gamesService.submitGame({    
     //   completed_games : [
     //   {
-    //   game_id : "S11",
-    //   marks : total,
+    //   game_id : "s12",
+    //   marks : final_total,
     //   time_spent : time,
-    //   // emotions: this.child.emotions,
+    //   emotions: this.child.emotions,
     //   max_idle_time :  clicksarray
     //   }
     // ]},username).subscribe(res=>{console.log("success")}, err=>{console.log("error")});
