@@ -3,7 +3,8 @@
     .button3 {
     border-radius: 12px;
     background-color:#4CAF50;
-    border: none;
+    border: 4px solid #1f6822;
+    /* border: none; */
     color:white;
     text-align: center;
     font-size: 25px;
@@ -44,7 +45,8 @@
   .dis-button3 {
     border-radius: 12px;
     background-color:#7b8a7b;
-    border: none;
+    border: 4px solid #33302f;
+    /* border: none; */
     color:white;
     text-align: center;
     font-size: 25px;
