@@ -7,93 +7,93 @@
 //     document.getElementById(Page2).style.display='none'; 
 //   }
   
-  function test1_sinhala()
-  {
-  document.f1.clip1.src="/assets/images/child_running.PNG";
-  document.f1.brown.src="/assets/images/trans.svg";
-  document.f1.red.src="/assets/images/child_crying.PNG";
-  document.f1.rw1.src="/assets/images/yay_bunny2.gif";
-  document.getElementById("crychild").style.pointerEvents = "none";
-  document.getElementById("mark1").checked = true; //kid gave right answer 
-  var myAudio = new Audio('/assets/audio/yay.mp3');
-  myAudio.play();
-  enableSubmit_sinhalasentences11()
+//   function test1_sinhala1()
+//   {
+//   //document.f1.clip1.src="/assets/images/child_running.PNG";
+//   document.f1.brown.src="/assets/images/trans.svg";
+//   document.f1.red.src="/assets/images/child_crying.PNG";
+//   document.f1.rw1.src="/assets/images/yay_bunny2.gif";
+//   document.getElementById("crychild").style.pointerEvents = "none";
+//   document.getElementById("mark1").checked = true; //kid gave right answer 
+//   var myAudio = new Audio('/assets/audio/yay.mp3');
+//   myAudio.play();
+//   enableSubmit_sinhalasentences11()
   
-  }
-  function test2_sinhala()
-  {
-  document.f1.clip1.src="/assets/images/child_crying.PNG";
-  document.f1.red.src="/assets/images/trans.svg";
-  document.f1.brown.src="/assets/images/child_running.PNG";
-  document.f1.rw1.src="/assets/images/w.gif";
-  document.getElementById("runchild").style.pointerEvents = "none";
-  document.getElementById("unmark1").checked = true; //kid gave wrong answer 
-  var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
-  myAudio.play();
-  enableSubmit_sinhalasentences11()
-  }
+//   }
+//   function test2_sinhala1()
+//   {
+//   //document.f1.clip1.src="/assets/images/child_crying.PNG";
+//   document.f1.red.src="/assets/images/trans.svg";
+//   document.f1.brown.src="/assets/images/child_running.PNG";
+//   document.f1.rw1.src="/assets/images/w.gif";
+//   document.getElementById("runchild").style.pointerEvents = "none";
+//   document.getElementById("unmark1").checked = true; //kid gave wrong answer 
+//   var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
+//   myAudio.play();
+//   enableSubmit_sinhalasentences11()
+//   }
   
-  function test3_sinhala()
-  {
-  document.f1.clip2.src="/assets/images/mother-cooking.PNG";
-  document.f1.rect.src="/assets/images/trans.svg";
-  document.f1.sqr.src="/assets/images/mother-scolding.PNG";
-  document.f1.rw2.src="/assets/images/yay_bunny2.gif";
-  document.getElementById("blamemother").style.pointerEvents = "none";
-  document.getElementById("mark2").checked = true; //kid gave right answer 
-  var myAudio = new Audio('/assets/audio/yay.mp3');
-  myAudio.play();
-  enableSubmit_sinhalasentences11()
+//   function test3_sinhala1()
+//   {
+//   //document.f1.clip2.src="/assets/images/mother-cooking.PNG";
+//   document.f1.rect.src="/assets/images/trans.svg";
+//   document.f1.sqr.src="/assets/images/mother-scolding.PNG";
+//   document.f1.rw2.src="/assets/images/yay_bunny2.gif";
+//   document.getElementById("blamemother").style.pointerEvents = "none";
+//   document.getElementById("mark2").checked = true; //kid gave right answer 
+//   var myAudio = new Audio('/assets/audio/yay.mp3');
+//   myAudio.play();
+//   enableSubmit_sinhalasentences11()
   
-  }
-  function test4_sinhala()
-  {
-  document.f1.clip2.src="/assets/images/mother-scolding.PNG";
-  document.f1.sqr.src="/assets/images/trans.svg";
-  document.f1.rect.src="/assets/images/mother-cooking.PNG";
-  document.f1.rw2.src="/assets/images/w.gif";
-  document.getElementById("cookmother").style.pointerEvents = "none";
-  document.getElementById("unmark2").checked = true; //kid gave wrong answer 
-  var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
-  myAudio.play();
-  enableSubmit_sinhalasentences11()
-  }
+//   }
+//   function test4_sinhala1()
+//   {
+//   //document.f1.clip2.src="/assets/images/mother-scolding.PNG";
+//   document.f1.sqr.src="/assets/images/trans.svg";
+//   document.f1.rect.src="/assets/images/mother-cooking.PNG";
+//   document.f1.rw2.src="/assets/images/w.gif";
+//   document.getElementById("cookmother").style.pointerEvents = "none";
+//   document.getElementById("unmark2").checked = true; //kid gave wrong answer 
+//   var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
+//   myAudio.play();
+//   enableSubmit_sinhalasentences11()
+//   }
   
-  function test5_sinhala()
-  {
-  document.f1.clip3.src="/assets/images/sun.PNG";
-  document.f1.leaf1.src="/assets/images/trans.svg";
-  document.f1.leaf2.src="/assets/images/moon.PNG";
-  document.f1.rw3.src="/assets/images/w.gif";
-  document.getElementById("moon").style.pointerEvents = "none";
-  document.getElementById("unmark3").checked = true; //kid gave wrong answer 
-  var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
-  myAudio.play();
-  enableSubmit_sinhalasentences11()
-  }
-  function test6_sinhala()
-  {
-  document.f1.clip3.src="/assets/images/moon.PNG";
-  document.f1.leaf2.src="/assets/images/trans.svg";
-  document.f1.leaf1.src="/assets/images/sun.PNG";
-  document.f1.rw3.src="/assets/images/yay_bunny2.gif";
-  document.getElementById("sun").style.pointerEvents = "none";  
-  document.getElementById("mark3").checked = true; //kid gave right answer 
-  var myAudio = new Audio('/assets/audio/yay.mp3');
- myAudio.play();
-  enableSubmit_sinhalasentences11()
-  }
+//   function test5_sinhala1()
+//   {
+//   //document.f1.clip3.src="/assets/images/sun.PNG";
+//   document.f1.leaf1.src="/assets/images/trans.svg";
+//   document.f1.leaf2.src="/assets/images/moon.PNG";
+//   document.f1.rw3.src="/assets/images/w.gif";
+//   document.getElementById("moon").style.pointerEvents = "none";
+//   document.getElementById("unmark3").checked = true; //kid gave wrong answer 
+//   var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
+//   myAudio.play();
+//   enableSubmit_sinhalasentences11()
+//   }
+//   function test6_sinhala1()
+//   {
+//  // document.f1.clip3.src="/assets/images/moon.PNG";
+//   document.f1.leaf2.src="/assets/images/trans.svg";
+//   document.f1.leaf1.src="/assets/images/sun.PNG";
+//   document.f1.rw3.src="/assets/images/yay_bunny2.gif";
+//   document.getElementById("sun").style.pointerEvents = "none";  
+//   document.getElementById("mark3").checked = true; //kid gave right answer 
+//   var myAudio = new Audio('/assets/audio/yay.mp3');
+//  myAudio.play();
+//   enableSubmit_sinhalasentences11()
+//   }
   
-  function enableSubmit_sinhalasentences11(){
-    var chk = document.querySelectorAll('input[type="checkbox"]:checked').length;
-    if (chk == 3){
-         document.getElementById("submit").style.display="block";
-         document.getElementById("arrow1").style.display="block";
-          }
-    else{
-        document.getElementById("submit").style.display="none";
-          }
-          }
+//   function enableSubmit_sinhalasentences11(){
+//     var chk = document.querySelectorAll('input[type="checkbox"]:checked').length;
+//     if (chk == 3){
+//          document.getElementById("submit").style.display="block";
+//          document.getElementById("arrow1").style.display="block";
+//           }
+//     else{
+//         document.getElementById("submit").style.display="none";
+//           }
+//           }
 
 
   // $(document).ready(function(){

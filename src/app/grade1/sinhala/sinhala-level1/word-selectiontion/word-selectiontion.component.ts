@@ -15,7 +15,7 @@ export class WordSelectiontionComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  markstot_sentences1() {
+  markstot_senten() {
     // document.getElementById("reset").click;
     var time = document.getElementById("display").innerHTML;
     // console.log(time);

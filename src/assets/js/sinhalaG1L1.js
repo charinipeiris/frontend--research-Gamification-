@@ -747,7 +747,7 @@ function stories_play_3() {
 
 //----------------sentences grade 1 level 1 ------------------------
 
-function test2_sinhala()
+function test2_sinhala1()
 {
   document.getElementById("s1").style.border = "4px solid red"; 
   document.getElementById("s1").style.pointerEvents = "none";
@@ -755,9 +755,10 @@ function test2_sinhala()
   document.getElementById("s3").style.display = "block";
   var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
   myAudio.play();
+  enableSubmit_sinhalasentences11()
 }
 
-function test1_sinhala()
+function test1_sinhala1()
 {
   document.getElementById("s1").style.border = "4px solid blue"; 
   document.getElementById("s2").style.pointerEvents = "none";
@@ -767,8 +768,9 @@ function test1_sinhala()
   document.getElementById("rew1").style.filter = "grayscale(0%)";
   var myAudio = new Audio('/assets/audio/yay.mp3');
   myAudio.play();
+  enableSubmit_sinhalasentences11()
 }
-function test3_sinhala()
+function test3_sinhala1()
 {
   document.getElementById("s5").style.border = "4px solid blue"; 
   document.getElementById("s6").style.pointerEvents = "none";
@@ -778,8 +780,9 @@ function test3_sinhala()
   document.getElementById("cell-2").style.border = "4px solid purple";
   var myAudio = new Audio('/assets/audio/yay.mp3');
 myAudio.play();
+enableSubmit_sinhalasentences11()
 }
-function test4_sinhala()
+function test4_sinhala1()
 {
   document.getElementById("s5").style.border = "4px solid red"; 
   document.getElementById("s5").style.pointerEvents = "none";
@@ -787,8 +790,9 @@ function test4_sinhala()
   document.getElementById("s7").style.display = "block";
   var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
 myAudio.play();
+enableSubmit_sinhalasentences11()
 }
-function test5_sinhala()
+function test5_sinhala1()
 {
   document.getElementById("s10").style.border = "4px solid red"; 
   document.getElementById("s10").style.pointerEvents = "none";
@@ -796,8 +800,9 @@ function test5_sinhala()
   document.getElementById("s11").style.display = "block";
   var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
 myAudio.play();
+enableSubmit_sinhalasentences11()
 }
-function test6_sinhala()
+function test6_sinhala1()
 {
   document.getElementById("s10").style.border = "4px solid blue"; 
   document.getElementById("s9").style.pointerEvents = "none";
@@ -807,7 +812,19 @@ function test6_sinhala()
   document.getElementById("rew3").style.filter = "grayscale(0%)"
   var myAudio = new Audio('/assets/audio/yay.mp3');
 myAudio.play();
+enableSubmit_sinhalasentences11()
 }
+
+function enableSubmit_sinhalasentences11(){
+      var chk = document.querySelectorAll('input[type="checkbox"]:checked').length;
+      if (chk == 3){
+           document.getElementById("submit").style.display="block";
+           document.getElementById("arrow1").style.display="block";
+            }
+      else{
+          document.getElementById("submit").style.display="none";
+            }
+            }
 
 //----------------sentences grade 1 level 1 ------------------------
 // Audio Functions
