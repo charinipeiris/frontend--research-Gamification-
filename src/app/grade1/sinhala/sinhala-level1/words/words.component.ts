@@ -25,6 +25,7 @@ export class WordsComponent implements OnInit {
 
 
     var total = 0;
+    var final_total = 0;
 
     let element1 = <HTMLInputElement>document.getElementById("mark1");
     let element2 = <HTMLInputElement>document.getElementById("mark2");
@@ -52,18 +53,32 @@ export class WordsComponent implements OnInit {
       total = total + 1;
 
     // console.log(total);
+    if (total == 6 || total == 5){
+      final_total = 3;
+    }
+    if (total == 4 || total == 3){
+      final_total = 2;
+    }
+    if (total == 2 || total == 1){
+      final_total = 1;
+    }
+    if (total == 0){
+      final_total = 0;
+    }
 
-    // let username = localStorage.getItem('uname');
-    // this.gamesService.submitGame({    
-    //   completed_games : [
-    //   {
-    //   game_id : "S12",
-    //   marks : total,
-    //   time_spent : time,
-    //   // emotions: this.child.emotions,
-    //   max_idle_time :  clicksarray
-    //   }
-    // ]},username).subscribe(res=>{console.log("success")}, err=>{console.log("error")});
+    
+
+    let username = localStorage.getItem('uname');
+    this.gamesService.submitGame({    
+      completed_games : [
+      {
+      game_id : "S12",
+      marks : final_total,
+      time_spent : time,
+      emotions: this.child.emotions,
+      max_idle_time :  clicksarray
+      }
+    ]},username).subscribe(res=>{console.log("success")}, err=>{console.log("error")});
 
 
 
