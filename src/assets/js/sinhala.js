@@ -639,7 +639,7 @@ function wordgames12()
 
 
 
-  //----------------Sentences(word-selection1.component.html) grade 1 level 2
+  //----------------Sentences(word-selection1.component.html) grade 2 level 1
  
   function sinhala_s21()
   {
@@ -764,11 +764,15 @@ function wordgames12()
   enableSubmit_sinhalasentg1l2()
   }
 
-  // Audio functions of Sentences game (word-selection1.component.html) grade 1 level 2
-  function sentences_l2_play() {
-    var audio = document.getElementById("sentences_l2_audio");
+   // Grade 2 level 1 Sentences game - Audio Functions
+
+   function sentences_g2_l1_play() {
+    var audio = document.getElementById("sentences_g2_l1_audio");
     audio.play();
   }
+
+
+  
 
   function enableSubmit_sinhalasentg1l2(){
     var chk = document.querySelectorAll('input[type="checkbox"]:checked').length;
@@ -783,9 +787,9 @@ function wordgames12()
           }
 
   
-  //----------------sentences grade 2 level 1------------------
+  //----------------sentences grade 1 level 2------------------
  
-  function sinhala2_s21()
+  function sinhala1_s21()
   {
   document.getElementById("sin2").style.border = "4px solid red"; 
   document.getElementById("sin2").style.pointerEvents = "none";
@@ -795,7 +799,7 @@ function wordgames12()
   myAudio.play();
   enableSubmit_select_2_sentences()
   }
-  function sinhala2_s22()
+  function sinhala1_s22()
   {
   document.getElementById("sin2").style.border = "4px solid blue"; 
   document.getElementById("sin1").style.pointerEvents = "none";
@@ -805,7 +809,7 @@ function wordgames12()
   myAudio.play();
   enableSubmit_select_2_sentences()
   }
-  function sinhala2_s23()
+  function sinhala1_s23()
   {
     document.getElementById("sin3").style.border = "4px solid blue"; 
     document.getElementById("sin4").style.pointerEvents = "none";
@@ -815,7 +819,7 @@ function wordgames12()
     myAudio.play();
     enableSubmit_select_2_sentences()
   }
-  function sinhala2s24()
+  function sinhala1s24()
   {
     document.getElementById("sin3").style.border = "4px solid red"; 
     document.getElementById("sin3").style.pointerEvents = "none";
@@ -825,7 +829,7 @@ function wordgames12()
     myAudio.play();
     enableSubmit_select_2_sentences()
   }
-  function sinhala2_s25()
+  function sinhala1_s25()
   {
     document.getElementById("sin5").style.border = "4px solid blue"; 
     document.getElementById("sin6").style.pointerEvents = "none";
@@ -835,7 +839,7 @@ function wordgames12()
     myAudio.play();
     enableSubmit_select_2_sentences()
   }
-  function sinhala2_s26()
+  function sinhala1_s26()
   {
     document.getElementById("sin5").style.border = "4px solid red"; 
     document.getElementById("sin5").style.pointerEvents = "none";
@@ -846,7 +850,7 @@ function wordgames12()
     enableSubmit_select_2_sentences()
   }
 
-  function sinhala2_s27()
+  function sinhala1_s27()
   {
   document.getElementById("sin8").style.border = "4px solid red"; 
   document.getElementById("sin8").style.pointerEvents = "none";
@@ -856,7 +860,7 @@ function wordgames12()
   myAudio.play();
   enableSubmit_select_2_sentences()
   }
-  function sinhala2_s28()
+  function sinhala1_s28()
   {
   document.getElementById("sin8").style.border = "4px solid blue"; 
   document.getElementById("sin7").style.pointerEvents = "none";
@@ -866,7 +870,7 @@ function wordgames12()
   myAudio.play();
   enableSubmit_select_2_sentences()
   }
-  function sinhala2_s29()
+  function sinhala1_s29()
   {
     document.getElementById("sin9").style.border = "4px solid blue"; 
     document.getElementById("sin10").style.pointerEvents = "none";
@@ -876,7 +880,7 @@ function wordgames12()
     myAudio.play();
     enableSubmit_select_2_sentences()
   }
-  function sinhala2_s30()
+  function sinhala1_s30()
   {
     document.getElementById("sin9").style.border = "4px solid red"; 
     document.getElementById("sin9").style.pointerEvents = "none";
@@ -887,7 +891,7 @@ function wordgames12()
     enableSubmit_select_2_sentences()
   }
 
-  function sinhala2_s31()
+  function sinhala1_s31()
   {
   document.getElementById("sin12").style.border = "4px solid red"; 
   document.getElementById("sin12").style.pointerEvents = "none";
@@ -897,7 +901,7 @@ function wordgames12()
   myAudio.play();
   enableSubmit_select_2_sentences()
   }
-  function sinhala2_s32()
+  function sinhala1_s32()
   {
   document.getElementById("sin12").style.border = "4px solid blue"; 
   document.getElementById("sin11").style.pointerEvents = "none";
@@ -910,7 +914,7 @@ function wordgames12()
   function enableSubmit_select_2_sentences(){
     var chk = document.querySelectorAll('input[type="checkbox"]:checked').length;
     console.log(chk);
-    if (chk == 2){
+    if (chk == 6){
          document.getElementById("submit").style.display="block";
          document.getElementById("arrow1").style.display="block";
           }
@@ -918,13 +922,11 @@ function wordgames12()
         document.getElementById("submit").style.display="none";
           }
           }
-  // Grade 2 level 1 Sentences game - Audio Functions
-
-  function sentences_g2_l1_play() {
-    var audio = document.getElementById("sentences_g2_l1_audio");
-    audio.play();
-  }
-
+ // Audio functions of Sentences game (word-selection1.component.html) grade 1 level 2
+ function sentences_l2_play() {
+  var audio = document.getElementById("sentences_l2_audio");
+  audio.play();
+}
 
   //--------------------sentences Grade 2 level 2 ----------------------
 
@@ -1158,113 +1160,137 @@ function sirimath1()
   {
   document.getElementById("sin01").style.border = "4px solid blue"; 
   document.getElementById("sin02").style.pointerEvents = "none";
-  document.getElementById("mark01").checked = true; 
+  document.getElementById("mark1").checked = true; 
   document.getElementById("sine02").style.display = "block";
   var myAudio = new Audio('/assets/audio/yay.mp3');
   myAudio.play();
+  enableSubmit_poemg1l2()
   }
   function sirimath2()
   {
   document.getElementById("sin01").style.border = "4px solid red"; 
   document.getElementById("sin01").style.pointerEvents = "none";
-  document.getElementById("unmark01").checked = true; 
+  document.getElementById("unmark1").checked = true; 
   document.getElementById("sine01").style.display = "block";
   var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
   myAudio.play();
+  enableSubmit_poemg1l2()
   }
   function sirimath3()
   {
     document.getElementById("sin04").style.border = "4px solid red"; 
     document.getElementById("sin04").style.pointerEvents = "none";
-    document.getElementById("unmark02").checked = true; 
+    document.getElementById("unmark2").checked = true; 
     document.getElementById("sine03").style.display = "block";
     var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
     myAudio.play();
+    enableSubmit_poemg1l2()
   }
   function sirimath4()
   {
     document.getElementById("sin04").style.border = "4px solid blue"; 
     document.getElementById("sin03").style.pointerEvents = "none";
-    document.getElementById("mark02").checked = true; 
+    document.getElementById("mark2").checked = true; 
     document.getElementById("sine04").style.display = "block";
     var myAudio = new Audio('/assets/audio/yay.mp3');
   myAudio.play();
+  enableSubmit_poemg1l2()
   }
   function sirimath5()
   {
     document.getElementById("sin06").style.border = "4px solid red"; 
     document.getElementById("sin06").style.pointerEvents = "none";
-    document.getElementById("unmark03").checked = true; 
+    document.getElementById("unmark3").checked = true; 
     document.getElementById("sine05").style.display = "block";
     var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
     myAudio.play();
+    enableSubmit_poemg1l2()
   }
   function sirimath6()
   {
     document.getElementById("sin06").style.border = "4px solid blue"; 
     document.getElementById("sin05").style.pointerEvents = "none";
-    document.getElementById("mark03").checked = true; 
+    document.getElementById("mark3").checked = true; 
     document.getElementById("sine06").style.display = "block";
     var myAudio = new Audio('/assets/audio/yay.mp3');
     myAudio.play();
+    enableSubmit_poemg1l2()
   }
 
   function sirimath7()
   {
   document.getElementById("sin08").style.border = "4px solid red"; 
   document.getElementById("sin08").style.pointerEvents = "none";
-  document.getElementById("unmark04").checked = true; 
+  document.getElementById("unmark4").checked = true; 
   document.getElementById("sine07").style.display = "block";
   var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
   myAudio.play();
+  enableSubmit_poemg1l2()
   }
   function sirimath8()
   {
   document.getElementById("sin08").style.border = "4px solid blue"; 
   document.getElementById("sin07").style.pointerEvents = "none";
-  document.getElementById("mark04").checked = true; 
+  document.getElementById("mark4").checked = true; 
   document.getElementById("sine08").style.display = "block";
   var myAudio = new Audio('/assets/audio/yay.mp3');
   myAudio.play();
+  enableSubmit_poemg1l2()
   }
   function sirimath9()
   {
     document.getElementById("sin09").style.border = "4px solid blue"; 
     document.getElementById("sin010").style.pointerEvents = "none";
-    document.getElementById("mark05").checked = true; 
+    document.getElementById("mark5").checked = true; 
     document.getElementById("sine010").style.display = "block";
     var myAudio = new Audio('/assets/audio/yay.mp3');
   myAudio.play();
+  enableSubmit_poemg1l2()
   }
   function sirimath10()
   {
     document.getElementById("sin09").style.border = "4px solid red"; 
     document.getElementById("sin09").style.pointerEvents = "none";
-    document.getElementById("unmark05").checked = true; 
+    document.getElementById("unmark5").checked = true; 
     document.getElementById("sine09").style.display = "block";
     var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
     myAudio.play();
+    enableSubmit_poemg1l2()
   }
 
   function sirimath11()
   {
   document.getElementById("sin012").style.border = "4px solid red"; 
   document.getElementById("sin012").style.pointerEvents = "none";
-  document.getElementById("unmark06").checked = true; 
+  document.getElementById("unmark6").checked = true; 
   document.getElementById("sine011").style.display = "block";
   var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
   myAudio.play();
+  enableSubmit_poemg1l2()
   }
   function sirimath12()
   {
   document.getElementById("sin012").style.border = "4px solid blue"; 
   document.getElementById("sin011").style.pointerEvents = "none";
-  document.getElementById("mark06").checked = true; 
+  document.getElementById("mark6").checked = true; 
   document.getElementById("sine012").style.display = "block";
   var myAudio = new Audio('/assets/audio/yay.mp3');
   myAudio.play();
+  enableSubmit_poemg1l2()
   }
 
+  
+function enableSubmit_poemg1l2(){
+  var chk = document.querySelectorAll('input[type="checkbox"]:checked').length;
+  console.log(chk);
+  if (chk == 6){
+       document.getElementById("submit").style.display="block";
+       document.getElementById("arrow1").style.display="block";
+        }
+  else{
+      document.getElementById("submit").style.display="none";
+        }
+        }
   // Grade 2 Level 2 Poems audio function
   function poems_play_g2_l2() {
     var audio = document.getElementById("poems_play_g2_l2_audio");

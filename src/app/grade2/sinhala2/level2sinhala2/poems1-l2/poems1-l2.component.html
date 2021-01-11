@@ -4,15 +4,19 @@
   <title>Sinhala</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
 </head>
 
 <body style="background-size:cover;background-image:url(/assets/images/fun.jpg);">
-   
+  <app-emotiondetector></app-emotiondetector>  
 <div class="container" class="image" style="height:100% ;width:100%;">
+  <div id = "startdiv">
+    <button id="startbtn" class="button4" onclick = "startgame_sinhala()"><b>ආරම්භ කරන්න</b></button>
+    <img id="start-img" src = "/assets/images/start_button.png" >
+  </div>
 <br>
 
 <!-- row 1 -->
@@ -143,8 +147,8 @@
         <img id ="sine01" src="/assets/images/w.gif" style="display:none; width: 100%; max-width: 80px; min-width:30px; height: auto; margin:auto">
         <img id ="sine02" src="/assets/images/sbob1.png" style="display:none; width: 100%; max-width: 80px; min-width:30px; height: auto; margin:auto">   
 
-        <input type="checkbox" hidden name="fruit" id="mark01"/>
-        <input type="checkbox" hidden name="fruit" id="unmark01"/> 
+        <input type="checkbox" hidden name="fruit" id="mark1"/>
+        <input type="checkbox" hidden name="fruit" id="unmark1"/> 
       </div>
       
       <div class="col-sm-6 col-xs-6  col-lg-6">
@@ -154,8 +158,8 @@
         <img id ="sine03" src="/assets/images/w.gif" style="display:none; width: 100%; max-width: 80px; min-width:30px; height: auto; margin:auto">
         <img id ="sine04" src="/assets/images/sbob1.png" style="display:none; width: 100%; max-width: 80px; min-width:30px; height: auto; margin:auto">
         
-        <input type="checkbox" hidden name="fruit" id="mark02"/>
-        <input type="checkbox" hidden name="fruit" id="unmark02"/> 
+        <input type="checkbox" hidden name="fruit" id="mark2"/>
+        <input type="checkbox" hidden name="fruit" id="unmark2"/> 
       </div>
     </div>
 
@@ -167,8 +171,8 @@
         <img id ="sine05" src="/assets/images/w.gif" style="display:none; width: 100%; max-width: 80px; min-width:30px; height: auto; margin:auto">
         <img id ="sine06" src="/assets/images/sbob1.png" style="display:none; width: 100%; max-width: 80px; min-width:30px; height: auto; margin:auto">
         
-        <input type="checkbox" hidden name="fruit" id="mark03"/>
-        <input type="checkbox" hidden name="fruit" id="unmark03"/>
+        <input type="checkbox" hidden name="fruit" id="mark3"/>
+        <input type="checkbox" hidden name="fruit" id="unmark3"/>
       </div>
 
       <div class="col-sm-6 col-xs-6  col-lg-6">
@@ -178,8 +182,8 @@
         <img id ="sine07" src="/assets/images/w.gif" style="display:none; width: 100%; max-width: 80px; min-width:30px; height: auto; margin:auto">
         <img id ="sine08" src="/assets/images/sbob1.png" style="display:none; width: 100%; max-width: 80px; min-width:30px; height: auto; margin:auto">
         
-        <input type="checkbox" hidden name="fruit" id="mark04"/>
-        <input type="checkbox" hidden name="fruit" id="unmark04"/>
+        <input type="checkbox" hidden name="fruit" id="mark4"/>
+        <input type="checkbox" hidden name="fruit" id="unmark4"/>
       </div>
     </div>
 
@@ -191,8 +195,8 @@
         <img id ="sine09" src="/assets/images/w.gif" style="display:none; width: 100%; max-width: 80px; min-width:30px; height: auto; margin:auto">
         <img id ="sine010" src="/assets/images/sbob1.png" style="display:none; width: 100%; max-width: 80px; min-width:30px; height: auto; margin:auto">
         
-        <input type="checkbox" hidden name="fruit" id="mark05"/>
-        <input type="checkbox" hidden name="fruit" id="unmark05"/>
+        <input type="checkbox" hidden name="fruit" id="mark5"/>
+        <input type="checkbox" hidden name="fruit" id="unmark5"/>
       </div>
 
       <div class="col-sm-6 col-xs-6  col-lg-6">  
@@ -202,12 +206,58 @@
         <img id ="sine011" src="/assets/images/w.gif" style="display:none; width: 100%; max-width: 80px; min-width:30px; height: auto; margin:auto">
         <img id ="sine012" src="/assets/images/sbob1.png" style="display:none; width: 100%; max-width: 80px; min-width:30px; height: auto; margin:auto">
 
-        <input type="checkbox" hidden name="fruit" id="mark06"/>
-        <input type="checkbox" hidden name="fruit" id="unmark06"/>  
+        <input type="checkbox" hidden name="fruit" id="mark6"/>
+        <input type="checkbox" hidden name="fruit" id="unmark6"/>  
       </div>    
   </div>  
     
 
+  <div hidden id="clickarray"></div>
+  <br>
+  <br>
+  <div class="row">
+    <div class=col-6>
+      <img id ="arrow1" class="arrow" style="display: none;" src ="/assets/images/arrow_right.gif">
+    </div>
+    <div class=col-6>
+      <button id="submit" class="button2" style="display: none;" (click)="markstot_poemg2l2()">ඉවරයි</button> 
+    </div>
+  </div>
+  
+  <div id="myModal" class="modal">
+  
+    <div class="modal-content">
+      <div class="row">
+        <div class="col-12">
+          <h1 class ="coin-heading">Completed!!!</h1>
+        </div>
+      </div>
+      <div class="row coins-row">
+        <div class="col-4 coin_img1">
+          <img id="coin1" src="/assets/images/win_coin_cropped.gif" style = "visibility:hidden;">
+        </div>
+        <div class="col-4 coin_img2">
+          <img id="coin2" src="/assets/images/win_coin_cropped.gif" style = "visibility:hidden;">
+        </div>
+        <div class="col-4 coin_img3">
+          <img id="coin3" src="/assets/images/win_coin_cropped.gif" style = "visibility:hidden;">
+        </div>
+  
+      </div>
+  
+      <div class="row">
+        <div class="col-12" class="perf-time1">
+          <h5 class="perf-time2">ගත වූ කාලය : <span id="perf-time"></span></h5>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <a href="grade1/sinhala/level2" class="button3">ආපසු</a>
+        </div>
+      </div>
+      </div>								    	
+  </div>
+  
 
 <!-- <div class="row" style ="margin-top:30px;color:green;">
   <div class="col-sm-3 col-md-4 col-lg-4">
@@ -234,7 +284,7 @@
 
 
 
-
+<!-- 
 <div class="row">
   <div  class="col-sm-3 col-xs-3  col-lg-3"></div>
   <div  class="col-sm-3 col-xs-3  col-lg-3"></div>
@@ -248,6 +298,6 @@
       <button id="final_button" class="button2" style ="width:100px;margin-left:52px ;" >Next</button> 
     </div>
     <br>
-  </div> 
+  </div>  -->
 
 </div>
