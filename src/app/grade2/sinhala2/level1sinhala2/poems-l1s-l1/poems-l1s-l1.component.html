@@ -11,264 +11,239 @@
 </head>
 
 <body style="background-size:cover;background-image:url(/assets/images/fun.jpg);">
-  <app-emotiondetector></app-emotiondetector>  
-<div class="container" class="image" style="height:100% ;width:100%;">
-  <div id = "startdiv">
-    <button id="startbtn" class="button4" onclick = "startgame_sinhala()"><b>ආරම්භ කරන්න</b></button>
-    <img id="start-img" src = "/assets/images/start_button.png" >
-  </div>
-  <br>
-
-<!-- row 1 -->
-    <div class="row">
-      <div class=" col-sm-3 col-xs-3  col-lg-3">
-        <!-- <a href="/grade2/sinhala/level1/" style ='margin-left:60px;color:green;height:50px ;' class="previous button1">&laquo; Previous</a> -->
-      </div>
-    
-      <div class="col-sm-6 col-xs-6 col-lg-6">
-
-        <div class="row">
-            <div class="col-sm-3 col-xs-3 col-lg-3">
-                <div class ="row">
-                    <div class="col-sm-4 col-xs-4 col-lg-4">
-
-                    </div>
-                    <div class="col-sm-4 col-xs-4 col-lg-4">
-                        
-                    </div>
-                </div>
-             </div>
-            <div class="col-sm-9 col-xs-9 col-lg-9" >
-                <h1 style="margin-left:10px ;"><b>සිංදු රස විඳිමු</b></h1>   
-            </div>
-        </div>
-     
-      </div>
-
-
-      <div class=" col-sm-3 col-xs-3  col-lg-3">
-        <div id="time-back" style=" background-color: azure; border-radius: 15px; width: 175px;padding:5px ;margin-left: 60px;">
-            <div id="display" style=" font-size:38px; font-family: 'Permanent Marker', cursive;">
-               00:00:00
-            </div>
-            <div class="buttons" >
-              <button hidden id="startStop" onclick="startStop()">Start</button> 
-              <button hidden id="reset" onclick="reset()">Reset</button>
-            </div>
-        </div>
-      
-      </div>
-    </div>
-
-<!-- row 2 -->
+  <section id="banner" data-video="images/banner">
+    <div class="inner">
+      <!-- <app-emotiondetector></app-emotiondetector>   -->
+        <div class="container" class="image" style="height:100% ;width:100%;">
   
-  <div class="row" >
-    <h3 id="alert" style=" color: red;margin-left:60px;margin-top: 20px;visibility:hidden"> සියල්ලටම පිලිතුරු සපයන්න</h3>
-  </div>
-
-  <div class="row" >
-    <div class="col-sm-4 col-xs-4 col-lg-4">
-      <img src = "/assets/images/sound_audio3.gif" id="audio_img" class="question-audio" onclick="poems_play_g2_l1()" style="height:60px; float:right">
-      <audio id="poems_play_g2_l1_audio" src="assets/audio/sinhala/G2L1Poems1.mp3" type="audio/m4a" control>Your browser does not support the audio element. </audio>
-    </div>
-    <div class="col-sm-4 col-xs-4 col-lg-4">
-      <h3 style="text-align: center;margin-top: 10px;"><b>සිංදුව අසා නිවැරදි පිළිතුරු තෝරන්න</b></h3><br>
-    </div>
-    <div class="col-sm-4 col-xs-4 col-lg-4">
-    </div>
-  </div>
-
-    <div class="row">
-        <div class="col-sm-6 col-xs-6  col-lg-6">
-            <iframe src="https://drive.google.com/file/d/1YWuqIb31g67-sWektHLMX6EZNXrU6fvc/preview"  width="90%" height="360px" style ="margin-left:10px"></iframe>
-            <br>
-        </div>
-        
-        <div class="col-sm-3 col-xs-3  col-lg-3">
-            <h6 style="margin-left:20px;">
-                මොනවද මුත්තේ මොකද කරන්නේ<br>
-                මොකටද ඔබ ඔය බිම හාරන්නේ<br><br>
-                ඔබටත් ළමයෝ නොපෙනේ නොසිතමි<br>
-                අඹ ඇටයක් සිටුවන්නට හාරමි<br><br>
-                මොනවද මුත්තේ මොකද කරන්නේ<br>
-                මොකටද ඔබ ඔය බිම හාරන්නේ<br><br>
-                ඔබටත් ළමයෝ නොපෙනේ නොසිතමි<br>
-                අඹ ඇටයක් සිටුවන්නට හාරමි<br><br>
-                දුකසේ සිටුවා අඹ ඇටයක් අද<br>
-                එක අඹයක්වත් කන්න ලැබේවිද</h6>
-        </div>
-        
-        <div class="col-sm-3 col-xs-3  col-lg-3">
-            <h6 style="margin-left:20px;">
-            මම ළමයෝ මින් අඹයක් නොපතමි<br>
-            යුතුකම පමණක් ඉටුකොට තබනෙමි<br><br>
-            තමන්ට නොලැබෙන දේකින් ලෝකෙට<br>
-            කරන්ට හැකිදේ නොමතේරෙයි මට<br><br>
-            පුදුමයි ළමයෝ ඔබෙ ඔය අදහස<br>
-            හැදුනොත් ඔහොමට<br>
-            ඔබටම වෙයි දොස<br><br>
-            පෙර උන් අය සිටවූ අඹ ගස් වල<br>
-            ඵලයෙන් අප කවුරුත් ලබනෙමු ඵල<br>
-            අපෙන් පසුව එන අයටත් එම ඵල<br>
-            ලැබෙන්ට සැලසුම අපගේ යුතුකම<br><br>
-            මේ යුතුකම හොඳ හැටි දැන ගත්තෙමි
-            ආයුබොවන් මුත්තේ මම යන්නෙමි</h6>
-        </div>
-    </div> 
-        
-    <br>
-   
-    <div class="row">  
-        <div class="col-sm-5 col-xs-5 col-lg-5">
-          <h3 style="margin-left:20px;margin-top:10px;">1)මුත්තා බිම හාරන්නේ මොනවා හිටවන්නද?</h3>
-        </div>
-
-        <div class="col-sm-7 col-xs-7 col-lg-7">
-          <img src = "/assets/images/sound_audio3.gif" id="audio_img" class="question-audio" onclick="poems_play_g2_l1_2()" style="height:60px; float: left;">
-          <audio id="poems_play_g2_l1_audio_2" src="assets/audio/sinhala/G2L1Poems2.mp3" type="audio/m4a" control>Your browser does not support the audio element. </audio>
-        </div>
-    </div>
-
-
-    <div class ="row" style="margin-top:20px">
-
-          <div class="col-3">
-            <button style="margin-left:10px;border-radius:15px ;border-style: solid;border-color: black;border-width:5px" onclick="song1()" id="so1">
-              <img src="assets/images/mango-wbg.png" style="max-width:70%; height:auto;">
-              <p>අඹ ගෙඩියක්</p>
-            </button>
-          </div>
-
-          <div class="col-3">
-            <button style="margin-left:10px;border-radius:15px ;border-style: solid;border-color: black;border-width:5px" onclick="song2()" id="so2">
-              <img src="assets/images/mango-tree-wbg.png" style="max-width:70%; height:auto; border-color: black;border-width:5px">
-              <p>අඹ ගසක්</p>
-            </button>  
-          </div>
-
-          <div class="col-3">
-            <button style="margin-left:10px;border-radius:15px ;border-style: solid;border-color: black;border-width:5px" onclick="song3()" id="so3">
-              <img src="assets/images/mango-seed-wbg.png" style="max-width:70%; height:auto; border-color: black;border-width:5px">
-              <p>අඹ ඇටයක්</p>
-            </button>  
+          <div id = "startdiv">
+              <button id="startbtn" class="button4" onclick = "startgame_sinhala()"><b>ආරම්භ කරන්න</b></button>
+              <img id="start-img" src = "/assets/images/start_button.png">
           </div>
           <br>
 
-          <div class="col-3">
-            <img id ="so4" src="/assets/images/w.gif" style="display:none; width: 100%; max-width: 130px; min-width:30px; height: auto; margin:auto">
-            <img id ="so5" src="/assets/images/w.gif" style="display:none; width: 100%; max-width: 130px; min-width:30px; height: auto; margin:auto">
-            <img id ="so6" src="/assets/images/sbob1.png" style="display:none; width: 100%; max-width: 130px; min-width:30px; height: auto; margin:auto">
+          <!-- row 1 -->
+          <div class="row">  
+            <div class="col-sm-2 col-xs-2 col-lg-2">
+            </div>
+            <div class="col-sm-8 col-xs-8 col-lg-">
+              <h1 style="text-align: center;"><b>සිංදු රස විඳිමු</b></h1>
+            </div>
+            <div class="col-sm-2 col-xs-2 col-lg-2">
+              <div class="timer" id="time-back">
+                <div class="timer-text" id="display">
+                  00:00:00
+                </div>
+      
+                <div class="buttons" >
+                  <button hidden id="startStop" onclick="startStop()">Start</button> 
+                  <button hidden id="reset" onclick="reset()">Reset</button>
+                </div>
+              </div>
+            </div> 
+          </div>
+
+      
+        </div>
+
+          <!-- row 2 -->
+          <div class="row" >
+            <h3 id="alert" style=" color: red;margin-left:60px;margin-top: 20px;visibility:hidden"> සියල්ලටම පිලිතුරු සපයන්න</h3>
+          </div>
+
+          <!-- row 3 -->
+          <div class="row" >
+            <div class="col-sm-4 col-xs-4 col-lg-4">
+              <img src = "/assets/images/sound_audio3.gif" id="audio_img" class="question-audio" onclick="poems_play_g2_l1()" style="height:60px; float:right">
+              <audio id="poems_play_g2_l1_audio" src="assets/audio/sinhala/G2L1Poems1.mp3" type="audio/m4a" control>Your browser does not support the audio element. </audio>
+            </div>
+            <div class="col-sm-4 col-xs-4 col-lg-4">
+              <h3 style="text-align: center;margin-top: 10px;"><b>සිංදුව අසා නිවැරදි පිළිතුරු තෝරන්න</b></h3><br>
+            </div>
+            <div class="col-sm-4 col-xs-4 col-lg-4">
+            </div>
+          </div>
+
+          <!-- row 4 -->
+          <div class="row">
+            <div class="col-sm-6 col-xs-6  col-lg-6">
+                <iframe src="https://drive.google.com/file/d/1YWuqIb31g67-sWektHLMX6EZNXrU6fvc/preview"  width="90%" height="360px" style ="margin-left:10px"></iframe>
+                <br>
+            </div>
+        
+            <div class="col-sm-3 col-xs-3  col-lg-3">
+                <h6 style="margin-left:20px;">
+                    මොනවද මුත්තේ මොකද කරන්නේ<br>
+                    මොකටද ඔබ ඔය බිම හාරන්නේ<br><br>
+                    ඔබටත් ළමයෝ නොපෙනේ නොසිතමි<br>
+                    අඹ ඇටයක් සිටුවන්නට හාරමි<br><br>
+                    මොනවද මුත්තේ මොකද කරන්නේ<br>
+                    මොකටද ඔබ ඔය බිම හාරන්නේ<br><br>
+                    ඔබටත් ළමයෝ නොපෙනේ නොසිතමි<br>
+                    අඹ ඇටයක් සිටුවන්නට හාරමි<br><br>
+                    දුකසේ සිටුවා අඹ ඇටයක් අද<br>
+                    එක අඹයක්වත් කන්න ලැබේවිද</h6>
+            </div>
+            
+            <div class="col-sm-3 col-xs-3  col-lg-3">
+                <h6 style="margin-left:20px;">
+                මම ළමයෝ මින් අඹයක් නොපතමි<br>
+                යුතුකම පමණක් ඉටුකොට තබනෙමි<br><br>
+                තමන්ට නොලැබෙන දේකින් ලෝකෙට<br>
+                කරන්ට හැකිදේ නොමතේරෙයි මට<br><br>
+                පුදුමයි ළමයෝ ඔබෙ ඔය අදහස<br>
+                හැදුනොත් ඔහොමට<br>
+                ඔබටම වෙයි දොස<br><br>
+                පෙර උන් අය සිටවූ අඹ ගස් වල<br>
+                ඵලයෙන් අප කවුරුත් ලබනෙමු ඵල<br>
+                අපෙන් පසුව එන අයටත් එම ඵල<br>
+                ලැබෙන්ට සැලසුම අපගේ යුතුකම<br><br>
+                මේ යුතුකම හොඳ හැටි දැන ගත්තෙමි
+                ආයුබොවන් මුත්තේ මම යන්නෙමි</h6>
+            </div>
+          </div> 
+          <br>
+
+          <!-- row 5 -->
+          <div class="row">  
+            <div class="col-sm-5 col-xs-5 col-lg-5">
+              <h3 style="margin-left:20px;margin-top:10px;">1)මුත්තා බිම හාරන්නේ මොනවා හිටවන්නද?</h3>
+            </div>
+
+            <div class="col-sm-7 col-xs-7 col-lg-7">
+              <img src = "/assets/images/sound_audio3.gif" id="audio_img" class="question-audio" onclick="poems_play_g2_l1_2()" style="height:60px; float: left;">
+              <audio id="poems_play_g2_l1_audio_2" src="assets/audio/sinhala/G2L1Poems2.mp3" type="audio/m4a" control>Your browser does not support the audio element. </audio>
+            </div>
+          </div>
+
+          <!-- row 6 -->
+          <div class ="row" style="margin-top:20px">
+            <div class="col-3">
+              <button style="margin-left:10px;border-radius:15px ;border-style: solid;border-color: black;border-width:5px" onclick="song1()" id="so1">
+                <img src="assets/images/mango-wbg.png" style="max-width:70%; height:auto;">
+                <p>අඹ ගෙඩියක්</p>
+              </button>
+            </div>
+
+            <div class="col-3">
+              <button style="margin-left:10px;border-radius:15px ;border-style: solid;border-color: black;border-width:5px" onclick="song2()" id="so2">
+                <img src="assets/images/mango-tree-wbg.png" style="max-width:70%; height:auto; border-color: black;border-width:5px">
+                <p>අඹ ගසක්</p>
+              </button>  
+            </div>
+
+            <div class="col-3">
+              <button style="margin-left:10px;border-radius:15px ;border-style: solid;border-color: black;border-width:5px" onclick="song3()" id="so3">
+                <img src="assets/images/mango-seed-wbg.png" style="max-width:70%; height:auto; border-color: black;border-width:5px">
+                <p>අඹ ඇටයක්</p>
+              </button>  
+            </div>
+            <br>
+
+            <div class="col-3">
+              <img id ="so4" src="/assets/images/w.gif" style="display:none; width: 100%; max-width: 130px; min-width:30px; height: auto; margin:auto">
+              <img id ="so5" src="/assets/images/w.gif" style="display:none; width: 100%; max-width: 130px; min-width:30px; height: auto; margin:auto">
+              <img id ="so6" src="/assets/images/sbob1.png" style="display:none; width: 100%; max-width: 130px; min-width:30px; height: auto; margin:auto">
          
             <input type="checkbox" hidden name="fruit" id="mark1"/>
             <input type="checkbox" hidden name="fruit" id="unmark1"/>
+            </div>
+          </div>
+          <br><br>
+
+          <!-- row 7 -->
+          <div class="row">  
+            <div class="col-sm-4 col-xs-4 col-lg-4">
+              <h3 style="margin-left:20px;margin-top:10px;">2)මුත්තා අඹ හිටවන්නේ කාට කන්නද?</h3>
+            </div>
+
+            <div class="col-sm-8 col-xs-8 col-lg-8">
+              <img src = "/assets/images/sound_audio3.gif" id="audio_img" class="question-audio" onclick="poems_play_g2_l1_3()" style="height:60px; float: left;">
+              <audio id="poems_play_g2_l1_audio_3" src="assets/audio/sinhala/G2L1Poems3.mp3" type="audio/m4a" control>Your browser does not support the audio element. </audio>
+            </div>
           </div>
 
-    </div>
-    <br><br>
+          <!-- row 8 -->
+          <div class="row" style="margin-top:20px;">
+            <div class="col-3">
+              <button style="margin-left:10px;border-radius:15px ;border-style: solid;border-color: black;border-width:5px" onclick="song4()" id="so7">
+                <img src="assets/images/grandfather-wbg.png" style="width:100px;height:100px;border-color: black;border-width:5px">
+                <p>මුත්තාට</p>
+              </button>  
+            </div>
 
-    <div class="row">  
-      <div class="col-sm-4 col-xs-4 col-lg-4">
-        <h3 style="margin-left:20px;margin-top:10px;">2)මුත්තා අඹ හිටවන්නේ කාට කන්නද?</h3>
-      </div>
+            <div class="col-3">
+              <button style="margin-left:10px;border-radius:15px ;border-style: solid;border-color: black;border-width:5px" onclick="song5()" id="so8">
+                <img src="assets/images/child-wbg.png" style="width:100px;height:100px;border-color: black;border-width:5px">
+                <p>ළමයාට</p>
+              </button>  
+            </div>
 
-      <div class="col-sm-8 col-xs-8 col-lg-8">
-        <img src = "/assets/images/sound_audio3.gif" id="audio_img" class="question-audio" onclick="poems_play_g2_l1_3()" style="height:60px; float: left;">
-        <audio id="poems_play_g2_l1_audio_3" src="assets/audio/sinhala/G2L1Poems3.mp3" type="audio/m4a" control>Your browser does not support the audio element. </audio>
-      </div>
-  </div>
+            <div class="col-3">
+              <button style="margin-left:10px;border-radius:15px ;border-style: solid;border-color: black;border-width:5px" onclick="song6()" id="so9">
+                <img src="assets/images/squirrel-wbg.png" style="width:100px;height:100px;border-color: black;border-width:5px">
+                <p>ලේනාට</p>
+              </button>  
+            </div>
 
-  <div class="row" style="margin-top:20px;">
-          <div class="col-3">
-            <button style="margin-left:10px;border-radius:15px ;border-style: solid;border-color: black;border-width:5px" onclick="song4()" id="so7">
-              <img src="assets/images/grandfather-wbg.png" style="width:100px;height:100px;border-color: black;border-width:5px">
-              <p>මුත්තාට</p>
-            </button>  
+            <div class="col-3">
+              <img id ="so10" src="/assets/images/w.gif" style="display:none; width: 100%; max-width: 130px; min-width:30px; height: auto; margin:auto">
+              <img id ="so11" src="/assets/images/sbob1.png" style="display:none; width: 100%; max-width: 130px; min-width:30px; height: auto; margin:auto">
+              <img id ="so12" src="/assets/images/w.gif" style="display:none; width: 100%; max-width: 130px; min-width:30px; height: auto; margin:auto">
+            </div>
+
+            <input type="checkbox" hidden name="fruit" id="mark2"/>
+            <input type="checkbox" hidden name="fruit" id="unmark2"/>
           </div>
-
-          <div class="col-3">
-            <button style="margin-left:10px;border-radius:15px ;border-style: solid;border-color: black;border-width:5px" onclick="song5()" id="so8">
-              <img src="assets/images/child-wbg.png" style="width:100px;height:100px;border-color: black;border-width:5px">
-              <p>ළමයාට</p>
-            </button>  
-          </div>
-
-          <div class="col-3">
-            <button style="margin-left:10px;border-radius:15px ;border-style: solid;border-color: black;border-width:5px" onclick="song6()" id="so9">
-              <img src="assets/images/squirrel-wbg.png" style="width:100px;height:100px;border-color: black;border-width:5px">
-              <p>ලේනාට</p>
-            </button>  
-          </div>
-
-          <div class="col-3">
-            <img id ="so10" src="/assets/images/w.gif" style="display:none; width: 100%; max-width: 130px; min-width:30px; height: auto; margin:auto">
-            <img id ="so11" src="/assets/images/sbob1.png" style="display:none; width: 100%; max-width: 130px; min-width:30px; height: auto; margin:auto">
-            <img id ="so12" src="/assets/images/w.gif" style="display:none; width: 100%; max-width: 130px; min-width:30px; height: auto; margin:auto">
-          </div>
-
-          <input type="checkbox" hidden name="fruit" id="mark2"/>
-          <input type="checkbox" hidden name="fruit" id="unmark2"/>
-
-    </div>
+          <br><br><br>    
     
-    
+      <div hidden id="clickarray"></div>
+      <br>
+      <br>
 
-   
-    
-    <br>
-
-    <br>
-    <br>
-     
-    
-<div hidden id="clickarray"></div>
-<br>
-<br>
-<div class="row">
-  <div class=col-6>
-    <img id ="arrow1" class="arrow" style="display: none;" src ="/assets/images/arrow_right.gif">
-  </div>
-  <div class=col-6>
-    <button id="submit" class="button2" style="display: none;" (click)="markstot_poem3()">ඉවරයි</button> 
-  </div>
-</div>
-
-<div id="myModal" class="modal">
-
-  <div class="modal-content">
-    <div class="row">
-      <div class="col-12">
-        <h1 class ="coin-heading">Completed!!!</h1>
-      </div>
-    </div>
-    <div class="row coins-row">
-      <div class="col-6 coin_img1">
-        <img id="coin1" src="/assets/images/win_coin_cropped.gif" style = "visibility:hidden;">
-      </div>
-      <div class="col-6 coin_img2">
-        <img id="coin2" src="/assets/images/win_coin_cropped.gif" style = "visibility:hidden;">
+      <!-- row 8 -->
+      <div class="row">
+        <div class=col-6>
+          <img id ="arrow1" class="arrow" style="display: none;" src ="/assets/images/arrow_right.gif">
+        </div>
+        <div class=col-6>
+          <button id="submit" class="button2" style="display: none;" (click)="markstot_poem3()">ඉවරයි</button> 
+        </div>
       </div>
 
-    </div>
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <div class="row">
+              <div class="col-12">
+                <h1 class ="coin-heading">Completed!!!</h1>
+              </div>
+          </div>
+          <div class="row coins-row">
+            <div class="col-6 coin_img1">
+              <img id="coin1" src="/assets/images/win_coin_cropped.gif" style = "visibility:hidden;">
+            </div>
+            <div class="col-6 coin_img2">
+              <img id="coin2" src="/assets/images/win_coin_cropped.gif" style = "visibility:hidden;">
+            </div>
+          </div>
 
-    <div class="row">
-      <div class="col-12" class="perf-time1">
-        <h5 class="perf-time2">ගත වූ කාලය : <span id="perf-time"></span></h5>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-12">
-        <a href="grade2/sinhala/level1" class="button3">ආපසු</a>
-      </div>
-    </div>
-    </div>								    	
+          <div class="row">
+            <div class="col-12" class="perf-time1">
+              <h5 class="perf-time2">ගත වූ කාලය : <span id="perf-time"></span></h5>
+            </div>
+          </div>
+      
+          <div class="row">
+            <div class="col-12">
+              <a href="grade2/sinhala/level1" class="button3">ආපසු</a>
+            </div>
+          </div>
+        </div>								    	
          
-  </div>
-
-
-
-
-
-
+      </div>
+    </div>
+  </section>
+</body>
 
 
 <!-- 
@@ -289,12 +264,3 @@
 
 </div>
          -->
-
-
-
-
-
-
-
-
-
