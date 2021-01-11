@@ -47,7 +47,7 @@ export class WordSelectiontionComponent implements OnInit {
     // this.gamesService.submitGame({    
     //   completed_games : [
     //   {
-    //   game_id : "S11",
+    //   game_id : "S15",
     //   marks : total,
     //   time_spent : time,
     //   // emotions: this.child.emotions,
