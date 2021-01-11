@@ -302,6 +302,7 @@ function wordgames12()
   document.getElementById("wo212").style.border = "4px solid red"; 
   var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
   myAudio.play();
+  enableSubmit_grade2level1words()
   }
 
   function wordgames22()
@@ -316,6 +317,7 @@ function wordgames12()
   document.getElementById("wo212").style.border = "4px solid blue";
   var myAudio = new Audio('/assets/audio/yay.mp3');
   myAudio.play(); 
+  enableSubmit_grade2level1words()
   }
 
   function wordgames32()
@@ -330,6 +332,7 @@ function wordgames12()
   document.getElementById("wo312").style.border = "4px solid blue";
   var myAudio = new Audio('/assets/audio/yay.mp3');
   myAudio.play(); 
+  enableSubmit_grade2level1words()
   }
 
   function wordgames42()
@@ -343,6 +346,7 @@ function wordgames12()
   document.getElementById("wo312").style.border = "4px solid red"; 
   var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
   myAudio.play();
+  enableSubmit_grade2level1words()
   }
 
   function wordgames52()
@@ -356,6 +360,7 @@ function wordgames12()
   document.getElementById("wo512").style.border = "4px solid blue"; 
   var myAudio = new Audio('/assets/audio/yay.mp3');
   myAudio.play();
+  enableSubmit_grade2level1words()
   }
 
   function wordgames62()
@@ -369,6 +374,7 @@ function wordgames12()
   document.getElementById("wo512").style.border = "4px solid red"; 
   var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
   myAudio.play();
+  enableSubmit_grade2level1words()
   }
   //q2
 
@@ -379,23 +385,26 @@ function wordgames12()
   document.f1.rw42.src="/assets/images/w.gif";
   document.f1.rw342.src="/assets/images/trans.svg";
   document.getElementById("wo812").style.pointerEvents = "none";
-  document.getElementById("unmark1").checked = true; //kid gave right answer 
+  document.getElementById("unmark4").checked = true; //kid gave right answer 
   document.getElementById("wo812").style.border = "4px solid red"; 
   var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
   myAudio.play();
+  enableSubmit_grade2level1words()
   }
 
   function wordgames82()
+  
   {
  
   document.f1.clip7.src="/assets/images/ge.JPG";
   document.f1.rw42.src="/assets/images/sbob1.png";
   document.f1.rw342.src="/assets/images/super4.JPG";
   document.getElementById("wo712").style.pointerEvents = "none";
-  document.getElementById("mark1").checked = true; //kid gave false answer 
+  document.getElementById("mark4").checked = true; //kid gave false answer 
   document.getElementById("wo812").style.border = "4px solid blue"; 
   var myAudio = new Audio('/assets/audio/yay.mp3');
   myAudio.play();
+  enableSubmit_grade2level1words()
   }
 
   function wordgames92()
@@ -405,10 +414,11 @@ function wordgames12()
   document.f1.rw52.src="/assets/images/w.gif";
   document.f1.rw352.src="/assets/images/trans.svg";
   document.getElementById("wo1012").style.pointerEvents = "none";
-  document.getElementById("mark2").checked = true; //kid gave right answer 
+  document.getElementById("mark5").checked = true; //kid gave right answer 
   document.getElementById("wo1012").style.border = "4px solid red"; 
   var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
   myAudio.play();
+  enableSubmit_grade2level1words()
   }
 
   function wordgames102()
@@ -418,10 +428,11 @@ function wordgames12()
   document.f1.rw52.src="/assets/images/sbob1.png";
   document.f1.rw352.src="/assets/images/super5.JPG";
   document.getElementById("wo912").style.pointerEvents = "none";
-  document.getElementById("unmark2").checked = true; //kid gave false answer 
+  document.getElementById("unmark5").checked = true; //kid gave false answer 
   document.getElementById("wo1012").style.border = "4px solid blue"; 
   var myAudio = new Audio('/assets/audio/yay.mp3');
   myAudio.play();
+  enableSubmit_grade2level1words()
   }
 
   function wordgames112()
@@ -431,10 +442,11 @@ function wordgames12()
   document.f1.rw62.src="/assets/images/sbob1.png";
   document.f1.rw362.src="/assets/images/super2.JPG";
   document.getElementById("wo1212").style.pointerEvents = "none";
-  document.getElementById("mark3").checked = true; //kid gave true answer 
+  document.getElementById("mark6").checked = true; //kid gave true answer 
   document.getElementById("wo1112").style.border = "4px solid blue"; 
   var myAudio = new Audio('/assets/audio/yay.mp3');
   myAudio.play();
+  enableSubmit_grade2level1words()
   }
 
   function wordgames122()
@@ -444,10 +456,11 @@ function wordgames12()
   document.f1.rw62.src="/assets/images/w.gif";
   document.f1.rw362.src="/assets/images/trans.svg";
   document.getElementById("wo1112").style.pointerEvents = "none";
-  document.getElementById("unmark3").checked = true; //kid gave false answer 
+  document.getElementById("unmark6").checked = true; //kid gave false answer 
   document.getElementById("wo1112").style.border = "4px solid red"; 
   var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
   myAudio.play();
+  enableSubmit_grade2level1words()
   }
 
   //q3
@@ -459,10 +472,11 @@ function wordgames12()
   document.f1.rw72.src="/assets/images/sbob1.png";
   document.f1.rw372.src="/assets/images/super1.JPG";
   document.getElementById("wo1412").style.pointerEvents = "none";
-  document.getElementById("mark1").checked = true; //kid gave right answer 
+  document.getElementById("mark7").checked = true; //kid gave right answer 
   document.getElementById("wo1312").style.border = "4px solid blue"; 
   var myAudio = new Audio('/assets/audio/yay.mp3');
   myAudio.play();
+  enableSubmit_grade2level1words()
   }
 
   function wordgames142()
@@ -472,10 +486,11 @@ function wordgames12()
   document.f1.rw72.src="/assets/images/w.gif";
   document.f1.rw372.src="/assets/images/trans.svg";
   document.getElementById("wo1312").style.pointerEvents = "none";
-  document.getElementById("unmark1").checked = true; //kid gave false answer 
+  document.getElementById("unmark7").checked = true; //kid gave false answer 
   document.getElementById("wo1312").style.border = "4px solid red"; 
   var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
   myAudio.play();
+  enableSubmit_grade2level1words()
   }
 
   function wordgames152()
@@ -484,10 +499,11 @@ function wordgames12()
   document.f1.rw82.src="/assets/images/w.gif";
   document.f1.rw382.src="/assets/images/trans.svg";
   document.getElementById("wo1612").style.pointerEvents = "none";
-  document.getElementById("unmark2").checked = true; //kid gave right answer 
+  document.getElementById("unmark8").checked = true; //kid gave right answer 
   document.getElementById("wo1612").style.border = "4px solid red"; 
   var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
   myAudio.play();
+  enableSubmit_grade2level1words()
   }
 
   function wordgames162()
@@ -497,10 +513,11 @@ function wordgames12()
   document.f1.rw82.src="/assets/images/sbob1.png";
   document.f1.rw382.src="/assets/images/super4.JPG";
   document.getElementById("wo1512").style.pointerEvents = "none";
-  document.getElementById("mark2").checked = true; //kid gave false answer 
+  document.getElementById("mark8").checked = true; //kid gave false answer 
   document.getElementById("wo1612").style.border = "4px solid blue"; 
   var myAudio = new Audio('/assets/audio/yay.mp3');
   myAudio.play();
+  enableSubmit_grade2level1words()
   }
 
   function wordgames172()
@@ -509,10 +526,11 @@ function wordgames12()
   document.f1.rw92.src="/assets/images/sbob1.png";
   document.f1.rw392.src="/assets/images/super5.JPG"
   document.getElementById("wo1812").style.pointerEvents = "none";
-  document.getElementById("mark3").checked = true; //kid gave false answer 
+  document.getElementById("mark9").checked = true; //kid gave false answer 
   document.getElementById("wo1712").style.border = "4px solid blue"; 
   var myAudio = new Audio('/assets/audio/yay.mp3');
   myAudio.play();
+  enableSubmit_grade2level1words()
   
   }
 
@@ -522,12 +540,23 @@ function wordgames12()
   document.f1.rw92.src="/assets/images/w.gif";
   document.f1.rw392.src="/assets/images/trans.svg";
   document.getElementById("wo1712").style.pointerEvents = "none";
-  document.getElementById("unmark3").checked = true; //kid gave false answer 
+  document.getElementById("unmark9").checked = true; //kid gave false answer 
   document.getElementById("wo1712").style.border = "4px solid red"; 
   var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
   myAudio.play();
+  enableSubmit_grade2level1words()
   }
-
+  function enableSubmit_grade2level1words(){
+    var chk = document.querySelectorAll('input[type="checkbox"]:checked').length;
+    console.log(chk);
+    if (chk == 9){
+         document.getElementById("submit").style.display="block";
+         document.getElementById("arrow1").style.display="block";
+          }
+    else{
+        document.getElementById("submit").style.display="none";
+          }
+          }
     //Audio functions of the Grade 2 Level 1 words game
 
     function words_play_g2() {
