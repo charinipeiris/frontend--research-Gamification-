@@ -80,7 +80,7 @@
   document.getElementById("sun").style.pointerEvents = "none";  
   document.getElementById("mark3").checked = true; //kid gave right answer 
   var myAudio = new Audio('/assets/audio/yay.mp3');
-myAudio.play();
+ myAudio.play();
   enableSubmit_sinhalasentences11()
   }
   
@@ -256,7 +256,7 @@ myAudio.play();
   document.getElementById("wo12").style.pointerEvents = "none";
   document.getElementById("mark6").checked = true; //kid gave right answer 
   document.getElementById("wo11").style.border = "4px solid blue";
-  var myAudio = new Audio('/assets/audio/yaymp3');
+  var myAudio = new Audio('/assets/audio/yay.mp3');
   myAudio.play();
   enableSubmit_sinhalaWords()
   }
@@ -278,7 +278,7 @@ myAudio.play();
 
   function enableSubmit_sinhalaWords(){
     var chk = document.querySelectorAll('input[type="checkbox"]:checked').length;
-    if (chk == 3){
+    if (chk == 6){
          document.getElementById("submit").style.display="block";
          document.getElementById("arrow1").style.display="block";
           }

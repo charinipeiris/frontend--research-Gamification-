@@ -289,7 +289,7 @@
 	animation-duration: 3s;  
 	animation-fill-mode: forwards;
 	height: 220px; 
-	width: 550px;
+  width: 550px;
 	
   }
   .coin_img2{
@@ -297,11 +297,26 @@
 	animation-duration: 3s;  
 	animation-fill-mode: forwards;
 	height: 220px; 
+  width: 550px;
+  
+  }
+
+  .coin_img3{
+	animation-name: example;
+	animation-duration: 3s;  
+	animation-fill-mode: forwards;
+	height: 220px; 
 	width: 550px;
   }
-  #coin1{
-    margin-left:150px;
-  }
+  .coin_img4{
+    animation-name: example;
+    animation-duration: 3s;  
+    animation-fill-mode: forwards;
+    height: 220px; 
+    width: 550px;
+    }
+
+ 
 
   .coins-row{
 	width:70%;
@@ -352,19 +367,24 @@
     #coin1{
       width: 50px;
       height:60px;
-      margin-left:50px;
     }
     #coin2{
       width: 50px;
       height:60px;
-      /* margin-top: 18px; */
+      margin-top: 18px;
     }
+    #coin3{
+      width: 50px;
+      height:60px;
+    
+    }
+    
     .perf-time2{
       font-size: 20px;
       }
     .perf-time1{
-      margin-top: 50px;
-      margin-left: 50px;
+      margin-top: 100px;
+      margin-left: 20px;
       }
     }
 
