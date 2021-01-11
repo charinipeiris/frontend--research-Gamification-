@@ -19,7 +19,7 @@
     <br>
   <div class="row">
       <div class=" col-sm-3 col-xs-3  col-lg-3">
-        <a href="/grade1/sinhala/level2/" style ='margin-left:60px;color:green;height:50px ;' class="previous button1">&laquo; Previous</a>
+        <!-- <a href="/grade1/sinhala/level2/" style ='margin-left:60px;color:green;height:50px ;' class="previous button1">&laquo; Previous</a> -->
       </div>
 
       <div class="col-sm-6 col-xs-6 col-lg-6">
@@ -31,7 +31,7 @@
                      <img src = "/assets/images/click.gif" style="height:45px;margin-left:10px;">
                     </div> -->
                     <div class="col-sm-4 col-xs-4 col-lg-4">
-                        <img src = "/assets/images/sound_audio3.gif" style="height:60px;">
+                        <!-- <img src = "/assets/images/sound_audio3.gif" style="height:60px;"> -->
                     </div>
                     <div class="col-sm-4 col-xs-4 col-lg-4">
                         
@@ -39,7 +39,7 @@
                 </div>
              </div>
             <div class="col-sm-9 col-xs-9 col-lg-9" >
-                <h1 style="margin-left:10px ;"><b>වගන්ති හදමු - 2 </b></h1>   
+                <h1 style="text-align:center;"><b>වචන හදමු - 2</b></h1>   
             </div>
         </div>
      
@@ -61,133 +61,103 @@
 </div>
 
   <div class="row" >
-    <h3 style ="margin-top:20px; margin-left:60px;"><b>හිස්තැනට ගැලපෙන නිවැරදි අකුරු තෝරමු.</b></h3><br>
     <h3 id="alert" style=" color: red;margin-left:60px;margin-top: 20px;visibility:hidden"> සියල්ලටම පිලිතුරු සපයන්න</h3>
   </div>
- <br>
- <!-- q1 -->
- <div class="row" style="margin-top:10px;margin-left:20px">
-    <div class ="col-sm-6 col-xs-6 col-lg-6">
-        <img  src="/assets/images/ques1.JPG"  style=" max-width:90%; border: 2px solid black; border-radius: 10px; "  > 
+
+
+  <div class="row" >
+    <div class="col-3">
+      <img src = "/assets/images/sound_audio3.gif" id="audio_img" class="question-audio" onclick="words_play_g2_l2()" style="height:60px; float:right">
+      <audio id="words_play_g2_l2_audio" src="assets/audio/sinhala/G2L2Words.mp3" type="audio/m4a" control>Your browser does not support the audio element. </audio>
+    </div>
+    <div class="col-6">
+      <h3 style="text-align: center;margin-top: 10px;"><b>හිස්තැනට ගැලපෙන නිවැරදි අකුරු තෝරන්න</b></h3><br>
+    </div>
+    <div class="col-3">
+    </div>
+  </div>
+  <br>
+
+  <!-- q1 -->
+  <div class="row" style="margin-top:10px;margin-left:20px;">
+    <div class ="col-sm-12 col-xs-12 col-lg-12">
+      <img  src="/assets/images/ques1.JPG"  style="max-width:90%; border: 2px solid black; border-radius: 10px; "  > 
+    </div>
+  </div>
+
+  <div class="row" style="margin-top:10px;margin-left:20px">
+    <div class ="col-sm-3 col-xs-3 col-lg-3">  
+      <img  src="/assets/images/ans1.JPG"  style=" max-width:90%; border: 2px solid black; border-radius: 10px; "onclick="new_work1()" id="ax1" >
+    </div>
+    <div class ="col-sm-3 col-xs-3 col-lg-3"> 
+      <img  src="/assets/images/ans2.JPG"  style=" max-width:90%; border: 2px solid black; border-radius: 10px; "onclick="new_work2()" id="ax2"> 
+    </div> 
+    <div class ="col-sm-3 col-xs-3 col-lg-3"> 
+      <img  src="/assets/images/ans3.JPG"  style=" max-width:90%; border: 2px solid black; border-radius: 10px; "onclick="new_work3()" id="ax3" >
+    </div>
+    <div class ="col-sm-3 col-xs-3 col-lg-3">
+      <img id ="axe1" src="/assets/images/w.gif" style="display:none; width: 100%; max-width: 80px; min-width:30px; height: auto; margin:auto">
+      <img id ="axe2" src="/assets/images/sbob1.png" style="display:none; width: 100%; max-width: 80px; min-width:30px; height: auto; margin:auto">
+      <img id ="axe3" src="/assets/images/w.gif" style="display:none; width: 100%; max-width: 80px; min-width:30px; height: auto; margin:auto">
     </div>
 
-    <div class ="col-sm-6 col-xs-6 col-lg-6">  
+    <input type="checkbox" hidden name="fruit" id="mark1"/>
+    <input type="checkbox" hidden name="fruit" id="unmark1"/>
+  </div>
 
-            <div class="row" style="margin-top:5px;">
-                <div class="col-6">
-                    <img  src="/assets/images/ans1.JPG"  style=" max-width:90%; border: 2px solid black; border-radius: 10px; "onclick="new_work1()" id="ax1" >
-                </div>
-                <div class="col-6">
-                    <img id ="axe1" src="/assets/images/w.gif" style="display:none; width: 100%; max-width: 80px; min-width:30px; height: auto; margin:auto">
-                </div> 
-            </div>
-
-            <div class="row" style="margin-top:5px;">
-                <div class="col-6">
-                    <img  src="/assets/images/ans2.JPG"  style=" max-width:90%; border: 2px solid black; border-radius: 10px; "onclick="new_work2()" id="ax2" >
-                </div>
-                <div class="col-6">
-                    <img id ="axe2" src="/assets/images/sbob1.png" style="display:none; width: 100%; max-width: 80px; min-width:30px; height: auto; margin:auto">
-                </div> 
-            </div>
-
-            <div class="row" style="margin-top:5px;">
-                <div class="col-6">
-                    <img  src="/assets/images/ans3.JPG"  style=" max-width:90%; border: 2px solid black; border-radius: 10px; "onclick="new_work3()" id="ax3" >
-                </div>
-                <div class="col-6">
-                    <img id ="axe3" src="/assets/images/w.gif" style="display:none; width: 100%; max-width: 80px; min-width:30px; height: auto; margin:auto">
-                </div>
-               
-            </div>
-            <input type="checkbox" hidden name="fruit" id="mark1"/>
-            <input type="checkbox" hidden name="fruit" id="unmark1"/>
+  <!-- q2 -->
+  <div class="row" style="margin-top:20px;margin-left:20px">
+    <div class ="col-sm-12 col-xs-12 col-lg-12">
+          <img  src="/assets/images/ques2.JPG"  style=" max-width:90%; border: 2px solid black; border-radius: 10px; " > 
     </div>
- </div>
+  </div>
 
-
-<!-- q2 -->
-<div class="row" style="margin-top:20px;margin-left:20px">
-    <div class ="col-sm-6 col-xs-6 col-lg-6">
-        <img  src="/assets/images/ques2.JPG"  style=" max-width:90%; border: 2px solid black; border-radius: 10px; " > 
+  <div class="row" style="margin-top:10px;margin-left:20px">
+    <div class ="col-sm-3 col-xs-3 col-lg-3">  
+      <img  src="/assets/images/ans4.JPG"  style=" max-width:90%; border: 2px solid black; border-radius: 10px; "onclick="new_work4()" id="ax4" >
+    </div>
+    <div class ="col-sm-3 col-xs-3 col-lg-3">  
+      <img  src="/assets/images/ans5.JPG"  style=" max-width:90%; border: 2px solid black; border-radius: 10px; "onclick="new_work5()" id="ax5" >
+    </div>
+    <div class ="col-sm-3 col-xs-3 col-lg-3">  
+      <img  src="/assets/images/ans6.JPG"  style=" max-width:90%; border: 2px solid black; border-radius: 10px; "onclick="new_work6()" id="ax6" >
+    </div>
+    <div class ="col-sm-3 col-xs-3 col-lg-3">  
+      <img id ="axe4" src="/assets/images/sbob1.png" style="display:none; width: 100%; max-width: 80px; min-width:30px; height: auto; margin:auto">
+      <img id ="axe5" src="/assets/images/w.gif" style="display:none; width: 100%; max-width: 80px; min-width:30px; height: auto; margin:auto">
+      <img id ="axe6" src="/assets/images/w.gif" style="display:none; width: 100%; max-width: 80px; min-width:30px; height: auto; margin:auto">
     </div>
 
-    <div class ="col-sm-6 col-xs-6 col-lg-6">  
-
-            <div class="row" style="margin-top:5px;">
-                <div class="col-6">
-                    <img  src="/assets/images/ans4.JPG"  style=" max-width:90%; border: 2px solid black; border-radius: 10px; "onclick="new_work4()" id="ax4" >
-                </div>
-                <div class="col-6">
-                    <img id ="axe4" src="/assets/images/sbob1.png" style="display:none; width: 100%; max-width: 80px; min-width:30px; height: auto; margin:auto">
-                </div> 
-            </div>
-
-            <div class="row" style="margin-top:5px;">
-                <div class="col-6">
-                    <img  src="/assets/images/ans5.JPG"  style=" max-width:90%; border: 2px solid black; border-radius: 10px; "onclick="new_work5()" id="ax5" >
-                </div>
-                <div class="col-6">
-                    <img id ="axe5" src="/assets/images/w.gif" style="display:none; width: 100%; max-width: 80px; min-width:30px; height: auto; margin:auto">
-                </div> 
-            </div>
-
-            <div class="row" style="margin-top:5px;">
-                <div class="col-6">
-                    <img  src="/assets/images/ans6.JPG"  style=" max-width:90%; border: 2px solid black; border-radius: 10px; "onclick="new_work6()" id="ax6" >
-                </div>
-                <div class="col-6">
-                    <img id ="axe6" src="/assets/images/w.gif" style="display:none; width: 100%; max-width: 80px; min-width:30px; height: auto; margin:auto">
-                </div>
-               
-            </div>
-            <input type="checkbox" hidden name="fruit" id="mark2"/>
-            <input type="checkbox" hidden name="fruit" id="unmark2"/>
-    </div>
- </div>
-
+    <input type="checkbox" hidden name="fruit" id="mark2"/>
+    <input type="checkbox" hidden name="fruit" id="unmark2"/>
+  </div>
 
 <!-- q3 -->
- <div class="row" style="margin-top:20px;margin-left:20px">
-    <div class ="col-sm-6 col-xs-6 col-lg-6">
-        <img  src="/assets/images/ques3.JPG"  style=" max-width:90%; border: 2px solid black; border-radius: 10px; " > 
+  <div class="row" style="margin-top:20px;margin-left:20px">
+    <div class ="col-sm-12 col-xs-12 col-lg-12">
+      <img  src="/assets/images/ques3.JPG"  style=" max-width:90%; border: 2px solid black; border-radius: 10px; " > 
+    </div>
+  </div>
+
+  <div class="row" style="margin-top:20px;margin-left:20px">
+    <div class ="col-sm-3 col-xs-3 col-lg-3">
+      <img  src="/assets/images/ans7.JPG"  style=" max-width:90%; border: 2px solid black; border-radius: 10px; "onclick="new_work7()" id="ax7" >
+    </div>  
+    <div class ="col-sm-3 col-xs-3 col-lg-3">
+      <img  src="/assets/images/ans8.JPG"  style=" max-width:90%; border: 2px solid black; border-radius: 10px; "onclick="new_work8()" id="ax8" >
+    </div>
+    <div class ="col-sm-3 col-xs-3 col-lg-3">
+      <img  src="/assets/images/ans9.JPG"  style=" max-width:90%; border: 2px solid black; border-radius: 10px; "onclick="new_work9()" id="ax9" >
+    </div>
+    <div class ="col-sm-3 col-xs-3 col-lg-3">
+      <img id ="axe7" src="/assets/images/w.gif" style="display:none; width: 100%; max-width: 80px; min-width:30px; height: auto; margin:auto">
+      <img id ="axe8" src="/assets/images/w.gif" style="display:none; width: 100%; max-width: 80px; min-width:30px; height: auto; margin:auto">
+      <img id ="axe9" src="/assets/images/sbob1.png" style="display:none; width: 100%; max-width: 80px; min-width:30px; height: auto; margin:auto">
     </div>
 
-    <div class ="col-sm-6 col-xs-6 col-lg-6">  
-
-            <div class="row" style="margin-top:5px;">
-                <div class="col-6">
-                    <img  src="/assets/images/ans7.JPG"  style=" max-width:90%; border: 2px solid black; border-radius: 10px; "onclick="new_work7()" id="ax7" >
-                </div>
-                <div class="col-6">
-                    <img id ="axe7" src="/assets/images/w.gif" style="display:none; width: 100%; max-width: 80px; min-width:30px; height: auto; margin:auto">
-                </div> 
-            </div>
-
-            <div class="row" style="margin-top:5px;">
-                <div class="col-6">
-                    <img  src="/assets/images/ans8.JPG"  style=" max-width:90%; border: 2px solid black; border-radius: 10px; "onclick="new_work8()" id="ax8" >
-                </div>
-                <div class="col-6">
-                    <img id ="axe8" src="/assets/images/w.gif" style="display:none; width: 100%; max-width: 80px; min-width:30px; height: auto; margin:auto">
-                </div> 
-            </div>
-
-            <div class="row" style="margin-top:5px;">
-                <div class="col-6">
-                    <img  src="/assets/images/ans9.JPG"  style=" max-width:90%; border: 2px solid black; border-radius: 10px; "onclick="new_work9()" id="ax9" >
-                </div>
-                <div class="col-6">
-                    <img id ="axe9" src="/assets/images/sbob1.png" style="display:none; width: 100%; max-width: 80px; min-width:30px; height: auto; margin:auto">
-                </div>       
-           </div>
-
-           <input type="checkbox" hidden name="fruit" id="mark3"/>
-           <input type="checkbox" hidden name="fruit" id="unmark3"/>
-    </div>
- </div>
- 
-</div>
+    <input type="checkbox" hidden name="fruit" id="mark3"/>
+    <input type="checkbox" hidden name="fruit" id="unmark3"/>
+  </div>
 
  
 <div hidden id="clickarray"></div>

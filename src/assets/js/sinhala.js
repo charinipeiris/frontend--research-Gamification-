@@ -1080,7 +1080,11 @@ function wordgames12()
         document.getElementById("submit").style.display="none";
           }
           }
-  
+  //--------------------Audio function of Sentences Grade 2 level 2 ----------------------
+  function word_selection_play_g2_l2() {
+    var audio = document.getElementById("word-selection_play_g2_l2_audio");
+    audio.play();
+  }
   //Grade 2 - Level 2 - Songs
 
   function song01()
@@ -1467,3 +1471,10 @@ function koholla1()
         document.getElementById("submit").style.display="none";
           }
           }
+
+ //------------------------Audio functions of Grade 2 level 2 wachana thoramu----------------------
+ 
+ function words_play_g2_l2() {
+  var audio = document.getElementById("words_play_g2_l2_audio");
+  audio.play();
+}
