@@ -125,7 +125,7 @@ function word2games1()
   document.getElementById("wo101").style.pointerEvents = "none";
   document.getElementById("mark5").checked = true; //kid gave right answer 
   document.getElementById("wo101").style.border = "4px solid red"; 
-  var myAudio = new Audio('/assets/audio/yay.mp3');
+  var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
   myAudio.play();
   enableSubmit_g1l2word()
   }
@@ -139,7 +139,7 @@ function word2games1()
   document.getElementById("wo91").style.pointerEvents = "none";
   document.getElementById("unmark5").checked = true; //kid gave false answer 
   document.getElementById("wo101").style.border = "4px solid blue"; 
-  var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
+  var myAudio = new Audio('/assets/audio/yay.mp3');
   myAudio.play();
   enableSubmit_g1l2word()
   }
