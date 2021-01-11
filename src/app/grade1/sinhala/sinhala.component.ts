@@ -58,7 +58,7 @@ export class SinhalaComponent implements OnInit {
       this.sL1 = data.sL1;
       this.sL2 = data.sL2;
       // console.log(this.btn1);
-      console.log(this.sL1);
+      // console.log(this.btn1);
       if (this.sL1 == 0){
         if (this.btn1 == 5)
   
