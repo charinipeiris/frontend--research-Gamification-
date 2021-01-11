@@ -123,7 +123,7 @@ function word2games1()
   document.f1.rw5.src="/assets/images/w.gif";
   document.f1.rw35.src="/assets/images/trans.svg";
   document.getElementById("wo101").style.pointerEvents = "none";
-  document.getElementById("mark5").checked = true; //kid gave right answer 
+  document.getElementById("unmark5").checked = true; //kid gave right answer 
   document.getElementById("wo101").style.border = "4px solid red"; 
   var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
   myAudio.play();
@@ -137,7 +137,7 @@ function word2games1()
   document.f1.rw5.src="/assets/images/sbob1.png";
   document.f1.rw35.src="/assets/images/super5.JPG";
   document.getElementById("wo91").style.pointerEvents = "none";
-  document.getElementById("unmark5").checked = true; //kid gave false answer 
+  document.getElementById("mark5").checked = true; //kid gave false answer 
   document.getElementById("wo101").style.border = "4px solid blue"; 
   var myAudio = new Audio('/assets/audio/yay.mp3');
   myAudio.play();
