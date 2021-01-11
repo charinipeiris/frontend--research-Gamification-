@@ -649,6 +649,7 @@ function wordgames12()
   document.getElementById("sine1").style.display = "block";
   var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
   myAudio.play();
+  enableSubmit_sinhalasentg1l2()
   }
   function sinhala_s22()
   {
@@ -658,6 +659,7 @@ function wordgames12()
   document.getElementById("sine2").style.display = "block";
   var myAudio = new Audio('/assets/audio/yay.mp3');
   myAudio.play();
+  enableSubmit_sinhalasentg1l2()
   }
   function sinhala_s23()
   {
@@ -667,6 +669,7 @@ function wordgames12()
     document.getElementById("sine4").style.display = "block";
     var myAudio = new Audio('/assets/audio/yay.mp3');
     myAudio.play();
+    enableSubmit_sinhalasentg1l2()
   }
   function sinhala_s24()
   {
@@ -676,6 +679,7 @@ function wordgames12()
     document.getElementById("sine3").style.display = "block";
     var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
     myAudio.play();
+    enableSubmit_sinhalasentg1l2()
   }
   function sinhala_s25()
   {
@@ -685,6 +689,7 @@ function wordgames12()
     document.getElementById("sine6").style.display = "block";
     var myAudio = new Audio('/assets/audio/yay.mp3');
     myAudio.play();
+    enableSubmit_sinhalasentg1l2()
   }
   function sinhala_s26()
   {
@@ -694,6 +699,7 @@ function wordgames12()
     document.getElementById("sine5").style.display = "block";
     var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
     myAudio.play();
+    enableSubmit_sinhalasentg1l2()
   }
 
   function sinhala_s27()
@@ -704,6 +710,7 @@ function wordgames12()
   document.getElementById("sine7").style.display = "block";
   var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
   myAudio.play();
+  enableSubmit_sinhalasentg1l2()
   }
   function sinhala_s28()
   {
@@ -713,6 +720,7 @@ function wordgames12()
   document.getElementById("sine8").style.display = "block";
   var myAudio = new Audio('/assets/audio/yay.mp3');
   myAudio.play();
+  enableSubmit_sinhalasentg1l2()
   }
   function sinhala_s29()
   {
@@ -722,6 +730,7 @@ function wordgames12()
     document.getElementById("sine10").style.display = "block";
     var myAudio = new Audio('/assets/audio/yay.mp3');
     myAudio.play();
+    enableSubmit_sinhalasentg1l2()
   }
   function sinhala_s30()
   {
@@ -731,6 +740,7 @@ function wordgames12()
     document.getElementById("sine9").style.display = "block";
     var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
     myAudio.play();
+    enableSubmit_sinhalasentg1l2()
   }
 
   function sinhala_s31()
@@ -741,6 +751,7 @@ function wordgames12()
   document.getElementById("sine11").style.display = "block";
   var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
   myAudio.play();
+  enableSubmit_sinhalasentg1l2()
   }
   function sinhala_s32()
   {
@@ -750,6 +761,7 @@ function wordgames12()
   document.getElementById("sine12").style.display = "block";
   var myAudio = new Audio('/assets/audio/yay.mp3');
   myAudio.play();
+  enableSubmit_sinhalasentg1l2()
   }
 
   // Audio functions of Sentences game (word-selection1.component.html) grade 1 level 2
@@ -757,6 +769,18 @@ function wordgames12()
     var audio = document.getElementById("sentences_l2_audio");
     audio.play();
   }
+
+  function enableSubmit_sinhalasentg1l2(){
+    var chk = document.querySelectorAll('input[type="checkbox"]:checked').length;
+    console.log(chk);
+    if (chk == 6){
+         document.getElementById("submit").style.display="block";
+         document.getElementById("arrow1").style.display="block";
+          }
+    else{
+        document.getElementById("submit").style.display="none";
+          }
+          }
 
   
   //----------------sentences grade 2 level 1------------------
@@ -769,6 +793,7 @@ function wordgames12()
   document.getElementById("sine1").style.display = "block";
   var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
   myAudio.play();
+  enableSubmit_select_2_sentences()
   }
   function sinhala2_s22()
   {
@@ -778,6 +803,7 @@ function wordgames12()
   document.getElementById("sine2").style.display = "block";
   var myAudio = new Audio('/assets/audio/yay.mp3');
   myAudio.play();
+  enableSubmit_select_2_sentences()
   }
   function sinhala2_s23()
   {
@@ -787,6 +813,7 @@ function wordgames12()
     document.getElementById("sine4").style.display = "block";
     var myAudio = new Audio('/assets/audio/yay.mp3');
     myAudio.play();
+    enableSubmit_select_2_sentences()
   }
   function sinhala2s24()
   {
@@ -796,6 +823,7 @@ function wordgames12()
     document.getElementById("sine3").style.display = "block";
     var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
     myAudio.play();
+    enableSubmit_select_2_sentences()
   }
   function sinhala2_s25()
   {
@@ -805,6 +833,7 @@ function wordgames12()
     document.getElementById("sine6").style.display = "block";
     var myAudio = new Audio('/assets/audio/yay.mp3');
     myAudio.play();
+    enableSubmit_select_2_sentences()
   }
   function sinhala2_s26()
   {
@@ -814,6 +843,7 @@ function wordgames12()
     document.getElementById("sine5").style.display = "block";
     var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
     myAudio.play();
+    enableSubmit_select_2_sentences()
   }
 
   function sinhala2_s27()
@@ -824,6 +854,7 @@ function wordgames12()
   document.getElementById("sine7").style.display = "block";
   var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
   myAudio.play();
+  enableSubmit_select_2_sentences()
   }
   function sinhala2_s28()
   {
@@ -833,6 +864,7 @@ function wordgames12()
   document.getElementById("sine8").style.display = "block";
   var myAudio = new Audio('/assets/audio/yay.mp3');
   myAudio.play();
+  enableSubmit_select_2_sentences()
   }
   function sinhala2_s29()
   {
@@ -842,6 +874,7 @@ function wordgames12()
     document.getElementById("sine10").style.display = "block";
     var myAudio = new Audio('/assets/audio/yay.mp3');
     myAudio.play();
+    enableSubmit_select_2_sentences()
   }
   function sinhala2_s30()
   {
@@ -851,6 +884,7 @@ function wordgames12()
     document.getElementById("sine9").style.display = "block";
     var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
     myAudio.play();
+    enableSubmit_select_2_sentences()
   }
 
   function sinhala2_s31()
@@ -861,6 +895,7 @@ function wordgames12()
   document.getElementById("sine11").style.display = "block";
   var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
   myAudio.play();
+  enableSubmit_select_2_sentences()
   }
   function sinhala2_s32()
   {
@@ -870,8 +905,19 @@ function wordgames12()
   document.getElementById("sine12").style.display = "block";
   var myAudio = new Audio('/assets/audio/yay.mp3');
   myAudio.play();
+  enableSubmit_select_2_sentences()
   }
-
+  function enableSubmit_select_2_sentences(){
+    var chk = document.querySelectorAll('input[type="checkbox"]:checked').length;
+    console.log(chk);
+    if (chk == 2){
+         document.getElementById("submit").style.display="block";
+         document.getElementById("arrow1").style.display="block";
+          }
+    else{
+        document.getElementById("submit").style.display="none";
+          }
+          }
   // Grade 2 level 1 Sentences game - Audio Functions
 
   function sentences_g2_l1_play() {
