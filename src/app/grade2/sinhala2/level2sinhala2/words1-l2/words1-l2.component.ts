@@ -48,10 +48,10 @@ export class Words1L2Component implements OnInit {
     // this.gamesService.submitGame({    
     //   completed_games : [
     //   {
-    //   game_id : "S11",
+    //   game_id : "s22",
     //   marks : total,
     //   time_spent : time,
-    //   // emotions: this.child.emotions,
+    //    emotions: this.child.emotions,
     //   max_idle_time :  clicksarray
     //   }
     // ]},username).subscribe(res=>{console.log("success")}, err=>{console.log("error")});

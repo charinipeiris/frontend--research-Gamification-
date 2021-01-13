@@ -10,8 +10,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
 </head>
 
-<body style="background-size:cover;background-image:url(/assets/images/fun.jpg);">
-  <app-emotiondetector></app-emotiondetector>  
+<body id="banner" style="background-size:cover;background-image:url(/assets/images/fun.jpg);">
 <div class="container" class="image" style="height:100% ;width:100%;">
   <div id = "startdiv">
     <button id="startbtn" class="button4" onclick = "startgame_sinhala()"><b>ආරම්භ කරන්න</b></button>
@@ -50,6 +49,10 @@
         <div id="time-back" style=" background-color: azure; border-radius: 15px; width: 175px;padding:5px ;margin-left: 60px;">
             <div id="display" style=" font-size:38px; font-family: 'Permanent Marker', cursive;">
                00:00:00
+            </div>
+            <div class="buttons" >
+              <button hidden id="startStop" onclick="startStop()">Start</button> 
+              <button hidden id="reset" onclick="reset()">Reset</button>
             </div>
         </div>
       
@@ -211,7 +214,7 @@
       </div>    
   </div>  
     
-
+  <app-emotiondetector></app-emotiondetector>  
   <div hidden id="clickarray"></div>
   <br>
   <br>

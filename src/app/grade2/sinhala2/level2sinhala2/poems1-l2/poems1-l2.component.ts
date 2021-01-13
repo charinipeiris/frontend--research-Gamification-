@@ -57,10 +57,10 @@ export class Poems1L2Component implements OnInit {
     // this.gamesService.submitGame({    
     //   completed_games : [
     //   {
-    //   game_id : "S11",
+    //   game_id : "s21",
     //   marks : total,
     //   time_spent : time,
-    //   // emotions: this.child.emotions,
+    //    emotions: this.child.emotions,
     //   max_idle_time :  clicksarray
     //   }
     // ]},username).subscribe(res=>{console.log("success")}, err=>{console.log("error")});
@@ -159,7 +159,7 @@ export class Poems1L2Component implements OnInit {
               },1800);
             document.getElementById('coin3').style.opacity ="0.3";
       
-        document.getElementById('coin6').style.opacity ="0.3";
+        // document.getElementById('coin6').style.opacity ="0.3";
         document.getElementById("perf-time").innerHTML = time;
       
       }
@@ -175,13 +175,13 @@ setTimeout(function(){
   },1500);
   document.getElementById('coin2').style.opacity ="0.3";
 
-    document.getElementById("perf-time").innerHTML = time;
+    // document.getElementById("perf-time").innerHTML = time;
 setTimeout(function(){
       document.getElementById('coin3').style.visibility = "visible";
         },1800);
       document.getElementById('coin3').style.opacity ="0.3";
 
-  document.getElementById('coin6').style.opacity ="0.3";
+  // document.getElementById('coin6').style.opacity ="0.3";
   document.getElementById("perf-time").innerHTML = time;
 
 }
@@ -198,7 +198,7 @@ else if(total == 0){
     document.getElementById('coin2').style.visibility = "visible";
       },1500);
       document.getElementById('coin2').style.opacity ="0.3";
-        document.getElementById("perf-time").innerHTML = time;
+        // document.getElementById("perf-time").innerHTML = time;
 
   setTimeout(function(){
           document.getElementById('coin3').style.visibility = "visible";

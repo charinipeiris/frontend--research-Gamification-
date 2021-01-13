@@ -284,7 +284,7 @@
 	from {top: 10px;}
 	to {top: 70px; }
   }
-  .coin_img1{
+  /* .coin_img1{
 	animation-name: example;
 	animation-duration: 3s;  
 	animation-fill-mode: forwards;
@@ -313,11 +313,11 @@
     animation-fill-mode: forwards;
     height: 220px; 
     width: 550px;
-    }
+    } */
 
-  #coin1{
+  /* #coin1{
     margin-left:150px;
-  }
+  } */
 
   .coins-row{
 	width:70%;
