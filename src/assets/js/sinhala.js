@@ -1225,27 +1225,7 @@ function sirimath1()
   myAudio.play();
   enableSubmit_poemg1l2()
   }
-  function sirimath5()
-  {
-    document.getElementById("sin06").style.border = "4px solid red"; 
-    document.getElementById("sin06").style.pointerEvents = "none";
-    document.getElementById("unmark3").checked = true; 
-    document.getElementById("sine05").style.display = "block";
-    var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
-    myAudio.play();
-    enableSubmit_poemg1l2()
-  }
-  function sirimath6()
-  {
-    document.getElementById("sin06").style.border = "4px solid blue"; 
-    document.getElementById("sin05").style.pointerEvents = "none";
-    document.getElementById("mark3").checked = true; 
-    document.getElementById("sine06").style.display = "block";
-    var myAudio = new Audio('/assets/audio/yay.mp3');
-    myAudio.play();
-    enableSubmit_poemg1l2()
-  }
-
+ 
   function sirimath7()
   {
   document.getElementById("sin08").style.border = "4px solid red"; 
@@ -1270,7 +1250,7 @@ function sirimath1()
   {
     document.getElementById("sin09").style.border = "4px solid blue"; 
     document.getElementById("sin010").style.pointerEvents = "none";
-    document.getElementById("mark5").checked = true; 
+    document.getElementById("mark3").checked = true; 
     document.getElementById("sine010").style.display = "block";
     var myAudio = new Audio('/assets/audio/yay.mp3');
   myAudio.play();
@@ -1280,39 +1260,20 @@ function sirimath1()
   {
     document.getElementById("sin09").style.border = "4px solid red"; 
     document.getElementById("sin09").style.pointerEvents = "none";
-    document.getElementById("unmark5").checked = true; 
+    document.getElementById("unmark3").checked = true; 
     document.getElementById("sine09").style.display = "block";
     var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
     myAudio.play();
     enableSubmit_poemg1l2()
   }
 
-  function sirimath11()
-  {
-  document.getElementById("sin012").style.border = "4px solid red"; 
-  document.getElementById("sin012").style.pointerEvents = "none";
-  document.getElementById("unmark6").checked = true; 
-  document.getElementById("sine011").style.display = "block";
-  var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
-  myAudio.play();
-  enableSubmit_poemg1l2()
-  }
-  function sirimath12()
-  {
-  document.getElementById("sin012").style.border = "4px solid blue"; 
-  document.getElementById("sin011").style.pointerEvents = "none";
-  document.getElementById("mark6").checked = true; 
-  document.getElementById("sine012").style.display = "block";
-  var myAudio = new Audio('/assets/audio/yay.mp3');
-  myAudio.play();
-  enableSubmit_poemg1l2()
-  }
+
 
   
 function enableSubmit_poemg1l2(){
   var chk = document.querySelectorAll('input[type="checkbox"]:checked').length;
   console.log(chk);
-  if (chk == 6){
+  if (chk ==4){
        document.getElementById("submit").style.display="block";
        document.getElementById("arrow1").style.display="block";
         }

@@ -1,8 +1,6 @@
 function show_shapesL1(Page1, Page2) {
     document.getElementById(Page1).style.display='block';
     document.getElementById(Page2).style.display='none'; 
-    
-
   }
 
 function test1_shapes()
