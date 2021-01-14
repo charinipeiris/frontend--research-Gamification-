@@ -114,6 +114,7 @@ import { Stories1Component } from './grade1/sinhala/sinhala-level2/stories1/stor
 import { Stories1sL2Component } from './grade2/sinhala2/level2sinhala2/stories1s-l2/stories1s-l2.component';
 import { Riddles1L2Component } from './grade2/sinhala2/level2sinhala2/riddles1-l2/riddles1-l2.component';
 import { SinhalaIntroComponent } from './grade1/sinhala/sinhala-intro/sinhala-intro.component';
+import { Sinhalaintro2Component } from './grade1/sinhala/sinhalaintro2/sinhalaintro2.component';
 
 
 
@@ -174,6 +175,8 @@ const appRoutes:Routes = [
     //-----sinhala
   {path:'grade1/sinhala',component:SinhalaComponent},
   {path:'grade1/sinhalaintro',component:SinhalaIntroComponent},
+  {path:'grade1/sinhalaintro2',component: Sinhalaintro2Component},
+ 
 
     //-----sinhla grade1 level1--
   {path:'grade1/sinhala/level1',component:SinhalaLevel1Component },
@@ -314,6 +317,7 @@ const appRoutes:Routes = [
     Stories1sL2Component,
     Riddles1L2Component,
     SinhalaIntroComponent,
+    Sinhalaintro2Component,
  
   
 
