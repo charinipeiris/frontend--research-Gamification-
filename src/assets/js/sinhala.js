@@ -848,7 +848,7 @@ function wordgames12()
     myAudio.play();
     enableSubmit_select_2_sentences()
   }
-  function sinhala1s24()
+  function sinhala1_s24()
   {
     document.getElementById("sin3").style.border = "4px solid red"; 
     document.getElementById("sin3").style.pointerEvents = "none";
