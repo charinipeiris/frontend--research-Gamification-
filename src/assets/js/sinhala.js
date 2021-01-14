@@ -899,51 +899,51 @@ function wordgames12()
   myAudio.play();
   enableSubmit_select_2_sentences()
   }
-  function sinhala1_s29()
-  {
-    document.getElementById("sin9").style.border = "4px solid blue"; 
-    document.getElementById("sin10").style.pointerEvents = "none";
-    document.getElementById("mark5").checked = true; 
-    document.getElementById("sine10").style.display = "block";
-    var myAudio = new Audio('/assets/audio/yay.mp3');
-    myAudio.play();
-    enableSubmit_select_2_sentences()
-  }
-  function sinhala1_s30()
-  {
-    document.getElementById("sin9").style.border = "4px solid red"; 
-    document.getElementById("sin9").style.pointerEvents = "none";
-    document.getElementById("unmark5").checked = true; 
-    document.getElementById("sine9").style.display = "block";
-    var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
-    myAudio.play();
-    enableSubmit_select_2_sentences()
-  }
+  // function sinhala1_s29()
+  // {
+  //   document.getElementById("sin9").style.border = "4px solid blue"; 
+  //   document.getElementById("sin10").style.pointerEvents = "none";
+  //   document.getElementById("mark5").checked = true; 
+  //   document.getElementById("sine10").style.display = "block";
+  //   var myAudio = new Audio('/assets/audio/yay.mp3');
+  //   myAudio.play();
+  //   enableSubmit_select_2_sentences()
+  // }
+  // function sinhala1_s30()
+  // {
+  //   document.getElementById("sin9").style.border = "4px solid red"; 
+  //   document.getElementById("sin9").style.pointerEvents = "none";
+  //   document.getElementById("unmark5").checked = true; 
+  //   document.getElementById("sine9").style.display = "block";
+  //   var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
+  //   myAudio.play();
+  //   enableSubmit_select_2_sentences()
+  // }
 
-  function sinhala1_s31()
-  {
-  document.getElementById("sin12").style.border = "4px solid red"; 
-  document.getElementById("sin12").style.pointerEvents = "none";
-  document.getElementById("unmark6").checked = true; 
-  document.getElementById("sine11").style.display = "block";
-  var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
-  myAudio.play();
-  enableSubmit_select_2_sentences()
-  }
-  function sinhala1_s32()
-  {
-  document.getElementById("sin12").style.border = "4px solid blue"; 
-  document.getElementById("sin11").style.pointerEvents = "none";
-  document.getElementById("mark6").checked = true; 
-  document.getElementById("sine12").style.display = "block";
-  var myAudio = new Audio('/assets/audio/yay.mp3');
-  myAudio.play();
-  enableSubmit_select_2_sentences()
-  }
+  // function sinhala1_s31()
+  // {
+  // document.getElementById("sin12").style.border = "4px solid red"; 
+  // document.getElementById("sin12").style.pointerEvents = "none";
+  // document.getElementById("unmark6").checked = true; 
+  // document.getElementById("sine11").style.display = "block";
+  // var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
+  // myAudio.play();
+  // enableSubmit_select_2_sentences()
+  // }
+  // function sinhala1_s32()
+  // {
+  // document.getElementById("sin12").style.border = "4px solid blue"; 
+  // document.getElementById("sin11").style.pointerEvents = "none";
+  // document.getElementById("mark6").checked = true; 
+  // document.getElementById("sine12").style.display = "block";
+  // var myAudio = new Audio('/assets/audio/yay.mp3');
+  // myAudio.play();
+  // enableSubmit_select_2_sentences()
+  // }
   function enableSubmit_select_2_sentences(){
     var chk = document.querySelectorAll('input[type="checkbox"]:checked').length;
     console.log(chk);
-    if (chk == 6){
+    if (chk == 4){
          document.getElementById("submit").style.display="block";
          document.getElementById("arrow1").style.display="block";
           }
