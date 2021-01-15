@@ -124,6 +124,10 @@ import { Game1Component } from './grade2/environment2/e-level1/game1/game1.compo
 import { Game2Component } from './grade2/environment2/e-level1/game2/game2.component';
 import { Game3Component } from './grade2/environment2/e-level1/game3/game3.component';
 import { Game4Component } from './grade2/environment2/e-level1/game4/game4.component';
+import { Game001Component } from './grade2/environment2/e-level2/game001/game001.component';
+import { Game002Component } from './grade2/environment2/e-level2/game002/game002.component';
+import { Game003Component } from './grade2/environment2/e-level2/game003/game003.component';
+import { Game004Component } from './grade2/environment2/e-level2/game004/game004.component';
 
 
 
@@ -218,10 +222,12 @@ const appRoutes:Routes = [
    {path:'grade2/sinhala/level2',component: Level2sinhala2Component},
    {path:'grade2/sinhala/level2/game1',component:Poems1L2Component },
    {path:'grade2/sinhala/level2/game2',component:Words1L2Component},
-  //  {path:'grade2/sinhala/level2/game3',component:Sentences1L2Component},
    {path:'grade2/sinhala/level2/game4',component:WordSelectionL2Component},
    {path:'grade2/sinhala/level2/game5',component:Stories1sL2Component },
    {path:'grade2/sinhala/level2/game3',component:Riddles1L2Component},
+
+
+   
    
   //-----environment 
   {path:'grade1/environment',component:EnvironmentComponent}, 
@@ -239,6 +245,24 @@ const appRoutes:Routes = [
   {path:'grade1/environment/level2/game2',component:EnvGrade1Level2Game2Component},
   {path:'grade1/environment/level2/game3',component:EnvGrade1Level2Game3Component},
   {path:'grade1/environment/level2/game4',component:EnvGrade1Level2Game4Component},
+
+
+  //============environmentt grade 2 level 1====================
+
+  {path:'grade2/environment/level1',component: EnvLevel2Component},
+  {path:'grade2/environment/level1/game1',component:Game1Component},
+  {path:'grade2/environment/level1/game2',component:Game2Component},
+  {path:'grade2/environment/level1/game3',component:Game3Component},
+  {path:'grade2/environment/level2/game4',component:Game4Component},
+
+
+  //==================environment grade 2 level 2 ======================================
+
+  {path:'grade2/environment/level2',component: EnvLevel2Component},
+  {path:'grade2/environment/level2/game1',component: Game001Component},
+  {path:'grade2/environment/level2/game2',component: Game002Component},
+  {path:'grade2/environment/level2/game3',component: Game003Component},
+  {path:'grade2/environment/level2/game4',component: Game004Component},
 ]
 @NgModule({
   declarations: [
@@ -332,6 +356,10 @@ const appRoutes:Routes = [
     Sinhalaintro2Component,
     Sinhalintro1Component,
     Sinhalintro2Component,
+    Game001Component,
+    Game002Component,
+    Game003Component,
+    Game004Component,
     
   
 
