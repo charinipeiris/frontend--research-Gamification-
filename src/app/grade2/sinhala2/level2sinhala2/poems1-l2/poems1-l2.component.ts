@@ -60,7 +60,7 @@ export class Poems1L2Component implements OnInit {
       }
       if (total == 0){
         final_total = 0;
-
+      }
     // console.log(total);
 
     // let username = localStorage.getItem('uname');
@@ -146,4 +146,3 @@ this.child.endgame();
 
 
 }
-} 
