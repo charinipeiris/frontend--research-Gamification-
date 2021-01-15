@@ -117,6 +117,13 @@ import { SinhalaIntroComponent } from './grade1/sinhala/sinhala-intro/sinhala-in
 import { Sinhalaintro2Component } from './grade1/sinhala/sinhalaintro2/sinhalaintro2.component';
 import { Sinhalintro1Component } from './grade2/sinhala2/sinhalintro1/sinhalintro1.component';
 import { Sinhalintro2Component } from './grade2/sinhala2/sinhalintro2/sinhalintro2.component';
+import { Video2Component } from './grade1/environment/env-level1/video2/video2.component';
+import { Video3Component } from './grade1/environment/env-level1/video3/video3.component';
+import { Video4Component } from './grade1/environment/env-level1/video4/video4.component';
+import { Game1Component } from './grade2/environment2/e-level1/game1/game1.component';
+import { Game2Component } from './grade2/environment2/e-level1/game2/game2.component';
+import { Game3Component } from './grade2/environment2/e-level1/game3/game3.component';
+import { Game4Component } from './grade2/environment2/e-level1/game4/game4.component';
 
 
 
@@ -325,7 +332,7 @@ const appRoutes:Routes = [
     Sinhalaintro2Component,
     Sinhalintro1Component,
     Sinhalintro2Component,
- 
+    
   
 
    
