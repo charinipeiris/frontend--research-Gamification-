@@ -4523,7 +4523,7 @@
 }
 
 .answer-box{
-	width:150px;
+	width:180px;
 	border: 2px solid black; 
 	border-radius: 10px;
 	background-color: seashell;
@@ -4533,7 +4533,7 @@
 	margin: 0.6rem;
 	color:rgba(0, 0, 0, 0.95);
 	font-weight: 600;
-	font-size: 1.6rem;
+	font-size: 1.4rem;
 }
 .riddle-row1{
 	background-color: rgb(209, 196, 122);
