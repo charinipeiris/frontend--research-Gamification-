@@ -1,13 +1,14 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild  } from '@angular/core';
 import { GamesService } from "../../../../services/games.service";
 import { EmotiondetectorComponent } from '../../../../emotiondetector/emotiondetector.component';
 
+
 @Component({
-  selector: 'app-poems',
-  templateUrl: './poems.component.html',
-  styleUrls: ['./poems.component.css']
+  selector: 'app-poemsx',
+  templateUrl: './poemsx.component.html',
+  styleUrls: ['./poemsx.component.css']
 })
-export class PoemsComponent implements OnInit {
+export class PoemsxComponent implements OnInit {
   totalmarks: any;
   @ViewChild(EmotiondetectorComponent) child: EmotiondetectorComponent;
   constructor(private gamesService: GamesService){}
@@ -44,10 +45,10 @@ export class PoemsComponent implements OnInit {
     // this.gamesService.submitGame({    
     //   completed_games : [
     //   {
-    //   game_id : "S11",
+    //   game_id : "S14",
     //   marks : total,
     //   time_spent : time,
-    //   //emotions: this.child.emotions,
+    //   emotions: this.child.emotions,
     //   max_idle_time :  clicksarray
     //   }
     // ]},username).subscribe(res=>{console.log("success")}, err=>{console.log("error")});
@@ -120,3 +121,5 @@ this.child.endgame();
 
 
 }
+
+

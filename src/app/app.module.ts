@@ -90,7 +90,6 @@ import { NgxPaginationModule } from 'ngx-pagination';
 
 import { SentencesComponent } from './grade1/sinhala/sinhala-level1/sentences/sentences.component';
 import { WordsComponent } from './grade1/sinhala/sinhala-level1/words/words.component';
-import {PoemsComponent} from './grade1/sinhala/sinhala-level1/poems/poems.component';
 import { Poems1Component } from './grade1/sinhala/sinhala-level2/poems1/poems1.component';
 import { Words1Component } from './grade1/sinhala/sinhala-level2/words1/words1.component';
 import { Sentences1Component } from './grade1/sinhala/sinhala-level2/sentences1/sentences1.component';
@@ -128,6 +127,7 @@ import { Game001Component } from './grade2/environment2/e-level2/game001/game001
 import { Game002Component } from './grade2/environment2/e-level2/game002/game002.component';
 import { Game003Component } from './grade2/environment2/e-level2/game003/game003.component';
 import { Game004Component } from './grade2/environment2/e-level2/game004/game004.component';
+import { PoemsxComponent } from './grade1/sinhala/sinhala-level1/poemsx/poemsx.component';
 
 
 
@@ -193,7 +193,7 @@ const appRoutes:Routes = [
 
     //-----sinhla grade1 level1--
   {path:'grade1/sinhala/level1',component:SinhalaLevel1Component },
-  {path:'grade1/sinhala/level1/game1',component:PoemsComponent},
+  {path:'grade1/sinhala/level1/game1',component:PoemsxComponent },
   {path:'grade1/sinhala/level1/game2',component:WordsComponent},
   {path:'grade1/sinhala/level1/game3',component:SentencesComponent},
   {path:'grade1/sinhala/level1/game4',component:WordSelectiontionComponent},
@@ -360,6 +360,7 @@ const appRoutes:Routes = [
     Game002Component,
     Game003Component,
     Game004Component,
+    PoemsxComponent,
     
   
 
