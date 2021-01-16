@@ -221,7 +221,7 @@ export class Words1Component implements OnInit {
               },1800);
             document.getElementById('coin3').style.opacity ="0.3";
       
-        document.getElementById('coin6').style.opacity ="0.3";
+        // document.getElementById('coin6').style.opacity ="0.3";
         document.getElementById("perf-time").innerHTML = time;
       
       }
@@ -243,7 +243,7 @@ export class Words1Component implements OnInit {
               },1800);
             document.getElementById('coin3').style.opacity ="0.3";
       
-        document.getElementById('coin6').style.opacity ="0.3";
+        // document.getElementById('coin6').style.opacity ="0.3";
         document.getElementById("perf-time").innerHTML = time;
       
       }
@@ -265,7 +265,7 @@ setTimeout(function(){
         },1800);
       document.getElementById('coin3').style.opacity ="0.3";
 
-  document.getElementById('coin6').style.opacity ="0.3";
+  // document.getElementById('coin6').style.opacity ="0.3";
   document.getElementById("perf-time").innerHTML = time;
 
 }
