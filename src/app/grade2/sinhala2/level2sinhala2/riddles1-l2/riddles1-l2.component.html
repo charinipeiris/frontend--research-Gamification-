@@ -13,10 +13,10 @@
 					<div id = "startdiv" style ="z-index: 3; background-color:rgba(236, 236, 208, 0.95); border-style:solid; border-color:rgb(146, 146, 89); border-radius: 10px;  width:100%;min-width: 50px; min-height:550px; position: absolute">
 						<button id="startbtn" class="button4" onclick = "startgame_sinhala()"><b>ආරම්භ කරන්න</b></button>
 						<img id="start-img" src = "/assets/images/start_button.png" style=" opacity: 0.85;margin-top:-200px;width:100%;min-width: 40px; max-width:1000px;height:auto">
-					   </div>
+					</div>
 
-					<div class="row"> 
-						 <div class="col-sm-3 col-md-3 col-lg-3">	
+					<div class="row" style="margin-top: 10px;"> 
+						<div class="col-sm-3 col-md-3 col-lg-3">	
 							<img class="question-audio" onclick="audio_sinhala_wordselect()" src = "/assets/images/shape_sound2.gif" id="question-wordselect">
 							<audio id="quest_audio_word-select" src="assets/audio/sinhala/G2L2Riddles1.mp3" type="audio/m4a" control>Your browser does not support the audio element. </audio>
 						</div> 
@@ -27,15 +27,13 @@
 							<div class="timer" id="time-back">
 								<div class="timer-text" id="display">
 								  00:00:00
-							  </div>
+							  	</div>
 						
-							  <div class="buttons" >
+							  	<div class="buttons" >
 								  <button hidden id="startStop" onclick="startStop()">Start</button> 
 								  <button hidden id="reset" onclick="reset()">Reset</button>
 							  </div>
-						
-						
-						 </div>
+						 	</div>
 						</div>
 					</div>
 					
@@ -137,7 +135,7 @@
 								  <input type="checkbox" hidden name="fruit" id="mark4"/>
 								  <input type="checkbox" hidden name="fruit" id="unmark4"/>
 							</div>
-							<app-emotiondetector></app-emotiondetector>
+							<!-- <app-emotiondetector></app-emotiondetector> -->
 							</div>
 							<div class="col-sm-4 col-md-4 col-lg-4">
 								<table>
