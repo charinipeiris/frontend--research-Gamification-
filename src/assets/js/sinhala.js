@@ -605,8 +605,8 @@ function wordgames12()
   function song4()
   {
   document.getElementById("so8").style.border = "4px solid red"; 
-  document.getElementById("so7").style.pointerEvents = "none";
   document.getElementById("so9").style.pointerEvents = "none";
+  document.getElementById("so8").style.pointerEvents = "none";
   document.getElementById("unmark2").checked = true; 
   document.getElementById("so10").style.display = "block";
   var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
@@ -629,8 +629,8 @@ function wordgames12()
   function song6()
   {
   document.getElementById("so8").style.border = "4px solid red"; 
+  document.getElementById("so8").style.pointerEvents = "none";
   document.getElementById("so7").style.pointerEvents = "none";
-  document.getElementById("so9").style.pointerEvents = "none";
   document.getElementById("unmark2").checked = true; 
   document.getElementById("so12").style.display = "block";
   var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
