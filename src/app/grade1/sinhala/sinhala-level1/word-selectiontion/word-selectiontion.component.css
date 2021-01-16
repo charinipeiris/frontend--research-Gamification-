@@ -299,9 +299,14 @@
 	height: 220px; 
 	width: 550px;
   }
-  #coin1{
-    margin-left:150px;
-  }
+  .coin_img3{
+    animation-name: example;
+    animation-duration: 3s;  
+    animation-fill-mode: forwards;
+    height: 220px; 
+    width: 550px;
+    }
+
 
   .coins-row{
 	width:70%;
@@ -355,6 +360,11 @@
       margin-left:50px;
     }
     #coin2{
+      width: 50px;
+      height:60px;
+      /* margin-top: 18px; */
+    }
+    #coin3{
       width: 50px;
       height:60px;
       /* margin-top: 18px; */
