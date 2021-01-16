@@ -1,20 +1,34 @@
 @import "~bootstrap/dist/css/bootstrap.css";
- 
+ .button2 {
+  border-radius: 12px;
+  background-color:#3f9454;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  
+}
     .button3 {
     border-radius: 12px;
     background-color:#4CAF50;
-    border: 4px solid #1f6822;
-    /* border: none; */
+    border: none;
     color:white;
     text-align: center;
-    font-size: 25px;
+    font-size: 20px;
     padding: 20px;
-    width: 350px;
+    width: 150px;
     transition: all 0.5s;
     cursor: pointer;
-    margin: 5px;
+    margin-left: 480px;
+
   
   }
+
+
   .button3 span {
     cursor: pointer;
     display: inline-block;
@@ -33,29 +47,28 @@
   
   .button3:hover span {
     padding-right: 25px;
-    /* background-color:white; */
+    background-color:white;
   }
   
   .button3:hover span:after {
     opacity: 1;
     right: 0;
-    /* background-color:white; */
+    background-color:white;
   }
   
   .dis-button3 {
     border-radius: 12px;
     background-color:#7b8a7b;
-    border: 4px solid #33302f;
-    /* border: none; */
+    border: none;
     color:white;
     text-align: center;
     font-size: 25px;
     padding: 20px;
-    width: 350px;
+    width: 450px;
     transition: all 0.5s;
     cursor: pointer;
     margin: 5px;
-    
+    height: 132px
     
   }
   .dis-button3 span {
@@ -91,7 +104,7 @@
       align-items: center;
     }
     a:link, a:visited {
-      /* color:white; */
+      color:white;
       text-align: center;
       text-decoration: none;
       display: inline-block;
@@ -153,16 +166,15 @@
     padding: 8px 16px;
   }
   
-  /* a:hover {
-    color: white;
-  }*/
-   
+  a:hover {
+    background-color:#ffffff;
+    color: black;
+  }
+  
   .previous {
-  /* background-color:#ffffff; */
-    margin-top:0px;
-    margin-left:60px;
-    color:green;
-    height:50px ;
+  background-color:#ffffff;
+
+    color: black;
   }
   
   .next {
@@ -174,91 +186,233 @@
     border-radius: 50%;
   }
 
-  ul.breadcrumb {
-    padding: 10px 16px;
-    list-style: none;
-    background-color: rgba(255, 255, 255, 0.658);
-    /* margin-top: 50px; */
+  .reward-cell{
+    filter: grayscale(100%);
+    width: 100%; 
+    max-width: 300px;
+    height: auto;
+   
+  }
+  .button4 {
+    border-radius: 12px;
+    background-color:#3f9454;
+    border: 5px solid #315032;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 25px;
+    padding: 5px;
+    width:80%;
+    max-width: 250px;
+    height:auto;
+    transition: all 0.5s;
+    cursor: pointer;
+    position: relative; 
+    margin-top: 300px;
+    margin-left: 550px;
+    z-index: 4;
 
+    }
+
+    #startdiv{
+      z-index: 3; 
+      background-color:rgba(236, 236, 208, 0.95); 
+      border-style:solid; 
+      border-color:rgb(146, 146, 89); 
+      border-radius: 10px;  
+      width:90%;
+      min-width: 50px; 
+      min-height:550px; 
+      position: absolute;
+      margin-top: 100px;
+      margin-left: 50px;
+    }
+    #start-img{
+      opacity: 0.85;
+      margin-top:-350px;
+      width:80%;
+      min-width: 80px; 
+      /* max-width:800px; */
+      height:auto;
+      margin-left: 200px;
+    }
+
+    		  /* The Modal (background) */
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 80%; /* Full width */
+	height: 80%; /* Full height */
+	/* overflow: auto; Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  margin-left: 100px;
+  margin-top: 100px;
   }
-  ul.breadcrumb li {
-    display: inline;
-    font-size: 18px;
-    font-weight: bold;
+  
+  /* Modal Content/Box */
+  .modal-content {
+	/* background-color: #d2ecb5; */
+	background-color: #ffffff;
+	/* margin: 10% auto; 15% from the top and centered */
+	/* padding: 20px; */
+	border: 10px solid rgb(73, 160, 52);
+	border-radius: 12px;
+	width: 100%; /* Could be more or less, depending on screen size */
+	height: 100%;
+	z-index: 1;
   }
-  ul.breadcrumb li+li:before {
-    padding: 8px;
-    color: #684d03;
-    content: "➤\00a0";
+  
+  /* The Close Button */
+  .close {
+	color: #aaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
   }
-  ul.breadcrumb li a {
-    color: #684d03;
-    text-decoration: none;
-    border-radius:10px;
-    background-color: rgb(226, 198, 120);
+  
+  .close:hover,
+  .close:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+  }
+  
+  @keyframes example {
+	from {top: 10px;}
+	to {top: 70px; }
+  }
+  .coin_img1{
+	animation-name: example;
+	animation-duration: 3s;  
+	animation-fill-mode: forwards;
+	height: 220px; 
+	width: 550px;
+	
+  }
+  .coin_img2{
+	animation-name: example;
+	animation-duration: 3s;  
+	animation-fill-mode: forwards;
+	height: 220px; 
+	width: 550px;
+  }
+  #coin1{
+    margin-left:150px;
   }
 
-  ul.breadcrumb li a:active{
-    color: #9e8c5b;
-    text-decoration: none;
-    background-color: #46360d;
+  .coins-row{
+	width:70%;
+	margin-top:-40px;
+	margin-left:150px;
   }
-  ul.breadcrumb li a:hover {
-    color: #413003;;
-    /* text-decoration: underline; */
-    background-color: rgb(223, 215, 193);
-    border-radius: 15px;
+  .perf-time2{
+	font-size: 30px;
   }
-.heading1{
-  margin-top:100px ;
-}
-.completed-icon{
-  margin-top:-25px;
-  margin-bottom:-15px;
-  height: 60px;
-}
+  .perf-time1{
+	margin-top:150px;
+	margin-left: 400px;
+  }
+
+  .timer{
+    margin: auto; 
+    margin-bottom:10px;
+    z-index: 2;
+    background-color: azure; 
+    border-radius: 10px; 
+    max-width: 200px;
+  }
+  .timer-text{
+    margin:auto; 
+    font-size: 40px; 
+    font-family: 'Permanent Marker', cursive;
+  }
+
+  .arrow{
+    margin-top:0px;
+    margin-left:600px;
+    height: auto; 
+    max-width: 100px;
+  }
+  .coin-heading{
+    font-family:Chalkduster, fantasy;
+    color:darkcyan; 
+    margin-left:400px;
+    margin-top:20px;
+  }
 
   @media screen and (max-width: 480px) {
-    ul.breadcrumb li {
-      font-size: 11px;
+    .coins-row{
+      width:90%;
+      margin-left: 0;
+      margin-top:30px;
     }
-    ul.breadcrumb {
-      padding: 6px 6px;
+    #coin1{
+      width: 50px;
+      height:60px;
+      margin-left:50px;
     }
-    ul.breadcrumb li+li:before {
-      padding: 3px;
+    #coin2{
+      width: 50px;
+      height:60px;
+      /* margin-top: 18px; */
     }
-    .heading1{
-      margin-top:20px ;
-      font-size: 40px;
-      color:lavender;
-      text-shadow: 2px 2px #050505;
+    .perf-time2{
+      font-size: 20px;
+      }
+    .perf-time1{
+      margin-top: 50px;
+      margin-left: 50px;
+      }
     }
-    .button3 {
-      font-size: 15px;
-      padding: 20px;
-      width: 200px;
-      margin-left:80px;
-    }
-    .dis-button3{
-      font-size: 15px;
-      padding: 20px;
-      width: 200px;
-      height:80px;
-      margin-left:80px;
-    }
-    .completed-icon{
-      height: 30px;
-      margin:0px;
-    }
-    .button1 {
-      font-size: 18px;
-      width: 120px;
-      margin: 5px;
-      height:30px;
-    
-    } 
-    .previous{
-      padding:5px;
-    }
-  }
+
+    @media screen and (max-width: 480px) {
+			.question-audio{
+				width:120px;
+			}
+			.button4 {
+				margin-top: 200px;
+				width: 150px;
+        margin-bottom: 0px;
+        margin-left:80px;
+        font-size: 20px;
+      }
+      #start-img{
+        margin-top:0px;
+        margin-left: 40px;
+      }
+		
+			.button2{
+				width:80px;
+				font-size: 15px;
+				margin-top:10px;
+				margin-left:-20px;
+			}
+			.arrow{
+				width:80px;
+				margin-left:30px;
+				margin-top:10px;
+			}
+			.button3 {
+				font-size: 15px;
+				width: 100px;
+				margin-left:80px;
+				margin-top: 0px;
+        }
+        
+        #startdiv{
+          margin-top: 30px;
+          margin-left: 30px;
+        }
+        .modal{
+          margin-left:20px;
+          margin-top: 20px;
+
+        }
+        .coin-heading{
+          margin-left:20px;
+          font-size: 30px;
+        }
+		  }
