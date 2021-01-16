@@ -65,19 +65,19 @@ export class SentencesL1Component implements OnInit {
       if (total == 0){
         final_total = 0;
       }
-    // console.log(total);
+    console.log(total);
 
-    // let username = localStorage.getItem('uname');
-    // this.gamesService.submitGame({    
-    //   completed_games : [
-    //   {
-    //   game_id : "s14",
-    //   marks : final_total,
-    //   time_spent : time,
-    //  emotions: this.child.emotions,
-    //   max_idle_time :  clicksarray
-    //   }
-    // ]},username).subscribe(res=>{console.log("success")}, err=>{console.log("error")});
+    let username = localStorage.getItem('uname');
+    this.gamesService.submitGame({    
+      completed_games : [
+      {
+      game_id : "s14",
+      marks : final_total,
+      time_spent : time,
+     emotions: this.child.emotions,
+      max_idle_time :  clicksarray
+      }
+    ]},username).subscribe(res=>{console.log("success")}, err=>{console.log("error")});
 
 
 
