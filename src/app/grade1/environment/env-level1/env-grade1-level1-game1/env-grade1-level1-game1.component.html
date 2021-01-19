@@ -10,7 +10,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
 </head>
 <body id="banner" style="background-size:cover;background-image:url(/assets/images/fun.jpg);">
-  <!-- <app-emotiondetector></app-emotiondetector>  -->
+<app-emotiondetector></app-emotiondetector>  
 <div class="container" class="image" style="height:100% ;width:100%">
   <div id = "startdiv">
     <button id="startbtn" class="button4" onclick = "startgame_sinhala()"><b>ආරම්භ කරන්න</b></button>
@@ -78,73 +78,94 @@
     </div>
   </div>
  <br>
+
+
+
  <div class="row" style="margin-left:10px;margin-top:30px" >
-    <h3>අපේ ගෙදරට එන නැයෙක් වන්නේ</h3>
+    <h3>1)අපේ ගෙදරට එන නැයෙක් වන්නේ</h3>
+    <img src = "/assets/images/sound_audio3.gif" id="audio_img" class="question-audio" onclick="word_selection_play_g2_l2()" style="height:60px; float:right">
 </div>
   <div class="row" style="margin-left:10px;margin-top:30px" >
     
-      <div class ="col-sm-4 col-xs-4  col-lg-4">
-        <img  src="/assets/images/p3.PNG"  style=" max-width:80%; border: 2px solid black; border-radius: 10px; " onclick="newsent1()" id="nsen1"> 
-        <img id ="nsen4" src="/assets/images/w.gif" style="display:none; width: 100%; max-width: 80px; min-width:30px; height: auto; margin:auto">
+      <div class ="col-4">
+        <img  src="/assets/images/f1.JPG"  style=" max-width:90%; border: 2px solid black; border-radius: 10px; " onclick="family1()" id="fam1"> 
+        <img id ="fam4" src="/assets/images/sbob1.png" style="display:none; width: 100%; max-width: 80px; min-width:30px; height: auto; margin:auto">
       </div>
-      <div class ="col-sm-4 col-xs-4  col-lg-4">
-        <img  src="/assets/images/p2.PNG"  style=" max-width:80%; border: 2px solid black; border-radius: 10px; " onclick="newsent2()" id="nsen2">
-        <img id ="nsen5" src="/assets/images/w.gif" style="display:none; width: 100%; max-width: 80px; min-width:30px; height: auto; margin:auto"> 
+      <div class ="col-4">
+        <img  src="/assets/images/f2.JPG"  style=" max-width:90%; border: 2px solid black; border-radius: 10px; " onclick="family2()" id="fam2">
+        <img id ="fam5" src="/assets/images/w.gif" style="display:none; width: 100%; max-width: 80px; min-width:30px; height: auto; margin:auto"> 
      </div>
-     <div class ="col-sm-4 col-xs-4  col-lg-4">
-        <img  src="/assets/images/p1.PNG"  style=" max-width:80%; border: 2px solid black; border-radius: 10px; "onclick="newsent3()" id="nsen3" > 
-        <img id ="nsen6" src="/assets/images/sbob1.png" style="display:none; width: 100%; max-width: 80px; min-width:30px; height: auto; margin:auto">   
+     <div class ="col-4">
+        <img  src="/assets/images/f3.JPG"  style=" max-width:90%; border: 2px solid black; border-radius: 10px; "onclick="family3()" id="fam3" > 
+        <img id ="fam6" src="/assets/images/w.gif" style="display:none; width: 100%; max-width: 80px; min-width:30px; height: auto; margin:auto">   
      </div>
      <input type="checkbox" hidden name="fruit" id="mark1"/>
      <input type="checkbox" hidden name="fruit" id="unmark1"/> 
   </div>
 
+
+
+  <div class="row" style="margin-left:10px;margin-top:30px" >
+    <h3>2) අපේ ගෙදර දැකිය හැකි දෙයක් වන්නේ</h3>
+    <img src = "/assets/images/sound_audio3.gif" id="audio_img" class="question-audio" onclick="word_selection_play_g2_l2()" style="height:60px; float:right">
+</div>
   <div class="row" style="margin-left:10px;margin-top:30px">
-    <div class ="col-sm-4 col-xs-4  col-lg-4">
-      <img  src="/assets/images/p5.PNG"  style=" max-width:80%; border: 2px solid black; border-radius: 10px; " onclick="newsent4()" id="nsen7">
-      <img id ="nsen10" src="/assets/images/w.gif" style="display:none; width: 100%; max-width: 80px; min-width:30px; height: auto; margin:auto"> 
+    <div class ="col-4">
+      <img  src="/assets/images/f5.JPG"  style=" max-width:90%; border: 2px solid black; border-radius: 10px; " onclick="family4()" id="fam7">
+      <img id ="fam10" src="/assets/images/w.gif" style="display:none; width: 100%; max-width: 80px; min-width:30px; height: auto; margin:auto"> 
     </div>
-    <div class ="col-sm-4 col-xs-4  col-lg-4">
-      <img  src="/assets/images/p6.PNG"  style=" max-width:80%; border: 2px solid black; border-radius: 10px; " onclick="newsent5()" id="nsen8"> 
-      <img id ="nsen11" src="/assets/images/sbob1.png" style="display:none; width: 100%; max-width: 80px; min-width:30px; height: auto; margin:auto">   
+    <div class ="col-4">
+      <img  src="/assets/images/f4.JPG"  style=" max-width:90%; border: 2px solid black; border-radius: 10px; " onclick="family5()" id="fam8"> 
+      <img id ="fam11" src="/assets/images/sbob1.png" style="display:none; width: 100%; max-width: 80px; min-width:30px; height: auto; margin:auto">   
    </div>
-   <div class ="col-sm-4 col-xs-4  col-lg-4">
-      <img  src="/assets/images/p4.PNG"  style=" max-width:80%; border: 2px solid black; border-radius: 10px; "onclick="newsent6()" id="nsen9" > 
-      <img id ="nsen12" src="/assets/images/w.gif" style="display:none; width: 100%; max-width: 80px; min-width:30px; height: auto; margin:auto">
+   <div class ="col-4">
+      <img  src="/assets/images/f6.JPG"  style=" max-width:90%; border: 2px solid black; border-radius: 10px; "onclick="family6()" id="fam9" > 
+      <img id ="fam12" src="/assets/images/w.gif" style="display:none; width: 100%; max-width: 80px; min-width:30px; height: auto; margin:auto">
    </div>
    <input type="checkbox" hidden name="fruit" id="mark2"/>
    <input type="checkbox" hidden name="fruit" id="unmark2"/>
 </div>
 
+
+
+<div class="row" style="margin-left:10px;margin-top:30px" >
+    <h3>3)අම්මා ගෙදරදී කරන දෙයක් වන්නේ</h3>
+    <img src = "/assets/images/sound_audio3.gif" id="audio_img" class="question-audio" onclick="word_selection_play_g2_l2()" style="height:60px; float:right">
+</div>
 <div class="row" style="margin-left:10px;margin-top:30px">
-    <div class ="col-sm-4 col-xs-4  col-lg-4">
-      <img  src="/assets/images/p7.PNG"  style=" max-width:90%; border: 2px solid black; border-radius: 10px; " onclick="newsent7()" id="nsen13"> 
-      <img id ="nsen16" src="/assets/images/sbob1.png" style="display:none; width: 100%; max-width: 80px; min-width:30px; height: auto; margin:auto">
+    <div class ="col-4">
+      <img  src="/assets/images/f9.JPG"  style=" max-width:90%; border: 2px solid black; border-radius: 10px; " onclick="family7()" id="fam13"> 
+      <img id ="fam16" src="/assets/images/w.gif" style="display:none; width: 100%; max-width: 80px; min-width:30px; height: auto; margin:auto">
     </div>
-    <div class ="col-sm-4 col-xs-4  col-lg-4">
-      <img  src="/assets/images/p8.PNG"  style=" max-width:90%; border: 2px solid black; border-radius: 10px; " onclick="newsent8()" id="nsen14"> 
-      <img id ="nsen17" src="/assets/images/w.gif" style="display:none; width: 100%; max-width: 80px; min-width:30px; height: auto; margin:auto">
+    <div class ="col-4">
+      <img  src="/assets/images/f8.JPG"  style=" max-width:90%; border: 2px solid black; border-radius: 10px; " onclick="family8()" id="fam14"> 
+      <img id ="fam17" src="/assets/images/w.gif" style="display:none; width: 100%; max-width: 80px; min-width:30px; height: auto; margin:auto">
    </div>
-   <div class ="col-sm-4 col-xs-4  col-lg-4">
-      <img  src="/assets/images/p9.PNG"  style=" max-width:90%; border: 2px solid black; border-radius: 10px; "onclick="newsent9()" id="nsen15" >
-      <img id ="nsen18" src="/assets/images/w.gif" style="display:none; width: 100%; max-width: 80px; min-width:30px; height: auto; margin:auto">    
+   <div class ="col-4">
+      <img  src="/assets/images/f7.JPG"  style=" max-width:90%; border: 2px solid black; border-radius: 10px; "onclick="family9()" id="fam15" >
+      <img id ="fam18" src="/assets/images/sbob1.png" style="display:none; width: 100%; max-width: 80px; min-width:30px; height: auto; margin:auto">    
    </div>
    <input type="checkbox" hidden name="fruit" id="mark3"/>
    <input type="checkbox" hidden name="fruit" id="unmark3"/>
 </div>
 
+
 <div class="row" style="margin-left:10px;margin-top:30px" >
-    <div class ="col-sm-4 col-xs-4  col-lg-4">
-      <img  src="/assets/images/p12.PNG"  style=" max-width:80%; border: 2px solid black; border-radius: 10px; " onclick="newsent10()" id="nsen19"> 
-      <img id ="nsen22" src="/assets/images/w.gif" style="display:none; width: 100%; max-width: 80px; min-width:30px; height: auto; margin:auto">
+    <h3>4)පුංචි අපි ගෙදරට උදවු කරන්නේ කොහොමද?</h3>
+    <img src = "/assets/images/sound_audio3.gif" id="audio_img" class="question-audio" onclick="word_selection_play_g2_l2()" style="height:60px; float:right">
+</div>
+<div class="row" style="margin-left:10px;margin-top:30px" >
+    <div class ="col-4">
+      <img  src="/assets/images/f10.JPG"  style=" max-width:90%; border: 2px solid black; border-radius: 10px; " onclick="family10()" id="fam19"> 
+      <img id ="fam22" src="/assets/images/sbob1.png" style="display:none; width: 100%; max-width: 80px; min-width:30px; height: auto; margin:auto">
     </div>
-    <div class ="col-sm-4 col-xs-4  col-lg-4">
-      <img  src="/assets/images/p11.PNG"  style=" max-width:80%; border: 2px solid black; border-radius: 10px; " onclick="newsent11()" id="nsen20">
-      <img id ="nsen23" src="/assets/images/w.gif" style="display:none; width: 100%; max-width: 80px; min-width:30px; height: auto; margin:auto"> 
+    <div class ="col-4">
+      <img  src="/assets/images/f11.JPG"  style=" max-width:90%; border: 2px solid black; border-radius: 10px; " onclick="family11()" id="fam20">
+      <img id ="fam23" src="/assets/images/w.gif" style="display:none; width: 100%; max-width: 80px; min-width:30px; height: auto; margin:auto"> 
    </div>
-   <div class ="col-sm-4 col-xs-4  col-lg-4">
-      <img  src="/assets/images/p10.PNG"  style=" max-width:80%; border: 2px solid black; border-radius: 10px; "onclick="newsent12()" id="nsen21" > 
-      <img id ="nsen24" src="/assets/images/sbob1.png" style="display:none; width: 100%; max-width: 80px; min-width:30px; height: auto; margin:auto">   
+   <div class ="col-4">
+      <img  src="/assets/images/f12.JPG"  style=" max-width:90%; border: 2px solid black; border-radius: 10px; "onclick="family12()" id="fam21" > 
+      <img id ="fam24" src="/assets/images/w.gif" style="display:none; width: 100%; max-width: 80px; min-width:30px; height: auto; margin:auto">   
    </div>
    <input type="checkbox" hidden name="fruit" id="mark4"/>
    <input type="checkbox" hidden name="fruit" id="unmark4"/> 
@@ -162,7 +183,7 @@
     <img id ="arrow1" class="arrow" style="display: none;" src ="/assets/images/arrow_right.gif">
   </div>
   <div class=col-6>
-    <!-- <button id="submit" class="button2" style="display: none;" (click)="markstot_sentences4()">ඉවරයි</button>  -->
+  <button id="submit" class="button2" style="display: none;" (click)="markstot_env1()">ඉවරයි</button>  
   </div>
 </div>
 
@@ -187,6 +208,7 @@
       <div class="col-3 coin_img4">
         <img id="coin4" src="/assets/images/win_coin_cropped.gif" style = "visibility:hidden;">
       </div>
+      
 
     </div>
 
@@ -197,7 +219,7 @@
     </div>
     <div class="row">
       <div class="col-12">
-        <a href="grade2/sinhala/level2" class="button3">ආපසු</a>
+        <a href="grade2/environment/level2" class="button3">ආපසු</a>
       </div>
     </div>
     </div>								    	
