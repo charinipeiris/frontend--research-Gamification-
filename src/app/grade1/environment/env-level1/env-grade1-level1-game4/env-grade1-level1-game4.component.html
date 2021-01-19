@@ -1,9 +1,109 @@
 <html>
 <body class = "image">
-    <a href="/grade1/environment/level1" style ='margin-top:70px;margin-left:00px;color:green;height:50px ;' class="previous button1">&laquo; Previous</a>
-    <a href="/grade1/maths/level1/countingconcepts" style ='margin-top:70px;margin-left:950px;color:green;height:50px ;' class="previous button1"> Next &raquo;</a>
-    <h1 align="center"  style="position:absolute; top:450px; left:700px;width:250px; height:220px;"><b>අපේ අලුත් අවුරුද්ද</b></h1>
- 
+<div class="container" style="width:80%; height:auto;padding-top:20px;">
     
+    <h1 align="center" style="margin-bottom: 15px;"><b>අපේ අලුත් අවුරුද්ද</b></h1>
+    <div class="row">
+        <div class="col-3">
+            <img src = "/assets/images/sound_audio3.gif" id="audio_img" class="question-audio" onclick="word_selection_play_g2_l2()" style="height:60px; float:right">
+            <audio id="word-selection_play_g2_l2_audio" src="assets/audio/sinhala/G2L2Word-Selection.mp3" type="audio/m4a" control>Your browser does not support the audio element. </audio>
+        </div>
+        <div class="col-6">
+            <h2 style="float:left"><b>නිවැරදි පිලිතුර තෝරන්න</b></h2>
+         </div>
+        <div class="col-3">
+            <div class="timer" id="time-back">
+                <div class="timer-text" id="display">00:00:00</div>
+                <div class="buttons" >
+                     <button hidden id="startStop" onclick="startStop()">Start</button> 
+                     <button hidden id="reset" onclick="reset()">Reset</button>
+                </div> 
+            </div>
+         </div>
+    </div> 
+
+    <br>
+
+    <div class="row">
+        <div class="col-8">
+            <div class = "row">
+                <div class="col-1">
+                    <img src = "/assets/images/sound_audio3.gif" id="audio_img" class="question-audio" onclick="word_selection_play_g2_l2()" style="height:40px; float:left">
+                </div>
+                <div class="col-11">
+                    <h4 style="float:left">අලුත් අවුරුද්දට හදන රස කැවිල්ලක් වන්නේ</h4>
+                </div>
+            </div>
+            <div class = "row">
+                <div class="col-4">
+                    <img src = "/assets/images/cake.png" style="border: 2px solid black; border-radius: 10px; width: 100%; min-width: 45px; max-width:120px; height: auto;">
+                </div>
+                <div class="col-4">
+                    <img src = "/assets/images/hotdog.png" style="border: 2px solid black; border-radius: 10px; width: 100%; min-width: 45px; max-width:120px; height: auto;">
+                </div>
+                <div class="col-4">
+                    <img src = "/assets/images/kokis.png" style="border: 2px solid black; border-radius: 10px; width: 100%; min-width: 45px; max-width:120px; height: auto;">
+                </div>
+            </div>
+            <br>
+            <div class = "row">
+                <div class="col-1">
+                    <img src = "/assets/images/sound_audio3.gif" id="audio_img" class="question-audio" onclick="word_selection_play_g2_l2()" style="height:40px; float:left">
+                </div>
+                <div class="col-11">
+                    <h4 style="float:left">අලුත් අවුරුදු ක්‍රීඩාවක් වන්නේ</h4>
+                </div>
+            </div>
+            <div class = "row">
+                <div class="col-4">
+                    <img src = "/assets/images/volleyball.png" style="border: 2px solid black; border-radius: 10px; width: 100%; min-width: 45px; max-width:120px; height: auto;">
+                </div>
+                <div class="col-4">
+                    <img src = "/assets/images/kanamutti.png" style="border: 2px solid black; border-radius: 10px; width: 100%; min-width: 45px; max-width:120px; height: auto;">
+                </div>
+                <div class="col-4">
+                    <img src = "/assets/images/chess.png" style="border: 2px solid black; border-radius: 10px; width: 100%; min-width: 45px; max-width:120px; height: auto;">
+                </div>
+            </div>
+            <br>
+            <div class = "row">
+                <div class="col-1">
+                    <img src = "/assets/images/sound_audio3.gif" id="audio_img" class="question-audio" onclick="word_selection_play_g2_l2()" style="height:40px; float:left">
+                </div>
+                <div class="col-11">
+                    <h4 style="float:left">අලුත් අවුරුදු සිරිතක් වන්නේ</h4>
+                </div>
+            </div>
+            <div class = "row">
+                <div class="col-4">
+                    <img src = "/assets/images/firework.png" style="border: 2px solid black; border-radius: 10px; width: 100%; min-width: 45px; max-width:120px; height: auto;">
+                </div>
+                <div class="col-4">
+                    <img src = "/assets/images/neketh.png" style="border: 2px solid black; border-radius: 10px; width: 100%; min-width: 45px; max-width:120px; height: auto;">
+                </div>
+                <div class="col-4">
+                    <img src = "/assets/images/wesak.png" style="border: 2px solid black; border-radius: 10px; width: 100%; min-width: 45px; max-width:120px; height: auto;">
+                </div>
+            </div>
+
+        </div> 
+        <div class="col-4">
+            <table>
+                <tr>
+                    <td id="cell-1" style="background-color:white; border: 1px solid black;"><img class="reward-cell" id="rew1" src="assets/images/reward1.png">
+                    </td>
+                    <td id="cell-2" style="background-color:white; border: 1px solid black;"><img class="reward-cell" id="rew2" src="assets/images/reward2.png">
+                        </td>
+                </tr>
+                <tr>
+                    <td id="cell-3" style="background-color:white; border: 1px solid black;"><img class="reward-cell" id="rew3" src="assets/images/reward3.png">
+                    </td>
+                    <td  id="cell-4" style="background-color:white; border: 1px solid black;"><img class="reward-cell" id="rew4" src="assets/images/reward4.png">
+                    </td>
+                </tr>
+             </table>
+        </div>     
+    </div>
+ </div>
 </body>
 </html>
