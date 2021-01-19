@@ -119,6 +119,7 @@ import { Sinhalintro2Component } from './grade2/sinhala2/sinhalintro2/sinhalintr
 import { Video2Component } from './grade1/environment/env-level1/video2/video2.component';
 import { Video3Component } from './grade1/environment/env-level1/video3/video3.component';
 import { Video4Component } from './grade1/environment/env-level1/video4/video4.component';
+import { Video1Component } from './grade1/environment/env-level1/video1/video1.component';
 import { Game1Component } from './grade2/environment2/e-level1/game1/game1.component';
 import { Game2Component } from './grade2/environment2/e-level1/game2/game2.component';
 import { Game3Component } from './grade2/environment2/e-level1/game3/game3.component';
@@ -233,6 +234,8 @@ const appRoutes:Routes = [
   {path:'grade1/environment',component:EnvironmentComponent}, 
   //----environment grade1 level1--
   {path:'grade1/environment/level1',component: EnvLevel1Component},
+  
+  {path:'grade1/environment/level1/video1',component:Video1Component},
   {path:'grade1/environment/level1/game1',component:EnvGrade1Level1Game1Component},
   {path:'grade1/environment/level1/game2',component:EnvGrade1Level1Game2Component},
   {path:'grade1/environment/level1/game3',component:EnvGrade1Level1Game3Component},
