@@ -236,6 +236,10 @@ const appRoutes:Routes = [
   {path:'grade1/environment/level1',component: EnvLevel1Component},
   
   {path:'grade1/environment/level1/video1',component:Video1Component},
+  {path:'grade1/environment/level1/video2',component:Video2Component},
+  {path:'grade1/environment/level1/video3',component:Video3Component},
+  {path:'grade1/environment/level1/video4',component:Video4Component},
+
   {path:'grade1/environment/level1/game1',component:EnvGrade1Level1Game1Component},
   {path:'grade1/environment/level1/game2',component:EnvGrade1Level1Game2Component},
   {path:'grade1/environment/level1/game3',component:EnvGrade1Level1Game3Component},
