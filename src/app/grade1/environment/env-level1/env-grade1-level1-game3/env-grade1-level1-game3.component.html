@@ -1,25 +1,288 @@
 
-<html>
-    <body class = "image">
-        <a href="/grade1/environment/level1" style ='margin-top:70px;margin-left:00px;color:green;height:50px ;' class="previous button1">&laquo; Previous</a>
-        <a href="/grade1/maths/level1/countingconcepts" style ='margin-top:70px;margin-left:950px;color:green;height:50px ;' class="previous button1"> Next &raquo;</a>
-        <h1 align="center"  style="position:absolute; top:450px; left:700px;width:250px; height:220px;"><b>අපේ වත්තට එන සත්තු</b></h1>
-     
-        <img src="/assets/images/dog.gif" style="position:absolute;  top:300px; left:500px;width:200px; height:220px;">
-        <img src="/assets/images/cat.gif" style="position:absolute;  top:360px; left:200px;width:200px; height:220px;">
-        <img src="/assets/images/butterfly.gif" style="position:absolute;  top:380px; left:6px;width:120px; height:170px;">
-        <img src="/assets/images/cow.gif" style="position:absolute;  top:140px; left:1000px;width:270px; height:320px;">
-        <img src="/assets/images/snail.gif" style="position:absolute; top:400px; left:1000px;width:170px; height:220px;">
-        <img src="/assets/images/crow.gif" style="position:absolute; top:65px; left:240px;width:130px; height:110px;">
-        <img src="/assets/images/owl.gif" style="position:absolute; top:50px; left:880px;width:100px; height:110px;">
-        <img src="/assets/images/pigeon.gif" style="position:absolute; top:60px; left:440px;width:160px; height:120px;">
-        <img src="/assets/images/wpecker.gif" style="position:absolute; top:190px; left:-30px;width:120px; height:150px;">
-        <img src="/assets/images/birdx.gif" style="position:absolute; top:140px; left:640px;width:240px; height:150px;">
-        <img src="/assets/images/squirrel.gif" style="position:absolute; top:300px; left:730px;width:220px; height:150px;">
-        <img src="/assets/images/bee.gif" style="position:absolute; top:60px; left:1100px;width:150px; height:120px;">
-        <img src="/assets/images/lizard.gif" style="position:absolute; top:420px; left:1200px;width:150px; height:110px;">
-        <img src="/assets/images/rooster.gif" style="position:absolute; top:480px; left:380px;width:220px; height:150px;">
-        
-    </body>
-    </html>
+
+
+     <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Sinhala</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
+</head>
+<body id="banner" style="background-size:cover;background-image:url(/assets/images/fun.jpg);">
+<!-- <app-emotiondetector></app-emotiondetector>   -->
+<div class="container" class="image" style="height:100% ;width:100%">
+  <div id = "startdiv">
+    <button id="startbtn" class="button4" onclick = "startgame_sinhala()"><b>ආරම්භ කරන්න</b></button>
+    <img id="start-img" src = "/assets/images/start_button.png" >
+  </div>
+
+    <br>
+  <div class="row">
     
+      <div class=" col-sm-3 col-xs-3  col-lg-3">
+        <!-- <a href="/grade1/sinhala/level2/" style ='margin-left:60px;color:green;height:50px ;' class="previous button1">&laquo; Previous</a> -->
+      </div>
+
+      <div class="col-sm-6 col-xs-6 col-lg-6">
+
+        <div class="row">
+            <div class="col-sm-3 col-xs-3 col-lg-3">
+                <div class ="row">
+                    <!-- <div class="col-sm-4 col-xs-4 col-lg-4">
+                     <img src = "/assets/images/click.gif" style="height:45px;margin-left:10px;">
+                    </div> -->
+                    <div class="col-sm-4 col-xs-4 col-lg-4">
+                        <!-- <img src = "/assets/images/sound_audio3.gif" style="height:60px;"> -->
+                    </div>
+                    <div class="col-sm-4 col-xs-4 col-lg-4">
+                        
+                    </div>
+                </div>
+             </div>
+            <div class="col-sm-9 col-xs-9 col-lg-9" >
+                <h1 style="text-align:center"><b>අපේ පවුල -1</b></h1>   
+            </div>
+        </div>
+     
+      </div>
+
+
+      <div class=" col-sm-3 col-xs-3  col-lg-3">
+        <div id="time-back" style=" background-color: azure; border-radius: 15px; width: 175px;padding:5px ;margin-left: 60px;">
+            <div id="display" style=" font-size:38px; font-family: 'Permanent Marker', cursive;">
+               00:00:00
+          </div>
+          <div class="buttons" >
+            <button hidden id="startStop" onclick="startStop()">Start</button> 
+            <button hidden id="reset" onclick="reset()">Reset</button>
+          </div>   
+      </div>
+      
+  </div>
+</div>
+
+  <div class="row" >
+    <h3 id="alert" style=" color: red;margin-left:60px;margin-top: 20px;visibility:hidden"> සියල්ලටම පිලිතුරු සපයන්න</h3>
+  </div>
+
+
+  <div class="row" >
+    <div class="col-3">
+      <img src = "/assets/images/sound_audio3.gif" id="audio_img" class="question-audio" onclick="word_selection_play_g2_l2()" style="height:60px; float:right">
+      <audio id="word-selection_play_g2_l2_audio" src="assets/audio/sinhala/G2L2Word-Selection.mp3" type="audio/m4a" control>Your browser does not support the audio element. </audio>
+    </div>
+    <div class="col-6">
+      <h3 style="text-align: center;margin-top: 10px;"><b>නිවැරදි ලෙස ගළපා ඇති වගන්තිය තෝරන්න</b></h3><br>
+    </div>
+    <div class="col-3">
+    </div>
+  </div>
+ <br>
+
+
+<div class="row">
+    <div class=" col-sm-1 col-xs-1  col-lg-1">
+    </div>
+  <div class="col-sm-8 col-xs-8 col-lg-8">
+    <div class="row" style="margin-left:10px;margin-top:30px" >
+      <h3>1)අපේ වත්තට එන සතෙක් වන්නේ</h3>
+      <img src = "/assets/images/sound_audio3.gif" id="audio_img" class="question-audio" onclick="word_selection_play_g2_l2()" style="height:40px; float:right">
+  </div>
+    <div class="row" style="margin-left:10px;margin-top:30px" >
+      
+        <div class ="col-3">
+          <img  src="/assets/images/k1.JPG"  style=" max-width:90%; border: 2px solid black; border-radius: 10px; " onclick="family1()" id="fam1"> 
+      
+        </div>
+        <div class ="col-3">
+          <img  src="/assets/images/k2.JPG"  style=" max-width:90%; border: 2px solid black; border-radius: 10px; " onclick="family2()" id="fam2">
+      
+       </div>
+       <div class ="col-3">
+          <img  src="/assets/images/k3.JPG"  style=" max-width:90%; border: 2px solid black; border-radius: 10px; "onclick="family3()" id="fam3" > 
+        
+       </div>
+       <div class="col-3">
+         <img id="fam4" src="/assets/images/trans.svg" style="width: 100%; max-width: 120px; min-width:30px; height: auto; margin:auto">
+       </div>
+       <input type="checkbox" hidden name="fruit" id="mark1"/>
+       <input type="checkbox" hidden name="fruit" id="unmark1"/> 
+    </div>
+  
+  
+  
+    <div class="row" style="margin-left:10px;margin-top:30px" >
+      <h3>2)වතුරේ ජීවත් වන සතා කවුද? </h3>
+      <img src = "/assets/images/sound_audio3.gif" id="audio_img" class="question-audio" onclick="word_selection_play_g2_l2()" style="height:40px; float:right">
+  </div>
+    <div class="row" style="margin-left:10px;margin-top:30px">
+      <div class ="col-3">
+        <img  src="/assets/images/k4.JPG"  style=" max-width:90%; border: 2px solid black; border-radius: 10px; " onclick="family4()" id="fam7">
+       
+      </div>
+      <div class ="col-3">
+        <img  src="/assets/images/k5.JPG"  style=" max-width:90%; border: 2px solid black; border-radius: 10px; " onclick="family5()" id="fam8"> 
+       
+     </div>
+     <div class ="col-3">
+        <img  src="/assets/images/k6.JPG"  style=" max-width:90%; border: 2px solid black; border-radius: 10px; "onclick="family6()" id="fam9" > 
+    
+     </div>
+     <div class="col-3">
+      <img id="fam5" src="/assets/images/trans.svg" style="width: 100%; max-width: 120px; min-width:30px; height: auto; margin:auto">
+    </div>
+     <input type="checkbox" hidden name="fruit" id="mark2"/>
+     <input type="checkbox" hidden name="fruit" id="unmark2"/>
+  </div>
+  
+  
+  
+  <div class="row" style="margin-left:10px;margin-top:30px" >
+      <h3>3)පලතුරු කන සතෙක් වන්නේ</h3>
+      <img src = "/assets/images/sound_audio3.gif" id="audio_img" class="question-audio" onclick="word_selection_play_g2_l2()" style="height:40px; float:right">
+  </div>
+  <div class="row" style="margin-left:10px;margin-top:30px">
+      <div class ="col-3">
+        <img  src="/assets/images/k7.JPG"  style=" max-width:90%; border: 2px solid black; border-radius: 10px; " onclick="family7()" id="fam13"> 
+    
+      </div>
+      <div class ="col-3">
+        <img  src="/assets/images/k8.JPG"  style=" max-width:90%; border: 2px solid black; border-radius: 10px; " onclick="family8()" id="fam14"> 
+      
+     </div>
+     <div class ="col-3">
+        <img  src="/assets/images/k9.JPG"  style=" max-width:90%; border: 2px solid black; border-radius: 10px; "onclick="family9()" id="fam15" >
+       
+     </div>
+     <div class="col-3">
+      <img id="fam6" src="/assets/images/trans.svg" style="width: 100%; max-width: 120px; min-width:30px; height: auto; margin:auto">
+    </div>
+     <input type="checkbox" hidden name="fruit" id="mark3"/>
+     <input type="checkbox" hidden name="fruit" id="unmark3"/>
+  </div>
+  
+  
+  <div class="row" style="margin-left:10px;margin-top:30px" >
+      <h3>4)අහසේ දැකිය හැකි සතා කවුද?</h3>
+      <img src = "/assets/images/sound_audio3.gif" id="audio_img" class="question-audio" onclick="word_selection_play_g2_l2()" style="height:40px; float:right">
+  </div>
+  <div class="row" style="margin-left:10px;margin-top:30px" >
+      <div class ="col-3">
+        <img  src="/assets/images/k10.JPG"  style=" max-width:90%; border: 2px solid black; border-radius: 10px; " onclick="family10()" id="fam19"> 
+      
+      </div>
+      <div class ="col-3">
+        <img  src="/assets/images/k11.JPG"  style=" max-width:90%; border: 2px solid black; border-radius: 10px; " onclick="family11()" id="fam20">
+     
+     </div>
+     <div class ="col-3">
+        <img  src="/assets/images/k12.JPG"  style=" max-width:90%; border: 2px solid black; border-radius: 10px; "onclick="family12()" id="fam21" > 
+     
+     </div>
+     <div class="col-3">
+      <img id="fam10" src="/assets/images/trans.svg" style="width: 100%; max-width: 120px; min-width:30px; height: auto; margin:auto">
+    </div>
+     <input type="checkbox" hidden name="fruit" id="mark4"/>
+     <input type="checkbox" hidden name="fruit" id="unmark4"/> 
+  </div>
+
+  </div>
+
+  <div class="col-sm-3 col-xs-3  col-lg-3">
+    <table style="margin-top:30px">
+      <tr>
+          <td id="cell-1" style="background-color:white; border: 1px solid black;"><img class="reward-cell" id="rew1" src="assets/images/reward1.png">
+          </td>
+          <td id="cell-2" style="background-color:white; border: 1px solid black;"><img class="reward-cell" id="rew2" src="assets/images/reward2.png">
+              </td>
+      </tr>
+      <tr>
+          <td id="cell-3" style="background-color:white; border: 1px solid black;"><img class="reward-cell" id="rew3" src="assets/images/reward3.png">
+          </td>
+          <td  id="cell-4" style="background-color:white; border: 1px solid black;"><img class="reward-cell" id="rew4" src="assets/images/reward4.png">
+          </td>
+      </tr>
+   </table>
+  </div>
+</div>
+
+</div>
+
+
+<div hidden id="clickarray"></div>
+<br>
+<br>
+<div class="row">
+  <div class=col-6>
+    <img id ="arrow1" class="arrow" style="display: none;" src ="/assets/images/arrow_right.gif">
+  </div>
+  <div class=col-6>
+  <!-- <button id="submit" class="button2" style="display: none;" (click)="markstot_env1()">ඉවරයි</button>   -->
+  </div>
+</div>
+
+<div id="myModal" class="modal">
+
+  <div class="modal-content">
+    <div class="row">
+      <div class="col-12">
+        <h1 class ="coin-heading">Completed!!!</h1>
+      </div>
+    </div>
+    <div class="row coins-row">
+      <div class="col-3 coin_img1">
+        <img id="coin1" src="/assets/images/win_coin_cropped.gif" style = "visibility:hidden;">
+      </div>
+      <div class="col-3 coin_img2">
+        <img id="coin2" src="/assets/images/win_coin_cropped.gif" style = "visibility:hidden;">
+      </div>
+      <div class="col-3 coin_img3">
+        <img id="coin3" src="/assets/images/win_coin_cropped.gif" style = "visibility:hidden;">
+      </div>
+      <div class="col-3 coin_img4">
+        <img id="coin4" src="/assets/images/win_coin_cropped.gif" style = "visibility:hidden;">
+      </div>
+      
+
+    </div>
+
+    <div class="row">
+      <div class="col-12" class="perf-time1">
+        <h5 class="perf-time2">ගත වූ කාලය : <span id="perf-time"></span></h5>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <a href="grade1/environment/level1" class="button3">ආපසු</a>
+      </div>
+    </div>
+    </div>								    	
+         
+  </div>
+
+<!-- <div class="row">
+  <div  class="col-sm-3 col-xs-3  col-lg-3"></div>
+  <div  class="col-sm-3 col-xs-3  col-lg-3"></div>
+  <div  class="col-sm-3 col-xs-3  col-lg-3"></div>
+  <div  class="col-sm-3 col-xs-3  col-lg-3">
+    <div class ="row">
+      <img id ="arrow1" src ="/assets/images/arrow_submit.gif" style=" height: 130px; width: 130px;margin-left:40px ">
+     
+    </div>
+    <div class ="row">
+      <button id="final_button" class="button2" style ="width:100px;margin-left:52px ;" >ඉවරයි</button> 
+    </div>
+    <br>
+  </div>  -->
+
+
+
+
+
+
+
+

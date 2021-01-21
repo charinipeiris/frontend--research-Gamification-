@@ -1,0 +1,46 @@
+/* @import "~bootstrap/dist/css/bootstrap.css";
+ .image{
+    height:40em; 
+    background-size:cover; 
+    width:100%;
+    background-image:url(/assets/images/house.jpg);
+    background-position:50% 50%;
+    margin-top:-50px;
+  }
+  .button {
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  } */
+  .button3 {
+    border-radius: 12px;
+    background-color:#4CAF50;
+    border: none;
+    color:white;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+    transition: all 0.5s;
+    cursor: pointer;
+    /* margin: 20px 10px 20px 10px; */
+    /* margin-left:150px; */
+    width:40%;
+    height:auto;
+    margin:auto;
+  }
+  
+  .image{
+    height:auto;
+    background-size:cover; 
+    width:100%;
+    background-image:url(/assets/images/fun.jpg);
+    background-position:50% 50%;
+    /* margin-top:-10px;  */
+  }
+  
