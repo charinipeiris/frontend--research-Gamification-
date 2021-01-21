@@ -1,61 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>7
+  <title>environment</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body style="background-size:cover;background-image:url(/assets/images/1478.jpg);">
+  <ul class="breadcrumb">
+    <li><a routerLink='/dashboard'>1 ශ්‍රේණිය</a></li>
+    <li><a>පරිසරය</a></li>
+    <li><a routerLink='/grade1/environment'>අසීරු පියවර</a></li>
+<li><a style="background-color: #46360d; color:blanchedalmond; border-radius:10px " routerLink='/grade1/environment/level2'>සෙල්ලම් කරමු</a></li>
+  </ul>
+<div class="container" class="image" style="height:100%;">
+  <!-- <a href="/grade1/environment" class="previous button1">&laquo; Previous</a> -->
+     
+    <!-- <h1 align ="center" class="heading1"><b>  සිංහල - පියවර 1</b></h1> -->
 
-<html>
+        <div class="row" style="margin-top:50px ;">
+          <div class="col-sm-3 col-xs-3  col-lg-3">
+          </div>  
+            <div class="col-sm-3 col-xs-3  col-lg-3">  
+                    <!-- <div *ngIf="btn1 == 0"> -->
+                          <button class="button3"><a routerLink='/grade1/environment/level2/video1' style="color:white;"><span>අපේ පවුල</span></a></button> 
+                    <!-- </div>  -->
 
-    <head>
-        <meta charset="UTF-8">
-        <title>Register</title>
-        <meta name="description" content="Login - Register Template">
-        <meta name="author" content="Lorenzo Angelino aka MrLolok">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://fonts.googleapis.com/css?family=Barrio" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap" rel="stylesheet">
-       
-    </head>
-    <body class = "image">
-        <a href="/grade1/maths" style ='margin-top:65px;margin-left:60px;color:green;height:50px ;' class="previous button1">&laquo; Previous</a>   
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-    <h1 align ="center"><b>  පියවර 2-පරිසරය(1 ශ්‍රේණිය)</b></h1>
-    <br>
-    <br>
-        <div style="width: 100%;">
-            <div style="float:left;margin-inline-start:248px ;">  
-               <div>
-                <button class="button3"><a routerLink='/grade1/environment/level2/game1'><span>අපි ගමන් කරන් විවිධ ආකාර</span></a></button> 
-               </div> 
-               <div>
-                <button class="button3"><a routerLink='/grade1/environment/level2/game3'><span>අපිට තොරතුරු ලැබෙන විධි</span></a></button> 
-               </div>  
-             </div>
-          
-            <div style="margin-inline-end:130px;">
-                <div>
-                    <button class="button3"><a routerLink='/grade1/environment/level2/game2'><span>විවිධ රැකියා අදුනගනිමු</span></a></button> 
-                   </div> 
-                   <div>
-                    <button class="button3"><a routerLink='/grade1/environment/level2/game4'><span>ජලය පිලිබද තොරතුරු දැනගමු</span></a></button> 
-                   </div> 
+                    <!-- <div *ngIf="btn1 == 1">
+                          <button class="dis-button3"><a style="color:white;" disabled="disabled"><span>game1
+                          
+                          <img src = "/assets/images/completed.png" class="completed-icon">
+                          </span></a></button> 
+                    </div>  -->
             </div>
-        </div> 
+
+            <div class=" col-sm-3 col-xs-3  col-lg-3">
+                          <!-- <div *ngIf="btn2 == 0"> -->
+                              <button class="button3"><a style="color:white;" routerLink='/grade1/environment/level2/video2'><span>අපේ පාසල</span></a></button> 
+                          <!-- </div>   -->
+
+                          <!-- <div *ngIf="btn2 == 1">
+                            <button class="dis-button3"><a style="color:white;" disabled="disabled"><span>game 2
+                     
+                           <img src = "/assets/images/completed.png" class="completed-icon">
+                          </span></a></button>  
+                           </div> -->
+             </div>
+
+           
+</div>
 
 
 
-<!-- <div class="w3-container">
-    <img style="margin-left: 120px;width:400px;height:400px" src="/assets/images/learn.gif">
-  <button style="text-decoration: none;width:500px;height:300px;background-color:DodgerBlue;;margin-left:30px;border-radius:15px ;text-decoration: none;font-size:50px;"><a routerLink='/grade1/maths/level1/counting'>ගණන් කරන්න ඉගෙන ගමු.</a></button>
+<div class="row">
+  <div class="col-sm-3 col-xs-3  col-lg-3">
+  </div>  
+
+  <div class="col-sm-3 col-xs-3  col-lg-3">  
+        <!-- <div *ngIf="btn3 == 0"> -->
+             <button class="button3"><a style="color:white;" routerLink='/grade1/environment/level2/video3'><span>අප අවට සත්තු</span></a></button> 
+        <!-- </div>  -->
+
+      <!-- <div *ngIf="btn3== 1">
+      <button class="dis-button3"><a style="color:white;" disabled="disabled"><span>game 3
+     
+      <img src = "/assets/images/completed.png" class="completed-icon">
+      </span></a></button> 
+      </div>  -->
+  </div>
+
+  <div class="col-sm-3 col-xs-3  col-lg-3">
+
+    <!-- <div *ngIf="btn4 == 0"> -->
+      <button class="button3"><a style="color:white;" routerLink='/grade1/environment/level2/video4'><span>අවුරුදු කාලය</span></a></button> 
+      <!-- </div>  -->
+
+      <!-- <div *ngIf="btn4 == 1">
+      <button class="dis-button3"><a style="color:white;" disabled="disabled"><span>game4
+      <img src = "/assets/images/completed.png" class="completed-icon">
+      </span></a></button> 
+      </div> -->
+   </div>
+
+   <div class="col-sm-3 col-xs-3  col-lg-3">
+   </div>  
+</div>
+
+
+<div class="row">
+  <div class="col-sm-4 col-xs-4  col-lg-4">
+
+  </div>
+  <!-- <div *ngIf="btn5 == 0" class="col-sm-4 col-xs-4  col-lg-4"> -->
+  <button class="button3" ><a style="color:white;" routerLink='/grade1/environment/level2/game5'><span>අප අවට පරිසරය</span></a></button> 
+<!-- </div> -->
+  <!-- <div *ngIf="btn5 == 1" class="col-sm-4 col-xs-4  col-lg-4">
+    <button class="dis-button3"><a style="color:white;" disabled="disabled"><span> game5
+    <img src = "/assets/images/completed.png" class="completed-icon">
+    </span></a></button> 
+    </div> -->
   
-  <a class="w3-button w3-black w3-disabled" href="#">Link Button</a>
-</div> -->
+  <div class="col-sm-4 col-xs-4  col-lg-4">
 
-    
-    
-      </body>
-      </html>
-      
+  </div>
+
+</div> 
+<div class="row">
+  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"></div>
+  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"></div>
+  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+    <!-- <div *ngIf="nxtBtn == 5"> -->
+      <img src ="/assets/images/arrow_right.gif" style="max-height: 100px; max-width: 100px;">
+      <!-- <a href="/grade1/environment/" style ='color: green; height: 50px;' class="button1"> පියවර 2ට&raquo;</a>    -->
+  <!-- </div>  -->
+  </div>
+</div>
+
+ <br>
+ <br>
+ <br> 
+        
+</div>
+
+
+
+
+
 
 
 
