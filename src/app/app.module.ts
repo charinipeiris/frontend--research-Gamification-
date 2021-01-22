@@ -58,7 +58,7 @@ import { EnvGrade1Level2Game1Component } from './grade1/environment/env-level2/e
 import { EnvGrade1Level2Game2Component } from './grade1/environment/env-level2/env-grade1-level2-game2/env-grade1-level2-game2.component';
 import { EnvGrade1Level2Game3Component } from './grade1/environment/env-level2/env-grade1-level2-game3/env-grade1-level2-game3.component';
 import { EnvGrade1Level2Game4Component } from './grade1/environment/env-level2/env-grade1-level2-game4/env-grade1-level2-game4.component';
-import { AnimalsGameComponent } from './grade1/environment/env-level1/animals-game/animals-game.component';
+
 import { SchoolGameComponent } from './grade1/environment/env-level1/school-game/school-game.component';
 
 
@@ -129,6 +129,11 @@ import { Game002Component } from './grade2/environment2/e-level2/game002/game002
 import { Game003Component } from './grade2/environment2/e-level2/game003/game003.component';
 import { Game004Component } from './grade2/environment2/e-level2/game004/game004.component';
 import { PoemsxComponent } from './grade1/sinhala/sinhala-level1/poemsx/poemsx.component';
+import { VideoL1G1Component } from './grade1/environment/env-level2/video-l1-g1/video-l1-g1.component';
+import { Video2L1G1Component } from './grade1/environment/env-level2/video2-l1-g1/video2-l1-g1.component';
+import { Video3L1G1Component } from './grade1/environment/env-level2/video3-l1-g1/video3-l1-g1.component';
+import { Video4L1G1Component } from './grade1/environment/env-level2/video4-l1-g1/video4-l1-g1.component';
+import { Video5L1G1Component } from './grade1/environment/env-level2/video5-l1-g1/video5-l1-g1.component';
 
 
 
@@ -247,6 +252,14 @@ const appRoutes:Routes = [
   {path:'grade1/environment/level1/schoolgame',component:SchoolGameComponent},
 
   //-----environment grade1 level2--
+
+  {path:'grade1/environment/level2/video1',component:VideoL1G1Component},
+  {path:'grade1/environment/level2/video2',component:Video2L1G1Component},
+  {path:'grade1/environment/level2/video3',component:Video3L1G1Component},
+  {path:'grade1/environment/level2/video4',component:Video4L1G1Component},
+  {path:'grade1/environment/level2/video5',component:Video5L1G1Component},
+
+
   {path:'grade1/environment/level2',component: EnvLevel2Component},
   {path:'grade1/environment/level2/game1',component:EnvGrade1Level2Game1Component},
   {path:'grade1/environment/level2/game2',component:EnvGrade1Level2Game2Component},
@@ -315,7 +328,6 @@ const appRoutes:Routes = [
     EnvGrade1Level2Game2Component,
     EnvGrade1Level2Game3Component,
     EnvGrade1Level2Game4Component,
-    AnimalsGameComponent,
     SchoolGameComponent,
     Maths2Component,
     Sinhala2Component,
@@ -368,6 +380,11 @@ const appRoutes:Routes = [
     Game003Component,
     Game004Component,
     PoemsxComponent,
+    VideoL1G1Component,
+    Video2L1G1Component,
+    Video3L1G1Component,
+    Video4L1G1Component,
+    Video5L1G1Component,
     
   
 

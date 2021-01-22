@@ -1,27 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Sinhala</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
+</head>
+<body id="banner" style="background-size:cover;background-image:url(/assets/images/fun.jpg);">
+<!-- <app-emotiondetector></app-emotiondetector>   -->
+<div class="container" class="image" style="height:100% ;width:100%">
+  <div id = "startdiv">
+    <button id="startbtn" class="button4" onclick = "startgame_sinhala()"><b>ආරම්භ කරන්න</b></button>
+    <img id="start-img" src = "/assets/images/start_button.png" >
+  </div>
 
-<html>
-    <body class = "image">
-        <a href="/grade1/environment/animals-game" style ='margin-top:70px;margin-left:00px;color:green;height:50px ;' class="previous button1">&laquo; Previous</a>
-        <a href="/grade1/environment/level1/countingconcepts" style ='margin-top:70px;margin-left:950px;color:green;height:50px ;' class="previous button1"> Next &raquo;</a>
-        <!-- <h1 text-align="center"  style="position:absolute; top:450px; left:700px;width:250px; height:220px;"><b>අපේ වත්තට එන සත්තු</b></h1> -->
-    <div>
-        <!-- <div>
-        <img src="/assets/images/dog.gif" onClick="dog_sound();" style="position:absolute;  top:300px; left:500px;width:200px; height:220px;">
-        <img src="/assets/images/cat.gif" style="position:absolute;  top:360px; left:200px;width:200px; height:220px;">
-        <img src="/assets/images/butterfly.gif" style="position:absolute;  top:380px; left:6px;width:120px; height:170px;">
-        <img src="/assets/images/cow.gif" style="position:absolute;  top:140px; left:1000px;width:270px; height:320px;">
-        <img src="/assets/images/snail.gif" style="position:absolute; top:400px; left:1000px;width:170px; height:220px;">
-        <img src="/assets/images/crow.gif" style="position:absolute; top:65px; left:240px;width:130px; height:110px;">
-        <img src="/assets/images/owl.gif" style="position:absolute; top:50px; left:880px;width:100px; height:110px;">
-        <img src="/assets/images/pigeon.gif" style="position:absolute; top:60px; left:440px;width:160px; height:120px;">
-        <img src="/assets/images/wpecker.gif" style="position:absolute; top:190px; left:-30px;width:120px; height:150px;">
-        <img src="/assets/images/birdx.gif" style="position:absolute; top:140px; left:640px;width:240px; height:150px;">
-        <img src="/assets/images/squirrel.gif" style="position:absolute; top:300px; left:730px;width:220px; height:150px;">
-        <img src="/assets/images/bee.gif" style="position:absolute; top:60px; left:1100px;width:150px; height:120px;">
-        <img src="/assets/images/lizard.gif" style="position:absolute; top:420px; left:1200px;width:150px; height:110px;">
-        <img src="/assets/images/rooster.gif" style="position:absolute; top:480px; left:380px;width:220px; height:150px;">
+    <br>
+  <div class="row">
+    
+      <div class=" col-sm-3 col-xs-3  col-lg-3">
+        <!-- <a href="/grade1/sinhala/level2/" style ='margin-left:60px;color:green;height:50px ;' class="previous button1">&laquo; Previous</a> -->
+      </div>
+
+      <div class="col-sm-6 col-xs-6 col-lg-6">
+
+        <div class="row">
+            <div class="col-sm-3 col-xs-3 col-lg-3">
+                <div class ="row">
+                    <!-- <div class="col-sm-4 col-xs-4 col-lg-4">
+                     <img src = "/assets/images/click.gif" style="height:45px;margin-left:10px;">
+                    </div> -->
+                    <div class="col-sm-4 col-xs-4 col-lg-4">
+                        <!-- <img src = "/assets/images/sound_audio3.gif" style="height:60px;"> -->
+                    </div>
+                    <div class="col-sm-4 col-xs-4 col-lg-4">
+                        
+                    </div>
+                </div>
+             </div>
+            <div class="col-sm-9 col-xs-9 col-lg-9" >
+                <h1 style="text-align:center"><b>අපේ පවුල -1</b></h1>   
+            </div>
+        </div>
+     
+      </div>
+
+
+      <div class=" col-sm-3 col-xs-3  col-lg-3">
+        <div id="time-back" style=" background-color: azure; border-radius: 15px; width: 175px;padding:5px ;margin-left: 60px;">
+            <div id="display" style=" font-size:38px; font-family: 'Permanent Marker', cursive;">
+               00:00:00
+          </div>
+          <div class="buttons" >
+            <button hidden id="startStop" onclick="startStop()">Start</button> 
+            <button hidden id="reset" onclick="reset()">Reset</button>
+          </div>   
+      </div>
+      
+  </div>
+</div>
+
+  <div class="row" >
+    <h3 id="alert" style=" color: red;margin-left:60px;margin-top: 20px;visibility:hidden"> සියල්ලටම පිලිතුරු සපයන්න</h3>
+  </div>
+
+
+  <div class="row" >
+    <div class="col-3">
+      <img src = "/assets/images/sound_audio3.gif" id="audio_img" class="question-audio" onclick="word_selection_play_g2_l2()" style="height:60px; float:right">
+      <audio id="word-selection_play_g2_l2_audio" src="assets/audio/sinhala/G2L2Word-Selection.mp3" type="audio/m4a" control>Your browser does not support the audio element. </audio>
+    </div>
+    <div class="col-6">
+      <h3 style="text-align: center;margin-top: 10px;"><b>නිවැරදි ලෙස ගළපා ඇති වගන්තිය තෝරන්න</b></h3><br>
+    </div>
+    <div class="col-3">
+    </div>
+  </div>
+ <br>
+
+
+<div class="row">
+    <div class=" col-sm-1 col-xs-1  col-lg-1">
+    </div>
+  <div class="col-sm-8 col-xs-8 col-lg-8">
+    <div class="row" style="margin-left:10px;margin-top:30px" >
+      <h3>1)අපේ වත්තට එන සතෙක් වන්නේ</h3>
+      <img src = "/assets/images/sound_audio3.gif" id="audio_img" class="question-audio" onclick="word_selection_play_g2_l2()" style="height:40px; float:right">
+  </div>
+    <div class="row" style="margin-left:10px;margin-top:30px" >
+      
+        <div class ="col-3">
+          <img  src="/assets/images/k1.JPG"  style=" max-width:90%; border: 2px solid black; border-radius: 10px; " onclick="animal1()" id="anim1"> 
+      
+        </div>
+        <div class ="col-3">
+          <img  src="/assets/images/k2.JPG"  style=" max-width:90%; border: 2px solid black; border-radius: 10px; " onclick="animal2()" id="anim2">
+      
+       </div>
+       <div class ="col-3">
+          <img  src="/assets/images/k3.JPG"  style=" max-width:90%; border: 2px solid black; border-radius: 10px; "onclick="animal3()" id="anim3" > 
         
-       </div> -->
+       </div>
        <div class="col-3">
          <img id="anim4" src="/assets/images/trans.svg" style="width: 100%; max-width: 120px; min-width:30px; height: auto; margin:auto">
        </div>
@@ -106,6 +187,7 @@
      <input type="checkbox" hidden name="fruit" id="unmark4"/> 
   </div>
 
+  </div>
 
   <div class="col-sm-3 col-xs-3  col-lg-3">
     <table style="margin-top:30px">
@@ -123,7 +205,9 @@
       </tr>
    </table>
   </div>
+</div>
 
+</div>
 
 
 <div hidden id="clickarray"></div>

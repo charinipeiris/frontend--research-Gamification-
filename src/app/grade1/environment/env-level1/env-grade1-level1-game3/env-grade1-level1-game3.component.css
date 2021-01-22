@@ -1,6 +1,4 @@
-
-
-  @import "~bootstrap/dist/css/bootstrap.css";
+@import "~bootstrap/dist/css/bootstrap.css";
  .button2 {
   border-radius: 12px;
   background-color:#3f9454;
@@ -455,3 +453,5 @@
             height: auto;
           }
 
+
+  

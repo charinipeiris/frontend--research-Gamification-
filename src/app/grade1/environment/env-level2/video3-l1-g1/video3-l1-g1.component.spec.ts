@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AnimalsGameComponent } from './animals-game.component';
+import { Video3L1G1Component } from './video3-l1-g1.component';
 
-describe('AnimalsGameComponent', () => {
-  let component: AnimalsGameComponent;
-  let fixture: ComponentFixture<AnimalsGameComponent>;
+describe('Video3L1G1Component', () => {
+  let component: Video3L1G1Component;
+  let fixture: ComponentFixture<Video3L1G1Component>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AnimalsGameComponent ]
+      declarations: [ Video3L1G1Component ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AnimalsGameComponent);
+    fixture = TestBed.createComponent(Video3L1G1Component);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
