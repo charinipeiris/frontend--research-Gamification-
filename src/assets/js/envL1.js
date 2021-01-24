@@ -165,7 +165,175 @@
           }
           }
 
-//-----------game 2------------------------------------
+///--------------------------game 2-----
+
+function meme1()
+{
+document.getElementById("mem1").style.border = "4px solid blue"; 
+document.getElementById("mem2").style.pointerEvents = "none";
+document.getElementById("mem3").style.pointerEvents = "none";
+document.getElementById("mark1").checked = true; 
+document.getElementById("mem13").setAttribute("src", "/assets/images/yay_bunny2.gif");
+var myAudio = new Audio('/assets/audio/yay.mp3');
+document.getElementById("rew1").style.filter = "grayscale(0%)"
+myAudio.play();
+enableSubmit_env2()
+
+}
+
+function meme2()
+{
+  document.getElementById("mem1").style.border = "4px solid red"; 
+  document.getElementById("mem1").style.pointerEvents = "none";
+  document.getElementById("mem3").style.pointerEvents = "none";
+  document.getElementById("unmark1").checked = true; 
+  document.getElementById("mem13").setAttribute("src","/assets/images/w.gif");
+  var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
+  myAudio.play();
+  enableSubmit_env2()
+}
+function meme3()
+{
+  document.getElementById("mem1").style.border = "4px solid red"; 
+  document.getElementById("mem2").style.pointerEvents = "none";
+  document.getElementById("mem1").style.pointerEvents = "none";
+  document.getElementById("unmark1").checked = true; 
+ document.getElementById("mem13").setAttribute("src","/assets/images/w.gif");
+  var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
+  myAudio.play();
+  enableSubmit_env2()
+}
+
+//--------
+function meme4()
+{
+  document.getElementById("mem6").style.border = "4px solid red"; 
+  document.getElementById("mem5").style.pointerEvents = "none";
+  document.getElementById("mem6").style.pointerEvents = "none";
+  document.getElementById("unmark2").checked = true; 
+  document.getElementById("amem14").setAttribute("src", "/assets/images/w.gif");
+  var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
+  myAudio.play();
+  enableSubmit_env2()
+}
+function meme6()
+{
+document.getElementById("mem6").style.border = "4px solid blue"; 
+document.getElementById("mem4").style.pointerEvents = "none";
+document.getElementById("mem5").style.pointerEvents = "none";
+document.getElementById("mark2").checked = true; 
+document.getElementById("mem14").setAttribute("src", "/assets/images/yay_bunny2.gif");
+var myAudio = new Audio('/assets/audio/yay.mp3');
+document.getElementById("rew2").style.filter = "grayscale(0%)"
+myAudio.play();
+enableSubmit_env2()
+
+}
+
+function meme5()
+{
+  document.getElementById("mem6").style.border = "4px solid red"; 
+  document.getElementById("mem4").style.pointerEvents = "none";
+  document.getElementById("mem6").style.pointerEvents = "none";
+  document.getElementById("unmark2").checked = true; 
+  document.getElementById("mem14").setAttribute("src", "/assets/images/w.gif");
+  var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
+  myAudio.play();
+  enableSubmit_env2()
+}
+
+//-----
+
+function meme7()
+{
+  document.getElementById("mem9").style.border = "4px solid red"; 
+  document.getElementById("mem8").style.pointerEvents = "none";
+  document.getElementById("mem9").style.pointerEvents = "none";
+  document.getElementById("unmark3").checked = true; 
+  document.getElementById("mem15").setAttribute("src", "/assets/images/w.gif");
+  var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
+  myAudio.play();
+  enableSubmit_env2()
+}
+
+function meme8()
+{
+  document.getElementById("mem9").style.border = "4px solid red"; 
+  document.getElementById("mem7").style.pointerEvents = "none";
+  document.getElementById("mem9").style.pointerEvents = "none";
+  document.getElementById("unmark3").checked = true; 
+  document.getElementById("mem15").setAttribute("src", "/assets/images/w.gif");
+  var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
+  myAudio.play();
+  enableSubmit_env2()
+}
+
+function meme9()
+{
+document.getElementById("mem9").style.border = "4px solid blue"; 
+document.getElementById("mem8").style.pointerEvents = "none";
+document.getElementById("mem7").style.pointerEvents = "none";
+document.getElementById("mark3").checked = true; 
+document.getElementById("mem15").setAttribute("src", "/assets/images/yay_bunny2.gif");
+var myAudio = new Audio('/assets/audio/yay.mp3');
+document.getElementById("rew3").style.filter = "grayscale(0%)"
+myAudio.play();
+enableSubmit_env2()
+
+}
+
+//----
+
+function meme10()
+{
+document.getElementById("mem11").style.border = "4px solid red"; 
+document.getElementById("mem11").style.pointerEvents = "none";
+document.getElementById("mem12").style.pointerEvents = "none";
+document.getElementById("unmark4").checked = true; 
+document.getElementById("mem16").setAttribute("src", "/assets/images/w.gif");
+var myAudio = new Audio('/assets/audio/yay.mp3');
+document.getElementById("rew4").style.filter = "grayscale(0%)"
+myAudio.play();
+enableSubmit_env2()
+
+}
+
+function meme11()
+{
+  document.getElementById("mem11").style.border = "4px solid blue"; 
+  document.getElementById("mem10").style.pointerEvents = "none";
+  document.getElementById("mem12").style.pointerEvents = "none";
+  document.getElementById("mark4").checked = true; 
+  document.getElementById("mem16").setAttribute("src", "/assets/images/yay_bunny2.gif");
+  var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
+  myAudio.play();
+  enableSubmit_env2()
+}
+function meme12()
+{
+  document.getElementById("mem11").style.border = "4px solid red"; 
+  document.getElementById("mem11").style.pointerEvents = "none";
+  document.getElementById("mem10").style.pointerEvents = "none";
+  document.getElementById("unmark4").checked = true; 
+  document.getElementById("mem16").setAttribute("src", "/assets/images/w.gif");
+  var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
+  myAudio.play();
+  enableSubmit_env2()
+}
+
+function enableSubmit_env2(){
+  var chk = document.querySelectorAll('input[type="checkbox"]:checked').length;
+  if (chk == 4){
+       document.getElementById("submit").style.display="block";
+       document.getElementById("arrow1").style.display="block";
+        }
+  else{
+      document.getElementById("submit").style.display="none";
+        }
+        }
+
+
+//-----------game 3------------------------------------
 
 
 function animal1()
