@@ -291,8 +291,8 @@ document.getElementById("mem11").style.pointerEvents = "none";
 document.getElementById("mem12").style.pointerEvents = "none";
 document.getElementById("unmark4").checked = true; 
 document.getElementById("mem16").setAttribute("src", "/assets/images/w.gif");
-var myAudio = new Audio('/assets/audio/yay.mp3');
-document.getElementById("rew4").style.filter = "grayscale(0%)"
+var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
+
 myAudio.play();
 enableSubmit_env2()
 
@@ -305,7 +305,8 @@ function meme11()
   document.getElementById("mem12").style.pointerEvents = "none";
   document.getElementById("mark4").checked = true; 
   document.getElementById("mem16").setAttribute("src", "/assets/images/yay_bunny2.gif");
-  var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
+  var myAudio = new Audio('/assets/audio/yay.mp3');
+  document.getElementById("rew4").style.filter = "grayscale(0%)"
   myAudio.play();
   enableSubmit_env2()
 }
