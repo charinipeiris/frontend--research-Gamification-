@@ -135,6 +135,7 @@ import { Video3L1G1Component } from './grade1/environment/env-level2/video3-l1-g
 import { Video4L1G1Component } from './grade1/environment/env-level2/video4-l1-g1/video4-l1-g1.component';
 import { Video5L1G1Component } from './grade1/environment/env-level2/video5-l1-g1/video5-l1-g1.component';
 import { EnvGrade1Level2Game5Component } from './grade1/environment/env-level2/env-grade1-level2-game5/env-grade1-level2-game5.component';
+import { EnvGrade1LevelGame5Component } from './grade1/environment/env-level1/env-grade1-level-game5/env-grade1-level-game5.component';
 
 
 
@@ -250,7 +251,9 @@ const appRoutes:Routes = [
   {path:'grade1/environment/level1/game2',component:EnvGrade1Level1Game2Component},
   {path:'grade1/environment/level1/game3',component:EnvGrade1Level1Game3Component},
   {path:'grade1/environment/level1/game4',component:EnvGrade1Level1Game4Component},
-  {path:'grade1/environment/level1/schoolgame',component:SchoolGameComponent},
+  {path:'grade1/environment/level1/game5',component:EnvGrade1LevelGame5Component},
+ // {path:'grade1/environment/level1/schoolgame',component:SchoolGameComponent},
+  
 
   //-----environment grade1 level2--
 
@@ -388,6 +391,7 @@ const appRoutes:Routes = [
     Video4L1G1Component,
     Video5L1G1Component,
     EnvGrade1Level2Game5Component,
+    EnvGrade1LevelGame5Component,
     
   
 
