@@ -40,19 +40,19 @@ export class EnvGrade1Level1Game4Component implements OnInit {
       total = total + 1;
 
 
-    // console.log(total);
+    console.log(total);
 
-    // let username = localStorage.getItem('uname');
-    // this.gamesService.submitGame({    
-    //   completed_games : [
-    //   {
-    //   game_id : "E13",
-    //   marks : total,
-    //   time_spent : time,
-    //   emotions: this.child.emotions,
-    //   max_idle_time :  clicksarray
-    //   }
-    // ]},username).subscribe(res=>{console.log("success")}, err=>{console.log("error")});
+    let username = localStorage.getItem('uname');
+    this.gamesService.submitGame({    
+      completed_games : [
+      {
+      game_id : "E13",
+      marks : total,
+      time_spent : time,
+      emotions: this.child.emotions,
+      max_idle_time :  clicksarray
+      }
+    ]},username).subscribe(res=>{console.log("success")}, err=>{console.log("error")});
 
 
 

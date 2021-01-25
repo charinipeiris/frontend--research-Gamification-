@@ -16,7 +16,7 @@ export class EnvGrade1Level1Game1Component implements OnInit {
 
   ngOnInit(): void {
   }
-  markstot_env1() {
+  markstot_envir_g1() {
     // document.getElementById("reset").click;
     var time = document.getElementById("display").innerHTML;
     // console.log(time);
@@ -30,7 +30,6 @@ export class EnvGrade1Level1Game1Component implements OnInit {
     let element1 = <HTMLInputElement>document.getElementById("mark1");
     let element2 = <HTMLInputElement>document.getElementById("mark2");
     let element3 = <HTMLInputElement>document.getElementById("mark3");
-    let element4 = <HTMLInputElement>document.getElementById("mark4");
 
     if (element1.checked) {
       total = total + 1;
@@ -42,23 +41,19 @@ export class EnvGrade1Level1Game1Component implements OnInit {
     if (element3.checked)
       total = total + 1;
 
+    console.log(total);
 
-    if (element4.checked)
-    total = total + 1;
-
-    // console.log(total);
-
-    // let username = localStorage.getItem('uname');
-    // this.gamesService.submitGame({    
-    //   completed_games : [
-    //   {
-    //   game_id : "E12",
-    //   marks : total,
-    //   time_spent : time,
-    //   emotions: this.child.emotions,
-    //   max_idle_time :  clicksarray
-    //   }
-    // ]},username).subscribe(res=>{console.log("success")}, err=>{console.log("error")});
+    let username = localStorage.getItem('uname');
+    this.gamesService.submitGame({    
+      completed_games : [
+      {
+      game_id : "E12",
+      marks : total,
+      time_spent : time,
+      emotions: this.child.emotions,
+      max_idle_time :  clicksarray
+      }
+    ]},username).subscribe(res=>{console.log("success")}, err=>{console.log("error")});
 
 
 
@@ -66,31 +61,8 @@ export class EnvGrade1Level1Game1Component implements OnInit {
     var chk = document.querySelectorAll('input[type="checkbox"]:checked').length;
     var modal = document.getElementById("myModal");
     var subbtn = document.getElementById("submit");
-    if (chk == 4) {
+    if (chk == 3) {
 
-     
-  if (total == 4){
-    modal.style.display = "block";
-    subbtn.style.display = "none";
-    setTimeout(function(){
-      document.getElementById('coin1').style.visibility = "visible";
-      },1000);
-    
-    setTimeout(function(){
-      document.getElementById('coin2').style.visibility = "visible";
-      },1500);
-    
-    setTimeout(function(){
-        document.getElementById('coin3').style.visibility = "visible";
-        },2000);
-    
-    setTimeout(function(){
-          document.getElementById('coin4').style.visibility = "visible";
-          },2000);
-
-          document.getElementById("perf-time").innerHTML = time;
-    }
-    
 
   if (total == 3){
 modal.style.display = "block";
@@ -106,11 +78,6 @@ setTimeout(function(){
 setTimeout(function(){
     document.getElementById('coin3').style.visibility = "visible";
     },2000);
-
-setTimeout(function(){
-    document.getElementById('coin4').style.visibility = "visible";
-          },2000);
-    document.getElementById('coin4').style.opacity ="0.3";
     document.getElementById("perf-time").innerHTML = time;
 
 
@@ -129,10 +96,7 @@ setTimeout(function(){
     document.getElementById('coin3').style.visibility = "visible";
     },1900);
   document.getElementById('coin3').style.opacity ="0.3";
-  setTimeout(function(){
-    document.getElementById('coin4').style.visibility = "visible";
-          },2000);
-    document.getElementById('coin4').style.opacity ="0.3";
+
     document.getElementById("perf-time").innerHTML = time;
 
 }
@@ -152,10 +116,7 @@ modal.style.display = "block";
       document.getElementById('coin3').style.visibility = "visible";
         },1900);
       document.getElementById('coin3').style.opacity ="0.3";
-      setTimeout(function(){
-        document.getElementById('coin4').style.visibility = "visible";
-              },2000);
-        document.getElementById('coin4').style.opacity ="0.3";
+      
         document.getElementById("perf-time").innerHTML = time;
   
     
@@ -177,10 +138,7 @@ else if(total == 0){
       document.getElementById('coin3').style.visibility = "visible";
         },1900);
       document.getElementById('coin3').style.opacity ="0.3";
-      setTimeout(function(){
-        document.getElementById('coin4').style.visibility = "visible";
-              },2000);
-        document.getElementById('coin4').style.opacity ="0.3";
+      
         document.getElementById("perf-time").innerHTML = time;
 
   }
@@ -195,4 +153,5 @@ this.child.endgame();
 }
 
 }
+
 

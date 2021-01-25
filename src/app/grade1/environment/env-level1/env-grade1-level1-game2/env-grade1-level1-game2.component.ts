@@ -8,8 +8,6 @@ import { EmotiondetectorComponent } from '../../../../emotiondetector/emotiondet
   styleUrls: ['./env-grade1-level1-game2.component.css']
 })
 export class EnvGrade1Level1Game2Component implements OnInit {
-
-
   totalmarks: any;
   @ViewChild(EmotiondetectorComponent) child: EmotiondetectorComponent;
   constructor(private gamesService: GamesService){}
@@ -46,19 +44,19 @@ export class EnvGrade1Level1Game2Component implements OnInit {
     if (element4.checked)
     total = total + 1;
 
-    // console.log(total);
+    console.log(total);
 
-    // let username = localStorage.getItem('uname');
-    // this.gamesService.submitGame({    
-    //   completed_games : [
-    //   {
-    //   game_id : "E12",
-    //   marks : total,
-    //   time_spent : time,
-    //   emotions: this.child.emotions,
-    //   max_idle_time :  clicksarray
-    //   }
-    // ]},username).subscribe(res=>{console.log("success")}, err=>{console.log("error")});
+    let username = localStorage.getItem('uname');
+    this.gamesService.submitGame({    
+      completed_games : [
+      {
+      game_id : "E11",
+      marks : total,
+      time_spent : time,
+      emotions: this.child.emotions,
+      max_idle_time :  clicksarray
+      }
+    ]},username).subscribe(res=>{console.log("success")}, err=>{console.log("error")});
 
 
 
