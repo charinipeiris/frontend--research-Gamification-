@@ -45,7 +45,7 @@ export class EnvLevel2Component implements OnInit {
         if (this.GamesArray.indexOf("E23") !== -1){
             this.btn4 = this.btn4 + 1
         }
-        if (this.GamesArray.indexOf("E15") !== -1){
+        if (this.GamesArray.indexOf("E25") !== -1){
           this.btn5 = this.btn5 + 1
           }
 
