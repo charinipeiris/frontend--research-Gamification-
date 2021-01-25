@@ -80,6 +80,12 @@ getCompletedGamesSinhala(username){
     observe: 'body',
   });
 }
+getCompletedGamesEnv(username){
+  // console.log("uname",studentname)
+  return this.http.get(this.url1 + 'getcompletedgamesenv/' + username, {
+    observe: 'body',
+  });
+}
 
 
 }

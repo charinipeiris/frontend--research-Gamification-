@@ -40,6 +40,12 @@ export class AchievementsComponent implements OnInit {
         currentPage: 1,
         totalItems: this.GamesArray_S.length
       };
+      
+      this.config_E = {
+        itemsPerPage: 3,
+        currentPage: 1,
+        totalItems: this.GamesArray_E.length
+      };
     }
   
 
@@ -58,6 +64,12 @@ export class AchievementsComponent implements OnInit {
       
     });
 
+    this.gameService.getCompletedGamesEnv(uname).subscribe((data:any[]) => {
+      this.GamesArray_E = data;
+    }, (error) => {
+      
+    });
+
   }
 
   pageChanged_M(event){
@@ -66,6 +78,10 @@ export class AchievementsComponent implements OnInit {
 
   pageChanged_S(event){
     this.config_S.currentPage = event;
+  }
+
+  pageChanged_E(event){
+    this.config_E.currentPage = event;
   }
 
 
