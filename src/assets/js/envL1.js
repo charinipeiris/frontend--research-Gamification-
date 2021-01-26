@@ -1,4 +1,4 @@
-//---------------game 1 ---------------------------
+//---------------game 1 ----------------------------------------------------------
 function fin1()
 {
 document.getElementById("fins1").style.border = "4px solid blue"; 
@@ -152,7 +152,7 @@ function enableSubmit_envir2(){
         }
         }
 
-///--------------------------game 2-----
+///--------------------------game 2----------------------------------------------------------------------
 
 function meme1()
 {
@@ -321,7 +321,7 @@ function enableSubmit_env2(){
         }
 
 
-//-----------game 3------------------------------------
+//-----------game 3-----------------------------------------------------------------------------------------------------------
 
 
 function animal1()
@@ -481,6 +481,211 @@ function animal12()
 function enableSubmit_env3(){
   var chk = document.querySelectorAll('input[type="checkbox"]:checked').length;
   if (chk == 4){
+       document.getElementById("submit").style.display="block";
+       document.getElementById("arrow1").style.display="block";
+        }
+  else{
+      document.getElementById("submit").style.display="none";
+        }
+        }
+
+
+//------------------game 5 ----------------------------------------------------------------------------------------------------
+
+//---------------1----
+function surrounding21()
+{
+  document.getElementById("xx3").style.border = "4px solid red"; 
+  document.getElementById("xx2").style.pointerEvents = "none";
+  document.getElementById("xx3").style.pointerEvents = "none";
+  document.getElementById("unmark1").checked = true; 
+  document.getElementById("xx4").setAttribute("src", "/assets/images/w.gif");
+  var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
+  myAudio.play();
+  enableSubmit_g1env5();
+}
+function surrounding22()
+{
+  document.getElementById("xx3").style.border = "4px solid red"; 
+  document.getElementById("xx1").style.pointerEvents = "none";
+  document.getElementById("xx3").style.pointerEvents = "none";
+  document.getElementById("unmark1").checked = true; 
+  document.getElementById("xx4").setAttribute("src", "/assets/images/w.gif");
+  var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
+  myAudio.play();
+  enableSubmit_g1env5();
+}
+function surrounding23()
+{
+  document.getElementById("xx3").style.border = "4px solid blue"; 
+  document.getElementById("xx1").style.pointerEvents = "none";
+  document.getElementById("xx2").style.pointerEvents = "none";
+  document.getElementById("mark1").checked = true; 
+  document.getElementById("xx4").setAttribute("src", "/assets/images/yay_bunny2.gif");
+  var myAudio = new Audio('/assets/audio/yay.mp3');
+  document.getElementById("rew1").style.filter = "grayscale(0%)";
+  myAudio.play();
+  enableSubmit_g1env5();
+}
+
+//------------------2-------------
+
+function surrounding24()
+{
+  document.getElementById("xx7").style.border = "4px solid red"; 
+  document.getElementById("xx6").style.pointerEvents = "none";
+  document.getElementById("xx7").style.pointerEvents = "none";
+  document.getElementById("unmark2").checked = true; 
+  document.getElementById("xx8").setAttribute("src", "/assets/images/w.gif");
+  var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
+  myAudio.play();
+  enableSubmit_g1env5();
+}
+function surrounding25()
+{
+  document.getElementById("xx7").style.border = "4px solid red"; 
+  document.getElementById("xx5").style.pointerEvents = "none";
+  document.getElementById("xx7").style.pointerEvents = "none";
+  document.getElementById("unmark2").checked = true; 
+  document.getElementById("xx8").setAttribute("src", "/assets/images/w.gif");
+  var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
+  myAudio.play();
+  enableSubmit_g1env5();
+}
+function surrounding26()
+{
+  document.getElementById("xx7").style.border = "4px solid blue"; 
+  document.getElementById("xx5").style.pointerEvents = "none";
+  document.getElementById("xx6").style.pointerEvents = "none";
+  document.getElementById("mark2").checked = true; 
+  document.getElementById("xx8").setAttribute("src", "/assets/images/yay_bunny2.gif");
+  var myAudio = new Audio('/assets/audio/yay.mp3');
+  document.getElementById("rew2").style.filter = "grayscale(0%)"
+  myAudio.play();
+  enableSubmit_g1env5();
+}
+
+
+//------------3----------------
+
+function surrounding27()
+{
+  document.getElementById("xx9").style.border = "4px solid blue"; 
+  document.getElementById("xx10").style.pointerEvents = "none";
+  document.getElementById("xx11").style.pointerEvents = "none";
+  document.getElementById("mark3").checked = true; 
+  document.getElementById("xx12").setAttribute("src", "/assets/images/yay_bunny2.gif");
+  var myAudio = new Audio('/assets/audio/yay.mp3');
+  document.getElementById("rew3").style.filter = "grayscale(0%)";
+  myAudio.play();
+  enableSubmit_g1env5();
+}
+function surrounding28()
+{
+  document.getElementById("xx9").style.border = "4px solid red"; 
+  document.getElementById("xx9").style.pointerEvents = "none";
+  document.getElementById("xx11").style.pointerEvents = "none";
+  document.getElementById("unmark3").checked = true; 
+  document.getElementById("xx12").setAttribute("src", "/assets/images/w.gif");
+  var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
+  myAudio.play();
+  enableSubmit_g1env5();
+}
+function surrounding29()
+{
+  document.getElementById("xx9").style.border = "4px solid red"; 
+  document.getElementById("xx9").style.pointerEvents = "none";
+  document.getElementById("xx10").style.pointerEvents = "none";
+  document.getElementById("unmark3").checked = true; 
+  document.getElementById("xx12").setAttribute("src", "/assets/images/w.gif");
+  var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
+  myAudio.play();
+  enableSubmit_g1env5();
+}
+
+
+//--------------4--------
+
+
+function surrounding31()
+{
+  document.getElementById("xx13").style.border = "4px solid red"; 
+  document.getElementById("xx13").style.pointerEvents = "none";
+  document.getElementById("xx15").style.pointerEvents = "none";
+  document.getElementById("unmark4").checked = true; 
+  document.getElementById("xx16").setAttribute("src", "/assets/images/w.gif");
+  var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
+  myAudio.play();
+  enableSubmit_g1env5();
+}
+
+function surrounding30()
+{
+  document.getElementById("xx13").style.border = "4px solid blue"; 
+  document.getElementById("xx14").style.pointerEvents = "none";
+  document.getElementById("xx15").style.pointerEvents = "none";
+  document.getElementById("mark4").checked = true; 
+  document.getElementById("xx16").setAttribute("src", "/assets/images/yay_bunny2.gif");
+  var myAudio = new Audio('/assets/audio/yay.mp3');
+  document.getElementById("rew4").style.filter = "grayscale(0%)";
+  myAudio.play();
+  enableSubmit_g1env5();
+}
+function surrounding32()
+{
+  document.getElementById("xx13").style.border = "4px solid red"; 
+  document.getElementById("xx13").style.pointerEvents = "none";
+  document.getElementById("xx14").style.pointerEvents = "none";
+  document.getElementById("unmark4").checked = true; 
+  document.getElementById("xx16").setAttribute("src", "/assets/images/w.gif");
+  var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
+  myAudio.play();
+  enableSubmit_g1env5();
+}
+
+
+//-----------------------5--------------------------------
+
+function surrounding33()
+{
+  document.getElementById("xx18").style.border = "4px solid red"; 
+  document.getElementById("xx18").style.pointerEvents = "none";
+  document.getElementById("xx19").style.pointerEvents = "none";
+  document.getElementById("unmark5").checked = true; 
+  document.getElementById("xx20").setAttribute("src", "/assets/images/w.gif");
+  var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
+  myAudio.play();
+  enableSubmit_g1env5();
+}
+
+function surrounding34()
+{
+  document.getElementById("xx18").style.border = "4px solid blue"; 
+  document.getElementById("xx17").style.pointerEvents = "none";
+  document.getElementById("xx19").style.pointerEvents = "none";
+  document.getElementById("mark5").checked = true; 
+  document.getElementById("xx20").setAttribute("src", "/assets/images/yay_bunny2.gif");
+  document.getElementById("rew5").style.filter = "grayscale(0%)";
+  var myAudio = new Audio('/assets/audio/yay.mp3');
+  myAudio.play();
+  enableSubmit_g1env5();
+}
+function surrounding35()
+{
+  document.getElementById("xx18").style.border = "4px solid red"; 
+  document.getElementById("xx18").style.pointerEvents = "none";
+  document.getElementById("xx17").style.pointerEvents = "none";
+  document.getElementById("unmark5").checked = true; 
+  document.getElementById("xx20").setAttribute("src", "/assets/images/w.gif");
+  var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
+  myAudio.play();
+  enableSubmit_g1env5();
+}
+
+
+function enableSubmit_g1env5(){
+  var chk = document.querySelectorAll('input[type="checkbox"]:checked').length;
+  if (chk == 5){
        document.getElementById("submit").style.display="block";
        document.getElementById("arrow1").style.display="block";
         }

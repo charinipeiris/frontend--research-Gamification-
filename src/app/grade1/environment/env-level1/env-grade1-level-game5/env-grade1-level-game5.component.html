@@ -1,1 +1,245 @@
-<p>env-grade1-level-game5 works!</p>
+<html>
+<body id = "banner" class = "image">
+<!-- <app-emotiondetector></app-emotiondetector> -->
+<div class="container" style="width:80%; height:auto;padding-top:20px;">
+
+    <div id = "startdiv" style ="z-index: 3; background-color:rgba(236, 236, 208, 0.95); border-style:solid; border-color:rgb(146, 146, 89); border-radius: 10px;  width:78%;min-width: 50px; min-height:630px; position: absolute">
+        <button id="startbtn" class="button4" onclick = "startgame_sinhala()"><b>ආරම්භ කරන්න</b></button>
+        <img id="start-img" src = "/assets/images/start_button.png" style=" opacity: 0.85;margin-top:-200px;width:100%;min-width: 40px; max-width:1000px;height:auto">
+       </div>
+
+    <h1 align="center" class="main-heading"><b>අප අවට පරිසරය - 1</b></h1>
+    <div class="row">
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+            <img src = "/assets/images/sound_audio3.gif" id="audio_img" class="question-audio" onclick="word_selection_play_g2_l2()">
+            <audio id="word-selection_play_g2_l2_audio" src="assets/audio/sinhala/G2L2Word-Selection.mp3" type="audio/m4a" control>Your browser does not support the audio element. </audio>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+            <h2 class="heading2"><b>නිවැරදි පිලිතුර තෝරන්න</b></h2>
+         </div>
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+            <div class="timer" id="time-back">
+                <div class="timer-text" id="display">00:00:00</div>
+                <div class="buttons" >
+                     <button hidden id="startStop" onclick="startStop()">Start</button> 
+                     <button hidden id="reset" onclick="reset()">Reset</button>
+                </div> 
+            </div>
+         </div>
+    </div> 
+
+    <br>
+
+    <div class="row">
+        <div class="col-sm-8 sol-xs-8 col-lg-8 col-md-8">
+            <div class = "row">
+                <div class="col-1">
+                    <img src = "/assets/images/sound_audio3.gif" id="audio_img" class="question-audio" onclick="word_selection_play_g2_l2()" style="height:40px; float:left">
+                </div>
+                <div class="col-11">
+                    <h4 style="float:left">දවල් කාලයේ අහසේ දැකිය හැකි දෙයක් නොවන්නේ</h4>
+                </div>
+            </div>
+            <div class = "row">
+                <div class="col-3">
+                    <img id="xx1" src = "/assets/images/y1.JPG" onclick="surrounding21()" style="border: 2px solid black; border-radius: 10px; width: 100%; min-width: 70px; max-width:120px; height: auto;">
+                </div>
+                <div class="col-3">
+                    <img id="xx2" src = "/assets/images/y2.JPG" onclick="surrounding22()" style="border: 2px solid black; border-radius: 10px; width: 100%; min-width: 70px; max-width:120px; height: auto;">
+                </div>
+                <div class="col-3">
+                    <img id="xx3" src = "/assets/images/y3.JPG" onclick="surrounding23()" style="border: 2px solid black; border-radius: 10px; width: 100%; min-width: 70px; max-width:120px; height: auto;">
+                </div>
+                <div  class ="col-3">
+                    <img id="xx4" src="/assets/images/trans.svg" style=" width: 100%; max-width: 80px; min-width:40px; height: auto; margin:auto">
+                </div>
+
+                <input type="checkbox" hidden id="mark1"/>
+                <input type="checkbox" hidden id="unmark1"/>
+
+            </div>
+            <br>
+            <div class = "row">
+                <div class="col-1">
+                    <img src = "/assets/images/sound_audio3.gif" id="audio_img" class="question-audio" onclick="word_selection_play_g2_l2()" style="height:40px; float:left">
+                </div>
+                <div class="col-11">
+                    <h4 style="float:left">ජලයෙන් අපට ලැබෙන ප්‍රයොජනයක් නොවන්නේ</h4>
+                </div>
+            </div>
+            <div class = "row">
+                <div class="col-3">
+                    <img id="xx5" src = "/assets/images/y4.JPG" onclick="surrounding24()" style="border: 2px solid black; border-radius: 10px; width: 100%; min-width: 70px; max-width:120px; height: auto;">
+                </div>
+                <div class="col-3">
+                    <img id="xx6" src = "/assets/images/y5.JPG" onclick="surrounding25()" style="border: 2px solid black; border-radius: 10px; width: 100%; min-width: 70px; max-width:120px; height: auto;">
+                </div>
+                <div class="col-3">
+                    <img id="xx7" src = "/assets/images/y6.JPG" onclick="surrounding26()" style="border: 2px solid black; border-radius: 10px; width: 100%; min-width: 70px; max-width:120px; height: auto;">
+                </div>
+                <div  class ="col-3">
+                    <img id="xx8" src="/assets/images/trans.svg" style=" width: 100%; max-width: 80px; min-width:40px; height: auto; margin:auto">
+                </div>
+
+                <input type="checkbox" hidden id="mark2"/>
+                <input type="checkbox" hidden id="unmark2"/>
+
+            </div>
+            <br>
+            <div class = "row">
+                <div class="col-1">
+                    <img src = "/assets/images/sound_audio3.gif" id="audio_img" class="question-audio" onclick="word_selection_play_g2_l2()" style="height:40px; float:left">
+                </div>
+                <div class="col-11">
+                    <h4 style="float:left">අපට එලිය ලබා දෙන දෙයක් වන්නේ</h4>
+                </div>
+            </div>
+            <div class = "row">
+                <div class="col-3">
+                    <img id="xx9" src = "/assets/images/y7.JPG" onclick="surrounding27()" style="border: 2px solid black; border-radius: 10px; width: 100%; min-width: 70px; max-width:120px; height: auto;">
+                </div>
+                <div class="col-3">
+                    <img id="xx10" src = "/assets/images/y8.JPG" onclick="surrounding28()" style="border: 2px solid black; border-radius: 10px; width: 100%; min-width: 70px; max-width:120px; height: auto;">
+                </div>
+                <div class="col-3">
+                    <img id="xx11" src = "/assets/images/y9.JPG" onclick="surrounding29()" style="border: 2px solid black; border-radius: 10px; width: 100%; min-width: 70px; max-width:120px; height: auto;">
+                </div>
+                <div  class ="col-3">
+                    <img id="xx12" src="/assets/images/trans.svg" style="width: 100%; max-width: 80px; min-width:40px; height: auto; margin:auto">
+                </div>
+
+                <input type="checkbox" hidden id="mark3"/>
+                <input type="checkbox" hidden id="unmark3"/>
+
+            </div>
+
+            <br>
+            <div class = "row">
+                <div class="col-1">
+                    <img src = "/assets/images/sound_audio3.gif" id="audio_img" class="question-audio" onclick="word_selection_play_g2_l2()" style="height:40px; float:left">
+                </div>
+                <div class="col-11">
+                    <h4 style="float:left">පහත කොළ අතුරින් බුලත් කොළය තෝරන්න.</h4>
+                </div>
+            </div>
+            <div class = "row">
+                <div class="col-3">
+                    <img id="xx13" src = "/assets/images/y10.JPG" onclick="surrounding30()" style="border: 2px solid black; border-radius: 10px; width: 100%; min-width: 70px; max-width:120px; height: auto;">
+                </div>
+                <div class="col-3">
+                    <img id="xx14" src = "/assets/images/y11.JPG" onclick="surrounding31()" style="border: 2px solid black; border-radius: 10px; width: 100%; min-width: 70px; max-width:120px; height: auto;">
+                </div>
+                <div class="col-3">
+                    <img id="xx15" src = "/assets/images/y12.JPG" onclick="surrounding32()" style="border: 2px solid black; border-radius: 10px; width: 100%; min-width: 70px; max-width:120px; height: auto;">
+                </div>
+                <div  class ="col-3">
+                    <img id="xx16" src="/assets/images/trans.svg" style=" width: 100%; max-width: 80px; min-width:40px; height: auto; margin:auto">
+                </div>
+
+                <input type="checkbox" hidden id="mark4"/>
+                <input type="checkbox" hidden id="unmark4"/>
+
+            </div>
+
+            <br>
+            <div class = "row">
+                <div class="col-1">
+                    <img src = "/assets/images/sound_audio3.gif" id="audio_img" class="question-audio" onclick="word_selection_play_g2_l2()" style="height:40px; float:left">
+                </div>
+                <div class="col-11">
+                    <h4 style="float:left">අපගෙ උදවු උවමනා කෙනෙක් වන්නේ</h4>
+                </div>
+            </div>
+            <div class = "row">
+                <div class="col-3">
+                    <img id="xx17" src = "/assets/images/y14.JPG" onclick="surrounding33()" style="border: 2px solid black; border-radius: 10px; width: 100%; min-width: 70px; max-width:120px; height: auto;">
+                </div>
+                <div class="col-3">
+                    <img id="xx18" src = "/assets/images/y13.JPG" onclick="surrounding34()" style="border: 2px solid black; border-radius: 10px; width: 100%; min-width: 70px; max-width:120px; height: auto;">
+                </div>
+                <div class="col-3">
+                    <img id="xx19" src = "/assets/images/y15.JPG" onclick="surrounding35()" style="border: 2px solid black; border-radius: 10px; width: 100%; min-width: 70px; max-width:120px; height: auto;">
+                </div>
+                <div  class ="col-3">
+                    <img id="xx20" src="/assets/images/trans.svg" style=" width: 100%; max-width: 80px; min-width:40px; height: auto; margin:auto">
+                </div>
+
+                <input type="checkbox" hidden id="mark5"/>
+                <input type="checkbox" hidden id="unmark5"/>
+
+            </div>
+            <br>
+            <br>
+
+        </div> 
+        <div class="col-sm-4 sol-xs-4 col-lg-4 col-md-4">
+            <table>
+                <tr>
+                    <td id="cell-1" style="background-color:white; border: 1px solid black;"><img class="reward-cell" id="rew1" src="assets/images/reward1.png">
+                    </td>
+                    <td id="cell-2" style="background-color:white; border: 1px solid black;"><img class="reward-cell" id="rew2" src="assets/images/reward2.png">
+                        </td>
+                </tr>
+                <tr>
+                    <td id="cell-3" style="background-color:white; border: 1px solid black;"><img class="reward-cell" id="rew3" src="assets/images/reward3.png">
+                    </td>
+                    <td  id="cell-4" style="background-color:white; border: 1px solid black;"><img class="reward-cell" id="rew4" src="assets/images/reward4.png">
+                    </td>
+                </tr>
+                <tr>
+                    <td  id="cell-5" style="background-color:white; border: 1px solid black;"><img class="reward-cell" id="rew5" src="assets/images/reward5.png">
+                    </td>
+                </tr>
+             </table>
+             <div class="row">
+                <div class=col-6>
+                    <img id ="arrow" class="arrow" style="display: none;"  src ="/assets/images/arrow_right.gif">
+                </div>
+                <div class=col-6>
+                <button id="submit" style="display: none;" (click)="markstot_g1l1game5" class="button2">ඉවරයි</button> 
+                </div>
+            </div>
+        </div> 
+        
+        <div hidden id="clickarray"></div>
+		<div id="myModal" class="modal">
+            <div class="modal-content">
+				<div class="row">
+					<div class="col-12">
+						<h1 align="center" style="font-family:Chalkduster, fantasy;color:darkcyan; margin-top:15px">Completed!!!</h1>
+					</div>
+				</div>
+				<div class="row coins-row">
+					<div class="col-2 coin_img1">
+						<img id="coin1" src="/assets/images/win_coin_cropped.gif" style = "visibility:hidden;">
+					</div>
+					<div class="col-2 coin_img2">
+						<img id="coin2" src="/assets/images/win_coin_cropped.gif" style = "visibility:hidden;">
+					</div>
+					<div class="col-2 coin_img3">
+						<img id="coin3" src="/assets/images/win_coin_cropped.gif" style = "visibility:hidden;">
+                    </div>
+                    <div class="col-2 coin_img4">
+						<img id="coin4" src="/assets/images/win_coin_cropped.gif" style = "visibility:hidden;">
+                    </div>
+                    <div class="col-2 coin_img5">
+						<img id="coin5" src="/assets/images/win_coin_cropped.gif" style = "visibility:hidden;">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12" class="perf-time1">
+						<h5 class="perf-time2">ගත වූ කාලය : <span id="perf-time"></span></h5>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+				        <a href="grade1/environment/level2" class="button3">ආපසු</a>
+					</div>
+				</div>
+			</div>								    	
+		</div>
+    </div>
+
+ </div>
+</body>
+</html>
