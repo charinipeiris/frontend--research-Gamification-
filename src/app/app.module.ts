@@ -285,7 +285,7 @@ const appRoutes:Routes = [
   {path:'grade2/environment/level1/game1',component:Game1Component},
   {path:'grade2/environment/level1/game2',component:Game2Component},
   {path:'grade2/environment/level1/game3',component:Game3Component},
-  {path:'grade2/environment/level2/game4',component:Game4Component},
+  {path:'grade2/environment/level1/game4',component:Game4Component},
 
   {path:'grade2/environment/level1/video1',component:G2video1Component},
   {path:'grade2/environment/level1/video2',component:G2video2Component},
