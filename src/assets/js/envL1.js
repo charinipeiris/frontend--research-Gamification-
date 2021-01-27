@@ -489,6 +489,128 @@ function enableSubmit_env3(){
         }
         }
 
+//---------------game 4------------------------------------------
+
+
+//--------------- Grade 1 level 1 - environment "ape aurudu" ---------------
+
+function aurudu1()
+{
+document.getElementById("one-r1").style.border = "4px solid red"; 
+document.getElementById("one-r2").style.pointerEvents = "none";
+document.getElementById("one-r3").style.pointerEvents = "none";
+document.getElementById("unmark1").checked = true; 
+document.getElementById("one-r4").setAttribute("src", "/assets/images/w.gif")
+document.getElementById("one-r4").style.display = "block";
+var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
+  myAudio.play();
+  enableSubmit_sinhalaword4()
+}
+
+function aurudu2()
+{
+document.getElementById("one-r2").style.border = "4px solid red"; 
+document.getElementById("one-r1").style.pointerEvents = "none";
+document.getElementById("one-r3").style.pointerEvents = "none";
+document.getElementById("unmark1").checked = true; 
+document.getElementById("one-r4").setAttribute("src", "/assets/images/w.gif")
+document.getElementById("one-r4").style.display = "block";
+var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
+  myAudio.play();
+  enableSubmit_sinhalaword4()
+}
+
+function aurudu3()
+{
+document.getElementById("one-r3").style.border = "4px solid blue"; 
+document.getElementById("one-r1").style.pointerEvents = "none";
+document.getElementById("one-r2").style.pointerEvents = "none";
+document.getElementById("mark1").checked = true; 
+document.getElementById("one-r4").style.display = "block";
+document.getElementById("rew1").style.filter = "grayscale(0%)"
+document.getElementById("cell-1").style.border = "4px solid #4b53bd";
+var myAudio = new Audio('/assets/audio/yay.mp3');
+  myAudio.play();
+  enableSubmit_sinhalaword4()
+}
+
+function aurudu4()
+{
+document.getElementById("two-r1").style.border = "4px solid red"; 
+document.getElementById("two-r2").style.pointerEvents = "none";
+document.getElementById("two-r3").style.pointerEvents = "none";
+document.getElementById("unmark2").checked = true; 
+document.getElementById("two-r4").setAttribute("src", "/assets/images/w.gif")
+document.getElementById("two-r4").style.display = "block";
+var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
+  myAudio.play();
+  enableSubmit_sinhalaword4()
+}
+function aurudu5()
+{
+document.getElementById("two-r2").style.border = "4px solid blue"; 
+document.getElementById("two-r1").style.pointerEvents = "none";
+document.getElementById("two-r3").style.pointerEvents = "none";
+document.getElementById("mark2").checked = true; 
+document.getElementById("two-r4").style.display = "block";
+document.getElementById("rew2").style.filter = "grayscale(0%)"
+document.getElementById("cell-2").style.border = "4px solid pink";
+var myAudio = new Audio('/assets/audio/yay.mp3');
+  myAudio.play();
+  enableSubmit_sinhalaword4()
+}
+
+function aurudu6()
+{
+document.getElementById("two-r3").style.border = "4px solid red"; 
+document.getElementById("two-r1").style.pointerEvents = "none";
+document.getElementById("two-r2").style.pointerEvents = "none";
+document.getElementById("unmark2").checked = true; 
+document.getElementById("two-r4").setAttribute("src", "/assets/images/w.gif")
+document.getElementById("two-r4").style.display = "block";
+var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
+  myAudio.play();
+  enableSubmit_sinhalaword4()
+}
+
+function aurudu7()
+{
+document.getElementById("three-r1").style.border = "4px solid red"; 
+document.getElementById("three-r2").style.pointerEvents = "none";
+document.getElementById("three-r3").style.pointerEvents = "none";
+document.getElementById("unmark3").checked = true; 
+document.getElementById("three-r4").setAttribute("src", "/assets/images/w.gif")
+document.getElementById("three-r4").style.display = "block";
+var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
+  myAudio.play();
+  enableSubmit_sinhalaword4()
+}
+function aurudu8()
+{
+document.getElementById("three-r2").style.border = "4px solid blue"; 
+document.getElementById("three-r1").style.pointerEvents = "none";
+document.getElementById("three-r3").style.pointerEvents = "none";
+document.getElementById("mark3").checked = true; 
+document.getElementById("three-r4").style.display = "block";
+document.getElementById("rew3").style.filter = "grayscale(0%)"
+document.getElementById("cell-3").style.border = "4px solid red";
+var myAudio = new Audio('/assets/audio/yay.mp3');
+  myAudio.play();
+  enableSubmit_sinhalaword4()
+}
+
+function aurudu9()
+{
+document.getElementById("three-r3").style.border = "4px solid red"; 
+document.getElementById("three-r1").style.pointerEvents = "none";
+document.getElementById("three-r2").style.pointerEvents = "none";
+document.getElementById("unmark3").checked = true; 
+document.getElementById("three-r4").setAttribute("src", "/assets/images/w.gif")
+document.getElementById("three-r4").style.display = "block";
+var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
+  myAudio.play();
+  enableSubmit_sinhalaword4()
+}
 
 //------------------game 5 ----------------------------------------------------------------------------------------------------
 
@@ -693,3 +815,6 @@ function enableSubmit_g1env5(){
       document.getElementById("submit").style.display="none";
         }
         }
+
+
+        

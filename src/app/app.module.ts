@@ -154,7 +154,6 @@ const appRoutes:Routes = [
   {path:'achievements',component:AchievementsComponent},
   {path:'leaderboard',component:LeaderboardComponent},
 
-
   //-----maths--
   {path:'grade1/maths',component:MathsComponent},
   {path:'grade2/maths',component:Maths2Component},
@@ -258,7 +257,7 @@ const appRoutes:Routes = [
   {path:'grade1/environment/level1/game3',component:EnvGrade1Level1Game3Component},
   {path:'grade1/environment/level1/game4',component:EnvGrade1Level1Game4Component},
   {path:'grade1/environment/level1/game5',component:EnvGrade1LevelGame5Component},
- // {path:'grade1/environment/level1/schoolgame',component:SchoolGameComponent},
+ {path:'grade1/environment/level1/schoolgame',component:SchoolGameComponent},
   
 
   //-----environment grade1 level2--

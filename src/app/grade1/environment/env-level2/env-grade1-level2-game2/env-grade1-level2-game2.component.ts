@@ -95,7 +95,6 @@ setTimeout(function(){
     document.getElementById('coin3').style.visibility = "visible";
     },1900);
   document.getElementById('coin3').style.opacity ="0.3";
-
     document.getElementById("perf-time").innerHTML = time;
 
 }
@@ -151,4 +150,7 @@ else {
 this.child.endgame(); 
 }
 
+
+
 }
+
