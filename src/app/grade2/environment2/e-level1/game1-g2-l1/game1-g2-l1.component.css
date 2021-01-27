@@ -284,12 +284,12 @@
 	from {top: 10px;}
 	to {top: 70px; }
   }
-  .coin_img1{
+  /* .coin_img1{
 	animation-name: example;
 	animation-duration: 3s;  
 	animation-fill-mode: forwards;
 	height: 220px; 
-  width: 550px;
+	width: 550px;
 	
   }
   .coin_img2{
@@ -297,8 +297,7 @@
 	animation-duration: 3s;  
 	animation-fill-mode: forwards;
 	height: 220px; 
-  width: 550px;
-  
+	width: 550px;
   }
 
   .coin_img3{
@@ -314,9 +313,11 @@
     animation-fill-mode: forwards;
     height: 220px; 
     width: 550px;
-    }
+    } */
 
- 
+  /* #coin1{
+    margin-left:150px;
+  } */
 
   .coins-row{
 	width:70%;
@@ -367,24 +368,32 @@
     #coin1{
       width: 50px;
       height:60px;
+      
     }
     #coin2{
       width: 50px;
       height:60px;
-      margin-top: 18px;
+    
+      /* margin-top: 18px; */
     }
     #coin3{
-      width: 50px;
-      height:60px;
-    
-    }
-    
+        width: 50px;
+        height:60px;
+       
+        /* margin-top: 18px; */
+      }
+      #coin4{
+        width: 50px;
+        height:60px;
+       
+        /* margin-top: 18px; */
+      }
     .perf-time2{
       font-size: 20px;
       }
     .perf-time1{
-      margin-top: 100px;
-      margin-left: 20px;
+      margin-top: 50px;
+      margin-left: 50px;
       }
     }
 
@@ -435,4 +444,14 @@
           margin-left:20px;
           font-size: 30px;
         }
-		  }
+          }
+          
+          .reward-cell{
+            filter: grayscale(100%);
+            width: 100%; 
+            max-width: 100px;
+            height: auto;
+          }
+
+
+  

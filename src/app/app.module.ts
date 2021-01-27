@@ -120,8 +120,6 @@ import { Video2Component } from './grade1/environment/env-level1/video2/video2.c
 import { Video3Component } from './grade1/environment/env-level1/video3/video3.component';
 import { Video4Component } from './grade1/environment/env-level1/video4/video4.component';
 import { Video1Component } from './grade1/environment/env-level1/video1/video1.component';
-import { Game1Component } from './grade2/environment2/e-level1/game1/game1.component';
-import { Game2Component } from './grade2/environment2/e-level1/game2/game2.component';
 import { Game3Component } from './grade2/environment2/e-level1/game3/game3.component';
 import { Game4Component } from './grade2/environment2/e-level1/game4/game4.component';
 import { Game001Component } from './grade2/environment2/e-level2/game001/game001.component';
@@ -142,6 +140,8 @@ import { G2video1Component } from './grade2/environment2/e-level1/g2video1/g2vid
 import { G2video2Component } from './grade2/environment2/e-level1/g2video2/g2video2.component';
 import { G2video3Component } from './grade2/environment2/e-level1/g2video3/g2video3.component';
 import { G2video4Component } from './grade2/environment2/e-level1/g2video4/g2video4.component';
+import { Game1G2L1Component } from './grade2/environment2/e-level1/game1-g2-l1/game1-g2-l1.component';
+import { Game2G2L1Component } from './grade2/environment2/e-level1/game2-g2-l1/game2-g2-l1.component';
 
 
 
@@ -282,8 +282,8 @@ const appRoutes:Routes = [
   {path:'grade2/environment',component:Environment2Component}, 
 
   {path:'grade2/environment/level1',component:ELevel1Component},
-  {path:'grade2/environment/level1/game1',component:Game1Component},
-  {path:'grade2/environment/level1/game2',component:Game2Component},
+  {path:'grade2/environment/level1/game1',component:Game1G2L1Component},
+  {path:'grade2/environment/level1/game2',component:Game2G2L1Component},
   {path:'grade2/environment/level1/game3',component:Game3Component},
   {path:'grade2/environment/level1/game4',component:Game4Component},
 
@@ -409,6 +409,8 @@ const appRoutes:Routes = [
     G2video2Component,
     G2video3Component,
     G2video4Component,
+    Game1G2L1Component,
+    Game2G2L1Component,
     
   
 
