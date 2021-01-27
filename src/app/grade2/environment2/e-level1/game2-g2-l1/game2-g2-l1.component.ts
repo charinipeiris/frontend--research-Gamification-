@@ -73,7 +73,7 @@ export class Game2G2L1Component implements OnInit {
     // this.gamesService.submitGame({    
     //   completed_games : [
     //   {
-    //   game_id : "s12",
+    //   game_id : "e11",
     //   marks : final_total,
     //   time_spent : time,
     //   emotions: this.child.emotions,
