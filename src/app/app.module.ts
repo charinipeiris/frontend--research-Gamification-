@@ -142,6 +142,7 @@ import { G2video3Component } from './grade2/environment2/e-level1/g2video3/g2vid
 import { G2video4Component } from './grade2/environment2/e-level1/g2video4/g2video4.component';
 import { Game1G2L1Component } from './grade2/environment2/e-level1/game1-g2-l1/game1-g2-l1.component';
 import { Game2G2L1Component } from './grade2/environment2/e-level1/game2-g2-l1/game2-g2-l1.component';
+import { Game5Component } from './grade2/environment2/e-level1/game5/game5.component';
 
 
 
@@ -286,6 +287,7 @@ const appRoutes:Routes = [
   {path:'grade2/environment/level1/game2',component:Game2G2L1Component},
   {path:'grade2/environment/level1/game3',component:Game3Component},
   {path:'grade2/environment/level1/game4',component:Game4Component},
+  {path:'grade2/environment/level1/game5',component:Game5Component},
 
   {path:'grade2/environment/level1/video1',component:G2video1Component},
   {path:'grade2/environment/level1/video2',component:G2video2Component},
@@ -414,6 +416,7 @@ const appRoutes:Routes = [
     Game1G2L1Component,
     Game3Component,
     Game4Component,
+    Game5Component,
     
     
   
