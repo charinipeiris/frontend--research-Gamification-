@@ -1,0 +1,320 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+ .image{
+    height:100%; 
+    background-size:cover; 
+    /* width:auto; */
+    background-image:url(/assets/images/background2.jpg);
+    background-position:50% 50%;
+    /* margin-top:-50px; */
+  }
+  .button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+  table{
+    margin: 0 0 0 4rem;
+  }
+
+
+  table ,td {
+    border-collapse: inherit;
+    border-radius: 1em;
+    padding: 1rem 1rem 0.5rem 1rem;
+    /* padding:15px; */
+    /* border-spacing: 0px; */
+    }
+
+
+    @media screen and (max-width: 736px) {
+    .time-back{
+    width:100px;
+    height: auto;
+    }}
+    .button2 {
+    border-radius: 12px;
+    background-color:#3f9454;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    padding: 5px;
+    transition: all 0.5s;
+    cursor: pointer;
+    width:100%;
+    max-width: 150px;
+    height:60px;
+    margin : -100px 0 0 10px;
+    }
+
+    .button3 {
+    border-radius: 12px;
+    background-color:#3f9454;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+    width:30%;
+    max-width: 180px;
+    transition: all 0.5s;
+    cursor: pointer;
+    position: absolute; 
+    z-index:2;
+    margin-top: 20px; 
+    margin-left:430px;
+    }
+
+    .button4 {
+    border-radius: 12px;
+    background-color:#3f9454;
+    border: 5px solid #315032;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 25px;
+    padding: 5px;
+    width:100%;
+    max-width: 250px;
+    height:auto;
+    transition: all 0.5s;
+    cursor: pointer;
+    position: relative; 
+    margin-top: 200px;
+    z-index: 4;
+    margin-left:430px;
+    }
+    .question-audio{
+      height:60px; 
+      float:right;
+    }
+    .reward-cell{
+    filter: grayscale(100%);
+    width: 100%; 
+    max-width: 100px;
+    height: auto;
+  }
+  .timer{
+    margin: auto; 
+    margin-bottom:10px;
+    z-index: 2;
+    background-color: rgb(233, 233, 135); 
+    border-radius: 10px; 
+    max-width: 200px;
+  }
+  .timer-text{
+    margin:auto; 
+    font-size: 40px; 
+    font-family: 'Permanent Marker', cursive;
+    padding-left: 25px;
+  }
+  .arrow{
+    margin-top:-100px;
+    margin-left:60px;
+    height: auto; 
+    max-width: 100px;
+  }
+  .main-heading{
+    margin-bottom: 15px;
+  }
+  .heading2{
+    float:left;
+  }
+
+    @media screen and (max-width: 480px) {
+    .question-audio{
+      width:60px;
+      height: auto;
+      float:none;
+      margin-left: 80px;
+
+    }
+    .main-heading{
+      font-size:35px;
+    }
+    .heading2{
+      font-size: 25px;
+      float:none;
+    }
+    .button4 {
+      margin-top: 180px;
+      width: 200px;
+      margin-bottom: 150px;
+      margin-left: 40px;
+    }
+    .reward-cell{
+      width:50px;
+    }
+    table {
+      margin-left:30px;
+    }
+    table ,td{
+      padding: 0.5rem 0.5rem 0.25rem 0.5rem;
+    }
+    .timer{
+      width:150px;
+      height: auto;
+      margin-top:10px;
+    }
+    .timer-text{
+      font-size: 30px; 
+    }
+    .button2{
+      width:80px;
+      font-size: 15px;
+      margin-top:10px;
+      margin-left:-20px;
+    }
+    .arrow{
+      width:80px;
+      margin-left:30px;
+      margin-top:10px;
+    }
+    .button3 {
+      font-size: 15px;
+      width: 100px;
+      margin-left:70px;
+      margin-top: 0px;
+      }
+    }
+
+    /* The Modal (background) */
+.modal {
+display: none; /* Hidden by default */
+position: fixed; /* Stay in place */
+z-index: 1; /* Sit on top */
+left: 0;
+top: 0;
+width: 78%; /* Full width */
+height: 90%; /* Full height */
+/* overflow: auto; Enable scroll if needed */
+background-color: rgb(0,0,0); /* Fallback color */
+background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+margin-left:200px;
+margin-top:50px;
+
+}
+
+/* Modal Content/Box */
+.modal-content {
+/* background-color: #d2ecb5; */
+background-color: #ffffff;
+/* margin: 10% auto; 15% from the top and centered */
+/* padding: 20px; */
+border: 10px solid rgb(73, 160, 52);
+border-radius: 12px;
+width: 100%; /* Could be more or less, depending on screen size */
+height: 100%;
+z-index: 1;
+}
+
+/* The Close Button */
+.close {
+color: #aaa;
+float: right;
+font-size: 28px;
+font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+color: black;
+text-decoration: none;
+cursor: pointer;
+}
+
+@keyframes example {
+from {top: 10px;}
+to {top: 70px; }
+}
+.coin_img1{
+animation-name: example;
+animation-duration: 3s;  
+animation-fill-mode: forwards;
+height: 220px; 
+width: 550px;
+/* margin-right:50px; */
+}
+.coin_img2{
+animation-name: example;
+animation-duration: 3s;  
+animation-fill-mode: forwards;
+height: 220px; 
+width: 550px;
+margin-top:-50px;
+}
+.coin_img3{
+animation-name: example;
+animation-duration: 3s;  
+animation-fill-mode: forwards;
+height: 220px; 
+width: 550px;
+margin-top:-50px;
+}
+.coin_img4{
+animation-name: example;
+animation-duration: 3s;  
+animation-fill-mode: forwards;
+height: 220px; 
+width: 550px;
+}
+
+.coins-row{
+width:70%;
+margin-top:-40px;
+margin-left:150px;
+}
+.perf-time2{
+font-size: 30px;
+}
+.perf-time1{
+margin-top:150px;
+margin-left: 400px;
+}
+
+
+@media screen and (max-width: 480px) {
+  .modal{
+    margin-left:70px;
+  }
+.coins-row{
+  width:90%;
+  margin-left: 0;
+  margin-top:30px;
+}
+#coin1{
+  width: 50px;
+  height:60px;
+}
+#coin2{
+  width: 50px;
+  height:60px;
+  /* margin-top: 18px; */
+}
+#coin3{
+  width: 50px;
+  height:60px;
+  /* margin-top: 18px; */
+}
+#coin4{
+  width: 50px;
+  height:60px;
+}
+
+.perf-time2{
+  font-size: 20px;
+  }
+.perf-time1{
+  margin-top: 30px;
+  margin-left: 50px;
+  }
+}
+
+    
