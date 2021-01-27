@@ -1138,9 +1138,9 @@ document.getElementById("fam3").style.pointerEvents = "none";
 document.getElementById("mark1").checked = true; 
 document.getElementById("fam4").setAttribute("src", "/assets/images/yay_bunny2.gif");
 var myAudio = new Audio('/assets/audio/yay.mp3');
-document.getElementById("rew1").style.filter = "grayscale(0%)"
+document.getElementById("rew1").style.filter = "grayscale(0%)";
 myAudio.play();
-enableSubmit_env1_g2l2family();
+enableSubmit_familyg2l2();
 
 }
 
@@ -1153,7 +1153,7 @@ function families2()
   document.getElementById("fam4").setAttribute("src","/assets/images/w.gif");
   var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
   myAudio.play();
-  enableSubmit_env1_g2l2family();
+  enableSubmit_familyg2l2();
 }
 function families3()
 {
@@ -1164,7 +1164,7 @@ function families3()
  document.getElementById("fam4").setAttribute("src","/assets/images/w.gif");
   var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
   myAudio.play();
-  enableSubmit_env1_g2l2family();
+  enableSubmit_familyg2l2();
 }
 
 //--------2--------
@@ -1177,7 +1177,7 @@ function families4()
   document.getElementById("fam5").setAttribute("src", "/assets/images/w.gif");
   var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
   myAudio.play();
-  enableSubmit_env1_g2l2family();
+  enableSubmit_familyg2l2();
 }
 function families5()
 {
@@ -1187,9 +1187,9 @@ document.getElementById("fam9").style.pointerEvents = "none";
 document.getElementById("mark2").checked = true; 
 document.getElementById("fam5").setAttribute("src", "/assets/images/yay_bunny2.gif");
 var myAudio = new Audio('/assets/audio/yay.mp3');
-document.getElementById("rew2").style.filter = "grayscale(0%)"
+document.getElementById("rew2").style.filter = "grayscale(0%)";
 myAudio.play();
-enableSubmit_env1_g2l2family();
+enableSubmit_familyg2l2();
 
 }
 
@@ -1202,7 +1202,7 @@ function families6()
   document.getElementById("fam5").setAttribute("src", "/assets/images/w.gif");
   var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
   myAudio.play();
-  enableSubmit_env1_g2l2family();
+  enableSubmit_familyg2l2();
 }
 
 //-----3-----
@@ -1216,7 +1216,7 @@ function families7()
   document.getElementById("fam6").setAttribute("src", "/assets/images/w.gif");
   var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
   myAudio.play();
-  enableSubmit_env1_g2l2family();
+  enableSubmit_familyg2l2();
 }
 
 function families8()
@@ -1228,7 +1228,7 @@ function families8()
   document.getElementById("fam6").setAttribute("src", "/assets/images/w.gif");
   var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
   myAudio.play();
-  enableSubmit_env1_g2l2family();
+  enableSubmit_familyg2l2();
 }
 
 function families9()
@@ -1239,9 +1239,9 @@ document.getElementById("fam15").style.pointerEvents = "none";
 document.getElementById("mark3").checked = true; 
 document.getElementById("fam6").setAttribute("src", "/assets/images/yay_bunny2.gif");
 var myAudio = new Audio('/assets/audio/yay.mp3');
-document.getElementById("rew3").style.filter = "grayscale(0%)"
+document.getElementById("rew3").style.filter = "grayscale(0%)";
 myAudio.play();
-enableSubmit_env1_g2l2family();
+enableSubmit_familyg2l2();
 
 }
 
@@ -1255,9 +1255,9 @@ document.getElementById("fam21").style.pointerEvents = "none";
 document.getElementById("mark4").checked = true; 
 document.getElementById("fam10").setAttribute("src", "/assets/images/yay_bunny2.gif");
 var myAudio = new Audio('/assets/audio/yay.mp3');
-document.getElementById("rew4").style.filter = "grayscale(0%)"
+document.getElementById("rew4").style.filter = "grayscale(0%)";
 myAudio.play();
-enableSubmit_env1_g2l2family();
+enableSubmit_familyg2l2();
 
 }
 
@@ -1270,7 +1270,7 @@ function families11()
   document.getElementById("fam10").setAttribute("src", "/assets/images/w.gif");
   var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
   myAudio.play();
-  enableSubmit_env1_g2l2family();
+  enableSubmit_familyg2l2();
 }
 function families12()
 {
@@ -1281,7 +1281,7 @@ function families12()
   document.getElementById("fam10").setAttribute("src", "/assets/images/w.gif");
   var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
   myAudio.play();
-  enableSubmit_env1_g2l2family();
+  enableSubmit_familyg2l2();
 }
 
 
@@ -1296,7 +1296,7 @@ function families13()
   document.getElementById("fam25").setAttribute("src", "/assets/images/w.gif");
   var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
   myAudio.play();
-  enableSubmit_env1_g2l2family();
+  enableSubmit_familyg2l2();
 }
 
 function families14()
@@ -1308,7 +1308,8 @@ function families14()
   document.getElementById("fam25").setAttribute("src", "/assets/images/w.gif");
   var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
   myAudio.play();
-  enableSubmit_env1_g2l2family();
+  enableSubmit_familyg2l2();
+}
 
 function families15()
 {
@@ -1318,9 +1319,9 @@ document.getElementById("fam22").style.pointerEvents = "none";
 document.getElementById("mark5").checked = true; 
 document.getElementById("fam25").setAttribute("src", "/assets/images/yay_bunny2.gif");
 var myAudio = new Audio('/assets/audio/yay.mp3');
-document.getElementById("rew5").style.filter = "grayscale(0%)"
+document.getElementById("rew1").style.filter = "grayscale(0%)";
 myAudio.play();
-enableSubmit_env1_g2l2family();
+enableSubmit_familyg2l2();
 
 }
 
@@ -1337,6 +1338,8 @@ function families16()
   myAudio.play();
   enableSubmit_env1_g2l2family();
 }
+
+
 function families17()
 {
 document.getElementById("fam27").style.border = "4px solid blue"; 
@@ -1345,9 +1348,9 @@ document.getElementById("fam28").style.pointerEvents = "none";
 document.getElementById("mark6").checked = true; 
 document.getElementById("fam29").setAttribute("src", "/assets/images/yay_bunny2.gif");
 var myAudio = new Audio('/assets/audio/yay.mp3');
-document.getElementById("rew6").style.filter = "grayscale(0%)"
+document.getElementById("rew2").style.filter = "grayscale(0%)";
 myAudio.play();
-enableSubmit_env1_g2l2family();
+enableSubmit_familyg2l2()
 
 }
 
@@ -1360,10 +1363,10 @@ function families18()
   document.getElementById("fam29").setAttribute("src", "/assets/images/w.gif");
   var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
   myAudio.play();
-  enableSubmit_env1_g2l2family();
+  enableSubmit_familyg2l2();
 }
 
-function enableSubmit_env1_g2l2family(){
+function  enableSubmit_familyg2l2(){
   var chk = document.querySelectorAll('input[type="checkbox"]:checked').length;
   if (chk == 6){
        document.getElementById("submit").style.display="block";
@@ -1373,4 +1376,4 @@ function enableSubmit_env1_g2l2family(){
       document.getElementById("submit").style.display="none";
         }
         }
-      }
+      
