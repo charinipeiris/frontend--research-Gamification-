@@ -411,6 +411,10 @@ const appRoutes:Routes = [
     G2video4Component,
     Game1G2L1Component,
     Game2G2L1Component,
+    Game1G2L1Component,
+    Game3Component,
+    Game4Component,
+    
     
   
 
