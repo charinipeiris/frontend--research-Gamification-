@@ -52,7 +52,7 @@ export class EnvGrade1Level2Game1Component implements OnInit {
     // this.gamesService.submitGame({    
     //   completed_games : [
     //   {
-    //   game_id : "E12",
+    //   game_id : "E22",
     //   marks : total,
     //   time_spent : time,
     //   emotions: this.child.emotions,
