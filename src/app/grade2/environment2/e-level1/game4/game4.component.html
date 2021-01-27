@@ -1,1 +1,177 @@
-<p>game4 works!</p>
+<html>
+<body id = "banner" class = "image">
+<div class="container" style="width:80%; height:auto;padding-top:20px;">
+
+    <div id = "startdiv" style ="z-index: 3; background-color:rgba(236, 236, 208, 0.95); border-style:solid; border-color:rgb(146, 146, 89); border-radius: 10px;  width:78%;min-width: 50px; min-height:630px; position: absolute">
+        <button id="startbtn" class="button4" onclick = "startgame_sinhala()"><b>ආරම්භ කරන්න</b></button>
+        <img id="start-img" src = "/assets/images/start_button.png" style=" opacity: 0.85;margin-top:-200px;width:100%;min-width: 40px; max-width:1000px;height:auto">
+       </div>
+
+    <h1 align="center" class="main-heading"><b>අපේ අලුත් අවුරුද්ද</b></h1>
+    <div class="row">
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+            <img src = "/assets/images/sound_audio3.gif" id="audio_img" class="question-audio" onclick="word_selection_play_g2_l2()">
+            <audio id="word-selection_play_g2_l2_audio" src="assets/audio/sinhala/G2L2Word-Selection.mp3" type="audio/m4a" control>Your browser does not support the audio element. </audio>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+            <h2 class="heading2"><b>නිවැරදි පිලිතුර තෝරන්න</b></h2>
+         </div>
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+            <div class="timer" id="time-back">
+                <div class="timer-text" id="display">00:00:00</div>
+                <div class="buttons" >
+                     <button hidden id="startStop" onclick="startStop()">Start</button> 
+                     <button hidden id="reset" onclick="reset()">Reset</button>
+                </div> 
+            </div>
+         </div>
+    </div> 
+
+    <br>
+
+    <div class="row">
+        <div class="col-sm-8 sol-xs-8 col-lg-8 col-md-8">
+            <div class = "row">
+                <div class="col-1">
+                    <img src = "/assets/images/sound_audio3.gif" id="audio_img" class="question-audio" onclick="word_selection_play_g2_l2()" style="height:40px; float:left">
+                </div>
+                <div class="col-11">
+                    <h4 style="float:left">අලුත් අවුරුද්දට හදන රස කැවිල්ලක් වන්නේ</h4>
+                </div>
+            </div>
+            <div class = "row">
+                <div class="col-3">
+                    <img id="one-r1" src = "/assets/images/cake.png" onclick="aurudu1()" style="border: 2px solid black; border-radius: 10px; width: 100%; min-width: 70px; max-width:120px; height: auto;">
+                </div>
+                <div class="col-3">
+                    <img id="one-r2" src = "/assets/images/hotdog.png" onclick="aurudu2()" style="border: 2px solid black; border-radius: 10px; width: 100%; min-width: 70px; max-width:120px; height: auto;">
+                </div>
+                <div class="col-3">
+                    <img id="one-r3" src = "/assets/images/kokis.png" onclick="aurudu3()" style="border: 2px solid black; border-radius: 10px; width: 100%; min-width: 70px; max-width:120px; height: auto;">
+                </div>
+                <div  class ="col-3">
+                    <img id="one-r4" src="/assets/images/sbob1.png" style="display:none; width: 100%; max-width: 80px; min-width:40px; height: auto; margin:auto">
+                </div>
+
+                <input type="checkbox" hidden id="mark1"/>
+                <input type="checkbox" hidden id="unmark1"/>
+
+            </div>
+            <br>
+            <div class = "row">
+                <div class="col-1">
+                    <img src = "/assets/images/sound_audio3.gif" id="audio_img" class="question-audio" onclick="word_selection_play_g2_l2()" style="height:40px; float:left">
+                </div>
+                <div class="col-11">
+                    <h4 style="float:left">අලුත් අවුරුදු ක්‍රීඩාවක් වන්නේ</h4>
+                </div>
+            </div>
+            <div class = "row">
+                <div class="col-3">
+                    <img id="two-r1" src = "/assets/images/volleyball.png" onclick="aurudu4()" style="border: 2px solid black; border-radius: 10px; width: 100%; min-width: 70px; max-width:120px; height: auto;">
+                </div>
+                <div class="col-3">
+                    <img id="two-r2" src = "/assets/images/kanamutti.png" onclick="aurudu5()" style="border: 2px solid black; border-radius: 10px; width: 100%; min-width: 70px; max-width:120px; height: auto;">
+                </div>
+                <div class="col-3">
+                    <img id="two-r3" src = "/assets/images/chess.png" onclick="aurudu6()" style="border: 2px solid black; border-radius: 10px; width: 100%; min-width: 70px; max-width:120px; height: auto;">
+                </div>
+                <div  class ="col-3">
+                    <img id="two-r4" src="/assets/images/sbob1.png" style="display:none; width: 100%; max-width: 80px; min-width:40px; height: auto; margin:auto">
+                </div>
+
+                <input type="checkbox" hidden id="mark2"/>
+                <input type="checkbox" hidden id="unmark2"/>
+
+            </div>
+            <br>
+            <div class = "row">
+                <div class="col-1">
+                    <img src = "/assets/images/sound_audio3.gif" id="audio_img" class="question-audio" onclick="word_selection_play_g2_l2()" style="height:40px; float:left">
+                </div>
+                <div class="col-11">
+                    <h4 style="float:left">අලුත් අවුරුදු සිරිතක් වන්නේ</h4>
+                </div>
+            </div>
+            <div class = "row">
+                <div class="col-3">
+                    <img id="three-r1" src = "/assets/images/firework.png" onclick="aurudu7()" style="border: 2px solid black; border-radius: 10px; width: 100%; min-width: 70px; max-width:120px; height: auto;">
+                </div>
+                <div class="col-3">
+                    <img id="three-r2" src = "/assets/images/neketh.png" onclick="aurudu8()" style="border: 2px solid black; border-radius: 10px; width: 100%; min-width: 70px; max-width:120px; height: auto;">
+                </div>
+                <div class="col-3">
+                    <img id="three-r3" src = "/assets/images/wesak.png" onclick="aurudu9()" style="border: 2px solid black; border-radius: 10px; width: 100%; min-width: 70px; max-width:120px; height: auto;">
+                </div>
+                <div  class ="col-3">
+                    <img id="three-r4" src="/assets/images/sbob1.png" style="display:none; width: 100%; max-width: 80px; min-width:40px; height: auto; margin:auto">
+                </div>
+
+                <input type="checkbox" hidden id="mark3"/>
+                <input type="checkbox" hidden id="unmark3"/>
+
+            </div>
+            <br>
+            <br>
+
+        </div> 
+        <div class="col-sm-4 sol-xs-4 col-lg-4 col-md-4">
+            <table>
+                <tr>
+                    <td id="cell-1" style="background-color:white; border: 1px solid black;"><img class="reward-cell" id="rew1" src="assets/images/reward1.png">
+                    </td>
+                    <td id="cell-2" style="background-color:white; border: 1px solid black;"><img class="reward-cell" id="rew2" src="assets/images/reward2.png">
+                        </td>
+                </tr>
+                <tr>
+                    <td id="cell-3" style="background-color:white; border: 1px solid black;"><img class="reward-cell" id="rew3" src="assets/images/reward3.png">
+                    </td>
+ 
+                </tr>
+             </table>
+             <div class="row">
+                <div class=col-6>
+                    <img id ="arrow1" class="arrow" style="display: none;"  src ="/assets/images/arrow_right.gif">
+                </div>
+                <div class=col-6>
+                    <button id="submit" style="display: none;" (click)="markstot()" class="button2">ඉවරයි</button> 
+                </div>
+            </div>
+        </div> 
+        <app-emotiondetector></app-emotiondetector>
+        <div hidden id="clickarray"></div>
+		<div id="myModal" class="modal">
+            <div class="modal-content">
+				<div class="row">
+					<div class="col-12">
+						<h1 align="center" style="font-family:Chalkduster, fantasy;color:darkcyan; margin-top:15px">Completed!!!</h1>
+					</div>
+				</div>
+				<div class="row coins-row">
+					<div class="col-4 coin_img1">
+						<img id="coin1" src="/assets/images/win_coin_cropped.gif" style = "visibility:hidden;">
+					</div>
+					<div class="col-4 coin_img2">
+						<img id="coin2" src="/assets/images/win_coin_cropped.gif" style = "visibility:hidden;">
+					</div>
+					<div class="col-4 coin_img3">
+						<img id="coin3" src="/assets/images/win_coin_cropped.gif" style = "visibility:hidden;">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12" class="perf-time1">
+						<h5 class="perf-time2">ගත වූ කාලය : <span id="perf-time"></span></h5>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+				        <a href="grade2/environment/level1" class="button3">ආපසු</a>
+					</div>
+				</div>
+			</div>								    	
+		</div>
+    </div>
+
+ </div>
+</body>
+</html>
