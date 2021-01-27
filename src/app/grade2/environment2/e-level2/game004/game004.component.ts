@@ -23,25 +23,47 @@ export class Game004Component implements OnInit {totalmarks: any;
 
 
     var total = 0;
+    var final_total = 0;
 
     let element1 = <HTMLInputElement>document.getElementById("mark1");
     let element2 = <HTMLInputElement>document.getElementById("mark2");
     let element3 = <HTMLInputElement>document.getElementById("mark3");
     let element4 = <HTMLInputElement>document.getElementById("mark4");
+    let element5 = <HTMLInputElement>document.getElementById("mark5");
+    let element6 = <HTMLInputElement>document.getElementById("mark6");
 
     if (element1.checked) {
       total = total + 1;
     }
 
-    if (element2.checked)
+    if (element2.checked) {
       total = total + 1;
-
-    if (element3.checked)
+    }
+    if (element3.checked) {
       total = total + 1;
-
-
-    if (element4.checked)
+    }
+    if (element4.checked){
     total = total + 1;
+    }
+    if (element5.checked){
+    total = total + 1;
+    }
+    if (element6.checked){
+    total = total + 1;
+    }
+
+    if (total == 6 || total == 5){
+      final_total = 3;
+    }
+    if (total == 4 || total == 3){
+      final_total = 2;
+    }
+    if (total == 2 || total == 1){
+      final_total = 1;
+    }
+    if (total == 0){
+      final_total = 0;
+    }
 
     // console.log(total);
 
@@ -50,7 +72,7 @@ export class Game004Component implements OnInit {totalmarks: any;
     //   completed_games : [
     //   {
     //   game_id : "e23",
-    //   marks : total,
+    //   marks : final_total,
     //   time_spent : time,
     //   emotions: this.child.emotions,
     //   max_idle_time :  clicksarray
@@ -63,10 +85,10 @@ export class Game004Component implements OnInit {totalmarks: any;
     var chk = document.querySelectorAll('input[type="checkbox"]:checked').length;
     var modal = document.getElementById("myModal");
     var subbtn = document.getElementById("submit");
-    if (chk == 4) {
+    if (chk == 6) {
 
      
-  if (total == 4){
+  if (final_total == 3){
     modal.style.display = "block";
     subbtn.style.display = "none";
     setTimeout(function(){
@@ -80,16 +102,12 @@ export class Game004Component implements OnInit {totalmarks: any;
     setTimeout(function(){
         document.getElementById('coin3').style.visibility = "visible";
         },2000);
-    
-    setTimeout(function(){
-          document.getElementById('coin4').style.visibility = "visible";
-          },2000);
 
           document.getElementById("perf-time").innerHTML = time;
     }
     
 
-  if (total == 3){
+  if (final_total == 2){
 modal.style.display = "block";
 subbtn.style.display = "none";
 setTimeout(function(){
@@ -103,16 +121,13 @@ setTimeout(function(){
 setTimeout(function(){
     document.getElementById('coin3').style.visibility = "visible";
     },2000);
+    document.getElementById('coin3').style.opacity ="0.3";
 
-setTimeout(function(){
-    document.getElementById('coin4').style.visibility = "visible";
-          },2000);
-    document.getElementById('coin4').style.opacity ="0.3";
     document.getElementById("perf-time").innerHTML = time;
 
 
 }
-else if (total == 2){
+else if (final_total == 1){
 modal.style.display = "block";
 setTimeout(function(){
   document.getElementById('coin1').style.visibility = "visible";
@@ -121,45 +136,19 @@ setTimeout(function(){
 setTimeout(function(){
   document.getElementById('coin2').style.visibility = "visible";
   },1500);
+  document.getElementById('coin2').style.opacity ="0.3";
 
   setTimeout(function(){
     document.getElementById('coin3').style.visibility = "visible";
     },1900);
   document.getElementById('coin3').style.opacity ="0.3";
-  setTimeout(function(){
-    document.getElementById('coin4').style.visibility = "visible";
-          },2000);
-    document.getElementById('coin4').style.opacity ="0.3";
+
     document.getElementById("perf-time").innerHTML = time;
 
 }
 
-else if(total == 1){
+else if(final_total == 0){
 modal.style.display = "block";
-  setTimeout(function(){
-    document.getElementById('coin1').style.visibility = "visible";
-    },1000);
-  
-    setTimeout(function(){
-    document.getElementById('coin2').style.visibility = "visible";
-      },1500);
-      document.getElementById('coin2').style.opacity ="0.3";
-
-    setTimeout(function(){
-      document.getElementById('coin3').style.visibility = "visible";
-        },1900);
-      document.getElementById('coin3').style.opacity ="0.3";
-      setTimeout(function(){
-        document.getElementById('coin4').style.visibility = "visible";
-              },2000);
-        document.getElementById('coin4').style.opacity ="0.3";
-        document.getElementById("perf-time").innerHTML = time;
-  
-    
-  
-}
-else if(total == 0){
-  modal.style.display = "block";
   setTimeout(function(){
     document.getElementById('coin1').style.visibility = "visible";
     },1000);
@@ -174,13 +163,13 @@ else if(total == 0){
       document.getElementById('coin3').style.visibility = "visible";
         },1900);
       document.getElementById('coin3').style.opacity ="0.3";
-      setTimeout(function(){
-        document.getElementById('coin4').style.visibility = "visible";
-              },2000);
-        document.getElementById('coin4').style.opacity ="0.3";
-        document.getElementById("perf-time").innerHTML = time;
 
-  }
+        document.getElementById("perf-time").innerHTML = time;
+  
+    
+  
+}
+
 
 }
 else {
