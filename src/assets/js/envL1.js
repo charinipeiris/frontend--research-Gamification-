@@ -1298,3 +1298,45 @@ function env_g1_l1_g5_play_6() {
   var audio = document.getElementById("env_g1_l1_g5_play_6");
   audio.play();
 }
+
+ //--------------------Audio functions for Grade 2 level 1 ----------------------
+ //--------------------Game 2-----------------------------------------------------
+ function env_g2_l1_g2_play_2() {
+  var audio = document.getElementById("env_g2_l1_g2_play_2");
+  audio.play();
+}
+ function env_g2_l1_g2_play_6() {
+  var audio = document.getElementById("env_g2_l1_g2_play_6");
+  audio.play();
+}
+function env_g2_l1_g2_play_7() {
+  var audio = document.getElementById("env_g2_l1_g2_play_7");
+  audio.play();
+}
+
+ //--------------------Game 3-----------------------------------------------------
+ function env_g2_l1_g3_play_2() {
+  var audio = document.getElementById("env_g2_l1_g3_play_2");
+  audio.play();
+}
+
+ //--------------------Game 5-----------------------------------------------------
+ function env_g2_l1_g5_play_2() {
+  var audio = document.getElementById("env_g2_l1_g5_play_2");
+  audio.play();
+}
+
+function env_g2_l1_g5_play_3() {
+  var audio = document.getElementById("env_g2_l1_g5_play_3");
+  audio.play();
+}
+
+function env_g2_l1_g5_play_4() {
+  var audio = document.getElementById("env_g2_l1_g5_play_4");
+  audio.play();
+}
+
+function env_g2_l1_g5_play_7() {
+  var audio = document.getElementById("env_g2_l1_g5_play_7");
+  audio.play();
+}

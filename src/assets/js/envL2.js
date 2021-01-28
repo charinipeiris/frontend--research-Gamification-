@@ -1468,3 +1468,87 @@ function env_g1_l2_g5_play_6() {
   var audio = document.getElementById("env_g1_l2_g5_play_6");
   audio.play();
 }
+
+//--------------------Game 3 - Animals - Audio-----------------------------------------------------
+//--------------------Q5) Cats
+function cats_meow() {
+  var audio = document.getElementById("cats_meow");
+  audio.play();
+}
+
+//--------------------Q6) Dogs
+function dogs_bark() {
+  var audio = document.getElementById("dogs_bark");
+  audio.play();
+}
+
+//--------------------Audio functions for Grade 2 level 2 ----------------------
+ //--------------------Game 1-----------------------------------------------------
+ function env_g2_l2_g1_play_2() {
+  var audio = document.getElementById("env_g2_l2_g1_play_2");
+  audio.play();
+}
+
+function env_g2_l2_g1_play_6() {
+  var audio = document.getElementById("env_g2_l2_g1_play_6");
+  audio.play();
+}
+
+function env_g2_l2_g1_play_7() {
+  var audio = document.getElementById("env_g2_l2_g1_play_7");
+  audio.play();
+}
+
+ //--------------------Game 2-----------------------------------------------------
+ function env_g2_l2_g2_play_2() {
+  var audio = document.getElementById("env_g2_l2_g2_play_2");
+  audio.play();
+}
+
+function env_g2_l2_g2_play_3() {
+  var audio = document.getElementById("env_g2_l2_g2_play_3");
+  audio.play();
+}
+
+function env_g2_l2_g2_play_4() {
+  var audio = document.getElementById("env_g2_l2_g2_play_4");
+  audio.play();
+}
+
+ //--------------------Game 3-----------------------------------------------------
+ function env_g2_l2_g3_play_6() {
+  var audio = document.getElementById("env_g2_l2_g3_play_6");
+  audio.play();
+}
+
+function env_g2_l2_g3_play_7() {
+  var audio = document.getElementById("env_g2_l2_g3_play_7");
+  audio.play();
+}
+
+//--------------------Game 4-----------------------------------------------------
+function env_g2_l2_g4_play_6() {
+  var audio = document.getElementById("env_g2_l2_g4_play_6");
+  audio.play();
+}
+
+function env_g2_l2_g4_play_7() {
+  var audio = document.getElementById("env_g2_l2_g4_play_7");
+  audio.play();
+}
+
+//--------------------Game 5-----------------------------------------------------
+function env_g2_l2_g5_play_4() {
+  var audio = document.getElementById("env_g2_l2_g5_play_4");
+  audio.play();
+}
+
+function env_g2_l2_g5_play_5() {
+  var audio = document.getElementById("env_g2_l2_g5_play_5");
+  audio.play();
+}
+
+function env_g2_l2_g5_play_6() {
+  var audio = document.getElementById("env_g2_l2_g5_play_6");
+  audio.play();
+}
