@@ -6,7 +6,8 @@ import { EmotiondetectorComponent } from '../../../../emotiondetector/emotiondet
   templateUrl: './game004.component.html',
   styleUrls: ['./game004.component.css']
 })
-export class Game004Component implements OnInit {totalmarks: any;
+export class Game004Component implements OnInit {
+  totalmarks: any;
   @ViewChild(EmotiondetectorComponent) child: EmotiondetectorComponent;
   constructor(private gamesService: GamesService){}
 
