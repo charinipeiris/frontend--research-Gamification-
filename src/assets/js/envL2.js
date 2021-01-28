@@ -1377,3 +1377,94 @@ function  enableSubmit_familyg2l2(){
         }
         }
       
+
+ //--------------------Audio functions for Grade 1 level 2 ----------------------
+ //--------------------Game 1-----------------------------------------------------
+ function env_g1_l2_g1_play_2() {
+  var audio = document.getElementById("env_g1_l2_g1_play_2");
+  audio.play();
+}
+
+function env_g1_l2_g1_play_3() {
+  var audio = document.getElementById("env_g1_l2_g1_play_3");
+  audio.play();
+}
+
+function env_g1_l2_g1_play_4() {
+  var audio = document.getElementById("env_g1_l2_g1_play_4");
+  audio.play();
+}
+
+function env_g1_l2_g1_play_5() {
+  var audio = document.getElementById("env_g1_l2_g1_play_5");
+  audio.play();
+}
+
+ //--------------------Game 3-----------------------------------------------------
+ function env_g1_l2_g3_play_2() {
+  var audio = document.getElementById("env_g1_l2_g3_play_2");
+  audio.play();
+}
+
+function env_g1_l2_g3_play_3() {
+  var audio = document.getElementById("env_g1_l2_g3_play_3");
+  audio.play();
+}
+
+function env_g1_l2_g3_play_4() {
+  var audio = document.getElementById("env_g1_l2_g3_play_4");
+  audio.play();
+}
+
+function env_g1_l2_g3_play_5() {
+  var audio = document.getElementById("env_g1_l2_g3_play_5");
+  audio.play();
+}
+
+
+ //--------------------Game 4-----------------------------------------------------
+ function env_g1_l2_g4_play_2() {
+  var audio = document.getElementById("env_g1_l2_g4_play_2");
+  audio.play();
+}
+
+function env_g1_l2_g4_play_3() {
+  var audio = document.getElementById("env_g1_l2_g4_play_3");
+  audio.play();
+}
+
+function env_g1_l2_g4_play_4() {
+  var audio = document.getElementById("env_g1_l2_g4_play_4");
+  audio.play();
+}
+
+function env_g1_l2_g4_play_5() {
+  var audio = document.getElementById("env_g1_l2_g4_play_5");
+  audio.play();
+}
+
+//--------------------Game 5-----------------------------------------------------
+function env_g1_l2_g5_play_2() {
+  var audio = document.getElementById("env_g1_l2_g5_play_2");
+  audio.play();
+}
+
+function env_g1_l2_g5_play_3() {
+  var audio = document.getElementById("env_g1_l2_g5_play_3");
+  audio.play();
+}
+
+function env_g1_l2_g5_play_4() {
+  var audio = document.getElementById("env_g1_l2_g5_play_4");
+  audio.play();
+}
+
+function env_g1_l2_g5_play_5() {
+  var audio = document.getElementById("env_g1_l2_g5_play_5");
+  audio.play();
+}
+
+function env_g1_l2_g5_play_6() {
+  var audio = document.getElementById("env_g1_l2_g5_play_6");
+  audio.play();
+}

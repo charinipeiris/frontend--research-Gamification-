@@ -612,6 +612,128 @@ var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
   enableSubmit_sinhalaword4()
 }
 
+
+
+//--------------- Grade 1 level 1 - environment "ape aurudu" ---------------
+
+function aurudu1()
+{
+document.getElementById("one-r1").style.border = "4px solid red"; 
+document.getElementById("one-r2").style.pointerEvents = "none";
+document.getElementById("one-r3").style.pointerEvents = "none";
+document.getElementById("unmark1").checked = true; 
+document.getElementById("one-r4").setAttribute("src", "/assets/images/w.gif")
+document.getElementById("one-r4").style.display = "block";
+var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
+  myAudio.play();
+  enableSubmit_sinhalaword4()
+}
+
+function aurudu2()
+{
+document.getElementById("one-r2").style.border = "4px solid red"; 
+document.getElementById("one-r1").style.pointerEvents = "none";
+document.getElementById("one-r3").style.pointerEvents = "none";
+document.getElementById("unmark1").checked = true; 
+document.getElementById("one-r4").setAttribute("src", "/assets/images/w.gif")
+document.getElementById("one-r4").style.display = "block";
+var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
+  myAudio.play();
+  enableSubmit_sinhalaword4()
+}
+
+function aurudu3()
+{
+document.getElementById("one-r3").style.border = "4px solid blue"; 
+document.getElementById("one-r1").style.pointerEvents = "none";
+document.getElementById("one-r2").style.pointerEvents = "none";
+document.getElementById("mark1").checked = true; 
+document.getElementById("one-r4").style.display = "block";
+document.getElementById("rew1").style.filter = "grayscale(0%)"
+document.getElementById("cell-1").style.border = "4px solid #4b53bd";
+var myAudio = new Audio('/assets/audio/yay.mp3');
+  myAudio.play();
+  enableSubmit_sinhalaword4()
+}
+
+function aurudu4()
+{
+document.getElementById("two-r1").style.border = "4px solid red"; 
+document.getElementById("two-r2").style.pointerEvents = "none";
+document.getElementById("two-r3").style.pointerEvents = "none";
+document.getElementById("unmark2").checked = true; 
+document.getElementById("two-r4").setAttribute("src", "/assets/images/w.gif")
+document.getElementById("two-r4").style.display = "block";
+var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
+  myAudio.play();
+  enableSubmit_sinhalaword4()
+}
+function aurudu5()
+{
+document.getElementById("two-r2").style.border = "4px solid blue"; 
+document.getElementById("two-r1").style.pointerEvents = "none";
+document.getElementById("two-r3").style.pointerEvents = "none";
+document.getElementById("mark2").checked = true; 
+document.getElementById("two-r4").style.display = "block";
+document.getElementById("rew2").style.filter = "grayscale(0%)"
+document.getElementById("cell-2").style.border = "4px solid pink";
+var myAudio = new Audio('/assets/audio/yay.mp3');
+  myAudio.play();
+  enableSubmit_sinhalaword4()
+}
+
+function aurudu6()
+{
+document.getElementById("two-r3").style.border = "4px solid red"; 
+document.getElementById("two-r1").style.pointerEvents = "none";
+document.getElementById("two-r2").style.pointerEvents = "none";
+document.getElementById("unmark2").checked = true; 
+document.getElementById("two-r4").setAttribute("src", "/assets/images/w.gif")
+document.getElementById("two-r4").style.display = "block";
+var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
+  myAudio.play();
+  enableSubmit_sinhalaword4()
+}
+
+function aurudu7()
+{
+document.getElementById("three-r1").style.border = "4px solid red"; 
+document.getElementById("three-r2").style.pointerEvents = "none";
+document.getElementById("three-r3").style.pointerEvents = "none";
+document.getElementById("unmark3").checked = true; 
+document.getElementById("three-r4").setAttribute("src", "/assets/images/w.gif")
+document.getElementById("three-r4").style.display = "block";
+var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
+  myAudio.play();
+  enableSubmit_sinhalaword4()
+}
+function aurudu8()
+{
+document.getElementById("three-r2").style.border = "4px solid blue"; 
+document.getElementById("three-r1").style.pointerEvents = "none";
+document.getElementById("three-r3").style.pointerEvents = "none";
+document.getElementById("mark3").checked = true; 
+document.getElementById("three-r4").style.display = "block";
+document.getElementById("rew3").style.filter = "grayscale(0%)"
+document.getElementById("cell-3").style.border = "4px solid red";
+var myAudio = new Audio('/assets/audio/yay.mp3');
+  myAudio.play();
+  enableSubmit_sinhalaword4()
+}
+
+function aurudu9()
+{
+document.getElementById("three-r3").style.border = "4px solid red"; 
+document.getElementById("three-r1").style.pointerEvents = "none";
+document.getElementById("three-r2").style.pointerEvents = "none";
+document.getElementById("unmark3").checked = true; 
+document.getElementById("three-r4").setAttribute("src", "/assets/images/w.gif")
+document.getElementById("three-r4").style.display = "block";
+var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
+  myAudio.play();
+  enableSubmit_sinhalaword4()
+}
+
 //------------------game 5 ----------------------------------------------------------------------------------------------------
 
 //---------------1----
@@ -817,9 +939,7 @@ function enableSubmit_g1env5(){
         }
 
 
-   //==========================grade 2 level 1========================================
-   
-   
+   //==========================grade 2 level 1========================================   
    //===============game 2 food grade 2 level 1 ================================
 
    
@@ -1066,3 +1186,115 @@ function enableSubmit_food2env2(){
       document.getElementById("submit").style.display="none";
         }
         }
+ //--------------------Audio functions for Grade 1 level 1 ----------------------
+ //--------------------Game 1-----------------------------------------------------
+ function env_g1_l1_g1_play_1() {
+  var audio = document.getElementById("env_g1_l1_g1_play_1");
+  audio.play();
+}
+
+function env_g1_l1_g1_play_2() {
+  var audio = document.getElementById("env_g1_l1_g1_play_2");
+  audio.play();
+}
+
+function env_g1_l1_g1_play_3() {
+  var audio = document.getElementById("env_g1_l1_g1_play_3");
+  audio.play();
+}
+
+function env_g1_l1_g1_play_4() {
+  var audio = document.getElementById("env_g1_l1_g1_play_4");
+  audio.play();
+}
+
+
+ //--------------------Game 2-----------------------------------------------------
+
+ function env_g1_l1_g2_play_2() {
+  var audio = document.getElementById("env_g1_l1_g2_play_2");
+  audio.play();
+}
+
+function env_g1_l1_g2_play_3() {
+  var audio = document.getElementById("env_g1_l1_g2_play_3");
+  audio.play();
+}
+
+function env_g1_l1_g2_play_4() {
+  var audio = document.getElementById("env_g1_l1_g2_play_4");
+  audio.play();
+}
+
+function env_g1_l1_g2_play_5() {
+  var audio = document.getElementById("env_g1_l1_g2_play_5");
+  audio.play();
+}
+
+
+ //--------------------Game 3-----------------------------------------------------
+
+ function env_g1_l1_g3_play_2() {
+  var audio = document.getElementById("env_g1_l1_g3_play_2");
+  audio.play();
+}
+
+function env_g1_l1_g3_play_3() {
+  var audio = document.getElementById("env_g1_l1_g3_play_3");
+  audio.play();
+}
+
+function env_g1_l1_g3_play_4() {
+  var audio = document.getElementById("env_g1_l1_g3_play_4");
+  audio.play();
+}
+
+function env_g1_l1_g3_play_5() {
+  var audio = document.getElementById("env_g1_l1_g3_play_5");
+  audio.play();
+}
+
+ //--------------------Game 4-----------------------------------------------------
+
+ function env_g1_l1_g4_play_2() {
+  var audio = document.getElementById("env_g1_l1_g4_play_2");
+  audio.play();
+}
+
+function env_g1_l1_g4_play_3() {
+  var audio = document.getElementById("env_g1_l1_g4_play_3");
+  audio.play();
+}
+
+function env_g1_l1_g4_play_4() {
+  var audio = document.getElementById("env_g1_l1_g4_play_4");
+  audio.play();
+}
+
+
+//--------------------Game 5-----------------------------------------------------
+
+function env_g1_l1_g5_play_2() {
+  var audio = document.getElementById("env_g1_l1_g5_play_2");
+  audio.play();
+}
+
+function env_g1_l1_g5_play_3() {
+  var audio = document.getElementById("env_g1_l1_g5_play_3");
+  audio.play();
+}
+
+function env_g1_l1_g5_play_4() {
+  var audio = document.getElementById("env_g1_l1_g5_play_4");
+  audio.play();
+}
+
+function env_g1_l1_g5_play_5() {
+  var audio = document.getElementById("env_g1_l1_g5_play_5");
+  audio.play();
+}
+
+function env_g1_l1_g5_play_6() {
+  var audio = document.getElementById("env_g1_l1_g5_play_6");
+  audio.play();
+}
