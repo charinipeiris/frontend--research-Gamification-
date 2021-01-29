@@ -1341,7 +1341,7 @@ function families16()
   document.getElementById("fam29").setAttribute("src", "/assets/images/w.gif");
   var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
   myAudio.play();
-  enableSubmit_env1_g2l2family();
+  enableSubmit_familyg2l2();
 }
 
 
