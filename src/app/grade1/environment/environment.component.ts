@@ -12,8 +12,8 @@ export class EnvironmentComponent implements OnInit {
   levelGames2=[];
   btn1: number;
   btn2: number;
-  sL1 : number;
-  sL2 : number;
+  eL1 : number;
+  eL2 : number;
   constructor(private gameService: GamesService) { 
     this.btn1 = 0;
     this.btn2 = 0;
@@ -55,11 +55,11 @@ export class EnvironmentComponent implements OnInit {
   
     var username = localStorage.getItem("uname");
     this.gameService.getStudentDetails(username).subscribe((data:any) => {
-      this.sL1 = data.sL1;
-      this.sL2 = data.sL2;
-      // console.log(this.btn1);
-      // console.log(this.btn1);
-      if (this.sL1 == 0){
+      this.eL1 = data.eL1;
+      this.eL2 = data.eL2;
+      console.log(this.eL1);
+      console.log(this.btn1);
+      if (this.eL1 == 0){
         if (this.btn1 == 5)
   
        {
@@ -79,7 +79,7 @@ export class EnvironmentComponent implements OnInit {
       }
   
   // console.log(this.btn2);
-      if (this.sL2 == 0){
+      if (this.eL2 == 0){
         if (this.btn2 == 5)
   
        {
