@@ -1477,8 +1477,8 @@ function env_g1_l2_g5_play_6() {
 
 //--------------------Game 3 - Animals - Audio-----------------------------------------------------
 //--------------------Q5) Cats
-function cats_meow() {
-  var audio = document.getElementById("cats_meow");
+function parrot() {
+  var audio = document.getElementById("parrot");
   audio.play();
 }
 
