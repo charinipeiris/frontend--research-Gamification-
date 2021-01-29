@@ -68,7 +68,7 @@ function fin6()
 {
   document.getElementById("fins5").style.border = "4px solid red"; 
   document.getElementById("fins4").style.pointerEvents = "none";
-  document.getElementById("fins6").style.pointerEvents = "none";
+  document.getElementById("fins5").style.pointerEvents = "none";
   document.getElementById("unmark2").checked = true; 
   document.getElementById("fins11").setAttribute("src", "/assets/images/w.gif");
   var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
@@ -81,8 +81,8 @@ function fin6()
 function fin7()
 {
   document.getElementById("fins9").style.border = "4px solid red"; 
-  document.getElementById("fins7").style.pointerEvents = "none";
   document.getElementById("fins8").style.pointerEvents = "none";
+  document.getElementById("fins9").style.pointerEvents = "none";
   document.getElementById("unmark3").checked = true; 
   document.getElementById("fins12").setAttribute("src", "/assets/images/w.gif");
   var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
