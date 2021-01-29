@@ -355,7 +355,7 @@ function animalal2g1_4()
 {
 document.getElementById("two-r1").style.border = "4px solid red"; 
 document.getElementById("two-r2").style.pointerEvents = "none";
-document.getElementById("one-r3").style.pointerEvents = "none";
+document.getElementById("two-r3").style.pointerEvents = "none";
 document.getElementById("unmark2").checked = true; 
 document.getElementById("two-r4").setAttribute("src", "/assets/images/w.gif")
 document.getElementById("two-r4").style.display = "block";
