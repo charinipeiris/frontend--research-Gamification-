@@ -501,10 +501,10 @@ function aurudu24()
 {
 document.getElementById("two-r1").style.border = "4px solid red"; 
 document.getElementById("two-r2").style.pointerEvents = "none";
-document.getElementById("one-r3").style.pointerEvents = "none";
+document.getElementById("two-r3").style.pointerEvents = "none";
 document.getElementById("unmark2").checked = true; 
-document.getElementById("one-r4").setAttribute("src", "/assets/images/w.gif")
-document.getElementById("one-r4").style.display = "block";
+document.getElementById("two-r4").setAttribute("src", "/assets/images/w.gif")
+document.getElementById("two-r4").style.display = "block";
 var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
   myAudio.play();
   enableSubmit_sinhala()
@@ -530,8 +530,8 @@ document.getElementById("two-r3").style.border = "4px solid red";
 document.getElementById("two-r1").style.pointerEvents = "none";
 document.getElementById("two-r2").style.pointerEvents = "none";
 document.getElementById("unmark2").checked = true; 
-document.getElementById("one-r4").setAttribute("src", "/assets/images/w.gif")
-document.getElementById("one-r4").style.display = "block";
+document.getElementById("two-r4").setAttribute("src", "/assets/images/w.gif")
+document.getElementById("two-r4").style.display = "block";
 var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
   myAudio.play();
   enableSubmit_sinhala()
@@ -848,10 +848,10 @@ function G2aurudu4()
 {
 document.getElementById("two-r1").style.border = "4px solid red"; 
 document.getElementById("two-r2").style.pointerEvents = "none";
-document.getElementById("one-r3").style.pointerEvents = "none";
+document.getElementById("two-r3").style.pointerEvents = "none";
 document.getElementById("unmark2").checked = true; 
-document.getElementById("one-r4").setAttribute("src", "/assets/images/w.gif")
-document.getElementById("one-r4").style.display = "block";
+document.getElementById("two-r4").setAttribute("src", "/assets/images/w.gif")
+document.getElementById("two-r4").style.display = "block";
 var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
   myAudio.play();
   enableSubmit_sinhalaWords()
@@ -877,8 +877,8 @@ document.getElementById("two-r3").style.border = "4px solid red";
 document.getElementById("two-r1").style.pointerEvents = "none";
 document.getElementById("two-r2").style.pointerEvents = "none";
 document.getElementById("unmark2").checked = true; 
-document.getElementById("one-r4").setAttribute("src", "/assets/images/w.gif")
-document.getElementById("one-r4").style.display = "block";
+document.getElementById("two-r4").setAttribute("src", "/assets/images/w.gif")
+document.getElementById("two-r4").style.display = "block";
 var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
   myAudio.play();
   enableSubmit_sinhalaWords()
