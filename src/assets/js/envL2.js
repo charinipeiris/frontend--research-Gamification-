@@ -1248,7 +1248,7 @@ enableSubmit_familyg2l2();
 
 }
 
-//----4
+//----4 --------------------
 
 function families10()
 {
@@ -1337,7 +1337,7 @@ function families16()
   document.getElementById("fam27").style.border = "4px solid red"; 
   document.getElementById("fam27").style.pointerEvents = "none";
   document.getElementById("fam28").style.pointerEvents = "none";
-  document.getElementById("unmark6").checked = true; 
+  document.getElementById("mark6").checked = true; 
   document.getElementById("fam29").setAttribute("src", "/assets/images/w.gif");
   var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
   myAudio.play();
@@ -1350,7 +1350,7 @@ function families17()
 document.getElementById("fam27").style.border = "4px solid blue"; 
 document.getElementById("fam26").style.pointerEvents = "none";
 document.getElementById("fam28").style.pointerEvents = "none";
-document.getElementById("mark6").checked = true; 
+document.getElementById("unmark6").checked = true; 
 document.getElementById("fam29").setAttribute("src", "/assets/images/yay_bunny2.gif");
 var myAudio = new Audio('/assets/audio/yay.mp3');
 document.getElementById("rew6").style.filter = "grayscale(0%)";
