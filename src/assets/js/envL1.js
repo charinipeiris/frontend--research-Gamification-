@@ -987,7 +987,7 @@ function foodie4()
   document.getElementById("mem5").style.pointerEvents = "none";
   document.getElementById("mem6").style.pointerEvents = "none";
   document.getElementById("unmark2").checked = true; 
-  document.getElementById("amem14").setAttribute("src", "/assets/images/w.gif");
+  document.getElementById("mem14").setAttribute("src", "/assets/images/w.gif");
   var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
   myAudio.play();
   enableSubmit_food2env2();
