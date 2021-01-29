@@ -7,7 +7,8 @@ document.getElementById("fins3").style.pointerEvents = "none";
 document.getElementById("mark1").checked = true; 
 document.getElementById("fins10").setAttribute("src", "/assets/images/yay_bunny2.gif");
 var myAudio = new Audio('/assets/audio/yay.mp3');
-document.getElementById("rew1").style.filter = "grayscale(0%)"
+document.getElementById("rew1").style.filter = "grayscale(0%)";
+document.getElementById("cell-1").style.border = "4px solid #4b53bd";
 myAudio.play();
 enableSubmit_envir2()
 
@@ -56,7 +57,8 @@ document.getElementById("fins6").style.pointerEvents = "none";
 document.getElementById("mark2").checked = true; 
 document.getElementById("fins11").setAttribute("src", "/assets/images/yay_bunny2.gif");
 var myAudio = new Audio('/assets/audio/yay.mp3');
-document.getElementById("rew2").style.filter = "grayscale(0%)"
+document.getElementById("rew2").style.filter = "grayscale(0%)";
+document.getElementById("cell-2").style.border = "4px solid #c146b8";
 myAudio.play();
 enableSubmit_envir2()
 
@@ -108,7 +110,8 @@ document.getElementById("fins8").style.pointerEvents = "none";
 document.getElementById("mark3").checked = true; 
 document.getElementById("fins12").setAttribute("src", "/assets/images/yay_bunny2.gif");
 var myAudio = new Audio('/assets/audio/yay.mp3');
-document.getElementById("rew3").style.filter = "grayscale(0%)"
+document.getElementById("rew3").style.filter = "grayscale(0%)";
+document.getElementById("cell-3").style.border = "4px solid red";
 myAudio.play();
 enableSubmit_envir2()
 
@@ -951,7 +954,8 @@ document.getElementById("mem3").style.pointerEvents = "none";
 document.getElementById("mark1").checked = true; 
 document.getElementById("mem13").setAttribute("src", "/assets/images/yay_bunny2.gif");
 var myAudio = new Audio('/assets/audio/yay.mp3');
-document.getElementById("rew1").style.filter = "grayscale(0%)"
+document.getElementById("rew1").style.filter = "grayscale(0%)";
+document.getElementById("cell-1").style.border = "4px solid blue";
 myAudio.play();
 enableSubmit_food2env2();
 }
@@ -1000,7 +1004,8 @@ document.getElementById("mem5").style.pointerEvents = "none";
 document.getElementById("mark2").checked = true; 
 document.getElementById("mem14").setAttribute("src", "/assets/images/yay_bunny2.gif");
 var myAudio = new Audio('/assets/audio/yay.mp3');
-document.getElementById("rew2").style.filter = "grayscale(0%)"
+document.getElementById("rew2").style.filter = "grayscale(0%)";
+document.getElementById("cell-2").style.border = "4px solid #a01f8b";
 myAudio.play();
 enableSubmit_food2env2();
 
@@ -1052,7 +1057,8 @@ document.getElementById("mem7").style.pointerEvents = "none";
 document.getElementById("mark3").checked = true; 
 document.getElementById("mem15").setAttribute("src", "/assets/images/yay_bunny2.gif");
 var myAudio = new Audio('/assets/audio/yay.mp3');
-document.getElementById("rew3").style.filter = "grayscale(0%)"
+document.getElementById("rew3").style.filter = "grayscale(0%)";
+document.getElementById("cell-3").style.border = "4px solid red";
 myAudio.play();
 enableSubmit_food2env2();
 
@@ -1082,7 +1088,8 @@ function foodie11()
   document.getElementById("mark4").checked = true; 
   document.getElementById("mem16").setAttribute("src", "/assets/images/yay_bunny2.gif");
   var myAudio = new Audio('/assets/audio/yay.mp3');
-  document.getElementById("rew4").style.filter = "grayscale(0%)"
+  document.getElementById("rew4").style.filter = "grayscale(0%)";
+  document.getElementById("cell-4").style.border = "4px solid yellow";
   myAudio.play();
   enableSubmit_food2env2();
 }
@@ -1107,7 +1114,8 @@ document.getElementById("mem19").style.pointerEvents = "none";
 document.getElementById("mark5").checked = true; 
 document.getElementById("mem20").setAttribute("src", "/assets/images/yay_bunny2.gif");
 var myAudio = new Audio('/assets/audio/yay.mp3');
-document.getElementById("rew1").style.filter = "grayscale(0%)"
+document.getElementById("rew5").style.filter = "grayscale(0%)";
+document.getElementById("cell-5").style.border = "4px solid #39b7c3";
 myAudio.play();
 enableSubmit_food2env2();
 
@@ -1158,7 +1166,8 @@ document.getElementById("mem23").style.pointerEvents = "none";
 document.getElementById("mark6").checked = true; 
 document.getElementById("mem24").setAttribute("src", "/assets/images/yay_bunny2.gif");
 var myAudio = new Audio('/assets/audio/yay.mp3');
-document.getElementById("rew2").style.filter = "grayscale(0%)"
+document.getElementById("rew6").style.filter = "grayscale(0%)";
+document.getElementById("cell-6").style.border = "4px solid #d828a2";
 myAudio.play();
 enableSubmit_food2env2();
 
