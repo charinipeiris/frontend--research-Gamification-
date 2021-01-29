@@ -144,6 +144,7 @@ import { Game1G2L1Component } from './grade2/environment2/e-level1/game1-g2-l1/g
 import { Game2G2L1Component } from './grade2/environment2/e-level1/game2-g2-l1/game2-g2-l1.component';
 import { Game5Component } from './grade2/environment2/e-level1/game5/game5.component';
 import { Game005Component } from './grade2/environment2/e-level2/game005/game005.component';
+import { VideoSchoolComponent } from './grade2/environment2/e-level2/video-school/video-school.component';
 
 
 
@@ -303,6 +304,8 @@ const appRoutes:Routes = [
   {path:'grade2/environment/level2/game3',component: Game003Component},
   {path:'grade2/environment/level2/game4',component: Game004Component},
   {path:'grade2/environment/level2/game5',component: Game005Component},
+  
+  {path:'grade2/environment/level2/video-school',component:VideoSchoolComponent},
 ]
 @NgModule({
   declarations: [
@@ -420,6 +423,7 @@ const appRoutes:Routes = [
     Game4Component,
     Game5Component,
     Game005Component,
+    VideoSchoolComponent,
     
     
   
