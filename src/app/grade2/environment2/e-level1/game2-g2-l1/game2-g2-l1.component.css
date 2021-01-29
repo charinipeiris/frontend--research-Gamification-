@@ -97,6 +97,18 @@
     right: 0;
     /* background-color:white; */
   }
+  table{
+    margin: 0 0 0 -6rem;
+  }
+
+
+  table ,td {
+    border-collapse: inherit;
+    border-radius: 1em;
+    padding: 1rem 1rem 0.5rem 1rem;
+    /* padding:15px; */
+    /* border-spacing: 0px; */
+    }
 
   .center {
       display: flex;
@@ -394,6 +406,12 @@
     .perf-time1{
       margin-top: 50px;
       margin-left: 50px;
+      }
+      table {
+        margin-left:30px;
+      }
+      table ,td{
+        padding: 0.5rem 0.5rem 0.25rem 0.5rem;
       }
     }
 
