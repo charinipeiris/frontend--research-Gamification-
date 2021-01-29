@@ -1137,7 +1137,7 @@ function foodie15()
   document.getElementById("mem17").style.border = "4px solid red"; 
   document.getElementById("mem17").style.pointerEvents = "none";
   document.getElementById("mem18").style.pointerEvents = "none";
-  document.getElementById("unmark1").checked = true; 
+  document.getElementById("unmark5").checked = true; 
  document.getElementById("mem20").setAttribute("src","/assets/images/w.gif");
   var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
   myAudio.play();
