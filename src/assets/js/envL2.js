@@ -1139,6 +1139,7 @@ document.getElementById("mark1").checked = true;
 document.getElementById("fam4").setAttribute("src", "/assets/images/yay_bunny2.gif");
 var myAudio = new Audio('/assets/audio/yay.mp3');
 document.getElementById("rew1").style.filter = "grayscale(0%)";
+document.getElementById("cell-1").style.border = "4px solid #4b53bd";
 myAudio.play();
 enableSubmit_familyg2l2();
 
@@ -1188,6 +1189,7 @@ document.getElementById("mark2").checked = true;
 document.getElementById("fam5").setAttribute("src", "/assets/images/yay_bunny2.gif");
 var myAudio = new Audio('/assets/audio/yay.mp3');
 document.getElementById("rew2").style.filter = "grayscale(0%)";
+document.getElementById("cell-2").style.border = "4px solid pink";
 myAudio.play();
 enableSubmit_familyg2l2();
 
@@ -1240,6 +1242,7 @@ document.getElementById("mark3").checked = true;
 document.getElementById("fam6").setAttribute("src", "/assets/images/yay_bunny2.gif");
 var myAudio = new Audio('/assets/audio/yay.mp3');
 document.getElementById("rew3").style.filter = "grayscale(0%)";
+document.getElementById("cell-3").style.border = "4px solid red";
 myAudio.play();
 enableSubmit_familyg2l2();
 
@@ -1256,6 +1259,7 @@ document.getElementById("mark4").checked = true;
 document.getElementById("fam10").setAttribute("src", "/assets/images/yay_bunny2.gif");
 var myAudio = new Audio('/assets/audio/yay.mp3');
 document.getElementById("rew4").style.filter = "grayscale(0%)";
+document.getElementById("cell-4").style.border = "4px solid yellow";
 myAudio.play();
 enableSubmit_familyg2l2();
 
@@ -1319,7 +1323,8 @@ document.getElementById("fam22").style.pointerEvents = "none";
 document.getElementById("mark5").checked = true; 
 document.getElementById("fam25").setAttribute("src", "/assets/images/yay_bunny2.gif");
 var myAudio = new Audio('/assets/audio/yay.mp3');
-document.getElementById("rew1").style.filter = "grayscale(0%)";
+document.getElementById("rew5").style.filter = "grayscale(0%)";
+document.getElementById("cell-5").style.border = "4px solid #69bbc3";
 myAudio.play();
 enableSubmit_familyg2l2();
 
@@ -1348,7 +1353,8 @@ document.getElementById("fam28").style.pointerEvents = "none";
 document.getElementById("mark6").checked = true; 
 document.getElementById("fam29").setAttribute("src", "/assets/images/yay_bunny2.gif");
 var myAudio = new Audio('/assets/audio/yay.mp3');
-document.getElementById("rew2").style.filter = "grayscale(0%)";
+document.getElementById("rew6").style.filter = "grayscale(0%)";
+document.getElementById("cell-6").style.border = "4px solid #da1d8e";
 myAudio.play();
 enableSubmit_familyg2l2()
 
