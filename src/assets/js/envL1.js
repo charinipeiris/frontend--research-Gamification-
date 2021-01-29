@@ -394,7 +394,7 @@ function animal6()
 {
   document.getElementById("anim8").style.border = "4px solid red"; 
   document.getElementById("anim7").style.pointerEvents = "none";
-  document.getElementById("anim9").style.pointerEvents = "none";
+  document.getElementById("anim8").style.pointerEvents = "none";
   document.getElementById("unmark2").checked = true; 
   document.getElementById("anim5").setAttribute("src", "/assets/images/w.gif");
   var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
@@ -419,7 +419,7 @@ function animal7()
 function animal8()
 {
   document.getElementById("anim15").style.border = "4px solid red"; 
-  document.getElementById("anim14").style.pointerEvents = "none";
+  document.getElementById("anim15").style.pointerEvents = "none";
   document.getElementById("anim13").style.pointerEvents = "none";
   document.getElementById("unmark3").checked = true; 
   document.getElementById("anim6").setAttribute("src", "/assets/images/w.gif");
