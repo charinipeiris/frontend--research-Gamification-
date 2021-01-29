@@ -1280,7 +1280,7 @@ function families12()
 {
   document.getElementById("fam19").style.border = "4px solid red"; 
   document.getElementById("fam20").style.pointerEvents = "none";
-  document.getElementById("fam21").style.pointerEvents = "none";
+  document.getElementById("fam19").style.pointerEvents = "none";
   document.getElementById("unmark4").checked = true; 
   document.getElementById("fam10").setAttribute("src", "/assets/images/w.gif");
   var myAudio = new Audio('/assets/audio/wrong-answer.mp3');
